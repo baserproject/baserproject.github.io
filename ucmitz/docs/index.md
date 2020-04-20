@@ -1,4 +1,4 @@
-# baserCMS5
+# ucmitz 仕様
 
 ## システム要件
 - Webサーバー：Apache
