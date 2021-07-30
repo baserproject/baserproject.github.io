@@ -12,8 +12,8 @@
 なお、ucmitz は、PHP7.2以降でのみ動作します。詳細についてはシステム要件を確認します。
 - [開発方針](https://docs.google.com/document/d/1QAmScc65CwMyn8QuwWKE9q_8HnSKcW9oefI9RrHoUYY/edit)
 - [ロードマップ](https://docs.google.com/spreadsheets/d/1TZ71-O_9KiQM9xAB_a_jnSFVrH2dsyKowMLkyGLcI9g/edit#gid=2131306554)
-- [システム要件](https://baserproject.github.io/5/ucmitz/basic/system.md)
-- [DB情報とマイルストーン](https://baserproject.github.io/5/ucmitz/basic/db_milestone.md)
+- [システム要件](https://baserproject.github.io/5/ucmitz/basic/system)
+- [DB情報とマイルストーン](https://baserproject.github.io/5/ucmitz/basic/db_milestone)
 
 　
 
@@ -23,8 +23,8 @@
 なお、ucmitz は、主に `BaserApp`、`BaserCore`、`BcAdminThird` の３つコアパッケージを中心に、ブログやメールフォームなどコアプラグインで構成されます。
 詳細については、パッケージ構成を参照してください。
 
-- [開発環境の構築](https://baserproject.github.io/5/ucmitz/preparation/environment.md)
-- [パッケージ構成](https://baserproject.github.io/5/ucmitz/basic/package.md)
+- [開発環境の構築](https://baserproject.github.io/5/ucmitz/preparation/environment)
+- [パッケージ構成](https://baserproject.github.io/5/ucmitz/basic/package)
 
 　
 ## 開発にとりかかる
@@ -32,57 +32,57 @@
 ### アーキテクチャー設計方針
 
 まず、全体的な構造における設計方針について確認しておきましょう。
-- [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy.md)
+- [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
 
 　
 ### 開発の手順と移行上のルール
 
 実際の開発については、開発の手順に従って開発します。  
 なお、baserCMS4のコードを移行していくことが ucmitzの開発になるのですが、様々なルールがありますので必ず確認してください。すごく重要なことです。
-- [開発の手順](https://baserproject.github.io/5/ucmitz/development/procedure.md)
-- [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule.md)
+- [開発の手順](https://baserproject.github.io/5/ucmitz/development/procedure)
+- [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule)
 
 　
 ### 開発上の注意点
 
 baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあたり、様々な変更点や注意点があります。
 
-- [ルーティングにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/routing.md)
-- [コントローラーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/controller.md)
-- [モデルにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/model.md)
-- [ビューにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/view.md)
-- [ヘルパーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/helper.md)
-- [リクエスト関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/request.md)
-- [セッション関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/session.md)
-- [データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database.md)
-- [プラグインにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database.md)
+- [ルーティングにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/routing)
+- [コントローラーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/controller)
+- [モデルにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/model)
+- [ビューにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/view)
+- [ヘルパーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/helper)
+- [リクエスト関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/request)
+- [セッション関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/session)
+- [データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database)
+- [プラグインにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database)
 
 　
 ### テーマの開発
 
 ucmitz の管理画面テーマの開発では、sass や Webpack を利用します。詳細については次を確認してください。
 
-- [BcAdminThirdの開発](https://github.com/baserproject/ucmitz/blob/dev/plugins/bc-admin-third/README.md)
+- [BcAdminThirdの開発](https://github.com/baserproject/ucmitz/blob/dev/plugins/bc-admin-third/README)
 
 　
 ### ユニットテスト
 
 ucmitz の開発では、ユニットテストのカバレッジ100%を目指します。ユニットメソッドの作成方法と実行方法については次を確認してください。
 
-- [ユニットテスト](https://baserproject.github.io/5/ucmitz/development/test/unittest.md)
+- [ユニットテスト](https://baserproject.github.io/5/ucmitz/development/test/unittest)
 
 　
 ### 全体的な変更点と既知の問題点
 
 開発における全体的な変更点や既知の問題点については次を確認してください。
 
-- [全体的な変更点](https://baserproject.github.io/5/ucmitz/development/changed.md)
-- [既知の問題点](https://baserproject.github.io/5/ucmitz/development/problem.md)
+- [全体的な変更点](https://baserproject.github.io/5/ucmitz/development/changed)
+- [既知の問題点](https://baserproject.github.io/5/ucmitz/development/problem)
 
 　
 ## 開発の進捗管理と新しい課題や機能の定義
 
-開発の進捗管理については、機能要件一覧と、Issue、そして、各ファイルや各メソッドのコメントにおけるアノテーションによって管理しています。[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/development/migration_rule.md#コード移行時のマーキング) を参考に必ずマーキングをお願いします。  
+開発の進捗管理については、機能要件一覧と、Issue、そして、各ファイルや各メソッドのコメントにおけるアノテーションによって管理しています。[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/development/migration_rule#コード移行時のマーキング) を参考に必ずマーキングをお願いします。  
 
 また、実装における新たな課題（タスクやバグなど）を見つけた場合は、Issue にマイルストーンを設定した上で登録します。  
 
@@ -115,8 +115,8 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 　　
 ## その他のドキュメント
 
-- [トラブルシューティング](https://baserproject.github.io/5/ucmitz/etc/troubleshooting.md)
-- [Cloud9 上で ucmitz を動作させる](https://baserproject.github.io/5/ucmitz/etc/cloud9.md)
+- [トラブルシューティング](https://baserproject.github.io/5/ucmitz/etc/troubleshooting)
+- [Cloud9 上で ucmitz を動作させる](https://baserproject.github.io/5/ucmitz/etc/cloud9)
 
 　
 　
