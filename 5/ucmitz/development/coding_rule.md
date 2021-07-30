@@ -1,5 +1,8 @@
 # コーディング規約
 
+基本的には、 [PSR-12 coding style guide](http://www.php-fig.org/psr/psr-12/) および、 [CakePHP コーディング規約 - 4.x](https://book.cakephp.org/4/ja/contributing/cakephp-coding-conventions.html) に従って頂くものとし、下記のルールにも従います。
+
+　
 ## クラスヘッダー
 
 クラスの先頭にはクラスヘッダーをつけます。
