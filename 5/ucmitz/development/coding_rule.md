@@ -12,6 +12,7 @@
 class SitesController extends BcAdminAppController {}
 ```
 
+　
 ## メソッドヘッダー
 
 メソッドの先頭にはメソッドヘッダーをつけます。
@@ -20,6 +21,7 @@ class SitesController extends BcAdminAppController {}
 ```php
 /**
  * サイト一覧を表示する
+ * 
  * @param SiteManageServiceInterface $siteManage
  * @checked
  * @noTodo
