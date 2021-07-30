@@ -1,3 +1,3 @@
-# baserproject.github.io
+# baserCMS Documentation
 
-クラス図: https://miro.com/app/board/o9J_l5XD8l8=/
+- [baserCMS5](https://baserproject.github.io/5/)
