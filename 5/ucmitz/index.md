@@ -41,7 +41,7 @@
 なお、baserCMS4のコードを移行していくことが ucmitzの開発になるのですが、様々なルールがありますので必ず確認してください。すごく重要なことです。
 - [開発の手順](https://baserproject.github.io/5/ucmitz/development/procedure)
 - [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule)
-
+- [コーディング規約](https://baserproject.github.io/5/ucmitz/development/coding_rule.md)
 　
 ### 開発上の注意点
 
