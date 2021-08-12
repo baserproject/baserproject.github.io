@@ -50,3 +50,9 @@ $this->pageTitle = $title;
 // ucmitz
 $this->setTitle($title);
 ```
+
+　
+## Ajaxの処理について
+
+管理画面から呼び出す Ajax のアクションについて、返却値を JSON化できるものは、Api 用のコントローラーに移行し、そちらを呼び出すようにします。
+ただし、HTMLを返却するもので、JSON化の難易度が高いものは、Admin 用のコントローラーでそのまま移行します。

@@ -28,6 +28,8 @@ $this->BcAdmin->setTitle($title);
 $this->BcAdmin->setSearch($templateName);
 ```
 
+なお、baserCMS4では、検索処理について POST でデータを渡していましたが、検索状態をURLで共有できるようにするため、GET で渡すように処理を変更します。
+
 　
 ## ヘルプの設定
 ```php
