@@ -76,7 +76,7 @@ CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下�
 
 子パッケージの `composer.json` を変更した場合は、次のコマンドを実行して親パッケージにまとめあげる必要があります。
 
-```shell script
+```
 vendor/bin/monorepo-builder merge
 ```
 
@@ -87,7 +87,7 @@ vendor/bin/monorepo-builder merge
 
 子パッケージのリリースを行う場合は、次のコマンドを実行します。
 
-```shell script
+```
 vendor/bin/monorepo-builder split
 ```
 
@@ -116,8 +116,3 @@ ucmitz を開発中は、2を利用して、開発中のコードを定期的に
 ### 参考文献
 
 [MonorepoBuilderでPHPのモノレポを作るチュートリアル](https://qiita.com/suin/items/421a55bdb009b2ada2d1)
-
-
-
-
-

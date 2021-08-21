@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  app:
+    image: jekyll/jekyll:pages
+    command: jekyll serve --config  _config.yml,_config.local.yml
+    volumes:
+      - ./:/srv/jekyll
+    ports:
+      - 4000:4000
+    environment:
+      JEKYLL_ENV: docker

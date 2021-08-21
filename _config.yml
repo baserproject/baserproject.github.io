@@ -1,1 +1,8 @@
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/minimal
+repository: baserproject/baserproject.github.io
+lang: ja
+title: baserCMS Documentation
+
+kramdown:
+  input: GFM
+  hard_wrap: true
