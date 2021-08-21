@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <p class="view">
+          <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">Githubでこのページを編集</a>
+        </p>
+
+        <ul>
+          <li><a href="{{ "/5/ucmitz/" | relative_url }}">ucmitz 開発への貢献方法</a></li>
+        </ul>
+
+        <div class="toc">
+          {% include toc.html html=content h_min=2 %}
+        </div>
+      </header>
+      <section>
+
+      <div class="crumbs">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        <a href="{{ "/" | relative_url }}">Home</a>
+        {% for crumb in crumbs offset: 1 %}
+          {% if forloop.last %}
+            / {{ page.title }}
+          {% else %}
+          / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' | relative_url }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {{ content }}
+
+      </section>
+      <footer>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  </body>
+</html>
