@@ -2,7 +2,7 @@ version: '3.7'
 services:
   app:
     image: jekyll/jekyll:pages
-    command: jekyll serve --config  _config.yml,_config.local.yml
+    command: jekyll serve
     volumes:
       - ./:/srv/jekyll
     ports:
