@@ -42,9 +42,11 @@
         <a href="{{ "/" | relative_url }}">Home</a>
         {% for crumb in crumbs offset: 1 %}
           {% if forloop.last %}
-            / {{ page.title }}
+            {% if page.title %}
+              / {{ page.title }}
+            {% endif %}
           {% else %}
-          / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' | relative_url }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+          / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' | relative_url }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
           {% endif %}
         {% endfor %}
       </div>

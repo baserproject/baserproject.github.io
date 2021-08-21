@@ -1,0 +1,9 @@
+<ul class="filelist">
+  {% for site_page in site.pages %}
+    {% if site_page.dir == page.dir and site_page.title %}
+      <li>
+        <a href="{{ site_page.path | replace: '.md', ''| relative_url }}">{{ site_page.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
