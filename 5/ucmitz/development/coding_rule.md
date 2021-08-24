@@ -50,5 +50,17 @@ public function index(SiteManageServiceInterface $siteManage){}
 オブジェクトとなるプロパティ名のみ、アッパーキャメルケースとし、その他の変数は全てロウワーキャメルケースとします。  
 また、プライベートメソッドやプロテクテッドメソッドだとしても先頭にアンダースコアはつけません。
 
+```php
+class UsersController extends AppController 
+{
+    public $Users;
+    private $user;
+    protected function getStatus()
+    {
+        $user = $this->Users->find()->first();
+        return $user->status;
+    } 
+}
+```
 　
 
