@@ -1,0 +1,85 @@
+a:hover, a:focus {
+  font-weight: normal;
+}
+h1 a:hover, h1 a:focus {
+  font-weight: bold;
+}
+.wrapper {
+  width: 1160px;
+  margin: 0;
+}
+
+/* header */
+header {
+  position: relative;
+  margin-right: 30px;
+}
+header h1 a {
+  background: url(../img/logo.svg) no-repeat;
+  background-size: 40px;
+  padding-left: 50px;
+  font-size: 18px;
+  display: block;
+}
+ul {
+  padding: 0 0 0 20px;
+}
+.toc > ul {
+  border-top: 1px solid #ccc;
+  padding: 20px !important;
+}
+.toc ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+/* section */
+section {
+  font-size: 16px;
+  width: 860px;
+  float: left;
+}
+.crumbs {
+  margin-bottom: 20px;
+}
+section h1 {
+  margin-bottom: 30px;
+}
+section h2 {
+  margin-bottom: 30px;
+}
+section pre {
+  font-size: 14px;
+}
+
+@media print, screen and (max-width: 1220px) {
+  section {
+    width: 700px;
+  }
+  header h1 a {
+    background-size: 20px;
+    padding-left: 25px;
+  }
+}
+@media print, screen and (max-width: 1000px) {
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+  body {
+    word-wrap:break-word
+  }
+  section {
+    width: auto;
+  }
+  header {
+    padding: 0
+  }
+  header ul,header p.view {
+    position: static
+  }
+  pre,code {
+    word-wrap: normal
+  }
+}

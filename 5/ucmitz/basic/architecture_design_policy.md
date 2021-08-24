@@ -160,4 +160,4 @@ class UsersController extends BcApiController
 }
 ```
 ### 参考
-https://book.cakephp.org/4/ja/development/dependency-injection.html
+[https://book.cakephp.org/4/ja/development/dependency-injection.html](https://book.cakephp.org/4/ja/development/dependency-injection.html)
