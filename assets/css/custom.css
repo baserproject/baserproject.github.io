@@ -52,6 +52,11 @@ section pre {
   font-size: 14px;
 }
 
+code {
+  background-color: #ecece9;
+  padding: 0 3px;
+}
+
 @media print, screen and (max-width: 1220px) {
   section {
     width: 700px;
