@@ -9,7 +9,7 @@ ucmitzでは、CakePHPのプラグインとして開発されているため、�
 - Mail → BcMail
 - Uploader → BcUploader  
 
-
+　
 ## ユーティリティの変更
 ### BcUtil の変更
 `BcUtil` 等を配置していた `lib` を `Utility` に変更しています。
