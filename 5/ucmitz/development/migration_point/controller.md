@@ -10,6 +10,7 @@ public $subMenuElements = ['site_configs', 'sites'];
 $this->subMenuElements = ['plugins'];
 ```
 
+　
 ## 管理画面のパンくずの設定
  
 管理画面のパンくずは廃止となりました。コントローラーの下記のようなコードは削除します。
@@ -30,8 +31,10 @@ public function beforeFilter()
 // baserCMS4
 $this->search = $templateName;
 // ucmitz
-$this->setSearch($templateName);
+$this->setSearch($templateName); // コントローラー
+$this->BcAdmin->setSearch($templateName); // テンプレート 
 ```
+テンプレートのヘッダーでの定義を推奨しています。
 
 　
 ## ヘルプの設定
@@ -39,8 +42,10 @@ $this->setSearch($templateName);
 // baserCMS4
 $this->help = $templateName;
 // ucmitz
-$this->setHelp($templateName);
+$this->setHelp($templateName); // コントローラー
+$this->BcAdmin->setSearch($templateName); // テンプレート
 ```
+テンプレートのヘッダーでの定義を推奨しています。
 
 　
 ## タイトルの設定
@@ -48,8 +53,10 @@ $this->setHelp($templateName);
 // baserCMS4
 $this->pageTitle = $title;
 // ucmitz
-$this->setTitle($title);
+$this->setTitle($title); // コントローラー
+$this->BcAdmin->setSearch($templateName); // テンプレート
 ```
+テンプレートのヘッダーでの定義を推奨しています。
 
 　
 ## Ajaxの処理について
