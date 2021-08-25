@@ -157,7 +157,7 @@ BcAdmin{EntityName}Helper
 ```php
 BcAdmin{EntityName}Helper // スーパークラス
 BcAdmin{EntityName}IndexHelper // 一覧画面用
-BcAdmin{EntityName}FormHelper // 一覧画面用
+BcAdmin{EntityName}FormHelper // 登録編集画面用
 ```
 
 

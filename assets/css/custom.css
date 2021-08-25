@@ -85,6 +85,9 @@ p > code, li > code {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
+  font-size: 13px;
+  letter-spacing: 0;
+  color: #222;
 }
 pre {
   line-height: 140%;
