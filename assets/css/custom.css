@@ -99,7 +99,7 @@ pre code{
   letter-spacing: normal;
 }
 pre code span {
-  font-weight: normal;
+  font-weight: normal!important;
 }
 
 @media print, screen and (max-width: 1220px) {
