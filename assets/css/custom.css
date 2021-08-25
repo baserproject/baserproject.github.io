@@ -36,8 +36,8 @@ ul {
   padding: 0 0 0 20px;
 }
 .toc li {
-  margin-top:2px;
-  margin-bottom:2px;
+  margin-top:5px;
+  margin-bottom:5px;
 }
 
 /* section */
@@ -53,12 +53,12 @@ section {
   margin-bottom: 20px;
 }
 section h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size:42px;
   font-weight: normal;
 }
 section h2 {
-  margin-bottom: 30px;
+  margin: 9px 0;
   font-size: 36px;
   line-height: 50px;
   font-weight: normal;
@@ -67,6 +67,7 @@ section h3,
 section h4,
 section h5,
 section h6 {
+  margin: 9px 0;
   font-size: 28px;
   font-weight: 400;
   line-height: 50px;
