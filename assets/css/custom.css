@@ -86,7 +86,7 @@ p > code, li > code {
   border-radius: 2px;
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
 }
-pre,code {
+pre {
   word-wrap: normal;
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace!important;
   font-size: 12px;
