@@ -55,7 +55,7 @@ section pre {
   font-size: 14px;
 }
 
-p > code {
+p > code, li > code {
   padding: 0 3px;
   background: #f8f8f8;
   border: 1px solid #e5e5e5;
