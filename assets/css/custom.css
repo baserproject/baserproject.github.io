@@ -84,6 +84,7 @@ p > code, li > code {
   background: #f8f8f8;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+  font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
 }
 
 @media print, screen and (max-width: 1220px) {
@@ -102,18 +103,19 @@ p > code, li > code {
     width: auto;
   }
   body {
-    word-wrap:break-word
+    word-wrap:break-word;
   }
   section {
     width: auto;
   }
   header {
-    padding: 0
+    padding: 0;
   }
   header ul,header p.view {
-    position: static
+    position: static;
   }
   pre,code {
-    word-wrap: normal
+    word-wrap: normal;
+    font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
   }
 }
