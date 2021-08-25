@@ -4,6 +4,15 @@ a:hover, a:focus {
 h1 a:hover, h1 a:focus {
   font-weight: bold;
 }
+body {
+  color: #333;
+}
+code {
+  padding: 0 2px;
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
 .wrapper {
   width: 1160px;
   margin: 0;
