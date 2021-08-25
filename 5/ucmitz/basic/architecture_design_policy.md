@@ -9,7 +9,7 @@
 　
 ## サービスクラスの実装
 
-サービスクラスは、テーブルクラスと対になるクラスを用意してもよいですが、
+サービスクラスは、ユースケースを定義します。テーブルクラスと対になるクラスを用意してもよいですが、
 基本的には役割ごとに用意することが望ましいです。
 
 - ユーザーを管理する（一覧表示、登録、編集、削除）
@@ -19,38 +19,36 @@
 
 サービスクラスを作成する際は、まずインターフェイスを定義します。
 
+### インターフェイスの定義
+
 ```php
-// baser-core/src/Service/Admin/UserManageServiceInterface.php
-interface UserManageServiceInterface
+// baser-core/src/Service/UserServiceInterface.php
+interface UserServiceInterface
 {
     public function get($id): EntityInterface;
 }
 ```
+
+### サービスクラスの実装
+
 作成したインターフェイスを実装するようにサービスクラスを定義します。
 ```php
-// baser-core/src/Service/Admin/UserManageService.php
-class UserManageService implements UserManageServiceInterface
+// baser-core/src/Service/UserService.php
+class UserService implements UserServiceInterface
 {
-    public function get($id)
+    public function get($id): EntityInterface;
     {
         // 実装
     }
 }
 ```
 
-管理画面用として利用するサービスクラスの名前空間は次のようにしてください。
-
+### サービスクラスの命名規則
+テーブルと対にしてサービスを提供する場合は単数形とします。
 ```php
-namespace BaserCore\Service\Admin;
+{EntityName}Service
 ```
-
-API用として利用するサービスクラスの名前空間は次のようにしてください。
-
-```php
-namespace BaserCore\Service\Api;
-```
-
-なお、サービスクラスは状態を持たないように実装します。
+なお、サービスクラスはできるだけ状態を持たないように実装します。
 
 　
 ## 利用するサービスの定義
@@ -59,19 +57,18 @@ namespace BaserCore\Service\Api;
 
 メンバー変数 `provides` に利用するサービスのインターフェイスを定義し、`services` メソッドにて、
 DIコンテナを利用して、利用するサービスのインターフェイスごとに、実装するサービスクラスを追加します。
+
 ```php
 // baser-core/src/ServiceProvider/BcServiceProvider.php
 class BcServiceProvider extends ServiceProvider
 {
     protected $provides = [
-        UsersServiceInterface::class,
-        UserManageServiceInterface::class
+        UsersServiceInterface::class
     ];
     
     public function services($container): void
     {
         $container->add(UsersServiceInterface::class, UsersService::class);
-        $container->add(UserManageServiceInterface::class, UserManageService::class);
     }
 
 }
@@ -87,7 +84,7 @@ class BcServiceProvider extends ServiceProvider
 // baser-core/src/Controller/Admin/UsersController.php
 class UsersController extends BcAdminAppController
 {
-    public function index(UserManageServiceInterface $userManage)
+    public function index(UserServiceInterface $userService)
     {
         // 処理を記載
     }
@@ -109,8 +106,9 @@ class UsersController extends BcAdminAppController
 　
 ## ヘルパーの実装
 
-ヘルパーについて、ビジネスロジックに関するものは、内部的にサービスクラスを利用し、サービスクラスのラッパーとなるように実装します。  
-なお、CakePHP4では、ヘルパでのDIコンテナの利用ができませんので、代替措置として `BcContainerTrait ` を利用します。
+ヘルパーについては、サービスクラスを利用することもできます。  
+CakePHP4では、ヘルパでのDIコンテナの利用ができませんので、代替措置として `BcContainerTrait ` を利用します。
+なお、`ServerRequest` など、状態を利用した処理は、できる限りヘルパー側で実装するようにします。
 
 ```php
 // baser-core/src/View/Helper/BcAdminUserHelper.php
@@ -118,17 +116,17 @@ class BcAdminUserHelper extends Helper
 {
     use \BaserCore\Utility\BcContainerTrait;
     
-    public $userManageService;
+    public $UserService;
     
     public function initialize(array $config)
     {
         parent::initialize($config);
-        $this->userManageService = $this->getService(UserManageServiceInterface::class)
+        $this->UserService = $this->getService(UserServiceInterface::class)
     }
     
     public function get($id)
     {
-        $this->userManageService->get($id);
+        $this->UserService->get($id);
     }
 }
 ```
@@ -139,6 +137,17 @@ class BcAdminUserHelper extends Helper
 BcAdmin{EntityName}Helper
 ```
 
+管理画面だと一覧画面用と新規登録、編集画面用の役割を担うことになりますが、クラスが大きくなってきたら役割ごとに３つのクラスに分割します。
+
+```php
+BcAdmin{EntityName}Helper // スーパークラス
+BcAdmin{EntityName}IndexHelper // 一覧画面用
+BcAdmin{EntityName}FormHelper // 一覧画面用
+```
+
+
+
+
 なお、ラッパーとして実装したメソッドについては、サービスクラス側でテストを書き、ヘルパー側ではテストを書いたものとし、ヘルパーではテストは書きません。
 
 　
@@ -146,14 +155,13 @@ BcAdmin{EntityName}Helper
 
 APIは、コントローラーからサービスクラスを呼び出し実装します。
 
-`BcApiController` を継承することにより簡易的な認証がかかります。  
-※ 認証処理については、将来的にセキュリティ性の高いJWTなどを利用する予定です。
+`BcApiController` を継承することによりJWT認証がかかる仕様となっています。
 
 ```php
 // baser-core/src/Controller/Api/UsersController.php
 class UsersController extends BcApiController
 {
-    public function index(UsersServiceInterface $users)
+    public function index(UserServiceInterface $users)
     {
         // 実装
     }

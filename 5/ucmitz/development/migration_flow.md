@@ -76,7 +76,7 @@ public $import = ['table' => 'sites'];
 　
 ## Service を作成する
 
-Serviceクラスでは、基本的なメソッドとテストを作成します。
+Serviceクラスでは、まず、基本的なメソッドとテストを作成します。
 
 参考: [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
 
@@ -84,12 +84,12 @@ Serviceクラスでは、基本的なメソッドとテストを作成します�
 先に Interface を作成します。
 
 ### Service クラスを作成
-基本的なメソッドとテストを作成します。
+基本的なメソッドとテストを作成し、必要に応じて他のユースケースとなるメソッドをを追加します。
 
 - get(): 単一エンティティの取得
 - getIndex(): 一覧の取得
 - getNew(): 初期値を入れた新規エンティティの取得
-- list(): コントロールソース用のリストの取得
+- getList(): コントロールソース用のリストの取得
 - create(): エンティティの作成
 - update(): エンティティの更新
 - delete(): エンティティの削除
@@ -109,21 +109,6 @@ DIコンテナで Service クラスを注入して作成します。
 - add(): エンティティの作成
 - edit(): エンティティの更新
 - delete(): エンティティの削除
-
-　
-## ManageService を作成する
-ManageServiceは、基本的に管理画面のコントローラーとヘルパーから利用するための Service クラスです。
-必要な場合のみに作成します。
-
-### Interface を作成
-先に Interface を作成します。
-
-### Service クラスを作成
-ベースとなる Service クラスを継承して作成します。  
-コントローラーの処理や、ビューに引き渡す変数をヘルパから取得することを前提にを移行しつつ、テストを作成します。
-
-### ServiceProvider で利用サービスの定義
-`\BaserCore\ServiceProvider\BcServiceProvider` にて利用するサービスの定義を追加します。
 
 　
 ## Controller を移行する
@@ -198,11 +183,11 @@ $this->BcAdminForm->control($entity, ['novalidate' => true]);
 $this->BcAdminForm->control('field_name');
 ```
 
-### ManageService 用のヘルパを作成する
+### 各画面用のヘルパを作成する
 テンプレート内の処理において、プログラムの処理はできるだけ冒頭にまとめ、可能であれば、ヘルパー化します。
 
-必要があれば、 `BcAdminEntityNameHelper` として ManageService のラッパークラスを作成します。
-完全なるラッパーメソッドで、ManageService とシグネチャが全く同じメソッド場合は、テストは書きません。
+ヘルパーは、 `BcAdmin{EntityName}Helper` として作成し、適宜、必要があれば `BcContainerTrait` を利用してサービスクラスを利用します。  
+メソッドを作成する際、サービスクラスのメソッドの完全なるラッパーメソッドで、シグネチャが全く同じ場合は、テストは書きません。
 
 　
 ## Javascriptを移行する
