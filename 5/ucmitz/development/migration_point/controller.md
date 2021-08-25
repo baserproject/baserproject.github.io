@@ -43,7 +43,7 @@ $this->BcAdmin->setSearch($templateName); // テンプレート
 $this->help = $templateName;
 // ucmitz
 $this->setHelp($templateName); // コントローラー
-$this->BcAdmin->setSearch($templateName); // テンプレート
+$this->BcAdmin->setHelp($templateName); // テンプレート
 ```
 テンプレートのヘッダーでの定義を推奨しています。
 
@@ -54,7 +54,7 @@ $this->BcAdmin->setSearch($templateName); // テンプレート
 $this->pageTitle = $title;
 // ucmitz
 $this->setTitle($title); // コントローラー
-$this->BcAdmin->setSearch($templateName); // テンプレート
+$this->BcAdmin->setTitle($templateName); // テンプレート
 ```
 テンプレートのヘッダーでの定義を推奨しています。
 
