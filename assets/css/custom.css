@@ -41,15 +41,31 @@ section {
   font-size: 16px;
   width: 860px;
   float: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.02em;
 }
 .crumbs {
   margin-bottom: 20px;
 }
 section h1 {
   margin-bottom: 30px;
+  font-size:42px;
+  font-weight: normal;
 }
 section h2 {
   margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: normal;
+}
+section h3,
+section h4,
+section h5,
+section h6 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
 }
 section pre {
   font-size: 14px;
