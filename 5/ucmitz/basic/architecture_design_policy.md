@@ -8,18 +8,18 @@
 
 　
 ## 構成の全体像
-- サービスクラス（例:`UserService`） 
+- サービスクラス（例: `UserService` ） 
   - 基本的には対象エンティティに関するユースケースを提供 
-  - `ServerRequest`や`Session`等、状態を利用した処理はできるだけ書かない
-- 管理画面用コントローラー（例:`Admin/UsersController`） 
+  - `ServerRequest` や `Session` 等、状態を利用した処理はできるだけ書かない
+- 管理画面用コントローラー（例: `Admin/UsersController` ） 
   - サービスクラスをDIコンテナで利用し処理の振り分けを担当 
-  - 基本的に`$this->set()`で引き渡すのは基本的に対象エンティティのみとし、画面に必要な情報はヘルパで提供する
-- API用コントローラー（例:`Api/UsersController`） 
+  - 基本的に `$this->set()` で引き渡すのは基本的に対象エンティティのみとし、画面に必要な情報はヘルパで提供する
+- API用コントローラー（例: `Api/UsersController` ） 
   - サービスクラスをDIコンテナで利用し、REST APIを提供
-- 管理画面用ヘルパ（例:`BcAdminUserHelper`） 
+- 管理画面用ヘルパ（例: `BcAdminUserHelper` ） 
   - 対象画面に必要な情報を提供する 
-  - 適宜、DIコンテナを利用してサービスクラスの利用が可能（`BcContainerTrait`を利用） 
-  - `ServerRequest`や`Session`等、状態を利用した処理はサービスクラスでなくこちらに書く
+  - 適宜、DIコンテナを利用してサービスクラスの利用が可能（ `BcContainerTrait` を利用） 
+  - `ServerRequest` や `Session` 等、状態を利用した処理はサービスクラスでなくこちらに書く
 
 　
 ## サービスクラスの実装
