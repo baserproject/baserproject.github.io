@@ -87,15 +87,21 @@ p > code, li > code {
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
 }
 pre {
+  line-height: 140%;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+pre code{
   word-wrap: normal;
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace!important;
   font-size: 12px;
-  margin-bottom: 20px;
-  padding: 15px 20px;
   color: #222;
-  line-height: 140%;
   letter-spacing: normal;
 }
+pre code span {
+  font-weight: normal;
+}
+
 @media print, screen and (max-width: 1220px) {
   section {
     width: 700px;
