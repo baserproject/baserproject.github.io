@@ -121,7 +121,7 @@ class UsersController extends BcAdminAppController
 　
 ## ヘルパーの実装
 
-ヘルパーについては、サービスクラスを利用することもできます。  
+ヘルパーについては、適宜必要となるサービスクラスを利用することもできます。  
 CakePHP4では、ヘルパでのDIコンテナの利用ができませんので、代替措置として `BcContainerTrait ` を利用します。
 なお、`ServerRequest` など、状態を利用した処理は、できる限りヘルパー側で実装するようにします。
 
