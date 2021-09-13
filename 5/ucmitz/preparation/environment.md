@@ -92,11 +92,3 @@ bin/cake migrations seed --plugin BaserCore
 | database | basercms |
 | user | root |
 | password | root |
-
-### SoftDeleteTraitを有効化する
-次のコマンドを実行してパッケージを追加します。
-
-```
-docker exec -it bc5-php /bin/bash
-composer update --prefer-source
-```
