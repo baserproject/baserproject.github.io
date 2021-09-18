@@ -1,6 +1,7 @@
 # ユニットテスト
 
-ucmitz では、[CakePHPのテストの仕組み](https://book.cakephp.org/4/ja/development/testing.html) を使用してユニットテストを作成します。
+ucmitz では、[CakePHPのテストの仕組み](https://book.cakephp.org/4/ja/development/testing.html) を使用してユニットテストを作成します。  
+ユニットテストを実行する際はユニットテスト用のセキュリティトークンを有効にするため[DEBUGモードを有効](https://book.cakephp.org/4/ja/development/testing.html#id3)にして実行する必要があります。
 
 ## テストの準備
 
