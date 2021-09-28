@@ -7,7 +7,7 @@
 
 ## トレイトの利用
 
-`BcHelperTrait` を利用します。
+`BcEventDispatcherTrait` を利用します。
 
 ```php
 class ClassName extends Cake\View\Helper {
@@ -15,7 +15,7 @@ class ClassName extends Cake\View\Helper {
     /**
      * Trait
      */
-    use BcHelperTrait;
+    use BcEventDispatcherTrait;
 }    
 ```
 
