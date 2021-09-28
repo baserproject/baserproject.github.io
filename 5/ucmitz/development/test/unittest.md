@@ -78,6 +78,12 @@ vendor/bin/phpunit plugins/baser-core/tests/TestCase/Model/Table/ArticlesTableTe
 vendor/bin/phpunit plugins/baser-core/tests/TestCase/Model/Table/ArticlesTableTest.php --filter testSave
 ```
 
+### テストメソッド名が一部被ってる場合の実行(testSaveとtestSaveResultなどの場合)
+
+```shell
+vendor/bin/phpunit plugins/baser-core/tests/TestCase/Model/Table/ArticlesTableTest.php --filter '/::testSave\b/'
+```
+
 　
 ## 新しいプラグインのテストを追加する
 
