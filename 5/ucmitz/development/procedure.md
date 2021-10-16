@@ -62,10 +62,10 @@ Issueの内容に従って機能を実装します。
 　 
 ## 6. プルリクエストを作成する
 
-実装とテストが完了したら、自身のレポジトリにプッシュしプルリクエストを作成します。  
+実装とテストが完了したら、自身のレポジトリにプッシュし[Draft Pull Request](https://qiita.com/tatane616/items/13da1b6797a7b871ad58)を作成します。  
 また、[機能要件一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=0) の状況を「レビュー待ち」に切り替えます。
+作業が完了したら [Ready for review] をクリックすることで通常のPull Requestへ変更します
 
-　
 ## 7. レビューとマージ
 
 マージ担当者はコードをレビューし問題なければマージします。  

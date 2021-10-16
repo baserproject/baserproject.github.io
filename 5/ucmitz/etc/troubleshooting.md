@@ -1,5 +1,6 @@
 # トラブルシューティング
 
+---
 ## Vagrantのマウントが正常に行われない
 
 ### トラブル内容
@@ -49,3 +50,20 @@ vagrant reload
 ```
 
 上記コマンドでvagrantを再起動すればGuest Additionsも更新されます。
+
+---
+## SoftDeleteTraitが見つからない
+
+### トラブル内容
+
+```
+Error: Fatal Error (1): Trait 'SoftDelete\Model\Table\SoftDeleteTrait' not found in [/var/www/html/plugins/baser-core/src/Model/Table/ContentsTable.php, line 37]
+```
+### 解決法
+
+次のコマンドを実行してパッケージを追加します。
+```
+docker exec -it bc5-php /bin/bash
+composer update --prefer-source
+```
+---
