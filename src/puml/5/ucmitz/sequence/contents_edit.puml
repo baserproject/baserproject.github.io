@@ -1,0 +1,90 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+
+title シーケンス：コンテンツフォルダ編集
+
+participant "ContentFolder" as Folder
+participant "BcContentsBehavior" as Behavior
+participant "Content" as Content
+
+[-> Folder : edit
+
+activate Folder
+
+Folder -> Behavior : setup
+
+activate Behavior
+
+note over Behavior
+hasOneでコンテンツをフォルダに繋ぎこむ
+endnote
+
+Folder -> Behavior : beforeValidate																											
+note over Behavior
+・コンテンツの初期化
+・コンテンツのバリデーション
+・バリデーション結果のマージ
+・バリデーション後のコンテンツのマージ
+endnote
+
+Folder <- Behavior
+
+Folder -> Behavior : beforeSave
+
+note over Behavior
+・コンテンツのバリデーションチェック
+・エラーが出ていれば終了
+endnote
+
+Folder <- Behavior
+
+Folder -> Behavior : afterSave
+note over Behavior
+コンテンツの生成
+endnote
+
+Behavior -> Content : save
+
+activate Content
+
+Content -> Content: beforeValidate
+note over Content
+・タイトル整形
+・更新日のセット
+・URLの整形
+・トップフォルダの場合に
+URLバリデーションを除外
+・URLの重複チェック
+（重複していた場合は自動生成）
+endnote
+
+Content -> Content: beforeSave
+note over Content
+変更前の親コンテンツIDを取得
+endnote
+
+Content -> Content: afterSave
+note over Content
+・関連するキャッシュを削除
+・システムデータを更新
+・子コンテンツの更新
+・別サイトの関連するコンテンツを更新
+・親コンテンツが変更となった場合は、
+最終並び替え日時を更新
+endnote
+
+deactivate Content
+
+
+Content -> Behavior
+note over Behavior
+生成後のContent をマージ
+endnote
+
+deactivate Behavior
+
+Behavior -> Folder
+deactivate Folder
+
+@enduml

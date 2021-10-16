@@ -43,7 +43,7 @@
 - [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule)
 - [移行上の流れ](https://baserproject.github.io/5/ucmitz/development/migration_flow)
 - [コーディング規約](https://baserproject.github.io/5/ucmitz/development/coding_rule)
-- [クラス図](https://miro.com/app/board/o9J_l5XD8l8=/)
+- [設計書](https://baserproject.github.io/5/ucmitz/specifications)
 
 　　
 ### 開発上の注意点

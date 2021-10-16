@@ -1,7 +1,10 @@
 @startuml
 skinparam handwritten true
 
+title ユースケース：コンテンツ管理
+
 actor 作成者
+
 package コンテンツ管理 {
 	left to right direction
 	作成者 --> (コンテンツを検索する)
@@ -9,12 +12,18 @@ package コンテンツ管理 {
 	作成者 --> (コンテンツを編集する)
 	作成者 --> (コンテンツを削除する)
 	作成者 --> (コンテンツをコピーする)
+	作成者 --> (コンテンツを公開する)
+	作成者 --> (コンテンツを非公開にする)
 }
+
 note left of コンテンツ管理
 「コンテンツ」はフォルダ、固定ページ、リンク、エイリアスなど
 複数の種類のコンテンツを対象とする。
 endnote
+
 note left of (コンテンツを削除する)
 削除した場合はゴミ箱に入る
 endnote
+
+
 @enduml
