@@ -1,0 +1,154 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class BcContentsComponent {
+    setupAdmin()
+    setupFront()
+    settingForm()
+    getParentLayoutTemplate()
+    getTypes()
+    getContent()
+    getCrumbs()
+    beforeRender()
+}
+
+class Admin\ContentFoldersController {
+    + AuthenticationComponent
+    + BcMessageComponent
+    + BcContentsComponent
+    edit()
+    delete()
+    ※ add() は、APIを利用する
+}
+
+class BcAdminAppView {
+    render()
+}
+
+class BcAdminContentFolderHelper {
+    getFolderTemplateList()
+    getPageTemplateList()
+    getPublishLink()
+}
+
+class ContentManageService {
+
+}
+
+class ContentFolderManageServiceInterface {
+    getFolderTemplateList()
+    getPageTemplateList()
+    getPublishLink()
+}
+
+class ContentFoldersService {
+    + ContentFoldersTable
+}
+
+class ContentFoldersServiceInterface {
+    isOverPostSize()
+}
+
+class ContentFoldersTable {
+    getParentTemplate()
+    getFolderTemplateList()
+    saveSiteRoot()
+    movePageTemplates()
+    setBeforeRecord()
+}
+
+class SearchIndiceTable {
+    reconstruct()
+}
+
+class ContentFolder {
+    + id
+    + folder_template
+    + page_template
+    + created
+    + modified
+}
+
+class BcContentsBehavior {
+    beforeValidate()
+    beforeSave()
+    afterSave()
+    beforeDelete()
+    afterDelete()
+    findPublished()
+}
+
+class ContentsTable {
+    + updatingRelated
+    updateChildrenUrl()
+    getPath()
+    createContent()
+    softDelete()
+    removeFromTree()
+}
+
+class Content {
+    + id
+    + name
+    + plugin
+    + type
+    + entity_id
+    + url
+    + site_id
+    + alias_id
+    + main_site_content_id
+    + parent_id
+    + lft
+    + rght
+    + level
+    + title
+    + description
+    + eyecatch
+    + author_id
+    + layout_template
+    + status
+    + publish_begin
+    + publish_end
+    + self_status
+    + self_publish_begin
+    + self_publish_end
+    + exclude_search
+    + created_date
+    + modified_date
+    + site_root
+    + deleted_date
+    + deleted
+    + exclude_menu
+    + blank_link
+    + created
+    + modified
+}
+
+
+Admin\ContentFoldersController -left[#Black]-> BcContentsComponent
+Admin\ContentFoldersController -right[#Black]-> BcAdminAppView
+Admin\ContentFoldersController -down[#Black]-> ContentManageService
+
+BcAdminAppView -down[#Black]-> BcAdminContentFolderHelper
+
+BcAdminContentFolderHelper -left[#Black]-> ContentManageService
+
+ContentManageService -right[dotted,#Black]-> ContentFolderManageServiceInterface
+ContentManageService -down[#Black]-|> ContentFoldersService
+
+ContentFoldersService -left[dotted,#Black]-|> ContentFoldersServiceInterface
+ContentFoldersService -down[#Black]-> ContentFoldersTable
+
+ContentFoldersTable -right[#Black]-> SearchIndiceTable
+ContentFoldersTable -left[#Black]-> BcContentsBehavior
+ContentFoldersTable -left[#Black]-> ContentsTable
+ContentFoldersTable -down[#Black]-> ContentFolder
+
+BcContentsBehavior -left[#Black]-> ContentsTable
+
+ContentsTable -left[#Black]-> Content
+
+ContentFolder -[#Black]- Content
+
+@enduml
