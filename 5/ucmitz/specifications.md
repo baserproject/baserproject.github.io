@@ -15,3 +15,12 @@
 ### シーケンス図
 
 ![ドメインモデル図：コンテンツフォルダ編集](sequence/contents_edit.svg)
+
+### クラス図
+
+![クラス図：管理画面基本クラス構成](class/basic_manage.svg)
+![クラス図：API基本クラス構成](class/basic_api.svg)
+![クラス図：ユーザー管理画面](class/manage_users.svg)
+![クラス図：ユーザーAPI](class/api_users.svg)
+![クラス図：コンテンツフォルダ管理](class/manage_content_folders.svg)
+![クラス図：コンテンツ管理](class/manage_contents.svg)
