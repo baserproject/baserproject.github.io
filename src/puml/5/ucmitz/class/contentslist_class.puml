@@ -1,0 +1,166 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class Admin\ContentsController {
+  + AuthenticationComponent
+  + BcMessageComponent
+  + BcContentsComponent
+  index()
+}
+
+class BcContentsComponent {
+  setupAdmin()
+  setupFront()
+  settingForm()
+  getParentLayoutTemplate()
+  getTypes()
+  getContent()
+  getCrumbs()
+  beforeRender()
+}
+
+class BcAdminAppView {
+    render()
+}
+
+class BcAdminContentHelper {
+  getUserList()
+  getListTypes()
+  getSites()
+  getContentFolderList()
+  setup()
+  isActionAvailable()
+  _getExistsTitles()
+  _getIconUrl()
+  getJsonSettings()
+  isEditable()
+  getCurrentFolderLinkedUrl()
+  getFolderLinkedUrl()
+}
+
+class BcContentsHelper {
+  + BcBaserHelper
+  - ContentsTable
+  - PermissionsTable
+  isAllowPublish()
+  getUrlById()
+  getUrl()
+  isSiteRelated()
+  getPureUrl()
+  getCurrentRelatedSiteUrl()
+  getTree()
+  getParent()
+  getRelatedSiteContents()
+  getRelatedSiteLinks()
+  getContentFolderList()
+  getSiteRoot()
+  getSiteRootId()
+  getContentByEntityId()
+  getContentByUrl()
+  _getContent()
+  isParentId()
+  isFolder()
+}
+
+class ContentsService {
+  + ContentsTable
+}
+
+class ContentsTable {
+  getContentFolderList()
+}
+
+class Content {
+  + id
+  + name
+  + plugin
+  + type
+  + entity_id
+  + url
+  + site_id
+  + alias_id
+  + main_site_content_id
+  + parent_id
+  + lft
+  + rght
+  + level
+  + title
+  + description
+  + eyecatch
+  + author_id
+  + layout_template
+  + status
+  + publish_begin
+  + publish_end
+  + self_status
+  + self_publish_begin
+  + self_publish_end
+  + exclude_search
+  + created_date
+  + modified_date
+  + site_root
+  + deleted_date
+  + deleted
+  + exclude_menu
+  + blank_link
+  + created
+  + modified
+}
+
+class ContentsServiceInterface {
+  get()
+  getIndex()
+  getContentFolderList()
+  createAdminIndexConditionsByTree()
+  createAdminIndexConditionsByTable()
+  isAllowPublish()
+  getUrlById()
+  getUrl()
+  isSiteRelated()
+  getPureUrl()
+  getCurrentRelatedSiteUrl()
+  getTree()
+  getParent()
+  getRelatedSiteContents()
+  getRelatedSiteLinks()
+  getContentFolderList()
+  getSiteRoot()
+  getSiteRootId()
+  getContentByEntityId()
+  getContentByUrl()
+  _getContent()
+  isParentId()
+  isFolder()
+}
+
+class ContentManageServiceInterface {
+  getUserList()
+  getListTypes()
+  getSites()
+  getContentFolderList()
+}
+
+class ContentManageService {
+}
+
+Admin\ContentsController -right[#Black]-> BcAdminAppView
+Admin\ContentsController -left[#Black]-> BcContentsComponent
+Admin\ContentsController -down[#Black]-> ContentManageService
+
+BcAdminAppView -right[#Black]-> BcContentsHelper
+BcAdminAppView -down[#Black]-> BcAdminContentHelper
+
+BcContentsHelper -left[#Black]-|> BcAdminContentHelper
+BcContentsHelper -left[#Black]-> ContentsService
+
+BcAdminContentHelper -left[#Black]-> ContentManageService
+
+ContentManageService -down[#Black]-|> ContentsService
+ContentManageService -right[dotted,#Black]-|> ContentManageServiceInterface
+
+ContentsService -left[dotted,#Black]-|> ContentsServiceInterface
+ContentsService -down[#Black]-> ContentsTable
+ContentsTable -left[#Black]-> Content
+
+@enduml

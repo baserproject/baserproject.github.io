@@ -1,0 +1,99 @@
+@startuml
+hide circle
+skinparam classAttributeIconSize 0
+
+class Server {
+  run()
+}
+
+class Runner {
+  run()
+}
+
+class Application {
+  handle()
+}
+
+class ControllerFactory {
+  invoke()
+}
+
+class Admin\UsersController {
+  + AuthenticationComponent
+  ログイン()
+  リフレッシュトークン取得()
+  ユーザー情報一覧取得()
+  単一ユーザー情報取得()
+  ユーザー情報登録()
+  ユーザー情報編集()
+  ユーザー情報削除()
+}
+
+class BcApiController {
+  invokeAction()
+  render()
+}
+
+class JsonView {
+  render()
+}
+
+class UserApiService {
+}
+
+class UserApiServiceInterface {
+  トークンを取得する()
+}
+
+class UsersService {
+  + UsersTable
+}
+
+class UsersServiceInterface {
+  作成()
+  編集()
+  単一データ取得()
+  一覧データ取得()
+  初期データ取得()
+}
+
+class UsersTable {
+  ユーザーに関連するよく使う項目を削除する()
+  利用可能なユーザーを取得する()
+  ユーザーが許可されている認証プレフィックスを取得する()
+}
+
+class User {
+   + アカウント名
+   + パスワード
+   + 性
+   + 名
+   + メールアドレス
+   + ニックネーム
+   + 登録日
+   + 編集日
+   管理ユーザーかどうか判定する()
+   整形されたユーザー名を取得する()
+}
+
+Server -right[#Black]-> Runner
+
+Runner -right[#Black]-> Application
+
+Application -right[#Black]-> ControllerFactory
+
+ControllerFactory -right[#Black]-> Admin\UsersController
+
+Admin\UsersController -right[#Black]-> JsonView
+Admin\UsersController -down[#Black]-> UserApiService
+Admin\UsersController -up[#Black]-|> BcApiController
+
+UserApiService -right[dotted,#Black]-|> UserApiServiceInterface
+UserApiService -down[#Black]-|> UsersService
+
+UsersService -left[dotted,#Black]-|> UsersServiceInterface
+UsersService -down[#Black]-> UsersTable
+
+UsersTable -down[#Black]-> User
+
+@enduml
