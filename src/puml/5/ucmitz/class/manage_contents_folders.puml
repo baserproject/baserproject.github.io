@@ -1,6 +1,9 @@
 @startuml
+skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
+
+title フォルダ管理画面
 
 class BcContentsComponent {
     setupAdmin()
@@ -22,32 +25,21 @@ class Admin\ContentFoldersController {
     ※ add() は、APIを利用する
 }
 
-class BcAdminAppView {
-    render()
-}
-
 class BcAdminContentFolderHelper {
     getFolderTemplateList()
     getPageTemplateList()
     getPublishLink()
 }
 
-class ContentManageService {
-
-}
-
-class ContentFolderManageServiceInterface {
-    getFolderTemplateList()
-    getPageTemplateList()
-    getPublishLink()
-}
-
-class ContentFoldersService {
+class ContentFolderService {
     + ContentFoldersTable
 }
 
-class ContentFoldersServiceInterface {
+class ContentFolderServiceInterface {
     isOverPostSize()
+    getFolderTemplateList()
+    getPageTemplateList()
+    getPublishLink()
 }
 
 class ContentFoldersTable {
@@ -125,20 +117,13 @@ class Content {
     + modified
 }
 
-
 Admin\ContentFoldersController -left[#Black]-> BcContentsComponent
-Admin\ContentFoldersController -right[#Black]-> BcAdminAppView
-Admin\ContentFoldersController -down[#Black]-> ContentManageService
+Admin\ContentFoldersController -down[#Black]-> ContentFolderService
 
-BcAdminAppView -down[#Black]-> BcAdminContentFolderHelper
+BcAdminContentFolderHelper -left[#Black]-> ContentFolderService
 
-BcAdminContentFolderHelper -left[#Black]-> ContentManageService
-
-ContentManageService -right[dotted,#Black]-> ContentFolderManageServiceInterface
-ContentManageService -down[#Black]-|> ContentFoldersService
-
-ContentFoldersService -left[dotted,#Black]-|> ContentFoldersServiceInterface
-ContentFoldersService -down[#Black]-> ContentFoldersTable
+ContentFolderService -left[dotted,#Black]-|> ContentFolderServiceInterface
+ContentFolderService -down[#Black]-> ContentFoldersTable
 
 ContentFoldersTable -right[#Black]-> SearchIndiceTable
 ContentFoldersTable -left[#Black]-> BcContentsBehavior
@@ -149,6 +134,6 @@ BcContentsBehavior -left[#Black]-> ContentsTable
 
 ContentsTable -left[#Black]-> Content
 
-ContentFolder -[#Black]- Content
+ContentFolder <-[#Black]- Content
 
 @enduml

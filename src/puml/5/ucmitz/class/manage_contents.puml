@@ -1,6 +1,9 @@
 @startuml
+skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
+
+title コンテンツ管理画面
 
 class Admin\ContentsController {
   + AuthenticationComponent
@@ -18,10 +21,6 @@ class BcContentsComponent {
   getContent()
   getCrumbs()
   beforeRender()
-}
-
-class BcAdminAppView {
-    render()
 }
 
 class BcAdminContentHelper {
@@ -63,7 +62,7 @@ class BcContentsHelper {
   isFolder()
 }
 
-class ContentsService {
+class ContentService {
   + ContentsTable
 }
 
@@ -108,7 +107,7 @@ class Content {
   + modified
 }
 
-class ContentsServiceInterface {
+class ContentServiceInterface {
   get()
   getIndex()
   getContentFolderList()
@@ -132,35 +131,20 @@ class ContentsServiceInterface {
   _getContent()
   isParentId()
   isFolder()
-}
-
-class ContentManageServiceInterface {
   getUserList()
   getListTypes()
   getSites()
   getContentFolderList()
 }
 
-class ContentManageService {
-}
-
-Admin\ContentsController -right[#Black]-> BcAdminAppView
 Admin\ContentsController -left[#Black]-> BcContentsComponent
-Admin\ContentsController -down[#Black]-> ContentManageService
+Admin\ContentsController -down[#Black]-> ContentService
 
-BcAdminAppView -right[#Black]-> BcContentsHelper
-BcAdminAppView -down[#Black]-> BcAdminContentHelper
+BcContentsHelper -left[#Black]-> ContentService
+BcAdminContentHelper -left[#Black]-> ContentService
 
-BcContentsHelper -left[#Black]-|> BcAdminContentHelper
-BcContentsHelper -left[#Black]-> ContentsService
-
-BcAdminContentHelper -left[#Black]-> ContentManageService
-
-ContentManageService -down[#Black]-|> ContentsService
-ContentManageService -right[dotted,#Black]-|> ContentManageServiceInterface
-
-ContentsService -left[dotted,#Black]-|> ContentsServiceInterface
-ContentsService -down[#Black]-> ContentsTable
+ContentService -left[dotted,#Black]-|> ContentServiceInterface
+ContentService -down[#Black]-> ContentsTable
 ContentsTable -left[#Black]-> Content
 
 @enduml

@@ -1,0 +1,80 @@
+@startuml
+skinparam handwritten true
+hide circle
+skinparam classAttributeIconSize 0
+
+title ユーザー管理画面
+
+class Admin\UsersController {
+  + AuthenticationComponent
+  + BcMessageComponent 
+  ログイン()
+  代理ログイン()
+  代理ログイン解除()
+  ログアウト()
+  ユーザー一覧を表示()
+  ユーザー新規追加()
+  ユーザー編集()
+  ユーザー削除()
+}
+
+class BcAdminUserHelper {
+  ログインユーザー自身の更新かどうか確認()
+  更新ができるかどうか確認()
+  削除ができるかどうか確認()
+  ユーザーグループ選択用のリスト取得()
+}
+
+class UserService {
+  + UsersTable
+  + LoginStoresTable
+}
+
+class UserServiceInterface {
+  作成()
+  編集()
+  単一データ取得()
+  一覧データ取得()
+  初期データ取得()
+  更新対象データがログインユーザー自身の更新かどうか確認()
+  更新ができるかどうか確認()
+  削除できるかどうか確認()
+  ログインユーザーが自身のユーザーグループを変更しようとしているかどうか確認()
+  ログイン()
+  ログアウト()
+  認証用のセッションキーを取得()
+  再ログイン()
+  ログインキーを削除する()
+  ログイン状態の保存確認()
+  代理ログインを行う()
+  代理ログインから元のユーザーに戻る()
+  サイト全体の設定値を取得する()
+  ログイン情報をリロードする()
+}
+
+class UsersTable {
+  ユーザーに関連するよく使う項目を削除する()
+  利用可能なユーザーを取得する()
+  ユーザーが許可されている認証プレフィックスを取得する()
+}
+
+class User {
+   + アカウント名
+   + パスワード
+   + 性
+   + 名
+   + メールアドレス
+   + ニックネーム
+   + 登録日
+   + 編集日
+   管理ユーザーかどうか判定する()
+   整形されたユーザー名を取得する()
+}
+
+Admin\UsersController -down[#Black]-> UserService
+BcAdminUserHelper -left[#Black]-> UserService
+UserService -down[#Black]-> UsersTable
+UserService -left[dotted,#Black]-|> UserServiceInterface
+UsersTable -down[#Black]-> User
+
+@enduml
