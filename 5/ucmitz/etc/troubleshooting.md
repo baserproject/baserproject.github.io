@@ -77,8 +77,8 @@ Error: An Internal Error Has Occurred
 ```
 ### 解決法
 
-以下の箇所を変更します
-- データベースbasercmsにてcontentsテーブルのpluginがCoreになってるものをBaserCoreに変更
-- site_configsのbc_sampleをBcSampleに変更
-- siteのbc_sampleをBcSampleに変更
+データベースbasercmsで以下の箇所を変更します
+- contentsテーブルのCore→BaserCore(plugin)に変更
+- site_configテーブルのbc_sample→BcSample(value)に変更
+- siteテーブルのbc_sample→BcSample(theme)に変更
 ---
