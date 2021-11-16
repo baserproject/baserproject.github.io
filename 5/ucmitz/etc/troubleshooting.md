@@ -66,4 +66,19 @@ Error: Fatal Error (1): Trait 'SoftDelete\Model\Table\SoftDeleteTrait' not found
 docker exec -it bc5-php /bin/bash
 composer update --prefer-source
 ```
+
+---
+## localhostの初期ページにて内部エラーが起こる場合
+
+### トラブル内容
+
+```
+Error: An Internal Error Has Occurred
+```
+### 解決法
+
+データベースbasercmsで以下の箇所を変更します
+- contentsテーブルのCore→BaserCore(plugin)に変更
+- site_configテーブルのbc_sample→BcSample(value)に変更
+- siteテーブルのbc_sample→BcSample(theme)に変更
 ---
