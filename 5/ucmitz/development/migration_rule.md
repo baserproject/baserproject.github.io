@@ -161,11 +161,8 @@ class BcBaserHelper extends Cake\View\Helper
 <br>
 なお、 ucmitz 進行管理に、メモを反映したい場合には、 Note アノテーションが利用できます。
 
-<br>
-
-マーキングの例
-
 ```php
+// 例
 use BaserCore\Annotation\Note;
 
 class BcBaserHelper extends Cake\View\Helper 
