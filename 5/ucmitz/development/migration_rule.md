@@ -157,6 +157,7 @@ class BcBaserHelper extends Cake\View\Helper
      */
 ```
 
+  
 なお、 ucmitz 進行管理に、メモを反映したい場合には、 `Note` アノテーションが利用できます。
 
 マーキングの例
@@ -172,7 +173,7 @@ class BcBaserHelper extends Cake\View\Helper
      */
 ```
 
-
+　　　
 ## ユニットテストについて
 
 移植のタイミングで存在しないテストは必ず追加します。また、新しいメソッドについても必ずテストを追加してください。
