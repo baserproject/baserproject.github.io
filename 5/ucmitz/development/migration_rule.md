@@ -131,7 +131,6 @@ use BaserCore\Annotation\UnitTest;
 use BaserCore\Annotation\NoTodo;
 use BaserCore\Annotation\Checked;
 ```
-
 　
 
 マーキングの例
@@ -157,6 +156,22 @@ class BcBaserHelper extends Cake\View\Helper
      * @noTodo
      */
 ```
+
+なお、 ucmitz 進行管理に、メモを反映したい場合には、 `Note` アノテーションが利用できます。
+
+マーキングの例
+```php
+use BaserCore\Annotation\Note;
+
+class BcBaserHelper extends Cake\View\Helper 
+{
+    /**
+     * Contents Before Move
+     *
+     * @note(value="固定ページを実装するまではTODO消化できない")
+     */
+```
+
 
 ## ユニットテストについて
 
