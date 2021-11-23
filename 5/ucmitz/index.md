@@ -13,8 +13,8 @@
 - [開発方針](https://docs.google.com/document/d/1QAmScc65CwMyn8QuwWKE9q_8HnSKcW9oefI9RrHoUYY/edit)
 - [ロードマップ](https://docs.google.com/spreadsheets/d/1TZ71-O_9KiQM9xAB_a_jnSFVrH2dsyKowMLkyGLcI9g/edit#gid=2131306554)
 - [システム要件](https://baserproject.github.io/5/ucmitz/basic/system)
-- [データベース情報](https://baserproject.github.io/5/ucmitz/basic/db)
-
+- [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
+- [設計書](https://baserproject.github.io/5/ucmitz/basic/specifications)
 　
 
 ## 開発の準備
@@ -30,11 +30,6 @@
 　
 ## 開発にとりかかる
 
-### アーキテクチャー設計方針
-
-まず、全体的な構造における設計方針について確認しておきましょう。
-- [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
-
 　
 ### 開発の手順と移行上のルール
 
@@ -44,7 +39,6 @@
 - [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule)
 - [移行上の流れ](https://baserproject.github.io/5/ucmitz/development/migration_flow)
 - [コーディング規約](https://baserproject.github.io/5/ucmitz/development/coding_rule)
-- [設計書](https://baserproject.github.io/5/ucmitz/specifications)
 
 　　
 ### 開発上の注意点

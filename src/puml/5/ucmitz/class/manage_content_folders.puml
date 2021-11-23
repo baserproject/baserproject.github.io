@@ -3,7 +3,7 @@ skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
 
-title フォルダ管理画面
+title コンテンツフォルダ管理
 
 class BcContentsComponent {
     setupAdmin()

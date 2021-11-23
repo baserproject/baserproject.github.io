@@ -3,7 +3,7 @@ skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
 
-title コンテンツ管理画面
+title コンテンツ管理
 
 class Admin\ContentsController {
   + AuthenticationComponent

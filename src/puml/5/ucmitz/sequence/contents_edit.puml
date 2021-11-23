@@ -2,7 +2,7 @@
 skinparam handwritten true
 skinparam backgroundColor white
 
-title シーケンス：コンテンツフォルダ編集
+title コンテンツフォルダ編集
 
 participant "ContentFolder" as Folder
 participant "BcContentsBehavior" as Behavior
@@ -38,6 +38,10 @@ note over Behavior
 endnote
 
 Folder <- Behavior
+
+note over Folder
+・コンテンツフォルダーを保存
+endnote
 
 Folder -> Behavior : afterSave
 note over Behavior
