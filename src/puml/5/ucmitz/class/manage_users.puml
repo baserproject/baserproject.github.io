@@ -8,21 +8,21 @@ title ユーザー管理
 class Admin\UsersController {
   + AuthenticationComponent
   + BcMessageComponent 
-  ログイン()
-  代理ログイン()
-  代理ログイン解除()
-  ログアウト()
-  ユーザー一覧を表示()
-  ユーザー新規追加()
-  ユーザー編集()
-  ユーザー削除()
+  + ログイン：login()
+  + 代理ログイン：login_agent()
+  + 代理ログイン解除：back_agent()
+  + ログアウト：logout()
+  + ユーザー一覧を表示：index()
+  + ユーザー新規追加：add()
+  + ユーザー編集：edit()
+  + ユーザー削除：delete()
 }
 
 class BcAdminUserHelper {
-  ログインユーザー自身の更新かどうか確認()
-  更新ができるかどうか確認()
-  削除ができるかどうか確認()
-  ユーザーグループ選択用のリスト取得()
+  + ログインユーザー自身の更新かどうか確認：isSelfUpdate()
+  + 更新ができるかどうか確認：isEditable()
+  + 削除ができるかどうか確認：isDeletable()
+  + ユーザーグループ選択用のリスト取得：getUserGroupList()
 }
 
 class UserService {
@@ -31,44 +31,41 @@ class UserService {
 }
 
 class UserServiceInterface {
-  作成()
-  編集()
-  単一データ取得()
-  一覧データ取得()
-  初期データ取得()
-  更新対象データがログインユーザー自身の更新かどうか確認()
-  更新ができるかどうか確認()
-  削除できるかどうか確認()
-  ログインユーザーが自身のユーザーグループを変更しようとしているかどうか確認()
-  ログイン()
-  ログアウト()
-  認証用のセッションキーを取得()
-  再ログイン()
-  ログインキーを削除する()
-  ログイン状態の保存確認()
-  代理ログインを行う()
-  代理ログインから元のユーザーに戻る()
-  サイト全体の設定値を取得する()
-  ログイン情報をリロードする()
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + ログイン：login()
+  + ログアウト：logout()
+  + 再ログイン：reLogin()
+  + 代理ログインを行う：loginToAgent()
+  + 代理ログインから元のユーザーに戻る：returnLoginUserFromAgent()
+  + 認証用のセッションキーを取得：getAuthSessionKey()
+  + ログインキーをセット：setCookieAutoLoginKey()
+  + ログインキーを削除する：removeLoginKey()
+  + ログイン状態の保存確認：checkAutoLogin()
+  + ログイン情報をリロードする：reload()
 }
 
 class UsersTable {
-  ユーザーに関連するよく使う項目を削除する()
-  利用可能なユーザーを取得する()
-  ユーザーが許可されている認証プレフィックスを取得する()
+  + 利用可能なユーザーを取得する：findAvailable()
+  + ユーザーが許可されている認証プレフィックスを取得する：getAuthPrefix()
 }
 
 class User {
-   + アカウント名
-   + パスワード
-   + 性
-   + 名
-   + メールアドレス
-   + ニックネーム
-   + 登録日
-   + 編集日
-   管理ユーザーかどうか判定する()
-   整形されたユーザー名を取得する()
+   + アカウント名：name
+   + パスワード：password
+   + 性：real_name_1
+   + 名：real_name_2
+   + メールアドレス：email
+   + ニックネーム：nickname
+   + 登録日：created
+   + 編集日：modified
+   + 管理ユーザーかどうか判定する：isAdmin()
+   + 整形されたユーザー名を取得する：getDisplayName()
 }
 
 Admin\UsersController -down[#Black]-> UserService

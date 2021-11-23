@@ -7,13 +7,13 @@ title ユーザーAPI
 
 class Admin\UsersController {
   + AuthenticationComponent
-  ログイン()
-  リフレッシュトークン取得()
-  ユーザー情報一覧取得()
-  単一ユーザー情報取得()
-  ユーザー情報登録()
-  ユーザー情報編集()
-  ユーザー情報削除()
+  + ログイン：login()
+  + リフレッシュトークン取得：refresh_token()
+  + ユーザー情報一覧取得：index()
+  + 単一ユーザー情報取得：view()
+  + ユーザー情報登録：add()
+  + ユーザー情報編集：edit()
+  + ユーザー情報削除：delete()
 }
 
 class UserService {
@@ -21,31 +21,25 @@ class UserService {
 }
 
 class UserServiceInterface {
-  作成()
-  編集()
-  単一データ取得()
-  一覧データ取得()
-  初期データ取得()
-  トークンを取得する()
+  + 作成：create()
+  + 編集：update()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 初期データ取得：getNew()
 }
 
 class UsersTable {
-  ユーザーに関連するよく使う項目を削除する()
-  利用可能なユーザーを取得する()
-  ユーザーが許可されている認証プレフィックスを取得する()
 }
 
 class User {
-   + アカウント名
-   + パスワード
-   + 性
-   + 名
-   + メールアドレス
-   + ニックネーム
-   + 登録日
-   + 編集日
-   管理ユーザーかどうか判定する()
-   整形されたユーザー名を取得する()
+   + アカウント名：name
+   + パスワード：password
+   + 性：real_name_1
+   + 名：real_name_2
+   + メールアドレス：email
+   + ニックネーム：nickname
+   + 登録日：created
+   + 編集日：modified
 }
 
 Admin\UsersController -down[#Black]-> UserService
