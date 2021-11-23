@@ -13,53 +13,53 @@ class Admin\ContentsController {
 }
 
 class BcContentsComponent {
-  setupAdmin()
-  setupFront()
-  settingForm()
-  getParentLayoutTemplate()
-  getTypes()
-  getContent()
-  getCrumbs()
-  beforeRender()
+  + setupAdmin()
+  + setupFront()
+  + settingForm()
+  + getParentLayoutTemplate()
+  + getTypes()
+  + getContent()
+  + getCrumbs()
+  + beforeRender()
 }
 
 class BcAdminContentHelper {
-  getUserList()
-  getListTypes()
-  getSites()
-  getContentFolderList()
-  setup()
-  isActionAvailable()
-  _getExistsTitles()
-  _getIconUrl()
-  getJsonSettings()
-  isEditable()
-  getCurrentFolderLinkedUrl()
-  getFolderLinkedUrl()
+  + getUserList()
+  + getListTypes()
+  + getSites()
+  + getContentFolderList()
+  + setup()
+  + isActionAvailable()
+  - _getExistsTitles()
+  - _getIconUrl()
+  + getJsonSettings()
+  + isEditable()
+  + getCurrentFolderLinkedUrl()
+  + getFolderLinkedUrl()
 }
 
 class BcContentsHelper {
   + BcBaserHelper
   - ContentsTable
   - PermissionsTable
-  isAllowPublish()
-  getUrlById()
-  getUrl()
-  isSiteRelated()
-  getPureUrl()
-  getCurrentRelatedSiteUrl()
-  getTree()
-  getParent()
-  getRelatedSiteContents()
-  getRelatedSiteLinks()
-  getContentFolderList()
-  getSiteRoot()
-  getSiteRootId()
-  getContentByEntityId()
-  getContentByUrl()
-  _getContent()
-  isParentId()
-  isFolder()
+  + isAllowPublish()
+  + getUrlById()
+  + getUrl()
+  + isSiteRelated()
+  + getPureUrl()
+  + getCurrentRelatedSiteUrl()
+  + getTree()
+  + getParent()
+  + getRelatedSiteContents()
+  + getRelatedSiteLinks()
+  + getContentFolderList()
+  + getSiteRoot()
+  + getSiteRootId()
+  + getContentByEntityId()
+  + getContentByUrl()
+  - _getContent()
+  + isParentId()
+  + isFolder()
 }
 
 class ContentService {
@@ -67,74 +67,74 @@ class ContentService {
 }
 
 class ContentsTable {
-  getContentFolderList()
+  + getContentFolderList()
 }
 
 class Content {
-  + id
-  + name
-  + plugin
-  + type
-  + entity_id
-  + url
-  + site_id
-  + alias_id
-  + main_site_content_id
-  + parent_id
-  + lft
-  + rght
-  + level
-  + title
-  + description
-  + eyecatch
-  + author_id
-  + layout_template
-  + status
-  + publish_begin
-  + publish_end
-  + self_status
-  + self_publish_begin
-  + self_publish_end
-  + exclude_search
-  + created_date
-  + modified_date
-  + site_root
-  + deleted_date
-  + deleted
-  + exclude_menu
-  + blank_link
-  + created
-  + modified
+  + ID：id
+  + コンテンツ名：name
+  + プラグイン：plugin
+  + コンテンツタイプ：type
+  + 実体ID：entity_id
+  + URL：url
+  + サイトID：site_id
+  + エイリアスID：alias_id
+  + メインサイトコンテンツID：main_site_content_id
+	+ サイトルートに配置されているかどうか：site_root
+  + 親ID：parent_id
+  + 左位置：lft
+  + 右位置：rght
+  + 深さ：level
+  + タイトル：title
+  + 説明文：description
+  + アイキャッチ：eyecatch
+  + 作成者ID：author_id
+  + レイアウトテンプレート：layout_template
+  + 公開状態：status
+  + 公開開始日：publish_begin
+  + 公開終了日：publish_end
+  + 自公開状態：self_status
+  + 自公開開始日：self_publish_begin
+  + 自公開終了日：self_publish_end
+  + 作成日：created_date
+  + 編集日：modified_date
+  + 検索結果より除外するかどうか：exclude_search
+  + メニューから除外するかどうか：exclude_menu
+  + メニューのリンクを別窓で開くかどうか：blank_link
+  + 削除日：deleted_date
+  + 削除状態：deleted
+  + 作成日（システム）：created
+  + 編集日（システム）modified
 }
 
 class ContentServiceInterface {
-  get()
-  getIndex()
-  getContentFolderList()
-  createAdminIndexConditionsByTree()
-  createAdminIndexConditionsByTable()
-  isAllowPublish()
-  getUrlById()
-  getUrl()
-  isSiteRelated()
-  getPureUrl()
-  getCurrentRelatedSiteUrl()
-  getTree()
-  getParent()
-  getRelatedSiteContents()
-  getRelatedSiteLinks()
-  getContentFolderList()
-  getSiteRoot()
-  getSiteRootId()
-  getContentByEntityId()
-  getContentByUrl()
-  _getContent()
-  isParentId()
-  isFolder()
-  getUserList()
-  getListTypes()
-  getSites()
-  getContentFolderList()
+  + get()
+  + getIndex()
+  + getContentFolderList()
+  + createAdminIndexConditionsByTree()
+  + createAdminIndexConditionsByTable()
+  + isAllowPublish()
+  + getUrlById()
+  + getUrl()
+  + isSiteRelated()
+  + getPureUrl()
+  + getCurrentRelatedSiteUrl()
+  + getTree()
+  + getParent()
+  + getRelatedSiteContents()
+  + getRelatedSiteLinks()
+  + getContentFolderList()
+  + getSiteRoot()
+  + getSiteRootId()
+  + getContentByEntityId()
+  + getContentByUrl()
+  + _getContent()
+  + isParentId()
+  + isFolder()
+  + getUserList()
+  + getListTypes()
+  + getSites()
+  + getContentFolderList()
 }
 
 Admin\ContentsController -left[#Black]-> BcContentsComponent

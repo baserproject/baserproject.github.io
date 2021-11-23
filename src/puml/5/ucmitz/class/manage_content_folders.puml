@@ -6,29 +6,29 @@ skinparam classAttributeIconSize 0
 title コンテンツフォルダ管理
 
 class BcContentsComponent {
-    setupAdmin()
-    setupFront()
-    settingForm()
-    getParentLayoutTemplate()
-    getTypes()
-    getContent()
-    getCrumbs()
-    beforeRender()
+    + setupAdmin()
+    + setupFront()
+    + settingForm()
+    + getParentLayoutTemplate()
+    + getTypes()
+    + getContent()
+    + getCrumbs()
+    + beforeRender()
 }
 
 class Admin\ContentFoldersController {
     + AuthenticationComponent
     + BcMessageComponent
     + BcContentsComponent
-    edit()
-    delete()
+    + edit()
+    + delete()
     ※ add() は、APIを利用する
 }
 
 class BcAdminContentFolderHelper {
-    getFolderTemplateList()
-    getPageTemplateList()
-    getPublishLink()
+    + getFolderTemplateList()
+    + getPageTemplateList()
+    + getPublishLink()
 }
 
 class ContentFolderService {
@@ -36,22 +36,22 @@ class ContentFolderService {
 }
 
 class ContentFolderServiceInterface {
-    isOverPostSize()
-    getFolderTemplateList()
-    getPageTemplateList()
-    getPublishLink()
+    + isOverPostSize()
+    + getFolderTemplateList()
+    + getPageTemplateList()
+    + getPublishLink()
 }
 
 class ContentFoldersTable {
-    getParentTemplate()
-    getFolderTemplateList()
-    saveSiteRoot()
-    movePageTemplates()
-    setBeforeRecord()
+    + getParentTemplate()
+    + getFolderTemplateList()
+    + saveSiteRoot()
+    + movePageTemplates()
+    + setBeforeRecord()
 }
 
 class SearchIndiceTable {
-    reconstruct()
+    + reconstruct()
 }
 
 class ContentFolder {
@@ -63,58 +63,25 @@ class ContentFolder {
 }
 
 class BcContentsBehavior {
-    beforeValidate()
-    beforeSave()
-    afterSave()
-    beforeDelete()
-    afterDelete()
-    findPublished()
+    + beforeValidate()
+    + beforeSave()
+    + afterSave()
+    + beforeDelete()
+    + afterDelete()
+    + findPublished()
 }
 
 class ContentsTable {
     + updatingRelated
-    updateChildrenUrl()
-    getPath()
-    createContent()
-    softDelete()
-    removeFromTree()
+    + updateChildrenUrl()
+    + getPath()
+    + createContent()
+    + softDelete()
+    + removeFromTree()
 }
 
 class Content {
-    + id
-    + name
-    + plugin
-    + type
-    + entity_id
-    + url
-    + site_id
-    + alias_id
-    + main_site_content_id
-    + parent_id
-    + lft
-    + rght
-    + level
-    + title
-    + description
-    + eyecatch
-    + author_id
-    + layout_template
-    + status
-    + publish_begin
-    + publish_end
-    + self_status
-    + self_publish_begin
-    + self_publish_end
-    + exclude_search
-    + created_date
-    + modified_date
-    + site_root
-    + deleted_date
-    + deleted
-    + exclude_menu
-    + blank_link
-    + created
-    + modified
+	entity_id
 }
 
 Admin\ContentFoldersController -left[#Black]-> BcContentsComponent

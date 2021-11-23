@@ -6,37 +6,43 @@ skinparam classAttributeIconSize 0
 title 管理画面基本クラス構成
 
 class Server {
-  run()
+  + run()
 }
 
 class Runner {
-  run()
+  + run()
 }
 
 class Application {
-  handle()
+  + handle()
 }
 
 class ControllerFactory {
-  invoke()
+  + invoke()
 }
 
 class Admin\XxxController {
-  + AuthenticationComponent
   + BcMessageComponent 
-  一覧を表示()
-  新規追加()
-  編集()
-  削除()
+  + 一覧を表示：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
 }
 
 class BcAdminAppController {
-  invokeAction()
-  render()
+  + AuthenticationComponent
+  + invokeAction()
+  + render()
 }
 
 class BcAdminAppView {
-  render()
+  + render()
+}
+
+class AppController {
+  + BcMessageComponent 
+  + SecurityComponent
+  + PaginatorComponent
 }
 
 class BcAdminXxxHelper {
@@ -47,11 +53,11 @@ class XxxService {
 }
 
 class XxxServiceInterface {
-  作成()
-  編集()
-  単一データ取得()
-  一覧データ取得()
-  初期データ取得()
+  + 作成：create()
+  + 編集：update()
+  + 単一データ取得：get()
+  + 一覧データ取得：index()
+  + 初期データ取得：getNew()
 }
 
 class XxxTable {
@@ -59,6 +65,10 @@ class XxxTable {
 
 class Xxx {
 }
+
+note left
+エンティティ
+endnote
 
 Server -right[#Black]-> Runner
 
@@ -71,6 +81,8 @@ ControllerFactory -right[#Black]-> Admin\XxxController
 Admin\XxxController -right[#Black]-> BcAdminAppView
 Admin\XxxController -down[#Black]-> XxxService
 Admin\XxxController -up[#Black]-|> BcAdminAppController
+
+BcAdminAppController -up[#Black]-|> AppController
 
 BcAdminAppView -down[#Black]-> BcAdminXxxHelper
 

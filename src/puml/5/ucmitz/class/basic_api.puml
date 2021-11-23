@@ -6,37 +6,37 @@ skinparam classAttributeIconSize 0
 title API基本クラス構成
 
 class Server {
-  run()
+  + run()
 }
 
 class Runner {
-  run()
+  + run()
 }
 
 class Application {
-  handle()
+  + handle()
 }
 
 class ControllerFactory {
-  invoke()
+  + invoke()
 }
 
 class Admin\XxxsController {
-  + AuthenticationComponent
-  一覧データ取得()
-  単一データ取得()
-  新規追加()
-  編集()
-  削除()
+  + 一覧データ取得：()
+  + 単一データ取得()
+  + 新規追加()
+  + 編集()
+  + 削除()
 }
 
 class BcApiController {
-  invokeAction()
-  render()
+  + AuthenticationComponent
+  + invokeAction()
+  + render()
 }
 
 class JsonView {
-  render()
+  + render()
 }
 
 class XxxService {
@@ -44,11 +44,11 @@ class XxxService {
 }
 
 class XxxServiceInterface {
-  作成()
-  編集()
-  単一データ取得()
-  一覧データ取得()
-  初期データ取得()
+  + 作成：create()
+  + 編集：update()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 初期データ取得：getNew()
 }
 
 class XxxTable {
@@ -56,6 +56,10 @@ class XxxTable {
 
 class Xxx {
 }
+
+note left
+エンティティ
+endnote
 
 Server -right[#Black]-> Runner
 
