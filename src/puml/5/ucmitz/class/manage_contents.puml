@@ -9,18 +9,25 @@ class Admin\ContentsController {
   + AuthenticationComponent
   + BcMessageComponent
   + BcContentsComponent
-  index()
+  + コンテンツ一覧表示 : index()
+  + ゴミ箱一覧表示 : trash_index()
+  + ゴミ箱をもとに戻す : trash_return()
+  + コンテンツ編集 : edit()
+  + エイリアス編集 : edit_alias()
+  + コンテンツ削除 : delete()
+  + 一括処理(公開・非公開・削除) : batch()
+  + ゴミ箱を空にする : trash_empty()
 }
 
-class BcContentsComponent {
+class BcAdminContentsComponent {
   + setupAdmin()
-  + setupFront()
   + settingForm()
-  + getParentLayoutTemplate()
-  + getTypes()
-  + getContent()
-  + getCrumbs()
   + beforeRender()
+}
+
+class BcFrontContentsComponent {
+  + setupFront()
+  + getCrumbs()
 }
 
 class BcAdminContentHelper {
@@ -67,7 +74,18 @@ class ContentService {
 }
 
 class ContentsTable {
-  + getContentFolderList()
+  + initialize()
+  + implementedEvents()
+  + validationDefault()
+  + duplicateRelatedSiteContent()
+  + beforeMarshal()
+  + afterMarshal()
+  + afterValidate()
+  + getTrash()
+  + hardDel()
+  + getUniqueName()
+  + beforeSave()
+  + afterSave()
 }
 
 class Content {
@@ -109,35 +127,42 @@ class Content {
 
 class ContentServiceInterface {
   + get()
+  + getTrash()
+  + getChildren()
+  + getEmptyIndex()
+  + getTreeIndex()
   + getIndex()
+  + getTableConditions()
+  + getTableIndex()
+  + getTrashIndex()
   + getContentFolderList()
-  + createAdminIndexConditionsByTree()
-  + createAdminIndexConditionsByTable()
-  + isAllowPublish()
+  + convertTreeList()
+  + alias()
+  + delete()
+  + hardDelete()
+  + hardDeleteWithAssoc()
+  + deleteAll()
+  + hardDeleteAll()
+  + restore()
+  + restoreAll()
+  + getContentsInfo()
+  + deleteRecursive()
+  + getParentLayoutTemplate()
   + getUrlById()
   + getUrl()
-  + isSiteRelated()
-  + getPureUrl()
-  + getCurrentRelatedSiteUrl()
-  + getTree()
-  + getParent()
-  + getRelatedSiteContents()
-  + getRelatedSiteLinks()
-  + getContentFolderList()
-  + getSiteRoot()
-  + getSiteRootId()
-  + getContentByEntityId()
-  + getContentByUrl()
-  + _getContent()
-  + isParentId()
-  + isFolder()
-  + getUserList()
-  + getListTypes()
-  + getSites()
-  + getContentFolderList()
+  + update()
+  + publish()
+  + unpublish()
+  + exists()
+  + move()
+  + isMovable()
+  + isPublishById()
+  + isAllowPublish()
+  + existsContentByUrl()
 }
 
-Admin\ContentsController -left[#Black]-> BcContentsComponent
+Admin\ContentsController -left[#Black]-> BcAdminContentsComponent
+Admin\ContentsController -right[#Black]-> BcFrontContentsComponent
 Admin\ContentsController -down[#Black]-> ContentService
 
 BcContentsHelper -left[#Black]-> ContentService

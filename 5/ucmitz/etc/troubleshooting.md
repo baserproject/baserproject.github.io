@@ -81,4 +81,5 @@ Error: An Internal Error Has Occurred
 - contentsテーブルのCore→BaserCore(plugin)に変更
 - site_configテーブルのbc_sample→BcSample(value)に変更
 - siteテーブルのbc_sample→BcSample(theme)に変更
+
 ---
