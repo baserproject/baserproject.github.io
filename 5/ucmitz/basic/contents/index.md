@@ -13,6 +13,7 @@
 ## クラス図
 
 ![クラス図：コンテンツ管理](../../class/manage_contents.svg)
+![クラス図：APIコンテンツ管理](../../class/api_contents.svg)
 ![クラス図：コンテンツフォルダ管理](../../class/manage_content_folders.svg)
 
 　

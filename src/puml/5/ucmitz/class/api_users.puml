@@ -5,7 +5,7 @@ skinparam classAttributeIconSize 0
 
 title ユーザーAPI
 
-class Admin\UsersController {
+class Api\UsersController {
   + AuthenticationComponent
   + ログイン：login()
   + リフレッシュトークン取得：refresh_token()
@@ -42,8 +42,8 @@ class User {
    + 編集日：modified
 }
 
-Admin\UsersController -down[#Black]-> UserService
-Admin\UsersController -up[#Black]-|> BcApiController
+Api\UsersController -down[#Black]-> UserService
+Adpi\UsersController -up[#Black]-|> BcApiController
 UserService -left[dotted,#Black]-|> UserServiceInterface
 UserService -down[#Black]-> UsersTable
 UsersTable -down[#Black]-> User
