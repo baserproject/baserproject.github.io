@@ -1,0 +1,30 @@
+@startuml
+
+start
+:initialize;
+split
+    :getExistsCheckDirs;
+    :getSaveDir;
+    detach
+split again
+    :beforeMarshal;
+    split
+        :setUpRquestData;
+        :moveFileSessionToTmp;
+        detach
+    split again
+        :beforeSave;
+        :deleteExistingFiles;
+        if (ファイルが同じか違うか?) then (同じ)
+            :何もしない;
+        else (違う)
+            :delFiles;
+            :delFile;
+            :過去の画像を削除;
+        endif
+    :deleteFiles;
+    :deleteFileWhileChecking;
+    :saveFiles;
+stop
+
+@enduml
