@@ -16,15 +16,42 @@ split again
         :beforeSave;
         :deleteExistingFiles;
         if (ファイルが同じか違うか?) then (同じ)
-            :何もしない;
+            :何もしない|
         else (違う)
             :delFiles;
             :delFile;
-            :過去の画像を削除;
+            :過去の画像を削除|
         endif
     :deleteFiles;
     :deleteFileWhileChecking;
     :saveFiles;
-stop
+        if (ファイルが同じか違うか?) then (同じ)
+            :saveFileWhileChecking;
+            :getUniqueFileName;
+            :保存しない|
+            stop
+        else (違う)
+            while (saveFileWhileChecking)
+                :saveFile;
+                :rotateImage;
+                :copyImages;
+                :getImageSize;
+                :resizeImage;
+            end while
+                :saveFile;
+                :getSaveFileName;
+                :getFileName;
+                :getFieldBasename;
+                stop
+        endif
+    end split
+split again
+    :保存完了後|
+    :renameToBasenameFields;
+    :renameToBasenameField;
+    :getFieldBasename;
+    :getFileName;
+    stop
+end split
 
 @enduml
