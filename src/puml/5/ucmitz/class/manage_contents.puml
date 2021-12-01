@@ -189,6 +189,20 @@ class ContentServiceInterface {
   + existsContentByUrl()
 }
 
+class BcContentsBehavior {
+  + initialize()
+}
+
+class TreeBehavior {
+}
+
+class BcUploadBehavior {
+  + initialize()
+}
+
+class softDeleteTrait {
+}
+
 Admin\ContentsController -left[#Black]-> BcAdminContentsComponent
 Admin\ContentsController -right[#Black]-> BcFrontContentsComponent
 Admin\ContentsController -down[#Black]-> ContentService
@@ -199,6 +213,11 @@ BcAdminContentHelper -left[#Black]-> ContentService
 ContentService -left[dotted,#Black]-|> ContentServiceInterface
 ContentService -down[#Black]-> ContentsTable
 ContentsTable -left[#Black]-> Content
+
+ContentsTable -down[#Black]-> BcContentsBehavior
+ContentsTable -down[#Black]-> TreeBehavior
+ContentsTable -down[#Black]-> BcUploadBehavior
+ContentsTable -down[#Black]-> softDeleteTrait
 
 @enduml
 
