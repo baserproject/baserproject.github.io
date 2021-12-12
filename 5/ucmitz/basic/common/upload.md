@@ -2,5 +2,11 @@
 
 ## アクティビティ図(BcUploadBehavior)
 
-![アクティビティ図：BcUploadBehavior](../../activity/contents/BcUploadBehavior.svg)
+### 初期設定
+
+![初期設定：BcUploadBehavior](../../activity/contents/bcupload/init.svg)
+
+### 下書き全体図
+
+![アクティビティ図：BcUploadBehavior](../../activity/contents/bcupload/BcUploadBehavior.svg)
 

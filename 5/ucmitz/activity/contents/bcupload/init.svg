@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="304px" preserveAspectRatio="none" style="width:528px;height:304px;background:#FFFFFF;" version="1.1" viewBox="0 0 528 304" width="528px" zoomAndPan="magnify"><defs><filter height="300%" id="f1nzw2cyhih3b9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="80.5" cy="20" fill="#000000" filter="url(#f1nzw2cyhih3b9)" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><path d="M135,54.418 L135,62.9844 L115,66.9844 L135,70.9844 L135,79.5508 A0,0 0 0 0 135,79.5508 L195,79.5508 A0,0 0 0 0 195,79.5508 L195,64.418 L185,54.418 L135,54.418 A0,0 0 0 0 135,54.418 " fill="#FBFB77" filter="url(#f1nzw2cyhih3b9)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M185,54.418 L185,64.418 L195,64.418 L185,54.418 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="141" y="71.4849">初期化</text><rect fill="#FEFECE" filter="url(#f1nzw2cyhih3b9)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="69" x="46" y="50"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="56" y="71.1387">initialize</text><path d="M147,108.3867 L147,116.9531 L127,120.9531 L147,124.9531 L147,133.5195 A0,0 0 0 0 147,133.5195 L349,133.5195 A0,0 0 0 0 349,133.5195 L349,118.3867 L339,108.3867 L147,108.3867 A0,0 0 0 0 147,108.3867 " fill="#FBFB77" filter="url(#f1nzw2cyhih3b9)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M339,108.3867 L339,118.3867 L349,118.3867 L339,108.3867 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181" x="153" y="125.4536">configの初期設定を変換し取得</text><rect fill="#FEFECE" filter="url(#f1nzw2cyhih3b9)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="93" x="34" y="103.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73" x="44" y="125.1074">getSettings</text><path d="M144.5,162.3555 L144.5,170.9219 L124.5,174.9219 L144.5,178.9219 L144.5,187.4883 A0,0 0 0 0 144.5,187.4883 L360.5,187.4883 A0,0 0 0 0 360.5,187.4883 L360.5,172.3555 L350.5,162.3555 L144.5,162.3555 A0,0 0 0 0 144.5,162.3555 " fill="#FBFB77" filter="url(#f1nzw2cyhih3b9)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M350.5,162.3555 L350.5,172.3555 L360.5,172.3555 L350.5,162.3555 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="195" x="150.5" y="179.4224">保存先のフォルダを設定し、取得</text><rect fill="#FEFECE" filter="url(#f1nzw2cyhih3b9)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="88" x="36.5" y="157.9375"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="46.5" y="179.0762">getSaveDir</text><path d="M170,216.3242 L170,224.8906 L150,228.8906 L170,232.8906 L170,241.457 A0,0 0 0 0 170,241.457 L516,241.457 A0,0 0 0 0 516,241.457 L516,226.3242 L506,216.3242 L170,216.3242 A0,0 0 0 0 170,216.3242 " fill="#FBFB77" filter="url(#f1nzw2cyhih3b9)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M506,216.3242 L506,226.3242 L516,226.3242 L506,216.3242 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="325" x="176" y="233.3911">ファイルの重複確認を行うディレクトリのリストを取得</text><rect fill="#FEFECE" filter="url(#f1nzw2cyhih3b9)" height="33.9688" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="139" x="11" y="211.9063"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="119" x="21" y="233.0449">getExistsCheckDirs</text><ellipse cx="80.5" cy="276.875" fill="#FFFFFF" filter="url(#f1nzw2cyhih3b9)" rx="11" ry="11" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="80.5" cy="276.875" fill="#000000" rx="6" ry="6" style="stroke:#7F7F7F;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="80.5" x2="80.5" y1="30" y2="50"/><polygon fill="#A80036" points="76.5,40,80.5,50,84.5,40,80.5,44" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="80.5" x2="80.5" y1="83.9688" y2="103.9688"/><polygon fill="#A80036" points="76.5,93.9688,80.5,103.9688,84.5,93.9688,80.5,97.9688" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="80.5" x2="80.5" y1="137.9375" y2="157.9375"/><polygon fill="#A80036" points="76.5,147.9375,80.5,157.9375,84.5,147.9375,80.5,151.9375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="80.5" x2="80.5" y1="191.9063" y2="211.9063"/><polygon fill="#A80036" points="76.5,201.9063,80.5,211.9063,84.5,201.9063,80.5,205.9063" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="80.5" x2="80.5" y1="245.875" y2="265.875"/><polygon fill="#A80036" points="76.5,255.875,80.5,265.875,84.5,255.875,80.5,259.875" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[efc24e4f0b116b9dd84ec0a3c4abdcea]
+@startuml
+
+start
+:initialize;
+note right
+    初期化
+end note
+:getSettings;
+note right
+    configの初期設定を変換し取得
+end note
+:getSaveDir;
+note right
+    保存先のフォルダを設定し、取得
+end note
+:getExistsCheckDirs;
+note right
+    ファイルの重複確認を行うディレクトリのリストを取得
+end note
+stop
+
+@enduml
+
+PlantUML version 1.2021.14(Sat Nov 13 00:46:50 CST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
