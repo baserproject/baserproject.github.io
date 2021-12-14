@@ -1,0 +1,38 @@
+@startuml
+
+start
+:initialize;
+note right
+    初期化
+end note
+:beforeMarshal;
+note right
+    arrayをstringとして変換し、保存する
+    ====
+    アップロードのデータをsetUploadedFileに$dataをセットアップする
+end note
+:setupRequestData;
+note right
+    UploadedFileを処理しやすいようにセットアップする
+end note
+if (セッションに一時ファイルが保存されている場合) then (yes)
+    :moveFileSessionToTmp;
+    note right
+    セッションに保存されたファイルデータをファイルとして保存する
+    end note
+endif
+:setUploadedFile;
+:beforeSave;
+:deleteExistingFiles;
+note right
+    既に存在するデータのファイルを削除する
+end note
+:cleanupFiles;
+note right
+    画像ファイル群を削除する
+end note
+:delFile;
+note right
+    ファイルを削除する
+end note
+@enduml

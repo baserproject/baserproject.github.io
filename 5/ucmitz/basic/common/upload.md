@@ -6,6 +6,8 @@
 
 ![初期設定：BcUploadBehavior](../../activity/contents/bcupload/init.svg)
 
+![通常アップロード時：BcUploadBehavior](../../activity/contents/bcupload/normal_upload.svg)
+
 ### 下書き全体図
 
 ![アクティビティ図：BcUploadBehavior](../../activity/contents/bcupload/BcUploadBehavior.svg)
