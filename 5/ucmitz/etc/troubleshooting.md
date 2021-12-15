@@ -81,4 +81,25 @@ Error: An Internal Error Has Occurred
 - contentsテーブルのCore→BaserCore(plugin)に変更
 - site_configテーブルのbc_sample→BcSample(value)に変更
 - siteテーブルのbc_sample→BcSample(theme)に変更
+
+---
+
+## gulp-pumlにてplantUMLのコンパイルが失敗する場合
+
+### トラブル内容
+
+```
+No @startuml found
+```
+### 解決法
+
+```
+// plantuml.jarをダウンロード
+sudo curl -JLO http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
+
+// manage_contents.pumlの場合
+// -verboseで詳細表示 -o 出力先指定 -tsvg svg画像フォーマット指定
+java -jar plantuml.jar -verbose -o "../../../../../5/ucmitz/class/"  "src/puml/5/ucmitz/class/manage_contents.puml"  -tsvg 
+```
+
 ---

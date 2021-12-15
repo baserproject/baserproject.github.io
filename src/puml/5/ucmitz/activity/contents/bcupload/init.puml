@@ -1,0 +1,22 @@
+@startuml 初期設定
+
+start
+:initialize;
+note right
+    初期化
+end note
+:getSettings;
+note right
+    configの初期設定を変換し取得
+end note
+:getSaveDir;
+note right
+    保存先のフォルダを設定し、取得
+end note
+:getExistsCheckDirs;
+note right
+    ファイルの重複確認を行うディレクトリのリストを取得
+end note
+stop
+
+@enduml
