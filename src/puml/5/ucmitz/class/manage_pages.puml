@@ -1,0 +1,77 @@
+@startuml
+skinparam handwritten true
+hide circle
+skinparam classAttributeIconSize 0
+
+title 固定ページ管理
+
+class PagesController {
+  + 固定ページを表示する：display()
+}
+
+class Admin\PagesController {
+  + AuthenticationComponent
+  + BcMessageComponent
+  + 固定ページ新規追加：add() 
+  + 固定ページ新規追加：add()
+  + 固定ページ編集：edit()
+  + 固定ページ削除：delete()
+  + 固定ページをコピーする：copy()
+  + 固定ページファイルを登録する：admin_entry_page_files() ※ baserCMS５で廃止
+  + 固定ページファイルを書き出す：admin_write_page_files() ※ baserCMS５で廃止
+  + プレビュー用テンプレートを生成する：_createPreviewTemplate() ※ baserCMS５で廃止
+  + 一覧の表示用データをセットする：_setAdminIndexViewData()： ※ baserCMS５で廃止
+}
+
+class BcAdminPageHelper {
+}
+
+class PageService {
+  + PagesTable
+}
+
+class PageServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+}
+
+class PagesTable {
+	+ ページをコピーする：copy()※ PageService に移行
+	+ 検索用データを生成する：createSearchIndex()
+	+ 初期値を取得する：getDefaultValue() ※ Page::getNew() に移行
+	+ 固定ページテンプレートリストを取得する：getPageTemplateList() ※ PageService に移行
+	+ コントロールソースを取得する：getControlSource() ※ PageService に移行
+	+ PHP構文チェック：phpValidSyntax() ※ PageValidation に移行
+	+ 削除：delete() ※ baserCMS５で廃止
+	+ 最終登録IDを取得する：getInsertID() ※ baserCMS５で廃止
+	+ URLより固定ページデータを探す：findByUrl() ※ baserCMS５で廃止
+	+ getParentPageTemplate() ※ baserCMS５で廃止
+	+ 固定ページとして管理されているURLかチェックする：isPageUrl() ※ baserCMS５で廃止
+	+ 本文にbaserが管理するタグを追加する：addBaserPageTag() ※ baserCMS５で廃止
+	+ コンテンツフォルダのパスを取得する：getContentFolderPath() ※ baserCMS５で廃止
+	+ ページテンプレートファイルが開けるかチェックする：checkOpenPageFile() ※ baserCMS５で廃止
+	+ DBデータを元にページテンプレートを全て生成する：createAllPageTemplate() ※ baserCMS５で廃止
+	+ ページテンプレートを生成する：createPageTemplate() ※ baserCMS５で廃止
+	+ ページファイルを削除する：delFile() ※ baserCMS５で廃止
+	+ ページファイルを登録する：entryPageFiles() ※ baserCMS５で廃止
+	+ ページファイルのパスを取得する：getPageFilePath() ※ baserCMS５で廃止
+}
+
+class Page {
+   + 本稿記事：contents
+   + 草稿記事：draft
+   + 固定ページテンプレート：page_template
+   + 埋め込みコード：code ※ baserCMS５で廃止
+}
+
+Admin\PagesController -down[#Black]-> PageService
+PagesController -down[#Black]-> PageService
+BcAdminPageHelper -left[#Black]-> PageService
+PageService -down[#Black]-> PagesTable
+PageService -left[dotted,#Black]-|> PageServiceInterface
+PagesTable -down[#Black]-> Page
+
+@enduml

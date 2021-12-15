@@ -1,0 +1,32 @@
+@startuml
+skinparam handwritten true
+
+title ユースケース：固定ページ管理
+
+actor 作成者
+
+package 固定ページ管理 {
+	left to right direction
+	作成者 --> (固定ページを表示する)
+	作成者 --> (固定ページを作成する)
+	作成者 --> (固定ページを編集する)
+	作成者 --> (下書きを保存する)
+	作成者 --> (固定ページテンプレートを切り替える)
+	作成者 --> (記事にコードを埋め込む)
+	note right of 記事にコードを埋め込む
+	システム管理者のみが可能 ※ baserCMS５で廃止
+	endnote
+	作成者 --> (固定ページの実体を削除する)
+	note right of 固定ページの実体を削除する
+	ゴミ箱を空にした時点で実行
+	endnote
+	作成者 --> (固定ページをコピーする)
+}
+
+note left of 固定ページを表示する
+フォルダ階層に連動したURLを発行する
+
+例）https//localhost/folder/folder/page
+endnote
+
+@enduml

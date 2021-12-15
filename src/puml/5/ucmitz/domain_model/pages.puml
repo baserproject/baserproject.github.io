@@ -1,0 +1,43 @@
+@startuml
+skinparam handwritten true
+hide method
+
+title ドメインモデル図：固定ページ
+
+package 固定ページ {
+	
+	class 固定ページ {
+		本稿記事
+		草稿記事
+		固定ページテンプレート
+		埋め込みコード ※ baserCMS５で廃止
+	}
+	note bottom
+	・記事ではシンタックスエラーチェックを行うかどうかを設定ファイルで設定できる
+		（validSyntaxWithPage）
+	・記事ではPHPコードの埋め込みを管理者以外もできるかどうかを設定ファイルで設定できる
+		（allowedPhpOtherThanAdmins）
+		※ baserCMS５で廃止、PHPコードは埋め込む事はできない
+	・固定ページのテンプレートは設定しない場合、親フォルダの設定に従う
+	・埋め込みコードはシステム管理者しか設定できない
+		※ baserCMS５で廃止、埋め込みコードは埋め込む事はできない
+	endnote
+	
+	
+	class コンテンツ {
+		URL
+		タイトル
+		自身の公開状態
+		自身の公開期間
+		公開状態
+		公開期間
+		親コンテンツID
+		作成者ID
+		実体ID
+	}
+
+}
+
+固定ページ *- コンテンツ 
+
+@enduml
