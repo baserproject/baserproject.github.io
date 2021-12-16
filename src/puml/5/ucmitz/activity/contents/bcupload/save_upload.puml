@@ -81,7 +81,7 @@ if (tmpIdがある場合) then (いいえ)
 else (はい)
     :getFieldBasename;
     note right
-        フィールドベースのファイル名でファイルを取得する
+        フィールドベースのファイル名でファイルを取得しなければ作成する
         ====
         _thumb, _medium, xxxxxx_eyecatchなど
     end note
@@ -114,5 +114,26 @@ if (tmpIdがない場合)
 endif
 end group
 end group
+end group
+group 保存直後
+:afterSave;
+:renameToBasenameFields;
+note right
+    全フィールドのファイル名をフィールド値ベースのファイル名に変更する
+end note
+:renameToBasenameField;
+note right
+    ファイル名をフィールド値ベースのファイル名に変更する
+end note
+:getFieldBasename;
+note right
+    フィールドベースのファイル名でファイルを取得しなければ作成する
+    ====
+    _thumb, _medium, xxxxxx_eyecatchなど
+end note
+:getFileName;
+    note right
+        ベースファイル名からプレフィックス付のファイル名を取得する
+    end note
 end group
 @enduml
