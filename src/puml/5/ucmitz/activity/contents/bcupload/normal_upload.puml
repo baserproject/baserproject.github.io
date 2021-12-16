@@ -11,7 +11,9 @@ note right
     ====
     アップロードのデータをsetUploadedFileに$dataをセットアップする
 end note
+group 新規追加データを設定に反映
 :setupRequestData;
+:setUploadedFile;
 note right
     UploadedFileを処理しやすいようにセットアップする
 end note
@@ -21,11 +23,13 @@ if (セッションに一時ファイルが保存されている場合) then (ye
     セッションに保存されたファイルデータをファイルとして保存する
     end note
 endif
-:setUploadedFile;
+end group
+group 保存直前
 :beforeSave;
+group 既存ファイルの削除
 :deleteExistingFiles;
 note right
-    既に存在するデータのファイルを削除する
+    既に存在するデータのファイルを捜索
 end note
 :cleanupFiles;
 note right
@@ -35,4 +39,80 @@ end note
 note right
     ファイルを削除する
 end note
+end group
+:getUploadedFile;
+group 削除チェックが入ってるものの削除
+:deleteFiles;
+note right
+    設定ファイルをもとに削除対象かチェック
+end note
+:deleteFileWhileChecking;
+note right
+    _deleteの対象をチェック
+end note
+:delFile;
+note right
+    対象ファイルを削除する
+end note
+end group
+group ファイル作成や移動処理
+:saveFiles;
+note right
+    ファイル群を保存する
+end note
+:saveFileWhileChecking;
+note right
+    保存対象かチェックしながらファイルを保存する
+end note
+:getUniqueFileName;
+note right
+    一意のファイル名を取得する
+end note
+:saveFile;
+note right
+    対象ファイルを作成する
+end note
+:getSaveFileName;
+note right
+    保存用ファイル名を取得する
+end note
+if (tmpIdがある場合) then (いいえ)
+    :同名ファイルがあるかを確認しファイル名を変更し返す;
+else (はい)
+    :getFieldBasename;
+    note right
+        フィールドベースのファイル名でファイルを取得する
+        ====
+        _thumb, _medium, xxxxxx_eyecatchなど
+    end note
+endif
+group 画像の複製や作成
+:setUploadedFile;
+:rotateImage;
+note right
+    画像をExif情報を元に正しい確度に回転する
+end note
+if (tmpIdがある場合) then (いいえ)
+    :ファイルを作成する;
+else (はい)
+    :セッションにファイル情報を書き込む;
+endif
+if (tmpIdがない場合)
+    :copyImages;
+    note right
+        imagecopy指定の画像をループでコピーする
+    end note
+    :getImageSize;
+    note right
+        画像サイズの取得
+    end note
+    :copyImage;
+    :resizeImage;
+    note right
+        画像ファイルをコピーする
+    end note
+endif
+end group
+end group
+end group
 @enduml
