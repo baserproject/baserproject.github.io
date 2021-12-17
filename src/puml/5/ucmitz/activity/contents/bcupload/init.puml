@@ -1,4 +1,4 @@
-@startuml 初期設定
+@startuml
 
 start
 :initialize;

@@ -79,8 +79,9 @@ Error: An Internal Error Has Occurred
 
 データベースbasercmsで以下の箇所を変更します
 - contentsテーブルのCore→BaserCore(plugin)に変更
+- contentsテーブルのBaserCore Pages→BCPage Pagesに変更
 - site_configテーブルのbc_sample→BcSample(value)に変更
-- siteテーブルのbc_sample→BcSample(theme)に変更
+- siteテーブルのbc_sample→BcFront(theme)に変更
 
 ---
 
