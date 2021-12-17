@@ -1,4 +1,4 @@
-# ファイルアップロード設計書(作成途中)
+# ファイルアップロード設計書
 
 ## アクティビティ図(BcUploadBehavior)
 
@@ -11,9 +11,3 @@
 ### アップロード保存処理
 
 ![アップロード時：BcUploadBehavior](../../activity/contents/bcupload/save_upload.svg)
-
----
-### 下書き全体図
-
-![アクティビティ図：BcUploadBehavior](../../activity/contents/bcupload/BcUploadBehavior.svg)
-
