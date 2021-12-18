@@ -8,5 +8,6 @@
 ## 管理機能
 
 - [ユーザー管理](https://baserproject.github.io/5/ucmitz/basic/users/index)
+- [ユーザーグループ管理](https://baserproject.github.io/5/ucmitz/basic/user_groups/index) 
 - [コンテンツ管理](https://baserproject.github.io/5/ucmitz/basic/contents/index)
 - [固定ページ管理](https://baserproject.github.io/5/ucmitz/basic/pages/index)
