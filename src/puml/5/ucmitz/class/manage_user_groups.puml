@@ -30,15 +30,13 @@ class UserGroupServiceInterface {
 class UserGroupsTable {
   + ユーザーグループデータをコピーする：copy() ※ サービスに移動するか検討
   + beforeDelete()
-  + getAuthPrefix() ※ baserCMS５で廃止検討
-  + isAdminGlobalmenuUsed() ※ baserCMS５で廃止
+  + getAuthPrefix()
 }
 
 class UserGroup {
 	+ ユーザーグループ名：name
 	+ 表示名：title
 	+ 認証プレフィックス：auth_prefix
-	+ お気に入り初期データ：default_favorites ※ baserCMS５で廃止
 	+ コンテンツのドラッグ＆ドロップ移動機能を利用する：use_move_contents
 }
 
