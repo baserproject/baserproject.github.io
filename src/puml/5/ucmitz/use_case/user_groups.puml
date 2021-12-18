@@ -1,0 +1,16 @@
+@startuml
+skinparam handwritten true
+
+title ユースケース：ユーザーグループ管理
+
+actor 管理者
+
+package ユーザーグループ管理 {
+	left to right direction
+	管理者 --> (ユーザーグループ一覧を表示する)
+	管理者 --> (ユーザーグループを作成する)
+	管理者 --> (ユーザーグループを編集する)
+	管理者 --> (ユーザーグループを削除する)
+}
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+skinparam handwritten true
+hide circle
+skinparam classAttributeIconSize 0
+
+title ユーザーグループ管理
+
+class Admin\UserGroupsController {
+  + ユーザーグループ一覧を表示：index()
+  + ユーザーグループ新規追加：add()
+  + ユーザーグループ編集：edit()
+  + ユーザーグループ削除：delete()
+  + ユーザーグループコピー：copy()
+}
+
+class UserGroupService {
+  + UserGroupsTable
+}
+
+class UserGroupServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class UserGroupsTable {
+  + ユーザーグループデータをコピーする：copy() ※ サービスに移動するか検討
+  + beforeDelete()
+  + getAuthPrefix() ※ baserCMS５で廃止検討
+  + isAdminGlobalmenuUsed() ※ baserCMS５で廃止
+}
+
+class UserGroup {
+	+ ユーザーグループ名：name
+	+ 表示名：title
+	+ 認証プレフィックス：auth_prefix
+	+ お気に入り初期データ：default_favorites ※ baserCMS５で廃止
+	+ コンテンツのドラッグ＆ドロップ移動機能を利用する：use_move_contents
+}
+
+Admin\UserGroupsController -down[#Black]-> UserGroupService
+UserGroupService -down[#Black]-> UserGroupsTable
+UserGroupService -left[dotted,#Black]-|> UserGroupServiceInterface
+UserGroupsTable -down[#Black]-> UserGroup
+
+@enduml
