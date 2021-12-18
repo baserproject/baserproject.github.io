@@ -41,3 +41,24 @@ BcCacheBehaviorは廃止とします。
 baserCMS4では、メインとなるサイトの設定情報を site_configs に保存していましたが、ucmitz からは、メインサイトの情報も
 sites テーブルに保存するようになりました。  
 したがって、メインサイトの site_id が、0 から 1 へと変更となっています。
+
+　
+## Ajax処理の変更
+
+管理画面での Ajax処理については、全て REST API に移行します。  
+REST API は、Jwt認証を利用しているため、Ajax処理を実装する場合は、$.bcJwt を利用してアクセストークンを付与する必要があります。
+
+```javascript
+$.ajax({
+    url: $.bcUtil.apiBaseUrl + 'baser-core/plugins/get_market_plugins',
+    headers: {
+        "Authorization": $.bcJwt.accessToken,
+    },
+    type: "GET",
+    success: function (result) {
+        $("#BaserMarket").html(result);
+    }
+});
+```
+
+なお、アクセストークンは、管理画面へのログイン時に取得し、リフレッシュトークンをローカルストレージに保存し、 `admin/startup.js` にて、毎画面ごとにリフレッシュトークンを利用して新しいアクセストークンを取得しています。
