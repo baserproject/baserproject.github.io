@@ -2,6 +2,10 @@
 
 ## アクティビティ図(BcUploadBehavior)
 
+### メインプロパティ
+
+![メインのプロパティ：BcUploadBehavior](../../object/bcupload_property.svg)
+
 ### 初期設定
 
 ![初期設定：BcUploadBehavior](../../activity/contents/bcupload/init.svg)
