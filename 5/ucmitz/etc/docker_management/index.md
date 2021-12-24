@@ -27,7 +27,8 @@ Docker Hubのbaserproject管理者に自分のアカウントIDを登録して�
 <!-- dockerディレクトリにて、変更を加えたDockerfileファイルを元に新規でコンテナを立ち上げる -->
 cd docker/
 docker  build -t baserproject/basercms:5-php7.4 -f dockerfile/Dockerfile-php7.4 . 
-
+<!-- backgroundで走らせる -->
+docker run -itd baserproject/basercms:5-php7.4 /bin/bash
 docker ps
 --
 CONTAINER ID   IMAGE                         
