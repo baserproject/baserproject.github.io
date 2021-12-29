@@ -1,5 +1,8 @@
 # コンテンツ設計書
 
+## 特性
+  [softDelete機能](./softDelete)
+
 ## ユースケース図
 
 ![ユースケース図：コンテンツ管理](../../use_case/contents.svg)
