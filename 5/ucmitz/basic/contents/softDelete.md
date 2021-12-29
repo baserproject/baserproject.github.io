@@ -1,9 +1,16 @@
 ## コンテンツ管理におけるsoftDelete
 
+
 basercms4系ではsoftDeleteBehaviorを使っていたが、ucmitzではsoftDeleteTraitに変更
 
-cakphp2ではdeleted、deleted_dateカラムを設定して削除時にdeletedに削除フラグ、deleted_dateに削除日時がセットされていたが、ucmitzでは
-\$softDeleteFieldに指定したフィールドを対象を元に論理削除か物理削除かを判別する(※deletedフィールドは削除)
+cakphp2ではdeleted、deleted_dateカラムを設定して削除時にdeletedに削除フラグ、deleted_dateに削除日時がセットされていた
+↓
+ucmitzでは\$softDeleteFieldに指定したフィールドを元に論理削除か物理削除かを判別に変更(※deletedフィールドは削除)
+
+
+#### コンテンツ作成後のsoftDeleteの挙動
+
+![softDeleteにおけるシーケンス図](../../sequence/softDelete.svg)
 
 #### SoftDeleteTraitを使用した際の削除
 
@@ -23,8 +30,6 @@ $this->delete($content);
 // 論理削除を復元
 $this->restore($content);
 ```
-
-コンテンツ作成→コンテンツをゴミ箱に入れる(論理削除)→ゴミ箱を空にする(物理削除)
 
 #### 論理削除されたものをコンテンツ・サービス経由で取得する
 
@@ -47,6 +52,16 @@ if ($this->ContentService->exists($id)) {...}
 if ($this->ContentService->exists($id, true)) {...}
 ```
 
+#### softDeleteした物をクエリ結果に含める場合
+
+```php
+$query = $this->find();
+// withDeletedオプションの適応でクエリに論理削除した物も含める
+$query = $query->applyOptions(['withDeleted']);
+// ContentServiceの場合['withTrash' => true]で上記と同じ処理になる
+$query = $this->ContentService->getIndex(['withTrash' => true]);
+```
+
 ### 既存コードでの論理削除比較
 
 ```php
@@ -62,11 +77,11 @@ if (empty($content['Content']['alias_id'])) {
 	$result = $this->delete($content['Content']['id']);
 }
 // ucmitz
-if ($content->alias_id) {
-    // エイリアスの場合、直接削除
+if (!$content->alias_id) {
+	$result = $this->delete($content);
+} else {
+	// エイリアスの場合、直接削除
     // hardDeleteで物理削除
     $result = $this->hardDelete($content);
-} else {
-    $result = $this->delete($content);
 }
 ```

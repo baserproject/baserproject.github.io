@@ -201,6 +201,11 @@ class BcUploadBehavior {
 }
 
 class softDeleteTrait {
+  + getSoftDeleteField()
+  + deleteAll()
+  + hardDelete()
+  + restore()
+  + query()
 }
 
 Admin\ContentsController -left[#Black]-> BcAdminContentsComponent
