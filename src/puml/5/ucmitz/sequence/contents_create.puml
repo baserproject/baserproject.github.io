@@ -1,0 +1,50 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+
+title コンテンツフォルダ作成
+
+participant "ContentFolder" as Folder
+participant "BcContentsBehavior" as Behavior
+participant "Content" as Content
+
+[-> Folder : edit
+
+activate Folder
+activate Behavior
+activate Content
+
+Folder -> Behavior : initialize
+note over Behavior
+hasOneでコンテンツをフォルダに繋ぎこむ
+endnote
+
+Folder -> Behavior : beforeMarshal																										
+note over Behavior
+' ・コンテンツの初期化
+' ・コンテンツのバリデーション
+' ・バリデーション結果のマージ
+' ・バリデーション後のコンテンツのマージ
+' ・コンテンツのバリデーションチェック
+' ・エラーが出ていれば終了
+endnote
+
+Behavior <- Content: newEntity
+note over Content
+コンテンツフォルダーの
+情報を元にnewEntityを返す
+endnote
+
+Folder <- Behavior : エラーが出ていれば終了
+
+Behavior -> Content: コンテンツ側beforeMarshal
+note over Content
+コンテンツテーブル側で
+コンテンツのセットアップ
+endnote
+
+Folder -> Behavior : afterSave
+note over Behavior
+コンテンツの生成
+endnote
+
