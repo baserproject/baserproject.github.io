@@ -63,8 +63,8 @@ class ContentFolder {
 }
 
 class BcContentsBehavior {
-    + beforeValidate()
-    + beforeSave()
+    + initialize()
+    + beforeMarshal()
     + afterSave()
     + beforeDelete()
     + afterDelete()

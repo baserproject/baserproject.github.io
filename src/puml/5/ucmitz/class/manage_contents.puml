@@ -189,15 +189,44 @@ class ContentServiceInterface {
   + existsContentByUrl()
 }
 
-class BcContentsBehavior {
-  + initialize()
-}
-
 class TreeBehavior {
 }
 
 class BcUploadBehavior {
   + initialize()
+  + getSettings()
+  + getExistsCheckDirs()
+  + beforeMarshal()
+  + beforeSave()
+  + setupRequestData()
+  + afterSave()
+  + saveTmpFiles()
+  + deleteFiles()
+  + deleteFileWhileChecking()
+  + saveFiles()
+  + saveFileWhileChecking()
+  + moveFileSessionToTmp()
+  + saveFile()
+  + getSaveFileName()
+  + rotateImage()
+  + copyImage()
+  + resizeImage()
+  + getImageSize()
+  + beforeDelete()
+  + cleanupFiles()
+  + delFile()
+  + renameToBasenameFields()
+  + renameToBasenameField()
+  + getFieldBasename()
+  + getFileName()
+  + getBasename()
+  + getUniqueFileName()
+  + getSaveDir()
+  + isFileExists()
+  + deleteExistingFiles()
+  + copyImages()
+  + setUploadedFile()
+  + getUploadedFile()
 }
 
 class softDeleteTrait {
@@ -219,7 +248,6 @@ ContentService -left[dotted,#Black]-|> ContentServiceInterface
 ContentService -down[#Black]-> ContentsTable
 ContentsTable -left[#Black]-> Content
 
-ContentsTable -down[#Black]-> BcContentsBehavior
 ContentsTable -down[#Black]-> TreeBehavior
 ContentsTable -down[#Black]-> BcUploadBehavior
 ContentsTable -down[#Black]-> softDeleteTrait
