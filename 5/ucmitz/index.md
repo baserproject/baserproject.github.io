@@ -26,6 +26,7 @@
 - [開発環境の構築](https://baserproject.github.io/5/ucmitz/preparation/environment)
 - [パッケージ構成](https://baserproject.github.io/5/ucmitz/basic/package)
 - [トラブルシューティング](https://baserproject.github.io/5/ucmitz/etc/troubleshooting)
+- [Docker環境の管理](https://baserproject.github.io/5/ucmitz/etc/docker_management/index)
 
 　
 ## 開発にとりかかる
@@ -115,5 +116,5 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 ## その他のドキュメント
 
 - [Cloud9 上で ucmitz を動作させる](https://baserproject.github.io/5/ucmitz/etc/cloud9)
-- [docker環境の管理](https://baserproject.github.io/5/ucmitz/etc/docker_management/index)
+
 
