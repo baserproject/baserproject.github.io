@@ -12,14 +12,20 @@
 ### basercms4→ucmitz変更点
 
 beforeValidateでバリデーションのマージ、beforeSaveでエラーがある場合処理の中断をしていた箇所をucmitzではbeforeMarshalの一箇所で対応
+
+### アクティビティ図(例:ContentFolder)
+
+|![アクティビティ図：basercms4系BcContentsBehavior](../../activity/contents/BcContentsBehavior/baser4_contents_create.svg)|![アクティビティ図：ucmitz系BcContentsBehavior](../../activity/contents/BcContentsBehavior/ucmitz_contents_create.svg)|
+
 ### シーケンス図(例:ContentFolder)
-
-#### 編集処理
-
-![ドメインモデル図：コンテンツフォルダ編集](../../sequence/contents_edit.svg)
 
 #### 作成処理
 
+![ドメインモデル図：コンテンツフォルダ作成](../../sequence/contents_create.svg)
+
+#### 編集処理(basercms4系)
+
+![ドメインモデル図：コンテンツフォルダ編集](../../sequence/contents_edit.svg)
 
 
 #### 削除処理

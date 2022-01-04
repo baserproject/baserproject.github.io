@@ -4,12 +4,12 @@ skinparam backgroundColor white
 
 title コンテンツフォルダ作成
 
+participant "ContentFolderService" as Service
 participant "ContentFolder" as Folder
 participant "BcContentsBehavior" as Behavior
 participant "Content" as Content
 
-[-> Folder : edit
-
+activate Service
 activate Folder
 activate Behavior
 activate Content
@@ -18,6 +18,12 @@ Folder -> Behavior : initialize
 note over Behavior
 hasOneでコンテンツをフォルダに繋ぎこむ
 endnote
+
+note over Service
+createメソッドの実行
+endnote
+
+Service -> Folder : patchEntity
 
 Folder -> Behavior : beforeMarshal																										
 note over Behavior
@@ -43,8 +49,26 @@ note over Content
 コンテンツのセットアップ
 endnote
 
-Folder -> Behavior : afterSave
-note over Behavior
-コンテンツの生成
+Content -> Content : afterMarshal
+note over Content
+FrozenTime形式のデータ操作
 endnote
 
+Service -> Content : save
+
+Content -> Content : beforeSave
+note over Content
+beforeSaveParentIdの設定など
+endnote
+
+Content -> Content : afterSave
+note over Content
+Content:updateSystemData
+Content:updateChildren
+Content:updateRelateSubSiteContent
+の実行
+endnote
+
+
+
+@enduml

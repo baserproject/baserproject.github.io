@@ -1,0 +1,14 @@
+@startuml
+
+title "ucmitz系BcContentsBehavior"
+
+start
+#yellow :contentFolder:patchEntity;
+#Pink :BcContentsBehavior:beforeMarshal;
+#lightGreen :Contents:beforeMarshal;
+#lightGreen :Contents:afterMarshal;
+#yellow :contentFolder:save;
+#lightGreen :Contents:beforeSave;
+#lightGreen :Contents:afterSave;
+stop
+@enduml
