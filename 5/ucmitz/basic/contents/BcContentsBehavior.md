@@ -9,11 +9,7 @@
   - [リンク管理(ページ未完成)]()
   - [メールコンテンツ管理(ページ未完成)]()
 
-### basercms4→ucmitz変更点
-
-beforeValidateでバリデーションのマージ、beforeSaveでエラーがある場合処理の中断をしていた箇所をucmitzではbeforeMarshalの一箇所で対応
-
-### アクティビティ図(例:ContentFolder)
+### basercms4系とucmitzの違い(例:ContentFolder)
 
 |![アクティビティ図：basercms4系BcContentsBehavior](../../activity/contents/BcContentsBehavior/baser4_contents_create.svg)|![アクティビティ図：ucmitz系BcContentsBehavior](../../activity/contents/BcContentsBehavior/ucmitz_contents_create.svg)|
 
@@ -29,3 +25,5 @@ beforeValidateでバリデーションのマージ、beforeSaveでエラーが�
 
 
 #### 削除処理
+
+![ドメインモデル図：コンテンツフォルダ削除](../../sequence/contents_delete.svg)
