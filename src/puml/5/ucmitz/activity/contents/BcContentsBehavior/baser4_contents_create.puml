@@ -1,0 +1,16 @@
+@startuml
+
+title "basercms4系BcContentsBehavior"
+start
+#yellow :contentFolder:save;
+#yellow :contentFolder:_doSave;
+#Pink :BcContentsBehavior:beforeValidate;
+#lightGreen :Contents:beforeValidate;
+#lightGreen :Contents:afterValidate;
+#Pink :BcContentsBehavior:beforeSave;
+#Pink :BcContentsBehavior:afterSave;
+#lightGreen :Contents:createContent;
+#lightGreen :Contents:beforeSave;
+#lightGreen :Contents:afterSave;
+stop
+@enduml

@@ -1,0 +1,71 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+
+title コンテンツフォルダ作成
+
+participant "ContentFolderService" as Service
+participant "ContentFolder" as Folder
+participant "BcContentsBehavior" as Behavior
+participant "Content" as Content
+
+activate Service
+activate Folder
+activate Behavior
+activate Content
+
+Folder -> Behavior : initialize
+note over Behavior
+hasOneでコンテンツをフォルダに繋ぎこむ
+endnote
+
+note over Service
+createメソッドの実行
+endnote
+
+Service -> Folder : patchEntity
+
+Folder -> Behavior : beforeMarshal																										
+note over Behavior
+' ・コンテンツの初期化
+' ・コンテンツのバリデーション
+' ・バリデーション結果のマージ
+' ・バリデーション後のコンテンツのマージ
+' ・コンテンツのバリデーションチェック
+' ・エラーが出ていれば終了
+endnote
+
+Behavior <- Content: newEntity
+note over Content
+コンテンツフォルダーの
+情報を元にnewEntityを返す
+endnote
+
+Folder <- Behavior : エラーが出ていれば終了
+
+Behavior -> Content: コンテンツ側beforeMarshal
+note over Content
+コンテンツテーブル側で
+コンテンツのセットアップ
+endnote
+
+Content -> Content : afterMarshal
+note over Content
+FrozenTime形式のデータ操作
+endnote
+
+Service -> Content : save
+
+Content -> Content : beforeSave
+note over Content
+beforeSaveParentIdの設定など
+endnote
+
+Content -> Content : afterSave
+note over Content
+Content:updateSystemData
+Content:updateChildren
+Content:updateRelateSubSiteContent
+の実行
+endnote
+@enduml

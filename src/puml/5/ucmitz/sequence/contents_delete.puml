@@ -1,0 +1,34 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+
+title コンテンツフォルダ削除
+
+participant "ContentFolder" as Folder
+participant "BcContentsBehavior" as Behavior
+participant "Content" as Content
+
+[-> Folder : hardDelete
+
+activate Folder
+activate Behavior
+
+Folder -> Behavior : beforeDelete
+
+note over Behavior
+Contents物理削除準備をする
+endnote
+
+Folder <- Behavior : afterDelete
+
+note over Folder
+ContentFolderを物理削除する
+Contentを削除する
+endnote
+
+Folder -> Content : Contents:afterDelete
+
+note over Content
+エイリアスを物理削除する
+endnote
+@enduml
