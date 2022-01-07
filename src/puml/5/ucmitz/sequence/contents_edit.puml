@@ -2,7 +2,7 @@
 skinparam handwritten true
 skinparam backgroundColor white
 
-title コンテンツフォルダ編集
+title コンテンツフォルダ編集(basercms4系)
 
 participant "ContentFolder" as Folder
 participant "BcContentsBehavior" as Behavior
