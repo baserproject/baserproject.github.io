@@ -115,6 +115,7 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 　　
 ## その他のドキュメント
 
+- [PlantUMLの利用方法](https://baserproject.github.io/5/ucmitz/etc/plant_uml)
 - [Cloud9 上で ucmitz を動作させる](https://baserproject.github.io/5/ucmitz/etc/cloud9)
 
 

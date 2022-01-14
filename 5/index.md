@@ -1,3 +1,3 @@
 # baserCMS version 5
 
-- [ucmitz](https://baserproject.github.io/5/ucmitz/index)
+- [ucmitz 開発への貢献方法](https://baserproject.github.io/5/ucmitz/index)
