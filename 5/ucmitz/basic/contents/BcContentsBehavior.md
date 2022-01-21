@@ -9,8 +9,8 @@
 
 #### 作成処理
 
-![ドメインモデル図：コンテンツフォルダ作成](../../sequence/contents_create.svg)
+![シーケンス図：コンテンツフォルダ作成](../../sequence/contents_create.svg)
 
 #### 削除処理
 
-![ドメインモデル図：コンテンツフォルダ削除](../../sequence/contents_delete.svg)
+![シーケンス図：コンテンツフォルダ削除](../../sequence/contents_delete.svg)
