@@ -20,8 +20,10 @@ class Admin\ContentsController {
 }
 
 class BcAdminContentsComponent {
+  + initialize()
   + setupAdmin()
   + settingForm()
+  + checkContentEntities()
   + beforeRender()
 }
 

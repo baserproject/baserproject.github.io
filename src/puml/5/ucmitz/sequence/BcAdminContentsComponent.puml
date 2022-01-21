@@ -1,0 +1,73 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title BcAdminContentsComponentの流れ(コンテンツフォルダ編集)
+
+participant "ContentFoldersController" as Controller
+participant "BcAdminContentsComponent" as Component
+participant "BcContentsEventListener" as EventListener
+participant "edit.php(ContentFolders)" as template
+
+Controller -> Component : loadComponent
+
+Component -> Controller : setUpAdmin
+
+Controller -> Component : editメソッド
+
+
+note over Component
+コンテンツアイテムの読み込み
+endnote
+
+Component -> Component : settingForm
+note over Component
+管理画面で使用するフォーム
+の変数準備
+---
+$layoutTemplates
+$related
+$currentSiteId
+$content
+$relatedContents
+$mainSiteId
+$mainSiteDisplayName
+$sites
+$layoutTemplates
+---
+contentEntitiesのチェック
+endnote
+
+Component -> EventListener  : イベント設置
+
+Controller <- Component : beforeRender
+
+Controller -> template : editへrender処理
+
+EventListener <- template : BcAdminForm->create
+
+EventListener -> EventListener : formBeforeCreate
+note over EventListener
+フォームoptionsの設定
+endnote
+EventListener -> template : formAfterCreate
+
+note over EventListener
+フォームIDのチェック
+---
+content_fieldsをフォームに結合し出力
+endnote
+
+EventListener <- template : BcAdminForm->submit
+
+EventListener -> template : formAfterSubmit
+note over EventListener
+以下をフォームに追加し出力
+---
+・content_options
+・content_actions
+・content_related
+・content_info
+endnote
+@enduml
