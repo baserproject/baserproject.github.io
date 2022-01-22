@@ -93,7 +93,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 　
 ## ドキュメントの追加・更新
 
-開発ドキュメントは、GitHub.id を利用いています。
+開発ドキュメントは、GitHub.io を利用いています。
 開発中に発生した開発に必要なドキュメントを追加・更新する場合は、 [baserproject.github.io レポジトリ](https://github.com/baserproject/baserproject.github.io) を利用して更新してください。  
 その際、master ブランチを利用します。
 
