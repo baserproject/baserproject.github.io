@@ -34,20 +34,20 @@ baserCMS４までは、一つのユーザーグループにしか所属できま
 　
 ## ユースケース図
 
-![クラス図：ユーザー管理画面](../../use_case/users.svg)
+![クラス図：ユーザー管理画面](../../svg/use_case/users.svg)
 
 　
 ## ドメインモデル図
 
-![クラス図：ユーザー管理画面](../../domain_model/users.svg)
+![クラス図：ユーザー管理画面](../../svg/domail_model/users.svg)
 
 　
 ## クラス図
 
-![クラス図：ユーザー管理画面](../../class/manage_users.svg)
+![クラス図：ユーザー管理画面](../../svg/class/manage_users.svg)
 
 　
-![クラス図：パスワード再発行](../../class/manage_users_password_request.svg)
+![クラス図：パスワード再発行](../../svg/class/manage_users_password_request.svg)
 
 　
-![クラス図：ユーザーAPI](../../class/api_users.svg)
+![クラス図：ユーザーAPI](../../svg/class/api_users.svg)

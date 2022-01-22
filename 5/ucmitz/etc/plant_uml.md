@@ -6,9 +6,9 @@
 変換の際は、`src/puml/` 配下に作成した `puml`ファイルを元に、ドキュメントルート配下の同階層に出力します 
 
 ```shell
-/src/puml/5/ucmitz/use_case/sample.puml
+/src/puml/5/ucmitz/svg/use_case/sample.puml
 ↓
-/5/ucmitz/use_case/sample.svg
+/5/ucmitz/svg/use_case/sample.svg
 ```
 　
 ## 環境構築

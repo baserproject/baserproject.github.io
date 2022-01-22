@@ -14,15 +14,15 @@ baserCMSでは、認証プレフィックスの設定により、管理画面以
 　
 ## ユースケース図
 
-![クラス図：ユーザーグループ管理画面](../../use_case/user_groups.svg)
+![クラス図：ユーザーグループ管理画面](../../svg/use_case/user_groups.svg)
 
 　
 ## ドメインモデル図
 
-![クラス図：ユーザーグループ管理画面](../../domain_model/user_groups.svg)
+![クラス図：ユーザーグループ管理画面](../../svg/domail_model/user_groups.svg)
 
 　
 ## クラス図
 
-![クラス図：ユーザーグループ管理画面](../../class/manage_user_groups.svg)
+![クラス図：ユーザーグループ管理画面](../../svg/class/manage_user_groups.svg)
 

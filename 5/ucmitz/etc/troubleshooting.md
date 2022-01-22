@@ -100,7 +100,7 @@ sudo curl -JLO http://sourceforge.net/projects/plantuml/files/plantuml.jar/downl
 
 // manage_contents.pumlの場合
 // -verboseで詳細表示 -o 出力先指定 -tsvg svg画像フォーマット指定
-java -jar plantuml.jar -verbose -o "../../../../../5/ucmitz/class/"  "src/puml/5/ucmitz/class/manage_contents.puml"  -tsvg 
+java -jar plantuml.jar -verbose -o "../../../../../5/ucmitz/svg/class/"  "src/puml/5/ucmitz/svg/class/manage_contents.puml"  -tsvg 
 ```
 
 ---

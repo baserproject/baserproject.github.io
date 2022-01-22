@@ -2,19 +2,19 @@
 
 ## ユースケース図
 
-![ユースケース図：コンテンツ管理](../../use_case/contents.svg)
+![ユースケース図：コンテンツ管理](../../svg/use_case/contents.svg)
 
 ## ドメインモデル図
 
-![ドメインモデル図：コンテンツフォルダ](../../domain_model/content_folders.svg)
-![ドメインモデル図：コンテンツフォルダ編集](../../sequence/contents_edit.svg)
+![ドメインモデル図：コンテンツフォルダ](../../svg/domail_model/content_folders.svg)
+![ドメインモデル図：コンテンツフォルダ編集](../../svg/sequence/contents_edit.svg)
 ## クラス図
 
-![クラス図：コンテンツ管理](../../class/manage_contents.svg)
-![クラス図：APIコンテンツ管理](../../class/api_contents.svg)
-![クラス図：コンテンツフォルダ管理](../../class/manage_content_folders.svg)
+![クラス図：コンテンツ管理](../../svg/class/manage_contents.svg)
+![クラス図：APIコンテンツ管理](../../svg/class/api_contents.svg)
+![クラス図：コンテンツフォルダ管理](../../svg/class/manage_content_folders.svg)
 
 ## 特性
   - [論理削除機能](./softDelete)
   - [ツリー構造機能](https://book.cakephp.org/4/ja/orm/behaviors/tree.html)
-  - [BcContentsBehavior](../contents/BcContentsBehavior)
+  - [BcContentsBehavior](../BcContentsBehavior)

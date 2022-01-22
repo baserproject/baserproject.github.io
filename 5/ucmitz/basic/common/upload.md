@@ -4,14 +4,14 @@
 
 ### メインプロパティ
 
-![メインのプロパティ：BcUploadBehavior](../../object/bcupload_property.svg)
+![メインのプロパティ：BcUploadBehavior](../../svg/object/bcupload_property.svg)
 
 ### 初期設定
 
-![初期設定：BcUploadBehavior](../../activity/contents/bcupload/init.svg)
+![初期設定：BcUploadBehavior](../../svg/activity/bc_upload_behavior/init.svg)
 
 ---
 
 ### アップロード保存処理
 
-![アップロード時：BcUploadBehavior](../../activity/contents/bcupload/save_upload.svg)
+![アップロード時：BcUploadBehavior](../../svg/activity/bc_upload_behavior/save_upload.svg)

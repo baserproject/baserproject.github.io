@@ -10,7 +10,7 @@ ucmitzでは\$softDeleteFieldに指定したフィールドを元に論理削除
 
 #### コンテンツ作成後の論理削除の挙動
 
-![softDeleteにおけるシーケンス図](../../sequence/softDelete.svg)
+![soft_deleteにおけるシーケンス図](../../svg/sequence/soft_delete.svg)
 
 #### SoftDeleteTraitを使用した際の削除
 
