@@ -24,7 +24,7 @@ baserCMS4までは、記事を保存するタイミングで記事本体のテ�
 
 　
 ## ドメインモデル図
-![ドメインモデル図：固定ページ管理](../../svg/domail_model/pages.svg)
+![ドメインモデル図：固定ページ管理](../../svg/domain_model/pages.svg)
 
 　
 ## クラス図

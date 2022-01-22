@@ -19,7 +19,7 @@ baserCMSでは、認証プレフィックスの設定により、管理画面以
 　
 ## ドメインモデル図
 
-![クラス図：ユーザーグループ管理画面](../../svg/domail_model/user_groups.svg)
+![クラス図：ユーザーグループ管理画面](../../svg/domain_model/user_groups.svg)
 
 　
 ## クラス図

@@ -39,7 +39,7 @@ baserCMS４までは、一つのユーザーグループにしか所属できま
 　
 ## ドメインモデル図
 
-![クラス図：ユーザー管理画面](../../svg/domail_model/users.svg)
+![クラス図：ユーザー管理画面](../../svg/domain_model/users.svg)
 
 　
 ## クラス図

@@ -6,7 +6,7 @@
 
 ## ドメインモデル図
 
-![ドメインモデル図：コンテンツフォルダ](../../svg/domail_model/content_folders.svg)
+![ドメインモデル図：コンテンツフォルダ](../../svg/domain_model/content_folders.svg)
 ![ドメインモデル図：コンテンツフォルダ編集](../../svg/sequence/contents_edit.svg)
 ## クラス図
 
