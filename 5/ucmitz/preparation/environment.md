@@ -82,7 +82,7 @@ bin/cake migrations migrate --plugin BaserCore
 bin/cake migrations seed --plugin BaserCore
 ```
 
-詳しくは[データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database)を参照してください。
+詳しくは[データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/database)を参照してください。
 
 ## データベース情報
 

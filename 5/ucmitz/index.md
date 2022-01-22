@@ -35,25 +35,25 @@
 
 実際の開発については、開発の手順に従って開発します。  
 なお、baserCMS4のコードを移行していくことが ucmitzの開発になるのですが、様々なルールがありますので必ず確認してください。すごく重要なことです。
-- [開発の手順](https://baserproject.github.io/5/ucmitz/development/procedure)
-- [移行上のルール](https://baserproject.github.io/5/ucmitz/development/migration_rule)
-- [移行上の流れ](https://baserproject.github.io/5/ucmitz/development/migration_flow)
-- [コーディング規約](https://baserproject.github.io/5/ucmitz/development/coding_rule)
+- [開発の手順](https://baserproject.github.io/5/ucmitz/regulation/procedure)
+- [移行上のルール](https://baserproject.github.io/5/ucmitz/regulation/migration_rule)
+- [移行上の流れ](https://baserproject.github.io/5/ucmitz/development/migration/migration_flow)
+- [コーディング規約](https://baserproject.github.io/5/ucmitz/regulation/coding_rule)
 
 　　
 ### 開発上の注意点
 
 baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあたり、様々な変更点や注意点があります。
 
-- [ルーティングにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/routing)
-- [コントローラーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/controller)
-- [モデルにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/model)
-- [ビューにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/view)
-- [ヘルパーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/helper)
-- [リクエスト関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/request)
-- [セッション関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/session)
-- [データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database)
-- [プラグインにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration_point/database)
+- [ルーティングにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/routing)
+- [コントローラーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/controller)
+- [モデルにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/model)
+- [ビューにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/view)
+- [ヘルパーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/helper)
+- [リクエスト関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration/request)
+- [セッション関連における注意点](https://baserproject.github.io/5/ucmitz/development/migration/session)
+- [データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/database)
+- [プラグインにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/database)
 
 　
 ### テーマの開発
@@ -67,7 +67,7 @@ ucmitz の管理画面テーマの開発では、sass や Webpack を利用し�
 
 ucmitz の開発では、ユニットテストのカバレッジ100%を目指します。ユニットメソッドの作成方法と実行方法については次を確認してください。
 
-- [ユニットテスト](https://baserproject.github.io/5/ucmitz/development/test/unittest)
+- [ユニットテスト](https://baserproject.github.io/5/ucmitz/test/unittest)
 
 　
 ### 全体的な変更点と既知の問題点
@@ -80,7 +80,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 　
 ## 開発の進捗管理と新しい課題や機能の定義
 
-開発の進捗管理については、機能要件一覧と、Issue、そして、各ファイルや各メソッドのコメントにおけるアノテーションによって管理しています。[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/development/migration_rule#コード移行時のマーキング) を参考に必ずマーキングをお願いします。  
+開発の進捗管理については、機能要件一覧と、Issue、そして、各ファイルや各メソッドのコメントにおけるアノテーションによって管理しています。[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/regulation/migration_rule#コード移行時のマーキング) を参考に必ずマーキングをお願いします。  
 
 また、実装における新たな課題（タスクやバグなど）を見つけた場合は、Issue にマイルストーンを設定した上で登録します。  
 

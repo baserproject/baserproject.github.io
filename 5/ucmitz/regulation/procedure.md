@@ -35,7 +35,7 @@ GitHub の [Issue](https://github.com/baserproject/ucmitz/issues) 現在対象�
  - **ユニットテストを実装する**  
  「テスト実装済」に「●」が入っていないものはユニットテストが未実装の状態です。ユニットテストを実装します。
  
-中にはマーキングが漏れているものもありますので見つけた場合は [コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/development/migration_rule#コード移行時のマーキング) を参考に、マーキングをお願いします。
+中にはマーキングが漏れているものもありますので見つけた場合は [コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/regulation/migration_rule#コード移行時のマーキング) を参考に、マーキングをお願いします。
 
 　
 ## 2. ブランチを切る
@@ -52,12 +52,12 @@ Issueの内容に従って機能を実装します。
 ## 4. ユニットテストの作成
 
 テスト可能なメソッドを作成した場合は、ユニットテストも作成しておきます。  
-ユニットテストの作成と実行については [ユニットテスト](https://baserproject.github.io/5/ucmitz/development/test/unittest) を参考にしてください。
+ユニットテストの作成と実行については [ユニットテスト](https://baserproject.github.io/5/ucmitz/test/unittest) を参考にしてください。
 
 　
 ## 5. マーキングを行う
 
-[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/development/migration_rule#コード移行時のマーキング) を参考に、マーキングを行います。
+[コード移行時のマーキング](https://baserproject.github.io/5/ucmitz/regulation/migration_rule#コード移行時のマーキング) を参考に、マーキングを行います。
 
 　 
 ## 6. プルリクエストを作成する
