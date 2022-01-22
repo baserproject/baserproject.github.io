@@ -14,7 +14,7 @@
 - [ロードマップ](https://docs.google.com/spreadsheets/d/1TZ71-O_9KiQM9xAB_a_jnSFVrH2dsyKowMLkyGLcI9g/edit#gid=2131306554)
 - [システム要件](https://baserproject.github.io/5/ucmitz/basic/system)
 - [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
-- [設計書](https://baserproject.github.io/5/ucmitz/basic/specifications)
+- [設計書](https://baserproject.github.io/5/ucmitz/specifications/index)
 　
 
 ## 開発の準備
