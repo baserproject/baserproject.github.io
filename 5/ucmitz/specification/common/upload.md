@@ -213,7 +213,6 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 
 ![削除処理](../../svg/activity/bc_upload/delete.svg)
 
-<!--
 ---
 
 ### 一時保存処理
@@ -225,4 +224,4 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 ### 一時保存ファイル復元処理
 
 ![一時保存処理](../../svg/activity/bc_upload/setup_tmp_data.svg) 
--->
+

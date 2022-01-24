@@ -1,7 +1,24 @@
 @startuml
+skinparam handwritten true
+
+title BcUpload
 
 start
 
+:BcUploadBehavior::saveTmpFiles;
 
+group アップロードファイルをセッションに保存
+	:saveTmpFiles;
+		note right
+			複数フィールドを処理
+		end note	
+	:setupRequestData;
+		note right
+			リクエストデータを最適化
+		end note	
+	:saveTmpFile;
+		note right
+			アップロードファイルをセッションに保存
+		end note	
 stop
 @enduml

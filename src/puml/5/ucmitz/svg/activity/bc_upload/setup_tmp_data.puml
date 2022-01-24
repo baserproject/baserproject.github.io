@@ -1,7 +1,24 @@
 @startuml
+skinparam handwritten true
+
+title BcUpload
 
 start
 
+:BcUploadBehavior::beforeMarshal;
 
+group セッションよりアップロードファイルを復元
+	:setupTmpData;
+		note right
+			複数フィールドを処理
+		end note	
+	:moveFileSessionToTmp;
+		note right
+			セッションよりアップロードファイルを復元
+		end note	
+	:setUploadingFiles;
+		note right
+			アップロードデータとしてセット
+		end note	
 stop
 @enduml
