@@ -1,0 +1,26 @@
+@startuml
+skinparam handwritten true
+
+title BcUpload
+
+start
+
+:BcUploadBehavior::beforeDelete;
+
+group 削除前
+
+	:deleteFiles;
+	:deleteFileWhileChecking;
+	note right
+			全てを対象とする
+	end note
+	:deleteFile;
+	note right
+			対象ファイルを削除
+	end note
+
+end group
+
+stop
+
+@enduml

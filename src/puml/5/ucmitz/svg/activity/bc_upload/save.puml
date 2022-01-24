@@ -1,0 +1,126 @@
+@startuml
+skinparam handwritten true
+
+title BcUpload
+
+start
+
+:BcUploadBehavior::beforeMarshal;
+
+group アップロードデータの最適化
+	:setupRequestData;
+		note right
+			エンティティ用に arrayをstringとして変換
+		end note
+	:setUploadingFiles;
+		note right
+			アップロードデータを $this->uploadingFiles にセットする
+		end note
+
+end group
+
+:BcUploadBehavior::beforeSave;
+
+group 保存直前	
+	group 既存ファイルの削除
+		:deleteExistingFiles;
+			note right 
+					既に存在するデータのファイルを捜索
+			end note
+		:deleteExistingFile;
+			note right
+					既に存在するデータのファイルを削除する
+			end note
+		:deleteFile;
+			note right
+					ファイルを削除する
+			end note
+	end group
+	
+	group ファイル保存処理
+	
+		:saveFiles;
+			note right
+					ファイル群を保存する
+			end note
+		:saveFileWhileChecking;
+			note right
+					保存対象かチェックしながらファイルを保存する
+			end note
+		:getUniqueFileName;
+			note right
+					一意のファイル名を取得する
+			end note
+		:saveFile;
+			note right
+					対象ファイルを作成する
+			end note
+		:getSaveFileName;
+			note right
+					保存用ファイル名を取得する
+			end note
+		:rotateImage;
+			note right
+					画像をExif情報を元に正しい確度に回転する
+			end note
+			
+		group 画像の複製
+	
+			:copyImages;
+			note right
+					imagecopy指定の画像をコピーする
+			end note
+			:copyImage;
+	
+		end group
+		
+		:resizeImage;
+		note right
+				本体画像ファイルリサイズする
+		end note
+			
+	end group
+	
+	group 削除チェックが入ってるファイルを削除
+		:deleteFiles;
+			note right
+					設定ファイルをもとに削除対象かチェック
+			end note
+		:deleteFileWhileChecking;
+			note right
+					_deleteの対象をチェック
+			end note
+		:deleteFile;
+			note right
+					対象ファイルを削除する
+			end note
+	end group
+	
+end group
+
+:BcUploadBehavior::afterSave;
+	
+group 保存直後
+
+	:renameToBasenameFields;
+		note right
+				全フィールドのファイル名をフィールド値ベースのファイル名に変更する
+		end note
+	:renameToBasenameField;
+		note right
+				ファイル名をフィールド値ベースのファイル名に変更する
+		end note
+	:getFieldBasename;
+		note right
+				フィールドベースのファイル名でファイルを取得しなければ作成する
+				====
+				_thumb, _medium, xxxxxx_eyecatchなど
+		end note
+	:getFileName;
+		note right
+				ベースファイル名からプレフィックス付のファイル名を取得する
+		end note
+end group
+
+stop
+@enduml

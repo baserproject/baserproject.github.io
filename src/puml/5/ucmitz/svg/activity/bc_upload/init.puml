@@ -1,6 +1,13 @@
 @startuml
+skinparam handwritten true
+
+title BcUpload 
 
 start
+
+:BcUploadBehavior::initialize;
+
+group 初期化
 :initialize;
 note right
     初期化
@@ -17,6 +24,9 @@ end note
 note right
     ファイルの重複確認を行うディレクトリのリストを取得
 end note
+
+end group
+
 stop
 
 @enduml
