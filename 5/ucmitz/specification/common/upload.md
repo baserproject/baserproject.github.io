@@ -192,8 +192,11 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 ```php
 /uploads/tmp/{セッション名}
 ```
+`BcAdminFormHelper::control()` を利用する場合、もしくは、`BcUploadHelper::uploadImage()`、`BcUploadHelper::fileLink()` を利用する場合は、セッションの有無を判断し、自動的にURLを切り替える。
 
+　
 ---
+
 　
 ## アクティビティ図
 
