@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const src = 'src/puml/**/*.puml';
 const target = './';
 const runSequence = require('gulp4-run-sequence');
-const { watch } = require('browser-sync');
+const gulpif = require('gulp-if');
 
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -18,15 +18,22 @@ gulp.task('bs-reload', function(){
 });
 
 gulp.task('puml', function () {
+	// 初回時に全データを吐き出さないようにキャッシュされたかを確認
+	const isCached = cache.caches['puml'] !== undefined;
 	return gulp.src(src)
 		.pipe(cache('puml'))
 		.pipe(puml({format: 'svg'}))
-		.pipe(gulp.dest(target));
+		.pipe(gulpif(isCached, gulp.dest(target)));
 });
+
+gulp.task('watch', function() {
+	return gulp.watch(src, ['default']);
+});
+
 
 gulp.task('default', gulp.series(
 	gulp.parallel('browser-sync', 'puml', function () {
-		watch(src, function () {
+		gulp.watch(src).on("change", function () {
 			return runSequence(
 				'puml',
 				'bs-reload'

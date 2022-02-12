@@ -21,6 +21,7 @@
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
+    "gulp-if": "^3.0.0",
     "gulp-plantuml": "^0.0.1",
     "gulp-puml": "^0.1.24",
     "gulp4-run-sequence": "^1.0.1"
