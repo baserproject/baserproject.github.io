@@ -1,8 +1,21 @@
-var gulp = require('gulp');
-var puml = require('gulp-puml');
-var cache = require('gulp-cached')
-var src = 'src/puml/**/*.puml';
-var target = './';
+const gulp = require('gulp');
+const puml = require('gulp-puml');
+const cache = require('gulp-cached');
+const browserSync = require('browser-sync').create();
+const src = 'src/puml/**/*.puml';
+const target = './';
+const runSequence = require('gulp4-run-sequence');
+const { watch } = require('browser-sync');
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+		proxy: 'localhost:4000'
+    });
+});
+
+gulp.task('bs-reload', function(){
+    browserSync.reload();
+});
 
 gulp.task('puml', function () {
 	return gulp.src(src)
@@ -11,6 +24,13 @@ gulp.task('puml', function () {
 		.pipe(gulp.dest(target));
 });
 
-gulp.task('default', function(){
-    gulp.watch(src, gulp.task('puml'));
-});
+gulp.task('default', gulp.series(
+	gulp.parallel('browser-sync', 'puml', function () {
+		watch(src, function () {
+			return runSequence(
+				'puml',
+				'bs-reload'
+			);
+		});
+	})
+));

@@ -1,0 +1,20 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title BcFrontContentsComponentの流れ(ページ表示)
+
+participant "pagesCcontroller" as Controller
+participant "BcfrontContentsComponent" as Component
+participant "default.php(Pages)" as template
+
+Controller -> Component : loadComponent
+
+Component -> Component : setupFront
+
+Component -> Controller : displayメソッド
+
+Controller -> template : render
+
+@enduml
