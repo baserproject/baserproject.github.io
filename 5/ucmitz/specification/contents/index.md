@@ -17,6 +17,6 @@
 ## 特性
   - [論理削除機能](./softDelete)
   - [ツリー構造機能](https://book.cakephp.org/4/ja/orm/behaviors/tree.html)
-  - [BcContentsBehavior](/bc_contents_behavior)
-  - [コンテンツ管理用コンポーネント](/contents_component)
+  - [BcContentsBehavior](./bc_contents_behavior)
+  - [コンテンツ管理用コンポーネント](./contents_component)
 

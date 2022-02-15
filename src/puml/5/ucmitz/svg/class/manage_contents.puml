@@ -1,4 +1,4 @@
-@startuml
+@startuml manage_contents
 skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
@@ -253,7 +253,5 @@ ContentsTable -left[#Black]-> Content
 ContentsTable -down[#Black]-> TreeBehavior
 ContentsTable -down[#Black]-> BcUploadBehavior
 ContentsTable -down[#Black]-> softDeleteTrait
-
-
 @enduml
 

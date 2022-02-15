@@ -9,11 +9,15 @@ class PagesController {
   + 固定ページを表示する：display()
 }
 
+class BcFrontContentsComponent {
+  + 初期化：initialize()
+  + フロントエンドのセットアップ：setupFront()
+}
+
 class Admin\PagesController {
   + AuthenticationComponent
   + BcMessageComponent
   + 固定ページ新規追加：add() 
-  + 固定ページ新規追加：add()
   + 固定ページ編集：edit()
   + 固定ページ削除：delete()
   + 固定ページをコピーする：copy()
@@ -31,11 +35,12 @@ class PageService {
 }
 
 class PageServiceInterface {
-  + 初期データ取得：getNew()
   + 作成：create()
   + 編集：update()
   + 削除：delete()
   + 単一データ取得：get()
+  + 固定ページテンプレートリストの取得：getPageTemplateList()
+  + コピー：copy()
 }
 
 class PagesTable {
@@ -68,6 +73,7 @@ class Page {
 }
 
 Admin\PagesController -down[#Black]-> PageService
+BcFrontContentsComponent -right[#Black]-> PagesController
 PagesController -down[#Black]-> PageService
 BcAdminPageHelper -left[#Black]-> PageService
 PageService -down[#Black]-> PagesTable

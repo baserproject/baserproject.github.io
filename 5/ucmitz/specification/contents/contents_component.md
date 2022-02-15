@@ -28,4 +28,11 @@ Controller/PagesController.phpなどフロント画面で使用
 
 #### 役割
 
-<b>以下作成途中です...</b>
+  - プレビュー時のデータの設定
+  - レイアウトテンプレートの設定
+  - 説明文
+  - タイトルの設定
+#### ページ表示
+
+### シーケンス図(例:Page)
+![シーケンス図：ページ表示](../../svg/sequence/bc_front_contents_component.svg)

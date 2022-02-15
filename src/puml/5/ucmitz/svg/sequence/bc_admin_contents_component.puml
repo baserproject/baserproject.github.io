@@ -1,4 +1,4 @@
-@startuml
+@startuml bc_admin_contents_component
 
 skinparam handwritten true
 skinparam backgroundColor white

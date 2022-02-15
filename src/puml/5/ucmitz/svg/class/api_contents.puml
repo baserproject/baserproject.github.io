@@ -1,4 +1,4 @@
-@startuml
+@startuml api_contents
 skinparam handwritten true
 hide circle
 skinparam classAttributeIconSize 0
