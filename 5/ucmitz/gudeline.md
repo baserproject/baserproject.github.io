@@ -14,6 +14,12 @@ ucmitz のドキュメント作成にご協力頂きありがとうございま�
 GitHub の [baserproject.github.io](https://github.com/baserproject/baserproject.github.io/tree/master/5/ucmitz) よりレポジトリをクローンし、master ブランチで編集します。
 GitHubにプッシュすると1分以内程度でドキュメントに反映されます。
 
+レイアウトなどのデザインの調整をしたい場合は、dockerを立ち上げてから [localhost:4000](http://localhost:4000) にアクセスすると表示が確認できます。
+
+```
+docker-compose up
+```
+
 ### 2. GitHub で編集
 
 ドキュメント左上の「Githubでこのページを編集」をクリックすると、GitHub上の該当ページに移動します。右上の鉛筆マークをクリックすると編集モードに切り替わりますのでそこで編集します。  
