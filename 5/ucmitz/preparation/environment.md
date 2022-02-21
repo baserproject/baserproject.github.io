@@ -1,11 +1,14 @@
 # 開発環境の構築
 
-開発は、Vagrant 上に Docker コンテナを立ち上げる、Docker on Vagrant で行います。
+開発は、Docker Desctop で行います。
 
 ## 構築手順
 
 ### 事前準備
-[VirtualBox](https://www.virtualbox.org/) と [Vagrant](https://www.vagrantup.com/) をインストールします。
+Docker Desctop をインストールします。
+
+- [Docker Descktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
+- [Docker Descktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ### ucmitz をクローンする
 ucmitz をクローンし、`dev` ブランチに切り替えます。
@@ -15,21 +18,6 @@ git clone https://github.com/baserproject/ucmitz.git
 git checkout dev
 ```
 
-### Vagrant のプラグインのインストール
-ucmitz プロジェクトのディレクトリに移動しプラグインのインストールコマンドを実行します。
-
-```
-vagrant plugin install vagrant-vbguest
-vagrant plugin install vagrant-docker-compose
-```
-
-### Vagrantfile をコピーする
-Vagrant の設定ファイルをコピーし、メモリ等、必要があれば設定を修正します。
-
-```
-cp vagrant/Vagrantfile Vagrantfile
-```
-※ このファイルは自由に編集可能です。
 
 ### docker-compose をコピーする
 
@@ -39,16 +27,15 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 
 ※ このファイルは自由に編集可能です。
 
-### Vagrant を実行する
-Vagrant を実行すると、CentOS をインストールし、その上に、Docker や、docker-compose のインストールが始まります。
-docker-compose も自動実行しますので、他に何もする必要がありません。以上で環境構築は終了です。
+### Docker を起動する
+Docker を起動すると　ucmitzの初期化処理が始まります。初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。
+以上で環境構築は終了です。
 
 ```
 vagrant up
 ```
 
-ローカルの ucmitz のディレクトリは、/vagrant にマウントされています。  
-マウントが正常にできていない場合は、[トラブルシューティング](https://baserproject.github.io/5/ucmitz/etc/troubleshooting#Vagrantのマウントが正常に行われない) を参照してください。
+ローカルの ucmitz のディレクトリは、/var/www/shared にマウントされています。  
 
 - アプリケーション：[https://localhost/](https://localhost/)
 - phpMyAdmin：[http://localhost:8080/](http://localhost:8080/)
@@ -73,16 +60,6 @@ vagrant ssh
 cd /vagrant/docker
 docker exec -it bc5-php /bin/bash
 ```
-
-## データベースのマイグレーションを実行
-次のコマンドを実行してデータベースを初期化します。
-
-```
-bin/cake migrations migrate --plugin BaserCore
-bin/cake migrations seed --plugin BaserCore
-```
-
-詳しくは[データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/database)を参照してください。
 
 ## データベース情報
 
