@@ -32,7 +32,7 @@ Docker を起動すると　ucmitzの初期化処理が始まります。初期�
 以上で環境構築は終了です。
 
 ```
-vagrant up
+docker-compose up -d
 ```
 
 ローカルの ucmitz のディレクトリは、/var/www/shared にマウントされています。  
