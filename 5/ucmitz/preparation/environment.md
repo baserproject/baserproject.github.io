@@ -28,10 +28,12 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 ※ このファイルは自由に編集可能です。
 
 ### Docker を起動する
+docker ディレクトリに移動してから Docker 起動します。
 Docker を起動すると　ucmitzの初期化処理が始まります。初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。
 以上で環境構築は終了です。
 
 ```
+cd docker
 docker-compose up -d
 ```
 
@@ -53,11 +55,11 @@ docker-compose up -d
 - パスワード：password
 
 ## コンテナへのログイン方法
-まず、Vagrant にログインした後にコンテナにログインします。
+
+docker ディレクトリに移動してからログインします。
 
 ```
-vagrant ssh
-cd /vagrant/docker
+cd docker
 docker exec -it bc5-php /bin/bash
 ```
 
