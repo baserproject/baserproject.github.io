@@ -27,7 +27,7 @@ Admin/ContentFoldersController.php・Admin/ContentsController.phpなどの管理
 　
 ## BcFrontContentsComponent
 
-Controller/PagesController.phpなどフロント画面で使用
+Controller/PagesController.phpやController/ContentFoldersController.phpなどフロント画面で使用
 
 ### 役割
 
