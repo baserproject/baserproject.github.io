@@ -11,3 +11,7 @@
 - [ユーザーグループ管理](https://baserproject.github.io/5/ucmitz/specification/user_groups/index) 
 - [コンテンツ管理](https://baserproject.github.io/5/ucmitz/specification/contents/index)
 - [固定ページ管理](https://baserproject.github.io/5/ucmitz/specification/pages/index)
+
+## プラグインAPI
+
+- [ダッシュボードパネル](https://baserproject.github.io/5/ucmitz/dashboard/dashboard_panel.md)
