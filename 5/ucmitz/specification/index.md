@@ -14,4 +14,4 @@
 
 ## プラグインAPI
 
-- [ダッシュボードパネル](https://baserproject.github.io/5/ucmitz/dashboard/dashboard_panel.md)
+- [ダッシュボードパネル](https://baserproject.github.io/5/ucmitz/specification/dashboard/dashboard_panel)

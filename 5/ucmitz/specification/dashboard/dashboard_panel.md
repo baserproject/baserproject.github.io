@@ -11,5 +11,5 @@
 各プラグインの次のパスに任意の名称のテンプレートファイルを配置することで自動的にダッシュボードに読み込める。
 
 ```shell
-/templates/Admin/element/Dashboard/dasshboard_panel_name.php
+/templates/Admin/element/Dashboard/dashboard_panel_name.php
 ```
