@@ -1,6 +1,6 @@
 @startuml
 skinparam handwritten true
-
+skinparam backgroundColor white
 title BcUpload 
 
 start

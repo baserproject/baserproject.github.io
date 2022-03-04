@@ -1,5 +1,6 @@
 @startuml
 skinparam handwritten true
+skinparam backgroundColor white
 hide method
 
 title ドメインモデル図：固定ページ

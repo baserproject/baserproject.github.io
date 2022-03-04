@@ -1,5 +1,6 @@
 @startuml
-
+skinparam backgroundColor white
+skinparam handwritten true
 title "ucmitz系BcContentsBehavior"
 
 start

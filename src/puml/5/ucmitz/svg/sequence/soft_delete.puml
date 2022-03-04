@@ -1,4 +1,8 @@
 @startuml
+skinparam handwritten true
+skinparam backgroundColor white
+
+title 論理削除機能
 コンテンツ -> ゴミ箱 : ゴミ箱に移動(delete)
 コンテンツ <- ゴミ箱 : 元に戻す(restore)
 ゴミ箱 -> 空にする : ゴミ箱を空にする(hardDelete)

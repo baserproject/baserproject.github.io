@@ -1,5 +1,6 @@
 @startuml api_contents
 skinparam handwritten true
+skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 

@@ -1,5 +1,6 @@
 @startuml
 skinparam handwritten true
+skinparam backgroundColor white
 
 title ユースケース：ユーザーグループ管理
 

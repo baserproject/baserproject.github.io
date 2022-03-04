@@ -1,5 +1,6 @@
 @startuml
 skinparam handwritten true
+skinparam backgroundColor white
 
 title ユースケース：固定ページ管理
 
