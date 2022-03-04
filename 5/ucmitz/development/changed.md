@@ -62,3 +62,10 @@ $.ajax({
 ```
 
 なお、アクセストークンは、管理画面へのログイン時に取得し、リフレッシュトークンをローカルストレージに保存し、 `admin/startup.js` にて、毎画面ごとにリフレッシュトークンを利用して新しいアクセストークンを取得しています。
+
+　
+## BcSecurity.csrfExpires の廃止
+
+CSRFは、SecurityComponent から、CsrfProtectionMiddleware に移行となりました。
+それに伴い、baserCMS側から介入できなくなったため、設定値 `BcSecurity.csrfExpires` は廃止となっています。  
+デフォルト値はブラウザセッションです。設定したい場合は、Application クラスにて `expiry` で設定します。
