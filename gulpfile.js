@@ -36,7 +36,7 @@ gulp.task('default', gulp.series(
 			// 行数が多いことにより、gulpがうまくいかないためjava側で実行
 			/** @see https://baserproject.github.io/5/ucmitz/etc/troubleshooting#gulp-pumlにてplantumlのコンパイルが失敗する場合 */
 			if (fileName === "src/puml/5/ucmitz/svg/class/manage_contents.puml") {
-				exec(`java -jar /opt/plantuml/plantuml.jar -verbose -o "../../../../../../5/ucmitz/svg/class"  ${fileName}  -tsvg`,
+				exec(`java -jar plantuml.jar -verbose -o "../../../../../../5/ucmitz/svg/class"  ${fileName}  -tsvg`,
 					function (error, stdout, stderr) {
 						console.log('stdout: ' + stdout);
 						console.log('stderr: ' + stderr);
