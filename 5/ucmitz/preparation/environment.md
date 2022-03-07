@@ -62,6 +62,14 @@ docker ディレクトリに移動してからログインします。
 cd docker
 docker exec -it bc5-php /bin/bash
 ```
+## 初期データを設定する
+
+マイグレーションに必要なデータを入れる
+
+```
+bin/cake migrations migrate --plugin BaserCore
+bin/cake migrations seed --plugin BaserCore
+```
 
 ## データベース情報
 

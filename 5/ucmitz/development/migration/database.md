@@ -7,6 +7,7 @@
 
 ```
 bin/cake migrations migrate --plugin BaserCore
+bin/cake migrations seed --plugin BaserCore
 ```
 
 　
