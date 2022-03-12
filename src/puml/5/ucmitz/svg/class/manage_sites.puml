@@ -1,0 +1,104 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title サイト管理
+
+class Admin\SitesController {
+  + サイト一覧を表示：index()
+  + サイト新規追加：add()
+  + サイト編集：edit()
+  + サイト削除：delete()
+  + 公開状態にする：publish()
+  + 非公開状態にする：unpublish()
+}
+
+class BcAdminSiteHelper {
+  + IDよりサイトを取得する：findById()
+  + URLよりサイトを取得する：findByUrl()
+  + 現在の管理対象のサイトを取得する：getCurrentSite()
+  + デバイスリストを取得：getDeviceList()
+  + 言語リストを取得：getLangList()
+  + 現在の管理対象のサイト以外のリストを取得する：getOtherSiteList()
+  + サイトのリストを取得：getSiteList()
+  + テーマのリストを取得：getThemeList()
+  + 現在の画面で表示しているものがメインサイトかどうか：isMainOnCurrentDisplay()
+  + デバイス設定を利用するかどうか：isUseSiteDeviceSetting()
+  + 言語設定を利用するかどうか：isUseSiteLangSetting()
+}
+
+class SiteService {
+  + SitesTable
+}
+
+class SiteServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + IDよりサイトを取得する：findById()
+  + URLよりサイトを取得する：findByUrl()
+  + デバイスリストを取得：getDeviceList()
+  + 言語リストを取得：getLangList()
+  + 選択可能なデバイスの一覧を取得する：getSelectableDevices()
+  + 選択可能が言語の一覧を取得する：getSelectableLangs()
+  + テーマのリストを取得する：getThemeList()
+  + 公開状態にする：publish()
+  + 非公開状態にする：unpublish()
+}
+
+class SitesTable {
+  + サブサイトを取得する：children()
+  + URLよりサイトを取得する：findByUrl()
+  + サイトリストを取得：getList()
+  + メインサイトを取得する：getMain()
+  + URLに関連するメインサイトを取得する：getMainByUrl()
+  + プレフィックスを取得する：getPrefix()
+  + 公開されている全てのサイトを取得する：getPublishedAll()
+  + コンテンツに関連したコンテンツをサイト情報と一緒に全て取得する：getRelatedContents()
+  + サイトのルートとなるコンテンツIDを取得する：getRootContentId()
+  + メインサイトのデータを取得する：getRootMain()
+  + 選択可能なデバイスの一覧を取得する：getSelectableDevices()
+  + 選択可能な言語の一覧を取得する：getSelectableLangs()
+  + URLに関連するサブサイトを取得する：getSubByUrl()
+  + メインサイトかどうか判定する：isMain()
+  + デバイス設定をリセットする：resetDevice()
+  + 言語設定をリセットする：resetLang()
+}
+
+class Site {
+	+ 識別名称：name
+	+ サイトエイリアス：alias
+	+ サイト名：display_name
+	+ サイトタイトル：title
+	+ サイト基本キーワード：keyword
+	+ サイト基本説明文：description
+	+ メインサイトID：main_site_id
+	+ エイリアスを利用してメインサイトと自動連携する：relate_main_site
+	+ デバイス設定：device
+	+ 言語設定：lang
+	+ メインサイトと同一URLでアクセス：same_main_url
+	+ メインサイトから自動的にリダイレクト：auto_redirect
+	+ 全てのリンクをサブサイト用に変換する：auto_link
+	+ テーマ：theme
+	+ 公開状態：status
+	+ 別ドメインかどうか：use_subdomain
+	+ サイトにURLが存在するかどうか判定する：existsUrl()
+	+ メインサイトを取得する：getMain()
+	+ エイリアスを除外したURLを取得：getPureUrl()
+	+ エイリアスを反映したURLを生成：makeUrl()
+	+ 与えられたリクエストに対して自動リダイレクトすべきかどうかを返す：shouldRedirects()
+}
+
+Admin\SitesController -down[#Black]-> SiteService
+BcAdminSiteHelper -left[#Black]-> SiteService
+SiteService -down[#Black]-> SitesTable
+SiteService -left[dotted,#Black]-|> SiteServiceInterface
+SitesTable -down[#Black]-> Site
+
+@enduml

@@ -6,7 +6,10 @@ const [target, src] = ['./', 'src/puml/**/*.puml'];
 const runSequence = require('gulp4-run-sequence');
 const gulpif = require('gulp-if');
 const exec = require('child_process').exec;
-
+const analogPuml = [
+	"src/puml/5/ucmitz/svg/class/manage_contents.puml",
+	"src/puml/5/ucmitz/svg/class/manage_sites.puml"
+];
 gulp.task('browser-sync', function() {
     browserSync.init({
 		proxy: 'localhost:4000'
@@ -32,18 +35,21 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series(
 	gulp.parallel('browser-sync', 'puml', function () {
-		gulp.watch(src).on("change", function (fileName) {
+		gulp.watch(src).on("change", function ($file) {
 			// 行数が多いことにより、gulpがうまくいかないためjava側で実行
 			/** @see https://baserproject.github.io/5/ucmitz/etc/troubleshooting#gulp-pumlにてplantumlのコンパイルが失敗する場合 */
-			if (fileName === "src/puml/5/ucmitz/svg/class/manage_contents.puml") {
-				exec(`java -jar plantuml.jar -verbose -o "../../../../../../5/ucmitz/svg/class"  ${fileName}  -tsvg`,
-					function (error, stdout, stderr) {
-						console.log('stdout: ' + stdout);
-						console.log('stderr: ' + stderr);
+			if (analogPuml.indexOf($file)) {
+				path = $file.replace('src/puml/', '');
+				fileName = path.split('\/').pop();
+				reg = new RegExp('\/' + fileName.replace('.', '\.'), 'g');
+				targetDir = '../../../../../../' + path.replace(reg, '');
+				exec(`java -jar plantuml.jar -verbose -o "${targetDir}"  ${$file}  -tsvg`,
+					function (error) {
 						if (error !== null) {
 							console.log('exec error: ' + error);
 						}
-				});
+					}
+				);
 			} else {
 				return runSequence(
 					'puml',

@@ -71,9 +71,20 @@ section h4,
 section h5,
 section h6 {
   margin: 9px 0;
-  font-size: 28px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 50px;
+}
+section h3 {
+  font-size: 28px;
+}
+section h4 {
+  font-size: 24px;
+}
+section h5 {
+  font-size: 20px;
+}
+section h6 {
+  font-size: 16px;
 }
 section pre {
   font-size: 14px;
