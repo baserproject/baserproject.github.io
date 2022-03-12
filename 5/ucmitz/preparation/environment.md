@@ -54,6 +54,10 @@ docker-compose up -d
 - ユーザー名：admin@example.com
 - パスワード：password
 
+アプリケーションの管理画面は、SSLでアクセスしないとエラーとなります。  
+http でアクセスしたい場合は、.env の `ADMIN_SSL` を false  に設定してください。
+
+　
 ## コンテナへのログイン方法
 
 docker ディレクトリに移動してからログインします。
