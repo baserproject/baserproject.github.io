@@ -5,7 +5,7 @@
 ### 画像の出力
 
 ```
-$this->BcBaser->img(string $path, $options = array())
+$this->BcBaser->img(string $path, $options = array()): void
 ```
 imgタグを出力します。
 
@@ -16,7 +16,7 @@ $this->BcBaser->img('/img/baser.power.gif', ['width' => 200]);
 ### 画像タグの取得
 
 ```
-$this->BcBaser->getImg(string $path, $options = array())
+$this->BcBaser->getImg(string $path, $options = array()): string
 ```
 
 imgタグを取得します。
@@ -28,7 +28,7 @@ $img = $this->BcBaser->getImg('/img/baser.power.gif', ['width' => 200]);
 ### JavaScriptの呼び出し
 
 ```
-$this->BcBaser->js(string|array $url, bool $inline = true, $options = array());
+$this->BcBaser->js(string|array $url, bool $inline = true, $options = array()): void
 ```
 
 scriptタグを出力します。
@@ -50,7 +50,7 @@ $this->BcBaser->js([
 ### エレメントの出力
 
 ```
-$this->BcBaser->element(string $name, $data = array(), $options = array());
+$this->BcBaser->element(string $name, $data = array(), $options = array()): void
 ```
 
 `$name`に呼び出したいエレメント名、`$data`にエレメントに渡したいデータを記載します。
@@ -76,7 +76,7 @@ $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
 ### エレメントの取得
 
 ```
-$this->BcBaser->getElement(string $name, $data = array(), $options = array());
+$this->BcBaser->getElement(string $name, $data = array(), $options = array()): string
 ```
 
 `$this->BcBaser->element`ではエレメントの取得・出力を行いますが、`$this->BcBaser->getElement`ではエレメントの取得までを行います。
@@ -90,7 +90,7 @@ $head = $this->BcBaser->element('head');
 ### リンクの出力
 
 ```
-$this->BcBaser->link($title, $url = null, $htmlAttributes = [], $confirmMessage = false);
+$this->BcBaser->link($title, $url = null, $htmlAttributes = [], $confirmMessage = false): void
 ```
 
 アンカータグを出力します。
@@ -103,15 +103,36 @@ $this->BcBaser->link('top', '/', ['target' => '_blank'], 'ページを開きま�
 ### リンクの取得
 
 ```
-$this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = false);
+$this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = false): string
 ```
 
 アンカータグを取得します。
 
 ## URL
 
-### url
-### getUrl
+### URLを出力
+
+```
+$this->BcBaser->url(string $url = null, bool $full = false, bool $sessionId = true): void
+```
+
+baserCMSの設置フォルダを考慮したURLを出力します。
+`$full`がtrueの場合は絶対URLになります。
+
+```
+$this->BcBaser->url('/test', true);
+
+# baserが https://example.com/baser/ に設置されている場合、 「https://example.com/baser/test」を出力
+```
+
+### URLを取得
+
+```
+$this->BcBaser->getUrl(string $url = null, bool $full = false, bool $sessionId = true): string
+```
+
+baserCMSの設置フォルダを考慮したURLを取得します。
+
 ### isCurrentUrl
 ### getThemeUrl
 ### themeUrl
@@ -158,7 +179,21 @@ $this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = fa
 
 ## 判定
 
-### isAdminUser
+### 管理者判定
+
+```
+$this->BcBaser->isAdminUser(array| User $user = null): bool
+```
+
+指定したユーザーが管理者グループに属しているか判定を行います。
+`$user`を指定しない場合はログイン中のユーザーを対象にします。
+
+```
+if ($this->BcBaser->isAdminUser()) {
+  // 管理者用の処理
+}
+```
+
 ### existsEditLink
 ### existsPublishLink
 ### isHome
@@ -181,9 +216,25 @@ $this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = fa
 
 ## TODO
 
-### getUserName
+### ユーザー名取得
+
+```
+$this->BcBaser->getUserName(User $user): string
+```
+
+指定したユーザーの姓と名を結合して取得します。
+ニックネームがある場合にはニックネームを優先します。
+
+### フラッシュメッセージ表示
+
+```
+$this->BcBaser->flash(string $key = 'flash'): void
+```
+
+セッションに保存したメッセージを出力します。
+例: フォームのエラーメッセージ等
+
 ### i18nScript
-### flash
 ### getContentsTitle
 ### contentsName
 ### getContentsName
