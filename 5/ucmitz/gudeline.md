@@ -62,7 +62,7 @@ PlantUMLなどで作成した SVGファイルを配置します。
 ## 図の作成
 ユースケース図、ドメインモデル図、クラス図などの図の作成には、PlantUML を利用します。
 
-[PlantUMLの利用方法](https://baserproject.github.io/5/ucmitz/etc/plant_uml)
+[PlantUMLの利用方法](./etc/plant_uml)
 
 　
 ## 設計書の構成

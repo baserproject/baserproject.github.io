@@ -23,7 +23,7 @@ bin/cake bake seed --data TableName --plugin PluginName
 ```
 ※ TableName、PluginName は任意の名称にします。
 
-参考: [データベースにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/database)
+参考: [データベースにおける注意点](./database)
 
 　
 ## Entity を作成する
@@ -33,7 +33,7 @@ bin/cake bake seed --data TableName --plugin PluginName
 ## Table を移行する
 baserCMS4の Model は、Table へと移行します。とりあえずエラーが出なくなるようにするところまで調整していきます。
 
-参考: [モデルにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/model)
+参考: [モデルにおける注意点](./model)
 
 ### 既存の対象モデルを確認
 /Model/Table/_NotYetMigratedに対象クラスがないか確認します。あれば Table直下に移動します。
@@ -78,7 +78,7 @@ public $import = ['table' => 'sites'];
 
 Serviceクラスでは、まず、基本的なメソッドとテストを作成します。
 
-参考: [アーキテクチャー設計方針](https://baserproject.github.io/5/ucmitz/basic/architecture_design_policy)
+参考: [アーキテクチャー設計方針](../../basic/architecture_design_policy)
 
 ### Interface を作成
 先に Interface を作成します。
@@ -115,7 +115,7 @@ DIコンテナで Service クラスを注入して作成します。
 DIコンテナで Service クラスを注入し実装し、テストを作成します。  
 必要があれば処理を ManageServiceに移行し、ビューに処理が移行するまでにエラーが出なくなるようにします。
     
-参考: [コントローラーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/controller)
+参考: [コントローラーにおける注意点](./controller)
 
 ### リクエスト判定を変更
 postリクエストの判定を `$this->request->is('post')` に変更します。
@@ -133,8 +133,8 @@ $this->BcAdmin->setSearch();
 　
 ## View を移行
 
-参考: [ビューにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/view)  
-参考: [ヘルパーにおける注意点](https://baserproject.github.io/5/ucmitz/development/migration/helper)
+参考: [ビューにおける注意点](./view)  
+参考: [ヘルパーにおける注意点](./helper)
 
 ### 一覧のAjaxコードを削除
 一覧でのAjax呼び出しは廃止になりました。次のような Javascript は削除します。
