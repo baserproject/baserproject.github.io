@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：プラグイン
+
+package プラグイン {
+	
+	class プラグイン {
+		名前
+		タイトル
+		バージョン
+		有効・無効
+		データベース初期化状態
+		優先度
+	}
+
+}
+
+class BcPlugin {
+	
+}
+
+プラグイン -right-> BcPlugin
+
+@enduml

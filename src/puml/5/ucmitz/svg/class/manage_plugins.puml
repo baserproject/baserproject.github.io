@@ -1,0 +1,81 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title プラグイン管理
+
+class Admin\PluginsController {
+  + プラグイン一覧を表示：index()
+  + 新しいプラグインをアップロードする：add()
+  + プラグインをインストールする：install()
+  + プラグインを無効化する：detach()
+  + データベースをリセットする：reset_db()
+  + プラグインをアンインストールする：uninstall()
+  + プラグインを一括無効化する：batch()
+  + 優先順位の並び替えを更新する：update_sort()
+  + プラグインをアップデートする：update()
+  + baserマーケットのプラグインデータを取得する：get_market_plugins()
+}
+
+class BcAdminPluginHelper {
+  + プラグインインストールについてのメッセージを取得する：getInstallStatusMessage()
+}
+
+class PluginService {
+  + PluginsTable
+}
+
+class PluginServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+	+ 新しいプラグインをアップロードする：add()
+  + インストール：install()
+	+ プラグインを無効にする：detach()
+	+ データベースをリセットする：resetDb()
+  + アンインストール：uninstall()
+  + 優先度を変更する：changePriority()
+  + プラグインをアップデートする：update()
+  + baserマーケットのプラグイン一覧を取得する：getMarketPlugins()
+	+ ユーザーグループにアクセス許可設定を追加する：allow()
+	+ プラグイン名からプラグインエンティティを取得：getByName()
+	+ インストールに関するメッセージを取得する：getInstallStatusMessage()
+}
+
+class BcPlugin {
+	+ Migrations
+	+ プラグインをインストールする：install()
+	+ プラグインをアンインストールする：uninstall()
+	+ プラグインのテーブルをリセットする：rollbackDb()
+}
+note bottom of (BcPlugin)
+プラグインの Plugin クラスが継承して利用する
+endnote
+
+class PluginsTable {
+  + プラグインをインストールする：install()
+  + プラグインをアンインストールする：uninstall()
+  + プラグインを無効化する：detach()
+  + 優先順位を変更する：changePriority()
+  + プラグイン情報を取得する：getPluginConfig()
+}
+
+class Plugin {
+	+ 名前：name
+	+ タイトル：title
+	+ バージョン：version
+	+ 有効・無効：status
+	+ データベース初期化状態：db_inited
+	+ 優先度：priority
+}
+
+Admin\PluginsController -down[#Black]-> PluginService
+BcAdminPluginHelper -left[#Black]-> PluginService
+PluginService -down[#Black]-> PluginsTable
+PluginService -down[#Black]-> BcPlugin
+BcPlugin -right[#Black]-> PluginsTable
+PluginService -left[dotted,#Black]-|> PluginServiceInterface
+PluginsTable -down[#Black]-> Plugin
+
+@enduml

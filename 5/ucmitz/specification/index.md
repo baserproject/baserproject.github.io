@@ -12,6 +12,7 @@
 - [サイト管理](./sites/index) 
 - [コンテンツ管理](./contents/index)
 - [固定ページ管理](./pages/index)
+- [プラグイン管理](./plugins/index)
 
 ## プラグインAPI
 

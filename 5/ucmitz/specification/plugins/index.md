@@ -28,11 +28,11 @@ baserマーケットのプラグインを表示する。
 
 　
 ## ドメインモデル図
-作成中
+
 ![クラス図：プラグイン管理画面](../../svg/domain_model/plugins.svg)
 
 　
 ## クラス図
-作成中
+
 ![クラス図：プラグイン管理画面](../../svg/class/manage_plugins.svg)
 
