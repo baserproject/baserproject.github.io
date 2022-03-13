@@ -18,10 +18,4 @@ package プラグイン {
 
 }
 
-class BcPlugin {
-	
-}
-
-プラグイン -right-> BcPlugin
-
 @enduml
