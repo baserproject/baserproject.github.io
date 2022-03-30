@@ -1,0 +1,20 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title コンテンツフォルダ管理API
+
+class Api\ContentFoldersController {
+    + コンテンツフォルダ一覧：index() 
+    + コンテンツフォルダ取得：view() 
+    + コンテンツフォルダ追加：add() 
+    + コンテンツフォルダ削除：delete() 
+    + コンテンツフォルダ編集：edit() 
+}
+
+Api\ContentFoldersController -up[#Black]-|> BcApiController
+note "以下コンテンツフォルダ管理と同じ" as contentFolderNote
+Api\ContentFoldersController .. contentFolderNote
+@enduml

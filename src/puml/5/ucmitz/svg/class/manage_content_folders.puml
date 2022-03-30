@@ -6,7 +6,7 @@ skinparam classAttributeIconSize 0
 
 title コンテンツフォルダ管理
 
-class BcContentsComponent {
+class BcAdminContentsComponent {
     + setupAdmin()
     + setupFront()
     + settingForm()
@@ -20,10 +20,21 @@ class BcContentsComponent {
 class Admin\ContentFoldersController {
     + AuthenticationComponent
     + BcMessageComponent
-    + BcContentsComponent
+    + BcAdminContentsComponent
     + edit()
     + delete()
     ※ add() は、APIを利用する
+}
+
+class ContentFoldersController {
+    + BcFrontContentsComponent
+    + initialize()
+    + view()
+}
+
+class BcFrontContentsComponent {
+    + 初期化：initialize()
+    + フロントエンドのセットアップ：setupFront()
 }
 
 class BcAdminContentFolderHelper {
@@ -65,8 +76,7 @@ class ContentFolder {
 
 class BcContentsBehavior {
     + initialize()
-    + beforeMarshal()
-    + afterSave()
+    + afterMarshal()
     + beforeDelete()
     + afterDelete()
     + findPublished()
@@ -85,8 +95,10 @@ class Content {
 	entity_id
 }
 
-Admin\ContentFoldersController -left[#Black]-> BcContentsComponent
+Admin\ContentFoldersController -left[#Black]-> BcAdminContentsComponent
+ContentFoldersController -right[#Black]-> BcFrontContentsComponent
 Admin\ContentFoldersController -down[#Black]-> ContentFolderService
+ContentFoldersController -down[#Black]-> ContentFolderService
 
 BcAdminContentFolderHelper -left[#Black]-> ContentFolderService
 
