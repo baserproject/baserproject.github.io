@@ -8,7 +8,8 @@ const gulpif = require('gulp-if');
 const exec = require('child_process').exec;
 const analogPuml = [
 	"src/puml/5/ucmitz/svg/class/manage_contents.puml",
-	"src/puml/5/ucmitz/svg/class/manage_sites.puml"
+	"src/puml/5/ucmitz/svg/class/manage_sites.puml",
+	"src/puml/5/ucmitz/svg/class/manage_content_folders.puml"
 ];
 gulp.task('browser-sync', function() {
     browserSync.init({
@@ -38,7 +39,7 @@ gulp.task('default', gulp.series(
 		gulp.watch(src).on("change", function ($file) {
 			// 行数が多いことにより、gulpがうまくいかないためjava側で実行
 			/** @see https://baserproject.github.io/5/ucmitz/etc/troubleshooting#gulp-pumlにてplantumlのコンパイルが失敗する場合 */
-			if (analogPuml.indexOf($file)) {
+			if (analogPuml.includes($file)) {
 				path = $file.replace('src/puml/', '');
 				fileName = path.split('\/').pop();
 				reg = new RegExp('\/' + fileName.replace('.', '\.'), 'g');
