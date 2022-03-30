@@ -20,4 +20,5 @@
   - [ツリー構造機能](https://book.cakephp.org/4/ja/orm/behaviors/tree.html)
   - [コンテンツ管理用ビヘイビア](./bc_contents_behavior)
   - [コンテンツ管理用コンポーネント](./contents_component)
+  - [プレビュー機能](./preview)
 

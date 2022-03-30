@@ -5,8 +5,8 @@ title "ucmitz系BcContentsBehavior"
 
 start
 #yellow :contentFolder:patchEntity;
-#Pink :BcContentsBehavior:beforeMarshal;
 #lightGreen :Contents:beforeMarshal;
+#Pink :BcContentsBehavior:afterMarshal;
 #lightGreen :Contents:afterMarshal;
 #yellow :contentFolder:save;
 #lightGreen :Contents:beforeSave;
