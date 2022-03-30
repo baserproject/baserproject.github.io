@@ -1,0 +1,20 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title 固定ページ管理API
+
+class Api\PagesController {
+    + 固定ページ一覧：index() 
+    + 固定ページ追加：add() 
+    + 固定ページ削除：delete() 
+    + 固定ページ編集：edit() 
+    + 固定ページコピー：copy() 
+}
+
+Api\PagesController -up[#Black]-|> BcApiController
+note "以下固定ページ管理と同じ" as pageNote
+Api\PagesController .. pageNote
+@enduml
