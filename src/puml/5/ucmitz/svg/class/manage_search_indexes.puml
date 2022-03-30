@@ -1,0 +1,26 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title 検索インデックス
+
+class SearchIndexService {
+    + 索引取得：get()
+    + 検索インデックス再構築：reconstruct()  
+}
+
+class SearchIndexesTable {
+    + allowPublish()
+    + initialize()
+}
+
+class BcSearchIndexManagerBehavior {
+    + initialize()
+    + saveSearchIndex()
+    + deleteSearchIndex()
+    + updateSearchIndexMeta()
+}
+
+@enduml

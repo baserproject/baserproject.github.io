@@ -44,6 +44,10 @@ class PageServiceInterface {
   + コントロールソースを取得する：getControlSource()
 }
 
+class BcSearchIndexManagerBehavior {
+
+}
+
 class PagesTable {
 	+ ページをコピーする：copy()※ PageService に移行
 	+ 検索用データを生成する：createSearchIndex()
@@ -81,6 +85,7 @@ BcFrontContentsComponent -right[#Black]-> PagesController
 PagesController -down[#Black]-> PageService
 BcAdminPageHelper -left[#Black]-> PageService
 PageService -down[#Black]-> PagesTable
+BcSearchIndexManagerBehavior -right[#Black]-> PagesTable
 PagesTable -right[#Black]-> PageValidation
 PageService -left[dotted,#Black]-|> PageServiceInterface
 PagesTable -down[#Black]-> Page
