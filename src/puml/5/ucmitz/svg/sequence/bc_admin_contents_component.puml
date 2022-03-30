@@ -35,8 +35,7 @@ $mainSiteId
 $mainSiteDisplayName
 $sites
 $layoutTemplates
----
-contentEntitiesのチェック
+$entityName
 endnote
 
 Component -> EventListener  : イベント設置
