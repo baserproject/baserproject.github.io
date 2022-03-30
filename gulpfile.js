@@ -10,7 +10,6 @@ const analogPuml = [
 	"src/puml/5/ucmitz/svg/class/manage_contents.puml",
 	"src/puml/5/ucmitz/svg/class/manage_sites.puml",
 	"src/puml/5/ucmitz/svg/class/manage_content_folders.puml",
-	// "src/puml/5/ucmitz/svg/class/api_pages.puml"
 ];
 gulp.task('browser-sync', function() {
     browserSync.init({

@@ -18,10 +18,9 @@ class BcFrontContentsComponent {
 class Admin\PagesController {
   + AuthenticationComponent
   + BcMessageComponent
-  + 固定ページ新規追加：add() 
+  + initialize()
+  + beforeFilter()
   + 固定ページ編集：edit()
-  + 固定ページ削除：delete()
-  + 固定ページをコピーする：copy()
   + 固定ページファイルを登録する：admin_entry_page_files() ※ baserCMS５で廃止
   + 固定ページファイルを書き出す：admin_write_page_files() ※ baserCMS５で廃止
   + プレビュー用テンプレートを生成する：_createPreviewTemplate() ※ baserCMS５で廃止
@@ -42,6 +41,7 @@ class PageServiceInterface {
   + 単一データ取得：get()
   + 固定ページテンプレートリストの取得：getPageTemplateList()
   + コピー：copy()
+  + コントロールソースを取得する：getControlSource()
 }
 
 class PagesTable {
@@ -50,7 +50,6 @@ class PagesTable {
 	+ 初期値を取得する：getDefaultValue() ※ Page::getNew() に移行
 	+ 固定ページテンプレートリストを取得する：getPageTemplateList() ※ PageService に移行
 	+ コントロールソースを取得する：getControlSource() ※ PageService に移行
-	+ PHP構文チェック：phpValidSyntax() ※ PageValidation に移行
 	+ 削除：delete() ※ baserCMS５で廃止
 	+ 最終登録IDを取得する：getInsertID() ※ baserCMS５で廃止
 	+ URLより固定ページデータを探す：findByUrl() ※ baserCMS５で廃止
@@ -66,6 +65,10 @@ class PagesTable {
 	+ ページファイルのパスを取得する：getPageFilePath() ※ baserCMS５で廃止
 }
 
+class PageValidation {
+  + PHP構文チェック: phpValidSyntax()
+}
+
 class Page {
    + 本稿記事：contents
    + 草稿記事：draft
@@ -78,6 +81,7 @@ BcFrontContentsComponent -right[#Black]-> PagesController
 PagesController -down[#Black]-> PageService
 BcAdminPageHelper -left[#Black]-> PageService
 PageService -down[#Black]-> PagesTable
+PagesTable -right[#Black]-> PageValidation
 PageService -left[dotted,#Black]-|> PageServiceInterface
 PagesTable -down[#Black]-> Page
 
