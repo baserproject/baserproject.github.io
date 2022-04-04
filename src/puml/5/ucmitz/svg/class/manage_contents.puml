@@ -242,6 +242,7 @@ class softDeleteTrait {
   + query()
 }
 
+
 Admin\ContentsController -left[#Black]-> BcAdminContentsComponent
 Admin\ContentsController -right[#Black]-> BcFrontContentsComponent
 Admin\ContentsController -down[#Black]-> ContentService

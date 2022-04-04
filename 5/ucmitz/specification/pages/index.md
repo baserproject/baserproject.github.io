@@ -28,7 +28,11 @@ baserCMS4までは、記事を保存するタイミングで記事本体のテ�
 
 　
 ## クラス図
+### 固定ページ管理
 ![クラス図：固定ページ管理](../../svg/class/manage_pages.svg)
+
+　
+### 固定ページAPI
 ![クラス図：固定ページAPI](../../svg/class/api_pages.svg)
 
 

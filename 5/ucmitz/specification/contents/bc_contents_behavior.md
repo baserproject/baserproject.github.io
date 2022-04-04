@@ -9,7 +9,7 @@
 
 ### アクティビティ図
 
-|![アクティビティ図：basercms4系BcContentsBehavior](../../svg/activity/bc_contents_behavior/baser4_contents_create.svg)|![アクティビティ図：ucmitz系BcContentsBehavior](../../svg/activity/bc_contents_behavior/ucmitz_contents_create.svg)|
+|![アクティビティ図：basercms4系BcContentsBehavior](../../svg/activity/bc_contents_behavior/baser4_contents_create.svg)|![アクティビティ図：ucmitz系BcContentsBehavior](../../svg/activity/bc_contents_behavior/contents_create.svg)|
 
 ### シーケンス図
 
