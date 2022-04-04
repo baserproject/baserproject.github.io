@@ -25,29 +25,20 @@ endnote
 
 Service -> Folder : patchEntity
 
-Folder -> Behavior : beforeMarshal																										
-note over Behavior
-' ・コンテンツの初期化
-' ・コンテンツのバリデーション
-' ・バリデーション結果のマージ
-' ・バリデーション後のコンテンツのマージ
-' ・コンテンツのバリデーションチェック
-' ・エラーが出ていれば終了
-endnote
 
-Behavior <- Content: newEntity
-note over Content
-コンテンツフォルダーの
-情報を元にnewEntityを返す
-endnote
-
-Folder <- Behavior : エラーが出ていれば終了
-
-Behavior -> Content: コンテンツ側beforeMarshal
+Content -> Content: コンテンツ側beforeMarshal
 note over Content
 コンテンツテーブル側で
 コンテンツのセットアップ
 endnote
+
+Behavior -> Content : afterMarshal
+note over Behavior
+contentフィールドが含まれてない場合
+エラーを設定する。
+プラグインとコンテンツの種類を設定する
+endnote
+
 
 Content -> Content : afterMarshal
 note over Content
@@ -58,7 +49,8 @@ Service -> Content : save
 
 Content -> Content : beforeSave
 note over Content
-beforeSaveParentIdの設定など
+beforeSaveParentIdの設定と
+DBに登録されるデータのurlエンコード
 endnote
 
 Content -> Content : afterSave

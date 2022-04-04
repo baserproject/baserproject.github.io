@@ -2,7 +2,7 @@
 
 ## ucmitzにおける仕様変更
 
-4系ではBcContentsComponentだったクラスを<b>管理画面用(BcAdminContentsComponent)</b>と<b>フロント画面用(BcFrontContentsComponent)</b>に分離している
+4系ではBcAdminContentsComponentだったクラスを<b>管理画面用(BcAdminContentsComponent)</b>と<b>フロント画面用(BcFrontContentsComponent)</b>に分離している
 
 　
 ## BcAdminContentsComponent
