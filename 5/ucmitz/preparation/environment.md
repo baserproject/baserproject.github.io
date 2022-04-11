@@ -29,7 +29,7 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 
 ### Docker を起動する
 docker ディレクトリに移動してから Docker 起動します。
-Docker を起動すると　ucmitzの初期化処理が始まります。初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。
+Docker を起動すると　ucmitzの初期化処理（composerによるライブラリのインストール、データベースの初期化、JWT用のキー作成など）が始まります。初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。
 以上で環境構築は終了です。
 
 ```
@@ -51,12 +51,31 @@ docker-compose up -d
    
 メールアドレスとパスワードを入力し管理画面にログインします。
 
-- ユーザー名：admin@example.com
-- パスワード：password
+- ユーザー名：admin
+- パスワード：basercms
 
 アプリケーションの管理画面は、SSLでアクセスしないとエラーとなります。  
 http でアクセスしたい場合は、.env の `ADMIN_SSL` を false  に設定してください。
 
+　
+## ブラウザで画面が正常に表示できない場合
+
+初期化が終わっていないか、うまくいっていない可能性があります。
+次のコマンドで Docker のログを確認します。
+
+```shell
+docker logs bc5-php
+````
+
+「Container setup is complete.」と表示されていれば初期化は完了しています。  
+
+「Migration failed.」と表示されている場合は、MySQLの初期化が完了していません。コンテナにログインし、次のコマンドを実行してください。
+
+```shell
+/var/www/html/bin/cake migrations migrate --plugin BaserCore
+/var/www/html/bin/cake migrations seed --plugin BaserCore
+/var/www/html/bin/cake plugin assets symlink
+```
 　
 ## コンテナへのログイン方法
 
