@@ -5,10 +5,10 @@
 ## 構築手順
 
 ### 事前準備
-Docker Desctop をインストールします。
+Docker Desktop をインストールします。
 
-- [Docker Descktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
-- [Docker Descktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+- [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
+- [Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ### ucmitz をクローンする
 ucmitz をクローンし、`dev` ブランチに切り替えます。
@@ -58,6 +58,25 @@ docker-compose up -d
 http でアクセスしたい場合は、.env の `ADMIN_SSL` を false  に設定してください。
 
 　
+## コンテナへのログイン方法
+
+docker ディレクトリに移動してからログインします。
+
+```
+cd docker
+docker exec -it bc5-php /bin/bash
+```
+
+## データベース情報
+
+| name | value |
+|-----------|------------|
+| host | bc5-db |
+| database | basercms |
+| user | root |
+| password | root |
+
+　
 ## ブラウザで画面が正常に表示できない場合
 
 初期化が終わっていないか、うまくいっていない可能性があります。
@@ -76,21 +95,37 @@ docker logs bc5-php
 /var/www/html/bin/cake migrations seed --plugin BaserCore
 /var/www/html/bin/cake plugin assets symlink
 ```
+
 　
-## コンテナへのログイン方法
+## ファイルの内容を変更したのに反映できない場合
 
-docker ディレクトリに移動してからログインします。
+Docker Desktop を利用する前提となっていますが、現在（2022/04/11）Macの環境では、共有フォルダとしてマウントしたフォルダに直接 Apache の DocumentRoot を設定すると処理速度が非常に遅くなるという問題があります。
+そのため、別のフォルダにマウントして、lsyncd というサービスで同期するという仕組みにしています。
 
+```shell
+/var/www/shared # 共有フォルダとしてマウントするフォルダ
+/var/www/html # Apache の DocumentRoot
 ```
-cd docker
-docker exec -it bc5-php /bin/bash
+
+Docker の起動時に lsyncd を立ち上げる仕様となっていますが、ファイルの内容を変更した場合に反映できない場合はこちらを疑ってください。
+コンテナにログインしてサービスの起動状況を確認します。
+
+```shell
+service --status-all
 ```
 
-## データベース情報
+lsyncd の左側に「+」マークが表示されていれば問題ありません。
+そうでない場合は、手動で起動します。
 
-| name | value |
-|-----------|------------|
-| host | bc5-db |
-| database | basercms |
-| user | root |
-| password | root |
+```shell
+service lsyncd start
+```
+
+なお、同期処理の方向は次のとおりとなっています。
+
+```shell
+/var/www/shared → /var/www/html
+/var/www/html/tmp → /var/www/shared/tmp
+/var/www/html/logs → /var/www/shared/logs
+/var/www/html/webroot/files → /var/www/shared/webroot/files
+```
