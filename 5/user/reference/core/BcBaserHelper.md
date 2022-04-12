@@ -13,6 +13,8 @@ imgタグを出力します。
 $this->BcBaser->img('/img/baser.power.gif', ['width' => 200]);
 ```
 
+---
+
 ### 画像タグの取得
 
 ```
@@ -24,6 +26,8 @@ imgタグを取得します。
 ```
 $img = $this->BcBaser->getImg('/img/baser.power.gif', ['width' => 200]);
 ```
+
+---
 
 ### JavaScriptの呼び出し
 
@@ -42,6 +46,8 @@ $this->BcBaser->js([
   'defer',
 ]);
 ```
+
+---
 
 ## エレメント
 
@@ -73,6 +79,8 @@ $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
 </ul>
 ```
 
+---
+
 ### エレメントの取得
 
 ```
@@ -84,6 +92,8 @@ $this->BcBaser->getElement(string $name, $data = array(), $options = array()): s
 ```
 $head = $this->BcBaser->element('head');
 ```
+
+---
 
 ## リンク
 
@@ -100,6 +110,8 @@ $this->BcBaser->link($title, $url = null, $htmlAttributes = [], $confirmMessage 
 $this->BcBaser->link('top', '/', ['target' => '_blank'], 'ページを開きますか?');
 ```
 
+---
+
 ### リンクの取得
 
 ```
@@ -107,6 +119,8 @@ $this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = fa
 ```
 
 アンカータグを取得します。
+
+---
 
 ## URL
 
@@ -125,6 +139,8 @@ $this->BcBaser->url('/test', true);
 # baserが https://example.com/baser/ に設置されている場合、 「https://example.com/baser/test」を出力
 ```
 
+---
+
 ### URLを取得
 
 ```
@@ -132,6 +148,8 @@ $this->BcBaser->getUrl(string $url = null, bool $full = false, bool $sessionId =
 ```
 
 baserCMSの設置フォルダを考慮したURLを取得します。
+
+---
 
 ### isCurrentUrl
 ### getThemeUrl
@@ -194,6 +212,8 @@ if ($this->BcBaser->isAdminUser()) {
 }
 ```
 
+---
+
 ### existsEditLink
 ### existsPublishLink
 ### isHome
@@ -225,6 +245,8 @@ $this->BcBaser->getUserName(User $user): string
 指定したユーザーの姓と名を結合して取得します。
 ニックネームがある場合にはニックネームを優先します。
 
+---
+
 ### フラッシュメッセージ表示
 
 ```
@@ -233,6 +255,8 @@ $this->BcBaser->flash(string $key = 'flash'): void
 
 セッションに保存したメッセージを出力します。
 例: フォームのエラーメッセージ等
+
+---
 
 ### i18nScript
 ### getContentsTitle
