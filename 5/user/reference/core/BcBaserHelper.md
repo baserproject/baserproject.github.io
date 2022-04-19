@@ -5,7 +5,7 @@
 ### 画像の出力
 
 ```
-$this->BcBaser->img(string $path, $options = array()): void
+BcBaserHelper::img(string $path, $options = array()): void
 ```
 imgタグを出力します。
 
@@ -18,7 +18,7 @@ $this->BcBaser->img('/img/baser.power.gif', ['width' => 200]);
 ### 画像タグの取得
 
 ```
-$this->BcBaser->getImg(string $path, $options = array()): string
+BcBaserHelper::getImg(string $path, $options = array()): string
 ```
 
 imgタグを取得します。
@@ -32,7 +32,7 @@ $img = $this->BcBaser->getImg('/img/baser.power.gif', ['width' => 200]);
 ### JavaScriptの呼び出し
 
 ```
-$this->BcBaser->js(string|array $url, bool $inline = true, $options = array()): void
+BcBaserHelper::js(string|array $url, bool $inline = true, $options = array()): void
 ```
 
 scriptタグを出力します。
@@ -56,7 +56,7 @@ $this->BcBaser->js([
 ### エレメントの出力
 
 ```
-$this->BcBaser->element(string $name, $data = array(), $options = array()): void
+BcBaserHelper::element(string $name, $data = array(), $options = array()): void
 ```
 
 `$name`に呼び出したいエレメント名、`$data`にエレメントに渡したいデータを記載します。
@@ -84,7 +84,7 @@ $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
 ### エレメントの取得
 
 ```
-$this->BcBaser->getElement(string $name, $data = array(), $options = array()): string
+BcBaserHelper::getElement(string $name, $data = array(), $options = array()): string
 ```
 
 `$this->BcBaser->element`ではエレメントの取得・出力を行いますが、`$this->BcBaser->getElement`ではエレメントの取得までを行います。
@@ -100,7 +100,7 @@ $head = $this->BcBaser->element('head');
 ### リンクの出力
 
 ```
-$this->BcBaser->link($title, $url = null, $htmlAttributes = [], $confirmMessage = false): void
+BcBaserHelper::link($title, $url = null, $htmlAttributes = [], $confirmMessage = false): void
 ```
 
 アンカータグを出力します。
@@ -115,7 +115,7 @@ $this->BcBaser->link('top', '/', ['target' => '_blank'], 'ページを開きま�
 ### リンクの取得
 
 ```
-$this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = false): string
+BcBaserHelper::getLink($title, $url = null, $options = [], $confirmMessage = false): string
 ```
 
 アンカータグを取得します。
@@ -127,7 +127,7 @@ $this->BcBaser->getLink($title, $url = null, $options = [], $confirmMessage = fa
 ### URLを出力
 
 ```
-$this->BcBaser->url(string $url = null, bool $full = false, bool $sessionId = true): void
+BcBaserHelper::url(string $url = null, bool $full = false, bool $sessionId = true): void
 ```
 
 baserCMSの設置フォルダを考慮したURLを出力します。
@@ -144,7 +144,7 @@ $this->BcBaser->url('/test', true);
 ### URLを取得
 
 ```
-$this->BcBaser->getUrl(string $url = null, bool $full = false, bool $sessionId = true): string
+BcBaserHelper::getUrl(string $url = null, bool $full = false, bool $sessionId = true): string
 ```
 
 baserCMSの設置フォルダを考慮したURLを取得します。
@@ -153,20 +153,36 @@ baserCMSの設置フォルダを考慮したURLを取得します。
 
 ## 判定
 
+## トップページ判定
+
+```
+BcBaserHelper::isHome(): bool
+```
+
+現在のページがトップページかどうかを判定します。
+
+```
+if ($this->BcBaser->isHome()) {
+  // トップページ用の処理
+}
+```
+
+## SSL判定
+
+```
+BcBaserHelper::isSSL(): bool
+```
+
+サイトへのアクセス時にSSLが使用されているか判定します。
+
 ### 管理者判定
 
 ```
-$this->BcBaser->isAdminUser(array| User $user = null): bool
+BcBaserHelper::isAdminUser(array| User $user = null): bool
 ```
 
 指定したユーザーが管理者グループに属しているか判定を行います。
 `$user`を指定しない場合はログイン中のユーザーを対象にします。
-
-```
-if ($this->BcBaser->isAdminUser()) {
-  // 管理者用の処理
-}
-```
 
 ---
 
@@ -175,7 +191,7 @@ if ($this->BcBaser->isAdminUser()) {
 ### ユーザー名取得
 
 ```
-$this->BcBaser->getUserName(User $user): string
+BcBaserHelper::getUserName(User $user): string
 ```
 
 指定したユーザーの姓と名を結合して取得します。
