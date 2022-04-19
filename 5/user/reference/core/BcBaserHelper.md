@@ -151,50 +151,6 @@ baserCMSの設置フォルダを考慮したURLを取得します。
 
 ---
 
-### isCurrentUrl
-### getThemeUrl
-### themeUrl
-### getBaseUrl
-### baseUrl
-### siteUrl
-### getSiteUrl
-### setCanonicalUrl
-### setAlternateUrl
-### getContentsUrl
-### root
-### getRoot
-### getUri
-
-## ページ設定
-
-### setTitle
-### setKeywords
-### setDescription
-### set
-### setCategoryTitle
-### getKeywords
-### getDescription
-### getTitle
-### getCrumbs
-### contentsTitle
-### title
-### metaKeywords
-### metaDescription
-### crumbs
-### addCrumb
-### logo
-### mainImage
-### getThemeImage
-
-## 静的ファイル
-
-### rss
-### css
-### icon
-### setScript
-### swf
-### webClipIcon
-
 ## 判定
 
 ### 管理者判定
@@ -214,27 +170,7 @@ if ($this->BcBaser->isAdminUser()) {
 
 ---
 
-### existsEditLink
-### existsPublishLink
-### isHome
-### isSSL
-### isPage
-### isCategoryTop
-### isContentFolder
-### isContentsParentId
-
-## メニュー
-
-### setSubMenus
-### contentsMenu
-### getContentsMenu
-### _unsetIndexInContentsMenu
-### globalMenu
-### getGlobalMenu
-### subMenu
-### getSubMenu
-
-## TODO
+## 他
 
 ### ユーザー名取得
 
@@ -257,59 +193,3 @@ $this->BcBaser->flash(string $key = 'flash'): void
 例: フォームのエラーメッセージ等
 
 ---
-
-### i18nScript
-### getContentsTitle
-### contentsName
-### getContentsName
-### editLink
-### publishLink
-### header
-### footer
-### pagination
-### content
-### scripts
-### func
-### xmlHeader
-### docType
-### charset
-### copyYear
-### setPageEditLink
-### checkUpdate
-### getSitePrefix
-### cacheHeader
-### _initPluginBasers
-### __call
-### mark
-### sitemap
-### getSitemap
-### getHere
-### page
-### widgetArea
-### getWidgetArea
-### includeCore
-### contentsNavi
-### crumbsList
-### googleAnalytics
-### googleMaps
-### getGoogleMaps
-### listNum
-### siteSearchForm
-### getSiteSearchForm
-### siteName
-### getSiteName
-### getParams
-### getCurrentContent
-### getCurrentPrefix
-### getContentCreatedDate
-### getContentModifiedDate
-### updateInfo
-### getUpdateInfo
-### getRelatedSiteLinks
-### relatedSiteLinks
-### afterRender
-### setHomeTitle
-### getPluginBaser
-### getParentFolder
-### getContentByEntityId
-### declarationI18n
