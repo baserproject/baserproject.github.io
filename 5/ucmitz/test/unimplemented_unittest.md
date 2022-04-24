@@ -93,7 +93,7 @@ public function initialize(): void
 
 なお、アノテーションを付与する場合は、クラスファイルの冒頭に `use` 宣言が必要です。なければ記載してください。
 
-```shell
+```php
 use BaserCore\Annotation\NoTodo;
 use BaserCore\Annotation\Note;
 use BaserCore\Annotation\Checked;

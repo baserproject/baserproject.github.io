@@ -39,7 +39,7 @@
 - [移行上のルール](./regulation/migration_rule)
 - [移行上の流れ](./development/migration/migration_flow)
 - [コーディング規約](./regulation/coding_rule)
-- [未実装のユニットテストに貢献する](./unittest/unimplemented_unittest.md)
+- [未実装のユニットテストに貢献する](./test/unimplemented_unittest)
 
 　　
 ### 開発上の注意点
