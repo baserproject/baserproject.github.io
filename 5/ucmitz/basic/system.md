@@ -1,7 +1,7 @@
 # システム要件
 
 - Webサーバー：Apache
-- 開発言語：PHP7.2以降
+- 開発言語：PHP8.1以降
 - データベースサーバー：MySQL5以降 Or - PostgreSQL8.4以降 Or SQLite3
     - MariaDB動作可能
 - 必須Apacheモジュール：Rewrite
