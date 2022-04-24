@@ -29,8 +29,9 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 
 ### Docker を起動する
 docker ディレクトリに移動してから Docker 起動します。
-Docker を起動すると　ucmitzの初期化処理（composerによるライブラリのインストール、データベースの初期化、JWT用のキー作成など）が始まります。初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。
-以上で環境構築は終了です。
+Docker を起動すると　ucmitzの初期化処理（composerによるライブラリのインストール、データベースの初期化、JWT用のキー作成など）が始まります。  
+
+初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。 `/docker/check` ファイルが作成されたら、以上で環境構築は終了です。
 
 ```
 cd docker
@@ -97,15 +98,29 @@ docker logs bc5-php
 ```
 
 　
-## ファイルの内容を変更したのに反映できない場合
+## lsyncd による高速化
 
-Docker Desktop を利用する前提となっていますが、現在（2022/04/11）Macの環境では、共有フォルダとしてマウントしたフォルダに直接 Apache の DocumentRoot を設定すると処理速度が非常に遅くなるという問題があります。
+Docker Desktop を利用する前提となっていますが、現在（2022/04/11）Macの環境では、
+共有フォルダとしてマウントしたフォルダに直接 Apache の DocumentRoot を設定すると処理速度が非常に遅くなるという問題があります。
 そのため、別のフォルダにマウントして、lsyncd というサービスで同期するという仕組みにしています。
+
+
+### 共有フォルダのマウント設定
+
+ドキュメントルートである `/var/www/html/` ではなく、`/var/www/shared/` に共有フォルダをマウントすることにより高速化を図っています。
+
+
+### ファイルの同期
+
+共有フォルダ内のファイルを変更した場合、`/var/www/html/` 内に反映させなければ、変更が動作に反映されません。  
+そのため、lsyncd を利用して `/var/www/shared/` と `/var/www/html/` を同期します。
 
 ```shell
 /var/www/shared # 共有フォルダとしてマウントするフォルダ
 /var/www/html # Apache の DocumentRoot
 ```
+
+### ファイルの内容を変更したのに反映できない場合
 
 Docker の起動時に lsyncd を立ち上げる仕様となっていますが、ファイルの内容を変更した場合に反映できない場合はこちらを疑ってください。
 コンテナにログインしてサービスの起動状況を確認します。
@@ -129,3 +144,19 @@ service lsyncd start
 /var/www/html/logs → /var/www/shared/logs
 /var/www/html/webroot/files → /var/www/shared/webroot/files
 ```
+
+　
+## 環境を再構築する
+
+PHPのコンテナを違うコンテナにする場合など、環境を再構築する場合は次の手順を踏みます。
+
+```shell
+cd docker
+# 初期化完了ファイルを削除
+rm ./check
+# データベースのデータを削除
+rm -rf ./volumes
+# コンテナを再構築
+docker-compose up -d --force-recreate
+```
+
