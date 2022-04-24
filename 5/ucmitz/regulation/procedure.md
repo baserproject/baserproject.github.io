@@ -24,6 +24,7 @@ GitHub の [Issue](https://github.com/baserproject/ucmitz/issues) 現在対象�
 - 状況：着手中に切り替えます。
 
 （コラボレーターは、新しい Issueを見つけたら、適切なマイルストンを設定してください）
+
 　
 ### ucmitz 進行管理の未対応分より選択する 
 [ucmitz 進行管理](https://docs.google.com/spreadsheets/d/1EGxMk-dy8WIg2NmgOKsS_fBXqDB6oJky9M0mB7TADEk/edit#gid=938641024) にて作業状況の進捗を確認できますが、その中より未対応のものを対応していいきます。
@@ -36,6 +37,9 @@ GitHub の [Issue](https://github.com/baserproject/ucmitz/issues) 現在対象�
  「テスト実装済」に「●」が入っていないものはユニットテストが未実装の状態です。ユニットテストを実装します。
  
 中にはマーキングが漏れているものもありますので見つけた場合は [コード移行時のマーキング](./migration_rule#コード移行時のマーキング) を参考に、マーキングをお願いします。
+
+#### どれからやればいいかわからない場合
+どれから手を付けてよいかわからない場合は、 [未実装のユニットテストに貢献する](../unittest/unimplemented_unittest.md) より、ユニットテストの実装をご協力ください。
 
 　
 ## 2. ブランチを切る
