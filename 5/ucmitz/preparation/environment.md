@@ -152,6 +152,8 @@ PHPのコンテナを違うコンテナにする場合など、環境を再構�
 
 ```shell
 cd docker
+# docker-compose.yml.default の変更内容を反映する（必要があれば）
+cp docker-compose.yml.default docker-compose.yml
 # 初期化完了ファイルを削除
 rm ./check
 # データベースのデータを削除
