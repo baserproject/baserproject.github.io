@@ -2,6 +2,20 @@
 
 基本的には、 [PSR-12 coding style guide](http://www.php-fig.org/psr/psr-12/) および、 [CakePHP コーディング規約 - 4.x](https://book.cakephp.org/4/ja/contributing/cakephp-coding-conventions.html) に従って頂くものとし、下記のルールにも従います。
 
+## プログラムコードのヘッダー
+
+各ファイルの最上位に記述します。
+```php
+/**
+ * baserCMS :  Based Website Development Project <https://basercms.net>
+ * Copyright (c) NPO baser foundation <https://baserfoundation.org/>
+ *
+ * @copyright     Copyright (c) NPO baser foundation
+ * @link          https://basercms.net baserCMS Project
+ * @since         5.0.0
+ * @license       http://basercms.net/license/index.html MIT License
+ */
+```
 　
 ## クラスヘッダー
 
@@ -10,7 +24,6 @@
 ```php
 /**
  * Class SitesController
- * @package BaserCore\Controller\Admin
  */
 class SitesController extends BcAdminAppController {}
 ```

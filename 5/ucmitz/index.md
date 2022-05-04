@@ -36,7 +36,8 @@
 実際の開発については、開発の手順に従って開発します。  
 なお、baserCMS4のコードを移行していくことが ucmitzの開発になるのですが、様々なルールがありますので必ず確認してください。すごく重要なことです。
 - [開発の手順](./regulation/procedure)
-- [移行上のルール](./regulation/migration_rule)
+- [マイグレーション方針](./regulation/migration_policy)
+- [マイグレーションルール](./regulation/migration_rule)
 - [移行上の流れ](./development/migration/migration_flow)
 - [コーディング規約](./regulation/coding_rule)
 - [未実装のユニットテストに貢献する](./test/unimplemented_unittest)

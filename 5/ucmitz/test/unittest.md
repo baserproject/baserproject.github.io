@@ -106,7 +106,7 @@ class UsersTableTest extends TestCase
 
 標準で使うフィクスチャは、Default フォルダに入っていましたが、ucmitz では、Fixture フォルダ直下に移動して利用します。
 
-また、baserCMS4では次の変更を行ってください。
+また、baserCMS4系のフィクスチャを移行するには次の変更を行ってください。
 
 - クラス名が単数形でしたが、複数形に変更
 - 継承先を `BaserTestFixture` から `TextFixture` に変更
