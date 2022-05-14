@@ -2,7 +2,7 @@
 
 ## プラグインをモノレポと Packagist に登録する
 
-リリース時、新しいプラグインを作成した場合、モノレポの分割対象のパッケージとして登録します。  
+新しいプラグインを作成した場合は、リリース時にモノレポの分割対象のパッケージとして登録します。  
 パッケージの分割は、 master ブランチ、または、タグをプッシュした際には、GitHub Actions にて実行されますので、 
 `/.github/workflow/split_monorepo.yml` を編集して登録します。
 
@@ -17,8 +17,7 @@ jobs:
                         split_repository: 'new-plugin-name'
 ```
 
-また、新しいプラグインのリポジトリを Packagist に登録します。  
-https://packagist.org/packages/submit
+また、新しいプラグインのリポジトリを [Packagist](https://packagist.org/packages/submit) に登録します。
 
 　
 ## VERSION.txt を更新
