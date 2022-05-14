@@ -41,6 +41,7 @@
 - [移行上の流れ](./development/migration/migration_flow)
 - [コーディング規約](./regulation/coding_rule)
 - [未実装のユニットテストに貢献する](./test/unimplemented_unittest)
+- [リリース手順](./regulation/release)
 
 　　
 ### 開発上の注意点
