@@ -56,6 +56,15 @@ git push origin master
 ```
 
 　
+## dev ブランチにマージ
+master ブランチを dev ブランチにマージした上でプッシュします。
+```shell
+git checkout dev
+git merge master
+git push origin dev
+```
+
+　
 ## リリース記事を作成
 GitHubにて [新しいリリース記事](https://github.com/baserproject/ucmitz/releases/new) を作成します。
 
