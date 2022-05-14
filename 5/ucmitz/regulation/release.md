@@ -34,6 +34,7 @@ git push origin dev
 `dev` ブランチを `master` ブランチにマージします。
 
 ```shell
+git checkout master
 git merge dev
 ```
 
