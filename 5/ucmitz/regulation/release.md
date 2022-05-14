@@ -57,7 +57,7 @@ git push origin master
 
 　
 ## dev ブランチにマージ
-master ブランチを dev ブランチにマージした上でプッシュします。
+master ブランチにおいてのリリースコマンドで、更新された composer.json の変更内容を dev ブランチにマージした上でプッシュします。
 ```shell
 git checkout dev
 git merge master
