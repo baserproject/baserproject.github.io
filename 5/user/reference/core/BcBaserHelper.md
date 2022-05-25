@@ -149,11 +149,45 @@ BcBaserHelper::getUrl(string $url = null, bool $full = false, bool $sessionId = 
 
 baserCMSの設置フォルダを考慮したURLを取得します。
 
+### baserCMS設置パス取得
+
+```
+BcBaserHelper::getRoot(): string
+```
+
+baserCMSが設置されているパスを取得します。
+
+```
+// basercmsというフォルダに設置している場合
+<img src="<?php echo $this->BcBaser->root() ?>img/test.png" />
+// <img src="/basercms/img/test.png" />
+```
+
+### getBaseUrl
+
+TODO: getRootと同一
+
+### テーマURL出力
+
+```
+BcBaserHelper::themeUrl(): string
+```
+
+現在のテーマのURLを出力します。
+
+### テーマURL取得
+
+```
+BcBaserHelper::getThemeUrl(): string
+```
+
+現在のテーマのURLを取得します。
+
 ---
 
 ## 判定
 
-## トップページ判定
+### トップページ判定
 
 ```
 BcBaserHelper::isHome(): bool
@@ -167,7 +201,15 @@ if ($this->BcBaser->isHome()) {
 }
 ```
 
-## SSL判定
+### 固定ページ判定
+
+```
+BcBaserHelper::isPage(): bool
+```
+
+現在のページが固定ページかどうかを判定します。
+
+### SSL判定
 
 ```
 BcBaserHelper::isSSL(): bool
@@ -183,6 +225,81 @@ BcBaserHelper::isAdminUser(array| User $user = null): bool
 
 指定したユーザーが管理者グループに属しているか判定を行います。
 `$user`を指定しない場合はログイン中のユーザーを対象にします。
+
+---
+
+## meta
+
+### キーワード設定
+
+```
+BcBaserHelper::setKeywords(string $keywords): void
+```
+
+metaタグ用のキーワードを設定します。
+
+```
+$this->BcBaser->setKeywords('キーワードA,キーワードB');
+```
+
+### キーワード取得
+### キーワードタグ出力
+
+TODO
+
+### 説明文設定
+
+```
+BcBaserHelper::setDescription(string $description): void
+```
+
+metaタグ用の説明文を設定します。
+
+### 説明文取得
+### 説明文タグ出力
+
+TODO
+
+---
+
+## パンくずリスト
+
+### パンくずリスト出力エレメント読み込み
+
+```
+BcBaserHelper::crumbsList(array $data = [], array $options = []): void
+```
+
+パンくずリストを出力します。
+パンくずリストとは現在表示しているページがトップページからどの階層にあるのかを示すものです。
+この関数を利用するとトップページから表示ページまでの階層までを表示し、各階層の名称にはリンクが設置されます。
+出力されるタグを調整したい場合は、 テーマの element/crumbs.php を変更する必要があります。
+
+### パンくずリスト出力
+
+```
+BcBaserHelper::crumbs(string $separator, string|bool $startText, bool $onSchema): void
+```
+
+パンくずリストを出力します。
+主に[crumbs.php](https://github.com/baserproject/ucmitz/blob/dev/plugins/bc-front/templates/element/crumbs.php)内で使用されています。
+事前に出力したい内容をBcBaserHelper::addCrumbで追加しておく必要があります。
+
+### パンくずリストの要素追加
+
+```
+BcBaserHelper::addCrumb(string $name, mixed $link = null, mixed $options = []): void
+```
+
+パンくずリストの要素を追加します。
+
+### パンくずリスト取得
+
+```
+BcBaserHelper::getCrumbs(mixed $categoryTitleOn = null): array
+```
+
+パンくずリストを配列形式で取得します。
 
 ---
 
