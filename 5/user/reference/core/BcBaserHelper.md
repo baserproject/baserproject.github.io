@@ -5,7 +5,7 @@
 ### 画像の出力
 
 ```
-BcBaserHelper::img(string $path, $options = array()): void
+BcBaserHelper::img(string $path, array $options = []): void
 ```
 imgタグを出力します。
 
@@ -18,7 +18,7 @@ $this->BcBaser->img('/img/baser.power.gif', ['width' => 200]);
 ### 画像タグの取得
 
 ```
-BcBaserHelper::getImg(string $path, $options = array()): string
+BcBaserHelper::getImg(string $path, array $options = []): string
 ```
 
 imgタグを取得します。
@@ -32,7 +32,7 @@ $img = $this->BcBaser->getImg('/img/baser.power.gif', ['width' => 200]);
 ### JavaScriptの呼び出し
 
 ```
-BcBaserHelper::js(string|array $url, bool $inline = true, $options = array()): void
+BcBaserHelper::js(string|array $url, bool $inline = true, array $options = []): void
 ```
 
 scriptタグを出力します。
@@ -56,7 +56,7 @@ $this->BcBaser->js([
 ### エレメントの出力
 
 ```
-BcBaserHelper::element(string $name, $data = array(), $options = array()): void
+BcBaserHelper::element(string $name, array $data = [], array $options = []): void
 ```
 
 `$name`に呼び出したいエレメント名、`$data`にエレメントに渡したいデータを記載します。
@@ -84,7 +84,7 @@ $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
 ### エレメントの取得
 
 ```
-BcBaserHelper::getElement(string $name, $data = array(), $options = array()): string
+BcBaserHelper::getElement(string $name, array $data = [], array $options = []): string
 ```
 
 `$this->BcBaser->element`ではエレメントの取得・出力を行いますが、`$this->BcBaser->getElement`ではエレメントの取得までを行います。
