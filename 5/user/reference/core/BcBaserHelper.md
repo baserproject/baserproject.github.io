@@ -273,7 +273,7 @@ BcBaserHelper::crumbsList(array $data = [], array $options = []): void
 パンくずリストを出力します。
 パンくずリストとは現在表示しているページがトップページからどの階層にあるのかを示すものです。
 この関数を利用するとトップページから表示ページまでの階層までを表示し、各階層の名称にはリンクが設置されます。
-出力されるタグを調整したい場合は、 テーマの element/crumbs.php を変更する必要があります。
+出力されるタグを調整したい場合は、 element/crumbs.php を変更します。
 
 ### パンくずリスト出力
 
@@ -300,6 +300,107 @@ BcBaserHelper::getCrumbs(mixed $categoryTitleOn = null): array
 ```
 
 パンくずリストを配列形式で取得します。
+
+---
+
+## コンテンツ
+
+### コンテンツを特定する文字列を出力
+
+```
+BcBaserHelper::contentsName(bool $detail = false, array $options = []): void
+```
+
+URLを元に、第一階層までの文字列をキャメルケースで出力します。
+`$detail`がtrueの場合はページごとに一意となる文字列を出力します。
+
+`$options`
+
+- `home` : トップページの場合に出力する文字列（初期値 : Home）
+- `default` : ルート直下の下層ページの場合に出力する文字列（初期値 : Default）
+- `error` : エラーページの場合に出力する文字列（初期値 : Error）
+- `underscore` : キャメルケースではなく、アンダースコア区切りで出力する（初期値 : false）
+
+```
+// URL: /
+BcBaserHelper::contentsName();
+// Home
+BcBaserHelper::contentsName(true, ['home' => 'Top']);
+// Top
+
+// URL: /test/sample/
+BcBaserHelper::contentsName();
+// Test
+BcBaserHelper::contentsName(true, ['underscore' => true]);
+// test_sample_index
+```
+
+### コンテンツを特定する文字列を取得
+
+```
+BcBaserHelper::getContentsName(bool $detail = false, array $options = []): string
+```
+
+URLを元に、第一階層までの文字列をキャメルケースで取得します。
+
+### コンテンツメニュー出力
+
+```
+BcBaserHelper::contentsMenu(mixed $id = null, int $level = null, string $currentId = null, array $options = [])
+```
+
+コンテンツメニューを出力します。
+出力されるタグを調整したい場合は、 element/contents_menu.php を変更します。
+
+`$id`: コンテンツIDを指定しない場合はルートからのメニューを表示
+ID指定できるのはフォルダのみ
+コンテンツIDは、編集画面 > その他情報 > コンテンツID から確認可能
+`$level`: 何階層まで表示するか指定
+`$currentId`: 現在のページのコンテンツIDを指定 currentクラスの表示に使用
+
+### コンテンツメニュー取得
+
+```
+BcBaserHelper::getContentsMenu(mixed $id = null, int $level = null, string $currentId = null, array $options = [])
+```
+
+コンテンツメニューを取得します。
+
+### 現在のコンテンツ情報を取得
+
+```
+BcBaserHelper::getCurrentContent(): mixed|null
+```
+
+現在のコンテンツ情報を取得します。
+
+### コンテンツ作成日時を取得
+
+```
+BcBaserHelper::getContentCreatedDate(string $format = 'Y/m/d H:i'): null|string
+```
+
+コンテンツが作成された日時を取得します。
+コンテンツ作成日時は、 編集画面 > オプション > 作成者 > [作成日]から設定します。
+`$format`はPHPの[DateTimeInterface::format()](https://www.php.net/manual/ja/datetime.format.php)が受け入れるフォーマットを指定します。
+
+### コンテンツ更新日時を取得
+
+```
+BcBaserHelper::getContentModifiedDate(string $format = 'Y/m/d H:i'): null|string
+```
+
+コンテンツが更新された日時を取得します。
+コンテンツ更新日時は、 編集画面 > オプション > 作成者 > [更新日]から設定します。
+
+### コンテンツ更新情報を取得
+
+```
+BcBaserHelper::getUpdateInfo(): string
+```
+
+コンテンツの作成日時と更新日時が記載されたエレメントを取得します。
+表示を調整したい場合は element/update_info.php を変更します。
 
 ---
 
