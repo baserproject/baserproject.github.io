@@ -40,15 +40,15 @@ docker-compose up -d
 
 ローカルの ucmitz のディレクトリは、/var/www/shared にマウントされています。  
 
-- アプリケーション：[https://localhost/](https://localhost/)
-- phpMyAdmin：[http://localhost:8080/](http://localhost:8080/)
-- phpPgAdmin：[http://localhost:10080/](http://localhost:10080/)
-- MailCatcher：[http://localhost:1080/](http://localhost:1080/)
+- アプリケーション：[https://localhost/](https://localhost/){:target="_blank"}
+- phpMyAdmin：[http://localhost:8080/](http://localhost:8080/){:target="_blank"}
+- phpPgAdmin：[http://localhost:10080/](http://localhost:10080/){:target="_blank"}
+- MailCatcher：[http://localhost:1080/](http://localhost:1080/){:target="_blank"}
 
 ### 管理画面にログインする
 
 ブラウザで、次のURLにアクセスして表示を確認します。
-[https://localhost/baser/admin/baser-core/users/login](https://localhost/baser/admin/baser-core/users/login)
+[https://localhost/baser/admin/baser-core/users/login](https://localhost/baser/admin/baser-core/users/login){:target="_blank"}
    
 メールアドレスとパスワードを入力し管理画面にログインします。
 
