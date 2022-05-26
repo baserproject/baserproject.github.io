@@ -21,7 +21,6 @@ header {
   position: fixed;
   overflow: scroll;
   height: 90%;
-  margin-right: 30px;
 }
 header h1 a {
   background: url(../img/logo.svg) no-repeat;
@@ -45,14 +44,20 @@ ul {
   margin-top:5px;
   margin-bottom:5px;
 }
+.toc-current {
+  background: #f3f3f3;
+}
 
 /* section */
 section {
   font-size: 15px;
-  width: 860px;
+  width: auto;
+  max-width: 860px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0.02em;
+  margin-left: 300px;
+  float: none;
 }
 .crumbs {
   margin-bottom: 20px;
@@ -118,17 +123,17 @@ pre code span {
   font-weight: normal!important;
 }
 
-@media print, screen and (max-width: 1000px) {
+@media print, screen and (max-width: 1150px) {
   header, section, footer {
-    float: none;
     position: static;
-    width: auto;
+    width: 100%;
   }
   body {
     word-wrap:break-word;
   }
   section {
     width: auto;
+    margin: 0;
   }
   header {
     padding: 0;
@@ -137,10 +142,7 @@ pre code span {
     background-size: 20px;
     padding-left: 25px;
   }
-  header ul,header p.view {
-    position: static;
-  }
-  pre,code {
-    word-wrap: normal;
+  header ul, header p.view {
+      position: static;
   }
 }
