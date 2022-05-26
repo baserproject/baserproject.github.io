@@ -19,7 +19,7 @@ body {
 /* header */
 header {
   position: fixed;
-  overflow: scroll;
+  overflow: auto;
   height: 90%;
 }
 header h1 a {
@@ -44,7 +44,16 @@ ul {
   margin-top:5px;
   margin-bottom:5px;
 }
+.toc a {
+  display: block;
+}
+.toc a:hover {
+  background: #fcfcfc;
+}
 .toc-current {
+  background: #f3f3f3;
+}
+.toc a.toc-current:hover {
   background: #f3f3f3;
 }
 
