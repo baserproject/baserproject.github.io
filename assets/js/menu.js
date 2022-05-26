@@ -21,10 +21,8 @@ function setMenuEvent() {
 
   // スクロール時にスクロール位置と見出し要素の位置を判定してメニューにクラスを付与
   window.onscroll = function() {
-    let headerWidth = window.getComputedStyle(document.querySelector('header')).getPropertyValue('width');
-    headerWidth = headerWidth.replace(/px/, '');
-    console.log(headerWidth);
-    if (headerWidth > 300) {
+    let headerPosition = window.getComputedStyle(document.querySelector('header')).getPropertyValue('position');
+    if (headerPosition !== 'fixed') {
       return false;
     }
 
