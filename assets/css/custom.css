@@ -118,15 +118,6 @@ pre code span {
   font-weight: normal!important;
 }
 
-@media print, screen and (max-width: 1220px) {
-  section {
-    width: 700px;
-  }
-  header h1 a {
-    background-size: 20px;
-    padding-left: 25px;
-  }
-}
 @media print, screen and (max-width: 1000px) {
   header, section, footer {
     float: none;
@@ -141,6 +132,10 @@ pre code span {
   }
   header {
     padding: 0;
+  }
+  header h1 a {
+    background-size: 20px;
+    padding-left: 25px;
   }
   header ul,header p.view {
     position: static;
