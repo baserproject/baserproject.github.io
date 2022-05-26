@@ -58,6 +58,8 @@ docker-compose up -d
 アプリケーションの管理画面は、SSLでアクセスしないとエラーとなります。  
 http でアクセスしたい場合は、.env の `ADMIN_SSL` を false  に設定してください。
 
+管理画面にログインができなくなった場合は、 [管理画面にログインができなくなった](https://baserproject.github.io/5/ucmitz/etc/troubleshooting#%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F) を確認してください。
+
 　
 ## コンテナへのログイン方法
 
