@@ -79,6 +79,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 
 - [全体的な変更点](./development/changed)
 - [既知の問題点](./development/problem)
+- [トラブルシューティング](./etc/troubleshooting)
 
 　
 ## 開発の進捗管理と新しい課題や機能の定義
