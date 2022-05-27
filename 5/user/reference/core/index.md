@@ -15,7 +15,7 @@
 - BcGooglemapsHelper
 - BcHtmlHelper
 - BcListTableHelper
-- BcPageHelper
+- [BcPageHelper](/5/user/reference/core/BcPageHelper)
 - BcSearchBoxHelper
 - BcSiteConfigHelper
 - BcSmartphoneHelper
