@@ -59,3 +59,23 @@ BcContentsHelper::getPrevLink(string $title = '', array $options = []): string|f
 ```
 
 現在のコンテンツの前のコンテンツへのリンクを出力します。
+
+## 管理画面用・他
+
+### isActionAvailable($type, $action, $entityId) : bool
+
+> アクションが利用可能かどうか確認する
+
+### isEditable($content)
+
+> コンテンツが編集可能かどうか確認
+
+### getSiteRootId($siteId)
+
+> サイトIDからサイトルートとなるコンテンツIDを取得する
+
+### getFolderLinkedUrl(EntityInterface $content)
+
+> 対象コンテンツが属するフォルダまでのフルパスを取得する
+> フォルダ名称部分にはフォルダ編集画面へのリンクを付与する
+> コンテンツ編集画面で利用
