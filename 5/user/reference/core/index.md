@@ -8,14 +8,14 @@
 - BcAuthHelper
 - [BcBaserHelper](/5/user/reference/core/BcBaserHelper)
 - BcCkeditorHelper
-- BcContentsHelper
+- [BcContentsHelper](/5/user/reference/core/BcContentsHelper)
 - BcFormHelper
 - BcFormTableHelper
 - BcFreezeHelper
 - BcGooglemapsHelper
 - BcHtmlHelper
 - BcListTableHelper
-- [BcPageHelper](/5/user/reference/core/BcPageHelper)
+- BcPageHelper
 - BcSearchBoxHelper
 - BcSiteConfigHelper
 - BcSmartphoneHelper
