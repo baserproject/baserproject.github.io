@@ -8,7 +8,7 @@
 - BcAuthHelper
 - [BcBaserHelper](/5/user/reference/core/BcBaserHelper)
 - BcCkeditorHelper
-- BcContentsHelper
+- [BcContentsHelper](/5/user/reference/core/BcContentsHelper)
 - BcFormHelper
 - BcFormTableHelper
 - BcFreezeHelper

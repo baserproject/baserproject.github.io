@@ -34,6 +34,7 @@ git push origin dev
 `dev` ブランチを `master` ブランチにマージします。
 
 ```shell
+git checkout master
 git merge dev
 ```
 
@@ -52,6 +53,15 @@ master ブランチを push します。
 
 ```shell
 git push origin master
+```
+
+　
+## dev ブランチにマージ
+master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
+```shell
+git checkout dev
+git merge master
+git push origin dev
 ```
 
 　

@@ -31,7 +31,7 @@
 ```shell
 /plugins/baser-core/src/Controller/AppController.php
 　　　↓
-/plugins/baser-core/tests/Controller/AppControllerTest.php
+/plugins/baser-core/tests/TestCase/Controller/AppControllerTest.php
 ```
 
 こちらも「_NotYetMigrated」フォルダの中に存在する場合があるので注意します。「_NotYetMigrated」の中にある場合はこちらを上位フォルダに移動して利用します。
