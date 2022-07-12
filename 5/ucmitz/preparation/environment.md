@@ -147,6 +147,8 @@ service lsyncd start
 /var/www/html/webroot/files → /var/www/shared/webroot/files
 ```
 
+上記を試してもうまく行かない場合は[環境の再構築](#%E7%92%B0%E5%A2%83%E3%82%92%E5%86%8D%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)をお試しください。
+
 　
 ## 環境を再構築する
 
@@ -157,7 +159,7 @@ cd docker
 # docker-compose.yml.default の変更内容を反映する（必要があれば）
 cp docker-compose.yml.default docker-compose.yml
 # 初期化完了ファイルを削除
-rm ./check
+rm ./inited
 # データベースのデータを削除
 rm -rf ./volumes
 # コンテナを再構築
