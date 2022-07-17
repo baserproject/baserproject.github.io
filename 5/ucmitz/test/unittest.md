@@ -120,7 +120,7 @@ class UsersFixture extends TestFixture
 ```
 
 　
-### テストメソッドの中でフィクスチャを呼び出する
+### テストメソッドの中でフィクスチャを呼び出す
 
 ```php
 class UsersTableTest extends TestCase
@@ -135,3 +135,22 @@ class UsersTableTest extends TestCase
 }
 
 ```
+
+　
+## 新しいプラグインのフィクスチャを利用する
+
+フィクスチャを利用する場合、`tests/bootstrap.php` にて、マイグレーションの実行が必要となります。  
+本来であれば、プラグインディレクトリ配下の `tests/bootstrap.php` にてマイグレーションの実行処理を記述すべきですが、そうするとテストの実行が面倒となるので、 [CakePHP4.3のフィクスチャファクトリとプラグインのユニットテスト](https://qiita.com/ryuring/items/c0b517fc454ff7f08e4b) に記載しているとおり、
+コアプラグインの場合は、アプリケーションルート直下の `tests/bootstrap.php` に追記する事とします。
+
+```php
+(new Migrator())->runMany([
+    ['plugin' => 'BaserCore'],
+    ['plugin' => 'BcBlog']
+]);
+```
+
+　
+
+
+
