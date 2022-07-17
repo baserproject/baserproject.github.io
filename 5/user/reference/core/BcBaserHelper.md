@@ -29,14 +29,36 @@ $img = $this->BcBaser->getImg('/img/baser.power.gif', ['width' => 200]);
 
 ---
 
+### CSSの呼び出し
+
+```
+BcBaserHelper::css(string|array $path, bool $inline = true, array $options = []): void
+```
+
+CSSの読み込みタグを出力します。
+`$inline`がtrueの場合は呼び出した箇所、falseの場合はヘッダー内の `$this->BcBaser->scripts()` が記載された箇所にタグを表示します。
+そのため、 `$inline`がfalseの場合は `$this->BcBaser->scripts()` が実行される前に `BcBaserHelper::css`を実行する必要があります。
+
+```
+<?php $this->BcBaser->css([
+  'style',
+  'jquery-ui/jquery-ui-1.11.4',
+  'colorbox/colorbox-1.6.1',
+  'editor'
+]) ?>
+```
+
+---
+
 ### JavaScriptの呼び出し
 
 ```
-BcBaserHelper::js(string|array $url, bool $inline = true, array $options = []): void
+BcBaserHelper::js(string|array $path, bool $inline = true, array $options = []): void
 ```
 
 scriptタグを出力します。
-`$inline`がtrueの場合はヘッダー内、falseの場合は呼び出した箇所にタグを表示します。
+`$inline`がtrueの場合は呼び出した箇所、falseの場合はヘッダー内の `$this->BcBaser->scripts()` が記載された箇所にタグを表示します。
+そのため、 `$inline`がfalseの場合は `$this->BcBaser->scripts()` が実行される前に `BcBaserHelper::js`を実行する必要があります。
 
 ```
 $this->BcBaser->js([
