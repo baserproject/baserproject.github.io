@@ -1,0 +1,76 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アクセス制限設定管理
+
+class Admin\PermissionsController {
+  + 設定一覧を表示：index()
+  + 設定新規追加：add()
+  + 設定編集：edit()
+  + 設定削除：delete()
+  + 設定順変更：update_sort()
+  + コピー：copy()
+  + 有効化：publish()
+  + 無効化：unpublish()
+  + 一括処理：batch()
+}
+
+class PermissionsService {
+  + PermissionsTable
+}
+
+class PermissionsServiceInterface {
+
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + 有効状態にする：publish()
+  + 無効状態にする：unpublish()
+  + コピー：copy()
+  + 許可・拒否を指定するメソッドのリストを取得：getMethodList()
+  + 権限リストを取得：getAuthList()
+  + レコード作成に必要なデータを代入する：autoFillRecord()
+  + 権限チェックを行う：check()
+  + 標準アクセス許可リクエストを設定：setDefaultAllow()
+  + 標準アクセス許可リストからURLを検証：checkDefaultAllow()
+  + 標準アクセス拒否リストからURLを検証：checkDefaultDeny()
+  + パーミッションリストを検証する：checkGroup()
+  + 権限チェック対象を追加する：addCheck()
+  + 優先度を変更する：changeSort()
+}
+
+class PermissionsAdminServiceInterface {
+  + 一覧表示用データ取得：getViewVarsForIndex()
+}
+
+class PermissionsTable {
+}
+
+class Permission {
+   + No：no
+	 + 設定順：sort
+	 + 設定名：name
+	 + ユーザーグループID：user_group_id
+	 + URL設定：url
+	 + アクセス可否：auth
+	 + 権限（全て / 表示・編集 / 表示のみ）：method
+	 + ステータス（有効 / 無効）：status
+   + 登録日：created
+   + 編集日：modified
+}
+
+Admin\PermissionsController -down[#Black]-> PermissionsService
+Admin\PermissionsController -left[#Black]-> PermissionsAdminService
+PermissionsAdminService -left[dotted,#Black]-|> PermissionsAdminServiceInterface
+PermissionsService -down[#Black]-> PermissionsTable
+PermissionsService -left[dotted,#Black]-|> PermissionsServiceInterface
+PermissionsTable -down[#Black]-> Permission
+
+@enduml

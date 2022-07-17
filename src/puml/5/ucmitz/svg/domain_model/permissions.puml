@@ -1,0 +1,33 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：アクセス制限設定
+
+package アクセス制限設定 {
+	
+	class アクセス制限設定 {
+		設定順
+		設定名
+		ユーザーグループID
+		URL設定
+		アクセス可否
+		権限（全て / 表示・編集 / 表示のみ）
+		ステータス（有効 / 無効）
+	}
+	note bottom
+	・URL設定にはワイルドカードが利用できる
+	・設定順は自動採番する
+	endnote
+
+}
+
+class ユーザー
+
+class ユーザーグループ
+
+アクセス制限設定 "0..*" -- "1" ユーザーグループ  
+ユーザーグループ "1..*" --- "0..*" ユーザー
+
+@enduml
