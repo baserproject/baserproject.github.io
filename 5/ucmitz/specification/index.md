@@ -14,6 +14,7 @@
 - [固定ページ管理](./pages/index)
 - [検索インデックス管理](./search_indexes/index)
 - [プラグイン管理](./plugins/index)
+- [アクセス制限管理](./permissions/index)
 
 ## プラグインAPI
 
