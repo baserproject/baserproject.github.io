@@ -50,3 +50,5 @@ baserCMSでは、認証プレフィックスの設定により、管理画面以
 ### ユーザーグループ管理
 ![クラス図：ユーザーグループ管理画面](../../svg/class/manage_user_groups.svg)
 
+### ユーザーグループ管理API
+![クラス図：ユーザーグループ管理API](../../svg/class/api_user_groups.svg)

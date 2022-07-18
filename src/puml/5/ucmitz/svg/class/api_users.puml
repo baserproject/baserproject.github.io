@@ -4,7 +4,7 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title ユーザーAPI
+title ユーザー管理API
 
 class Api\UsersController {
   + AuthenticationComponent
@@ -17,36 +17,10 @@ class Api\UsersController {
   + ユーザー情報削除：delete()
 }
 
-class UserService {
-  + UsersTable
-}
+Api\UsersController -down[#Black]-> UsersService
+Api\UsersController -up[#Black]-|> BcApiController
 
-class UserServiceInterface {
-  + 作成：create()
-  + 編集：update()
-  + 単一データ取得：get()
-  + 一覧データ取得：getIndex()
-  + 初期データ取得：getNew()
-}
-
-class UsersTable {
-}
-
-class User {
-   + アカウント名：name
-   + パスワード：password
-   + 性：real_name_1
-   + 名：real_name_2
-   + メールアドレス：email
-   + ニックネーム：nickname
-   + 登録日：created
-   + 編集日：modified
-}
-
-Api\UsersController -down[#Black]-> UserService
-Adpi\UsersController -up[#Black]-|> BcApiController
-UserService -left[dotted,#Black]-|> UserServiceInterface
-UserService -down[#Black]-> UsersTable
-UsersTable -down[#Black]-> User
+note "以下ユーザー管理と同じ" as note
+UsersService .. note
 
 @enduml

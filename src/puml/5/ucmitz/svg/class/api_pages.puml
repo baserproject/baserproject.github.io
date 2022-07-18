@@ -16,6 +16,12 @@ class Api\PagesController {
 }
 
 Api\PagesController -up[#Black]-|> BcApiController
+Api\PagesController --> PagesService
 note "以下固定ページ管理と同じ" as pageNote
-Api\PagesController .. pageNote
+PagesService .. pageNote
+
+
+
+
 @enduml
+

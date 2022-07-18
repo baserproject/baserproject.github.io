@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ユーザーグループ管理API
+
+class Api\UserGroupsController {
+  + ユーザーグループ一覧取得：index()
+  + 単一ユーザーグループ取得：view()
+  + ユーザーグループ新規追加：add()
+  + ユーザーグループ編集：edit()
+  + ユーザーグループ削除：delete()
+  + ユーザーグループコピー：list()
+}
+
+Api\UserGroupsController -down[#Black]-> UserGroupsService
+Api\UserGroupsController -up[#Black]-|> BcApiController
+
+note "以下ユーザーグループ管理と同じ" as note
+UserGroupsService .. note
+
+@enduml

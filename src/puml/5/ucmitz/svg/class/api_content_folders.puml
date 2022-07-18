@@ -15,6 +15,7 @@ class Api\ContentFoldersController {
 }
 
 Api\ContentFoldersController -up[#Black]-|> BcApiController
+Api\ContentFoldersController --> ContentFoldersService
 note "以下コンテンツフォルダ管理と同じ" as contentFolderNote
-Api\ContentFoldersController .. contentFolderNote
+ContentFoldersService .. contentFolderNote
 @enduml

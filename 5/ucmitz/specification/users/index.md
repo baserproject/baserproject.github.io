@@ -71,5 +71,5 @@ baserCMS４までは、一つのユーザーグループにしか所属できま
 ![クラス図：パスワード再発行](../../svg/class/manage_users_password_request.svg)
 
 　
-### ユーザーAPI
+### ユーザー管理API
 ![クラス図：ユーザーAPI](../../svg/class/api_users.svg)
