@@ -88,3 +88,6 @@ baserCMS4までは、メインとなるサイトの情報はサイト管理で�
 ### サイト管理
 ![クラス図：サイト管理画面](../../svg/class/manage_sites.svg)
 
+　
+### サイト管理API
+![クラス図：サイト管理API](../../svg/class/api_sites.svg)

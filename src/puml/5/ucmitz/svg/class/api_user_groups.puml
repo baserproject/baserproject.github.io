@@ -12,7 +12,8 @@ class Api\UserGroupsController {
   + ユーザーグループ新規追加：add()
   + ユーザーグループ編集：edit()
   + ユーザーグループ削除：delete()
-  + ユーザーグループコピー：list()
+  + ユーザーグループリストを取得：list()
+  + ユーザーグループリストをコピー：copy()
 }
 
 Api\UserGroupsController -down[#Black]-> UserGroupsService

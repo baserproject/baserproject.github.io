@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title サイト管理API
+
+class Api\SitesController {
+  + サイト一覧取得：index()
+  + 単一サイト取得：view()
+  + サイト新規追加：add()
+  + サイト編集：edit()
+  + サイト削除：delete()
+  + 選択可能なデバイスと言語の一覧を取得する：get_selectable_devices_and_lang()
+}
+
+Api\SitesController -down[#Black]-> SitesService
+Api\SitesController -up[#Black]-|> BcApiController
+
+note "以下サイト管理と同じ" as note
+SitesService .. note
+
+@enduml

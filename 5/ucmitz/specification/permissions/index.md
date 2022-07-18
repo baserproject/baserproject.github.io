@@ -108,3 +108,7 @@
 ## クラス図
 ### アクセス制限設定管理
 ![クラス図：アクセス制限設定](../../svg/class/manage_permissions.svg)
+
+　
+### アクセス制限設定API
+![クラス図：アクセス制限API](../../svg/class/api_permissions.svg)

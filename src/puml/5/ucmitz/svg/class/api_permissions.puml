@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アクセス制限設定API
+
+class Api\PermissionsController {
+  + アクセス制限設定一覧取得：index()
+  + 単一アクセス制限設定取得：view()
+  + アクセス制限設定新規追加：add()
+  + アクセス制限設定編集：edit()
+  + アクセス制限設定削除：delete()
+  + アクセス制限設定コピー：copy()
+}
+
+Api\PermissionsController -down[#Black]-> PermissionsService
+Api\PermissionsController -up[#Black]-|> BcApiController
+
+note "以下アクセス制限設定と同じ" as note
+PermissionsService .. note
+
+@enduml
