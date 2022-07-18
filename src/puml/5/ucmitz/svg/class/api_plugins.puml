@@ -1,0 +1,28 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title プラグイン管理API
+
+class Api\PluginsController {
+  + プラグイン一覧取得：index()
+  + 単一プラグイン取得：view()
+  + プラグインインストール：install()
+  + プラグインアンインストール：uninstall()
+  + プラグインのデータベースを初期化する：reset_db()
+  + 優先度の並び順を変更する：update_sort()
+  + プラグイン削除：delete()
+  + プラグイン無効化：detach()
+  + プラグイン有効化：attach()
+  + マーケットのプラグイン一覧を取得：get_market_plugins()
+}
+
+Api\PluginsController -down[#Black]-> PluginsService
+Api\PluginsController -up[#Black]-|> BcApiController
+
+note "以下プラグイン管理と同じ" as note
+PluginsService .. note
+
+@enduml

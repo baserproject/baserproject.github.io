@@ -98,3 +98,6 @@ baserマーケットのプラグインを表示する。
 ### プラグイン管理
 ![クラス図：プラグイン管理画面](../../svg/class/manage_plugins.svg)
 
+　
+### プラグイン管理API
+![クラス図：プラグイン管理画面](../../svg/class/api_plugins.svg)
