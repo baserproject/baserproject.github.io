@@ -166,3 +166,19 @@ rm -rf ./volumes
 docker-compose up -d --force-recreate
 ```
 
+## Dockerイメージを取得しなおす
+
+Dockerイメージに更新があった場合に新しいイメージからコンテナを再構築する場合は、事前にローカルに保存されたDockerイメージを削除します。
+
+```shell
+cd docker
+# docker を起動している場合は止める
+docker-compose stop
+# コンテナを削除する
+docker rm bc5-php
+# IMAGE ID を確認する
+docker images
+# イメージ削除する
+docker rmi [IMAGE ID]
+# その後、環境の再構築を実施する
+```
