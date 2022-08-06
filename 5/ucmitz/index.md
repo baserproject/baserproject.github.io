@@ -72,6 +72,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 
 - [ユニットテスト](./test/unittest)
 - [テストカバレッジ](./test/coverage)
+- [GitHubActions](./test/github_actions)
 
 　
 ### 全体的な変更点と既知の問題点
