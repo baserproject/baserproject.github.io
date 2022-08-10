@@ -6,3 +6,6 @@ title: baserCMS Documentation
 kramdown:
   input: GFM
   hard_wrap: true
+
+plugins:
+  - jekyll-sitemap
