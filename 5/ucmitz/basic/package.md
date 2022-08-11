@@ -15,27 +15,24 @@ Gitでクローンした本体。親パッケージとして ucmitz のアプリ
 
 ### コアパッケージ
 
-baserCMSのコア（BaserCore）は、CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下に配置する仕様としています。 
-子パッケージとして主にURLに紐づくルーティングと、ビジネスロジックを提供します。
-- [BaserCore](https://github.com/baserproject/ucmitz/tree/dev/plugins/baser-core) 
+baserCMSのコア（BaserCore）、デフォルトの管理画面テーマ（BcAdminThird）、デフォルトのフロントテーマ（BcFront）、そしてインストーラー（BcInstaller）は、CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下に配置する仕様としています。   
+BaserCore は、主にURLに紐づくルーティングと、ビジネスロジックを提供します。
+- [BaserCore](https://github.com/baserproject/ucmitz/tree/dev/plugins/baser-core)
+- [BcAdminThird](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-admin-third)
+- [BcFront](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-front)
+- [BcInstaller](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-installer)
 
 　
-
-### コアテーマ
-CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下に配置する仕様する仕様としています。
-子パッケージとして、baserCMSの画面表示をテーマとして提供します。
-
-- [BcAdminThird](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-admin-third) 
-
-　
-
 ### コアプラグイン
-ブログ、メールフォーム、アップローダーは、CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下に配置する仕様としています。
+baserCMSのコアパッケージと共にコアに梱包するいくつかのプラグインはコアプラグインとして、`/plugins/` 配下に配置する仕様としています。
 
 - [BcBlog](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-blog)
 - [BcMail](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-mail)
 - [BcUploader](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-uploader)
-
+- [BcEditorTemplate](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-editor-template)
+- [BcThemeConfig](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-theme-config)
+- [BcThemeFile](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-theme-file)
+- [BcWidgetArea](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-widget-area)
 
 その他のプラグインも同様に、CakePHPのプラグインとしての開発を前提とし、 `/plugins/` 配下内に配置します。  
 なお、コアパッケージ、コアテーマ以外のプラグインのロードは、 composer でのインストールは不要で、管理画面でプラグインをインストールする事で利用可能となります。
@@ -49,7 +46,7 @@ CakePHPのプラグインとしての開発を前提とし、`/plugins/` 配下�
 ```
 例）
 コア：baser-core / bc-admin-third / bc-blog
-その他：BcSample
+その他：BcSpaSample
 ```
 
 　
@@ -88,31 +85,10 @@ vendor/bin/monorepo-builder merge
 子パッケージのリリースを行う場合は、次のコマンドを実行します。
 
 ```
-vendor/bin/monorepo-builder split
+vendor/bin/monorepo-builder release [バージョン番号]
 ```
 
 　
-### 暫定的な公開
-
-`split` コマンドは、`master` ブランチをベースに子パッケージを分割する仕様となっているため、開発中は GitHub に反映することができませんが、暫定的に GitHub に公開するために次の二つの方法で対応することができます。
-
-1. 一時的に、開発ブランチから master ブランチを作り出して `split` を実行する
-2. `monorepo-builder` のソースコードを一時的に改修して `split` を実行する
-
-2 に関しては、一時的に次のファイルの編集必要です。
-
-```
-/vendor/symplify/monorepo-builder/packages/Split/src/Process/ProcessFactory.php
-53行目
---branch=master
-　　　↓
---branch=dev
-```
-
-ucmitz を開発中は、2を利用して、開発中のコードを定期的に GitHub に公開します。
-
-　
-
 ### 参考文献
 
 [MonorepoBuilderでPHPのモノレポを作るチュートリアル](https://qiita.com/suin/items/421a55bdb009b2ada2d1)
