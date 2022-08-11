@@ -7,7 +7,7 @@ Javascript の開発は、Gulp でファイルを監視し Webpack を利用し�
 事前に Node.js をインストールしておき、npm コマンドが利用できるようにしておきます。  
 gulp と Webpack が動作するように、npm でライブラリをインストールします。
 
-```shell script
+```shell
 npm install
 ```
 

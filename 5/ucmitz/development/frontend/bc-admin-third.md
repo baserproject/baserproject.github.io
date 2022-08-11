@@ -9,6 +9,8 @@ CSS の作成は、Gulp でファイルを関し、sass を利用して作成し
 
 事前に[CSSの作成について](./css) を参考し、Gulp や sass の準備をします。  
 また、CSSの作成 は、[スタイルガイド](https://localhost/bc_admin_third/guide.html) を参考にします。
+  
+※ スタイルガイドを確認するには、[Dockerの開発環境](../../preparation/environment) が立ち上がっている必要があります。
 
 　
 ## Javascriptの開発
