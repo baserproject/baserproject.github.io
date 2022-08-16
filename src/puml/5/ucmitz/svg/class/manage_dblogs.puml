@@ -1,0 +1,45 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ログ管理
+
+class Admin\DblogsController {
+  + ログ一覧を表示：index()
+  + 一括削除：delete_all()
+}
+
+class DblogsService {
+  + DblogsTable
+}
+
+class DblogsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update() ※ 対応しない
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList() ※ 対応しない
+  + 一括削除：deleteAll()
+  + 最新のDBログ一覧を取得：getDblogs
+}
+
+class DblogsTable {
+}
+
+class Dblog {
+	+ メッセージ：message
+	+ ユーザーID：user_id
+	+ コントローラー：controller
+	+ アクション：action
+}
+
+Admin\DblogsController -down[#Black]-> DblogsService
+DblogsService -down[#Black]-> DblogsTable
+DblogsService -left[dotted,#Black]-|> DblogsServiceInterface
+DblogsTable -down[#Black]-> Dblog
+
+@enduml

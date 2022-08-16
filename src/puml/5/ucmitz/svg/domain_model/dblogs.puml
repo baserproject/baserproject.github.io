@@ -1,0 +1,19 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ログ
+
+package ログ {
+	
+	class ログ {
+		メッセージ
+		ユーザーID
+		コントローラー
+		アクション
+	}
+
+}
+
+@enduml

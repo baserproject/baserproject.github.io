@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ログ管理API
+
+class Api\DblogsController {
+  + ログ一覧取得：index()
+  + ログ新規追加：add()
+  + 一括削除：delete_all()
+}
+
+class DblogsService {
+  + DblogsTable
+}
+
+Api\DblogsController -down[#Black]-> DblogsService
+
+note "以下ログ管理と同じ" as note
+DblogsService .. note
+
+@enduml

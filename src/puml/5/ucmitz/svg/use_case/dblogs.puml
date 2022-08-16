@@ -1,0 +1,25 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：ログ管理
+
+actor 管理者
+actor ユーザー
+
+package アクセス制限 {
+	left to right direction
+	管理者 -up-> (ログを全て削除する)
+	管理者 -up-> (ログの一覧を表示する)
+	管理者 -up-> (ログを検索する)
+	管理者 -up-> (一覧の表示件数を変更する)
+	管理者 -up-> (一覧のページを切り替える)
+	ユーザー -down-> (ログの一覧を表示する)
+	ユーザー -down-> (ログを検索する)
+	ユーザー -down-> (一覧の表示件数を変更する)
+	ユーザー -down-> (一覧のページを切り替える)
+}
+
+
+@enduml

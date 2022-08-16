@@ -25,6 +25,7 @@
 - コンテンツフォルダ管理
 - [固定ページ管理](./pages/index)
 - [検索インデックス管理](./search_indexes/index)
+- [ログ管理](./dblogs/index)
 - テーマ管理
 
 ### コアプラグイン
