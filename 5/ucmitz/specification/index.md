@@ -15,7 +15,7 @@
 - システムメッセージ
 - キャッシュクリア
 - ダッシュボード
-- サイト基本設定
+- [サイト基本設定](./site_configs/index)
 - [ユーザー管理](./users/index)
 - [ユーザーグループ管理](./user_groups/index)
 - [アクセス制限管理](./permissions/index)

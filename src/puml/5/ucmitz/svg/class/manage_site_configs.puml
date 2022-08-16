@@ -1,0 +1,67 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title サイト基本設定
+
+class Admin\BcAdminAppController {
+}
+
+class Admin\SiteConfigsController {
+  + 保存：index()
+}
+
+class SiteConfigsAdminService {
+}
+
+class SiteConfigsAdminServiceInterface {
+	+表示用のデータを取得する：getViewVarsForIndex()
+}
+
+class SiteConfigsService {
+  + SiteConfigsTable
+}
+
+class SiteConfigsServiceInterface {
+  + 設定値を取得する：getValue()
+  + 全設定値を取得する：get()
+  + 全設定値を更新する：update()
+  + .env が書き込み可能かどうか確認：isWritableEnv()
+  + .env に設定値を書き込む：putEnv()
+  + アプリケーションモードリストを取得：getModeList()
+  + 設定値を更新する：setValue()
+  + 設定値をリセットする：resetValue()
+  + DBのバージョンを取得する：getVersion()
+  + キャッシュ用 Entity を削除：clearCache()
+}
+
+class SiteConfigsTable {
+	+ KeyValue用のバリデーションを行う：validationKeyValue()
+	+ コントロールソースを取得する：getControlSource()
+	+ コンテンツの並び順の変更確認：isChangedContentsSortLastModified()
+	+ コンテンツ並び順変更時間を更新する：updateContentsSortLastModified()
+	+ コンテンツ並び替え順変更時間をリセット：resetContentsSortLastModified()
+	+ 指定したフィールドの値がDBのデータと比較して変更状態か確認：isChange()
+}
+
+class BcKeyValue {
+}
+
+class SiteConfig {
+   + 設定名：name
+   + 値：value
+}
+
+Admin\SiteConfigsController -up[#Black]-|> Admin\BcAdminAppController
+Admin\SiteConfigsController -down[#Black]-> SiteConfigsAdminService
+SiteConfigsAdminService -right[dotted,#Black]-|> SiteConfigsAdminServiceInterface
+
+Admin\SiteConfigsController -down[#Black]-> SiteConfigsService
+SiteConfigsService -down[#Black]-> SiteConfigsTable
+SiteConfigsTable -right[#Black]-|> BcKeyValue
+SiteConfigsService -left[dotted,#Black]-|> SiteConfigsServiceInterface
+SiteConfigsTable -down[#Black]-> SiteConfig
+
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：サイト基本設定
+
+package サイト基本設定 {
+	
+	class サイト基本設定 {
+		設定名
+		値
+	}
+
+}
+
+@enduml
