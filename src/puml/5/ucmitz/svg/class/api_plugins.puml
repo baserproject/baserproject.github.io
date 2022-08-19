@@ -13,7 +13,6 @@ class Api\PluginsController {
   + プラグインアンインストール：uninstall()
   + プラグインのデータベースを初期化する：reset_db()
   + 優先度の並び順を変更する：update_sort()
-  + プラグイン削除：delete()
   + プラグイン無効化：detach()
   + プラグイン有効化：attach()
   + マーケットのプラグイン一覧を取得：get_market_plugins()

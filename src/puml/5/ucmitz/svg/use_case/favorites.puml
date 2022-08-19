@@ -1,0 +1,19 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：お気に入り
+
+actor ユーザー
+
+package お気に入り {
+	left to right direction
+	ユーザー -down-> (お気に入りを一覧で表示する)
+	ユーザー -down-> (お気に入りを登録する)
+	ユーザー -down-> (お気に入りを編集する)
+	ユーザー -down-> (お気に入りを削除する)
+	ユーザー -down-> (お気に入りを並び替える)
+}
+
+@enduml
