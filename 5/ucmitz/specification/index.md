@@ -12,8 +12,7 @@
 - [メニュー](./common/menu.md)
 - [ツールバー](./common/toolbar.md)
 - [ヘルプ](./common/help.md)
-- システムメッセージ
-- キャッシュクリア
+- [システムメッセージ](./common/system_message.md)
 - ダッシュボード
 - [サイト基本設定](./site_configs/index)
 - [ユーザー管理](./users/index)
