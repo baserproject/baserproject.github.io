@@ -13,7 +13,7 @@
 - [ツールバー](./common/toolbar.md)
 - [ヘルプ](./common/help.md)
 - [システムメッセージ](./common/system_message.md)
-- ダッシュボード
+- [ダッシュボード](./dashboard/index.md)
 - [サイト基本設定](./site_configs/index)
 - [ユーザー管理](./users/index)
 - [ユーザーグループ管理](./user_groups/index)
