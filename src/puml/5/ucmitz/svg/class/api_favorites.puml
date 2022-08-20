@@ -1,0 +1,49 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title お気に入り
+
+class Admin\FavoritesController {
+  + 単一データ取得：view()
+  + 一覧データ取得：index()
+  + 新規作成：add()
+  + 編集：edit()
+  + 削除：delete()
+  + 並び替え：change_sort()
+  + お気に入りの表示状態を保存する：save_favorite_box()
+  + お気に入りの表示状態を取得する：get_favorite_box_opened()
+}
+
+class FavoritesService {
+  + FavoritesTable
+}
+
+class FavoritesServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 並び替え：changeSort()
+}
+
+class FavoritesTable {
+}
+
+class Favorite {
+	+ ユーザーID：user_id
+	+ 表示名：name
+	+ URL：url
+	+ 並び順：sort
+}
+
+Admin\FavoritesController -down[#Black]-> FavoritesService
+FavoritesService -down[#Black]-> FavoritesTable
+FavoritesService -left[dotted,#Black]-|> FavoritesServiceInterface
+FavoritesTable -down[#Black]-> Favorite
+
+@enduml

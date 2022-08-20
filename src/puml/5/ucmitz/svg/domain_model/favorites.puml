@@ -1,0 +1,19 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：お気に入り
+
+package お気に入り {
+	
+	class お気に入り {
+		ユーザーID
+		表示名
+		URL
+		並び順
+	}
+	
+}
+
+@enduml
