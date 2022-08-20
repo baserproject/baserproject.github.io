@@ -6,21 +6,64 @@ skinparam classAttributeIconSize 0
 
 title 検索インデックス
 
-class SearchIndexService {
-    + 索引取得：get()
-    + 検索インデックス再構築：reconstruct()  
+class Admin\SearchIndexesController {
+	+ 一覧表示：index()
+	+ 削除：delete()
+	+ 再構築：reconstruct()
+}
+
+class SearchIndexesController {
+	+ 検索：search()
+}
+
+class SearchIndexesServiceInterface {
+	+ 単一データ取得：get()
+	+ 一覧データ取得：getIndex()
+	+ 削除：delete()
+	+ 優先度変更：changePriority()
+	+ 再構築：reconstruct()
+	+ 検索：search()  
+}
+
+class SearchIndexesService {
+	+ SearchIndexesTable
 }
 
 class SearchIndexesTable {
-    + allowPublish()
-    + initialize()
+	+ allowPublish()
 }
 
 class BcSearchIndexManagerBehavior {
-    + initialize()
-    + saveSearchIndex()
-    + deleteSearchIndex()
-    + updateSearchIndexMeta()
+    + 検索インデックス作成：saveSearchIndex()
+    + 検索インデックス削除：deleteSearchIndex()
+    + 検索インデックス更新：updateSearchIndexMeta()
 }
+
+class SearchIndex {
+    + タイプ：type
+    + モデル：model
+    + モデルID：model_id
+    + サイトID：site_id
+    + コンテンツID：content_id
+    + コンテンツフィルターID：content_filter_id
+    + 左位置：lft
+    + 右位置：rght
+    + タイトル：title
+    + 詳細：detail
+    + URL：url
+    + 公開状態：status
+    + 優先度：priority
+    + 公開開始日：publish_begin
+    + 公開終了日：publish_end
+}
+
+Admin\SearchIndexesController -down-> SearchIndexesService
+SearchIndexesController -down-> SearchIndexesService
+SearchIndexesService -right[dotted]-|> SearchIndexesServiceInterface
+SearchIndexesService -down-> SearchIndexesTable
+SearchIndexesTable -down-> SearchIndex
+Admin\PagesController -down-> PagesService
+PagesService -down-> PagesTable
+PagesTable -left|> BcSearchIndexManagerBehavior
 
 @enduml
