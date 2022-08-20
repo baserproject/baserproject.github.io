@@ -50,6 +50,11 @@ Migration を利用してデータベースにテーブルを作成する。
 データベースと設定をリセットする。
 
 　
+### ucmitzにおける変更点
+- インストーラーは、BcInstaller としてプラグイン化する
+- BcManagerComponent を InstallationsService に移行する
+
+　
 ## クラス図
 ### インストーラー
 ![クラス図：インストーラー](../../svg/class/installer.svg)
