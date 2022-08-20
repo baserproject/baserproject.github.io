@@ -1,0 +1,34 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：検索インデックス
+
+package 検索インデックス {
+	
+	class 検索インデックス {
+    + タイプ
+    + モデル
+    + モデルID
+    + サイトID
+    + コンテンツID
+    + コンテンツフィルターID
+    + 左位置
+    + 右位置
+    + タイトル
+    + 詳細
+    + URL
+    + 公開状態
+    + 優先度
+    + 公開開始日
+    + 公開終了日
+	}
+	
+	class 固定ページ
+
+}
+
+固定ページ - 検索インデックス 
+
+@enduml
