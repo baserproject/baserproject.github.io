@@ -9,6 +9,7 @@ title 検索インデックス
 class Admin\SearchIndexesController {
 	+ 一覧表示：index()
 	+ 削除：delete()
+	+ 一括削除：batch()
 	+ 再構築：reconstruct()
 }
 
