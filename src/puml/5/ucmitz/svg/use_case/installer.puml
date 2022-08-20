@@ -1,0 +1,22 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：インストーラー
+
+actor 管理者
+
+package インストーラー {
+	left to right direction
+	管理者 -down-> (ブラウザインストール)
+	管理者 -down-> (コマンドラインインストール)
+	(ブラウザインストール) -down-> (サーバー環境のチェック)
+	(ブラウザインストール) -down-> (データベースの接続チェック)
+	(ブラウザインストール) -down-> (データベースの構築)
+	(ブラウザインストール) -down-> (初期設定)
+	(ブラウザインストール) -down-> (管理ユーザーの作成)
+	管理者 -down-> (リセット)
+}
+
+@enduml
