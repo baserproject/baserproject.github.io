@@ -1,0 +1,40 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：コンテンツ管理
+
+package コンテンツ管理 {
+	
+	class フォルダ
+	
+	class コンテンツ {
+		URL
+		タイトル
+		自身の公開状態
+		自身の公開期間
+		公開状態
+		公開期間
+		親コンテンツID
+		作成者ID
+		実体ID
+	}
+	note bottom
+	・コンテンツは未公開状態で登録される
+	・親の公開状態と公開期間を公開状態と公開期間に設定する
+	・作成者IDにログイン中のユーザーIDを設定する
+	・タイトルは強制的に255文字でカットする
+	・タイトルを231文字でカットしてURLに設定
+	・URLをURLエンコードしてURLを生成する
+	・URLの重複チェックを行い重複している場合はユニークな文字列に変換する
+	endnote
+
+}
+
+class 親コンテンツ
+
+フォルダ *- コンテンツ 
+コンテンツ "0..*" - "1" 親コンテンツ
+
+@enduml

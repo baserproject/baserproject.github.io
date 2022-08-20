@@ -4,7 +4,7 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title 固定ページ管理
+title 固定ページ
 
 class PagesController {
   + 固定ページを表示する：display()

@@ -1,0 +1,18 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：コンテンツフォルダ
+
+actor 管理者
+actor 閲覧ユーザー
+
+package コンテンツフォルダ {
+	left to right direction
+	閲覧ユーザー -up-> (フロントページを表示する)
+	管理者 -down-> (フォルダテンプレートを変更する)
+	管理者 -down-> (固定ページテンプレートを変更する)
+}
+
+@enduml

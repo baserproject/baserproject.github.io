@@ -21,8 +21,8 @@
 - [プラグイン管理](./plugins/index)
 - [サイト管理](./sites/index) 
 - [コンテンツ管理](./contents/index)
-- コンテンツフォルダ管理
-- [固定ページ管理](./pages/index)
+- [コンテンツフォルダ](./content_folders/index)
+- [固定ページ](./pages/index)
 - [検索インデックス管理](./search_indexes/index)
 - [ログ管理](./dblogs/index)
 - テーマ管理
