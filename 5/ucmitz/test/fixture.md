@@ -131,10 +131,16 @@ public $fixtures = [
 ロールバック時の問題としては、インクリメント値が初期化されないため、テストにおいて初期化される事が前提となっている場合は、明示的にインクリメント値を初期化するか、`TruncateStrategy` を利用するようにテストケースクラスに定義します。
 
 ```php
-protected function getFixtureStrategy(): FixtureStrategyInterface
+// 親の setUp() の前に実行する
+public function setUp(): void
 {
-    return new TruncateStrategy();
+    $this->setFixtureTruncate();
+    parent::setUp();
 }
 ```
 
+また、`TransactionStrategy` を利用している場合は、データベースに保存されているものの、
+トランザクションとして commit されませんので、ブレークポイントでプログラムを止めて、
+phpMyAdmin などのツールからデータの保存を確認するという事ができませんので注意が必要です。 
 
+確認したい場合は、`setFixtureTruncate()` メソッドで、truncate に切り替えてからテストを実行してください。
