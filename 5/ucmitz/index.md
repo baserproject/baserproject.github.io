@@ -74,6 +74,7 @@ ucmitz の管理画面テーマやフロントの開発では、sass や Webpack
 ucmitz の開発では、ユニットテストのカバレッジ100%を目指します。ユニットメソッドの作成方法と実行方法については次を確認してください。
 
 - [ユニットテスト](./test/unittest)
+- [フィクスチャの利用](./test/fixture)
 - [テストカバレッジ](./test/coverage)
 - [GitHubActions](./test/github_actions)
 
