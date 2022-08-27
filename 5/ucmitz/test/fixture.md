@@ -103,7 +103,8 @@ UserFactory::make(100)->suspended()->persist();
 
 　
 ## フィクスチャシナリオの利用方法
-`loadFixtureScenario` メソッドを利用して、クラスを読み込む事で実行します。
+`loadFixtureScenario` メソッドを利用して、クラスを読み込む事で実行します。  
+なお、`ScenarioAwareTrait` の実装が必要です。
 
 ```php
 // シナリオを利用して無効ユーザーを50人追加
