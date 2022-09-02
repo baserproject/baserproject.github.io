@@ -10,11 +10,12 @@ class Admin\ThemesController {
   + テーマ一覧を表示：index()
   + 新しいテーマをアップロードする：add()
   + テーマを適用する：apply()
-  + 初期データを読み込む：load_default_data()
+  + 初期データを読み込む：load_default_data_pattern()
   + コピーする：copy()
   + 削除する：delete()
   + 利用中のテーマをダウンロードする：download()
-  + 初期データをダウンロードする：download_default_data()
+  + 初期データをダウンロードする：download_default_data_pattern()
+  + コアの初期データを読み込む：reset_data()
 }
 
 class ThemesService {
@@ -25,12 +26,13 @@ class ThemesServiceInterface {
   + 一覧データ取得：getIndex()
 	+ 新しいテーマをアップロードする：add()
   + インストール：apply()
-	+ 初期データを読み込む：loadDefaultData()
+	+ 初期データを読み込む：loadDefaultDataPattern()
 	+ コピーする：copy()
   + 削除する：delete()
   + 利用中のテーマをダウンロードする：download()
-  + 初期データをダウンロードする：downloadDefaultData()
+  + 初期データをダウンロードする：downloadDefaultDataPattern()
   + baserマーケットのテーマ一覧を取得する：getMarketThemes()
+  + コアの初期データを読み込む：resetData()
 }
 
 class BcPlugin {
