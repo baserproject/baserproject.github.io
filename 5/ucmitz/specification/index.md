@@ -25,7 +25,7 @@
 - [固定ページ](./pages/index)
 - [検索インデックス管理](./search_indexes/index)
 - [ログ管理](./dblogs/index)
-- テーマ管理
+- [テーマ管理](./themes/index)
 
 ### コアプラグイン
 - [お気に入り](./favorites/index)

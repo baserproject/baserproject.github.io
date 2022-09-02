@@ -1,0 +1,36 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：テーマ管理
+
+actor 管理者
+
+package テーマ管理 {
+	left to right direction
+	管理者 -down-> (一覧表示)
+	管理者 -down-> (新規追加)
+	管理者 -down-> (詳細表示)
+	管理者 -down-> (適用)
+	管理者 -down-> (初期データ読み込み)
+	管理者 -down-> (コピー)
+	管理者 -down-> (削除)
+	管理者 -down-> (利用中テーマダウンロード)
+	管理者 -down-> (テーマ用初期データダウンロード)
+	管理者 -down-> (baserマーケットのテーマ一覧を表示)
+	note right of 初期データ読み込み
+	現在のテーマの初期データを読み込む
+	endnote
+	note right of 削除
+	現在のテーマ以外
+	endnote
+	note right of 適用
+	現在のテーマ以外
+	endnote
+	note right of 詳細表示
+	現在のテーマ以外
+	endnote
+}
+
+@enduml

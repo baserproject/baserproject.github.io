@@ -1,0 +1,55 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title テーマ管理
+
+class Admin\ThemesController {
+  + テーマ一覧を表示：index()
+  + 新しいテーマをアップロードする：add()
+  + テーマを適用する：apply()
+  + 初期データを読み込む：load_default_data()
+  + コピーする：copy()
+  + 削除する：delete()
+  + 利用中のテーマをダウンロードする：download()
+  + 初期データをダウンロードする：download_default_data()
+}
+
+class ThemesService {
+}
+
+class ThemesServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+	+ 新しいテーマをアップロードする：add()
+  + インストール：apply()
+	+ 初期データを読み込む：loadDefaultData()
+	+ コピーする：copy()
+  + 削除する：delete()
+  + 利用中のテーマをダウンロードする：download()
+  + 初期データをダウンロードする：downloadDefaultData()
+  + baserマーケットのテーマ一覧を取得する：getMarketThemes()
+}
+
+class BcPlugin {
+	+ テーマを適用する：applyAsTheme()
+}
+
+class SiteConfigsTable {
+  + テーマを適用する：setTheme()
+}
+
+class SiteConfig {
+	+ 名前：name
+	+ 値：value
+}
+
+Admin\ThemesController -down[#Black]-> ThemesService
+ThemesService -down[#Black]-> BcPlugin
+BcPlugin -down[#Black]-> SiteConfigsTable
+ThemesService -left[dotted,#Black]-|> ThemesServiceInterface
+SiteConfigsTable -down[#Black]-> SiteConfig
+
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title プラグイン管理API
+
+class Api\ThemesController {
+  + テーマ一覧を取得：index()
+  + 単一テーマ情報を取得：view()
+  + 新しいテーマをアップロードする：add()
+  + テーマを適用する：apply()
+  + 初期データを読み込む：load_default_data()
+  + コピーする：copy()
+  + 削除する：delete()
+  + baserマーケットのテーマデータを取得する：get_market_themes()
+}
+
+Api\ThemesController -down[#Black]-> ThemesService
+Api\ThemesController -up[#Black]-|> BcApiController
+
+note "以下テーマ管理と同じ" as note
+ThemesService .. note
+
+@enduml

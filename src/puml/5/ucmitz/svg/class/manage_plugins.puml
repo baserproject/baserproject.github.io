@@ -16,7 +16,6 @@ class Admin\PluginsController {
   + プラグインを一括無効化する：batch()
   + 優先順位の並び替えを更新する：update_sort()
   + プラグインをアップデートする：update()
-  + baserマーケットのプラグインデータを取得する：get_market_plugins()
 }
 
 class BcAdminPluginHelper {
