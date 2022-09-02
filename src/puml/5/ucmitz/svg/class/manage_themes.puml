@@ -16,6 +16,7 @@ class Admin\ThemesController {
   + 利用中のテーマをダウンロードする：download()
   + 初期データをダウンロードする：download_default_data_pattern()
   + コアの初期データを読み込む：reset_data()
+  + baserマーケットのテーマ一覧を取得する：get_market_themes()
 }
 
 class ThemesService {
