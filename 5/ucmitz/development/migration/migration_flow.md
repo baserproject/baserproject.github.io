@@ -23,6 +23,19 @@ bin/cake bake seed --data TableName --plugin PluginName
 ```
 ※ TableName、PluginName は任意の名称にします。
 
+#### マイグレーションファイルの命名規則
+上記コマンド例の「CreateTableName」の部分は、作成するマイグレーションファイルの名称となりますが、
+マイグレーションファイルは、１テーブル１つ作成するようにしてください。
+
+なお、マイグレーションファイルの命名規則は次のとおりです。
+
+【命名規則】
+- テーブル作成：Create{TableName}
+- テーブル削除：Drop{TableName}
+- フィールド追加：Add{FieldName}To{TableName}
+- フィールド変更：Change{FieldName}On{TableName}
+- フィールド削除：Remove{FieldName}From{TableName}
+
 参考: [データベースにおける注意点](./database)
 
 　

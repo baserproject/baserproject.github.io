@@ -30,10 +30,11 @@ class ThemesServiceInterface {
 	+ 初期データを読み込む：loadDefaultDataPattern()
 	+ コピーする：copy()
   + 削除する：delete()
-  + 利用中のテーマをダウンロードする：download()
-  + 初期データをダウンロードする：downloadDefaultDataPattern()
+  + 利用中のテーマをダウンロードする：createDownloadToTmp()
+  + 初期データをダウンロードする：createDownloadDefaultDataPatternToTmp()
   + baserマーケットのテーマ一覧を取得する：getMarketThemes()
   + コアの初期データを読み込む：resetData()
+  
 }
 
 class BcPlugin {
