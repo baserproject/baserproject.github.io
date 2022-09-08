@@ -15,7 +15,6 @@ class Admin\ThemesController {
   + 削除する：delete()
   + 利用中のテーマをダウンロードする：download()
   + 初期データをダウンロードする：download_default_data_pattern()
-  + コアの初期データを読み込む：reset_data()
   + baserマーケットのテーマ一覧を取得する：get_market_themes()
 }
 
@@ -33,8 +32,6 @@ class ThemesServiceInterface {
   + 利用中のテーマをダウンロードする：createDownloadToTmp()
   + 初期データをダウンロードする：createDownloadDefaultDataPatternToTmp()
   + baserマーケットのテーマ一覧を取得する：getMarketThemes()
-  + コアの初期データを読み込む：resetData()
-  
 }
 
 class BcPlugin {
