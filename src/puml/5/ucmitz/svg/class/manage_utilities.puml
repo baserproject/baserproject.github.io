@@ -1,0 +1,47 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ユーティリティ
+
+class Admin\UtilitiesController {
+	+ ユーティリティトップを表示する：index()
+	+ サーバーキャッシュを削除する：clear_cache()
+	+ コンテンツ管理のツリー構造をチェックする：verity_contents_tree()
+	+ コンテンツ管理のツリー構造をリセットする：reset_contents_tree()
+	+ 環境情報を表示する：info()
+	+ データメンテナンス：maintenance()
+	+ ログメンテナンス：log_maintenance()
+	+ スキーマファイル生成：write_schema()
+	+ スキーマファイル読込：load_schema()
+}
+
+class UtilitiesService {
+}
+
+class UtilitiesServiceInterface {
+	+ ツリー構造チェック：verityContentsTree()
+	+ ツリー構造リセット：resetContentTree()
+	+ バックアップ作成：backupDb()
+	+ バックアップよりレストア：restoreDb()
+	+ ログファイルのZIPファイルを作成：createLogZip()
+	+ ログファイルを削除：deleteLog()
+	+ スキーマファイル生成：writeSheme()
+	+ スキーマファイル読込：loadSchema()
+}
+
+class UtilitiesAdminService {
+}
+
+class UtilitiesAdminServiceInterface {
+	+ info 画面用の view 変数を生成：getViewVarsForInfo()
+}
+
+Admin\UtilitiesController -down[#Black]-> UtilitiesService
+Admin\UtilitiesController -down[#Black]-> UtilitiesAdminService
+UtilitiesService -down[dotted,#Black]-|> UtilitiesServiceInterface
+UtilitiesAdminService -down[dotted,#Black]-|> UtilitiesAdminServiceInterface
+
+@enduml
