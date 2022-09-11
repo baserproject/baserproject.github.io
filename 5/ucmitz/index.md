@@ -57,6 +57,7 @@ baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあ�
 - [セッション関連における注意点](./development/migration/session)
 - [データベースにおける注意点](./development/migration/database)
 - [プラグインにおける注意点](./development/migration/database)
+- [セキュリティコンポーネントにおける注意点](./development/migration/security)
 
 　
 ### テーマの開発
