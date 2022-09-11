@@ -26,6 +26,7 @@
 - [検索インデックス管理](./search_indexes/index)
 - [ログ管理](./dblogs/index)
 - [テーマ管理](./themes/index)
+- [ユーティリティ](./utilities/index)
 
 ### コアプラグイン
 - [お気に入り](./favorites/index)
