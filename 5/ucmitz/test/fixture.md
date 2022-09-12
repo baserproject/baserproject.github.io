@@ -120,13 +120,13 @@ $this->loadFixtureScenario(InitAppScenario::class);
 
 ```php
 public $fixtures = [
-    'plugin.BaserCore.Empty/Users',
-    'plugin.BaserCore.Empty/Sites',
+    'plugin.BaserCore.Factory/Users',
+    'plugin.BaserCore.Factory/Sites',
 ];
 ```
 
 定義の仕方は従来と同じなのですが、この時に、フィクスチャファイルに、`$record` の定義が入っていると混乱を生む原となってしまいます。  
-`Empty` ディレクトリ内に定義した、空のフィクスチャファイルを利用するようにしましょう。
+`Factory` ディレクトリ内に定義した、空のフィクスチャファイルを利用するようにしましょう。
 
 なお、初期化方法については、truncate（`TruncateStrategy`） と DB のロールバック（`TransactionStrategy`）があるのですが、ロールバックの方が高速であるため、初期状態ではこちらを設定しています。  
 ロールバック時の問題としては、インクリメント値が初期化されないため、テストにおいて初期化される事が前提となっている場合は、明示的にインクリメント値を初期化するか、`TruncateStrategy` を利用するようにテストケースクラスに定義します。
