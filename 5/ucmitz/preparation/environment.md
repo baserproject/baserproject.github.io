@@ -101,19 +101,36 @@ docker logs bc5-php
 
 　
 ## lsyncd による高速化
-
 Docker Desktop を利用する前提となっていますが、現在（2022/04/11）Macの環境では、
 共有フォルダとしてマウントしたフォルダに直接 Apache の DocumentRoot を設定すると処理速度が非常に遅くなるという問題があります。
-そのため、別のフォルダにマウントして、lsyncd というサービスで同期するという仕組みにしています。
+そのため、別のフォルダにマウントして、lsyncd というサービスで同期することで高速化する仕組みを利用可能としています。  
+設定は自身で行う必要があります。
+
+### 設定方法
+#### マウントの設定変更
+docker/docker-compose.yml の 26行目あたり
+```yaml
+// 下記をコメントアウト
+- ../:/var/www/html:delegated
+// 下記をコメントイン
+# - ../:/var/www/shared:delegated
+```
+#### 初期化スクリプトの設定変更
+docker/docker-compose.yml の 38行目あたり
+```yaml
+// 下記をコメントアウト
+command: bash -c "/var/www/html/docker/init.sh && apache2-foreground"
+// 下記をコメントイン
+# command: bash -c "/var/www/shared/docker/init_lsyncd.sh && /var/www/shared/docker/init.sh && apache2-foreground"
+```
+あとは、[環境を再構築する](./#環境を再構築する) を参考に再構築を行います。
 
 
 ### 共有フォルダのマウント設定
-
 ドキュメントルートである `/var/www/html/` ではなく、`/var/www/shared/` に共有フォルダをマウントすることにより高速化を図っています。
 
 
 ### ファイルの同期
-
 共有フォルダ内のファイルを変更した場合、`/var/www/html/` 内に反映させなければ、変更が動作に反映されません。  
 そのため、lsyncd を利用して `/var/www/shared/` と `/var/www/html/` を同期します。
 
@@ -122,9 +139,15 @@ Docker Desktop を利用する前提となっていますが、現在（2022/04/
 /var/www/html # Apache の DocumentRoot
 ```
 
-### ファイルの内容を変更したのに反映できない場合
+### ファイルの同期がうまくいかない問題
 
-Docker の起動時に lsyncd を立ち上げる仕様となっていますが、ファイルの内容を変更した場合に反映できない場合はこちらを疑ってください。
+Docker の起動時に lsyncd を立ち上げる仕様となっていますが、ファイルの同期がうまくいかない場合があります。
+- ゲスト側で新しくファイルを作成した場合に反映されない
+- Git pull や merge などで、削除が入った場合に反映されない
+- 削除したファイルが復活する
+
+
+その場合は、こちらを確認してください。  
 コンテナにログインしてサービスの起動状況を確認します。
 
 ```shell
@@ -138,36 +161,27 @@ lsyncd の左側に「+」マークが表示されていれば問題ありませ
 service lsyncd start
 ```
 
-なお、同期処理の方向は次のとおりとなっています。
-
-```shell
-/var/www/shared → /var/www/html
-/var/www/html/tmp → /var/www/shared/tmp
-/var/www/html/logs → /var/www/shared/logs
-/var/www/html/webroot/files → /var/www/shared/webroot/files
-```
-
 上記を試してもうまく行かない場合は[環境の再構築](#%E7%92%B0%E5%A2%83%E3%82%92%E5%86%8D%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)をお試しください。
 
 　
 ## 環境を再構築する
-
 PHPのコンテナを違うコンテナにする場合など、環境を再構築する場合は次の手順を踏みます。
 
 ```shell
+# 初期化完了ファイルを削除
+rm ./docker_inited
+# dockerフォルダへ移動
 cd docker
 # docker-compose.yml.default の変更内容を反映する（必要があれば）
 cp docker-compose.yml.default docker-compose.yml
-# 初期化完了ファイルを削除
-rm ./inited
 # データベースのデータを削除
 rm -rf ./volumes
 # コンテナを再構築
 docker-compose up -d --force-recreate
 ```
 
+　
 ## Dockerイメージを取得しなおす
-
 Dockerイメージに更新があった場合に新しいイメージからコンテナを再構築する場合は、事前にローカルに保存されたDockerイメージを削除します。
 
 ```shell
