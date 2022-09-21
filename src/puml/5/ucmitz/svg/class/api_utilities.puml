@@ -1,0 +1,25 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ユーティリティAPI
+
+class Api\UtilitiesController {
+	+ サーバーキャッシュを削除する：clear_cache()	
+	+ ツリー構造チェック：verity_contents_tree()
+	+ ツリー構造リセット：reset_content_tree()
+	+ バックアップダウンロード：download_backup_db()
+	+ バックアップよりレストア：restore_db()
+	+ ログファイルのZIPファイルを作成：download_log()
+	+ ログファイルを削除：delete_log()
+}
+
+Api\UtilitiesController -down[#Black]-> UtilitiesService
+Api\UtilitiesController -up[#Black]-|> BcApiController
+
+note "以下、管理画面ユーティリティと同じ" as note
+UtilitiesService .. note
+
+@enduml

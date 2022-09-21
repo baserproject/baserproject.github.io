@@ -14,8 +14,6 @@ class Admin\UtilitiesController {
 	+ 環境情報を表示する：info()
 	+ データメンテナンス：maintenance()
 	+ ログメンテナンス：log_maintenance()
-	+ スキーマファイル生成：write_schema()
-	+ スキーマファイル読込：load_schema()
 }
 
 class UtilitiesService {
@@ -28,8 +26,6 @@ class UtilitiesServiceInterface {
 	+ バックアップよりレストア：restoreDb()
 	+ ログファイルのZIPファイルを作成：createLogZip()
 	+ ログファイルを削除：deleteLog()
-	+ スキーマファイル生成：writeSheme()
-	+ スキーマファイル読込：loadSchema()
 }
 
 class UtilitiesAdminService {
@@ -37,6 +33,7 @@ class UtilitiesAdminService {
 
 class UtilitiesAdminServiceInterface {
 	+ info 画面用の view 変数を生成：getViewVarsForInfo()
+	+ ログメンテナンス画面用の view 変数を生成：getViewVarsForLogMaintenance()
 }
 
 Admin\UtilitiesController -down[#Black]-> UtilitiesService
