@@ -99,5 +99,20 @@ CakePHP4.3 より、フィクスチャマネージャーが非推奨になりま
 
 参考：[フィクスチャの利用](../test/fixture)
 　
+### サービスクラスのテスト
+`BcContainerTrait` を利用して、インターフェイスを指定して初期化します。
 
+```php
+// 例
+class SampleTest
+{
+    use BcContainerTrait;
+    
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->SampleService = $this->getService(SampleServiceInterface::class);
+    }
+}
+```
 　
