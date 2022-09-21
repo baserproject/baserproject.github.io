@@ -10,7 +10,7 @@ class Api\UtilitiesController {
 	+ サーバーキャッシュを削除する：clear_cache()	
 	+ ツリー構造チェック：verity_contents_tree()
 	+ ツリー構造リセット：reset_content_tree()
-	+ バックアップダウンロード：download_backup_db()
+	+ バックアップダウンロード：download_backup()
 	+ バックアップよりレストア：restore_db()
 	+ ログファイルのZIPファイルを作成：download_log()
 	+ ログファイルを削除：delete_log()
