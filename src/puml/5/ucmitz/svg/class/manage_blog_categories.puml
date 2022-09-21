@@ -1,0 +1,45 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログカテゴリ管理
+
+class Admin\BlogCategoriesController {
+  + 一覧を表示：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + 一括処理：batch()
+}
+
+class BlogCategoriesService {
+  + BlogCategoriesTable
+}
+
+class BlogCategoriesServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class BlogCategoriesTable {
+}
+
+class BlogCategory {
+	+ カテゴリ名：name
+	+ カテゴリタイトル：title
+	+ 親カテゴリID：parent_id
+}
+
+Admin\BlogCategoriesController -down[#Black]-> BlogCategoriesService
+BlogCategoriesService -down[#Black]-> BlogCategoriesTable
+BlogCategoriesService -left[dotted,#Black]-|> BlogCategoriesServiceInterface
+BlogCategoriesTable -down[#Black]-> BlogCategory
+
+@enduml

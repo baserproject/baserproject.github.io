@@ -1,0 +1,22 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：ブログカテゴリ
+
+actor ユーザー
+actor 閲覧ユーザー
+
+package ブログカテゴリ {
+	left to right direction
+	閲覧ユーザー -up-> (フロントのカテゴリ別の記事一覧を表示する)
+	ユーザー -down-> (ブログカテゴリ管理)
+	(ブログカテゴリ管理) -down-> (カテゴリ一覧を表示する)
+	(ブログカテゴリ管理) -down-> (カテゴリを作成する)
+	(ブログカテゴリ管理) -down-> (カテゴリを編集する)
+	(ブログカテゴリ管理) -down-> (カテゴリを削除する)
+	(ブログカテゴリ管理) -down-> (カテゴリを一括削除する)
+}
+
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ブログカテゴリ管理
+
+package ブログカテゴリ管理 {
+	
+	class ブログカテゴリ {
+		カテゴリ名
+		カテゴリタイトル
+		親カテゴリID
+	}
+	note bottom
+	・カテゴリ名は半角英数字とハイフン、アンダースコアのみを許容する
+	・カテゴリ名の重複は許容しない
+	・親カテゴリは必須ではない
+	endnote
+
+}
+
+class 親カテゴリ
+ 
+ブログカテゴリ "0..*" - "1" 親カテゴリ
+
+@enduml
