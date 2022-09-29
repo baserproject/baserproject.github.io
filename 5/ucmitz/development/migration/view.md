@@ -81,7 +81,7 @@ $this->BcBaser->link('hoge', ['controller' => 'Users', 'action' => 'index', '?' 
 
 　
 ## テーマの定義について
-現在、テーマの定義は、次のメソッドにてハードコーディングで行っています。
+現在、テーマの定義は、次のメソッドにて行っています。
 ```php
 BaserCore\Controller\Admin\BcAdminAppController::beforeRender()
 ```
