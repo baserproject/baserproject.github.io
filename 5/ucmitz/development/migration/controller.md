@@ -25,6 +25,55 @@ public function beforeFilter()
     ];
 }
 ```
+
+　
+## POST送信判定の変更
+```php
+// baserCMS4
+if ($this->request->data) {}
+// ucmitz
+if ($this->request->is('post')) {}
+```
+
+　
+## フォームの初期値設定
+baserCMS4 では、`$this->request->data` にセットしていましたが、エンティティによるセットに変更となりました。
+サービスクラスに `getNew()` メソッドを作成しそこで初期値を生成し、Adminサービスクラスにより一括設定を行います。
+
+```php
+// サービス
+class SitesService
+{
+    public function getNew(): EntityInterface
+    {
+        return $this->Sites->newEntity([
+            'status' => false,
+        ], [
+            'validate' => false,
+        ]);
+    }
+}
+
+// Adminサービス
+class SitesAdminService
+{
+    public function getViewVarsForAdd()
+    {
+        return [
+            'site' => $this->getNew()
+        ];       
+    }
+}
+
+// コントローラー
+class SitesController extends BcAdminAppController
+{
+    public function add(SiteAdminServiceInterface $service)
+    {
+        $this->set($service->getViewVarsForAdd());
+    }
+}
+``` 
 　
 ## 検索フォームの設定
 ```php

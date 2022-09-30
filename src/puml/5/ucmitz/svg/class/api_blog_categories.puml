@@ -13,6 +13,7 @@ class Api\BlogCategoriesController {
   + サイト新規追加：add()
   + サイト編集：edit()
   + サイト削除：delete()
+  + 一括処理：batch()
 }
 
 Api\BlogCategoriesController -down[#Black]-> BlogCategoriesService

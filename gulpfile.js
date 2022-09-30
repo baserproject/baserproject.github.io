@@ -7,7 +7,7 @@ const exec = require('child_process').exec;
  * ソースファイル
  * @type {string}
  */
-const src = 'src/puml/**/*.puml';
+const src = 'src/puml/**/**/*.puml';
 
 /**
  * コンパイル先
@@ -62,11 +62,11 @@ function buildPuml(file) {
 		);
 	} else {
 		// ファイル単体で引き渡す
-		return gulp.src([file], { base: './src/puml' })
+		gulp.src([file], { base: './src/puml' })
 			.pipe(puml({format: 'svg'}))
 			.pipe(gulp.dest(target));
+		browserSync.reload();	
 	}
-	gulp.series(bsRload);
 }
 
 /**
@@ -76,6 +76,9 @@ function watchFiles() {
 	gulp.watch(src).on('change', function(file){
 		console.log(file);
 		buildPuml(file);
+	});
+	gulp.watch(['5/**/**/*.md']).on('change', function (file){
+		console.log(file);
 	});
 }
 

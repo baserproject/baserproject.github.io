@@ -111,6 +111,15 @@ Serviceクラスでは、まず、基本的なメソッドとテストを作成�
 ### ServiceProvider で利用サービスの定義
 `\BaserCore\ServiceProvider\BcServiceProvider` にて利用するサービスの定義を追加します。
 
+プラグインの場合は、`{PluginName}\ServiceProvider\{PluginName}ServiceProvider` に定義し、
+`{PluginName}\Plugin` にてサービスプロバイダの追加を行います。
+
+```php
+public function services(ContainerInterface $container): void
+{
+    $container->addServiceProvider(new BcSearchIndexServiceProvider());
+}
+```
 　
 ## API を作成する
 REST API として基本的なメソッドとテストを作成します。  
@@ -149,6 +158,23 @@ $this->BcAdmin->setSearch();
 
 参考: [ビューにおける注意点](./view)  
 参考: [ヘルパーにおける注意点](./helper)
+
+### Viewクラスにヘルパを定義
+管理画面の共通のヘルパは `BcAdminAppView` に定義することになりました。  
+新しいプラグインの場合は、`{PluginName}AdminAppView` として新たに View クラスを作成します。
+  
+新しい View クラスを読み込むには、`{PluginName}AdminAppController` を作成し、`beforeRender` にて、`setClassName()` で指定します。
+
+```php
+// 例
+public function beforeRender(EventInterface $event): void
+{
+    parent::beforeRender($event);
+    if (isset($this->RequestHandler) && $this->RequestHandler->prefers('json')) return;
+    if ($this->getName() === 'Preview') return;
+    $this->viewBuilder()->setClassName('BcBlog.BlogAdminApp');
+}
+```
 
 ### 一覧のAjaxコードを削除
 一覧でのAjax呼び出しは廃止になりました。次のような Javascript は削除します。
