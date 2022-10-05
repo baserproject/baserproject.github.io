@@ -8,7 +8,7 @@
 
 ## ユースケース
 
-![初期設定：BcUploadBehavior](../../svg/use_case/upload.svg)
+![初期設定：BcUploadBehavior](../../svg/use_case/baser-core/upload.svg)
 　
 ## 実装方法
 対象となるテーブルオブジェクトに `BcUploadBehavior` を追加し、設定を記述した上で、ビューにファイルアップロード用のコントロールを配置する。  
