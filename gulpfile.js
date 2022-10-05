@@ -22,9 +22,9 @@ const target = './';
  * @type {string[]}
  */
 const pumlAnalogTargets = [
-	"src/puml/5/ucmitz/svg/class/manage_contents.puml",
-	"src/puml/5/ucmitz/svg/class/manage_sites.puml",
-	"src/puml/5/ucmitz/svg/class/manage_content_folders.puml",
+	"src/puml/5/ucmitz/svg/class/baser-core/manage_contents.puml",
+	"src/puml/5/ucmitz/svg/class/baser-core/manage_sites.puml",
+	"src/puml/5/ucmitz/svg/class/baser-core/manage_content_folders.puml",
 ];
 
 /**
@@ -52,8 +52,8 @@ function buildPuml(file) {
 		path = file.replace('src/puml/', '');
 		fileName = path.split('\/').pop();
 		reg = new RegExp('\/' + fileName.replace('.', '\.'), 'g');
-		targetDir = '../../../../../../' + path.replace(reg, '');
-		exec(`java -jar plantuml.jar -verbose -o "${targetDir}"  ${$file}  -tsvg`,
+		targetDir = '../../../../../../../' + path.replace(reg, '');
+		exec(`java -jar plantuml.jar -verbose -o "${targetDir}"  ${file}  -tsvg`,
 			function (error) {
 				if (error !== null) {
 					console.log('exec error: ' + error);
