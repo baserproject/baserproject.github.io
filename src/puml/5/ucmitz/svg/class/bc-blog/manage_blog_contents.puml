@@ -1,0 +1,51 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログコンテンツ管理
+
+class Admin\BlogContentsController {
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class BlogContentsService {
+  + BlogContentsTable
+}
+
+class BlogContentsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete() ※物理削除
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class BlogContentsTable {
+}
+
+class BlogContent {
+  + 説明文：description
+  + フロントの記事一覧の表示件数：list_count
+  + フロントの記事一覧の表示順：list_direction	
+  + RSSフィードの出力記事件数：feed_count
+  + コメント受付機能の利用状態：comment_use
+  + コメント承認機能の利用状態：comment_approve
+  + コメントイメージ認証の利用状態：auth_captcha
+  + タグ機能の利用状態：tag_use
+  + フロントに表示するウィジェットエリア：widget_area
+  + フロントで利用するコンテンツテンプレート ：template
+  + アイキャッチのリサイズサイズ：eye_catch_size
+  + 記事概要の利用状態：use_content
+}
+
+Admin\BlogContentsController -down[#Black]-> BlogContentsService
+BlogContentsService -down[#Black]-> BlogContentsTable
+BlogContentsService -left[dotted,#Black]-|> BlogContentsServiceInterface
+BlogContentsTable -down[#Black]-> BlogContent
+
+@enduml

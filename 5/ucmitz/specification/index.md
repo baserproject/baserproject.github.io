@@ -35,6 +35,7 @@
 - テーマファイル管理
 
 #### ブログ
+- [ブログコンテンツ管理](./bc-blog/blog_contents/index)
 - [ブログカテゴリ管理](./blog_categories/index)
 - ブログ記事管理
 - ブログタグ管理

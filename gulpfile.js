@@ -65,7 +65,10 @@ function buildPuml(file) {
 		gulp.src([file], { base: './src/puml' })
 			.pipe(puml({format: 'svg'}))
 			.pipe(gulp.dest(target));
-		browserSync.reload();	
+		// ジェネレーターに時間がかかるため12秒待ってからリロード
+		setTimeout(function(){
+			browserSync.reload();
+		}, 12000)
 	}
 }
 
@@ -79,6 +82,10 @@ function watchFiles() {
 	});
 	gulp.watch(['5/**/**/*.md']).on('change', function (file){
 		console.log(file);
+		// ジェネレーターに時間がかかるため12秒待ってからリロード
+		setTimeout(function(){
+			browserSync.reload();
+		}, 12000)
 	});
 }
 
