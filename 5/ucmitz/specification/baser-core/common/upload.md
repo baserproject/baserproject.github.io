@@ -8,7 +8,7 @@
 
 ## ユースケース
 
-![初期設定：BcUploadBehavior](../../svg/use_case/baser-core/upload.svg)
+![初期設定：BcUploadBehavior](../../../svg/use_case/baser-core/upload.svg)
 　
 ## 実装方法
 対象となるテーブルオブジェクトに `BcUploadBehavior` を追加し、設定を記述した上で、ビューにファイルアップロード用のコントロールを配置する。  
@@ -202,29 +202,29 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 
 ### 初期化処理
 
-![初期化処理](../../svg/activity/bc_upload/init.svg)
+![初期化処理](../../../svg/activity/bc_upload/init.svg)
 
 ---
 
 ### 保存処理
 
-![保存処理](../../svg/activity/bc_upload/save.svg)
+![保存処理](../../../svg/activity/bc_upload/save.svg)
 
 ---
 
 ### 削除処理
 
-![削除処理](../../svg/activity/bc_upload/delete.svg)
+![削除処理](../../../svg/activity/bc_upload/delete.svg)
 
 ---
 
 ### 一時保存処理
 
-![一時保存処理](../../svg/activity/bc_upload/save_tmp_files.svg) 
+![一時保存処理](../../../svg/activity/bc_upload/save_tmp_files.svg) 
 
 ---
 
 ### 一時保存ファイル復元処理
 
-![一時保存処理](../../svg/activity/bc_upload/setup_tmp_data.svg) 
+![一時保存処理](../../../svg/activity/bc_upload/setup_tmp_data.svg) 
 

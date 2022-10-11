@@ -3,16 +3,16 @@
 ## 基本設計
 
 - [データベース設計](./db)
-- [共通クラス図](./common/index)
+- [共通クラス図](baser-core/common/index.md)
 
 　
 ## 管理機能
 
 ### コア
-- [メニュー](./common/menu.md)
-- [ツールバー](./common/toolbar.md)
-- [ヘルプ](./common/help.md)
-- [システムメッセージ](./common/system_message.md)
+- [メニュー](baser-core/common/menu.md)
+- [ツールバー](baser-core/common/toolbar.md)
+- [ヘルプ](baser-core/common/help.md)
+- [システムメッセージ](baser-core/common/system_message.md)
 - [ダッシュボード](baser-core/dashboard/index.md)
 - [サイト基本設定](baser-core/site_configs/index)
 - [ユーザー管理](baser-core/users/index)
@@ -42,7 +42,8 @@
 - ブログコメント管理
 　
 ## 共通API
-- [ファイルアップロード](./common/upload)
+- [ファイルアップロード](baser-core/common/upload.md)
+- [プレビュー機能](./baser-core/common/preview)
 
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)

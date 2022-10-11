@@ -1,0 +1,19 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：プレビュー機能
+
+actor ユーザー
+
+package プレビュー機能 {
+	left to right direction
+	ユーザー --> (非公開の記事を表示する)
+	ユーザー --> (現在の未保存の編集内容で記事を表示する)
+	ユーザー --> (現在の未保存の下書きの編集内容で記事を表示する)
+	ユーザー --> (非公開のエイリアスを表示する)
+}
+
+
+@enduml
