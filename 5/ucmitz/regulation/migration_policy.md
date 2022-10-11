@@ -12,6 +12,25 @@ baserCMSでは利用箇所が多いため、一旦、そのまま利用してく
 ### コメントヘッダー
 - クラスのコメントヘッダーの `@package` は削除します。namespace を記述するようになったためです。
 
+### 管理画面のカレントサイト
+管理画面ではツールバーで現在のサイトを切り替える事ができるようになりました。  
+そのサイトのデータは次のコードで取得します。
+
+```php
+// 例）コントローラーの場合
+$site = $this->getRequest()->getAttributes('currentSite');
+```
+`BcAdminMiddleware` で設定しています。
+
+### フロントのカレントコンテンツとカレントサイト
+baserCMS4までは、`$this->request->params['Content']` で取得していましたが、次のコードに変更となりました。
+
+```php
+$content = $this->getRequest()->getAttributes('currentContent');
+$site = $this->getRequest()->getAttributes('currentSite');
+```
+`BcContentsRoute` で確定し、`BcFrontMiddleware` で設定しています。
+
 　
 ## コントローラー
 ### サービスへの移行
@@ -45,6 +64,8 @@ CakePHP2系のモデルはテーブルへと移行となりますが、ファッ
 外部のテーブルとの連携した処理を行うメソッドは、サービスへの移行を検討します。
 ### 引数
 引数はリクエストを直接受け取るような事をせず、シグネチャをはっきりさせ仕様を明確化します。
+### getControlSource() メソッド
+サービスに移行します。
 
 　
 ## サービス
@@ -89,6 +110,34 @@ public function add(UsersAdminServiceInterface $adminService)
 UsersAdminHelper
 UsersFrontHelper
 ```
+
+　
+### ローディング表示について
+何かしらの処理を実行し時間がかかる場合には必ずローディングを表示します。  
+`$.bcUtil.showLoader()` を利用することでローディングが表示できますが、対象物に `bca-loading` クラスを付与する事で簡単にローディングを表示できます。
+
+```php
+<?php echo $this->BcAdminForm->button(__d('baser', '保存'), [
+  'div' => false,
+  'class' => 'bca-btn bca-actions__item bca-loading',
+  'data-bca-btn-type' => 'save',
+  'data-bca-btn-size' => 'lg',
+  'data-bca-btn-width' => 'lg'
+]) ?>
+```
+保存ボタンをクリックして画面遷移中にローディングを表示するだけでよいなど、ローディングの非表示処理が必要でない場合は、`bca-loading` を利用してください。
+
+　
+## Javascript
+### 外部ファイル化
+全ての Javascript は、画面ごとに外部ファイル化し、webpack で圧縮します。  
+[Javascriptの作成](../development/frontend/javascript) についてを参照してください。
+
+　
+## CSS
+### 外部ファイル化
+全ての CSS は、画面ごとに外部ファイル化し、sass で作成してコンパイルします。  
+[CSSの作成](../development/frontend/css)についてを参照してください。
 
 　
 ## ユニットテスト

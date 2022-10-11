@@ -44,6 +44,7 @@
 ## 共通API
 - [ファイルアップロード](baser-core/common/upload.md)
 - [プレビュー機能](./baser-core/common/preview)
+- [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
 
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
