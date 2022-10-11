@@ -145,3 +145,17 @@ public function setUp(): void
 phpMyAdmin などのツールからデータの保存を確認するという事ができませんので注意が必要です。 
 
 確認したい場合は、`setFixtureTruncate()` メソッドで、truncate に切り替えてからテストを実行してください。
+
+　
+## SAVEPOINT LEVEL1 does not exist が発生した時の対応方法
+DBトランザクションを利用しているメソッドのテストを行う場合に「SAVEPOINT LEVEL1 does not exist」というエラーが発生する事があります。  
+
+フィクスチャーにて、`TransactionStrategy` を利用している事に起因する場合があり、その際、`TruncateStrategy` に変更する事によってエラーを回避できます。
+
+```php
+public function setUp(): void
+{
+    $this->setFixtureTruncate(); // TruncateStrategy に変更、setUp() の前で定義する
+    parent::setUp();
+}
+```
