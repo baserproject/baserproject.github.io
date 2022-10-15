@@ -40,11 +40,15 @@
 - ブログ記事管理
 - ブログタグ管理
 - ブログコメント管理
+
 　
 ## 共通API
+- [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
 - [ファイルアップロード](baser-core/common/upload.md)
 - [プレビュー機能](./baser-core/common/preview)
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
+- [アクセス制限](./baser-core/common/permission.md)
 
+　
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
