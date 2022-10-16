@@ -171,6 +171,15 @@ class UsersTableTest extends TestCase
 ```
 
 　
+## 新しいプラグインのサービスプロバイダーを定義する
 
+テストで、DIコンテナを利用して、新しいプラグインのサービスを呼び出す場合、サービスプロバイダの定義が必要です。
+
+BcTestCase::setUp() にて次のように定義します。
+
+```php
+// 例
+$container->addServiceProvider(new BcSearchIndexServiceProvider());
+```
 
 
