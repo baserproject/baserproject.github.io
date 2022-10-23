@@ -1,0 +1,30 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+title プレビュー機能
+
+start
+
+:編集画面表示;
+if (表示方法) then (プレビュー)
+    :プレビューボタンからポスト送信;
+    :PreviewController::view();
+    -[#green,dashed]-> ポストデータ変換依頼;
+    :PagesFrontService::setupPreviewForView();
+    -[#pink,dashed]-> メソッド内で表示用データを
+    ビューに渡す;
+    :viewテンプレートを呼び出し;
+else (公開URLを開く)
+    :サイト確認をクリック;
+    :PagesController;
+    -[#green,dashed]-> データ取得依頼;
+    :PagesFrontService::getViewVarsForView;
+    -[#pink,dashed]-> DBから表示用データ取得し
+    ビューに渡す;
+    :viewテンプレートを呼び出し;
+endif
+:画面表示;
+stop
+
+@enduml

@@ -56,10 +56,8 @@ https://localhost/baser/admin/baser-core/preview/view?
 サービスクラスとメソッドは次の命名規則に則ったものが存在すれば実行し、なければ何もしない。
 
 ```shell
-# クラス名
-{ControllerName}FrontService
-# アクション名
-setupPreviewFor{ActionName}
+# サービスクラスとアクション名
+{ControllerName}FrontService::setupPreviewFor{ActionName}()
 
 # 例）PagesController の view アクション場合
 PagesFrontService::setupPreviewForView()
@@ -68,8 +66,9 @@ PagesFrontService::setupPreviewForView()
 templates/Pages/view.php
 ```
 
-### setupPreviewForXXX での処理
-このメソッドでは引数としてコントローラーを受け取るので、テンプレートの値のセットや、テンプレートの変更などを行うことができる。
+### アクション内（setupPreviewForXXX）での処理
+このメソッドでは引数としてコントローラーを受け取るので、テンプレートの値のセットや、テンプレートの変更などを行うことができる。  
+また、$controller->getRequest() では、プレビュー対象のURLに基づいたリクエスト情報を受け取る事ができる。
 
 ```php
 // 例）
@@ -112,6 +111,8 @@ $("#ContentPreviewMode").val('draft');
 管理画面でログイン状態である、かつ、クエリストリング `preview` に何かしらの文字列が設定されていると、非公開状態のコンテンツでもルーティングが成功する仕様となっています。
 
 　
+## アクティビティ図
 
+![アクティビティ図：プレビュー機能](../../../svg/activity/baser-core/common/preview.svg)
 
 　
