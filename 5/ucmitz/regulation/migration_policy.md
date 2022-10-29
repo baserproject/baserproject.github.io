@@ -72,6 +72,31 @@ CakePHP2系のモデルはテーブルへと移行となりますが、ファッ
 ### テスタブルなコードにする
 クラスには、テーブル以外のデータ（プロパティ）を持たせず、各メソッドについて簡潔な処理となるようにします。
 
+### サービスの初期化
+直接 new する事はせず、Container を経由して取得します。また、サービスの指定は、Interface を指定します。テストの場合も同様です。
+
+#### コントローラーでの指定
+アクションメソッドの引数に定義します。複数定義する事ができます。
+```php
+public function index(
+    UsersServiceInterface $service, 
+    SiteConfigsServiceInterface $siteConfigsService,
+    int $id) {
+}
+
+```
+#### それ以外での指定
+BcContainerTrait を定義し、呼び出し箇所にて、`$this->getService()` を利用します。
+```php
+class Sample {
+    use BcContainerTrait;
+    public function sample()
+    {
+        $service = $this->getService(UsersServiceInterface::class);
+    }
+}
+```
+
 　
 ## ビュー
 ### ビューで利用するデータの取得
@@ -164,4 +189,10 @@ class SampleTest
     }
 }
 ```
-　
+
+### setUp メソッドの利用
+setUp メソッドは、クラス内の全てのテストで呼び出されるので、処理時間を短縮するため、できるだけ処理を少なくします。
+
+そのため、初期化などを行う対象は、クラス内のほとんどのメソッドから呼び出されるものだけとしてください。
+
+一つのメソッドからしか呼び出されないようなプロパティは、テストメソッドの中で記述してください。
