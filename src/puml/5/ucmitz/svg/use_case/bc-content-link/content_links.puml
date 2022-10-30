@@ -1,0 +1,19 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：コンテンツリンク
+
+actor 閲覧ユーザー
+actor ユーザー
+
+package コンテンツリンク {
+	left to right direction
+	ユーザー -up-> (コンテンツリンクを作成する)
+	ユーザー -up-> (コンテンツリンクを編集する)
+	ユーザー -up-> (コンテンツリンクを削除する)
+	閲覧ユーザー -down-> (フロントページでリンク先に移動する)
+}
+
+@enduml

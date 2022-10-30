@@ -1,0 +1,29 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：コンテンツリンク
+
+package コンテンツリンク {
+	
+	class コンテンツリンク {
+		リンク先URL
+	}
+	class コンテンツ {
+		URL
+		タイトル
+		自身の公開状態
+		自身の公開期間
+		公開状態
+		公開期間
+		親コンテンツID
+		作成者ID
+		実体ID
+	}
+
+}
+
+コンテンツリンク *- コンテンツ 
+
+@enduml

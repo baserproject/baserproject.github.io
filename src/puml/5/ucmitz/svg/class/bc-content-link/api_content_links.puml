@@ -1,0 +1,23 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title コンテンツリンクAPI
+
+class Api\ContentLinksController {
+    + 単一データ取得：view()  
+    + 追加：add() 
+    + 編集：edit() 
+    + 物理削除：delete()  
+}
+
+Api\ContentLinksController -up[#Black]-|> BcApiController
+Api\ContentLinksController --> ContentLinksService
+note "以下コンテンツリンク管理と同じ" as pageNote
+ContentLinksService .. pageNote
+
+@enduml
+
+

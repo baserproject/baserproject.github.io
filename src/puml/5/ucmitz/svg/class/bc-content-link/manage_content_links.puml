@@ -1,0 +1,56 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title コンテンツリンク管理
+
+class ContentLinksController {
+  + コンテンツリンクを表示する：view()
+}
+
+class BcFrontContentsComponent {
+  + フロントエンドのセットアップ：setupFront()
+}
+
+class Admin\ContentLinksController {
+  + コンテンツリンク編集：edit()
+}
+
+class BcAdminContentsComponent {
+	+ 管理画面のセットアップ：setupAdmin()
+	+ 編集フォームの設定：settingForm()
+}
+
+class ContentLinkService {
+  + ContentLinksTable
+}
+
+class ContentLinkServiceInterface {
+  + 作成：create()
+  + 編集：update()
+  + 単一データ取得：get()
+}
+
+class ContentLinksTable {
+	+ 削除：delete()
+}
+	note right
+	削除はゴミ箱を空にするタイミングで
+	ContentsServiceより呼び出される
+	endnote
+
+class ContentLink {
+   + リンク先URL：url
+}
+
+Admin\ContentLinksController -down[#Black]-> ContentLinkService
+ContentLinksController -up[#Black]-> BcFrontContentsComponent
+Admin\ContentLinksController -up[#Black]-> BcAdminContentsComponent 
+ContentLinksController -down[#Black]-> ContentLinkService
+ContentLinkService -down[#Black]-> ContentLinksTable
+ContentLinkService -left[dotted,#Black]-|> ContentLinkServiceInterface
+ContentLinksTable -down[#Black]-> ContentLink
+
+@enduml
