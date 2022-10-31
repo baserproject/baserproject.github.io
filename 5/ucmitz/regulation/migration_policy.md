@@ -103,7 +103,7 @@ public function get($id, $options = [])
 Ajaxのリクエスト対象の処理は、API用のコントローラーに移行し、戻り値をJSON化してください。
 どうしてもHTMLレンダリングが必要な場合のみ、Admin 用のコントローラーに配置します。
 
-[その他、コントローラーの注意点はこちら](development/migration/controller)
+[そのほか、コントローラーにおける注意点はこちら](development/migration/controller)
 
 　
 ## モデル
@@ -118,7 +118,7 @@ CakePHP2系のモデルはテーブルへと移行となりますが、ファッ
 ### getControlSource() メソッド
 サービスに移行します。
 
-[その他、モデルの注意点はこちら](development/migration/model)
+[そのほか、モデルにおける注意点はこちら](development/migration/model)
 
 　
 ## サービス
@@ -214,7 +214,7 @@ UsersFrontHelper
 ```
 保存ボタンをクリックして画面遷移中にローディングを表示するだけでよいなど、ローディングの非表示処理が必要でない場合は、`bca-loading` を利用してください。
 
-[その他、ビューの注意点はこちら](development/migration/view)
+[そのほか、ビューにおける注意点はこちら](development/migration/view)
 
 　
 ## ヘルパ
@@ -293,6 +293,12 @@ setUp メソッドは、クラス内の全てのテストで呼び出される�
 
 一つのメソッドからしか呼び出されないようなプロパティは、テストメソッドの中で記述してください。
 
+そのほか、テストに関する情報はこちら
+- [ユニットテスト](../test/unittest)
+- [フィクスチャの利用](../test/fixture)
+- [テストカバレッジ](../test/coverage)
+- [GitHubActions](../test/github_actions)
+
 　
 ### コメントヘッダー
 クラスメソッドについては、phpDocumentor でドキュメントを自動生成する前提とします。
@@ -332,11 +338,7 @@ setUp メソッドは、クラス内の全てのテストで呼び出される�
  */
 ```
 
-そのほか、テストに関する情報はこちら
-- [ユニットテスト](../test/unittest)
-- [フィクスチャの利用](../test/fixture)
-- [テストカバレッジ](../test/coverage)
-- [GitHubActions](../test/github_actions)
+
 
 　
 　
