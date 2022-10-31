@@ -1,5 +1,8 @@
 # マイグレーション方針
 
+baserCMS４で利用しているCakePHP2 を CakePHP4 に移行するための方針です。  
+メンテナンス性の高いコードを実現するためにもご協力お願いします。
+
 ## 共通
 
 ### File / Folder の取り扱い
@@ -22,7 +25,7 @@ $site = $this->getRequest()->getAttributes('currentSite');
 ```
 `BcAdminMiddleware` で設定しています。
 
-### フロントのカレントコンテンツとカレントサイト
+### フロントページのカレントコンテンツとカレントサイト
 baserCMS4までは、`$this->request->params['Content']` で取得していましたが、次のコードに変更となりました。
 
 ```php
@@ -67,9 +70,39 @@ public function log_maintenance(
 公開状態などによる表示制限は、Service クラスでなく、Controller で制御するようにします。  
 Service クラスではパラメーターを定義し全て受け入れるように実装します。
 
+```php
+// コントローラーのメソッド例
+public function view(ContentLinksServiceInterface $service)
+{
+    $contentLink = $service->get(
+        $this->request->getParam('entityId'),
+        ['status' => 'publish']
+    );
+    $this->set(compact('contentLink'));
+}
+
+// サービスのメソッド例
+public function get($id, $options = [])
+{
+    $options = array_merge([
+        'status' => ''
+    ], $options);
+    $conditions = [];
+    if($options['status'] === 'publish') {
+        $conditions = $this->ContentLinks->Contents->getConditionAllowPublish();
+    }
+    return $this->ContentLinks->get($id, [
+        'contain' => ['Contents' => ['Sites']],
+        'conditions' => $conditions
+    ]);
+}
+```
+
 ### AjaxのAPIコントローラーへ移行
 Ajaxのリクエスト対象の処理は、API用のコントローラーに移行し、戻り値をJSON化してください。
 どうしてもHTMLレンダリングが必要な場合のみ、Admin 用のコントローラーに配置します。
+
+[その他、コントローラーの注意点はこちら](development/migration/controller)
 
 　
 ## モデル
@@ -77,10 +110,14 @@ Ajaxのリクエスト対象の処理は、API用のコントローラーに移�
 CakePHP2系のモデルはテーブルへと移行となりますが、ファットモデルを防ぐため、
 移行するメソッドのうち、できるだけ対象となるエンティティの処理だけをテーブルにまとめあげ、
 外部のテーブルとの連携した処理を行うメソッドは、サービスへの移行を検討します。
+
 ### 引数
 引数はリクエストを直接受け取るような事をせず、シグネチャをはっきりさせ仕様を明確化します。
+
 ### getControlSource() メソッド
 サービスに移行します。
+
+[その他、モデルの注意点はこちら](development/migration/model)
 
 　
 ## サービス
@@ -160,7 +197,7 @@ UsersAdminHelper
 UsersFrontHelper
 ```
 
-　
+
 ### ローディング表示について
 何かしらの処理を実行し時間がかかる場合には必ずローディングを表示します。  
 `$.bcUtil.showLoader()` を利用することでローディングが表示できますが、対象物に `bca-loading` クラスを付与する事で簡単にローディングを表示できます。
@@ -176,7 +213,37 @@ UsersFrontHelper
 ```
 保存ボタンをクリックして画面遷移中にローディングを表示するだけでよいなど、ローディングの非表示処理が必要でない場合は、`bca-loading` を利用してください。
 
+[その他、ビューの注意点はこちら](development/migration/view)
+
 　
+## ヘルパ
+[ヘルパーにおける注意点](../development/migration/helper) を参照してください。
+
+　
+## ルーティング
+[ルーティングにおける注意点](../development/migration/routing) を参照してください。
+
+　
+## リクエスト関連
+[リクエスト関連における注意点](../development/migration/request) を参照してください。
+
+　
+## セッション関連
+[セッション関連における注意点](../development/migration/session) を参照してください。
+
+　
+## データベース
+[データベースにおける注意点](../development/migration/database) を参照してください。
+
+　
+## プラグイン
+[プラグインにおける注意点](../development/migration/database) を参照してください。
+
+　
+## セキュリティコンポーネント
+[セキュリティコンポーネントにおける注意点](../development/migration/security) を参照してください。
+
+　　
 ## Javascript
 ### 外部ファイル化
 全ての Javascript は、画面ごとに外部ファイル化し、webpack で圧縮します。  
@@ -264,4 +331,11 @@ setUp メソッドは、クラス内の全てのテストで呼び出される�
  */
 ```
 
+そのほか、テストに関する情報はこちら
+- [ユニットテスト](../test/unittest)
+- [フィクスチャの利用](../test/fixture)
+- [テストカバレッジ](../test/coverage)
+- [GitHubActions](../test/github_actions)
+
+　
 　
