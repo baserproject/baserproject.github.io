@@ -80,6 +80,10 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 - [GitHubActions](./test/github_actions)
 
 　
+### Issueの管理
+- [GitHub Projects の利用方法](./etc/github_projects)
+
+　
 ### 全体的な変更点と既知の問題点
 
 開発における全体的な変更点や既知の問題点については次を確認してください。
