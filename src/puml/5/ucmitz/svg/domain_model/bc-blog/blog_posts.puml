@@ -1,0 +1,42 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ブログ記事
+
+package ブログ記事 {
+	
+	class ブログ記事 {
+		ブログコンテンツID
+		NO
+		スラッグ
+		タイトル
+		概要
+		詳細
+		ブログカテゴリID
+		作成者ID
+		公開状態
+		投稿日
+		概要草稿
+		詳細草稿
+		公開開始日
+		公開終了日
+		サイト内検索より除外
+		アイキャッチ
+	}
+
+}
+
+class ブログコンテンツ
+class ブログカテゴリ
+class ブログタグ
+class ブログコメント
+ 
+ブログ記事 "0..*" -up- "1" ブログコンテンツ
+ブログ記事 "0..*" -down- "1" ブログカテゴリ
+ブログ記事 "0..*" -down- "0..*" ブログタグ
+ブログ記事 "1" -down- "0..*" ブログコメント
+
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログ記事管理
+
+class Api\BlogPostsController {
+  + 一覧を表示：index()
+  + 単一データ表示：view()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+	+ 複製：copy()
+	+ 公開状態に設定：publish()
+	+ 非公開状態に設定：unpublish()
+	+ ブログ記事ー一括処理：batch()
+}
+
+class BlogPostsService {
+  + BlogPostsTable
+}
+
+Api\BlogPostsController -down[#Black]-> BlogPostsService
+
+note "以下ブログカテゴリ管理と同じ" as note
+BlogPostsService .. note
+
+@enduml
