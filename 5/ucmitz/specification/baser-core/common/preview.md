@@ -44,6 +44,13 @@ https://localhost/baser/admin/baser-core/preview/view?
 ```
 
 　
+## 草稿プレビュー
+### プレビューモードの取得
+CKEditorを利用する場合、本稿モード、草稿モードの切り替えに応じて `<hidden id="ContentPreviewMode" />` にプレビューモードが設定される。（default or draft）
+ 
+上記 hidden タグの id は、 `$this->BcAdminForm->ckeditor()` のオプション、`editorPreviewModeId` で変更が可能となっており、複数フィールド配置する場合に、id を変更して対応する。
+
+　
 ## PreviewController について
 プレビュー時に実行する `PreviewController` は、次の処理を行う。
 

@@ -45,10 +45,11 @@
 　
 ## 共通API
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
-- [ファイルアップロード](baser-core/common/upload.md)
+- [ファイルアップロード](baser-core/common/upload)
 - [プレビュー機能](./baser-core/common/preview)
+- [CKEditor連携](./baser-core/common/ckeditor)
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
-- [アクセス制限](./baser-core/common/permission.md)
+- [アクセス制限](./baser-core/common/permission)
 
 　
 ## プラグインAPI
