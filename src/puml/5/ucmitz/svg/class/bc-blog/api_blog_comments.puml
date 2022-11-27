@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログコメントAPI
+
+class Api\BlogCommentsController {
+  + コメント一覧取得：index()
+  + 単一コメントー取得：view()
+  + コメント新規追加：add()
+  + コメント編集：edit()
+  + コメント削除：delete()
+  + コメント一括処理：batch()
+}
+
+Api\BlogCommentsController -down[#Black]-> BlogCommentsService
+Api\BlogCommentsController -up[#Black]-|> BcApiController
+
+note "以下コメント管理と同じ" as note
+BlogCommentsService .. note
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ブログコメント管理
+
+package ブログコメント管理 {
+	
+	class ブログコメント {
+		ブログコンテンツID
+		ブログ記事ID
+		コメントNO
+		公開状態
+		投稿者名
+		投稿者Eメール
+		投稿者URL
+		コメント内容
+	}
+
+}
+	 
+ブログ記事 "1" - "0..*" ブログコメント
+
+@enduml

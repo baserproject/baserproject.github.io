@@ -1,0 +1,24 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：ブログコメント
+
+actor ユーザー
+actor 閲覧ユーザー
+
+package ブログコメント {
+	left to right direction
+	閲覧ユーザー -up-> (フロントのブログ記事詳細でコメントを投稿する)
+	ユーザー -down-> (ブログコメント管理)
+	(ブログコメント管理) -down-> (コメント一覧を表示する)
+	(ブログコメント管理) -down-> (コメントを削除する)
+	(ブログコメント管理) -down-> (コメントを公開する)
+	(ブログコメント管理) -down-> (コメントを非公開にする)
+	(ブログコメント管理) -down-> (コメントを一括削除する)
+	(ブログコメント管理) -down-> (コメントを一括公開する)
+	(ブログコメント管理) -down-> (コメントを一括で非公開にする)
+}
+
+@enduml

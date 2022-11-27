@@ -40,7 +40,7 @@
 - [ブログカテゴリ管理](bc-blog/blog_categories/index)
 - [ブログ記事管理](bc-blog/blog_posts/index)
 - [ブログタグ管理](bc-blog/blog_tags/index)
-- ブログコメント管理
+- [ブログコメント管理](bc-blog/blog_comments/index)
 
 　
 ## 共通API

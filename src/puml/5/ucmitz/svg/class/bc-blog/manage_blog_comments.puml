@@ -1,0 +1,50 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログコメント管理
+
+class Admin\BlogCommentsController {
+  + 一覧を表示：index()
+  + 削除：delete()
+  + 公開状態に設定する：publish()
+  + 非公開状態に設定する：unpublish()
+}
+
+class BlogCommentsService {
+  + BlogCommentsTable
+}
+
+class BlogCommentsServiceInterface {
+  + 作成：create()
+  + 編集：edit()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 一括処理：batch()
+	+ 公開状態に設定：publish
+	+ 非公開状態に設定：unpublish
+}
+
+class BlogCommentsTable {
+}
+
+class BlogComment {
+	+ ブログコンテンツID：blog_content_id
+	+ ブログ記事ID：blog_post_id
+	+ コメントNO：no
+	+ 公開状態：status
+	+ 投稿者名：name
+	+ 投稿者Eメール：email
+	+ 投稿者URL：url
+	+ コメント内容：message
+}
+
+Admin\BlogCommentsController -down[#Black]-> BlogCommentsService
+BlogCommentsService -down[#Black]-> BlogCommentsTable
+BlogCommentsService -left[dotted,#Black]-|> BlogCommentsServiceInterface
+BlogCommentsTable -down[#Black]-> BlogComment
+
+@enduml
