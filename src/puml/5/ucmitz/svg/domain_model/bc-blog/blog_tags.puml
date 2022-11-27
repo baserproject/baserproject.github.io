@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ブログタグ管理
+
+package ブログタグ管理 {
+	
+	class ブログタグ {
+		タグ名
+	}
+
+}
+
+class ブログ記事付与ブログタグ {
+	ブログ記事ID
+	ブログタグID
+}
+	 
+ブログ記事 "1" - "0..*" ブログ記事付与ブログタグ
+ブログタグ "1" - "0..*" ブログ記事付与ブログタグ
+
+@enduml

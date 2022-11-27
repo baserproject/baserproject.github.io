@@ -1,0 +1,24 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログタグAPI
+
+class Api\BlogTagsController {
+  + ブログタグ一覧取得：index()
+  + 単一ブログタグー取得：view()
+  + ブログタグ新規追加：add()
+  + ブログタグ編集：edit()
+  + ブログタグ削除：delete()
+  + ブログタグ一括処理：batch()
+}
+
+Api\BlogTagsController -down[#Black]-> BlogTagsService
+Api\BlogTagsController -up[#Black]-|> BcApiController
+
+note "以下ブログタグ管理と同じ" as note
+BlogTagsService .. note
+
+@enduml

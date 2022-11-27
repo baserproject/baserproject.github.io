@@ -39,7 +39,7 @@
 - [ブログコンテンツ管理](./bc-blog/blog_contents/index)
 - [ブログカテゴリ管理](bc-blog/blog_categories/index)
 - [ブログ記事管理](bc-blog/blog_posts/index)
-- ブログタグ管理
+- [ブログタグ管理](bc-blog/blog_tags/index)
 - ブログコメント管理
 
 　

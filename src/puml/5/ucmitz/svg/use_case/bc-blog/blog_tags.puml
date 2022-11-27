@@ -1,0 +1,22 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：ブログタグ
+
+actor ユーザー
+actor 閲覧ユーザー
+
+package ブログタグ {
+	left to right direction
+	閲覧ユーザー -up-> (フロントのタグ別の記事一覧を表示する)
+	ユーザー -down-> (ブログタグ管理)
+	(ブログタグ管理) -down-> (タグ一覧を表示する)
+	(ブログタグ管理) -down-> (タグを作成する)
+	(ブログタグ管理) -down-> (タグを編集する)
+	(ブログタグ管理) -down-> (タグを削除する)
+	(ブログタグ管理) -down-> (タグを一括削除する)
+}
+
+@enduml

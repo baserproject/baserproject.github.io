@@ -1,0 +1,43 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ブログタグ管理
+
+class Admin\BlogTagsController {
+  + 一覧を表示：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class BlogTagsService {
+  + BlogTagsTable
+}
+
+class BlogTagsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 一括処理：batch()
+  + 複数のIDからタイトルリスト取得：getTitlesById()
+}
+
+class BlogTagsTable {
+}
+
+class BlogTag {
+	+ タグ名：name
+}
+
+Admin\BlogTagsController -down[#Black]-> BlogTagsService
+BlogTagsService -down[#Black]-> BlogTagsTable
+BlogTagsService -left[dotted,#Black]-|> BlogTagsServiceInterface
+BlogTagsTable -down[#Black]-> BlogTag
+
+@enduml
