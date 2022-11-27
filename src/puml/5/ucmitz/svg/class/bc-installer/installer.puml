@@ -1,0 +1,42 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title インストーラー
+
+class InstallationsController {
+  + 初期画面表示：index()
+  + ステップ２：step2()
+  + ステップ３：step3()
+  + ステップ４：step4()
+  + 完了画面表示：step5()
+}
+
+class InstallationsService {
+	+ BcDatabaseServiceInterface
+}
+
+class InstallationsServiceInterface {
+  + ステップ２の View 変数を取得：getViewVarsForStep2()
+  + ステップ３の初期値取得：getDefaultValuesStep3()
+  + ステップ３の View 変数を取得：getViewVarsForStep3()
+  + データベースの接続確認：testConnectDb()
+  + DB設定をセッションに書き込む：writeDbSettingToSession()
+  + DB設定を読み込む：readDbSetting()
+  + データベースを構築する：constructionDb()
+  + 全てのテーブルを削除する：deleteAllTables()
+  + データベースに接続する：connectDb()
+  + ステップ４の初期値取得：getDefaultValuesStep4()
+  + ユーザーとサイト名を初期化：initAdmin()
+  + データベースを初期化する：initDb()
+  + ファイル関連を初期化する：initFiles()
+  + ログインする：login()
+}
+
+InstallationsController -down[#Black]-> InstallationsService
+InstallationsService -left[dotted,#Black]-|> InstallationsServiceInterface
+
+
+@enduml
