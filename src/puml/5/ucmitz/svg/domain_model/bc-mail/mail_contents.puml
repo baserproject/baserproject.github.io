@@ -3,11 +3,11 @@ skinparam handwritten true
 skinparam backgroundColor white
 hide method
 
-title ドメインモデル図：ブログコンテンツ
+title ドメインモデル図：メールコンテンツ
 
-package ブログコンテンツ {
+package メールコンテンツ {
 	
-	class ブログコンテンツ {
+	class メールコンテンツ {
 		メールフォーム概要
 		送信先メールアドレス
 		BCC用送信先メールアドレス
@@ -33,8 +33,8 @@ package ブログコンテンツ {
 
 }
 
-ブログコンテンツ "1" - "1" コンテンツ 
-ブログコンテンツ "1" -down- "0..*" メールフィールド
-ブログコンテンツ "1" -down- "0..*" メールメッセージ
+メールコンテンツ "1" - "1" コンテンツ 
+メールコンテンツ "1" -down- "0..*" メールフィールド
+メールコンテンツ "1" -down- "0..*" メールメッセージ
 
 @enduml
