@@ -1,0 +1,54 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title メールコンテンツ管理
+
+class Admin\MailContentsController {
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class MailContentsService {
+  + MailContentsTable
+}
+
+class MailContentsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete() ※物理削除
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class MailContentsTable {
+}
+
+class MailContent {
+	+ メールフォーム概要：description
+	+ 送信先メールアドレス：sender_1
+	+ BCC用送信先メールアドレス：sender_2
+	+ 送信先名：sender_name
+	+ 自動返信メール件名[ユーザー宛]：subject_user
+	+ 自動送信メール件名[管理者宛]：subject_admin
+	+ メールフォームテンプレート名：form_template
+	+ 送信メールテンプレート名：mail_template
+	+ リダイレクトURL：redirect_url
+	+ イメージ認証：auth_captcha
+	+ ウィジェットエリア：widget_area
+	+ SSL通信：ssl_on
+	+ データベース保存：save_info
+	+ フォーム受付開始日：publish_begin
+	+ フォーム受付終了日：publish_end
+}
+
+Admin\MailContentsController -down[#Black]-> MailContentsService
+MailContentsService -down[#Black]-> MailContentsTable
+MailContentsService -left[dotted,#Black]-|> MailContentsServiceInterface
+MailContentsTable -down[#Black]-> MailContent
+
+@enduml
