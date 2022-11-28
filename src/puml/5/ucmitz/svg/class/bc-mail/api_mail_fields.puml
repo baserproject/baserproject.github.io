@@ -1,0 +1,26 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title メールコンテンツAPI
+
+class Api\MailFieldsController {
+  + 一覧取得：index()
+  + 単一データ取得：view()
+  + リスト取得：list()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+  + 一括処理：batch()
+}
+
+Api\MailFieldsController -down[#Black]-> MailFieldsService
+Api\MailFieldsController -up[#Black]-|> BcApiController
+
+note "以下メールフィールド管理と同じ" as note
+MailFieldsService .. note
+
+@enduml
