@@ -44,7 +44,7 @@
 
 #### メールフォーム
 - [メールコンテンツ管理](bc-mail/mail_contents/index)
-- メールフィールド管理
+- [メールフィールド管理](bc-mail/mail_fields/index)
 - メールメッセージ管理
 　
 ## 共通API
