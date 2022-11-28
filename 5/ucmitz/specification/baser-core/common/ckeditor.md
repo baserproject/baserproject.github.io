@@ -11,20 +11,19 @@ BcAdminFormHelper を利用することで CKEditor を利用することがで�
 ]); ?>
 ```
 
-
-以下、見直し中
-
+　
 ## 草稿モード
 
 `editorUseDraft` オプションを `true` にセットする事により、草稿モードを利用できる。
 
-### 保存時に事前に同期が必要
+### 事前同期
+保存時やプレビュー時、事前に javascript にて同期処理が必要となる。
 
 ```javascript
-if (typeof $.bcCkeditor.editor['editor_detail_tmp'] !== undefined) {
-    $.bcCkeditor.editor['editor_detail_tmp'].execCommand('synchronize');
+if (typeof $.bcCkeditor.editor['editor_{field_name}_tmp'] !== undefined) {
+    $.bcCkeditor.editor['editor_{field_name}_tmp'].execCommand('synchronize');
 }
 ```
 
-### データの取得
-現在、エディターに表示していたデータが、{field_name}_tmp に入ってくるので、そのデータを field_name に代入する
+この処理を実行する事で、エディタ内のHTMLが、フィールドに紐付いた hidden タグにセットされる。
+

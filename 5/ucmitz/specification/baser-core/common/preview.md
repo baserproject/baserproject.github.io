@@ -50,6 +50,17 @@ CKEditorを利用する場合、本稿モード、草稿モードの切り替え
  
 上記 hidden タグの id は、 `$this->BcAdminForm->ckeditor()` のオプション、`editorPreviewModeId` で変更が可能となっており、複数フィールド配置する場合に、id を変更して対応する。
 
+### データの取得
+`$request->getQuery('preview')` でモードを取得し、モードに応じて表示に利用するデータを切り替えます。
+
+```php
+// 例
+$postArray = $request->getData();
+if ($request->getQuery('preview') === 'draft') {
+    $postArray['detail'] = $postArray['detail_draft'];
+}
+```
+
 　
 ## PreviewController について
 プレビュー時に実行する `PreviewController` は、次の処理を行う。

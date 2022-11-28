@@ -47,6 +47,8 @@ $site = $this->getRequest()->getAttributes('currentSite');
 ### APIのコントローラー
 `BcApiController` を継承する事で、JWT認証が実装されます。
 
+### named  パラメーターの廃止
+named パラメーターは廃止となりました。query を使います。
 
 ### サービスへの移行
 ファットコントローラーを防ぐため、ビジネスロジックはサービスへの移行を行います。  
@@ -161,6 +163,10 @@ class Sample {
 
 それ以外のプラグインは、各プラグインでテンプレートを保持するようにします。
 
+### テンプレート名
+baserCMS４までは、コントローラーのアクション名とテンプレート名が違い事がありましたが（edit の際に form を指定するなど）、できるだけ合わせるようにします。
+共通箇所がある場合は、エレメント化して、それぞれで読み込むようにします。
+
 ### ビューで利用するデータの取得
 ビューのテンプレートは、できるだけシンプルにするため、データの生成処理などを書かず、コントローラーかもしくはヘルパより取得します。
 
@@ -213,6 +219,42 @@ UsersFrontHelper
 ]) ?>
 ```
 保存ボタンをクリックして画面遷移中にローディングを表示するだけでよいなど、ローディングの非表示処理が必要でない場合は、`bca-loading` を利用してください。
+
+### 検索ボックスの実装について
+検索処理は GET で実装します。また、 `$this->BcAdminForm->create()` のオプションにて `novalidate => true` を設定します。
+
+ボタンのタグを次に統一します。
+```php
+<div class="bca-search__btns-item">
+    <?php echo $this->BcAdminForm->button(__d('baser', '検索'), ['id' => 'BtnSearchSubmit', 'class' => 'bca-btn', 'data-bca-btn-type' => 'search']) ?>
+</div>
+<div class="bca-search__btns-item">
+    <?php echo $this->BcAdminForm->button(__d('baser', 'クリア'), ['id' => 'BtnSearchClear', 'class' => 'bca-btn', 'data-bca-btn-type' => 'clear']) ?>
+</div>
+```
+
+### フォームについて
+#### フィールド定義
+フォームタグのフィールド定義については、モデル名を除外します。
+```php
+<?php $this->BcAdminForm->control('ModelName.field_name', ['type' => 'text']) ?>
+　↓
+<?php $this->BcAdminForm->control('field_name', ['type' => 'text']) ?>
+```
+#### 送信メソッド
+データの変更を伴う処理はPOST送信とします。
+
+### データの変更を伴うリンク
+リンクにおいてもデータの変更を伴う場合は、POST送信とします。  
+その際、`$this->BcAdminForm->postLink()` を利用します。
+
+フォームの中に配置する場合、フォームのネストができないため、オプションに `'block' => true` を指定し、フォームの外側に次のコードを忘れないように記述します。
+
+```php
+<?= $this->fetch('postLink') ?>
+```
+
+
 
 [そのほか、ビューにおける注意点はこちら](development/migration/view)
 
