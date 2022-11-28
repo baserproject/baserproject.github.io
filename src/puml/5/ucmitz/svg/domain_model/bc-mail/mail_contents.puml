@@ -8,21 +8,21 @@ title ドメインモデル図：ブログコンテンツ
 package ブログコンテンツ {
 	
 	class ブログコンテンツ {
-メールフォーム概要：description
-送信先メールアドレス：sender_1
-BCC用送信先メールアドレス：sender_2
-送信先名：sender_name
-自動返信メール件名[ユーザー宛]：subject_user
-自動送信メール件名[管理者宛]：subject_admin
-メールフォームテンプレート名：form_template
-送信メールテンプレート名：mail_template
-リダイレクトURL：redirect_url
-イメージ認証：auth_captcha
-ウィジェットエリア：widget_area
-SSL通信：ssl_on
-データベース保存：save_info
-フォーム受付開始日：publish_begin
-フォーム受付終了日：publish_end
+		メールフォーム概要
+		送信先メールアドレス
+		BCC用送信先メールアドレス
+		送信先名
+		自動返信メール件名[ユーザー宛]
+		自動送信メール件名[管理者宛]
+		メールフォームテンプレート名
+		送信メールテンプレート名
+		リダイレクトURL
+		イメージ認証
+		ウィジェットエリア
+		SSL通信
+		データベース保存
+		フォーム受付開始日
+		フォーム受付終了日
 	}
 	
 	class コンテンツ {
