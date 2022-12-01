@@ -35,6 +35,8 @@
 ### separator フィールド を delimiter に変更
 separator が、MySQLの予約語で、バッククォートでエスケープしないとSQLでエラーとなるが、CakePHPの生成する INSERT 文において、プレースホルダーを利用する前提で、バッククォートを付けなくなったため、エラーとなりデータがの追加ができなくなった。そのためリネームした。
 
+### rows フィールド を text_rows に変更
+separator と同様の理由でリネーム。
 　
 ## ドメインモデル図
 ![ユースケース図：メールフィールド](../../../svg/domain_model/bc-mail/mail_fields.svg)
