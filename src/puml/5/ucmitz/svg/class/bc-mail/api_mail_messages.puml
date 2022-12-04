@@ -13,6 +13,7 @@ class Api\MailMessagesController {
   + 編集：edit()
   + 削除：delete()
   + 一括処理：batch()
+  + CSVダウンロード：download()
 }
 
 class MailMessagesServiceInterface {
