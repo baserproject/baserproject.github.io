@@ -4,7 +4,7 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title メールコンテンツ管理
+title メールフィールド管理
 
 class Admin\MailFieldsController {
   + 一覧取得：index()

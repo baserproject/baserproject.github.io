@@ -45,7 +45,7 @@
 #### メールフォーム
 - [メールコンテンツ管理](bc-mail/mail_contents/index)
 - [メールフィールド管理](bc-mail/mail_fields/index)
-- メールメッセージ管理
+- [メールメッセージ管理](bc-mail/mail_messages/index)
 　
 ## 共通API
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)

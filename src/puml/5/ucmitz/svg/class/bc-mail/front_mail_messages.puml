@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title フロントメールフォーム
+
+class MailController {
+  + メールフォーム表示：index()
+  + 送信内容確認：confirm()
+  + メールフォーム送信：submit()
+}
+
+class MailMessagesServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+}
+
+MailController -down[#Black]-> MailMessagesService
+MailController -up[#Black]-|> MailFrontController
+MailMessagesService -left[dotted,#Black]-|> MailMessagesServiceInterface
+
+note "以下メールメッセージ管理と同じ" as note
+MailMessagesService .. note
+
+@enduml

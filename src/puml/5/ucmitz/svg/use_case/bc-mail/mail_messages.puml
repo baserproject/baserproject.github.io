@@ -1,0 +1,21 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：メールメッセージ
+
+actor 管理者
+actor 閲覧ユーザー
+
+package メールフィールド {
+	left to right direction
+	閲覧ユーザー -up-> (メールフォームからの送信データを保存)
+	管理者 -down-> (一覧)
+	(一覧) -down-> (削除)
+	(一覧) -down-> (一括削除)
+	管理者 -down-> (詳細表示)
+}
+
+
+@enduml

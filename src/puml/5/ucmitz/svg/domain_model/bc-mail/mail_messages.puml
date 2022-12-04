@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：メールメッセージ
+
+package メールメッセージ {
+	
+	class メールメッセージ {
+		メールメッセージID
+	}
+	note bottom
+	メールコンテンツとリレーションはしないが、
+	メールメッセージテーブル名の末尾の数字がメールコンテンツと
+	紐づく仕様となっている。
+	また、初期段階では、フィールドは、ID、作成日、更新日しか持たないが、
+	メールフィールドが追加されると同時にこのテーブルのフィールドも
+	追加する仕様となっている。
+	endnote
+}
+
+class メールコンテンツ {
+}
+
+
+@enduml

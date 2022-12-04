@@ -1,0 +1,36 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title メールメッセージ管理
+
+class Admin\MailMessagesController {
+  + 一覧表示：index()
+  + 詳細表示：edit()
+  + 削除：delete()
+}
+
+class MailMessagesService {
+  + MailMessagesTable
+}
+
+class MailMessagesServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 削除：delete()
+}
+
+class MailMessagesTable {
+}
+
+class MailMessage {
+}
+
+Admin\MailMessagesController -down[#Black]-> MailMessagesService
+MailMessagesService -down[#Black]-> MailMessagesTable
+MailMessagesService -left[dotted,#Black]-|> MailMessagesServiceInterface
+MailMessagesTable -down[#Black]-> MailMessage
+
+@enduml
