@@ -83,9 +83,13 @@ Service クラスではパラメーターを定義し全て受け入れるよう
 // コントローラーのメソッド例
 public function view(ContentLinksServiceInterface $service)
 {
+    $queryParams = $this->getRequest()->getQueryParams();
+    if(isset($queryParams['status'])) {
+        if(!$this->Authentication->getIdentity()) throw new ForbiddenException();
+    }
     $contentLink = $service->get(
         $this->request->getParam('entityId'),
-        ['status' => 'publish']
+        array_merge(['status' => 'publish'], $queryParams)
     );
     $this->set(compact('contentLink'));
 }
@@ -112,6 +116,38 @@ Ajaxのリクエスト対象の処理は、API用のコントローラーに移�
 どうしてもHTMLレンダリングが必要な場合のみ、Admin 用のコントローラーに配置します。
 
 [そのほか、コントローラーにおける注意点はこちら](development/migration/controller)
+
+### APIにおけるデータベース操作の例外処理
+
+データベース操作時の例外では、`PersistenceFailedException` と `Throwable` を利用して、例外を漏れなくキャッチします。  
+BcException では、全ての例外はキャッチできません。
+
+```php
+try {
+
+    // 成功
+    $service->create($this->getRequest()->getData());
+    $message = __d('baser', 'XXX を追加しました。');
+    
+} catch (PersistenceFailedException $e) {
+
+    // 入力エラーの場合、PersistenceFailedException が throw される
+    // $e->getEntity() で、エラー情報付きのエンティティを取得する
+    // 想定内のエラーとしてステータスを 400 とする
+    $this->setResponse($this->response->withStatus(400));
+    $entity = $e->getEntity();
+    $message = __d('baser', "入力エラーです。内容を修正してください。");
+    
+} catch (Throwable $e) {
+
+    // 何が起きているか分からない場合は、Throwable でキャッチする
+    // 想定外のエラーとしてステータスを 500 とする
+    $this->setResponse($this->response->withStatus(500));
+    $message = __d('baser', 'データベース処理中にエラーが発生しました。' . $e->getMessage());
+    
+}
+```
+
 
 　
 ## モデル
