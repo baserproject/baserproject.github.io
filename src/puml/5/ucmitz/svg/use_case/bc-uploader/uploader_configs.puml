@@ -1,0 +1,15 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：アップローダープラグイン設定
+
+actor 管理者
+
+package アップローダープラグイン設定 {
+	left to right direction
+	管理者 -down-> (設定を更新)
+}
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：アップロードファイルカテゴリ
+
+package アップロードファイルカテゴリ {
+	
+	class アップロードファイルカテゴリ {
+		カテゴリ名
+	}
+
+}
+
+アップロードファイルカテゴリ "1"-down-"0..*" アップロードファイル
+
+@enduml

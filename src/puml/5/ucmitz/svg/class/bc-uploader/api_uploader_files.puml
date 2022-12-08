@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アップロードファイルAPI
+
+class Api\UploaderFilesController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+  + 一括処理：batch()
+}
+
+class UploaderFilesService {
+  + UploaderFilesTable
+}
+
+note "以下アップロードファイル管理と同じ" as note
+UploaderFilesService .. note
+
+Api\UploaderFilesController -down[#Black]-> UploaderFilesService
+
+@enduml

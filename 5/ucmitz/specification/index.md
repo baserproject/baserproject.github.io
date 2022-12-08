@@ -31,10 +31,11 @@
 ### コアプラグイン
 - [お気に入り](bc-favorite/favorites/index)
 - [インストーラー](bc-installer/installer/index)
-- テーマ設定
-- テーマファイル管理
 - [コンテンツリンク](bc-content-link/content_links/index)
 - [ウィジェットエリア](bc-widget-area/widget_areas/index)
+- テーマファイル管理
+- テーマ設定
+- エディタテンプレート管理
 
 #### ブログ
 - [ブログコンテンツ管理](./bc-blog/blog_contents/index)
@@ -47,7 +48,12 @@
 - [メールコンテンツ管理](bc-mail/mail_contents/index)
 - [メールフィールド管理](bc-mail/mail_fields/index)
 - [メールメッセージ管理](bc-mail/mail_messages/index)
-　
+
+#### ファイルアップローダー
+- [アップロードファイル管理](bc-uploader/uploader_files/index)
+- [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
+- [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
+
 ## 共通API
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
 - [ファイルアップロード](baser-core/common/upload)

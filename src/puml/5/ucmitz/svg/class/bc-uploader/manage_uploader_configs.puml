@@ -1,0 +1,58 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アップローダープラグイン設定
+
+
+class Admin\BcAdminAppController {
+}
+
+class Admin\UploaderConfigsController {
+  + 保存：index()
+}
+
+class UploaderConfigsAdminService {
+}
+
+class UploaderConfigsAdminServiceInterface {
+	+表示用のデータを取得する：getViewVarsForIndex()
+}
+
+class UploaderConfigsService {
+  + UploaderConfigsTable
+}
+
+class UploaderConfigsServiceInterface {
+  + 設定値を取得する：getValue()
+  + 全設定値を取得する：get()
+  + 全設定値を更新する：update()
+  + 設定値を更新する：setValue()
+  + 設定値をリセットする：resetValue()
+  + キャッシュ用 Entity を削除：clearCache()
+}
+
+class UploaderConfigsTable {
+	+ KeyValue用のバリデーションを行う：validationKeyValue()
+}
+
+class BcKeyValue {
+}
+
+class UploaderConfig {
+		+ 設定名：name
+		+ 設定値：value
+}
+
+Admin\UploaderConfigsController -up[#Black]-|> Admin\BcAdminAppController
+Admin\UploaderConfigsController -down[#Black]-> UploaderConfigsAdminService
+UploaderConfigsAdminService -up[dotted,#Black]-|> UploaderConfigsAdminServiceInterface
+UploaderConfigsAdminService -left[#Black]-|> UploaderConfigsService
+UploaderConfigsAdminService -down[#Black]-> UploaderConfigsTable
+UploaderConfigsTable -left[#Black]-|> BcKeyValue
+UploaderConfigsService -left[dotted,#Black]-|> UploaderConfigsServiceInterface
+UploaderConfigsTable -down[#Black]-> UploaderConfig
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：アップロードファイルカテゴリ
+
+actor 管理者
+
+package アップロードファイルカテゴリ {
+	left to right direction
+	管理者 -down-> (一覧)
+	(一覧) -down-> (削除)
+	(一覧) -down-> (コピー)
+	(一覧) -down-> (一括削除)
+	管理者 -down-> (新規作成)
+	管理者 -down-> (編集)
+}
+
+
+@enduml

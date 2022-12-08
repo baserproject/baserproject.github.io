@@ -1,0 +1,17 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：アップローダープラグイン設定
+
+package アップローダープラグイン設定 {
+	
+	class アップローダープラグイン設定 {
+		設定名
+		設定値
+	}
+
+}
+
+@enduml

@@ -1,0 +1,45 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アップロードファイルカテゴリ管理
+
+class Admin\UploaderCategoriesController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+}
+
+class UploaderCategoriesService {
+  + UploaderCategoriesTable
+}
+
+class UploaderCategoriesServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + コピー：copy()
+  + 一括処理：batch()
+}
+
+class UploaderCategoriesTable {
+}
+
+class UploaderCategory {
+		+ カテゴリ名：name
+}
+
+Admin\UploaderCategoriesController -down[#Black]-> UploaderCategoriesService
+UploaderCategoriesService -down[#Black]-> UploaderCategoriesTable
+UploaderCategoriesService -left[dotted,#Black]-|> UploaderCategoriesServiceInterface
+UploaderCategoriesTable -down[#Black]-> UploaderCategory
+
+@enduml

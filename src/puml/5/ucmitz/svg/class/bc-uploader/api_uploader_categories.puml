@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アップロードカテゴリAPI
+
+class Api\UploaderCategoriesController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+  + 一括処理：batch()
+}
+
+class UploaderCategoriesService {
+  + UploaderCategoriesTable
+}
+
+note "以下アップロードカテゴリ管理と同じ" as note
+UploaderCategoriesService .. note
+
+Api\UploaderCategoriesController -down[#Black]-> UploaderCategoriesService
+
+@enduml

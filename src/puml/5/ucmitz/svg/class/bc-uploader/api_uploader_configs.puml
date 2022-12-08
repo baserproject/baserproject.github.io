@@ -1,0 +1,28 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アップローダープラグイン設定API
+
+
+class Api\BcApiController {
+}
+
+class Api\UploaderConfigsController {
+  + 取得：get()
+  + 保存：update()
+}
+
+class UploaderConfigsService {
+  + UploaderConfigsTable
+}
+
+Api\UploaderConfigsController -up[#Black]-|> Api\BcApiController
+Api\UploaderConfigsController -down[#Black]-> UploaderConfigsService
+
+note "以下アップローダープラグイン設定" as note
+UploaderConfigsService .. note
+
+@enduml
