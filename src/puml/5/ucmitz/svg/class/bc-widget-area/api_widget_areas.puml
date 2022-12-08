@@ -7,7 +7,9 @@ skinparam classAttributeIconSize 0
 title ウィジェットエリアAPI
 
 class Admin\WidgetAreasController {
-  + 一覧取得：index()
+  + 一覧データ取得：index()
+  + 単一データ取得：view()
+  + リストデータ取得：list()
   + 新規追加：add()
   + 編集：edit()
   + 削除：delete()
