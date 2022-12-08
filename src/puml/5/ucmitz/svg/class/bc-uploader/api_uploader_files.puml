@@ -11,8 +11,6 @@ class Api\UploaderFilesController {
   + 新規追加：add()
   + 編集：edit()
   + 削除：delete()
-  + コピー：copy()
-  + 一括処理：batch()
 }
 
 class UploaderFilesService {
