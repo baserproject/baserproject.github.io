@@ -1,0 +1,26 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：ウィジェットエリア
+
+actor 管理者
+actor 閲覧ユーザー
+
+package ウィジェットエリア {
+	left to right direction
+	閲覧ユーザー -up-> (ウィジェットエリア表示)
+	管理者 -down-> (一覧)
+	(一覧) -down-> (削除)
+	(一覧) -down-> (一括削除)
+	管理者 -down-> (新規作成)
+	管理者 -down-> (編集)
+	(編集) -down-> (タイトルを変更)
+	(編集) -down-> (ウィジェットを追加)
+	(編集) -down-> (ウィジェットの設定を変更)
+	(編集) -down-> (ウィジェットを削除)
+	(編集) -down-> (ウィジェットを並べ替える)
+}
+
+@enduml

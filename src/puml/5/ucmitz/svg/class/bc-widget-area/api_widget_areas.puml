@@ -1,0 +1,29 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ウィジェットエリアAPI
+
+class Admin\WidgetAreasController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+	+ 一括処理：batch()
+	+ ウィジェットエリア名を変更：update_title()
+	+ ウィジェットを更新：update_widget()
+	+ ウィジェットの並び替え：update_sort()
+	+ ウィジェットを削除：delete_widget()
+}
+
+class WidgetAreasService {
+}
+
+note "以下ウィジェットエリア管理と同じ" as note
+WidgetAreasService .. note
+
+Admin\WidgetAreasController -down[#Black]-> WidgetAreasService
+
+@enduml

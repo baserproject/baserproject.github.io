@@ -1,0 +1,30 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：ウィジェットエリア
+
+package ウィジェットエリア {
+	
+	class ウィジェットエリア {
+    + サイトID
+		+ ウィジェットエリア名
+    + ウィジェット詳細
+	}
+	note bottom
+	ウィジェットエリア詳細は
+	複数のウィジェットをシリアライズして保存
+	end note
+	
+	class ウィジェット {
+		タイトル
+		タイトル表示設定
+		利用状態
+	}
+	
+}
+ 
+ウィジェット "0..*" -down- "1" ウィジェットエリア 
+
+@enduml

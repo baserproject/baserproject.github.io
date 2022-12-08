@@ -41,8 +41,13 @@
 
 　
 ## ドメインモデル図
-![ドメインモデル図：固定ページ](../../../svg/domain_model/bc-search-index/search_indexes.svg)
+![ドメインモデル図：検索インデックス](../../../svg/domain_model/bc-search-index/search_indexes.svg)
 
 　
 ## クラス図
-![クラス図：固定ページ管理](../../../svg/class/bc-search-index/manage_search_indexes.svg)
+### 管理画面
+![クラス図：検索インデックス管理](../../../svg/class/bc-search-index/manage_search_indexes.svg)
+
+
+### API
+![クラス図：検索インデックス管理](../../../svg/class/bc-search-index/api_search_indexes.svg) 

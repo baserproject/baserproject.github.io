@@ -34,6 +34,7 @@
 - テーマ設定
 - テーマファイル管理
 - [コンテンツリンク](bc-content-link/content_links/index)
+- [ウィジェットエリア](bc-widget-area/widget_areas/index)
 
 #### ブログ
 - [ブログコンテンツ管理](./bc-blog/blog_contents/index)

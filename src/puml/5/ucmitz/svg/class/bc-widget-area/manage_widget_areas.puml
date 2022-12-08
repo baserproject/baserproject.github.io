@@ -1,0 +1,50 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title ウィジェットエリア管理
+
+class Admin\WidgetAreasController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class WidgetAreasService {
+  + WidgetAreasTable
+}
+
+class WidgetAreasServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + 初期データ取得：getNew()
+	+ リスト取得：getList()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+	+ 一括処理：batch()
+	+ ウィジェットを更新：updateWidget()
+	+ ウィジェットを並び替える：updateSort()
+	+ ウィジェットを削除：deleteWidget()
+	+ IDよりタイトルリストを取得：getTitlesById()
+	+ コントロールソースを取得：getControlSource()
+}
+
+class WidgetAreasTable {
+}
+
+class WidgetArea {
+	+ サイトID：site_id
+	+ ウィジェットエリア名：name
+	+ ウィジェット詳細：widgets
+}
+
+Admin\WidgetAreasController -down[#Black]-> WidgetAreasService
+WidgetAreasService -down[#Black]-> WidgetAreasTable
+WidgetAreasService -left[dotted,#Black]-|> WidgetAreasServiceInterface
+WidgetAreasTable -down[#Black]-> WidgetArea
+
+@enduml
