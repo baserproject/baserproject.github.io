@@ -67,4 +67,7 @@
 
 
 ### API
-![クラス図：ウィジェットエリア管理](../../../svg/class/bc-theme-file/api_theme_files.svg) 
+#### テーマフォルダー
+![クラス図：ウィジェットエリア管理](../../../svg/class/bc-theme-file/api_theme_folders.svg) 
+#### テーマファイル
+![クラス図：ウィジェットエリア管理](../../../svg/class/bc-theme-file/api_theme_files.svg)
