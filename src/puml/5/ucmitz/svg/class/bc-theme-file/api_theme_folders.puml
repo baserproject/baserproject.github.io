@@ -1,0 +1,29 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title テーマフォルダAPI
+
+class Api\ThemeFoldersController {
+  + 一覧取得：index()
+  + フォルダ新規追加：add()
+  + フォルダ編集：edit()
+  + フォルダ削除：delete()
+  + フォルダコピー：copy()
+  + ファイルアップロード：upload()
+  + 現在のテーマにフォルダをコピー：copy_to_theme()
+  + フォルダを表示：view()
+}
+
+class ThemeFoldersService {
+
+}
+
+Api\ThemeFoldersController -down[#Black]-> ThemeFoldersService
+
+note "以下テーマファイル管理と同じ" as note
+ThemeFoldersService .. note
+
+@enduml

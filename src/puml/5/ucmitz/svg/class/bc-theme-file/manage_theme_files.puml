@@ -1,0 +1,80 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title テーマファイル管理
+
+class Admin\ThemeFilesController {
+  + 一覧取得：index()
+  + ファイル新規追加：add()
+  + フォルダ新規追加：add_folder()
+  + ファイル編集：edit()
+  + フォルダ編集：edit_folder()
+  + ファイル削除：delete()
+  + フォルダ削除：delete_folder()
+  + ファイルコピー：copy()
+  + フォルダコピー：copy_folder()
+  + ファイルアップロード：upload()
+  + 現在のテーマにファイルをコピー：copy_to_theme()
+  + 現在のテーマにフォルダをコピー：copy_folder_to_theme()
+  + ファイルを表示：view()
+  + フォルダを表示：view_folder()
+  + 画像を表示：img
+  + 画像のサムネイルを表示：img_thumb
+}
+
+class ThemeFilesService {
+}
+
+class ThemeFoldersService {
+
+}
+
+class ThemeFoldersServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + コピー：copy()
+  + 一括処理：batch()
+  + 現在のテーマにフォルダをコピー：copyToTheme()
+}
+
+class ThemeFilesServiceInterface {
+  + 単一データ取得：get()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + コピー：copy()
+  + 現在のテーマにファイルをコピー：copyToTheme()
+}
+
+class ThemeFile {
+	+ フルパス：fulpath
+	+ 親フォルダパス：parent
+	+ タイプ：type
+	+ ファイル名：name
+	+ パス：path
+	+ ファイル内容：content
+}
+
+class ThemeFolder {
+	+ フルパス：fulpath
+	+ 親フォルダパス：parent
+	+ タイプ：type
+	+ ファイル名：name
+	+ パス：path
+}
+
+Admin\ThemeFilesController -down[#Black]-> ThemeFilesService
+ThemeFilesService -left[dotted,#Black]-|> ThemeFilesServiceInterface
+Admin\ThemeFilesController -down[#Black]-> ThemeFoldersService
+ThemeFoldersService -right[dotted,#Black]-|> ThemeFoldersServiceInterface
+ThemeFilesService -down[#Black]-> ThemeFile
+ThemeFoldersService -down[#Black]-> ThemeFolder
+
+@enduml

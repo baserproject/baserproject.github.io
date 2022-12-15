@@ -20,7 +20,7 @@ class SearchIndexesService {
 
 Api\SearchIndexesController -down-> SearchIndexesService
 
-note "以下サイト管理と同じ" as note
+note "以下検索インデックス管理と同じ" as note
 SearchIndexesService .. note
 
 @enduml

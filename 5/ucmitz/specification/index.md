@@ -33,7 +33,7 @@
 - [インストーラー](bc-installer/installer/index)
 - [コンテンツリンク](bc-content-link/content_links/index)
 - [ウィジェットエリア](bc-widget-area/widget_areas/index)
-- テーマファイル管理
+- [テーマファイル管理](bc-theme-file/theme_files/index)
 - テーマ設定
 - エディタテンプレート管理
 
