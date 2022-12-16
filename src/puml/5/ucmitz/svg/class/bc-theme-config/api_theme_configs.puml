@@ -1,0 +1,28 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title テーマ設定API
+
+
+class Api\BcApiController {
+}
+
+class Api\ThemeConfigsController {
+  + 取得：get()
+  + 保存：update()
+}
+
+class ThemeConfigsService {
+  + ThemeConfigsTable
+}
+
+Api\ThemeConfigsController -up[#Black]-|> Api\BcApiController
+Api\ThemeConfigsController -down[#Black]-> ThemeConfigsService
+
+note "以下テーマ設定と同じ" as note
+ThemeConfigsService .. note
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：テーマ設定 
+
+actor 管理者
+actor 制作者
+
+package テーマ設定 {
+	left to right direction
+	管理者 -down-> (テーマ設定を保存する)
+	制作者 -down-> (ロゴを出力する)
+	制作者 -down-> (メインイメージを出力する)
+	制作者 -down-> (テーマ設定CSSを読み込む)
+}
+
+@enduml

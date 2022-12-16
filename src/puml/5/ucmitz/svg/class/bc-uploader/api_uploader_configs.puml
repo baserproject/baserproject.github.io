@@ -22,7 +22,7 @@ class UploaderConfigsService {
 Api\UploaderConfigsController -up[#Black]-|> Api\BcApiController
 Api\UploaderConfigsController -down[#Black]-> UploaderConfigsService
 
-note "以下アップローダープラグイン設定" as note
+note "以下アップローダープラグイン設定と同じ" as note
 UploaderConfigsService .. note
 
 @enduml

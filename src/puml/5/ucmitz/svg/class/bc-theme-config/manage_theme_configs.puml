@@ -1,0 +1,35 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title テーマ設定
+
+class Admin\ThemeConfigsController {
+  + 設定を保存：index()
+}
+
+class ThemeConfigsService {
+  + ThemeConfigsTable
+}
+
+class ThemeConfigsServiceInterface {
+  + 取得：get()
+  + 保存：update()
+}
+
+class ThemeConfigsTable {
+}
+
+class ThemeConfig {
+	+ 設定名：name
+	+ 設定値：value
+}
+
+Admin\ThemeConfigsController -down[#Black]-> ThemeConfigsService
+ThemeConfigsService -down[#Black]-> ThemeConfigsTable
+ThemeConfigsService -left[dotted,#Black]-|> ThemeConfigsServiceInterface
+ThemeConfigsTable -down[#Black]-> ThemeConfig
+
+@enduml
