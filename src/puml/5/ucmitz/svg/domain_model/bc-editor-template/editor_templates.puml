@@ -1,0 +1,19 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：エディターテンプレート
+
+package エディターテンプレート {
+	
+	class エディターテンプレート {
+		テンプレート名：name
+		テンプレートアイコン：image
+		説明文：description
+		テンプレート内容：html
+	}
+
+}
+
+@enduml

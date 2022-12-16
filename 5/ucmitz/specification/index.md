@@ -35,7 +35,7 @@
 - [ウィジェットエリア](bc-widget-area/widget_areas/index)
 - [テーマファイル管理](bc-theme-file/theme_files/index)
 - テーマ設定
-- エディタテンプレート管理
+- [エディタテンプレート管理](bc-editor-template/editor_templates/index)
 
 #### ブログ
 - [ブログコンテンツ管理](./bc-blog/blog_contents/index)

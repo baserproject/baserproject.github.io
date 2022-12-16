@@ -1,0 +1,27 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title エディターテンプレートAPI
+
+class Admin\EditorTemplatesController {
+  + 一覧取得：index()
+  + 単一データ取得：view()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + リスト：list()
+}
+
+class EditorTemplatesService {
+  + EditorTemplatesTable
+}
+
+Admin\EditorTemplatesController -down[#Black]-> EditorTemplatesService
+
+note "以下エディターテンプレート管理と同じ" as pageNote
+EditorTemplatesService .. pageNote
+
+@enduml

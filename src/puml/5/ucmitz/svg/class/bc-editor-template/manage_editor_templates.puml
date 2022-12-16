@@ -1,0 +1,46 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title エディターテンプレート管理
+
+class Admin\EditorTemplatesController {
+  + 一覧：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + JSを呼び出す：js()
+}
+
+class EditorTemplatesService {
+  + EditorTemplatesTable
+}
+
+class EditorTemplatesServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class EditorTemplatesTable {
+}
+
+class EditorTemplate {
+	+ テンプレート名：name
+	+ テンプレートアイコン：image
+	+ 説明文：description
+	+ テンプレート内容：html
+}
+
+Admin\EditorTemplatesController -down[#Black]-> EditorTemplatesService
+EditorTemplatesService -down[#Black]-> EditorTemplatesTable
+EditorTemplatesService -left[dotted,#Black]-|> EditorTemplatesServiceInterface
+EditorTemplatesTable -down[#Black]-> EditorTemplate
+
+@enduml

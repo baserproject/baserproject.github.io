@@ -1,0 +1,19 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：エディターテンプレート
+
+actor ユーザー
+
+package コンテンツリンク {
+	left to right direction
+	ユーザー -up-> (エディターテンプレートの一覧を表示する)
+	ユーザー -up-> (エディターテンプレートを新規追加する)
+	ユーザー -up-> (エディターテンプレートを編集する)
+	ユーザー -up-> (エディターテンプレートを削除する)
+	ユーザー -up-> (エディターテンプレートの設定をJSで呼び出す)
+}
+
+@enduml
