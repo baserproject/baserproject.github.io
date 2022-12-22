@@ -130,6 +130,7 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 ## その他のドキュメント
 
 - [PlantUMLの利用方法](./etc/plant_uml)
+- [サブフォルダに設置する](./etc/subfolder)
 - [Cloud9 上で ucmitz を動作させる](./etc/cloud9)
 
 
