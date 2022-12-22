@@ -29,34 +29,26 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 
 ### Docker を起動する
 docker ディレクトリに移動してから Docker 起動します。
-Docker を起動すると　ucmitzの初期化処理（composerによるライブラリのインストール、データベースの初期化、JWT用のキー作成など）が始まります。  
 
-初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。 `/docker/check` ファイルが作成されたら、以上で環境構築は終了です。
+初期化に30秒ほどかかりますので、それを待ってからブラウザでアクセスしてください。 `/docker_inited` ファイルが作成されたら、以上で環境構築は終了です。
 
 ```
 cd docker
 docker-compose up -d
 ```
 
-ローカルの ucmitz のディレクトリは、/var/www/shared にマウントされています。  
+ローカルの ucmitz のディレクトリは、/var/www/html にマウントされています。  
 
 - アプリケーション：[https://localhost/](https://localhost/){:target="_blank"}
 - phpMyAdmin：[http://localhost:8080/](http://localhost:8080/){:target="_blank"}
 - phpPgAdmin：[http://localhost:10080/](http://localhost:10080/){:target="_blank"}
 - MailCatcher：[http://localhost:1080/](http://localhost:1080/){:target="_blank"}
 
-### 管理画面にログインする
+### インストーラーを起動する
 
-ブラウザで、次のURLにアクセスして表示を確認します。
-[https://localhost/baser/admin/baser-core/users/login](https://localhost/baser/admin/baser-core/users/login){:target="_blank"}
-   
-メールアドレスとパスワードを入力し管理画面にログインします。
+ブラウザで、次のURLにアクセスするとインストーラーが起動しますので、 [baserCMS５インストール手順](./installer) に従ってインストールを進めます。
 
-- ユーザー名：admin
-- パスワード：basercms
-
-アプリケーションの管理画面は、SSLでアクセスしないとエラーとなります。  
-http でアクセスしたい場合は、.env の `ADMIN_SSL` を false  に設定してください。
+[https://localhost/](https://localhost/){:target="_blank"}
 
 管理画面にログインができなくなった場合は、 [管理画面にログインができなくなった](https://baserproject.github.io/5/ucmitz/etc/troubleshooting#%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F) を確認してください。
 
@@ -78,90 +70,6 @@ docker exec -it bc5-php /bin/bash
 | database | basercms |
 | user | root |
 | password | root |
-
-　
-## ブラウザで画面が正常に表示できない場合
-
-初期化が終わっていないか、うまくいっていない可能性があります。
-次のコマンドで Docker のログを確認します。
-
-```shell
-docker logs bc5-php
-````
-
-「Container setup is complete.」と表示されていれば初期化は完了しています。  
-
-「Migration failed.」と表示されている場合は、MySQLの初期化が完了していません。コンテナにログインし、次のコマンドを実行してください。
-
-```shell
-/var/www/html/bin/cake migrations migrate --plugin BaserCore
-/var/www/html/bin/cake migrations seed --plugin BaserCore
-/var/www/html/bin/cake plugin assets symlink
-```
-
-　
-## lsyncd による高速化
-Docker Desktop を利用する前提となっていますが、現在（2022/04/11）Macの環境では、
-共有フォルダとしてマウントしたフォルダに直接 Apache の DocumentRoot を設定すると処理速度が非常に遅くなるという問題があります。
-そのため、別のフォルダにマウントして、lsyncd というサービスで同期することで高速化する仕組みを利用可能としています。  
-設定は自身で行う必要があります。
-
-### 設定方法
-#### マウントの設定変更
-docker/docker-compose.yml の 26行目あたり
-```yaml
-// 下記をコメントアウト
-- ../:/var/www/html:delegated
-// 下記をコメントイン
-# - ../:/var/www/shared:delegated
-```
-#### 初期化スクリプトの設定変更
-docker/docker-compose.yml の 38行目あたり
-```yaml
-// 下記をコメントアウト
-command: bash -c "/var/www/html/docker/init.sh && apache2-foreground"
-// 下記をコメントイン
-# command: bash -c "/var/www/shared/docker/init_lsyncd.sh && /var/www/shared/docker/init.sh && apache2-foreground"
-```
-あとは、[環境を再構築する](./#環境を再構築する) を参考に再構築を行います。
-
-
-### 共有フォルダのマウント設定
-ドキュメントルートである `/var/www/html/` ではなく、`/var/www/shared/` に共有フォルダをマウントすることにより高速化を図っています。
-
-
-### ファイルの同期
-共有フォルダ内のファイルを変更した場合、`/var/www/html/` 内に反映させなければ、変更が動作に反映されません。  
-そのため、lsyncd を利用して `/var/www/shared/` と `/var/www/html/` を同期します。
-
-```shell
-/var/www/shared # 共有フォルダとしてマウントするフォルダ
-/var/www/html # Apache の DocumentRoot
-```
-
-### ファイルの同期がうまくいかない問題
-
-Docker の起動時に lsyncd を立ち上げる仕様となっていますが、ファイルの同期がうまくいかない場合があります。
-- ゲスト側で新しくファイルを作成した場合に反映されない
-- Git pull や merge などで、削除が入った場合に反映されない
-- 削除したファイルが復活する
-
-
-その場合は、こちらを確認してください。  
-コンテナにログインしてサービスの起動状況を確認します。
-
-```shell
-service --status-all
-```
-
-lsyncd の左側に「+」マークが表示されていれば問題ありません。
-そうでない場合は、手動で起動します。
-
-```shell
-service lsyncd start
-```
-
-上記を試してもうまく行かない場合は[環境の再構築](#%E7%92%B0%E5%A2%83%E3%82%92%E5%86%8D%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B)をお試しください。
 
 　
 ## 環境を再構築する
