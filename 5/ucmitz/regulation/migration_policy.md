@@ -305,6 +305,102 @@ UsersFrontHelper
 [ヘルパーにおける注意点](../development/migration/helper) を参照してください。
 
 　
+## Web API
+
+Web API を実装するコントローラーは、認証有無に関わらず、`Api` ディレクトリ配下に配置し、`BcApiController` を継承します。
+
+`BcApiController` 継承すると、デフォルトの状態で、JWT認証がかかった状態となり、アクセストークンが必要となります。
+
+### アクセストークンの取得方法
+ログイン用のエンドポイントに対して、email と password を送信し、認証に成功すると、アクセストークンとリフレッシュトークンを取得する事ができます。
+
+**エンドポイント**  
+/baser/api/baser-core/users/login.json
+
+**返却値**
+- access_token：リソースにアクセスするためのトークン
+- refresh_token：アクセストークンの有効期限が切れた時に再取得するためのトークン
+
+### アクセストークンの付与方法
+アクセストークンの付与方法は、クエリパラメーターとして付与する方法と、Authorization ヘッダに設定する方法の２種類があります。
+
+```shell
+# クエリパラメーターに付与する
+/baser/api/baser-core/pages/add.json?token={アクセストークン}
+# Authorizationヘッダに設定する（jQuery）
+$.ajax({
+    headers: {"Authorization": "{アクセストークン}"},
+    url: '/baser/api/baser-core/pages/add.json'
+})
+```
+
+### 返却値
+APIの返却値については、新規登録、更新、削除においても、基本的に対象リソースのエンティティを返却します。  
+また、`message` と `errors` も一緒に返却するようにしてください。  
+なお、コンテンツ管理機能を実装している場合は、関連づくコンテンツも返却します。
+
+```php
+$this->set([
+    'page' => $page, // 対象リソースのエンティティ
+    'content' => $page->content, // 関連づくコンテンツ
+    'message' => $message, // 通知メッセージ
+    'errors' => $page->getErrors() // バリデーションエラーの際の各フィールドのエラー情報
+])
+```
+
+### 認証を解除する
+認証が不要なリソースについて、認証なしでアクセスできるようにするためには、コントローラーの `initialize` にて、allowUnauthenticated としてマークします。
+
+```php
+public function initialize(): void
+{
+    parent::initialize();
+    $this->Authentication->allowUnauthenticated(['view', 'index']);
+}
+```
+
+### 公開制限の設定
+下書きのデータなどまだ公開したくないデータは、`status` フィールドなどで公開状態を制限する前提として、
+認証ありの場合は取得できるようにし、認証なしの場合は取得できないようにします。
+
+#### サービス側での実装
+基本的には、制限をかけず取得できるように実装します。
+
+#### コントローラー側での実装
+基本的には、デフォルトで公開状態のデータのみ取得できるように実装し、`status` パラメーターの切り替えで非公開状態のものも全て取得できるようにします。  
+
+```shell
+# status を空に切り替え
+/baser/api/baser-core/pages.json?status=
+```
+
+なお、`status` パラメーターの切り替えを行う際、ログイン状態を確認し、ログインしてない場合は、`ForbiddenException` をスローしてください。
+
+```php
+$queryParams = $this->getRequest()->getQueryParams();
+if (isset($queryParams['status'])) {
+    if (!$this->Authentication->getIdentity()) throw new ForbiddenException();
+}
+
+$queryParams = array_merge([
+    'status' => 'publish'
+], $queryParams);
+
+$pages = $service->getIndex($queryParams);
+```
+
+### REST API
+baserCMS５は、初期状態で、RESTful なURLを自動生成する仕組みとなっています。
+
+|  HTTP  |  URL  |  コントローラーアクション  |
+| ---- | ---- | ---- |
+|  GET  |  /baser/api/baser-core/pages.json  |  PagesController::index()  |
+|  GET  |  /baser/api/baser-core/pages/123.json  |  PagesController::view(123)  |
+|  POST  |  /baser/api/baser-core/pages.json  |  PagesController::add()  |
+|  PUT  |  /baser/api/baser-core/pages/123.json  |  PagesController::edit(123)  |
+|  DELETE  |  /baser/api/baser-core/pages/123.json  |  PagesController::delete(123)  |
+
+　
 ## ルーティング
 [ルーティングにおける注意点](../development/migration/routing) を参照してください。
 
