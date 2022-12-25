@@ -345,7 +345,13 @@ $this->set([
     'content' => $page->content, // 関連づくコンテンツ
     'message' => $message, // 通知メッセージ
     'errors' => $page->getErrors() // バリデーションエラーの際の各フィールドのエラー情報
-])
+]);
+$this->viewBuilder()->setOption('serialize', [
+    'page',
+    'content',
+    'message',
+    'errors'
+]);
 ```
 
 ### 認証を解除する
