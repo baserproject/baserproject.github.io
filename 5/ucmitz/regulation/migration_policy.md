@@ -392,7 +392,7 @@ $pages = $service->getIndex($queryParams);
 ### REST API
 baserCMS５は、初期状態で、RESTful なURLを自動生成する仕組みとなっています。
 
-|  HTTP  |  URL  |  コントローラーアクション  |
+|  HTTP  |  URL形式  |  コントローラーアクション  |
 | ---- | ---- | ---- |
 |  GET  |  /baser/api/baser-core/pages.json  |  PagesController::index()  |
 |  GET  |  /baser/api/baser-core/pages/123.json  |  PagesController::view(123)  |
