@@ -60,7 +60,7 @@
 - [プレビュー機能](./baser-core/common/preview)
 - [CKEditor連携](./baser-core/common/ckeditor)
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
-- [アクセス制限](./baser-core/common/permission)
+- [アクセスルール](./baser-core/common/permission)
 
 　
 ## プラグインAPI

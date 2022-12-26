@@ -1,4 +1,4 @@
-# アクセス制限設計（検討中）
+# アクセスルール設計
 
 ## 認証
 管理画面、APIともに、認証を必要とする事を前提として、認証が不要なメソッドについては、都度、コントローラーの `beforeFilter()` にて定義する。
@@ -39,9 +39,54 @@ permissions に保存する URLについては、ワイルドカードの利用�
 /baser/admin/baser-core/sites/index/2/1  # 不可
 ```
 
-### アクセス制限設定の自動ビルド
-アクセス制限設定（permissions）のデータは対象プラグインのインストール時に自動生成する。  
-自動生成においては、設定`BcApp.permission.defaultSettings` を参照して行う。  
+### アクセスルールの自動ビルド
+アクセスルール（permissions）のデータは対象プラグインのインストール時に自動生成する。  
+自動生成においては、設定`BcPermission.defaultSettings` を参照して行う。  
+
+```php
+return [
+    'BcPermission' => [
+        'defaultSettings' => [
+            'UsersAdmin' => [
+                'title' => 'ユーザー管理',
+                'type' => 'Admin',
+                'items' => [
+                    'Index' => [
+                        'title' => '一覧',
+                        'url' => '/baser/admin/baser-core/users/index',
+                        'method' => '*',
+                        'auth' => false
+                    ],
+                    'Add' => [
+                        'title' => '新規登録',
+                        'url' => '/baser/admin/baser-core/users/add',
+                        'method' => 'POST',
+                        'auth' => false
+                    ],
+                    'Edit' => [
+                        'title' => '編集',
+                        'url' => '/baser/admin/baser-core/users/edit/*',
+                        'method' => 'POST',
+                        'auth' => false
+                    ],
+                    'EditSelf' => [
+                        'title' => '自身の編集',
+                        'method' => 'POST',
+                        'url' => '/baser/admin/baser-core/users/edit/{loginUserId}',
+                        'auth' => true
+                    ],
+                    'Delete' => [
+                        'title' => '削除',
+                        'method' => 'POST',
+                        'url' => '/baser/admin/baser-core/users/edit/*',
+                        'auth' => false
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
+```
 設定がプラグインに存在しない場合は、次のURLを登録する。
 
 ```shell
@@ -53,6 +98,18 @@ permissions に保存する URLについては、ワイルドカードの利用�
 ### システムURLの定義
 管理画面よりAJAXとして呼び出すAPIについては、設定`BcApp.permission.defaultAllows` に登録しておく事で、強制的に制限を解除できる。
 
+```php
+return [
+    'BcPermission' => [
+        'defaultAllows' => [
+            '/baser/admin/baser-core/dashboard/*',
+            '/baser/admin/baser-core/dblogs/*',
+            '/baser/admin/baser-core/users/logout',
+            '/baser/admin/baser-core/users/back_agent'
+        ]
+    ]    
+];
+```
 　
 ## パラメーターアクセス制限
 パラメーターにおけるアクセス制限については、コントローラーの各メソッドごとに定義をします。  
@@ -60,10 +117,25 @@ permissions に保存する URLについては、ワイルドカードの利用�
 
 　
 ## URLアクセス制限登録のUI
-アプリケーション側が提供する初期設定（初期ビルド）で運用する事が多い事を想定し、連続登録が行いやすいUIではなく、カスタマイズにおける微調整がしやすいUIとする。
+アプリケーション側が提供する初期設定（初期ビルド）で運用する事を前提とし、連続登録が行いやすいUIではなく、カスタマイズにおける微調整がしやすいUIとする。
+
+### アクセスルールグループ一覧
+基本的にアクセスグループは自動ビルドを前提とし、新規登録画面は提供しない。  
+APIの利用設定が false の場合は管理画面とAPIの切り替えは表示しない。
+
+![アクセスグループ一覧](./img/permission_goups_index.jpg)
+　
+### アクセスルールグループ詳細
+グループに関連づくルールの一覧を一括で保存できる。
+
+![アクセスグループ詳細](./img/permission_groups_view.jpg)
+
+### アクセスルール編集
+従来の編集画面だが、ルールグループを設定できる仕様にする。
+
+![アクセスグループ詳細](./img/permissions_edit.jpg)
 
 　
-
 ## APIの利用設定について
 設定 `BcApp.useApi` によって、利用するかしないかの設定を可能とする。  
 デフォルトはオフとする。
