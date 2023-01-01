@@ -11,8 +11,8 @@ class Api\BcApiController {
 }
 
 class Api\ThemeConfigsController {
-  + 取得：get()
-  + 保存：update()
+  + 取得：view()
+  + 保存：edit()
 }
 
 class ThemeConfigsService {
