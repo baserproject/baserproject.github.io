@@ -11,8 +11,8 @@ class Api\BcApiController {
 }
 
 class Api\UploaderConfigsController {
-  + 取得：get()
-  + 保存：update()
+  + 取得：view()
+  + 保存：edit()
 }
 
 class UploaderConfigsService {
