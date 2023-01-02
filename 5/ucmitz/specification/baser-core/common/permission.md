@@ -14,7 +14,7 @@ $this->Authentication->allowUnauthenticated(['view']);
 
 　
 ## URLアクセス制限
-URLにおけるアクセス制限については、コントローラーの `beforeFilter()` にて、`PermissionsService::check()` を利用して行う。    
+URLにおけるアクセス制限については、`BaserCore/AppController::beforeFilter()` にて、`PermissionsService::check()` を利用して行う。    
 ログインしている事を前提とし、ユーザーグループごとの権限を判定する仕組みとし、権限がない場合は、Forbidden エラーを発生する。
 
 ### 判定方法
@@ -40,54 +40,63 @@ permissions に保存する URLについては、ワイルドカードの利用�
 ```
 
 ### アクセスルールの自動ビルド
-アクセスルール（permissions）のデータは対象プラグインのインストール時に自動生成する。  
-自動生成においては、設定`BcPermission.defaultSettings` を参照して行う。  
+アクセスルール（permissions）のデータは、baserCMSのインストール時、または、対象プラグインのインストール時に自動生成する。  
+自動生成においては、`config/permission.php` 内の設定 `permission` を参照して行う。  
 
 ```php
 return [
-    'BcPermission' => [
-        'defaultSettings' => [
-            'UsersAdmin' => [
-                'title' => 'ユーザー管理',
-                'type' => 'Admin',
-                'items' => [
-                    'Index' => [
-                        'title' => '一覧',
-                        'url' => '/baser/admin/baser-core/users/index',
-                        'method' => '*',
-                        'auth' => false
-                    ],
-                    'Add' => [
-                        'title' => '新規登録',
-                        'url' => '/baser/admin/baser-core/users/add',
-                        'method' => 'POST',
-                        'auth' => false
-                    ],
-                    'Edit' => [
-                        'title' => '編集',
-                        'url' => '/baser/admin/baser-core/users/edit/*',
-                        'method' => 'POST',
-                        'auth' => false
-                    ],
-                    'EditSelf' => [
-                        'title' => '自身の編集',
-                        'method' => 'POST',
-                        'url' => '/baser/admin/baser-core/users/edit/{loginUserId}',
-                        'auth' => true
-                    ],
-                    'Delete' => [
-                        'title' => '削除',
-                        'method' => 'POST',
-                        'url' => '/baser/admin/baser-core/users/edit/*',
-                        'auth' => false
-                    ]
+    'permission' => [
+        // アクセスルールグループ識別名
+        'UsersAdmin' => [
+            // アクセスルールグループタイトル
+            'title' => 'ユーザー管理',
+            // プラグイン名
+            'plugin' => 'BaserCore',
+            // タイプ（Admin / Api）
+            'type' => 'Admin',
+            // アクセスルールのアイテム
+            'items' => [
+                // アクセスルールの識別名
+                'Index' => [
+                    // アクセスルールタイトル
+                    'title' => '一覧',
+                    // アクセス対象のURL
+                    'url' => '/baser/admin/baser-core/users/index',
+                    // メソッド（* / GET / POST）
+                    'method' => '*',
+                    // アクセス可否
+                    'auth' => false
+                ],
+                'Add' => [
+                    'title' => '新規登録',
+                    'url' => '/baser/admin/baser-core/users/add',
+                    'method' => 'POST',
+                    'auth' => false
+                ],
+                'Edit' => [
+                    'title' => '編集',
+                    'url' => '/baser/admin/baser-core/users/edit/*',
+                    'method' => 'POST',
+                    'auth' => false
+                ],
+                'EditSelf' => [
+                    'title' => '自身の編集',
+                    'method' => 'POST',
+                    'url' => '/baser/admin/baser-core/users/edit/{loginUserId}',
+                    'auth' => true
+                ],
+                'Delete' => [
+                    'title' => '削除',
+                    'method' => 'POST',
+                    'url' => '/baser/admin/baser-core/users/edit/*',
+                    'auth' => false
                 ]
             ]
         ]
     ]
 ];
 ```
-設定がプラグインに存在しない場合は、次のURLを登録する。
+設定がプラグインに存在しない場合は、次のURLを自動で登録する。
 
 ```shell
 /baser/admin/plugin-name/*
@@ -96,7 +105,7 @@ return [
 また、グループごとに初期化して再度、自動ビルドを行う事ができる。
 
 ### システムURLの定義
-管理画面よりAJAXとして呼び出すAPIについては、設定`BcApp.permission.defaultAllows` に登録しておく事で、強制的に制限を解除できる。
+管理画面よりAJAXとして呼び出すAPIについては、設定`BcPermission.defaultAllows` に登録しておく事で、強制的に制限を解除できる。
 
 ```php
 return [
@@ -120,8 +129,7 @@ return [
 アプリケーション側が提供する初期設定（初期ビルド）で運用する事を前提とし、連続登録が行いやすいUIではなく、カスタマイズにおける微調整がしやすいUIとする。
 
 ### アクセスルールグループ一覧
-基本的にアクセスグループは自動ビルドを前提とし、新規登録画面は提供しない。  
-APIの利用設定が false の場合は管理画面とAPIの切り替えは表示しない。
+基本的にアクセスグループは自動ビルドを前提とし、新規登録画面は提供しない。
 
 ![アクセスグループ一覧](./img/permission_goups_index.jpg)
 　
@@ -137,6 +145,6 @@ APIの利用設定が false の場合は管理画面とAPIの切り替えは表�
 
 　
 ## APIの利用設定について
-設定 `BcApp.useApi` によって、利用するかしないかの設定を可能とする。  
+`config/.env` 内の設定 `USE_API` によって、利用するかしないかの設定を可能とする。  
 デフォルトはオフとする。
 
