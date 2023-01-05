@@ -54,6 +54,11 @@
 - [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
 - [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
 
+#### カスタムコンテンツ
+- [カスタムコンテンツ](bc-custom-content/custom_contents/index)
+- [カスタムフィールド](bc-custom-content/custom_fields/index)
+- [カスタムポスト](bc-custom-content/custom_fields/index)
+
 ## 共通API
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
 - [ファイルアップロード](baser-core/common/upload)

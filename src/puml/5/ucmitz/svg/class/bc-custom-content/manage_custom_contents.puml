@@ -1,0 +1,44 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title カスタムコンテンツ管理
+
+class Admin\CustomContentsController {
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class CustomContentsService {
+  + CustomContentsTable
+}
+
+class CustomContentsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete() ※物理削除
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+}
+
+class CustomContentsTable {
+}
+
+class CustomContent {
+  + 説明文：description
+  + フロントの記事一覧の表示件数：list_count
+  + フロントの記事一覧の表示順：list_direction	
+  + フロントに表示するウィジェットエリア：widget_area
+  + フロントで利用するコンテンツテンプレート ：template
+}
+
+Admin\CustomContentsController -down[#Black]-> CustomContentsService
+CustomContentsService -down[#Black]-> CustomContentsTable
+CustomContentsService -left[dotted,#Black]-|> CustomContentsServiceInterface
+CustomContentsTable -down[#Black]-> CustomContent
+
+@enduml

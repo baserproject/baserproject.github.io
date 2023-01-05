@@ -1,0 +1,30 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：カスタムコンテンツ
+
+package カスタムコンテンツ {
+	
+	class カスタムコンテンツ {
+		説明文
+		フロントの記事一覧の表示件数
+		フロントの記事一覧の表示順
+		フロントに表示するウィジェットエリア
+		フロントで利用するコンテンツテンプレート  
+	}
+	
+	class コンテンツ {
+		タイトル
+		URL
+		公開状態
+	}
+
+}
+
+カスタムコンテンツ "1" - "1" コンテンツ 
+カスタムコンテンツ "1" -down- "0..*" カスタムフィールド
+カスタムコンテンツ "1" -down- "0..*" カスタムポスト
+
+@enduml

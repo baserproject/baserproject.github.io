@@ -1,0 +1,63 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title カスタムポスト管理
+
+class Admin\CustomPostsController {
+  + 一覧を表示：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+	+ 複製：copy()
+	+ 公開状態に設定：publish()
+	+ 非公開状態に設定：unpublish()
+}
+
+class CustomPostsService {
+  + CustomPostsTable
+}
+
+class CustomPostsServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+	+ コピー：copy()
+	+ 公開状態かどうか確認：allowPublish()
+	+ 一括処理：batch()
+	+ 公開状態に設定：publish()
+	+ 非公開状態に設定：unpublish()
+	+ 複数のIDよりタイトルのリストを取得：getTitlesById()
+	+ コントロールソース取得：getControlSource()
+	+ ファイルアップロード設定：setupUpload()
+}
+
+class CustomPostsTable {
+}
+
+class CustomPost {
+		+ ブログコンテンツID：custom_content_id
+		+ NO：no
+		+ スラッグ：name
+		+ タイトル：title
+		+ 作成者ID：author_id
+		+ 公開状態：publish
+		+ 投稿日：posted
+		+ 公開開始日：publish_begin
+		+ 公開終了日：publish_end
+		+ サイト内検索より除外：exclude_search
+		+ アイキャッチ：eye_catch
+}
+
+Admin\CustomPostsController -down[#Black]-> CustomPostsService
+CustomPostsService -down[#Black]-> CustomPostsTable
+CustomPostsService -left[dotted,#Black]-|> CustomPostsServiceInterface
+CustomPostsTable -down[#Black]-> CustomPost
+
+
+@enduml

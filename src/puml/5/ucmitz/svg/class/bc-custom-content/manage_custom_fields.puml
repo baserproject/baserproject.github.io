@@ -1,0 +1,77 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title カスタムフィールド管理
+
+class Admin\CustomFieldsController {
+  + 一覧取得：index()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+  + 有効化：publish()
+  + 無効化：unpublish()
+  + 並び順更新：update_sort()
+}
+
+class CustomFieldsService {
+  + CustomFieldsTable
+}
+
+class CustomFieldsServiceInterface {
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + コピー：copy()
+  + 有効状態にする：publish()
+  + 無効状態にする：unpublish()
+  + 並び順を変更する：changeSort()
+}
+
+class CustomFieldsTable {
+}
+
+class CustomField {
+	+ メールコンテンツID：mail_content_id
+	+ カスタムフィールドNO：no
+	+ フィールド名：name
+	+ タイトル：field_name
+	+ フィールドタイプ：type
+	+ 項目見出し：head
+	+ 注意書き：attention
+	+ 前見出し：before_attachment
+	+ 後見出し：after_attachment
+	+ 選択リスト：source
+	+ 表示サイズ：size
+	+ 行数：rows
+	+ 最大値：maxlength
+	+ オプション：options
+	+ クラス：class
+	+ 区切り文字：separator
+	+ 初期値：default_value
+	+ 説明文：description
+	+ グループ名：group_field
+	+ グループ入力チェック：group_valid
+	+ 入力チェック：valid
+	+ 拡張入力チェック：valid_ex
+	+ 自動変換：auto_convert
+	+ 必須マーク：not_empty
+	+ 利用状態：use_field
+	+ メール送信しない：no_send
+	+ 並び順：sort
+	+ オートコンプリート：auto_complete
+}
+
+Admin\CustomFieldsController -down[#Black]-> CustomFieldsService
+CustomFieldsService -down[#Black]-> CustomFieldsTable
+CustomFieldsService -left[dotted,#Black]-|> CustomFieldsServiceInterface
+CustomFieldsTable -down[#Black]-> CustomField
+
+@enduml

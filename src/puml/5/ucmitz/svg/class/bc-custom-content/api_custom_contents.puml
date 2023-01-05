@@ -4,9 +4,9 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title ブログコンテンツAPI
+title カスタムコンテンツAPI
 
-class Api\BlogContentsController {
+class Api\CustomContentsController {
   + 一覧取得：index()
   + 単一データ取得：view()
   + リスト取得：list()
@@ -16,10 +16,10 @@ class Api\BlogContentsController {
   + コピー：copy()
 }
 
-Api\BlogContentsController -down[#Black]-> BlogContentsService
-Api\BlogContentsController -up[#Black]-|> BcApiController
+Api\CustomContentsController -down[#Black]-> CustomContentsService
+Api\CustomContentsController -up[#Black]-|> BcApiController
 
-note "以下ブログコンテンツ管理と同じ" as note
-BlogContentsService .. note
+note "以下カスタムコンテンツ管理と同じ" as note
+CustomContentsService .. note
 
 @enduml

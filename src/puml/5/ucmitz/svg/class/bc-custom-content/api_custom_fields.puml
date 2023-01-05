@@ -4,9 +4,9 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title ブログコンテンツAPI
+title カスタムフィールドAPI
 
-class Api\BlogContentsController {
+class Api\MailFieldsController {
   + 一覧取得：index()
   + 単一データ取得：view()
   + リスト取得：list()
@@ -14,12 +14,13 @@ class Api\BlogContentsController {
   + 編集：edit()
   + 削除：delete()
   + コピー：copy()
+  + 一括処理：batch()
 }
 
-Api\BlogContentsController -down[#Black]-> BlogContentsService
-Api\BlogContentsController -up[#Black]-|> BcApiController
+Api\MailFieldsController -down[#Black]-> MailFieldsService
+Api\MailFieldsController -up[#Black]-|> BcApiController
 
-note "以下ブログコンテンツ管理と同じ" as note
-BlogContentsService .. note
+note "以下カスタムフィールド管理と同じ" as note
+MailFieldsService .. note
 
 @enduml
