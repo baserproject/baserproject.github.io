@@ -7,5 +7,6 @@
 WordPressのカスタムフィールドとの違いは、フィールド定義をレコードではなく、データベーステーブルのカラムに作成するため、データベースのレコード量が少なく検索動作も高速となります。
 
 - [カスタムコンテンツ設計](./custom_contents/index)
+- [カスタムテーブル設計](./custom_tables/index)
 - [カスタムフィールド設計](./custom_fields/index)
-- [カスタムポスト設計](./custom_posts/index)
+- [カスタムエントリー設計](./custom_entries/index)

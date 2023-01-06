@@ -1,0 +1,45 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title カスタムテーブル管理
+
+class Admin\CustomTablesController {
+	+ 一覧：index()
+	+ 新規作成：add()
+  + 編集：edit()
+  + 削除：delete()
+}
+
+class CustomTablesService {
+  + CustomTablesTable
+}
+
+class CustomTablesServiceInterface {
+  + 初期データ取得：getNew()
+  + 作成：create()
+  + 編集：update()
+  + 削除：delete()
+  + 単一データ取得：get()
+  + 一覧データ取得：getIndex()
+  + リスト取得：getList()
+  + フィールド追加：addField()
+  + フィールド削除：deleteField()
+}
+
+class CustomTablesTable {
+}
+
+class CustomTable {
+  + 識別名称：name
+  + タイトル：title
+}
+
+Admin\CustomTablesController -down[#Black]-> CustomTablesService
+CustomTablesService -down[#Black]-> CustomTablesTable
+CustomTablesService -left[dotted,#Black]-|> CustomTablesServiceInterface
+CustomTablesTable -down[#Black]-> CustomTable
+
+@enduml

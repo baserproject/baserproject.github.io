@@ -4,9 +4,9 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title カスタムポスト管理
+title カスタムエントリー管理
 
-class Admin\CustomPostsController {
+class Admin\CustomEntriesController {
   + 一覧を表示：index()
   + 新規追加：add()
   + 編集：edit()
@@ -16,11 +16,11 @@ class Admin\CustomPostsController {
 	+ 非公開状態に設定：unpublish()
 }
 
-class CustomPostsService {
-  + CustomPostsTable
+class CustomEntriesService {
+  + CustomEntriesTable
 }
 
-class CustomPostsServiceInterface {
+class CustomEntriesServiceInterface {
   + 初期データ取得：getNew()
   + 作成：create()
   + 編集：update()
@@ -37,11 +37,11 @@ class CustomPostsServiceInterface {
 	+ ファイルアップロード設定：setupUpload()
 }
 
-class CustomPostsTable {
+class CustomEntriesTable {
 }
 
-class CustomPost {
-		+ ブログコンテンツID：custom_content_id
+class CustomEntry {
+		+ カスタムテーブルID：custom_content_id
 		+ NO：no
 		+ スラッグ：name
 		+ タイトル：title
@@ -54,10 +54,10 @@ class CustomPost {
 		+ アイキャッチ：eye_catch
 }
 
-Admin\CustomPostsController -down[#Black]-> CustomPostsService
-CustomPostsService -down[#Black]-> CustomPostsTable
-CustomPostsService -left[dotted,#Black]-|> CustomPostsServiceInterface
-CustomPostsTable -down[#Black]-> CustomPost
+Admin\CustomEntriesController -down[#Black]-> CustomEntriesService
+CustomEntriesService -down[#Black]-> CustomEntriesTable
+CustomEntriesService -left[dotted,#Black]-|> CustomEntriesServiceInterface
+CustomEntriesTable -down[#Black]-> CustomEntry
 
 
 @enduml

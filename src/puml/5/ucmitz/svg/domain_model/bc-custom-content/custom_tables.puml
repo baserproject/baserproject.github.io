@@ -1,0 +1,21 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ドメインモデル図：カスタムテーブル
+
+package カスタムテーブル {
+	
+	class カスタムテーブル {
+		識別名称
+		タイトル
+	}
+
+}
+
+カスタムテーブル "1" -down- "0..*" カスタムフィールドセット
+カスタムフィールドセット "0..*" -down- "1" カスタムフィールド
+カスタムテーブル "1" -down- "0..*" カスタムエントリー
+
+@enduml

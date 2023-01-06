@@ -1,0 +1,25 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title カスタムテーブルAPI
+
+class Api\CustomTablesController {
+  + 一覧取得：index()
+  + 単一データ取得：view()
+  + リスト取得：list()
+  + 新規追加：add()
+  + 編集：edit()
+  + 削除：delete()
+  + コピー：copy()
+}
+
+Api\CustomTablesController -down[#Black]-> CustomTablesService
+Api\CustomTablesController -up[#Black]-|> BcApiController
+
+note "以下カスタムテーブル管理と同じ" as note
+CustomTablesService .. note
+
+@enduml

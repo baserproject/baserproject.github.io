@@ -4,9 +4,9 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title カスタムポスト管理
+title カスタムエントリー管理
 
-class Api\CustomPostsController {
+class Api\CustomEntriesController {
   + 一覧を表示：index()
   + 単一データ表示：view()
   + 新規追加：add()
@@ -18,13 +18,13 @@ class Api\CustomPostsController {
 	+ 一括処理：batch()
 }
 
-class CustomPostsService {
-  + CustomPostsTable
+class CustomEntriesService {
+  + CustomEntriesTable
 }
 
-Api\CustomPostsController -down[#Black]-> CustomPostsService
+Api\CustomEntriesController -down[#Black]-> CustomEntriesService
 
 note "以下カスタムポスト管理と同じ" as note
-CustomPostsService .. note
+CustomEntriesService .. note
 
 @enduml

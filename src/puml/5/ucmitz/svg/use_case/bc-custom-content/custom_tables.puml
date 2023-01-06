@@ -1,0 +1,20 @@
+@startuml
+
+skinparam handwritten true
+skinparam backgroundColor white
+
+title ユースケース：カスタムテーブル
+
+actor ユーザー
+
+package カスタムテーブル {
+	left to right direction
+	ユーザー -up-> (フィールドと関連付ける)
+	ユーザー -up-> (フィールドとの関連付けを削除する)
+	ユーザー -up-> (プレビューを確認する)
+	note bottom of プレビューを確認する
+		コンテンツ管理と連携する場合
+	end note
+}
+
+@enduml
