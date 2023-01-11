@@ -19,6 +19,13 @@ jobs:
 
 また、新しいプラグインのリポジトリを [Packagist](https://packagist.org/packages/submit) に登録します。
 
+## composer の設定をマージ
+マージコマンドを使って、パッケージの設定をルートの composer.json にマージします。
+
+```shell
+vendor/bin/monorepo-builder merge
+```
+
 　
 ## VERSION.txt を更新
 `VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
@@ -45,14 +52,6 @@ git merge dev
 
 ```shell
 vendor/bin/monorepo-builder release 2.0.0
-``` 
-
-　
-## master ブランチをプッシュ
-master ブランチを push します。
-
-```shell
-git push origin master
 ```
 
 　
