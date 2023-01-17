@@ -39,34 +39,37 @@ class CustomFieldsTable {
 }
 
 class CustomField {
-	+ メールコンテンツID：mail_content_id
+	+ カスタムテーブルID：custom_table_id
 	+ カスタムフィールドNO：no
-	+ フィールド名：name
-	+ タイトル：field_name
-	+ フィールドタイプ：type
+	+ 親ID：parent_id
+	+ ツリー構造左位置：lft
+	+ ツリー構造右位置：rght
 	+ 項目見出し：head
+	+ フィールド名：name
+	+ フィールドタイプ：type
+	+ ステータス：status
+	+ 入力必須とする：required
+	+ 前見出し：before_head
+	+ 後見出し：after_head
+	+ 説明文：description
 	+ 注意書き：attention
-	+ 前見出し：before_attachment
-	+ 後見出し：after_attachment
-	+ 選択リスト：source
-	+ 表示サイズ：size
-	+ 行数：rows
-	+ 最大値：maxlength
+	+ 登録日：created
+	+ 変更日：modified
+	+ グループ入力チェック：group_valid
 	+ オプション：options
 	+ クラス：class
-	+ 区切り文字：separator
 	+ 初期値：default_value
-	+ 説明文：description
-	+ グループ名：group_field
-	+ グループ入力チェック：group_valid
-	+ 入力チェック：valid
-	+ 拡張入力チェック：valid_ex
+	+ 入力チェック：validate
+	+ 正規表現入力：regex
+	+ エラー用文言：regex_error_message
+	+ 文字数カウンターを表示する：counter
 	+ 自動変換：auto_convert
-	+ 必須マーク：not_empty
-	+ 利用状態：use_field
-	+ メール送信しない：no_send
-	+ 並び順：sort
-	+ オートコンプリート：auto_complete
+	+ プレースホルダー：placeholder
+	+ サイズ：size
+	+ テキスト行数：rows
+	+ 最大値：max_length
+	+ 選択肢：source
+	+ メタ情報：option_meta
 }
 
 Admin\CustomFieldsController -down[#Black]-> CustomFieldsService
