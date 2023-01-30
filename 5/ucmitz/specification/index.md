@@ -36,6 +36,7 @@
 - [テーマファイル管理](bc-theme-file/theme_files/index)
 - [テーマ設定](bc-theme-config/theme_configs/index)
 - [エディタテンプレート管理](bc-editor-template/editor_templates/index)
+- [カスタムコンテンツ](bc-custom-content/index)
 
 #### ブログ
 - [ブログコンテンツ管理](./bc-blog/blog_contents/index)
@@ -54,11 +55,6 @@
 - [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
 - [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
 
-#### カスタムコンテンツ
-- [カスタムコンテンツ](bc-custom-content/custom_contents/index)
-- [カスタムフィールド](bc-custom-content/custom_fields/index)
-- [カスタムポスト](bc-custom-content/custom_fields/index)
-
 ## 共通API
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
 - [ファイルアップロード](baser-core/common/upload)
@@ -66,7 +62,6 @@
 - [CKEditor連携](./baser-core/common/ckeditor)
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
 - [アクセスルール](./baser-core/common/permission)
-
 　
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
