@@ -6,6 +6,7 @@
 
 ![ユースケース図：カスタムコンテンツ](../../../svg/use_case/bc-custom-content/custom_contents.svg)
 
+　
 ## 機能
 ### フロント
 #### フロントのエントリー一覧を表示する

@@ -3,8 +3,10 @@
 カスタムエントリーを管理することができる。
 
 ## ユースケース図
+<!--
 ![ユースケース図：カスタムエントリー](../../../svg/use_case/bc-custom-field/custom_posts.svg)
-
+-->
+作成中
 　
 ## 機能
 ### カスタムエントリー一覧を表示する
@@ -59,13 +61,21 @@ URLを指定して対象となるブログの記事の詳細を表示する。
 ```
 　
 ## ドメインモデル図
+<!--
 ![ユースケース図：カスタムエントリー](../../../svg/domain_model/bc-custom-field/custom_posts.svg)
-
+-->
+作成中
 　
 ## クラス図
 ### 管理画面
+<!--
 ![ユースケース図：カスタムエントリー](../../../svg/class/bc-custom-field/manage_custom_posts.svg)
+-->
+作成中
 
 　
 ### API
+<!--
 ![ユースケース図：カスタムエントリー](../../../svg/class/bc-custom-field/api_custom_posts.svg)
+-->
+作成中
