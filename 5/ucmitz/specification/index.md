@@ -62,6 +62,8 @@
 - [CKEditor連携](./baser-core/common/ckeditor)
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
 - [アクセスルール](./baser-core/common/permission)
+- [プレフィックス認証](./baser-core/common/prefix_auth)
+- [REST API](./baser-core/common/rest_api)
 　
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
