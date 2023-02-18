@@ -12,12 +12,11 @@ body {
   line-height: 26px;
   font-family: Raleway, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-top:10px solid #BBf22b;
-  border-bottom:10px solid #BBf22b;
-  height: 100%;
   margin:0;
 }
 html {
   height: 100%;
+  border-bottom:10px solid #BBf22b;
 }
 ::-moz-selection {
     background-color: #BBf22b;
