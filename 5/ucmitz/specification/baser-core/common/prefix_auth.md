@@ -91,7 +91,7 @@ https://localhost/mypage/plugin-name/users/login
 
 　
 ## REST API
-プレフィックス認証の設定において、`type` を `Jwt` に設定すると、REST API と拡張子 .json のルーティングを自動で行います。
+プレフィックス認証の設定において、`type` を `Jwt` に設定すると、RESTful なルーティングと拡張子 .json のルーティングを自動で行います。
 
 ```shell
 https://localhost/mypage/plugin-name/users/login.json
