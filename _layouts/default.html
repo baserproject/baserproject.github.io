@@ -34,10 +34,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <p class="view">
-          <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">Githubでこのページを編集</a>
-        </p>
-
         <ul>
           <li><a href="{{ "/5/ucmitz/" | relative_url }}">ucmitz 開発への貢献方法</a></li>
         </ul>
@@ -45,6 +41,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="toc">
           {% include toc.html html=content h_min=2 %}
         </div>
+        
+        <p class="view">
+          <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">Githubでこのページを編集</a>
+        </p>
+        
       </header>
       <section>
 

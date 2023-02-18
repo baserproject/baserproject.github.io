@@ -5,12 +5,21 @@ h1 a:hover, h1 a:focus {
   font-weight: bold;
 }
 body {
-  padding: 30px;
+  padding: 0;
   color: #363637;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   line-height: 26px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Raleway, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-top:10px solid #BBf22b;
+  border-bottom:10px solid #BBf22b;
+  margin:0;
+}
+::-moz-selection {
+    background-color: #BBf22b;
+}
+::selection {
+    background-color: #BBf22b;
 }
 .wrapper {
   width: 1160px;
@@ -22,6 +31,7 @@ header {
   position: fixed;
   overflow: auto;
   height: 90%;
+  padding:30px 30px 0 30px;
 }
 header h1 a {
   background: url(../img/logo.svg) no-repeat;
@@ -29,6 +39,16 @@ header h1 a {
   padding-left: 50px;
   font-size: 18px;
   display: block;
+  color:#363637;
+}
+header li {
+  list-style-type: none;
+  margin:5px 0;
+  line-height: 1.5em;
+  font-size:13px;
+}
+header a {
+  color:#363637;
 }
 ul {
   padding: 0 0 0 20px;
@@ -49,13 +69,13 @@ ul {
   display: block;
 }
 .toc a:hover {
-  background: #fcfcfc;
+  font-weight: bold;
 }
 .toc-current {
-  background: #f3f3f3;
+  font-weight: bold;
 }
 .toc a.toc-current:hover {
-  background: #f3f3f3;
+  font-weight: bold;
 }
 
 /* section */
@@ -63,7 +83,7 @@ section {
   font-size: 15px;
   width: auto;
   max-width: 860px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Raleway, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0.02em;
   margin-left: 300px;
@@ -71,6 +91,10 @@ section {
 }
 .crumbs {
   margin-bottom: 20px;
+  font-size:13px;
+}
+section {
+  padding:20px 30px;
 }
 section h1 {
   margin-bottom: 40px;
@@ -117,8 +141,9 @@ p > code, li > code {
   font-family: "Roboto Mono", "Consolas", "Monaco", monospace;
   line-height: normal;
   padding: 0 2px;
-  letter-spacing: 0;
   color: #363637;
+  letter-spacing: 0.02em;
+  font-size:0.9em;
 }
 pre {
   line-height: 140%;
@@ -135,6 +160,12 @@ pre code{
 pre code span {
   font-weight: normal!important;
 }
+header p.view a {
+  display: block;
+  padding:15px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
 
 @media print, screen and (max-width: 1150px) {
   header, section, footer {
@@ -147,9 +178,6 @@ pre code span {
   section {
     width: auto;
     margin: 0;
-  }
-  header {
-    padding: 0;
   }
   header h1 a {
     background-size: 20px;

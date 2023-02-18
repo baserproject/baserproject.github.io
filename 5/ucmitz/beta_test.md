@@ -1,14 +1,17 @@
 # baserCMS５ベータテスト
 
-baserCMS５のベータテストにご協力頂ける方は、こちらのドキュメントを参考にしてください。
+baserCMS５のベータテストにご興味を持って頂きありがとうございます。  
+ご協力頂ける方は、こちらのドキュメントを参考にしてください。
+
+なお、このドキュメントからリンクされているページにおける「ucmitz」というのは baserCMS５の開発コードネームです。「baserCMS」に読み替えてください。
 
 　
 ## ベータテストの期間
 
-2023年3月15日〜4月14日  
+**2023年3月15日〜4月14日**  
 
-ベータテスト期間前は、バグがまだまだ多く可能性が高くテストにならない場合があります。  
-ベータテスト期間内のテストをおすすめします。
+ベータテスト期間前は、バグがまだまだ多い可能性が高く、テストにならない場合があります。  
+ベータテストへの参加は、期間内をおすすめします。
 
 　
 ## ベータテスト流れ
@@ -25,9 +28,9 @@ baserCMS５のベータテストにご協力頂ける方は、こちらのドキ
 
 次のいづれかの方法でパッケージを取得します。
 
-- GitHubより `git clone` する
-- GitHubより zip ダウンロードする
-- CakePHPのプロジェクトより composer で取得する
+- [GitHub](https://github.com/baserproject/ucmitz) より `git clone` する
+- [GitHub](https://github.com/baserproject/ucmitz) より zip ダウンロードする
+- [CakePHPのプロジェクトより composer で取得する](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%82%92CakePHP4%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
 
 　
 ## 環境を構築する
@@ -42,12 +45,12 @@ baserCMS５のベータテストにご協力頂ける方は、こちらのドキ
 
 ### Docker で環境構築
 
-開発環境の構築 を参考にしてください。
+[開発環境の構築](http://172.16.0.11:3000/5/ucmitz/preparation/environment) を参考にしてください。
 
 　
 ## 動かしてみる
 
-機能要件一覧を参考に実際にブラウザで動かしてテストを行います。
+[機能要件一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=0) を参考に、実際にブラウザで動かしてテストを行います。
 
 ### テスト例
 - インストーラーを実行してインストールする（[baserCMS５インストール手順](./preparation/installer) を参考）
@@ -64,8 +67,8 @@ baserCMS５のベータテストにご協力頂ける方は、こちらのドキ
 
 不具合や要望がありましたら、GitHubか、ユーザーズフォーラムで報告をお願いします。  
 
-- GitHub Issue
-- ユーザーズフォーラム baserCMS５ベータテスト報告
+- [GitHub Issue](https://github.com/baserproject/ucmitz/issues)
+- [ユーザーズフォーラム baserCMS５ベータテスト報告](https://forum.basercms.net/c/basercms5-beta-test/16)
 
 あなたがエンジニアであれば、ぜひ、プルリクエストを送ってください。
 
