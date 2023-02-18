@@ -14,10 +14,6 @@ body {
   border-top:10px solid #BBf22b;
   margin:0;
 }
-html {
-  height: 100%;
-  border-bottom:10px solid #BBf22b;
-}
 ::-moz-selection {
     background-color: #BBf22b;
 }
