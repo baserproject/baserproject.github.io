@@ -95,11 +95,11 @@ class PagesFrontService
     public function setupPreviewForView(Controller $controller)
     {
         $request = $controller->getRequest();
-        $content = $request->getAttributes('currentContent');
+        $content = $request->getAttribute('currentContent');
         // DBのデータを取得
         $page = $this->get($content->entity_id);
         // POSTデータによって書き換える
-        $page = $this->Pages->patchEntity($page, $request->getData);
+        $page = $this->Pages->patchEntity($page, $request->getData());
         // Viewにセット
         $controller->set([
             'page' => $page
