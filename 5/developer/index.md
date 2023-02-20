@@ -2,4 +2,3 @@
 
 準備中
 
-{% include list.html %}
