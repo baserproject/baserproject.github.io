@@ -12,7 +12,7 @@ baserCMS５の新機能のIssue
 ### ucmitz ML検討中
 上記に当てはまらず、マイルストーンが決定していないIssue
 
-　
+ 
 ## Issueの作成
 GitHub Projects で Issueを作成すると、どのレポジトリにも紐付いていない、「draft」という状態になります。この時点では、プルリクエストとは紐付ける事ができません。
 
@@ -43,7 +43,7 @@ GitHub Projects で Issueを作成すると、どのレポジトリにも紐付�
 
 ![](./img/github_projects_05.png)
 
-　
+ 
 ## ucmitz3-API & UnitTest
 このプロジェクトでは、主に、新しく作成したメソッドや、既存メソッドで動作確認済（@checked）、残作業なし（@noTodo）となっているもののユニットテストの Issue を管理します。
 

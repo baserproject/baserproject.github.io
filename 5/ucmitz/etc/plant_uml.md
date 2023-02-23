@@ -10,7 +10,7 @@ ucmitz の開発では、クラス図、ユースケース図、ドメインモ�
 ↓
 /5/ucmitz/svg/use_case/sample.svg
 ```
-　
+ 
 ## 環境構築方法
 
 ### 1. Javaをインストール
@@ -30,7 +30,7 @@ sudo ln -s /opt/homebrew/bin/dot /usr/local/bin/dot
 npm install
 ```
 
-　
+ 
 ## gulp での監視方法
 
 ドキュメントルートに移動して gulp コマンドを実行します。

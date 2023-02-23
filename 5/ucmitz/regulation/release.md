@@ -26,7 +26,7 @@ jobs:
 vendor/bin/monorepo-builder merge
 ```
 
-　
+ 
 ## VERSION.txt を更新
 `VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
 その後、コミットしてプッシュします。
@@ -36,7 +36,7 @@ git commit -a -m "ucmitz-2.0.0 をリリース"
 git push origin dev
 ```
 
-　
+ 
 ## master ブランチにマージ
 `dev` ブランチを `master` ブランチにマージします。
 
@@ -45,7 +45,7 @@ git checkout master
 git merge dev
 ```
 
-　
+ 
 ## リリースコマンドを実行
 モノレポのリリースコマンドを実行します。  
 自動的にタグを作成しプッシュします。
@@ -54,7 +54,7 @@ git merge dev
 vendor/bin/monorepo-builder release 2.0.0
 ```
 
-　
+ 
 ## dev ブランチにマージ
 master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
@@ -63,7 +63,7 @@ git merge master
 git push origin dev
 ```
 
-　
+ 
 ## リリース記事を作成
 GitHubにて [新しいリリース記事](https://github.com/baserproject/ucmitz/releases/new) を作成します。
 

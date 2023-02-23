@@ -5,7 +5,7 @@
 ## ユースケース図
 ![ユースケース図：メールフィールド](../../../svg/use_case/bc-mail/mail_fields.svg)
 
-　
+ 
 ## 管理機能
 ### 一覧
 メールフィールドを一覧で表示する。ページネーションは実装しない。
@@ -45,11 +45,11 @@ CakePHP側にてハードコーディングで項目を結合してしまう処�
 
 ### rows フィールド を text_rows に変更
 separator と同様の理由でリネーム。
-　
+ 
 ## ドメインモデル図
 ![ユースケース図：メールフィールド](../../../svg/domain_model/bc-mail/mail_fields.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：メールフィールド](../../../svg/class/bc-mail/manage_mail_fields.svg)

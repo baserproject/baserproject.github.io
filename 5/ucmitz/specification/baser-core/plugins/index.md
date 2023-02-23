@@ -5,7 +5,7 @@
 ## ユースケース図
 ![クラス図：プラグイン管理画面](../../../svg/use_case/baser-core/plugins.svg)
 
-　
+ 
 ## 機能
 
 一覧、新規登録、インストール、無効化、有効化、削除などの機能を提供する。
@@ -88,12 +88,12 @@ $users->save($user);
 ### baserマーケット
 baserマーケットのプラグインを表示する。
 
-　
+ 
 ## ドメインモデル図
 ### プラグイン管理
 ![クラス図：プラグイン管理画面](../../../svg/domain_model/baser-core/plugins.svg)
 
-　
+ 
 ## クラス図
 ### プラグイン管理
 ![クラス図：プラグイン管理画面](../../../svg/class/baser-core/manage_plugins.svg)

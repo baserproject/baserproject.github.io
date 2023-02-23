@@ -62,7 +62,7 @@ group に所属する場合は、入れ子で表示する。
 ## ドメインモデル図
 ![ユースケース図：カスタムテーブル](../../../svg/domain_model/bc-custom-content/custom_tables.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：カスタムテーブル](../../../svg/class/bc-custom-content/manage_custom_tables.svg)

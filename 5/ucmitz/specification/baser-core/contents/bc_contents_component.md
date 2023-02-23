@@ -4,7 +4,7 @@
 
 4系ではBcContentsComponentだったクラスを<b>管理画面用(BcAdminContentsComponent)</b>と<b>フロント画面用(BcFrontContentsComponent)</b>に分離している
 
-　
+ 
 ## BcAdminContentsComponent
 
 Admin/ContentFoldersController.php・Admin/ContentsController.phpなどの管理画面で使用
@@ -24,7 +24,7 @@ Admin/ContentFoldersController.php・Admin/ContentsController.phpなどの管理
 
 ![シーケンス図：コンテンツフォルダ編集](../../../svg/sequence/baser-core/bc_admin_contents_component.svg)
 
-　
+ 
 ## BcFrontContentsComponent
 
 Controller/PagesController.phpやController/ContentFoldersController.phpなどフロント画面で使用

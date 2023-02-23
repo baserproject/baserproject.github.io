@@ -4,8 +4,6 @@
 
 開発に貢献頂ける場合は、`dev` ブランチを利用してください。
 
-　
-
 ## 開発方針とロードマップの確認
 
 開発に貢献する前に、開発方針とロードマップを必ず確認しましょう。ucmitz は、メジャーバージョンを３回刻んだ後、baserCMS５としてリリースされます。  
@@ -15,7 +13,6 @@
 - [システム要件](./basic/system)
 - [アーキテクチャー設計方針](./basic/architecture_design_policy)
 - [設計書](./specification/index)
-　
 
 ## 開発の準備
 
@@ -28,9 +25,7 @@
 - [トラブルシューティング](./etc/troubleshooting)
 - [Docker環境の管理](./etc/docker)
 
-　
 ## 開発にとりかかる
-
 ### 開発の手順と移行上のルール
 
 実際の開発については、開発の手順に従って開発します。  
@@ -43,9 +38,7 @@
 - [未実装のユニットテストに貢献する](./test/unimplemented_unittest)
 - [リリース手順](./regulation/release)
 
-　　
 ### 開発上の注意点
-
 baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあたり、様々な変更点や注意点があります。
 
 - [ルーティングにおける注意点](./development/migration/routing)
@@ -59,9 +52,7 @@ baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあ�
 - [プラグインにおける注意点](./development/migration/database)
 - [セキュリティコンポーネントにおける注意点](./development/migration/security)
 
-　
 ### テーマの開発
-
 ucmitz の管理画面テーマやフロントの開発では、sass や Webpack を利用します。詳細については次を確認してください。
 
 - [BcAdminThird（管理画面テーマ）の開発](./development/frontend/bc-admin-third)
@@ -69,9 +60,7 @@ ucmitz の管理画面テーマやフロントの開発では、sass や Webpack
 - [CSSの作成について](./development/frontend/css)
 - [Javascriptの作成について](./development/frontend/javascript)
 
-　
 ### ユニットテスト
-
 ucmitz の開発では、ユニットテストのカバレッジ100%を目指します。ユニットメソッドの作成方法と実行方法については次を確認してください。
 
 - [ユニットテスト](./test/unittest)
@@ -80,22 +69,17 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 - [テストカバレッジ](./test/coverage)
 - [GitHubActions](./test/github_actions)
 
-　
 ### Issueの管理
 - [GitHub Projects の利用方法](./etc/github_projects)
 
-　
 ### 全体的な変更点と既知の問題点
-
 開発における全体的な変更点や既知の問題点については次を確認してください。
 
 - [全体的な変更点](./development/changed)
 - [既知の問題点](./development/problem)
 - [トラブルシューティング](./etc/troubleshooting)
 
-　
 ## 開発の進捗管理と新しい課題や機能の定義
-
 開発の進捗管理については、機能要件一覧と、Issue、そして、各ファイルや各メソッドのコメントにおけるアノテーションによって管理しています。[コード移行時のマーキング](./regulation/migration_rule#コード移行時のマーキング) を参考に必ずマーキングをお願いします。  
 
 また、実装における新たな課題（タスクやバグなど）を見つけた場合は、Issue にマイルストーンを設定した上で登録します。  
@@ -106,9 +90,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 - [Issue](https://github.com/baserproject/ucmitz/issues)
 - [ucmitz進行管理](https://docs.google.com/spreadsheets/d/1EGxMk-dy8WIg2NmgOKsS_fBXqDB6oJky9M0mB7TADEk/edit#gid=938641024)
 
-　
 ## ドキュメントの追加・更新
-
 開発ドキュメントは、GitHub.io を利用いています。
 開発中に発生した開発に必要なドキュメントを追加・更新する場合は、[ドキュメント作成ガイドライン](./gudeline) をお読みください。
 
@@ -116,9 +98,7 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 
 できるだけ情報を拡充させて開発を楽にしてきましょう。
 
-　
 ## プロジェクトで ucmitz を利用する
-
 ucmitz は、現在、CMSとしての機能はありませんが、Webアプリケーション開発プラットフォームとして利用でき、ログイン認証付きのリッチな管理画面を簡単に作成することができます。
 
 自身のプロジェクトで ucmitz を利用する場合は、composer で簡単にインストールできますので、詳細については次のドキュメントを参照してください。
@@ -127,9 +107,8 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 - [ucmitzを利用して管理画面を作る](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%82%92%E4%BD%9C%E3%82%8B)
 - [ucmitzのプラグインを開発する](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B)
 - [ucmitzの REST API を利用する](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE-REST-API-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
-　　
-## その他のドキュメント
 
+## その他のドキュメント
 - [PlantUMLの利用方法](./etc/plant_uml)
 - [サブフォルダに設置する](./etc/subfolder)
 - [Cloud9 上で ucmitz を動作させる](./etc/cloud9)

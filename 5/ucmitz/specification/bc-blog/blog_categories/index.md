@@ -5,7 +5,7 @@
 ## ユースケース図
 ![ユースケース図：ブログカテゴリ](../../../svg/use_case/bc-blog/blog_categories.svg)
 
-　
+ 
 ## 機能
 ### カテゴリ一覧を表示する
 管理画面にてカテゴリの一覧を表示する。  
@@ -33,16 +33,16 @@ URLを指定して対象となるカテゴリに所属する記事の一覧を�
 /news/archives/category/topcs
 ```
 
-　
+ 
 ## ucmitzにおける仕様変更
 ### 隠しフィールドの owner_id を削除
 案件固有の仕様だったため削除
 
-　
+ 
 ## ドメインモデル図
 ![ユースケース図：ブログカテゴリ](../../../svg/domain_model/bc-blog/blog_categories.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：ブログカテゴリ](../../../svg/class/bc-blog/manage_blog_categories.svg)

@@ -3,7 +3,7 @@
 baserCMS４で利用しているCakePHP2 を CakePHP4 に移行するための方針です。  
 メンテナンス性の高いコードを実現するためにもご協力お願いします。
 
-　
+ 
 ## 共通
 
 ### File / Folder の取り扱い
@@ -35,7 +35,7 @@ $site = $this->getRequest()->getAttributes('currentSite');
 ```
 `BcContentsRoute` で確定し、`BcFrontMiddleware` で設定しています。
 
-　
+ 
 ## コントローラー
 ### プレフィックスと配置
 - **フロントエンド**：フロントエンド用のコントローラーは、プレフィックスなしを前提として、Controller フォルダ直下に配置します。
@@ -149,7 +149,7 @@ try {
 ```
 
 
-　
+ 
 ## モデル
 ### サービスへの移行
 CakePHP2系のモデルはテーブルへと移行となりますが、ファットモデルを防ぐため、
@@ -164,7 +164,7 @@ CakePHP2系のモデルはテーブルへと移行となりますが、ファッ
 
 [そのほか、モデルにおける注意点はこちら](development/migration/model)
 
-　
+ 
 ## サービス
 ### テスタブルなコードにする
 クラスには、テーブル以外のデータ（プロパティ）を持たせず、各メソッドについて簡潔な処理となるようにします。
@@ -196,7 +196,7 @@ class Sample {
 }
 ```
 
-　
+ 
 ## ビュー
 ### テンプレートの配置
 コアプラグインについては、各プラグインではテンプレートは保有せず、全てテーマ内に配置します。
@@ -300,11 +300,11 @@ UsersFrontHelper
 
 [そのほか、ビューにおける注意点はこちら](development/migration/view)
 
-　
+ 
 ## ヘルパ
 [ヘルパーにおける注意点](../development/migration/helper) を参照してください。
 
-　
+ 
 ## Web API
 
 Web API を実装するコントローラーは、認証有無に関わらず、`Api` ディレクトリ配下に配置し、`BcApiController` を継承します。
@@ -406,43 +406,43 @@ baserCMS５は、初期状態で、RESTful なURLを自動生成する仕組み�
 |  PUT  |  /baser/api/baser-core/pages/123.json  |  PagesController::edit(123)  |
 |  DELETE  |  /baser/api/baser-core/pages/123.json  |  PagesController::delete(123)  |
 
-　
+ 
 ## ルーティング
 [ルーティングにおける注意点](../development/migration/routing) を参照してください。
 
-　
+ 
 ## リクエスト関連
 [リクエスト関連における注意点](../development/migration/request) を参照してください。
 
-　
+ 
 ## セッション関連
 [セッション関連における注意点](../development/migration/session) を参照してください。
 
-　
+ 
 ## データベース
 [データベースにおける注意点](../development/migration/database) を参照してください。
 
-　
+ 
 ## プラグイン
 [プラグインにおける注意点](../development/migration/database) を参照してください。
 
-　
+ 
 ## セキュリティコンポーネント
 [セキュリティコンポーネントにおける注意点](../development/migration/security) を参照してください。
 
-　　
+　 
 ## Javascript
 ### 外部ファイル化
 全ての Javascript は、画面ごとに外部ファイル化し、webpack で圧縮します。  
 [Javascriptの作成](../development/frontend/javascript) についてを参照してください。
 
-　
+ 
 ## CSS
 ### 外部ファイル化
 全ての CSS は、画面ごとに外部ファイル化し、sass で作成してコンパイルします。  
 [CSSの作成](../development/frontend/css)についてを参照してください。
 
-　
+ 
 ## ユニットテスト
 
 ### 既存のテストが存在する場合

@@ -20,13 +20,13 @@ $this->BcForm->input()
 $this->BcAdminForm->control()
 ```
 
-　
+ 
 ## タイトルの設定
 ```php
 $this->BcAdmin->setTitle($title);
 ```
 
-　
+ 
 ## 検索フォームの設定
 ```php
 $this->BcAdmin->setSearch($templateName);
@@ -34,13 +34,13 @@ $this->BcAdmin->setSearch($templateName);
 
 なお、baserCMS4では、検索処理について POST でデータを渡していましたが、検索状態をURLで共有できるようにするため、GET で渡すように処理を変更します。
 
-　
+ 
 ## ヘルプの設定
 ```php
 $this->BcAdmin->setHelp($templateName);
 ```
 
-　
+ 
 ## BcTime::format() の引数の順番変更
 
 ```php
@@ -64,7 +64,7 @@ https://unicode-org.github.io/icu/userguide/format_parse/datetime/#datetime-form
 \$modelName\['ModelName'\]\['(.+?)'\]　→　\$modelName->$1
 ```
 
-　
+ 
 ## リンク作成関連
 
 ### 名前付きパラメータ
@@ -78,12 +78,12 @@ $this->BcBaser->link('hoge', ['controller' => 'Users', 'action' => 'index', 'nam
 $this->BcBaser->link('hoge', ['controller' => 'Users', 'action' => 'index', '?' => ['name1' => 1, 'named2' => 2]]);
 ```
 
-　
+ 
 ## HTML
 
 - table タグの `cellpadding="0" cellspacing="0"` は除外します。
 
-　
+ 
 ## テーマの定義について
 現在、テーマの定義は、次のメソッドにて行っています。
 ```php

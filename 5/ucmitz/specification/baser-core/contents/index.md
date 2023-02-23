@@ -6,7 +6,7 @@
 
 ## 前提条件
 - コンテンツフォルダの操作は管理者しかできない。
-　
+ 
 ## 機能
 
 ### ツリー形式で一覧を表示
@@ -108,17 +108,17 @@
 ### ゴミ箱を空にする
 削除したコンテンツを全て完全に削除する。
 
-　
+ 
 ## ドメインモデル図
 ### コンテンツ管理
 ![ドメインモデル図：コンテンツ管理](../../../svg/domain_model/baser-core/contents.svg)
 
-　
+ 
 ## シーケンス図
 ### コンテンツフォルダ編集
 ![シーケンス図：コンテンツフォルダ編集](../../../svg/sequence/baser-core/contents_edit.svg)
 
-　
+ 
 ## クラス図
 ### コンテンツ管理
 ![クラス図：コンテンツ管理](../../../svg/class/baser-core/manage_contents.svg)
@@ -135,7 +135,7 @@
 ### コンテンツフォルダ管理API
 ![クラス図：コンテンツフォルダAPI](../../../svg/class/baser-core/api_content_folders.svg)
 
-　
+ 
 ## 特性
 - [コンテンツマネージャーAPI](./contents_manager_api.md)
 - [論理削除機能](./soft_delete)

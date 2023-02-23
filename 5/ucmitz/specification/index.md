@@ -1,11 +1,9 @@
 # ucmitz 設計書
 
 ## 基本設計
-
 - [データベース設計](./db)
 - [共通クラス図](baser-core/common/index.md)
 
-　
 ## 管理機能
 
 ### コア
@@ -65,6 +63,9 @@
 - [プレフィックス認証](./baser-core/common/prefix_auth)
 - [REST API](./baser-core/common/rest_api)
 - [イベント](./baser-core/common/event)
-　
+
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
+
+## その他
+- [コアプラグインの開発](baser-core/common/core_plugin)

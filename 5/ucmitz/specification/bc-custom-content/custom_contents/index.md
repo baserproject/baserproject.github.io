@@ -6,7 +6,7 @@
 
 ![ユースケース図：カスタムコンテンツ](../../../svg/use_case/bc-custom-content/custom_contents.svg)
 
-　
+ 
 ## 機能
 ### フロント
 #### フロントのエントリー一覧を表示する
@@ -44,11 +44,11 @@
 #### 削除
 コンテンツを削除する。削除の際、関連するテーブルとの関連付けだけを削除し、エントリー等全てのデータは残す仕様とする。
 
-　
+ 
 ## ドメインモデル図
 ![ユースケース図：カスタムコンテンツ](../../../svg/domain_model/bc-custom-content/custom_contents.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：カスタムコンテンツ](../../../svg/class/bc-custom-content/manage_custom_contents.svg)

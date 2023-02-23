@@ -10,7 +10,7 @@ public $subMenuElements = ['site_configs', 'sites'];
 $this->subMenuElements = ['plugins'];
 ```
 
-　
+ 
 ## 管理画面のパンくずの設定
  
 管理画面のパンくずは廃止となりました。コントローラーの下記のようなコードは削除します。
@@ -26,7 +26,7 @@ public function beforeFilter()
 }
 ```
 
-　
+ 
 ## POST送信判定の変更
 ```php
 // baserCMS4
@@ -35,7 +35,7 @@ if ($this->request->data) {}
 if ($this->request->is('post')) {}
 ```
 
-　
+ 
 ## フォームの初期値設定
 baserCMS4 では、`$this->request->data` にセットしていましたが、エンティティによるセットに変更となりました。
 サービスクラスに `getNew()` メソッドを作成しそこで初期値を生成し、Adminサービスクラスにより一括設定を行います。
@@ -74,7 +74,7 @@ class SitesController extends BcAdminAppController
     }
 }
 ``` 
-　
+ 
 ## 検索フォームの設定
 ```php
 // baserCMS4
@@ -85,7 +85,7 @@ $this->BcAdmin->setSearch($templateName); // テンプレート
 ```
 テンプレートのヘッダーでの定義を推奨しています。
 
-　
+ 
 ## ヘルプの設定
 ```php
 // baserCMS4
@@ -96,7 +96,7 @@ $this->BcAdmin->setHelp($templateName); // テンプレート
 ```
 テンプレートのヘッダーでの定義を推奨しています。
 
-　
+ 
 ## タイトルの設定
 ```php
 // baserCMS4
@@ -107,7 +107,7 @@ $this->BcAdmin->setTitle($templateName); // テンプレート
 ```
 テンプレートのヘッダーでの定義を推奨しています。
 
-　
+ 
 ## Ajaxの処理について
 
 管理画面から呼び出す Ajax のアクションについて、返却値を JSON化できるものは、Api 用のコントローラーに移行し、そちらを呼び出すようにします。

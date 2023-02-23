@@ -16,7 +16,7 @@
  * @license       http://basercms.net/license/index.html MIT License
  */
 ```
-　
+ 
 ## クラスヘッダー
 
 クラスの先頭にはクラスヘッダーをつけます。
@@ -28,7 +28,7 @@
 class SitesController extends BcAdminAppController {}
 ```
 
-　
+ 
 ## メソッドヘッダー
 
 メソッドの先頭にはメソッドヘッダーをつけます。
@@ -46,17 +46,17 @@ class SitesController extends BcAdminAppController {}
 public function index(SiteManageServiceInterface $siteManage){}
 ```
 
-　
+ 
 ## メソッド間
 
 メソッドとメソッドの間では１行の空行を入れます。
 
-　
+ 
 ## メソッド名
 
 ロウワーキャメルケースとします。  
 
-　
+ 
 ## プロパティ名と変数名
 
 オブジェクトのプロパティ名のみ、アッパーキャメルケースとし、その他の変数は全てロウワーキャメルケースとします。  
