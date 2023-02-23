@@ -45,7 +45,7 @@ baserCMS５のベータテストにご興味を持って頂きありがとうご
 
 ### Docker で環境構築
 
-[開発環境の構築](http://172.16.0.11:3000/5/ucmitz/preparation/environment) を参考にしてください。
+[開発環境の構築](./preparation/environment) を参考にしてください。
 
 　
 ## 動かしてみる
