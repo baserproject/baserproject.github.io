@@ -64,6 +64,7 @@
 - [アクセスルール](./baser-core/common/permission)
 - [プレフィックス認証](./baser-core/common/prefix_auth)
 - [REST API](./baser-core/common/rest_api)
+- [イベント](./baser-core/common/event)
 　
 ## プラグインAPI
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
