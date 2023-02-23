@@ -23,11 +23,11 @@ CKEditorで利用するためのエディターテンプレートを管理する
 CKEditorで利用するテンプレート用の設定をJSで呼び出す。
 
 　
-　
+ 
 ## ドメインモデル図
 ![ユースケース図：エディターテンプレート](../../../svg/domain_model/bc-editor-template/editor_templates.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：エディターテンプレート](../../../svg/class/bc-editor-template/manage_editor_templates.svg)

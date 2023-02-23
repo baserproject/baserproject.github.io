@@ -3,7 +3,7 @@
 ucmitz では、[CakePHPのテストの仕組み](https://book.cakephp.org/4/ja/development/testing.html) を使用してユニットテストを作成します。  
 ユニットテストを実行する際はユニットテスト用のセキュリティトークンを有効にするため[DEBUGモードを有効](https://book.cakephp.org/4/ja/development/testing.html#id3)にして実行する必要があります。
 
-　
+ 
 ## テストの前提条件
 ### スキーマ
 フィクスチャファクトリー導入により、テスト開始時にプラグインも含めて全てのスキーマを生成する。  
@@ -15,7 +15,7 @@ ucmitz では、[CakePHPのテストの仕組み](https://book.cakephp.org/4/ja/
 フィクスチャマネージャーによるデータ生成もまだ存在するが、フィクスチャーファクトリーに全て移行予定。  
 BaserCore以外の各プラグインのテストにおけるプラグインの有効化状態は、シナリオなどを用いて独自実装する。（pluginsテーブルでの有効化状態）
 
-　
+ 
 ## テストの準備
 
 事前にコンテナにログインし Composer で、PHPUnit などをインストールしておく必要があります。
@@ -24,7 +24,7 @@ BaserCore以外の各プラグインのテストにおけるプラグインの�
 composer install
 ```
 
-　
+ 
 ## テストの作成
 
 ### テストの配置先
@@ -66,7 +66,7 @@ class BcTestHelperTest extends BaserCore\TestSuite\BcTestCase {
 プライベートメソッドに対するテストはパブリックメソッド経由で行うものとします。
 ただ、パブリックメソッドで担保できない場合はプライベートメソッドのテストを書くことを推奨します。
 
-　
+ 
 ## テストの実行
 
 テストを実行するには、事前にコンテナにログインし次のコマンドを実行します。
@@ -93,7 +93,7 @@ vendor/bin/phpunit plugins/baser-core/tests/TestCase/Model/Table/ArticlesTableTe
 vendor/bin/phpunit plugins/baser-core/tests/TestCase/Model/Table/ArticlesTableTest.php --filter '/::testSave\b/'
 ```
 
-　
+ 
 ## データプロバイダーを利用する
 値を切り替えてテストを実行する場合は、 `@dataProvider` アノテーションを利用してデータプロバイダーを定義します。
 
@@ -106,12 +106,12 @@ public function {テスト対象のメソッド名}DataProvider()
 }
 ```
 ※ テスト対象のメソッド名には、`test` は含めません。
-　
+ 
 ## 新しいプラグインのテストを追加する
 
 `/phpunit.xml.dist` ファイルに、新しいプラグインの `<testsuite>` セクションを追加することでプラグインのテストを一緒に実行することができます。
 
-　
+ 
 ## フィクスチャを利用する
 
 `fixtures` プロパティを定義することでフィクスチャを利用することができます。
@@ -156,7 +156,7 @@ class UsersTableTest extends TestCase
 
 ```
 
-　
+ 
 ## 新しいプラグインのフィクスチャを利用する
 
 フィクスチャを利用する場合、`tests/bootstrap.php` にて、マイグレーションの実行が必要となります。  
@@ -170,7 +170,7 @@ class UsersTableTest extends TestCase
 ]);
 ```
 
-　
+ 
 ## 新しいプラグインのサービスプロバイダーを定義する
 
 テストで、DIコンテナを利用して、新しいプラグインのサービスを呼び出す場合、サービスプロバイダの定義が必要です。

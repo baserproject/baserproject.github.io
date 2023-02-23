@@ -9,7 +9,7 @@ Dockerfileを変更して再ビルドしてもローカルのイメージだけ�
 また、DockerHubは、2021年6月より、GitHub連携や、チーム連携を行う機能が有料化されており、baserproject では、まだ有料プランに加入していないため利用できません。  
 そのため、Dockerfile に変更を加えてDockerHubに共有したい場合は、プロダクトマネージャーに依頼する必要があります。
 
-　
+ 
 ## Dockerイメージのビルド
 
 ### （１）Dockerfileに変更を加える
@@ -26,12 +26,12 @@ docker build -t baserproject/basercms:5-php7.4 -f dockerfile/Dockerfile-php7.4 .
 docker-compose up -d --force-recreate
 ```
 
-　
+ 
 ## 新しいDockerイメージの共有依頼
 Dockerfile の変更を GitHub にコミット後、[baserCMSのSlack](https://app.slack.com/client/T03CAUKTJ/C03CAUKTU) で、プロダクトマネージャーにDMで連絡してください。  
 （現在のプロダクトマネージャーは `ryuring` です。）
 
-　
+ 
 ## DockerHubへの反映手順
 こちらの手順はプロダクトマネージャー向けです。
 

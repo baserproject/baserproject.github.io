@@ -20,7 +20,7 @@ CakePHP4.3 より、これまでのフィクスチャマネージャーが非推
         ];    
 ```
 
-　
+ 
 ## 新しいフィクスチャ
 
 ### フィクスチャファイル
@@ -90,7 +90,7 @@ class InitAppScenario implements FixtureScenarioInterface
 }
 ```
 
-　
+ 
 ## フィクスチャファクトリの利用方法
 `make()` メソッドで、データを作り、`persist()` で永続化（DBへ保存）します。
 
@@ -101,7 +101,7 @@ UserFactory::make(['status' => true], 5)->persist();
 UserFactory::make(100)->suspended()->persist();
 ```
 
-　
+ 
 ## フィクスチャシナリオの利用方法
 `loadFixtureScenario` メソッドを利用して、クラスを読み込む事で実行します。  
 なお、`ScenarioAwareTrait` の実装が必要です。
@@ -113,7 +113,7 @@ $this->loadFixtureScenario(SuspendedUsersScenario::class, 50);
 $this->loadFixtureScenario(InitAppScenario::class);
 ```
 
-　
+ 
 ## データの初期化について
 テストの実行後にデータの初期化を行うには、`$fixtures` の定義が必要です。  
 `$fixtures` に定義されているテーブルが初期化対象となるためです。
@@ -146,7 +146,7 @@ phpMyAdmin などのツールからデータの保存を確認するという事
 
 確認したい場合は、`setFixtureTruncate()` メソッドで、truncate に切り替えてからテストを実行してください。
 
-　
+ 
 ## SAVEPOINT LEVEL1 does not exist が発生した時の対応方法
 DBトランザクションを利用しているメソッドのテストを行う場合に「SAVEPOINT LEVEL1 does not exist」というエラーが発生する事があります。  
 

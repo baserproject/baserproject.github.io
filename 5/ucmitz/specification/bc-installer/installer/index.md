@@ -6,7 +6,7 @@ baserCMSのセットアップとして、サーバー環境のチェック、DB�
 
 ![ユースケース図：固定ページ管理](../../../svg/use_case/baser-core/installer.svg)
 
-　
+ 
 ## 機能
 ### ブラウザインストール
 #### composer でライブラリのインストール
@@ -77,7 +77,7 @@ Migration を利用してデータベースにテーブルを作成する。
 - 固定ページの作成処理は不要
 - install.php にデータベース定義を書き出し、database.php は廃止とする
 
-　
+ 
 ## クラス図
 ### インストーラー
 ![クラス図：インストーラー](../../../svg/class/bc-installer/installer.svg)

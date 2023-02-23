@@ -2,7 +2,7 @@
 
 コンテンツフォルダーなどのモデルをコンテンツのモデルとして紐付け使用するため `BcContentsBehavior` を利用します。
 
-　
+ 
 ## ucmitzにおける仕様変更
 
 例）ContentFolder

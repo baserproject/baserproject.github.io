@@ -54,7 +54,7 @@ chmod 777 tmp
 Cloud9 の メニューの `Preview` より、`Preview Running Application` を実行する。
 Cloud9 内にブラウザが立ち上がるので、URLの入力欄にカーソルを当てるとURLを確認できる。
 
-　
+ 
 ## 開発中のURLにアクセスする
 
 ```

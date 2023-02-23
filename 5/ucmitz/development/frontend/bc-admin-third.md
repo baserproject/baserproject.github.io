@@ -2,7 +2,7 @@
 
 BcAdminThird は、デフォルトのbaserCMSの管理画面テーマのプロジェクトです。
 
-　
+ 
 ## CSSの作成
 
 CSS の作成は、Gulp でファイルを関し、sass を利用して作成します。  
@@ -12,7 +12,7 @@ CSS の作成は、Gulp でファイルを関し、sass を利用して作成し
   
 ※ スタイルガイドを確認するには、[Dockerの開発環境](../../preparation/environment) が立ち上がっている必要があります。
 
-　
+ 
 ## Javascriptの開発
 
 Javascript の開発は、Gulp でファイルを監視し Webpack を利用して開発します。

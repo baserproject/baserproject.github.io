@@ -2,7 +2,7 @@
 
 コンテンツマネージャーAPIを利用すると、固定ページ、ブログ、メールフォームなどのように自身で作ったコンテンツをツリー構造で俯瞰して管理する事ができます。
 
-　
+ 
 ## URLの決定
 コンテンツマネージャーAPIを利用すると、ツリー構造に応じたURLを自動生成し、ルーティングも自動化されます。
 
@@ -14,7 +14,7 @@
     - about // 固定ページ
 ```
 
-　
+ 
 ## 開発の流れ
 
 - [ツリーインターフェイスへの表示](#ツリーインターフェイスへの表示)
@@ -25,7 +25,7 @@
 - [コピ機能ーの実装](#コピ機能ーの実装)
 - [物理削除機能の実装](#物理削除機能の実装)
 
-　
+ 
 ## ツリーインターフェイスへの表示
 ### 設定ファイルを準備
 
@@ -122,7 +122,7 @@ return [
 }
 ```
 
-　
+ 
 ## 新規登録機能の実装
 新規登録機能は、ツリーインターフェイスからAJAXとして呼び出されるため、Web APIとして実装しますが、まず、対象コンテンツのテーブルと、ContentsTable を紐付けます。
 
@@ -183,7 +183,7 @@ $this->viewBuilder()->setOption('serialize', [
 ]);
 ```
 
-　
+ 
 ## 編集機能の実装
 編集機能は、コントローラーで、`BcAdminAppController` を継承して、管理画面内に実装しますが、タイトルや公開状態など、
 ツリーコンテンツのエンティティの保存機能を自動実装するために、`BcAdminContentsComponent` を追加します。
@@ -221,7 +221,7 @@ $blogContent = $blogContentsTable->patchEntity(
 $blogContentsTable->save($blogContent);
 ```
 
-　
+ 
 ## フロントページ表示機能の実装
 フロントページは、コントローラーで、`BcFrontAppController` を継承して実装しますが、タイトルや説明文、パンくずなど、ツリーコンテンツのエンティティによる機能を自動実装するために、`BcFrontContentsComponent` を追加します。
 
@@ -252,7 +252,26 @@ $currentContent = $this->getRequest()->getAttribute('currentContent');
 $currentSite = $this->getRequest()->getAttribute('currentSite');
 ```
 
-　
+### コンテンツ情報の参照
+フロントサイドでは、リクエスト情報から現在のページのコンテンツ情報とサイト情報を取得できます。
+```php
+$content = $this->getRequest()->getAttribute('currentContent');
+$site = $this->getRequest()->getAttribute('currentSite');
+```
+
+ただしコンテンツ管理対象のコンテンツのページではなく、そこにぶら下がる子コンテンツにおいて参照できるようにする場合には工夫が必要です。  
+次のように `ContentsService` を利用してリクエストにセットする必要があります。
+そうすると上記と同様に `getAttribute` メソッドで取得できるようになります。
+
+```php
+$contentsService = $this->getService(ContentsServiceInterface::class);
+$request = $contentsService->setCurrentToRequest(
+    'BcBlog.BlogContent',   // コンテンツ管理に定義しているコンテンツ名
+    $blogContentId,         // コンテンツに紐づくエンティティの主キー
+    $this->getRequest()     // 現在のリクエスト
+);
+```
+
 ### パンくず表示における注意点
 `BcFrontContentsComponent` を読み込んだ場合、パンくずを自動生成してくれますが、コンテンツ管理対象のコンテンツにぶら下がる子コンテンツにおいて、
 コンテンツ管理対象のコンテンツを親としてパンくずに配置して欲しい場合があります。
@@ -269,14 +288,14 @@ HOME > NEWS > 記事タイトル
 $this->loadComponent('BaserCore.BcFrontContents', ['viewContentCrumb' => true]);
 ```
 
-　
+ 
 ## プレビュ機能ーの実装
 プレビュー機能は、非公開状態や、保存前の状態にて、編集画面内に入力した内容での、フロントページの表示を確認する事ができます。  
 プレビュー対象のURLは、コンテンツマネージャーAPIが生成するURLを自動的に設定します。
 
 実際の実装方法については、[プレビュー機能設計書](../common/preview) を参考にします。
 
-　
+ 
 ## コピ機能ーの実装
 コピー機能は、ツリーインターフェイスから AJAXで呼び出されるため、Web APIとして実装します。
 
@@ -353,7 +372,7 @@ $this->viewBuilder()->setOption('serialize', [
 ]);
 ```
 
-　
+ 
 ## 物理削除機能の実装
 ゴミ箱に入れたコンテンツは、ゴミ箱を空にする事で物理的な削除となりますが、その際の処理に備え、物理削除機能を実装しておきます。
 

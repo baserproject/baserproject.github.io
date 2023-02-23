@@ -75,7 +75,7 @@ echo $this->BcAdminForm->control($key . '.text', [
 </div>
 ```
 
-　
+ 
 ## ドメインモデル図
 ![ドメインモデル図：ウィジェットエリア](../../../svg/domain_model/bc-widget-area/widget_areas.svg)
 
