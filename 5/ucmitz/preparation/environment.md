@@ -104,3 +104,35 @@ docker images
 docker rmi [IMAGE ID]
 # その後、環境の再構築を実施する
 ```
+
+## Docker でサブフォルダの環境を作る
+サブフォルダに配置された状態で開発やテストを行う場合には次のように設定を変更します。
+
+### Docker の設定変更
+docker-compose.yml の設定を変更します。
+
+bc5-php の 調整
+- volumes を `'../../:/var/www/html:delegated'` に変更
+- command を `'bash -c "apache2-foreground"'` に変更
+
+Docker を再構築
+```shell
+docker-compose up -d --force-recreate
+```
+※ 一度、ノーマルの状態で、環境構築が終わった後に実行してください。
+
+### PHP環境の設定変更
+.env の `SITE_URL` / `SSL_URL` をサブフォルダベースに変更
+```shell
+# パッケージのディレクトリ名が ucmitz の場合
+export SITE_URL="https://localhost/ucmitz/"
+export SSL_URL="https://localhost/ucmitz/"
+```
+
+### テーマへのシンボリックリンクを再作成
+Docker コンテナにログインしシンボリックリンクの作成コマンドを実行します。
+
+```shell
+docker exec -it bc5-php /bin/bash
+bin/cake plugin assets symlink
+```
