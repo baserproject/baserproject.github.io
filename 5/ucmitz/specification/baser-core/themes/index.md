@@ -45,16 +45,16 @@ Zip化されたテーマをアップロードし、解答した上で一覧に�
 ### baserマーケットのテーマ一覧を表示
 baserマーケットのテーマを表示する。
 
-　
+ 
 ## ucmitzにおける仕様変更
 - テーマ設定は別プラグイン化（bc-theme-config）
 - テーマファイル管理は別プラグイン化（bc-theme-file）
 
-　
+ 
 ## クラス図
 ### テーマ管理
 ![クラス図：プラグイン管理画面](../../../svg/class/baser-core/manage_themes.svg)
 
-　
+ 
 ### テーマ管理API
 ![クラス図：プラグインAPI](../../../svg/class/baser-core/api_themes.svg)

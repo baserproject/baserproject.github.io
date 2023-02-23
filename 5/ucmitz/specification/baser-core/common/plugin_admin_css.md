@@ -9,6 +9,6 @@ plugins/{PluginName}/webroot/css/admin/{plugin_name}_admin.css
 CSSファイル名は、アンダースコア区切りとなります。  
 主にはコンテンツ管理で利用するアイコンの設定で利用します。
 
-　
+ 
 ## 実装箇所
 BcBaserHelper::scripts()

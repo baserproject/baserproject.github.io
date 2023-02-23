@@ -54,6 +54,6 @@ separator と同様の理由でリネーム。
 ### 管理画面
 ![ユースケース図：メールフィールド](../../../svg/class/bc-mail/manage_mail_fields.svg)
 
-　
+ 
 ### API
 ![ユースケース図：メールフィールド](../../../svg/class/bc-mail/api_mail_fields.svg)

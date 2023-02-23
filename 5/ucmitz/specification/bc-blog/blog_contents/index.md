@@ -58,7 +58,7 @@
 ### 管理画面
 ![ユースケース図：ブログコンテンツ](../../../svg/class/bc-blog/manage_blog_contents.svg)
 
-　
+ 
 ### API
 ![ユースケース図：ブログコンテンツ](../../../svg/class/bc-blog/api_blog_contents.svg)
 

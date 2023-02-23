@@ -37,6 +37,6 @@
 ### 管理画面
 ![ユースケース図：ブログコメント](../../../svg/class/bc-blog/manage_blog_comments.svg)
 
-　
+ 
 ### API
 ![ユースケース図：ブログコメント](../../../svg/class/bc-blog/api_blog_comments.svg)

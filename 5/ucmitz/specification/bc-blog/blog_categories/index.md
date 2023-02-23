@@ -47,6 +47,6 @@ URLを指定して対象となるカテゴリに所属する記事の一覧を�
 ### 管理画面
 ![ユースケース図：ブログカテゴリ](../../../svg/class/bc-blog/manage_blog_categories.svg)
 
-　
+ 
 ### API
 ![ユースケース図：ブログカテゴリ](../../../svg/class/bc-blog/api_blog_categories.svg)

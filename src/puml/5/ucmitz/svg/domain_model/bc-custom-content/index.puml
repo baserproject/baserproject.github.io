@@ -1,0 +1,56 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide method
+
+title ER図：カスタムコンテンツ
+
+skinparam linetype ortho
+
+class "Contents" {
+	plugin
+	type
+	entity_id
+}
+note right
+コンテンツ管理情報を保有
+end note
+
+class "CustomContents" {
+	custom_table_id
+}
+note right
+コンテンツ管理上でコンテンツを生成したタイミングで生成される。
+カスタムテーブルのうち、コンテンツタイプのものを選択できる。
+end note
+
+class "CustomTables" {
+}
+note right
+カスタムフィールドの中から利用するものを選択できる。
+テーブルタイプとしてコンテンツかマスタを選択できる。
+end note
+
+class "CustomLinks" {
+  custom_table_id
+  custom_field_id
+}
+note right
+フィールドについてレイアウトに関する情報を保持する。
+入力必須かどうかを選択できる
+end note
+
+class "CustomFields" {
+}
+note right
+フィールドについてレイアウトに関する情報を保持する。
+フィールドのタイプと入力必須以外のバリデーション情報を保持する。
+end note
+
+"Contents" ||..|| "CustomContents"
+"CustomContents" ||..o| "CustomTables"
+"CustomTables" ||..o{ "CustomLinks"
+"CustomLinks" }o..|| "CustomFields"
+
+
+@enduml

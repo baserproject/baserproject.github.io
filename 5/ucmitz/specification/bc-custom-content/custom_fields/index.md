@@ -42,7 +42,8 @@
 ## フィールドタイプ　
 テキスト、テキストエリア、ラジオボタンなどのフィールドタイプは、プラグイン内直下の plugins ディレクトリ内で、個別にプラグインとして管理する。
 
-config.php において、`type` に `BcCustomContentPlugin` と定義すると、カスタムコンテンツプラグインで読み込む事ができるプラグインとして認識される。
+config.php において、`type` に `BcCustomContentPlugin` と定義すると、カスタムコンテンツプラグインで読み込む事ができるプラグインとして認識される。  
+詳細については [カスタムフィールドタイプ](./custom_field_type) を参照
 
 ###初期状態で提供するフィールド
 - 基本
@@ -63,7 +64,7 @@ config.php において、`type` に `BcCustomContentPlugin` と定義すると�
   - 関連データ
   - セレクトボックス
 - コンテンツ
-  - ファイル
+  - ファイル（2023/02/23 未対応）
   - Wysiwygエディタ
 - その他
   - グループ
@@ -100,6 +101,6 @@ config.php において、`type` に `BcCustomContentPlugin` と定義すると�
 ### 管理画面
 ![ユースケース図：カスタムフィールド](../../../svg/class/bc-custom-content/manage_custom_fields.svg)
 
-　
+ 
 ### API
 ![ユースケース図：カスタムフィールド](../../../svg/class/bc-custom-content/api_custom_fields.svg)

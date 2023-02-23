@@ -5,7 +5,7 @@
 ## ユースケース図
 ![ユースケース図：メールメッセージ](../../../svg/use_case/bc-mail/mail_messages.svg)
 
-　
+ 
 ## 機能
 
 ### 管理機能
@@ -23,19 +23,19 @@
 #### 送信メール保存
 メールフォームより送信されたデータを保存する。
 
-　
+ 
 ## ドメインモデル図
 ![ユースケース図：メールメッセージ](../../../svg/domain_model/bc-mail/mail_messages.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![ユースケース図：メールメッセージ](../../../svg/class/bc-mail/manage_mail_messages.svg)
 
-　
+ 
 ### フロント
 ![ユースケース図：メールメッセージ](../../../svg/class/bc-mail/front_mail_messages.svg)
 
-　
+ 
 ### API
 ![ユースケース図：メールメッセージ](../../../svg/class/bc-mail/api_mail_messages.svg)

@@ -32,6 +32,6 @@ CKEditorで利用するテンプレート用の設定をJSで呼び出す。
 ### 管理画面
 ![ユースケース図：エディターテンプレート](../../../svg/class/bc-editor-template/manage_editor_templates.svg)
 
-　
+ 
 ### API
 ![ユースケース図：エディターテンプレート](../../../svg/class/bc-editor-template/api_editor_templates.svg)

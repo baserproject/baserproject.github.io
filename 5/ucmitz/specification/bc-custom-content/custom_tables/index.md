@@ -67,6 +67,6 @@ group に所属する場合は、入れ子で表示する。
 ### 管理画面
 ![ユースケース図：カスタムテーブル](../../../svg/class/bc-custom-content/manage_custom_tables.svg)
 
-　
+ 
 ### API
 ![ユースケース図：カスタムテーブル](../../../svg/class/bc-custom-content/api_custom_tables.svg)

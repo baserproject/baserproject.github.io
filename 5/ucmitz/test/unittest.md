@@ -45,7 +45,7 @@ composer install
 
 `BaserCore\TestSuite\BcTestCase` クラスを継承します。  
 以前は、`BaserTestCase` でしたが、`BcTestCase` にクラス名が変更となりました。
-　
+ 
 ### メソッド名
 
 テストを含むメソッドは、先頭を `test` とします。

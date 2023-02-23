@@ -8,13 +8,13 @@
 
 マーキング漏れをマークしている作業だけでも非常に助かります。
 
-　
+ 
 ### GitHubのIssue より選択する
 GitHub の [Issue](https://github.com/baserproject/ucmitz/issues) 現在対象となっているマイルストーンの Issue より、対応する Issue を選択します。  
 担当することをコメントしておくと他の人作業がかぶりません。  
 （コラボレータは、Issue で担当するコメントを見つけたらその人を Assignees に設定してください）
 
-　
+ 
 ### 機能要件一覧より選択する
 [機能要件一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=0) にて各機能の仕様を確認し、現在進行しているマイルストーンの機能より取りかかれそうな機能な選択します。  
 機能要件一覧より選択する場合、次の項目を更新します。
@@ -25,7 +25,7 @@ GitHub の [Issue](https://github.com/baserproject/ucmitz/issues) 現在対象�
 
 （コラボレーターは、新しい Issueを見つけたら、適切なマイルストンを設定してください）
 
-　
+ 
 ### ucmitz 進行管理の未対応分より選択する 
 [ucmitz 進行管理](https://docs.google.com/spreadsheets/d/1EGxMk-dy8WIg2NmgOKsS_fBXqDB6oJky9M0mB7TADEk/edit#gid=938641024) にて作業状況の進捗を確認できますが、その中より未対応のものを対応していいきます。
 

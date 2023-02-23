@@ -22,7 +22,7 @@
 ## ドメインモデル図
 ![ドメインモデル図：検索インデックス](../../../svg/domain_model/bc-uploader/uploader_files.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![クラス図：検索インデックス管理](../../../svg/class/bc-uploader/manage_uploader_files.svg)

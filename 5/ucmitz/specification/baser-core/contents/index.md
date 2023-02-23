@@ -123,15 +123,15 @@
 ### コンテンツ管理
 ![クラス図：コンテンツ管理](../../../svg/class/baser-core/manage_contents.svg)
 
-　
+ 
 ### コンテンツ管理API
 ![クラス図：APIコンテンツ管理](../../../svg/class/baser-core/api_contents.svg)
 
-　
+ 
 ### コンテンツフォルダ管理
 ![クラス図：コンテンツフォルダ管理](../../../svg/class/baser-core/manage_content_folders.svg)
 
-　
+ 
 ### コンテンツフォルダ管理API
 ![クラス図：コンテンツフォルダAPI](../../../svg/class/baser-core/api_content_folders.svg)
 

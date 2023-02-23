@@ -5,7 +5,7 @@
 ## ユースケース図
 ![ユースケース図：お気に入り](../../../svg/use_case/baser-core/favorites.svg)
 
-　
+ 
 ## 機能
 ### 一覧表示
 #### 表示方法
@@ -31,12 +31,12 @@
 ### 並べ替え
 並べ替えたい対象のお気に入りを上下にドラッグする事で並び順を変更する。
 
-　
+ 
 ## ドメインモデル図
 ### お気に入り
 ![ドメインモデル図：お気に入り](../../../svg/domain_model/baser-core/favorites.svg)
 
-　
+ 
 ## クラス図
 ### お気に入りAPI
 ![クラス図：ログ管理](../../../svg/class/baser-core/api_favorites.svg)

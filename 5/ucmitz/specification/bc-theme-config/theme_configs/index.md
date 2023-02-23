@@ -39,11 +39,11 @@ $this->BcBaser->mainImage();
 /webroot/files/theme_configs/config.css
 ```
 
-　
+ 
 ## ドメインモデル図
 ![ドメインモデル図：テーマ設定](../../../svg/domain_model/bc-theme-config/theme_configs.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![クラス図：テーマ設定管理](../../../svg/class/bc-theme-config/manage_theme_configs.svg)

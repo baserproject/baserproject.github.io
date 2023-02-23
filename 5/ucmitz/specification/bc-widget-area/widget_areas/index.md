@@ -37,7 +37,7 @@
 ```php
 $this->BcBaser->widgetArea(2);
 ```
-　
+ 
 ### 利用できるウィジェットを追加
 #### 管理画面側
 ウィジェットの編集画面では、`templates/Admin/element/widgets/` に配置したテンプレートを「利用できるウィジェット」として読み込む。   
@@ -79,7 +79,7 @@ echo $this->BcAdminForm->control($key . '.text', [
 ## ドメインモデル図
 ![ドメインモデル図：ウィジェットエリア](../../../svg/domain_model/bc-widget-area/widget_areas.svg)
 
-　
+ 
 ## クラス図
 ### 管理画面
 ![クラス図：ウィジェットエリア管理](../../../svg/class/bc-widget-area/manage_widget_areas.svg)

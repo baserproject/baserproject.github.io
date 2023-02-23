@@ -22,7 +22,7 @@ BaserCore は、主にURLに紐づくルーティングと、ビジネスロジ�
 - [BcFront](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-front)
 - [BcInstaller](https://github.com/baserproject/ucmitz/tree/dev/plugins/bc-installer)
 
-　
+ 
 ### コアプラグイン
 baserCMSのコアパッケージと共にコアに梱包するいくつかのプラグインはコアプラグインとして、`/plugins/` 配下に配置する仕様としています。
 
@@ -68,7 +68,7 @@ baserCMSのコアパッケージと共にコアに梱包するいくつかのプ
 
 そのため、子パッケージの `composer.lock` と `vendor` ディレクトリは利用しません。（.gitignore で除外済です）
 
-　
+ 
 ### 子パッケージの composer の構成を変更する
 
 子パッケージの `composer.json` を変更した場合は、次のコマンドを実行して親パッケージにまとめあげる必要があります。
@@ -77,7 +77,7 @@ baserCMSのコアパッケージと共にコアに梱包するいくつかのプ
 vendor/bin/monorepo-builder merge
 ```
 
-　
+ 
 ### パッケージのリリース
 モノレポを使うことで、GitHub 上のパッケージごとのレポジトリへ、一括でリリースすることができます。
 ただし、子パッケージは、読み取り専用の扱いとします。
@@ -88,7 +88,7 @@ vendor/bin/monorepo-builder merge
 vendor/bin/monorepo-builder release [バージョン番号]
 ```
 
-　
+ 
 ### 参考文献
 
 [MonorepoBuilderでPHPのモノレポを作るチュートリアル](https://qiita.com/suin/items/421a55bdb009b2ada2d1)

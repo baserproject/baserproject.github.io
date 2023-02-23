@@ -61,6 +61,6 @@ mail_messages_{メールコンテンツID}
 ### 管理画面
 ![ユースケース図：メールコンテンツ](../../../svg/class/bc-mail/manage_mail_contents.svg)
 
-　
+ 
 ### API
 ![ユースケース図：メールコンテンツ](../../../svg/class/bc-mail/api_mail_contents.svg)

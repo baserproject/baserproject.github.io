@@ -5,7 +5,7 @@
 メニューの元となるデータは、`Cake\Core\Configure` を利用して管理し、`BcApp.adminNavigation` に保管する。  
 各プラグインの `config/setting.php` にて設定するものとする。
 
-　
+ 
 ## 一般メニュー
 
 メニューの上部から並べるものは、`BcAppAdminNavigation` の中の、`Contents` に配置する。
@@ -46,7 +46,7 @@ return [
 - **disabled:** メニューを非表示にする。既に設定されたメニューを非表示にする場合に利用。
 - **menus:** サブメニューが存在する場合は、`menus` の中に入れ子で定義する。その際、`type` の指定は不要。
 
-　
+ 
 ## 設定メニュー
 
 メニューの下部の「設定 」の中に並べるものは、`BcAppAdminNavigation` の中の、`Systems` に配置する。  
@@ -69,7 +69,7 @@ return [
 ```
 なお、「設定」の中に配置する場合は、`type` を `system` に設定する必要がある。
 
-　
+ 
 ## 外部から既存のメニューを非表示にする
 
 外部のプラグインなどから、既存のメニューを非表示にするには、対象メニューの `disable` 設定を `false` に設定する。
@@ -90,7 +90,7 @@ Configure::write('BcApp.adminNavigation.Systems.Plugin.disable', true);
 Configure::write('BcApp.adminNavigation.Systems.Users.disable', true);
 ```
 
-　
+ 
 ## メニューのレンダリング
 
 `BaserCore\View\Helper\BcContentsHelper::setup()` でデータ変換を行い、その後、JSON化し、vue.js でレンダリングを行う。

@@ -9,7 +9,7 @@
 ## ユースケース
 
 ![初期設定：BcUploadBehavior](../../../svg/use_case/baser-core/upload.svg)
-　
+ 
 ## 実装方法
 対象となるテーブルオブジェクトに `BcUploadBehavior` を追加し、設定を記述した上で、ビューにファイルアップロード用のコントロールを配置する。  
 データをポストしテーブルで保存するタイミングでファイルの保存処理などを行う。
@@ -82,7 +82,7 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 ])
 ```
 
-　
+ 
 ## BcUploadBehaviorの設定
 
 ### ファイルの保存先
@@ -145,8 +145,8 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 配列のキーには画像を特定する文字列を設定する。  
 画像のリサイズと同様に、横幅、高さ、プレフィックス、サフィックスが定義できる。
 
-　
-## レコードの保存処理　
+ 
+## レコードの保存処理 
 ### ファイル保存のタイミング
 対象のテーブルクラスで `save` を実行した場合、`beforeSave` のタイミングでファイルを保存する。
 
@@ -164,7 +164,7 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 保存対象のデータの中に `{フィールド名}_delete` というキーに、`true` が設定されているとファイルの削除対象となる。
 このフィールドは、`BcUploadHelper` が自動的に追加する。
 
-　
+ 
 ## レコードの削除処理
 ### ファイル削除のタイミング
 対象のテーブルクラスで `delete` を実行した場合、`beforeDelete` のタイミングでファイルを削除する。
@@ -173,7 +173,7 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 - beforeDelete
   - 対象レコードの全てのフィールドのファイルを削除
 
-　
+ 
 ## ファイルの一時保存
 確認画面を作りたい場合や、プレビューを行いたい場合、ファイルをセッション内に一時的に保存することができる。
 
@@ -197,7 +197,7 @@ echo $this->BcAdminForm->control("Content.eyecatch", [
 　
 ---
 
-　
+ 
 ## アクティビティ図
 
 ### 初期化処理
