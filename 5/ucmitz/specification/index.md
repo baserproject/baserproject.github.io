@@ -69,3 +69,4 @@
 
 ## その他
 - [コアプラグインの開発](baser-core/common/core_plugin)
+- [管理画面テーマカスタマイズ](/baser-core/common/customize_admin_theme)
