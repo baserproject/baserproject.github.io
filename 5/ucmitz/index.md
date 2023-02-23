@@ -55,6 +55,7 @@ baserCMS4で利用しているCakePHP2系からCakePHP4系に移行するにあ�
 ### テーマの開発
 ucmitz の管理画面テーマやフロントの開発では、sass や Webpack を利用します。詳細については次を確認してください。
 
+- [テーマについて](./development/frontend/theme)
 - [BcAdminThird（管理画面テーマ）の開発](./development/frontend/bc-admin-third)
 - [BcFront（フロントテーマ）の開発](./development/frontend/bc-front)
 - [CSSの作成について](./development/frontend/css)
