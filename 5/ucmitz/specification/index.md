@@ -53,7 +53,7 @@
 - [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
 - [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
 
-## 共通API
+## 共通API 
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
 - [ファイルアップロード](baser-core/common/upload)
 - [プレビュー機能](./baser-core/common/preview)
