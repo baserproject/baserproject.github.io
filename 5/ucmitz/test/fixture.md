@@ -25,7 +25,7 @@ CakePHP4.3 より、これまでのフィクスチャマネージャーが非推
 
 ### フィクスチャファイル
 `$import` も `init()` も定義せず、利用するかどうかを示すためだけに定義します。  
-全てを移行するには時間がかかるので、空のフィクスチャは、Empty ディレクトリに入れるようにします。
+全てを移行するには時間がかかるので、空のフィクスチャは、`Factory` ディレクトリに入れるようにします。
 
 ```php
 // plugins/baser-core/tests/Fixture/Empty/UsersFixture
@@ -62,6 +62,11 @@ class UserFactory extends CakephpBaseFactory
             ->setField('user_group_id', 1);
     }
 }
+```
+
+なお、フィクスチャファクトリは、コマンドで自動生成できます。
+```shell
+bin/cake bake fixture_factory -p BaserCore TableName
 ```
 
 ### フィクスチャシナリオ

@@ -112,3 +112,10 @@ https://localhost/mypage/plugin-name/users/login.json
 - 現在アクセスしているプレフィックスへのアクセス権を持っている
 
 ただし、プレフィックス `Api` へのアクセスの場合は、`Admin` への権限があれば有効とみなします。 
+
+## baserCMS４からの変更点
+
+- 設定名称が `BcAuthPrefix` から `BcPrefixAuth` に変更
+- 設定キーがアッパーキャメルケースに変更 `admin` → `Admin`
+
+　
