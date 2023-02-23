@@ -253,6 +253,23 @@ $currentSite = $this->getRequest()->getAttribute('currentSite');
 ```
 
 　
+### パンくず表示における注意点
+`BcFrontContentsComponent` を読み込んだ場合、パンくずを自動生成してくれますが、コンテンツ管理対象のコンテンツにぶら下がる子コンテンツにおいて、
+コンテンツ管理対象のコンテンツを親としてパンくずに配置して欲しい場合があります。
+
+例えば、ブログ記事において、ブログコンテンツのタイトルを親として配置したい場合などです。
+
+```shell
+HOME > NEWS > 記事タイトル 
+````
+
+この場合、`BcFrontContentsComponent` を読み込む際に、設定を追加する事で、上記の内容を実現する事ができます。
+
+```php
+$this->loadComponent('BaserCore.BcFrontContents', ['viewContentCrumb' => true]);
+```
+
+　
 ## プレビュ機能ーの実装
 プレビュー機能は、非公開状態や、保存前の状態にて、編集画面内に入力した内容での、フロントページの表示を確認する事ができます。  
 プレビュー対象のURLは、コンテンツマネージャーAPIが生成するURLを自動的に設定します。
