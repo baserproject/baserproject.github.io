@@ -95,7 +95,7 @@ https://localhost/mypage/plugin-name/users/login
 
 ```shell
 https://localhost/mypage/plugin-name/users/login.json
-(GET) https://localhost/mypage/plugin-name/users/index.json → index アクションにルーティング
+(GET) https://localhost/mypage/plugin-name/users.json → index アクションにルーティング
 (GET) https://localhost/mypage/plugin-name/users/1.json → view アクションにルーティング
 (POST) https://localhost/mypage/plugin-name/users/1.json → add アクションにルーティング
 (PUT) https://localhost/mypage/plugin-name/users/1.json → edit アクションにルーティング
