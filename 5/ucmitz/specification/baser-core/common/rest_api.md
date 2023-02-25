@@ -3,6 +3,8 @@
 ## コアのAPIの有効化
 baserCMSコアが提供する Web APIを有効化するには、`/config/.env` の `USE_CORE_API` の値を `true` に設定します。
 
+また、baserCMSコアが提供する、認証が必要な Web API も有効化したい場合は、`/config/.env` の `USE_CORE_ADMIN_API` の値を `true` に設定する必要があります。
+
  
 ## コアのAPIの利用
 baserCMSのコアが提供する Web API は、認証方式において JWT を利用します。   
