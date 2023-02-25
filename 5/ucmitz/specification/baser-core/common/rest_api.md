@@ -10,6 +10,9 @@ baserCMSコアが提供する Web APIを有効化するには、`/config/.env` �
 baserCMSのコアが提供する Web API は、認証方式において JWT を利用します。   
 [REST API を利用する](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE-REST-API-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B) を参考にします。
 
+[コア Web API 一覧](../../../rest_api/index)
+
+
 ## APIのレスポンス
 ### ステータスコード
 ステータスコードは主に次のものを利用します。  

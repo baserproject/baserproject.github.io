@@ -4,9 +4,7 @@
 - [データベース設計](./db)
 - [共通クラス図](baser-core/common/index.md)
 
-## 管理機能
-
-### コア
+## コア
 - [メニュー](baser-core/common/menu.md)
 - [ツールバー](baser-core/common/toolbar.md)
 - [ヘルプ](baser-core/common/help.md)
@@ -26,7 +24,25 @@
 - [テーマ管理](baser-core/themes/index)
 - [ユーティリティ](baser-core/utilities/index)
 
-### コアプラグイン
+## コアプラグイン
+### ブログ
+- [ブログコンテンツ管理](./bc-blog/blog_contents/index)
+- [ブログカテゴリ管理](bc-blog/blog_categories/index)
+- [ブログ記事管理](bc-blog/blog_posts/index)
+- [ブログタグ管理](bc-blog/blog_tags/index)
+- [ブログコメント管理](bc-blog/blog_comments/index)
+
+### メールフォーム
+- [メールコンテンツ管理](bc-mail/mail_contents/index)
+- [メールフィールド管理](bc-mail/mail_fields/index)
+- [メールメッセージ管理](bc-mail/mail_messages/index)
+
+### ファイルアップローダー
+- [アップロードファイル管理](bc-uploader/uploader_files/index)
+- [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
+- [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
+
+### その他
 - [お気に入り](bc-favorite/favorites/index)
 - [インストーラー](bc-installer/installer/index)
 - [コンテンツリンク](bc-content-link/content_links/index)
@@ -36,22 +52,6 @@
 - [エディタテンプレート管理](bc-editor-template/editor_templates/index)
 - [カスタムコンテンツ](bc-custom-content/index)
 
-#### ブログ
-- [ブログコンテンツ管理](./bc-blog/blog_contents/index)
-- [ブログカテゴリ管理](bc-blog/blog_categories/index)
-- [ブログ記事管理](bc-blog/blog_posts/index)
-- [ブログタグ管理](bc-blog/blog_tags/index)
-- [ブログコメント管理](bc-blog/blog_comments/index)
-
-#### メールフォーム
-- [メールコンテンツ管理](bc-mail/mail_contents/index)
-- [メールフィールド管理](bc-mail/mail_fields/index)
-- [メールメッセージ管理](bc-mail/mail_messages/index)
-
-#### ファイルアップローダー
-- [アップロードファイル管理](bc-uploader/uploader_files/index)
-- [アップロードファイルカテゴリ管理](bc-uploader/uploader_categories/index)
-- [ファイルアップローダー設定](bc-uploader/uploader_configs/index)
 
 ## 共通API 
 - [コンテンツマネージャーAPI](./baser-core/contents/contents_manager_api)
@@ -70,3 +70,6 @@
 ## その他
 - [コアプラグインの開発](baser-core/common/core_plugin)
 - [管理画面テーマカスタマイズ](/baser-core/common/customize_admin_theme)
+
+
+　
