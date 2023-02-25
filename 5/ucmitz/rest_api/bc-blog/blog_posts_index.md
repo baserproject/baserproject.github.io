@@ -19,33 +19,32 @@ GET
 ``` 
 
 ### クエリパラメーター
-| パラメーター名 | 型 | 内容 |
-| --- | --- | --- |
-| status | 文字列 | publish：公開状態の記事のみ<br>all：全て |
-| limit | 数値 | 取得件数 |
-| order | 文字列 | ソートに使用する属性名 （初期値：posted）|
-| direction | 文字列 | ソートの方向 asc or desc（初期値：desc）|
-| id | 数値 | ブログ記事ID |
-| no | 数値 | ブログ記事NO |
-| title | 文字列 | タイトル（あいまい検索） |
-| user_id | 数値 | 作成者のユーザーID |
-| blog_content_id | 数値 | ブログコンテンツID |
-| site_id | 数値 | サイトID |
-| site_id | 数値 | サイトID |
-| contentUrl | 数値 | URL |
-| blog_tag_id | 数値 | ブログタグID |
-| blog_category_id | 数値 | ブログカテゴリID |
-| category | 文字列 | ブログカテゴリ名 |
-| tag | 文字列 | ブログタグ名 |
-| year | 文字列 | 作成年 |
-| month | 文字列 | 作成月 |
-| day | 文字列 | 作成日にち |
-| keyword | 文字列 | タイトル、概要、詳細よりあいまい検索をするための文字列を指定 |
-| author | 文字列 | 作成者のログインアカウント名 |
+|  パラメーター名  |  型  |  内容  |
+|  ---  |  ---  |  ---  |
+|  status  |  文字列  |  publish：公開状態の記事のみ<br>all：全て  |
+|  limit  |  数値  |  取得件数  |
+|  order  |  文字列  |  ソートに使用する属性名 （初期値：posted） |
+|  direction  |  文字列  |  ソートの方向 asc or desc（初期値：desc） |
+|  id  |  数値  |  ブログ記事ID  |
+|  no  |  数値  |  ブログ記事NO  |
+|  title  |  文字列  |  タイトル（あいまい検索）  |
+|  user_id  |  数値  |  作成者のユーザーID  |
+|  blog_content_id  |  数値  |  ブログコンテンツID  |
+|  site_id  |  数値  |  サイトID  |
+|  contentUrl  |  数値  |  URL  |
+|  blog_tag_id  |  数値  |  ブログタグID  |
+|  blog_category_id  |  数値  |  ブログカテゴリID  |
+|  category  |  文字列  |  ブログカテゴリ名  |
+|  tag  |  文字列  |  ブログタグ名  |
+|  year  |  文字列  |  作成年  |
+|  month  |  文字列  |  作成月  |
+|  day  |  文字列  |  作成日にち  |
+|  keyword  |  文字列  |  タイトル、概要、詳細よりあいまい検索をするための文字列を指定  |
+|  author  |  文字列  |  作成者のログインアカウント名  |
 
 ### レスポンス例
 #### レスポンスボディ
-```
+```json
 {
     "blogPosts": [
         {
