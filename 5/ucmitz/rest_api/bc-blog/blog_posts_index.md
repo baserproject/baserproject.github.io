@@ -32,7 +32,7 @@ GET
 | user_id | 数値 | 作成者のユーザーID |
 | blog_content_id | 数値 | ブログコンテンツID |
 | site_id | 数値 | サイトID |
-| contentUrl | 数値 | URL |
+| contentUrl | 文字列 | URL |
 | blog_tag_id | 数値 | ブログタグID |
 | blog_category_id | 数値 | ブログカテゴリID |
 | category | 文字列 | ブログカテゴリ名 |
@@ -40,7 +40,7 @@ GET
 | year | 文字列 | 作成年 |
 | month | 文字列 | 作成月 |
 | day | 文字列 | 作成日にち |
-| keyword | 文字列 | タイトル、概要、詳細よりあいまい検索をするための文字列を指定 |
+| keyword | 文字列 | タイトル、概要、詳細より検索をするための文字列を指定（あいまい検索） |
 | author | 文字列 | 作成者のログインアカウント名 |
 
 ### レスポンス例
