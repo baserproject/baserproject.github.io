@@ -39,6 +39,21 @@ return [
 ];
 ```
 
+### モノレポの準備
+Composer で個別に管理するため、読み取り専用のGitHubレポジトリを準備し、モノレポの設定ファイルに追加します。
+
+```yml
+// .github/workflows/split_monorepo.yml
+jobs:
+        strategy:
+            matrix:
+                package:
+                    -
+                        local_path: 'bc-custom-content'
+                        split_repository: 'bc-custom-content'
+```
+
+
 ## コアプラグインのバージョン
 コアプラグインは独自にバージョンを持ちません。次に記載する「コアパッケージ」のバージョン番号と同一のバージョンとして認識されます。
  
