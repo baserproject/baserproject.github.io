@@ -39,6 +39,21 @@ return [
 ];
 ```
 
+### BaserCore に依存関係を追加
+baser-core の composer.json に依存関係を追加します。  
+これにより、インストーラーを実行した際に一緒に取得する事ができます。
+
+```json
+# /plugins/baser-core/composer.json
+{
+    "require": {
+        "baserproject/bc-custom-content": "^3.1",
+    }
+}        
+``` 
+
+
+
 ### モノレポの準備
 Composer で個別に管理するため、読み取り専用のGitHubレポジトリを準備し、モノレポの設定ファイルに追加します。
 
