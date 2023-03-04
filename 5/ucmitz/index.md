@@ -70,6 +70,11 @@ ucmitz の開発では、ユニットテストのカバレッジ100%を目指し
 - [テストカバレッジ](./test/coverage)
 - [GitHubActions](./test/github_actions)
 
+### 国際化
+baserCMS５では、日本語をベース言語として英語のみ対応する方針です。国際化の手順については次を確認してください。
+
+- [国際化](./i18n/index)
+
 ### Issueの管理
 - [GitHub Projects の利用方法](./etc/github_projects)
 
