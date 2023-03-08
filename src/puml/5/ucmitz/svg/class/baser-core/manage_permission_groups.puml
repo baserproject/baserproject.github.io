@@ -1,0 +1,64 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アクセスルールグループ管理
+
+class Admin\PermissionGroupsController {
+  + アクセスルールグループ一覧を表示：index()
+  + アクセスルールグループ新規追加：add()
+  + アクセスルールグループ編集：edit()
+  + アクセスルールグループ削除：delete()
+  + ユーザーグループごとに\nアクセスルール再構築：rebuild_by_user_group()
+}
+
+class PermissionGroupsService {
+  + PermissionGroupsTable
+}
+
+class PermissionGroupsServiceInterface {
+  + 単一のアクセスグループを取得する：get()
+  + アクセスグループ一覧を取得する：getIndex()
+  + アクセスグループのリストを取得する：getList()
+  + アクセスグループを更新：update()
+  + アクセスグループを削除：delete()
+  + アクセスグループを新規登録：add()
+  + ユーザーグループ、プラグインごとにアクセスルールを構築する：build()
+  + 全てのアクセスルールを構築する：buildAll()
+  + 指定したプラグインについて全てを\n許可するアクセスルールを構築する：buildAllowAllMethodByPlugin()
+  + プラグインごとにアクセスルールを構築する：buildByPlugin()
+  + ユーザーグループごとにアクセスルールを構築する：buildByUserGroup()
+  + デフォルトの拒否ルールを作成する（不要）：buildDefaultDenyRule()
+  + デフォルトのその他の\nルールグループを作成する：buildDefaultEtcRuleGroup()
+  + プラグインごとにアクセスルールを削除する：deleteByPlugin()
+  + ユーザーグループごとにアクセスルールを削除する：deleteByUserGroup()
+  + ユーザーグループごとに\nアクセスルールを再構築する：rebuildByUserGroup()
+}
+
+class PermissionGroupsAdminServiceInterface {
+  + 一覧表示用データ取得：getViewVarsForIndex()
+  + 編集画面表示用データ取得：getViewVarsForEdit()
+  + 新規登録画面用データ取得：getViewVarsForAdd()
+}
+
+class PermissionGroupsTable {
+}
+
+class PermissionGroup {
+	+ 名称：name
+	+ 領域（プレフィックス）：type
+	+ プラグイン：plugin
+	+ ステータス（有効 / 無効）：status
+}
+
+Admin\PermissionGroupsController -down[#Black]-> PermissionGroupsService
+Admin\PermissionGroupsController -left[#Black]-> PermissionGroupsAdminService
+PermissionGroupsAdminService -left[dotted,#Black]-|> PermissionGroupsAdminServiceInterface
+PermissionGroupsAdminService -down[#Black]-|> PermissionGroupsService
+PermissionGroupsService -down[#Black]-> PermissionGroupsTable
+PermissionGroupsService -left[dotted,#Black]-|> PermissionGroupsServiceInterface
+PermissionGroupsTable -down[#Black]-> PermissionGroup
+
+@enduml

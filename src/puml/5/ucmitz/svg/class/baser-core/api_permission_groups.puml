@@ -1,0 +1,26 @@
+@startuml
+skinparam handwritten true
+skinparam backgroundColor white
+hide circle
+skinparam classAttributeIconSize 0
+
+title アクセスルールグループAPI
+
+class Admin\PermissionGroupsController {
+  + アクセスルールグループ一覧を表示：index()
+  + アクセスルールグループ新規追加：add()
+  + アクセスルールグループ編集：edit()
+  + アクセスルールグループ削除：delete()
+  + ユーザーグループごとに\nアクセスルール再構築：rebuild_by_user_group()
+}
+
+class PermissionGroupsService {
+  + PermissionGroupsTable
+}
+
+Admin\PermissionGroupsController -down[#Black]-> PermissionGroupsService
+
+note "以下アクセスルールグループ管理と同じ" as pageNote
+PermissionGroupsService .. pageNote
+
+@enduml

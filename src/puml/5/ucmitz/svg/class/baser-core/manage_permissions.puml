@@ -4,18 +4,18 @@ skinparam backgroundColor white
 hide circle
 skinparam classAttributeIconSize 0
 
-title アクセス制限設定管理
+title アクセスルール管理
 
 class Admin\PermissionsController {
-  + 設定一覧を表示：index()
-  + 設定新規追加：add()
-  + 設定編集：edit()
-  + 設定削除：delete()
-  + 設定順変更：update_sort()
-  + コピー：copy()
-  + 有効化：publish()
-  + 無効化：unpublish()
-  + 一括処理：batch()
+  + アクセスルール一覧を表示：index()
+  + アクセスルール新規追加：add()
+  + アクセスルール編集：edit()
+  + アクセスルール削除：delete()
+  + アクセスルール順変更：update_sort()
+  + アクセスルールコピー：copy()
+  + アクセスルール有効化：publish()
+  + アクセスルール無効化：unpublish()
+  + アクセスルール一括処理：batch()
 }
 
 class PermissionsService {
@@ -23,7 +23,6 @@ class PermissionsService {
 }
 
 class PermissionsServiceInterface {
-
   + 初期データ取得：getNew()
   + 作成：create()
   + 編集：update()
@@ -56,7 +55,7 @@ class PermissionsTable {
 class Permission {
    + No：no
 	 + 設定順：sort
-	 + 設定名：name
+	 + アクセスルール名：name
 	 + ユーザーグループID：user_group_id
 	 + URL設定：url
 	 + アクセス可否：auth
