@@ -7,7 +7,8 @@ skinparam classAttributeIconSize 0
 title アクセスルールグループAPI
 
 class Admin\PermissionGroupsController {
-  + アクセスルールグループ一覧を表示：index()
+  + アクセスルールグループ単一データ取得：index()
+  + アクセスルールグループ一覧取得：index()
   + アクセスルールグループ新規追加：add()
   + アクセスルールグループ編集：edit()
   + アクセスルールグループ削除：delete()

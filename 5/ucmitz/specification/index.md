@@ -13,7 +13,7 @@
 - [サイト基本設定](baser-core/site_configs/index)
 - [ユーザー管理](baser-core/users/index)
 - [ユーザーグループ管理](baser-core/user_groups/index)
-- [アクセス制限管理](baser-core/permissions/index)
+- [アクセス設定](baser-core/permissions/index)
 - [プラグイン管理](baser-core/plugins/index)
 - [サイト管理](baser-core/sites/index) 
 - [コンテンツ管理](baser-core/contents/index)
