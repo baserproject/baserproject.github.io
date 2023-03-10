@@ -40,6 +40,12 @@ header {
   padding: 30px 30px 0 30px;
 }
 
+.header-line {
+  height:30px;
+  background-color:#2a332c;
+  margin-bottom: 10px;
+}
+
 header h1 a {
   background: url(../img/logo.svg) no-repeat;
   background-size: 40px;
