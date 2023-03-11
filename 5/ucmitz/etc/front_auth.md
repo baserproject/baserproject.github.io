@@ -34,6 +34,9 @@ return [
 
 この場合、フロントページにアクセスすると、ログインページにリダイレクトします。
 
+
+なお、`BcPrefixAuth` の詳細設定については、 [プレフィックス認証](../specification/baser-core/common/prefix_auth) を参考にします。
+
 ## アクセスルールの追加
 
 
