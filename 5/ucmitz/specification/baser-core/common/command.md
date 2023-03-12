@@ -20,7 +20,6 @@ bin/cake setup test
 
 - INSTALL_MODE を `true` に変更
 - /config/install.php を削除
--
 
 ```shell
 bin/cake setup install
