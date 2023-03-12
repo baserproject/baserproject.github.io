@@ -72,7 +72,7 @@
 - [オートアップデート](baser-core/plugins/auto-update)
 - [リリースパッケージ作成コマンド](baser-core/common/create_release)
 - [コアプラグインの開発](baser-core/common/core_plugin)
-- [管理画面テーマカスタマイズ](/baser-core/common/customize_admin_theme)
-
+- [管理画面テーマカスタマイズ](baser-core/common/customize_admin_theme)
+- [提供コマンド](baser-core/common/command)
 
 　
