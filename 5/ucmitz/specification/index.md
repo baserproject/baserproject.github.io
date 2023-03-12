@@ -68,6 +68,7 @@
 - [ダッシュボードパネル](baser-core/dashboard/dashboard_panel)
 
 ## その他
+- [設定の変更](baser-core/common/setting)
 - [オートアップデート](baser-core/plugins/auto-update)
 - [リリースパッケージ作成コマンド](baser-core/common/create_release)
 - [コアプラグインの開発](baser-core/common/core_plugin)
