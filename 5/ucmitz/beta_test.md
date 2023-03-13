@@ -66,7 +66,8 @@ baserCMS５のベータテストにご興味を持って頂きありがとうご
 - [GitHub Issue](https://github.com/baserproject/ucmitz/issues)
 - [ユーザーズフォーラム baserCMS５ベータテスト](https://forum.basercms.net/c/basercms5-beta-test/16)
 
-また、ベータテストを実施する際の質問についても受け付けています。[ユーザーズフォーラム baserCMS５ベータテスト](https://forum.basercms.net/c/basercms5-beta-test/16) より質問してください。
+また、ベータテストを実施する際の質問についても受け付けています。  
+[ユーザーズフォーラム baserCMS５ベータテスト](https://forum.basercms.net/c/basercms5-beta-test/16) より質問してください。
 
 あなたがエンジニアであれば、ぜひ、プルリクエストを送ってください。
 
