@@ -115,6 +115,7 @@ ucmitz は、現在、CMSとしての機能はありませんが、Webアプリ�
 - [ucmitzの REST API を利用する](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE-REST-API-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
 
 ## その他のドキュメント
+- [カスタムコンテンツの利用方法](./etc/custom_content)
 - [フロント認証](./etc/front_auth)
 - [PlantUMLの利用方法](./etc/plant_uml)
 - [サブフォルダに設置する](./etc/subfolder)

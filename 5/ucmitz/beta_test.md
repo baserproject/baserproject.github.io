@@ -50,16 +50,23 @@ baserCMS５のベータテストにご興味を持って頂きありがとうご
 - プラグインを作成する
 - etc...
 
+### 新機能の使い方
+- [Web API](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE-REST-API-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
+- カスタムコンテンツ
+
+
 ## ドキュメント
-現在、ドキュメントについては、[baserCMS５のユーザーガイド](../user/) と [コアパッケージ開発ガイド](../developer/index)として準備中ではありますが、残念ながら4月の完成予定となっています。
+現在、ドキュメントについては、[baserCMS５公式ガイド](../index) を準備中ではありますが、残念ながら4月の完成予定となっています。
 
 現時点では、開発版の開発ドキュメントである [ucmitz 開発への貢献方法](../ucmitz/) を参考にしてください。  
 
 ## 不具合や要望を報告する
-不具合や要望がありましたら、GitHubか、ユーザーズフォーラムで報告をお願いします。  
+不具合や要望がありましたら、GitHubか、ユーザーズフォーラムで報告をお願いします。
 
 - [GitHub Issue](https://github.com/baserproject/ucmitz/issues)
-- [ユーザーズフォーラム baserCMS５ベータテスト報告](https://forum.basercms.net/c/basercms5-beta-test/16)
+- [ユーザーズフォーラム baserCMS５ベータテスト](https://forum.basercms.net/c/basercms5-beta-test/16)
+
+また、ベータテストを実施する際の質問についても受け付けています。[ユーザーズフォーラム baserCMS５ベータテスト](https://forum.basercms.net/c/basercms5-beta-test/16) より質問してください。
 
 あなたがエンジニアであれば、ぜひ、プルリクエストを送ってください。
 
