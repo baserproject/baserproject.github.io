@@ -51,9 +51,10 @@ baserCMS５のベータテストにご興味を持って頂きありがとうご
 - etc...
 
 ### 新機能の使い方
-- [REST API](https://baserproject.github.io/5/ucmitz/specification/baser-core/common/rest_api)
+- [REST API](./specification/baser-core/common/rest_api)
 - [カスタムコンテンツ](./etc/custom_content)
 
+なお、REST APIについて、API仕様書は現在準備中となりますが、APIの全体像は、[Web API一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=1129992221)より確認できます。
 
 ## ドキュメント
 現在、ドキュメントについては、[baserCMS５公式ガイド](../index) を準備中ではありますが、残念ながら4月の完成予定となっています。

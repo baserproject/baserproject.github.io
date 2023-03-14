@@ -122,7 +122,7 @@ public function services(ContainerInterface $container): void
 ```
  
 ## API を作成する
-REST API として基本的なメソッドとテストを作成します。  
+Web API として基本的なメソッドとテストを作成します。  
 DIコンテナで Service クラスを注入して作成します。
 
 - view(): 単一エンティティの取得

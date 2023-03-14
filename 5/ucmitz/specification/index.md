@@ -61,7 +61,7 @@
 - [プラグイン向け管理画面CSS自動読み込み](./baser-core/common/plugin_admin_css)
 - [アクセスルール](./baser-core/common/permission)
 - [プレフィックス認証](./baser-core/common/prefix_auth)
-- [REST API](./baser-core/common/rest_api)
+- [Web API](./baser-core/common/rest_api)
 - [イベント](./baser-core/common/event)
 
 ## プラグインAPI
