@@ -51,7 +51,7 @@ baserCMS５のベータテストにご興味を持って頂きありがとうご
 - etc...
 
 ### 新機能の使い方
-- [Web API](https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE-REST-API-%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)
+- [REST API](https://baserproject.github.io/5/ucmitz/specification/baser-core/common/rest_api)
 - [カスタムコンテンツ](./etc/custom_content)
 
 
