@@ -1,6 +1,6 @@
 # Web API 一覧
 
-（現在、鋭意準備中です）
+（現在、鋭意準備中です。 [ドキュメント準備予定のAPI一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=1129992221) ）
 
 ## コア
 ### ユーザー
