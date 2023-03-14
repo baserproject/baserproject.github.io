@@ -13,4 +13,5 @@
 - [ユーザーの削除](baser-core/users/delete)
 
 ## ブログ
-- [ブログ記事一覧](bc-blog/blog_posts/index)
+### ブログ記事
+- [ブログ記事一覧の取得](bc-blog/blog_posts/index)
