@@ -6,15 +6,10 @@
 ```
 システム管理者
 ```
-
-### メソッド
-```
-GET
-```
  
-### URL
+### リクエスト
 ```
-/baser/api/baser-core/users.json
+GET /baser/api/baser-core/users.json
 ``` 
 
 ### クエリパラメーター

@@ -7,15 +7,10 @@
 全ての権限  
 ただし、認証なし場合は、status が publish の記事のみ取得可とする。
 ```
-
-### メソッド
-```
-GET
-```
  
 ### URL
 ```
-/baser/api/bc-blog/blog_posts.json
+GET /baser/api/bc-blog/blog_posts.json
 ``` 
 
 ### クエリパラメーター

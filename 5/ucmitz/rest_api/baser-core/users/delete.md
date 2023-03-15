@@ -6,18 +6,13 @@
 ```
 システム管理者
 ```
-
-### メソッド
-```
-DELETE
-```
  
-### URL
+### リクエスト
 ```
-/baser/api/baser-core/users/{userId}.json
+DELETE /baser/api/baser-core/users/{userId}.json
 ``` 
 
-### URLパラメーター
+### パスパラメーター
 
 | パラメーター名       | 型   | 内容                   |
 |---------------|-----|----------------------|

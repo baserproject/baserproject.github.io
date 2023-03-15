@@ -7,15 +7,10 @@
 ```
 全ての権限 
 ```
-
-### メソッド
-```
-POST
-```
  
-### URL
+### リクエスト
 ```
-/baser/api/baser-core/users/refresh_token.json
+POST /baser/api/baser-core/users/refresh_token.json
 ```
 
 ### レスポンス例

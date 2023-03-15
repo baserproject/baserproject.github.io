@@ -6,18 +6,13 @@
 ```
 システム管理者
 ```
-
-### メソッド
-```
-GET
-```
  
-### URL
+### リクエスト
 ```
-/baser/api/baser-core/users/{userId}.json
+GET /baser/api/baser-core/users/{userId}.json
 ``` 
 
-### URLパラメーター
+### パスパラメーター
 
 | パラメーター名       | 型   | 内容                   |
 |---------------|-----|----------------------|
