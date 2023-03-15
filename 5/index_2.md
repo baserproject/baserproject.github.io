@@ -1,7 +1,7 @@
 # baserCMS５ 公式ガイド
 
-- [ドキュメント校正ルール](./document_writing_rules)
-- [APIドキュメント校正ルール](./api_document_writing_rules)
+- [ドキュメント校正ルール](doc_writing/document_writing_rules.md)
+- [APIドキュメント校正ルール](doc_writing/api_document_writing_rules.md)
 
 
 　
