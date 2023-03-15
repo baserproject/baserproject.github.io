@@ -1,10 +1,14 @@
 # baserCMS５ 公式ガイド
 
-- [ドキュメント校正ルール](doc_writing/document_writing_rules.md)
-- [APIドキュメント校正ルール](doc_writing/api_document_writing_rules.md)
-
+## 作ったもの（消さないで）
+- [ドキュメント校正ルール](doc_writing/document_writing_rules)
+- [APIドキュメント校正ルール](doc_writing/api_document_writing_rules)
+- [APIドキュメント作成マニュアル](doc_writing/api_document_writing_manual)
+- [Web APIドキュメント](web_api/index)
 
 　
+## 骨子
+
 - サイト運営者向け
 
     - オフィシャルサイトにまとめる
