@@ -1,5 +1,10 @@
 # baserCMS５ 公式ガイド
 
+- [ドキュメント校正ルール](./document_writing_rules)
+- [APIドキュメント校正ルール](./api_document_writing_rules)
+
+
+　
 - サイト運営者向け
 
     - オフィシャルサイトにまとめる
