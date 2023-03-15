@@ -23,6 +23,8 @@
 - [コンテンツフォルダ情報の取得](baser_core/content_folders/view)
 - [コンテンツフォルダ一覧の取得](baser_core/content_folders/index)
 - [コンテンツフォルダの追加](baser_core/content_folders/add)
+- [コンテンツフォルダの編集](baser_core/content_folders/edit)
+- [コンテンツフォルダの削除](baser_core/content_folders/delete)
 
 ## ブログ
 ### ブログ記事
