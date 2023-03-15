@@ -13,13 +13,15 @@
 ### ユーザー
 - [ログイン](baser-core/users/login)
 - [リフレッシュトークンの取得](baser-core/users/refresh_token)
-- [ユーザー一覧の取得](baser-core/users/index)
 - [ユーザー情報の取得](baser-core/users/view)
+- [ユーザー一覧の取得](baser-core/users/index)
 - [ユーザーの追加](baser-core/users/add)
 - [ユーザーの編集](baser-core/users/edit)
 - [ユーザーの削除](baser-core/users/delete)
 
 ### コンテンツフォルダ
+- [コンテンツフォルダ情報の取得](baser_core/content_folders/view)
+- [コンテンツフォルダ一覧の取得](baser_core/content_folders/index)
 - [コンテンツフォルダの追加](baser_core/content_folders/add)
 
 ## ブログ
