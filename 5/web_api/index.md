@@ -19,6 +19,9 @@
 - [ユーザーの編集](baser-core/users/edit)
 - [ユーザーの削除](baser-core/users/delete)
 
+### コンテンツ
+- [コンテンツ情報の取得](baser_core/contents/view)
+
 ### コンテンツフォルダ
 - [コンテンツフォルダ情報の取得](baser_core/content_folders/view)
 - [コンテンツフォルダ一覧の取得](baser_core/content_folders/index)
