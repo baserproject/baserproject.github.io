@@ -63,7 +63,9 @@ baserCMSのテンプレートは上図のように構成されています。
 
 テーマフォルダに `Layouts` フォルダを作成し、その中に `default.php` ファイルを作成します。
 
-```php: {テーマフォルダ}/Layouts/default.php
+`{テーマフォルダ}/Layouts/default.php`
+
+```php
 <html>
 <head>
     <title><!-- タイトルを記述 --></title>
