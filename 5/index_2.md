@@ -13,23 +13,22 @@
     - オフィシャルサイトにまとめる
 - baserCMSを導入する
     - 機能・仕様
-        - [機能一覧]()
-        - [API仕様]()
+        - [機能一覧](developer/functions)
+        - [API仕様](developer/api)
     - インストール
-        - システム要件
-        - ローカル環境を構築する
+        - [システム要件](developer/system_requirements)
+        - [ローカル環境を構築する](developer/build_local_env)
     - テーマの利用
-        - 配布されているもの
-        - 関数リファレンス
-        - 独自でテーマを作成したい方は[こちら](テーマを作成する)
+        - [テーマガイド](developer/theme/index)
+        - [baserマーケットから購入する](developer/theme/market)
+        - [独自のテーマを作成する](developer/theme/development/index)
+            - [関数リファレンス](developer/theme/development/function_reference)
+            - [プラグイン・テーマを配布・販売する](developer/market)
     - プラグインの利用
-        - 配布されているもの
-        - 独自でプラグインを開発したい方は[こちら](プラグインを開発する)
-    - テーマを作成する
-        - プラグイン・テーマを配布する
-    - プラグインを開発する
-        - プラグイン・テーマを配布する
-    - プラグイン・テーマを配布する
+        - [プラグインガイド](developer/plugin/index)
+        - [baserマーケットから購入する](developer/plugin/market)
+        - [独自のプラグインを作成する](developer/plugin/development/index)
+            - [プラグイン・テーマを配布・販売する](developer/market)
     - APIを利用する
     - デプロイ
         - FTPでデプロイする
