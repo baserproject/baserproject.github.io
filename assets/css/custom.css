@@ -41,8 +41,8 @@ header {
 }
 
 .header-line {
-  height:30px;
-  background-color:#2a332c;
+  height: 30px;
+  background-color: #2a332c;
   margin-bottom: 10px;
 }
 
@@ -70,8 +70,25 @@ ul {
   padding: 0 0 0 20px;
 }
 
+.local-navi {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.local-navi,
+.toc {
+    border-top: 1px solid #e7e7e7;
+}
+
+.local-navi h2 {
+  font-size: 14px;
+  padding: 0;
+  margin-top:20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
 .toc > ul {
-  border-top: 1px solid #e7e7e7;
   padding: 20px !important;
 }
 
@@ -80,15 +97,18 @@ ul {
   padding: 0 0 0 20px;
 }
 
+.local-navi li,
 .toc li {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
+.local-navi a,
 .toc a {
   display: block;
 }
 
+.local-navi a:hover,
 .toc a:hover {
   font-weight: bold;
 }

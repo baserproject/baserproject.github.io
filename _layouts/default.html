@@ -35,15 +35,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        <ul>
-          <li><a href="{{ "/5/ucmitz/" | relative_url }}">ucmitz 開発への貢献方法</a></li>
-        </ul>
-
-        <div class="toc">
-          {% include toc.html html=content h_min=2 %}
-        </div>
+        {% if page.url contains '/5/ucmitz/' %}
+          {% include menu_contributing.html %}
+        {% else %}
+          {% include menu_guide.html %}
+        {% endif %}
         
         <p class="view">
           <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">Githubでこのページを編集</a>
