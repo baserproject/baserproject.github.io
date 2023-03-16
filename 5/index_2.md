@@ -20,15 +20,15 @@
         - [ローカル環境を構築する](developer/build_local_env)
     - テーマの利用
         - [テーマガイド](developer/theme/index)
-        - [baserマーケットから購入する](developer/theme/market)
+        - [baserマーケットから購入する](developer/market/buy)
         - [独自のテーマを作成する](developer/theme/development/index)
             - [関数リファレンス](developer/theme/development/function_reference)
-            - [プラグイン・テーマを配布・販売する](developer/market)
+            - [プラグイン・テーマを配布・販売する](developer/market/sell)
     - プラグインの利用
         - [プラグインガイド](developer/plugin/index)
-        - [baserマーケットから購入する](developer/plugin/market)
+        - [baserマーケットから購入する](developer/market/buy)
         - [独自のプラグインを作成する](developer/plugin/development/index)
-            - [プラグイン・テーマを配布・販売する](developer/market)
+            - [プラグイン・テーマを配布・販売する](developer/market/sell)
     - APIを利用する
     - デプロイ
         - FTPでデプロイする
