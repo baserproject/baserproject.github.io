@@ -59,9 +59,16 @@ baserCMSのテンプレートは上図のように構成されています。
 - コンテンツ
     - CMSで管理しているコンテンツが出力されるエリアです
 
-### レイアウトページの作成
+### レイアウトテンプレートの作成
+
+レイアウトテンプレートとは、Webページの枠組みを記述するファイルです。
+全ての Webページでの共通部分を含める事でメンテナンス性を高める事ができます。
+このファイルを変更するだけで、あらかじめ用意されているブログや、メールフォームのレイアウトも変更する事ができます。
+
+#### HTMLファイルの作成
 
 テーマフォルダに `Layouts` フォルダを作成し、その中に `default.php` ファイルを作成します。
+このファイルをベースに、baserCMSのタグを組み込んでいきます。
 
 `{テーマフォルダ}/Layouts/default.php`
 
@@ -71,7 +78,7 @@ baserCMSのテンプレートは上図のように構成されています。
     <title><!-- タイトルを記述 --></title>
     <meta name="description" content="説明文を記述" />
     <meta name="keywords" content="キーワードを記述" />
-    <link rel="stylesheet" type="text/css" <href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <body>
 
@@ -80,12 +87,12 @@ baserCMSのテンプレートは上図のように構成されています。
     </div>
 
     <div id="Wrap">
-    <div id="contensBody">
-    <!-- コンテンツ内容を記述 -->
-    </div>
-    <div id="Sidebar">
-    <!-- メニュー等を記述 -->
-    </div>
+        <div id="contensBody">
+        <!-- コンテンツ内容を記述 -->
+        </div>
+        <div id="Sidebar">
+        <!-- メニュー等を記述 -->
+        </div>
     </div>
 
     <div id="Footer">
@@ -96,7 +103,74 @@ baserCMSのテンプレートは上図のように構成されています。
 </html>
 ```
 
+## baserCMSのタグを学ぶ
 
+テーマ内で「baserタグ」を利用することでbaserCMSで管理しているコンテンツを表示・利用することができます。
+
+### scripts()
+
+JavaScriptを配置します。
+`js` フォルダに配置されたJavaScriptファイルを出力します。
+
+```php
+<?php $this->BcBaser->scripts() ?>
+```
+
+> 展開後例
+
+```html
+<script src="/theme/js/example.js">
+```
+
+### content()
+
+CMS上で管理しているコンテンツの内容を出力します。
+
+```php
+<?php $this->BcBaser->content() ?>
+```
+
+> 展開後例
+
+```html
+<div>
+    <p>
+        コンテンツ内容
+    </P>
+</div>
+```
+
+### title()
+
+タイトルを出力します。
+head > title 内や、hタグ内に利用します。
+
+```php
+<?php $this->BcBaser->title() ?>
+```
+
+> 展開後例
+
+```html
+baserメディア部始動！
+```
+
+<!--
+    TODO: 他のも書く
+-->
+
+## baserタグを埋め込む
+
+[HTMLファイルの作成](#htmlファイルの作成) で作成したファイルにbaserタグを埋め込んでいきます。
+
+
+#### 静的ファイルを配置する
+
+CSS等の静的ファイルは、テーマフォルダの配下にフォルダを作成し、その配下に設置します。
+
+- 画像: 「img」フォルダ
+- CSS: 「css」フォルダ
+- JavaScript: 「js」フォルダ
 
 ## もっと詳しく知る
 
