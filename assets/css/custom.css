@@ -45,10 +45,10 @@ body {
 /* header */
 header {
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   height: 90%;
   padding: 30px 30px 0 0;
-  width: 250px !important;
+  width: 250px;
 }
 
 header > ul {
@@ -280,8 +280,8 @@ header p.view a {
 
 @media print, screen and (max-width: 1150px) {
   header, section, footer {
-    position: static;
-    width: 100%;
+    position: relative;
+    width: auto;
   }
   .local-navi {
     display: none;
@@ -297,17 +297,23 @@ header p.view a {
     display: flex;
   }
   header {
-    padding-left:15px;
-    width: 100%!important;
+    padding:30px 15px 0 15px;
   }
   .logo {
-    width:200px;
+    width:180px;
   }
   .crumbs {
     display: none;
   }
   body {
     word-wrap: break-word;
+  }
+  .wrapper {
+    width:100%;
+  }
+  .toc {
+    min-width: auto;
+    width: auto;
   }
   
   section {
