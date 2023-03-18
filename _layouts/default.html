@@ -29,12 +29,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
       <header>
+				
+				<div class="header-wrap">
+      	<div class="logo">
         <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
-
+				</div>
+				
+				<div class="contents-home">
+				{% if page.url contains '/5/ucmitz/' %}
+				<ul>
+					<li><a href="{{ "/5/ucmitz/" | relative_url }}">ucmitz 開発への貢献方法</a></li>
+				</ul>
+        {% else %}
+				<ul>
+					<li><a href="{{ "/5/" | relative_url }}">baserCMS５公式ガイド</a></li>
+				</ul>
+        {% endif %}
+				</div>
+				</div>
+				
         {% if page.url contains '/5/ucmitz/' %}
           {% include menu_contributing.html %}
         {% else %}
@@ -48,22 +65,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </header>
       <section>
 
-      <div class="crumbs">
-        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-        <a href="{{ "/" | relative_url }}">Home</a>
-        {% for crumb in crumbs offset: 1 %}
-          {% if forloop.last %}
-            {% if page.title %}
-              / {{ page.title }}
-            {% endif %}
-          {% else %}
-          / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' | relative_url }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
-          {% endif %}
-        {% endfor %}
+      <div class="contents-body">
+      
+				<div class="crumbs">
+					{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+					<a href="{{ "/" | relative_url }}">Home</a>
+					{% for crumb in crumbs offset: 1 %}
+						{% if forloop.last %}
+							{% if page.title %}
+								/ {{ page.title }}
+							{% endif %}
+						{% else %}
+						/ <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | replace:'without-plugin/','without-plugins/' | relative_url }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+						{% endif %}
+					{% endfor %}
+				</div>
+				
+				{% if page.url != '/5/' %}
+				<div class="toc">
+					<h3>Index</h3>
+					{% include toc.html html=content h_min=2 %}
+				</div>
+				{% endif %}
+					
+				{{ content }}
+      
       </div>
-
-      {{ content }}
-
+      
       </section>
       <footer>
       </footer>

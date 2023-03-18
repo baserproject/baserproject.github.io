@@ -1,7 +1,7 @@
 // スクロールに応じてメニューにクラスを付与
 
 window.onload = function () {
-  setMenuEvent();
+  // setMenuEvent();
 }
 
 function setMenuEvent() {

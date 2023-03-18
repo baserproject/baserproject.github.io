@@ -17,6 +17,16 @@ body {
   margin: 0;
 }
 
+.contents-body a,
+.contents-body a:link,
+.contents-body a:hover,
+.contents-body a:visited {
+  color: #006C7F;
+}
+.contents-body a:hover {
+  font-weight: bold;
+}
+
 ::-moz-selection {
   background-color: #006C7F;
   color: #fff;
@@ -37,7 +47,12 @@ header {
   position: fixed;
   overflow: auto;
   height: 90%;
-  padding: 30px 30px 0 30px;
+  padding: 30px 30px 0 0;
+  width: 250px !important;
+}
+
+header > ul {
+  padding: 0;
 }
 
 .header-line {
@@ -58,7 +73,6 @@ header h1 a {
 header li {
   list-style-type: none;
   margin: 5px 0;
-  line-height: 1.5em;
   font-size: 13px;
 }
 
@@ -75,26 +89,48 @@ ul {
   padding-bottom: 10px;
 }
 
-.local-navi,
+.local-navi {
+  border-top: 1px solid #e7e7e7;
+}
+
 .toc {
-    border-top: 1px solid #e7e7e7;
+  background: #eaeae7;
+  float: right;
+  padding: 2em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  min-width: 300px;
+  display: none;
+}
+
+.toc:has(ul) {
+  display: block;
+}
+
+.toc h3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
 }
 
 .local-navi h2 {
   font-size: 14px;
   padding: 0;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  margin-left: 20px;
 }
 
-.toc > ul {
-  padding: 20px !important;
+.toc > ul,
+.local-navi > ul {
+  padding: 0 !important;
 }
 
 .toc ul {
   margin: 0;
-  padding: 0 0 0 20px;
+  list-style-type: none;
 }
 
 .local-navi li,
@@ -106,6 +142,19 @@ ul {
 .local-navi a,
 .toc a {
   display: block;
+}
+
+.local-navi .current {
+  color: #006C7F;
+}
+
+.toc a:link,
+.toc a:visited {
+  color: #363637;
+}
+
+.local-navi a:hover {
+  color: #006C7F !important;
 }
 
 .local-navi a:hover,
@@ -129,7 +178,7 @@ section {
   font-family: Raleway, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   letter-spacing: 0.02em;
-  margin-left: 340px;
+  margin-left: 290px;
   float: none;
 }
 
@@ -139,7 +188,7 @@ section {
 }
 
 section {
-  padding: 20px 30px;
+  padding: 20px 15px;
 }
 
 section h1 {
@@ -234,7 +283,29 @@ header p.view a {
     position: static;
     width: 100%;
   }
-  
+  .local-navi {
+    display: none;
+  }
+  .toc {
+    float: none;
+    margin-left:0;
+  }
+  .view {
+    display: none;
+  }
+  .header-wrap {
+    display: flex;
+  }
+  header {
+    padding-left:15px;
+    width: 100%!important;
+  }
+  .logo {
+    width:200px;
+  }
+  .crumbs {
+    display: none;
+  }
   body {
     word-wrap: break-word;
   }
@@ -255,6 +326,10 @@ header p.view a {
 }
 
 .highlight {
+  background: none !important;
+}
+
+.highlight pre {
   background: #ECECE9 !important;
   border: none !important;
 }

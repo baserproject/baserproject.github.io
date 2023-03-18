@@ -1,9 +1,17 @@
 <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-<ul>
-	<li><a href="{{ "/5/ucmitz/" | relative_url }}">ucmitz 開発への貢献方法</a></li>
+<div class="local-navi">
+<ul class="filelist">
+  {% for site_page in site.pages %}
+    {% if site_page.dir == page.dir and site_page.title %}
+      <li>
+        {% if site_page.url == page.url %} 
+        <a class="current" href="{{ site_page.path | replace: '.md', ''| relative_url }}">{{ site_page.title }}</a>
+        {% else %}
+        <a href="{{ site_page.path | replace: '.md', ''| relative_url }}">{{ site_page.title }}</a>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
-
-<div class="toc">
-	{% include toc.html html=content h_min=2 %}
 </div>
