@@ -6,6 +6,9 @@
 - [APIドキュメント作成マニュアル](doc_writing/api_document_writing_manual)
 - [Web APIドキュメント](web_api/index)
 
+## メモ
+- 階層が深いかも
+  - 機能・仕様やインストールは１ページにまとめて良さそう
 　
 ## 骨子
 

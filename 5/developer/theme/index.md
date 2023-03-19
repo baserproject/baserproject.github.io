@@ -7,7 +7,7 @@ baserCMSには、サイトデザインを簡単に切り替えれるテーマ機
 baserマーケットでは、クリエイターの方が作成したテーマを販売しています。
 購入することでプロのデザインを簡単にサイトに取り込むことができます
 
-- [baserマーケット](https://market.basercms.ne)
+- [baserマーケット](https://market.basercms.net)
 - [baserマーケットから購入する](developer/market/buy)
 
 
