@@ -43,7 +43,7 @@
     - トークンの有効期限を変更する
   - 管理システムからAPIへのアクセス
   - サンプルを参考にする  
-- [Web APIドキュメント](web_api/index)
+- [baser API](web_api/baser_api/index)
 - [独自のWeb API の開発](web_api/develop_api)
   - プレフィックス認証
   - コントローラーを作成する

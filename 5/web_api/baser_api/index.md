@@ -1,4 +1,4 @@
-# baserCMS API
+# baser API
 
 baserCMSコアが提供するAPIの一覧です。利用方法については、[Web API](./index) をご覧ください。
 
@@ -15,15 +15,15 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ユーザーの削除](baser-core/users/delete)
 
 ### コンテンツ
-- [コンテンツ情報の取得](baser_core/contents/view)
+- [コンテンツ情報の取得](baser_api/baser_core/contents/view)
 
 ### コンテンツフォルダ
-- [コンテンツフォルダ情報の取得](baser_core/content_folders/view)
-- [コンテンツフォルダ一覧の取得](baser_core/content_folders/index)
-- [コンテンツフォルダの追加](baser_core/content_folders/add)
-- [コンテンツフォルダの編集](baser_core/content_folders/edit)
-- [コンテンツフォルダの削除](baser_core/content_folders/delete)
+- [コンテンツフォルダ情報の取得](baser_api/baser_core/content_folders/view)
+- [コンテンツフォルダ一覧の取得](baser_api/baser_core/content_folders/index)
+- [コンテンツフォルダの追加](baser_api/baser_core/content_folders/add)
+- [コンテンツフォルダの編集](baser_api/baser_core/content_folders/edit)
+- [コンテンツフォルダの削除](baser_api/baser_core/content_folders/delete)
 
 ## ブログ
 ### ブログ記事
-- [ブログ記事一覧の取得](bc-blog/blog_posts/index)
+- [ブログ記事一覧の取得](baser_api/bc-blog/blog_posts/index)
