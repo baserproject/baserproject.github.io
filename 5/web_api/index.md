@@ -1,28 +1,28 @@
-# Web API
+# REST
 
 baserCMS では、Web API として、REST を利用してアプリケーションの開発ができます。認証方式において JWT を利用します。 
 
 ## REST の有効化
-Web API を利用するには、 `config/.env` の編集が必要です。
+REST を利用するには、 `config/.env` の編集が必要です。
 
 ```shell
-# Web API 自体を有効にする 
+# REST 自体を有効にする 
 USE_CORE_API="true"
-# 管理機能の Web API を有効にする
+# 管理機能の REST を有効にする
 USE_CORE_ADMIN_API="true"
 ```
 
 ## 認証と認可
 ### ログインAPI とトークン取得
 
-認証には、JWTを利用しており、APIにアクセスするためには、ログインをしてトークンを取得する必要があります。
+認証には、JWTを利用しており、RESTにアクセスするためには、ログインをしてトークンを取得する必要があります。
 トークンを取得するためには、次のURLに、POSTで、`email` と `password` を送信します。
 
 ```
 https://localhost/baser/api/baser-core/users/login.json
 ```
 
-ログインが正常に完了すると、トークンを返却しますので、次のリクエスト以降はこのトークンを使って APIにアクセスします。
+ログインが正常に完了すると、トークンを返却しますので、次のリクエスト以降はこのトークンを使って RESTにアクセスします。
 
 ```
 {
@@ -95,8 +95,8 @@ https://localhost/baser/api/baser-core/users/refresh_token.json
 - `Jwt.accessTokenExpire`: アクセストークンの有効期限（デフォルト30分）
 - `Jwt.refreshTokenExpire`: リフレッシュトークンの有効期限（デフォルト14日間）
 
-## 管理システムからAPIへのアクセス
-管理システムでは内部的にAJAXによるAPIへのアクセスを行っており、`USE_CORE_API` に関わらず、例外的にアクセスを許容します。
+## 管理システムからRESTへのアクセス
+管理システムでは内部的にAJAXによるRESTへのアクセスを行っており、`USE_CORE_API` に関わらず、例外的にアクセスを許容します。
 
 `USE_CORE_API` が `false` に設定されているにも関わらず、アクセスが可能となる条件は次のとおりです。
 
@@ -110,3 +110,8 @@ READMEを参考にしてみてください。
 
 [BcSample SPA README](https://github.com/baserproject/ucmitz/blob/dev/plugins/BcSpaSample/README.md)
 
+## 独自の Web API を開発する
+
+[独自のWeb API の開発](./develop_api) をご覧ください。
+
+　

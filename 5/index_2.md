@@ -44,7 +44,7 @@
   - 管理システムからAPIへのアクセス
   - サンプルを参考にする  
 - [Web APIドキュメント](web_api/index)
-- [独自のWeb API を開発](web_api/develop_api)
+- [独自のWeb API の開発](web_api/develop_api)
   - プレフィックス認証
   - コントローラーを作成する
   - 特定のアクションを認証対象から外す
