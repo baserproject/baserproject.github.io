@@ -12,7 +12,7 @@
     - [x] オフィシャルサイトを閲覧して頂くよう誘導
   - [機能一覧](creator/functions)
 - 学習方法を選びましょう
-  - [API仕様](creator/api)
+  - [API仕様](web_api/)
   
 ## baserCMSを導入する
 ### インストール
@@ -32,11 +32,24 @@
 - [baserマーケットから購入する](creator/market#baserマーケットから購入する)
 - [独自のプラグインを作成する](creator/plugin/development/index)
   - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
-### APIを利用する
-- baser API とは
+### Web APIの利用
+- [Web API](web_api/index)
+  - REST API の有効化
   - 認証と認可
     - 権限の定義
+  - APIのリクエスト
+  - APIのレスポンス 
+  - トークンの更新
+    - トークンの有効期限を変更する
+  - 管理システムからAPIへのアクセス
+  - サンプルを参考にする  
 - [Web APIドキュメント](web_api/index)
+- 独自のWeb API を開発
+  - プレフィックス認証
+  - コントローラーを開発する
+  - 特定のアクションを認証対象から外す
+  - データベースの処理と Exception の対応
+  - 認証が必要なAPIが利用可能かどうかを判定 
 
 ## baserCMSの開発に参加・貢献する
 
