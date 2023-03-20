@@ -27,8 +27,9 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [コンテンツフォルダーのリストの取得](baser-core/contents/get_content_folder_list)
 - [コンテンツの移動](baser-core/contents/move)
 - [コンテンツのリネーム](baser-core/contents/rename)
+- [ゴミ箱のコンテンツ一覧の取得](baser-core/contents/index_trash)
+- [ゴミ箱のコンテンツ情報の取得](baser-core/contents/view_trash)
 - [ゴミ箱のコンテンツを戻す](baser-core/contents/trash_return)
-- [ゴミ箱のコンテンツ一覧の取得](baser-core/contents/view_trash)
 - [ゴミ箱を空にする](baser-core/contents/trash_empty)
 
 ### コンテンツフォルダ
