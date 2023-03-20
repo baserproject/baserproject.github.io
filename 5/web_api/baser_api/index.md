@@ -15,15 +15,29 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ユーザーの削除](baser-core/users/delete)
 
 ### コンテンツ
-- [コンテンツ情報の取得](baser_api/baser_core/contents/view)
+- [コンテンツ情報の取得](baser-core/contents/view)
+- [コンテンツ一覧の取得](baser-core/contents/index)
+- [コンテンツの編集](baser-core/contents/edit)
+- [コンテンツの削除](baser-core/contents/delete)
+- [コンテンツの公開状態の変更](baser-core/contents/change_status)
+- [コンテンツ情報の一括処理](baser-core/contents/batch)
+- [コンテンツの存在確認](baser-core/contents/exists)
+- [コンテンツがユニークか確認](baser-core/contents/is_unique_content)
+- [コンテンツのフルURLの取得](baser-core/contents/get_full_url)
+- [コンテンツフォルダーのリストの取得](baser-core/contents/get_content_folder_list)
+- [コンテンツの移動](baser-core/contents/move)
+- [コンテンツのリネーム](baser-core/contents/rename)
+- [ゴミ箱のコンテンツを戻す](baser-core/contents/trash_return)
+- [ゴミ箱のコンテンツ一覧の取得](baser-core/contents/view_trash)
+- [ゴミ箱を空にする](baser-core/contents/trash_empty)
 
 ### コンテンツフォルダ
-- [コンテンツフォルダ情報の取得](baser_api/baser_core/content_folders/view)
-- [コンテンツフォルダ一覧の取得](baser_api/baser_core/content_folders/index)
-- [コンテンツフォルダの追加](baser_api/baser_core/content_folders/add)
-- [コンテンツフォルダの編集](baser_api/baser_core/content_folders/edit)
-- [コンテンツフォルダの削除](baser_api/baser_core/content_folders/delete)
+- [コンテンツフォルダ情報の取得](baser-core/content_folders/view)
+- [コンテンツフォルダ一覧の取得](baser-core/content_folders/index)
+- [コンテンツフォルダの追加](baser-core/content_folders/add)
+- [コンテンツフォルダの編集](baser-core/content_folders/edit)
+- [コンテンツフォルダの削除](baser-core/content_folders/delete)
 
 ## ブログ
 ### ブログ記事
-- [ブログ記事一覧の取得](baser_api/bc-blog/blog_posts/index)
+- [ブログ記事一覧の取得](bc-blog/blog_posts/index)
