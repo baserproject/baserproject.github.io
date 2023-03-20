@@ -137,6 +137,7 @@ ul {
 .toc li {
   margin-top: 5px;
   margin-bottom: 5px;
+  line-height: 18px;
 }
 
 .local-navi a,
