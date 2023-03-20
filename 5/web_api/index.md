@@ -1,28 +1,28 @@
-# REST
+# Web API
 
 baserCMS では、Web API として、REST を利用してアプリケーションの開発ができます。認証方式において JWT を利用します。 
 
-## REST の有効化
-REST を利用するには、 `config/.env` の編集が必要です。
+## Web API の有効化
+Web API を利用するには、 `config/.env` の編集が必要です。
 
 ```shell
-# REST 自体を有効にする 
+# Web API 自体を有効にする 
 USE_CORE_API="true"
-# 管理機能の REST を有効にする
+# 管理機能の Web API を有効にする
 USE_CORE_ADMIN_API="true"
 ```
 
 ## 認証と認可
 ### ログインAPI とトークン取得
 
-認証には、JWTを利用しており、RESTにアクセスするためには、ログインをしてトークンを取得する必要があります。
+認証には、JWTを利用しており、Web APIにアクセスするためには、ログインをしてトークンを取得する必要があります。
 トークンを取得するためには、次のURLに、POSTで、`email` と `password` を送信します。
 
 ```
 https://localhost/baser/api/baser-core/users/login.json
 ```
 
-ログインが正常に完了すると、トークンを返却しますので、次のリクエスト以降はこのトークンを使って RESTにアクセスします。
+ログインが正常に完了すると、トークンを返却しますので、次のリクエスト以降はこのトークンを使って Web APIにアクセスします。
 
 ```
 {
@@ -32,7 +32,7 @@ https://localhost/baser/api/baser-core/users/login.json
 ```
 
 ### 権限の定義
-RESTへのアクセス時、次のセグメントごとに認可を提供します。
+Web APIへのアクセス時、次のセグメントごとに認可を提供します。
 
 - 全て：非ログインユーザーも含む全てのユーザー
 - ログインユーザー：システム管理グループ以外のユーザー  
@@ -41,8 +41,8 @@ RESTへのアクセス時、次のセグメントごとに認可を提供しま�
 - スーパーユーザー：インストール時に一番最初に作ったユーザー
 
 ## APIのリクエスト
-RESTへのリクエストは次のURL構成で行います。  
-リクエスト先の詳細については [Web API ドキュメント](./api_index) を参照してください。
+Web APIへのリクエストは次のURL構成で行います。  
+baserCMS コアについての APIリクエスト先の詳細については [baserCMS API](./api_index) を参照してください。
 
 ```
 https://localhost/baser/api/baser-core/controller_name/action_name.json
@@ -95,8 +95,8 @@ https://localhost/baser/api/baser-core/users/refresh_token.json
 - `Jwt.accessTokenExpire`: アクセストークンの有効期限（デフォルト30分）
 - `Jwt.refreshTokenExpire`: リフレッシュトークンの有効期限（デフォルト14日間）
 
-## 管理システムからRESTへのアクセス
-管理システムでは内部的にAJAXによるRESTへのアクセスを行っており、`USE_CORE_API` に関わらず、例外的にアクセスを許容します。
+## 管理システムからWeb APIへのアクセス
+管理システムでは内部的にAJAXによるWeb APIへのアクセスを行っており、`USE_CORE_API` に関わらず、例外的にアクセスを許容します。
 
 `USE_CORE_API` が `false` に設定されているにも関わらず、アクセスが可能となる条件は次のとおりです。
 
