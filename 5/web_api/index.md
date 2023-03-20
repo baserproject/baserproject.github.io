@@ -108,5 +108,5 @@ https://localhost/baser/api/baser-core/users/refresh_token.json
 vue.js で作成した SPA（シングルページアプリケーション）のサンプルアプリケーションを BcSpaSample プラグインとして提供しています。  
 READMEを参考にしてみてください。
 
-[BcSample SPA README](https://github.com/baserproject/baserCMS/blob/dev/plugins/BcSpaSample/README.md)
+[BcSample SPA README](https://github.com/baserproject/ucmitz/blob/dev/plugins/BcSpaSample/README.md)
 
