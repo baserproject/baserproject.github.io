@@ -63,6 +63,8 @@ baserCMS５より、baserCMS本体をコンパクトにしてメンテナンス�
 ### WebAPIを利用する
 WebAPIを利用してフロントエンドアプリケーションを作成したい方は次のドキュメントをご覧ください。  
 - [Web API](web_api/index)
+- [Web API ドキュメント](web_api/api_index)
+- [独自のWeb API を開発](web_api/develop_api)
 
 ### baserCMSの開発に貢献する
 baserCMS本体の開発に貢献頂ける方は次のドキュメントをご覧ください。  
