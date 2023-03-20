@@ -33,7 +33,7 @@
 - [独自のプラグインを作成する](creator/plugin/development/index)
   - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
 ### Web APIの利用
-- [Web API](web_api/index)
+- [x] [Web API](web_api/index)
   - REST API の有効化
   - 認証と認可
     - 権限の定義
@@ -44,7 +44,7 @@
   - 管理システムからAPIへのアクセス
   - サンプルを参考にする  
 - [baser API](web_api/baser_api/index)
-- [独自のWeb API の開発](web_api/develop_api)
+- [x] [独自のWeb API の開発](web_api/develop_api)
   - プレフィックス認証
   - コントローラーを作成する
   - 特定のアクションを認証対象から外す
