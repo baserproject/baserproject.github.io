@@ -22,7 +22,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [コンテンツの公開状態の変更](baser-core/contents/change_status)
 - [コンテンツ情報の一括処理](baser-core/contents/batch)
 - [コンテンツの存在確認](baser-core/contents/exists)
-- [コンテンツがユニークか確認](baser-core/contents/is_unique_content)
+- [URLがユニークか確認](baser-core/contents/is_unique_content)
 - [コンテンツのフルURLの取得](baser-core/contents/get_full_url)
 - [コンテンツフォルダーのリストの取得](baser-core/contents/get_content_folder_list)
 - [コンテンツの移動](baser-core/contents/move)
