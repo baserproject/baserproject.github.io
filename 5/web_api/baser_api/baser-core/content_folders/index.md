@@ -17,7 +17,7 @@ GET /baser/api/baser-core/content_folders.json
 
 | パラメーター名           | 型 | 内容                                       |
 |-------------------| --- |------------------------------------------|
-| status            | 文字列 | 【未実装】publish：公開されたコンテンツフォルダーのみ<br>all：全て |
+| status            | 文字列 | publish：公開されたコンテンツフォルダーのみ<br>all：全て |
 | limit             | 数値 | 取得件数                                     |
 | page              | 数値 | ページ数                                     |
 | folder_template   | 文字列 | フォルダーテンプレート（あいまい検索）                      |
