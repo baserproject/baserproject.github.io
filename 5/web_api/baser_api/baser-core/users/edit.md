@@ -62,9 +62,9 @@ PATCH /baser/api/baser-core/users/{userId}.json
                     "created": null,
                     "modified": null
                 }
-            }
-        ],
-        "login_user_id": "1"
+            },
+            ...
+        ]
     },
     "message": "ユーザー「foo」を更新しました。",
     "errors": null

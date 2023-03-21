@@ -31,6 +31,16 @@ POST /baser/api/baser-core/users.json
 {
     "message": "ユーザー「佐藤」を追加しました。",
     "user": {
+        "id": 4
+        "real_name_1": "佐藤",
+        "email": "foo1@example.com",
+        "password_1": "demodemo",
+        "password_2": "demodemo",
+        "real_name_2": "二郎",
+        "name": "sato",
+        "nickname": "jiro",
+        "created": "2023-03-14T10:48:12+09:00",
+        "modified": "2023-03-14T10:48:12+09:00",
         "user_groups": [
             {
                 "id": 1,
@@ -48,18 +58,9 @@ POST /baser/api/baser-core/users.json
                     "modified": "2023-03-14T10:48:12+09:00",
                     "id": 4
                 }
-            }
-        ],
-        "real_name_1": "佐藤",
-        "email": "foo1@example.com",
-        "password_1": "demodemo",
-        "password_2": "demodemo",
-        "real_name_2": "二郎",
-        "name": "sato",
-        "nickname": "jiro",
-        "created": "2023-03-14T10:48:12+09:00",
-        "modified": "2023-03-14T10:48:12+09:00",
-        "id": 4
+            },
+            ...
+        ]
     },
     "errors": null
 }

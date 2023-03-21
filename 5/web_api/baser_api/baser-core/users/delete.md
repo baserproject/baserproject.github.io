@@ -49,7 +49,8 @@ DELETE /baser/api/baser-core/users/{userId}.json
                     "created": "2023-03-14T10:48:12+09:00",
                     "modified": "2023-03-14T10:48:12+09:00"
                 }
-            }
+            },
+            ...
         ]
     },
     "message": "ユーザー: 佐藤 を削除しました。"

@@ -37,27 +37,9 @@ GET /baser/api/baser-core/users.json
             "nickname": null,
             "created": "2023-03-13T11:58:55+09:00",
             "modified": "2023-03-13T11:58:55+09:00",
-            "status": true,
-            "user_groups": [
-                {
-                    "id": 1,
-                    "name": "admins",
-                    "title": "システム管理",
-                    "auth_prefix": "Admin,Api",
-                    "auth_prefix_settings": "",
-                    "use_move_contents": true,
-                    "modified": null,
-                    "created": "2023-03-13T11:58:55+09:00",
-                    "_joinData": {
-                        "id": 1,
-                        "user_id": 1,
-                        "user_group_id": 1,
-                        "created": null,
-                        "modified": null
-                    }
-                }
-            ]
-        }
+            "status": true
+        },
+        ...
     ]
 }
 ```
