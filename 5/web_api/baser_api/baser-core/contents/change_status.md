@@ -9,15 +9,15 @@
  
 ### リクエスト
 ```
-DELETE /baser/api/baser-core/contens/change_status.json
+POST /baser/api/baser-core/contens/change_status.json
 ``` 
 
 ### リクエストボディ
 
 | パラメーター名 | 型   | 必須  | 内容                                 |
 |---------|-----|-----|------------------------------------|
-| id      | 数値  |    | コンテンツID                            |
-| status  | 文字列 |    | 公開する: publish<br>非公開にする: unpublish |
+| id      | 数値  |  ●  | コンテンツID                            |
+| status  | 文字列 |  ●  | 公開する: publish<br>非公開にする: unpublish |
 
 ### レスポンス例
 #### レスポンスボディ
