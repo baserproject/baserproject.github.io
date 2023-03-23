@@ -14,6 +14,9 @@
   - [プラグインについて学ぶ](plugin/index)
   - [x] [WebAPIを利用する](web_api/)
 - 参加・貢献
+  - [ucmitz 開発への貢献方法](./ucmitz/index)
+- このサイトの全体像
+  - [サイトマップ](sitemap) 
 
 ## baserCMSを導入する
 ### インストール
