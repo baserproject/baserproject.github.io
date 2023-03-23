@@ -12,14 +12,14 @@
     - [ ] baserマーケット
       - [▲] [baserマーケット](market)
   - 学習方法を選びましょう
-    - [baserCMSをインストールする](introduce/index)
-    - [テーマについて学ぶ](theme/index)
-    - [プラグインについて学ぶ](plugin/index)
+    - [ ] [baserCMSをインストールする](introduce/index)
+    - [ ] [テーマについて学ぶ](theme/index)
+    - [ ] [プラグインについて学ぶ](plugin/index)
     - [x] [WebAPIを利用する](web_api/)
   - 参加・貢献
-    - [ucmitz 開発への貢献方法](./ucmitz/index)
+    - [x] [ucmitz 開発への貢献方法](./ucmitz/index)
   - このサイトの全体像
-    - [サイトマップ](sitemap) 
+    - [ ] [サイトマップ](sitemap) 
 - [ ] クイックスタート
 
 ## baserCMSを導入する
@@ -33,7 +33,7 @@
 
 ### テーマの利用
 - [▲] [テーマガイド](theme/)
-  - [baserマーケットから購入する](market.md#baserマーケットから購入する)
+  - [▲] [baserマーケットから購入する](market.md#baserマーケットから購入する)
 - [▲] [独自のテーマを作成する](theme/develop_theme)
   - [ ] [関数リファレンス](theme/reference/)
   - [▲] [プラグイン・テーマを配布・販売する](market.md#プラグイン・テーマを配布・販売する)
@@ -55,7 +55,7 @@
     - トークンの有効期限を変更する
   - 管理システムからAPIへのアクセス
   - サンプルを参考にする  
-- [baser API](web_api/baser_api/index)
+- [ ] [baser API](web_api/baser_api/index)
 - [x] [独自のWeb API の開発](web_api/develop_api)
   - プレフィックス認証
   - コントローラーを作成する
