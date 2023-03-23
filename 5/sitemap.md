@@ -1,42 +1,44 @@
-# baserCMS５ 公式ガイド
-
-## メモ
-- 階層が深いかも
-  - 機能・仕様やインストールは１ページにまとめて良さそう
-
-## 骨子
+# サイトマップ
 
 ## はじめに
 - [x] baserCMSとは
-  - [x] サイト運営者向け
+  - [x] Webサイト運営者の方へ
     - [x] オフィシャルサイトを閲覧して頂くよう誘導
-  - [機能一覧](creator/functions)
+  - [x] ライセンス
+  - [x] 国産オープンソース
+  - [x] 機能 
+    - [x] [機能一覧](functions.md)
 - 学習方法を選びましょう
-  - [API仕様](web_api/)
-  
+  - [baserCMSをインストールする](introduce/index)
+  - [テーマについて学ぶ](theme/index)
+  - [プラグインについて学ぶ](plugin/index)
+  - [x] [WebAPIを利用する](web_api/)
+- 参加・貢献
+
 ## baserCMSを導入する
 ### インストール
-- [システム要件](creator/system_requirements)
-- [サーバーにインストールする]()
+- [インストールガイド](introduce/index)
+  - [x] [システム要件](introduce/system_requirements.md)
+- [サーバーにインストールする](introduce/install)
   - インストールの準備
   - インストールの実行
-  - [ローカル環境を構築する](creator/build_local_env)
+- [ローカル環境を構築する](introduce/build_local_env.md)
 
 ### テーマの利用
-- [テーマガイド](creator/theme/index)
-- [baserマーケットから購入する](creator/market#baserマーケットから購入する)
-- [独自のテーマを作成する](creator/theme/development/index)
-  - [関数リファレンス](creator/theme/development/function_reference)
-  - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
+- [テーマガイド](theme/index)
+  - [baserマーケットから購入する](market.md#baserマーケットから購入する)
+- [独自のテーマを作成する](theme/development/index)
+  - [関数リファレンス](theme/development/function_reference)
+  - [プラグイン・テーマを配布・販売する](market.md#プラグイン・テーマを配布・販売する)
 
 ### プラグインの利用
-- [プラグインガイド](creator/plugin/index)
-- [baserマーケットから購入する](creator/market#baserマーケットから購入する)
-- [独自のプラグインを作成する](creator/plugin/development/index)
-  - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
+- [プラグインガイド](plugin/index)
+  - [baserマーケットから購入する](market.md#baserマーケットから購入する)
+- [独自のプラグインを作成する](plugin/development/index)
+  - [プラグイン・テーマを配布・販売する](market.md#プラグイン・テーマを配布・販売する)
 
 ### Web APIの利用
-- [x] [Web API](web_api/index)
+- [x] [Web API ガイド](web_api/index)
   - REST API の有効化
   - 認証と認可
     - 権限の定義
@@ -112,9 +114,9 @@
     - 対応方法
     - 翻訳方法
 
-## 公式GitHubコラボレーター向けドキュメント
-- 公式GitHubコラボレーターとは
-  - 公式GitHubコラボレーターになるには
+## コラボレーター向けドキュメント
+- 公式コラボレーターとは
+  - 公式コラボレーターになるには
 - 開発手法
   - チケット駆動開発
   - マイルストーンミーティング
