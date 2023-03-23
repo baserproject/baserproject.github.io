@@ -21,17 +21,20 @@
   - インストールの準備
   - インストールの実行
   - [ローカル環境を構築する](creator/build_local_env)
+
 ### テーマの利用
 - [テーマガイド](creator/theme/index)
 - [baserマーケットから購入する](creator/market#baserマーケットから購入する)
 - [独自のテーマを作成する](creator/theme/development/index)
   - [関数リファレンス](creator/theme/development/function_reference)
   - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
+
 ### プラグインの利用
 - [プラグインガイド](creator/plugin/index)
 - [baserマーケットから購入する](creator/market#baserマーケットから購入する)
 - [独自のプラグインを作成する](creator/plugin/development/index)
   - [プラグイン・テーマを配布・販売する](creator/market#プラグイン・テーマを配布・販売する)
+
 ### Web APIの利用
 - [x] [Web API](web_api/index)
   - REST API の有効化
@@ -58,10 +61,13 @@
     - baserCMS独自の仕様
   - 国際化の方針
   - セキュリティ
+
 ### パッケージ概要
+- [データベース構造](./package/database)
 - アーキテクチャ
   - ディレクトリ構成
   - CakePHPに完全にのっかっていればその旨を記載
+
 ### 開発規約
 - 開発規約はココにマージ
   - バージョン番号
@@ -72,6 +78,7 @@
   - ユーザーインターフェイス設計方針
     - ユーザーインターフェイス設計ガイドラインより
   - 非推奨処理の対応
+
 ### 参加・貢献
 - 開発者として参加・貢献する
   - 開発サイクル
