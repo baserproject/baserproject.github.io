@@ -8,6 +8,8 @@
   - [x] 国産オープンソース
   - [x] 機能 
     - [x] [機能一覧](functions.md)
+  - [ ] baserマーケット
+    - [▲] [baserマーケット](market)
 - 学習方法を選びましょう
   - [baserCMSをインストールする](introduce/index)
   - [テーマについて学ぶ](theme/index)
