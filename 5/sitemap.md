@@ -1,24 +1,26 @@
 # サイトマップ
 
 ## はじめに
-- [x] baserCMSとは
-  - [x] Webサイト運営者の方へ
-    - [x] オフィシャルサイトを閲覧して頂くよう誘導
-  - [x] ライセンス
-  - [x] 国産オープンソース
-  - [x] 機能 
-    - [x] [機能一覧](functions.md)
-  - [ ] baserマーケット
-    - [▲] [baserマーケット](market)
-- 学習方法を選びましょう
-  - [baserCMSをインストールする](introduce/index)
-  - [テーマについて学ぶ](theme/index)
-  - [プラグインについて学ぶ](plugin/index)
-  - [x] [WebAPIを利用する](web_api/)
-- 参加・貢献
-  - [ucmitz 開発への貢献方法](./ucmitz/index)
-- このサイトの全体像
-  - [サイトマップ](sitemap) 
+- [x] [baserCMS公式ガイド](index)
+  - [x] baserCMSとは
+    - [x] Webサイト運営者の方へ
+      - [x] オフィシャルサイトを閲覧して頂くよう誘導
+    - [x] ライセンス
+    - [x] 国産オープンソース
+    - [x] 機能 
+      - [▲] [機能一覧](functions.md)
+    - [ ] baserマーケット
+      - [▲] [baserマーケット](market)
+  - 学習方法を選びましょう
+    - [baserCMSをインストールする](introduce/index)
+    - [テーマについて学ぶ](theme/index)
+    - [プラグインについて学ぶ](plugin/index)
+    - [x] [WebAPIを利用する](web_api/)
+  - 参加・貢献
+    - [ucmitz 開発への貢献方法](./ucmitz/index)
+  - このサイトの全体像
+    - [サイトマップ](sitemap) 
+- [ ] クイックスタート
 
 ## baserCMSを導入する
 ### インストール
@@ -30,16 +32,16 @@
 - [ ] [ローカル環境を構築する](introduce/build_local_env)
 
 ### テーマの利用
-- [▲] [テーマガイド](theme/index)
+- [▲] [テーマガイド](theme/)
   - [baserマーケットから購入する](market.md#baserマーケットから購入する)
-- [▲] [独自のテーマを作成する](theme/development/index)
-  - [ ] [関数リファレンス](theme/development/function_reference)
+- [▲] [独自のテーマを作成する](theme/develop_theme)
+  - [ ] [関数リファレンス](theme/reference/)
   - [▲] [プラグイン・テーマを配布・販売する](market.md#プラグイン・テーマを配布・販売する)
 
 ### プラグインの利用
 - [ ] [プラグインガイド](plugin/index)
   - [▲] [baserマーケットから購入する](market.md#baserマーケットから購入する)
-- [ ] [独自のプラグインを作成する](plugin/development/index)
+- [ ] [独自のプラグインを作成する](plugin/develop_plugin)
   - [▲] [プラグイン・テーマを配布・販売する](market.md#プラグイン・テーマを配布・販売する)
 
 ### Web APIの利用

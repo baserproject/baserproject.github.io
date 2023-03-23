@@ -15,6 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/custom.css?v=" | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -51,6 +52,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% endif %}
 				</div>
 				</div>
+				
+				<p>{{ site.description | default: site.github.project_tagline }}</p>
 				
         {% if page.url contains '/5/ucmitz/' %}
           {% include menu_contributing.html %}
@@ -96,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <footer>
       </footer>
     </div>
-    <script src="{{ "/assets/js/bootstrap.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/bootstrap.js" | relative_url }}" defer></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/menu.js" | relative_url }}"></script>
   </body>

@@ -3,7 +3,7 @@
 
 
 ## プレフィックス認証
-独自の Web APIを開発するには、[プレフィックス認証](../plugin/development/functions/prefix_auth) を利用すると JWT認証と RESTful なルーティングを簡単に実装する事ができます。  
+独自の Web APIを開発するには、[プレフィックス認証](../plugin/prefix_auth.md) を利用すると JWT認証と RESTful なルーティングを簡単に実装する事ができます。  
 標準では、`Api` というプレフィックスが定義済です。[RESTを有効化](./index#REST の有効化) するだけで特別な設定をせずともプレフィックス認証が利用可能です。
 
 ## コントローラーを作成する

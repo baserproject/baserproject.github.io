@@ -1,6 +1,6 @@
 # baserCMS５ 公式ガイド
 
-## はじめに
+## baserCMS概要
 <div class="topics">
 <h3>baserCMSとは？</h3>
 <p>baserCMS５は、PHP８、CakePHP４上で動作する、WebAPIを備えたWebサイト開発フレームワークです。</p>

@@ -234,7 +234,7 @@ baserタグには、大きく3つの系統があります。
 #### その他
 
 baserCMSは他にも多数のbaserタグを提供しています。
-是非、[関数リファレンス](function_reference.md)を御覧ください。
+是非、[関数リファレンス](reference/index)を御覧ください。
 
 ### 共通部品を利用する
 
@@ -339,7 +339,7 @@ CSSや画像、JavaScript等の静的ファイルは、テーマフォルダの 
 
 ## もっと詳しく知る
 
-- [関数リファレンス](function_reference)
+- [関数リファレンス](reference/index)
 - [テーマのフォルダ構造](folder)
 - [用語集]()
 

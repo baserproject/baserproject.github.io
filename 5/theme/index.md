@@ -17,5 +17,5 @@ baserマーケットでは、クリエイターの方が作成したテーマを
 また、作成したテーマをbaserマーケットで販売できます。
 __※「baserメンバー」への登録が必要になります。__
 
-- [独自のテーマを作成する](developer/theme/development/index)
+- [独自のテーマを作成する](develop_theme)
 - [プラグイン・テーマを配布・販売する](developer/market/sell)

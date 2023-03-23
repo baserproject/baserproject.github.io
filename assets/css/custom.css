@@ -127,7 +127,10 @@ ul {
 .local-navi > ul {
   padding: 0 !important;
 }
-
+.local-navi ul ul {
+  margin-bottom: 0;
+  display: none;
+}
 .toc ul {
   margin: 0;
   list-style-type: none;
