@@ -24,8 +24,7 @@ baserCMSは、[MIT License](https://licenses.opensource.jp/MIT/MIT.html) の元�
 ### 国産オープンソース
 baserCMSは、2009年12月にスタートした福岡発の国産オープンソースCMSです。オープンソースフレームワーク「CakePHP」をベースとし、環境準備の素早さに重点を置いた基本制作支援プロジェクトから誕生しました。
 
-マニュアルなどについて日本語を標準とし、国内コミュニティにて運営しているのも国産オープンソースならではの強みです。
-[baserCMSコミュニティの歴史](https://basercms.net/community/history) についてこちらよりご覧いただけます。
+マニュアルなどについて日本語を標準とし、国内コミュニティにて運営しているのも国産オープンソースならではの強みです。[baserCMSコミュニティの歴史](https://basercms.net/community/history) についてこちらよりご覧いただけます。
 
 　
 ### 機能

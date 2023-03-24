@@ -1,3 +1,3 @@
-# 公式コラボレーターとは
+# コラボレーターガイド
 
 {% include looking_for.html %}
