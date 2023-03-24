@@ -239,7 +239,9 @@ baserCMSは他にも多数のbaserタグを提供しています。
 ### 共通部品を利用する
 
 これまででbaserタグを利用して、動的に変化する文章などを表示することができました。
-baserCMSでは、別のレイアウトテンプレートからも共通化して利用したいものを部品化するために、エレメントを利用します。
+ヘッダーやフッターのように、別のレイアウトテンプレートからも同じテンプレートを共通で利用するケースがあります。
+baserCMSでは、エレメントと呼ばれる共通部品を作成・利用できる機能を提供しています。
+
 `corp-theme/templates/` に `element` フォルダを作成し、その中に `header.php` と `footer.php` を作成します。
 
 - corp-theme/
@@ -273,11 +275,14 @@ baserCMSでは、別のレイアウトテンプレートからも共通化して
 ```php
 <footer class="bs-footer">
 	<p> Copyright(C)
-		<?php $this->BcBaser->copyYear(2023) ?>
+		<?php $this->BcBaser->copyYear(2022) ?>
 		baserCMS Users Community All rights Reserved.
 	</p>
 </footer>
 ```
+
+`$this->BcBaser->copyYear()` はコピーライト用の年を出力するbaserタグです。
+`2022 - 2023` のように出力されます。
 
 #### エレメントを埋め込む
 
@@ -316,10 +321,24 @@ baserCMSでは、別のレイアウトテンプレートからも共通化して
 </html>
 ```
 
-`$this->BcBaser->header()` `$this->BcBaser->footer()` では、`corp-theme/templates/element/` からそれぞれ `header.php` と `footer.php` を読み込むbaserタグです。
+`$this->BcBaser->header()` `$this->BcBaser->footer()` は、`corp-theme/templates/element/` からそれぞれ `header.php` と `footer.php` を読み込むbaserタグです。
+
+baserCMSが標準で提供しているエレメントを作成、利用する場合は、 `$this->BcBaser->element()` を使用してください。
+`$this->BcBaser->element('sidebar')` と記述した場合、 `/テーマフォルダ/templates/element/sidebar.php` を読み込みます。
 
 
-#### 静的ファイルを配置する
+### テーマを有効化する
+
+これまで作成してきたテーマを確認します。
+
+
+## もっと詳しく知る
+
+- [関数リファレンス](reference/index)
+- [テーマのフォルダ構造](folder)
+- [用語集]()
+
+### 静的ファイルを配置する
 
 CSSや画像、JavaScript等の静的ファイルは、テーマフォルダの `src` フォルダ配下にフォルダとファイルを配置します。
 
@@ -336,12 +355,6 @@ CSSや画像、JavaScript等の静的ファイルは、テーマフォルダの 
 <?php $this->BcBaser->js(['example1.js', 'example2.js']) ?>
 ```
 
-
-## もっと詳しく知る
-
-- [関数リファレンス](reference/index)
-- [テーマのフォルダ構造](folder)
-- [用語集]()
 
 ## 作ったテーマを販売する
 
