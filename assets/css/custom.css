@@ -26,6 +26,9 @@ body {
 .contents-body a:hover {
   font-weight: bold;
 }
+.contents-body img {
+  border: 1px solid #efefef;
+}
 
 ::-moz-selection {
   background-color: #006C7F;
