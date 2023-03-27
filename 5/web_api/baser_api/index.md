@@ -39,6 +39,11 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [コンテンツフォルダの編集](baser-core/content_folders/edit)
 - [コンテンツフォルダの削除](baser-core/content_folders/delete)
 
+### ログ管理
+- [ログ管理一覧の取得](baser-core/dblogs/index)
+- [ログ管理の追加](baser-core/dblogs/add)
+- [ログ管理の一括削除](baser-core/dblogs/delete_all)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
