@@ -57,12 +57,12 @@ docker-compose up -d
 
 #### データベース情報
 
-| name | value |
-|-----------|------------|
-| host | bc5-db |
-| database | basercms |
-| user | root |
-| password | root |
+| name | value                       |
+|-----------|-----------------------------|
+| host | MySQL：bc5-db<br>PostgreSQL：bc5-pg |
+| database | basercms                    |
+| user | root                        |
+| password | root                        |
 
 ## コンテナの操作
 ### コンテナへのログイン方法
