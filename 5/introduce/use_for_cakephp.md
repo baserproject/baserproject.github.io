@@ -26,5 +26,8 @@ bin/cake plugin load BaserCore
 
 ブラウザで、次のURLにアクセスするとインストーラーが起動しますので、 [インストールを実行する](./index#インストールを実行する)  に従ってインストールを進めます。
 
-[https://your-host-name/install](https://your-host-name/install){:target="_blank"}
+https://your-host-name/install
+
+
+　
 
