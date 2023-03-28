@@ -61,6 +61,15 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [アクセス制限設定のコピー](baser-core/permissions/copy)
 - [アクセス制限設定の一括処理](baser-core/permissions/batch)
 - [アクセス制限設定の並び替え](baser-core/permissions/update_sort)
+- 
+### ユーザーグループ
+- [ユーザーグループ一覧の取得](baser-core/permission_groups/index)
+- [ユーザーグループの取得](baser-core/permission_groups/view)
+- [ユーザーグループの追加](baser-core/permission_groups/add)
+- [ユーザーグループの編集](baser-core/permission_groups/edit)
+- [ユーザーグループの削除](baser-core/permission_groups/delete)
+- [ユーザーグループのリスト](baser-core/permission_groups/list)
+- [ユーザーグループの再構築](baser-core/permission_groups/rebuild_by_user_group)
 
 ## ブログ
 ### ブログ記事
