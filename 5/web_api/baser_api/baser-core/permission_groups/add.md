@@ -21,6 +21,7 @@ POST /baser/api/baser-core/permission_groups.json
 | type　   | 文字列	  |    | タイプ               |
 | plugin　   | 文字列	  |     | プラグイン               |
 | status　   | 真偽値	  |     | 利用状態               |
+
 ## レスポンス例
 
 ### レスポンスボディ
