@@ -1,5 +1,6 @@
 # WordPressとの共存
 
+コンテンツ管理には baserCMSを利用し、ブログだけを WordPressを利用したいという場合があります。
 baserCMSは、少しの調整を行うことで WordPressと共存させることができます。
 
 ## 共存手順
