@@ -87,7 +87,13 @@ WebAPIを利用してフロントエンドアプリケーションを作成し�
 baserCMS本体の開発に貢献頂ける方は次のドキュメントをご覧ください。  
 - [ucmitz 開発への貢献方法](./ucmitz/index)
 
-　
+## べっしーとは
+「べっしー」は、デザイナー「[カネウチカズコ](https://www.facebook.com/kaneuchi.kazuko){:target="_blank"}」作の、baserCMSのオフィシャルマスコットキャラクターです。
+[LINEスタンプ](https://store.line.me/stickershop/product/1217064/ja){:target="_blank"} も公開されています。　
+
+<p style="text-align:center">
+    <img src="img/bassy.png" alt="べっしー" style="border:none;width:180px" />
+</p>
 
 
 
