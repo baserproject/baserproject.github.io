@@ -6,7 +6,7 @@
 
 ## データ構成
 
-データ構成については、[ER図](https://docs.google.com/presentation/d/1m8jAImToxjexulMhBlad6o0MUbRvpJ5r3Md-bdJztSA/edit#slide=id.g20e9de42a2a_0_0) をご覧ください。
+データ構成については、[ER図](https://docs.google.com/presentation/d/1m8jAImToxjexulMhBlad6o0MUbRvpJ5r3Md-bdJztSA/edit#slide=id.g20e9de42a2a_0_0){:target="_blank"} をご覧ください。
 
 カスタムフィールドでフィールドマスタを作成し、カスタムリンクで、でコンテンツのフィールド設計を行い、カスタムエントリーでそのコンテンツに対してのデータを登録します。
 
