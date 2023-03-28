@@ -1,6 +1,8 @@
 # Web API ガイド
 
-baserCMS では、Web API として、REST を利用してアプリケーションの開発ができます。認証方式において JWT を利用します。 
+baserCMS では、ヘッドレス化の仕組みとして外部のアプリケーションよりアクセス可能な REST API を備え、認証にはセキュアな [JWT](https://jwt.io/){:target="_blank"} を採用し、安全な通信を実現できます。
+
+REST API を利用することでマルチデバイスにも対応が可能です。
 
 ## Web API の有効化
 Web API を利用するには、 `config/.env` の編集が必要です。
