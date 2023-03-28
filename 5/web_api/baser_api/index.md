@@ -44,6 +44,14 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ログ管理の追加](baser-core/dblogs/add)
 - [ログ管理の一括削除](baser-core/dblogs/delete_all)
 
+### 固定ページ
+- [固定ページ一覧の取得](baser-core/pages/index)
+- [固定ページ情報の取得](baser-core/pages/view)
+- [固定ページの追加](baser-core/pages/add)
+- [固定ページの編集](baser-core/pages/edit)
+- [固定ページの削除](baser-core/pages/delete)
+- [固定ページのコピー](baser-core/pages/copy)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
