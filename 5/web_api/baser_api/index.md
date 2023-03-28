@@ -52,6 +52,16 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [固定ページの削除](baser-core/pages/delete)
 - [固定ページのコピー](baser-core/pages/copy)
 
+### アクセス制限設定
+- [アクセス制限設定一覧の取得](baser-core/permissions/index)
+- [アクセス制限設定情報の取得](baser-core/permissions/view)
+- [アクセス制限設定の追加](baser-core/permissions/add)
+- [アクセス制限設定の編集](baser-core/permissions/edit)
+- [アクセス制限設定の削除](baser-core/permissions/delete)
+- [アクセス制限設定のコピー](baser-core/permissions/copy)
+- [アクセス制限設定の一括処理](baser-core/permissions/batch)
+- [アクセス制限設定の並び替え](baser-core/permissions/update_sort)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
