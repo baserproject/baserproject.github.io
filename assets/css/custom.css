@@ -17,6 +17,9 @@ body {
   margin: 0;
 }
 
+.contents-body {
+  padding-bottom: 120px;
+}
 .contents-body a,
 .contents-body a:link,
 .contents-body a:hover,
