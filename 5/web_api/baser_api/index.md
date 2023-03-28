@@ -61,7 +61,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [アクセス制限設定のコピー](baser-core/permissions/copy)
 - [アクセス制限設定の一括処理](baser-core/permissions/batch)
 - [アクセス制限設定の並び替え](baser-core/permissions/update_sort)
-- 
+
 ### ユーザーグループ
 - [ユーザーグループ一覧の取得](baser-core/permission_groups/index)
 - [ユーザーグループの取得](baser-core/permission_groups/view)
@@ -70,6 +70,20 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ユーザーグループの削除](baser-core/permission_groups/delete)
 - [ユーザーグループのリスト](baser-core/permission_groups/list)
 - [ユーザーグループの再構築](baser-core/permission_groups/rebuild_by_user_group)
+
+### プラグイン管理
+- [プラグイン一覧取得](baser-core/plugins/index)
+- [単一プラグイン取得](baser-core/plugins/view)
+- [プラグインを追加](baser-core/plugins/add)
+- [プラグインを有効化](baser-core/plugins/attach)
+- [プラグインを無効化](baser-core/plugins/detach)
+- [プラグイン管理の一括処理](baser-core/plugins/batch)
+- [プラグイン管理のbaserマーケット](baser-core/plugins/get_market_plugins)
+- [プラグインインストール](baser-core/plugins/install)
+- [プラグインアンインストール](baser-core/plugins/uninstall)
+- [プラグインのデータベースの初期化](baser-core/plugins/reset_db)
+- [プラグイン管理の並び替え](baser-core/plugins/update_sort)
+- [取得可能なコアのバージョン情報を取得](baser-core/plugins/get_available_core_version_info)
 
 ## ブログ
 ### ブログ記事
