@@ -9,14 +9,14 @@
  
 ### リクエスト
 ```
-GET /baser/api/baser-core/permissions/index/{permissionGroupId}.json
+GET /baser/api/baser-core/permissions/index/{userGroupId}.json
 ``` 
 
 ### パスパラメーター
 
 | パラメーター名   | 型   | 必須  | 内容         |
 |-----------|-----|-----|------------|
-| permissionGroupId        | 数値  | ●   | ユーザーグループID |
+| userGroupId        | 数値  | ●   | ユーザーグループID |
 
 ### クエリパラメーター
 

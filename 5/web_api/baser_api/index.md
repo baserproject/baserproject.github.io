@@ -59,6 +59,8 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [アクセス制限設定の編集](baser-core/permissions/edit)
 - [アクセス制限設定の削除](baser-core/permissions/delete)
 - [アクセス制限設定のコピー](baser-core/permissions/copy)
+- [アクセス制限設定の一括処理](baser-core/permissions/batch)
+- [アクセス制限設定の並び替え](baser-core/permissions/update_sort)
 
 ## ブログ
 ### ブログ記事
