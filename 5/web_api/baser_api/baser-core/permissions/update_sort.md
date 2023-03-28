@@ -61,7 +61,7 @@ POST /baser/api/baser-core/contens/update_sort/{userGroupId}.json
       "created": "2023-03-13T12:36:40+09:00"
     }
   },
-  "message": "一度リロードしてから再実行してみてください。"
+  "message": "アクセスルール「編集」の並び替えを更新しました。"
 }
 
 ```

@@ -50,6 +50,7 @@ POST /baser/api/baser-core/pages.json
 | content[deleted_date]   | 真偽値 |     | 削除日              |
 | content[exclude_menu]   | 真偽値 |     | 公開ページのメニューより除外              |
 | content[blank_link]   | 真偽値 |     | メニューのリンクを別ウィンドウで開く              |
+
 ## レスポンス例
 
 ### レスポンスボディ
