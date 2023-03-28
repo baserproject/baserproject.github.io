@@ -103,13 +103,17 @@ baserCMSが提供する Docker を利用している場合は、データベー�
 
 トップページ、または、管理画面を開いて正常に動作しているか確認しましょう。
 
-#### 管理画面を http で利用する
-baserCMSの管理画面は、https（SSL）でアクセスしないとエラーとなります。  
-http でアクセスしたい場合は、`/config/.env` 開いて設定値を変更します。
 
-```shell
-#  ADMIN_SSL を false  に設定する
-export ADMIN_SSL="false"
-```
+## 環境設定
+baserCMSの管理画面は、https（SSL）でアクセスしないとエラーとなりますが、http でアクセスしたい場合など、環境設定を変更する事ができます。環境設定を変更したい場合はこちらをご覧ください。
+
+- [環境設定](./env_setting)
+　
+
+## WordPressとの共存
+baserCMSは WordPressと共存させることもできます。共存させたい場合はこちらをご覧ください。
+
+- [WordPressとの共存](./coexist_with_wordpress)
 
 　
+
