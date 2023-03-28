@@ -233,4 +233,191 @@ if ($isLoop && $entryChildren && $linkChildren) {
 必ず、クエリパラメータに `custom_table_id` を指定する必要があります。
 
 　
-　
+## 独自のフィールドタイプを作成する
+
+独自のフィールドタイプはプラグインとして開発します。
+
+必要な最小構成は次のとおりです。
+
+```shell
+- config/
+  - setting.php
+- src/
+  - View/
+    - Helper/
+      - {PluginName}Helper.php
+  - Plugin.php
+- config.php
+```
+
+### Pluginクラスを設置する
+プラグインとして動作させるために、Pluginクラスを設置します。中身は空でも構いませんが `BcPlugin` を継承します。
+
+```php
+// /src/Plugin.php
+namespace {PluginName};
+use BaserCore\BcPlugin;
+class Plugin extends BcPlugin{
+
+}
+```
+
+### プラグイン情報を定義する
+`type` に `BcCustomContentPlugin` を定義することで、カスタムコンテンツのプラグインとして認識できるようになります。
+```php
+// /config.php
+return [
+    'type' => ['BcCustomContentPlugin'],
+    'title' => __d('baser_core', 'カスタムコンテンツ：TELフィールド'),
+    'description' => __d('baser_core', 'カスタムコンテンツにTELフィールドを提供する'),
+    'author' => 'baserCMS User Community',
+    'url' => 'https://basercms.net',
+];
+```
+
+### フィールドタイプを定義する
+カスタムフィールドの編集画面にて「タイプ」として認識させるためには、対象プラグイン配下の `/config/setting.php` にタイプの設定を定義します。
+
+`BcCustomContent.fieldTypes` 配下に、プラグイン名をキーとして定義します。つまり、プラグインごとに１つ定義できます。
+
+```shell
+return [
+    'BcCustomContent' => [
+        'fieldTypes' => [
+            {PluginName} => [
+                // 設定値を定義する
+            ]
+        ]
+    ]
+];        
+```
+
+#### 設定値
+- `category`: タイプのセレクトボックスにおけるグループ（基本|日付|選択|コンテンツ|その他）
+- `label`: 見出しラベル
+- `columnType`: DBのカラム型
+  CakePHPの ConnectionManager で認識できるもので指定
+- `controlType`: コントロールのタイプ（検索時の条件生成などに利用）  
+  CakePHPの FormHelper で認識できるもので指定
+- `preview`: プレビューに対応しているかどうか（デフォルト false）
+- `useDefaultValue`: 初期値の利用（デフォルト true）
+- `useSize`: 横幅の利用（デフォルト false）
+- `useMaxLength`: 最大文字数の利用（デフォルト false）
+- `useAutoConvert`: 自動変換の利用（デフォルト false）
+- `useCounter`: カウンターの利用（デフォルト false）
+- `usePlaceholder`: プレースホルダーの利用（デフォルト false）
+- `useCheckEmail`: Eメール形式チェックの利用（デフォルト false）
+- `useCheckEmailConfirm`: Eメール比較チェックの利用（デフォルト false）
+- `useCheckNumber`: 数値チェックの利用（デフォルト false）
+- `useCheckHankaku`: 半角チェックの利用（デフォルト false）
+- `useZenkakuKatakana`: 全角カタカナチェックの利用（デフォルト false）
+- `useZenkakuHiragana`: 全角ひらがなチェックの利用（デフォルト false）
+- `useCheckDatetime`: 日付チェックの利用（デフォルト false）
+- `useCheckRegex`: 正規表現チェックの利用（デフォルト false）
+- `useCheckMaxFileSize`: ファイルアップロードサイズ制限の利用（デフォルト false）
+- `useCheckFileExt`: ファイル拡張子チェックの利用（デフォルト false）
+- `loop`: ループ機能に対応しているかどうか（デフォルト false）
+
+#### 設定例
+```php
+return [
+    'BcCustomContent' => [
+        'fieldTypes' => [
+            'BcCcText' => [
+                'category' => '基本',
+                'label' => 'テキスト',
+                'columnType' => 'string',
+                'controlType' => 'text',
+                'preview' => true,
+                'useSize' => true,
+                'useMaxLength' => true,
+                'useAutoConvert' => true,
+                'useCounter' => true,
+                'usePlaceholder' => true,
+                'useCheckEmail' => true,
+                'useCheckEmailConfirm' => true,
+                'useCheckNumber' => true,
+                'useCheckHankaku' => true,
+                'useCheckZenkakuKatakana' => true,
+                'useCheckZenkakuHiragana' => true,
+                'useCheckDatetime' => true,
+                'useCheckRegex' => true,
+                'useCheckMaxFileSize' => false,
+                'useCheckFileExt' => false,
+                'useDefaultValue' => true,
+                'loop' => true
+            ]
+        ]
+    ]
+];
+```
+
+### ヘルパを定義する
+
+４つのメソッドを定義します。
+
+- **control**: 管理システムの編集画面で利用するコントロールを表示するためのメソッド。
+- **preview**: リアルタイムプレビュー時の表示用メソッド。Vue.js の属性バインディングが利用できます。（必須ではありません）
+- **searchControl**: 検索フォーム用のコントロールを表示するためのメソッド。（必須ではありません）
+- **get**: テーマのテンプレートで表示するためのメソッド。
+
+```php
+// BcCcText の例
+// /src/View/Helper/BcCcTexthelper
+namespace BcCcText\View\Helper;
+
+use BaserCore\View\Helper\BcAdminFormHelper;
+use BcCustomContent\Model\Entity\CustomField;
+use BcCustomContent\Model\Entity\CustomLink;
+use Cake\View\Helper;
+
+class BcCcTextHelper extends Helper
+{
+
+    public $helpers = [
+        'BaserCore.BcAdminForm' => ['templates' => 'BaserCore.bc_form']
+    ];
+
+    public function control(CustomLink $link, array $options = []): string
+    {
+        $field = $link->custom_field;
+        $options = array_merge([
+            'type' => 'text',
+            'size' => $field->size,
+            'maxlength' => $field->max_length,
+            'placeholder' => $field->placeholder
+        ], $options);
+        if (!empty($field->counter)) {
+            $options['counter'] = true;
+        }
+        return $this->BcAdminForm->control($link->name, $options);
+    }
+
+    public function preview(CustomLink $link)
+    {
+        $options = [
+            ':size' => 'entity.size',
+            ':maxlength' => 'entity.max_length',
+            ':placeholder' => 'entity.placeholder',
+            ':value' => 'entity.default_value'
+        ];
+        return $this->control($link, $options);
+    }
+
+    public function searchControl(CustomLink $link, array $options = []): string
+    {
+        $options = array_merge([
+            'size' => '',
+            'max_length' => '',
+            'placeholder' => ''
+        ], $options);
+        return $this->control($link, $options);
+    }
+
+    public function get($fieldValue, CustomLink $link, array $options = [])
+    {
+        return h($fieldValue);
+    }
+
+}
+```
