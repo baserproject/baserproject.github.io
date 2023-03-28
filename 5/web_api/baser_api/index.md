@@ -85,6 +85,11 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [プラグイン管理の並び替え](baser-core/plugins/update_sort)
 - [取得可能なコアのバージョン情報を取得](baser-core/plugins/get_available_core_version_info)
 
+### サイト基本設定
+- [メールの送信テスト実行](baser-core/site_configs/check_sendmail)
+- [システム基本設定の取得](baser-core/site_configs/view)
+- [システム基本設定の編集](baser-core/site_configs/edit)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
