@@ -44,7 +44,7 @@ Web APIへのアクセス時、次のセグメントごとに認可を提供し�
 
 ## APIのリクエスト
 Web APIへのリクエストは次のURL構成で行います。  
-baserCMS コアについての APIリクエスト先の詳細については [baser API](baser_api/api_index.md) を参照してください。
+baserCMS コアについての APIリクエスト先の詳細については [baser API](baser_api/) を参照してください。
 
 ```
 https://localhost/baser/api/baser-core/controller_name/action_name.json

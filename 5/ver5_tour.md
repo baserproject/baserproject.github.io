@@ -95,17 +95,93 @@ baserCMSはこれまでCakePHP２系という古いアーキテクチャで10年
 ![カスタムエントリー詳細](img/entries_index.png)
 
 
+　
 ## REST API
-ヘッドレス化の仕組みとして外部のアプリケーションよりアクセス可能な REST API を備えています。
-- [Web APIガイド](../web_api/)
+ヘッドレス化の仕組みとして外部のアプリケーションよりアクセス可能な REST API を備えています。  
+詳細については [Web APIガイド](../web_api/) をご覧ください。
 
+### REST API を利用する流れ
+1. API を有効化する
+2. エンドポイントにリクエストを送信する
+
+#### 1. API を有効化する
+`/config/.env` を編集します。
+```php
+USE_CORE_API="true"
+```
+
+#### 2. エンドポイントにリクエストを送信する
+GETメソッドで、認証を必要としない次のエンドポイントにリクエストを投げます。
+
+```shell
+/baser/api/baser-core/contents.json
+```
+
+次のようなコンテンツ一覧のJSONデータが取得できます。この場合、公開状態のコンテンツのみが対象となります。
+
+```json
+{
+    "contents": [
+        {
+            "id": 5,
+            "name": "about",
+            "plugin": "BaserCore",
+            "type": "Page",
+            "entity_id": 2,
+            "url": "/about",
+            "site_id": 1,
+            "alias_id": null,
+            "main_site_content_id": null,
+            "parent_id": 1,
+            "lft": 6,
+            "rght": 7,
+            "level": 1,
+            "title": "会社案内",
+            "description": "",
+            "eyecatch": "",
+            "author_id": 1,
+            "layout_template": "",
+            "status": true,
+            "publish_begin": null,
+            "publish_end": null,
+            "self_status": true,
+            "self_publish_begin": null,
+            "self_publish_end": null,
+            "exclude_search": false,
+            "created_date": "2023-03-28T18:46:47+09:00",
+            "modified_date": null,
+            "site_root": false,
+            "deleted_date": null,
+            "exclude_menu": false,
+            "blank_link": false,
+            "created": "2023-03-28T18:46:37+09:00",
+            "modified": "2023-03-28T18:46:47+09:00"
+        },
+        ・・・
+    ]
+}
+```
+
+他にも様々なエンドポイントがあります。 [baser API](./web_api/baser_api/) をご覧ください。
+
+### 認証を必要とするエンドポイントへのアクセス
+認証を必要とするエンドポイントへのアクセスは、JWT認証を利用します。詳しくは、[Web API ガイド](./web_api/) をご覧ください。
+
+　
 ## アクセスルール
 baserCMS４までは「アクセス制限設定」として提供していた機能が、「アクセスルール」へと名称を変更して、より細かな設定ができるようになりました。
-- [アクセスルール](functions/baser-core/access_rule.md)
+詳細については、[アクセスルール](functions/baser-core/access_rule.md) をご覧ください。
+
+### アクセスルールを利用する流れ
+
 
 ## オートアップデート
 オフィシャルのリリース情報を取得し、簡単にbaserCMSコアをアップデートする事ができる機能です。
-- [オートアップデート](functions/baser-core/auto_update.md)
+詳細については、[オートアップデート](functions/baser-core/auto_update.md)をご連ください。
+
+### オートアップデートを利用する流れ
+
+
 
 ## baserCMS４からの変更点
 CakePHP４に対応することにより、アーキテクチャーも大幅に変更となり、テーマやプラグインの作り方も変更となっています。詳細についてはこちらをご覧ください。
