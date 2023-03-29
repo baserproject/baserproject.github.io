@@ -9,8 +9,15 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/save_search_opened.json
+POST /baser/api/baser-core/utilities/save_search_opened/{key}/{open}.json
 ```
+
+### パスパラメーター
+
+| パラメーター名   | 型   | 必須  | 内容    |
+|-----------|-----|-----|-------|
+| key        | 文字列  | ●   | キー    |
+| open        | 数字  | ●   | 1 Or '' |
 
 ### レスポンス例
 #### レスポンスボディ

@@ -17,7 +17,8 @@ POST /baser/api/baser-core/utilities/verity_contents_tree.json
 #### レスポンスボディ
 ```json
 {
-  "result": true
+    "message": "コンテンツのツリー構造に問題はありません。"
 }
+
 
 ```

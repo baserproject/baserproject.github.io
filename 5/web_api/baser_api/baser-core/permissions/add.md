@@ -23,7 +23,7 @@ POST /baser/api/baser-core/permissions.json
 | sort　   | 数字	  |     | 並び順               |
 | auth　   | 数字	  |     | アクセス権                |
 | method　   | 文字列	  |     | メソッド               |
-| status　   | 数字	  |     | 利用状態               |
+| status　   | 真偽値	  |     | 利用状態               |
 | permission_group_id　   | 数字	  |     | アクセスルールグループID               |
 | url　   | 数字	  |     | 対象URL               |
 ## レスポンス例
