@@ -14,6 +14,15 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ユーザーの編集](baser-core/users/edit)
 - [ユーザーの削除](baser-core/users/delete)
 
+### ユーザーグループ
+- [ユーザーグループ一覧の取得](baser-core/user_groups/index)
+- [ユーザーグループの取得](baser-core/user_groups/view)
+- [ユーザーグループの追加](baser-core/user_groups/add)
+- [ユーザーグループの編集](baser-core/user_groups/edit)
+- [ユーザーグループの削除](baser-core/user_groups/delete)
+- [ユーザーグループのリスト](baser-core/user_groups/list)
+- [ユーザーグループのコピー](baser-core/user_groups/copy)
+
 ### コンテンツ
 - [コンテンツ情報の取得](baser-core/contents/view)
 - [コンテンツ一覧の取得](baser-core/contents/index)
@@ -62,14 +71,14 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [アクセス制限設定の一括処理](baser-core/permissions/batch)
 - [アクセス制限設定の並び替え](baser-core/permissions/update_sort)
 
-### ユーザーグループ
-- [ユーザーグループ一覧の取得](baser-core/permission_groups/index)
-- [ユーザーグループの取得](baser-core/permission_groups/view)
-- [ユーザーグループの追加](baser-core/permission_groups/add)
-- [ユーザーグループの編集](baser-core/permission_groups/edit)
-- [ユーザーグループの削除](baser-core/permission_groups/delete)
-- [ユーザーグループのリスト](baser-core/permission_groups/list)
-- [ユーザーグループの再構築](baser-core/permission_groups/rebuild_by_user_group)
+### アクセスルールグループ
+- [アクセスルールグループ一覧の取得](baser-core/permission_groups/index)
+- [アクセスルールグループの取得](baser-core/permission_groups/view)
+- [アクセスルールグループの追加](baser-core/permission_groups/add)
+- [アクセスルールグループの編集](baser-core/permission_groups/edit)
+- [アクセスルールグループの削除](baser-core/permission_groups/delete)
+- [アクセスルールグループのリスト](baser-core/permission_groups/list)
+- [アクセスルールグループの再構築](baser-core/permission_groups/rebuild_by_user_group)
 
 ### プラグイン管理
 - [プラグイン一覧の取得](baser-core/plugins/index)
