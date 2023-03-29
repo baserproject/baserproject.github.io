@@ -117,6 +117,16 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [テーマの削除](baser-core/themes/delete)
 - [baserマーケットよりテーマの一覧の取得](baser-core/themes/get_market_themes)
 
+### ユーティリティ
+- [サーバーキャッシュを削除](baser-core/utilities/clear_cache)
+- [コンテンツ管理のツリー構造をチェック](baser-core/utilities/verity_contents_tree)
+- [コンテンツ管理のツリー構造をリセット](baser-core/utilities/reset_contents_tree)
+- [バックアップダウンロード](baser-core/utilities/download_backup)
+- [バックアップよりレストア](baser-core/utilities/restore_db)
+- [ログファイルダウンロード](baser-core/utilities/download_log)
+- [ログファイルを削除](baser-core/utilities/delete_log)
+- [検索ボックスの表示状態を保存する](baser-core/utilities/save_search_opend)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
