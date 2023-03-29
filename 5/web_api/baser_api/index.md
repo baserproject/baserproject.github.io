@@ -72,18 +72,18 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ユーザーグループの再構築](baser-core/permission_groups/rebuild_by_user_group)
 
 ### プラグイン管理
-- [プラグイン一覧取得](baser-core/plugins/index)
-- [単一プラグイン取得](baser-core/plugins/view)
-- [プラグインを追加](baser-core/plugins/add)
-- [プラグインを有効化](baser-core/plugins/attach)
-- [プラグインを無効化](baser-core/plugins/detach)
+- [プラグイン一覧の取得](baser-core/plugins/index)
+- [単一プラグインの取得](baser-core/plugins/view)
+- [プラグインの追加](baser-core/plugins/add)
+- [プラグインの有効化](baser-core/plugins/attach)
+- [プラグインの無効化](baser-core/plugins/detach)
 - [プラグイン管理の一括処理](baser-core/plugins/batch)
 - [プラグイン管理のbaserマーケット](baser-core/plugins/get_market_plugins)
-- [プラグインインストール](baser-core/plugins/install)
-- [プラグインアンインストール](baser-core/plugins/uninstall)
+- [プラグインのインストール](baser-core/plugins/install)
+- [プラグインのアンインストール](baser-core/plugins/uninstall)
 - [プラグインのデータベースの初期化](baser-core/plugins/reset_db)
 - [プラグイン管理の並び替え](baser-core/plugins/update_sort)
-- [取得可能なコアのバージョン情報を取得](baser-core/plugins/get_available_core_version_info)
+- [取得可能なコアのバージョン情報の取得](baser-core/plugins/get_available_core_version_info)
 
 ### サイト基本設定
 - [メールの送信テスト実行](baser-core/site_configs/check_sendmail)
@@ -91,12 +91,22 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [システム基本設定の編集](baser-core/site_configs/edit)
 
 ### サイト管理
-- [サイト一覧取得](baser-core/sites/index)
-- [単一サイト取得](baser-core/sites/view)
-- [サイト新規追加](baser-core/sites/add)
-- [サイト編集](baser-core/sites/edit)
-- [サイト削除](baser-core/sites/delete)
+- [サイト一覧の取得](baser-core/sites/index)
+- [単一サイトの取得](baser-core/sites/view)
+- [サイトの新規追加](baser-core/sites/add)
+- [サイトの編集](baser-core/sites/edit)
+- [サイトの削除](baser-core/sites/delete)
 - [選択可能なデバイスと言語の一覧を取得](baser-core/sites/get_selectable_devices_and_lang)
+
+### テーマ管理
+- [テーマ一覧の習得](baser-core/themes/index)
+- [単一テーマ情報の取得](baser-core/themes/view)
+- [新しいテーマのアップロード](baser-core/themes/add)
+- [テーマの適用](baser-core/themes/apply)
+- [初期データの読み込む](baser-core/themes/load_default_data)
+- [テーマのコピー](baser-core/themes/copy)
+- [テーマの削除](baser-core/themes/delete)
+- [baserマーケットよりテーマの一覧の取得](baser-core/themes/get_market_themes)
 
 ## ブログ
 ### ブログ記事
