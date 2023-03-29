@@ -79,6 +79,7 @@ BcCustomContent プラグインにより提供。
 | サイト内検索       | サイト内のコンテンツをカテゴリ別に検索できます。各コンテンツは検索除外設定を行う事ができます。 |
 | GoogleMaps表示 | 管理画面で登録した住所を元に簡単にGoogleMapsの地図を表示する事ができます。 |
 
+　
 ## 管理機能
 
 ### ユーザー管理
@@ -305,7 +306,7 @@ BcFavorite プラグインにより提供。
 | [リスト一括処理](http://basercms.net/functions/batch_list)  | 複数のデータに対して削除処理、公開処理、非公開処理など一括処理を行う事ができます。 |
 | [エディタCSS ](http://basercms.net/functions/editor_css) | WYSIWYGエディタ内で読み込むCSSを設定する機能です。    |
 
-
+　
 ## Webサイト開発者向け機能
 
 ### テーマ
