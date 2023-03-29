@@ -90,6 +90,14 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [システム基本設定の取得](baser-core/site_configs/view)
 - [システム基本設定の編集](baser-core/site_configs/edit)
 
+### サイト管理
+- [サイト一覧取得](baser-core/sites/index)
+- [単一サイト取得](baser-core/sites/view)
+- [サイト新規追加](baser-core/sites/add)
+- [サイト編集](baser-core/sites/edit)
+- [サイト削除](baser-core/sites/delete)
+- [選択可能なデバイスと言語の一覧を取得](baser-core/sites/get_selectable_devices_and_lang)
+
 ## ブログ
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
