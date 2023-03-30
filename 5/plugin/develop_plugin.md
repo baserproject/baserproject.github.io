@@ -81,22 +81,150 @@ CakePHP４に対応することにより、アーキテクチャーも大幅に�
 
 - [baserCMS４からの変更点](./core/difference_from_basercms4)
 
-## 管理画面を作成する
-https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%A6%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%82%92%E4%BD%9C%E3%82%8B
 
-### 認証
+## 管理システムを作成する
+baserCMS を利用して開発すると、簡単にログイン認証付きのリッチな管理画面を作成することができます。
+　
+### Controller の配置
+管理画面を実装する Controller は、`Admin` ディレクトリ内に配置します。
 
-## インストールの処理
-https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%87%A6%E7%90%86
+また、 `BcAdminAppController` を継承します。
 
-### データベースのマイグレーション
-https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B#%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88
+```php
+// /plugins/{YourPlugin}/Controller/Admin/YourController.php
+class YourController extends \BaserCore\Controller\Admin\BcAdminAppController
+{
+    public function index()
+    {
 
-## アンインストールの処理
-https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B#%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%87%A6%E7%90%86
+    }
+}
+```
+
+### Template の配置
+
+管理画面を実装する Template は、`Admin` ディレクトリ内に配置します。
+
+```shell
+/plugins/{YourPlugin}/templates/Admin/Your/index.php
+```
+
+### 表示を確認
+次のURLでアクセスできます。    
+
+```shell
+https://your-host-name/baser/admin/your-plugin/your/index
+```
+baserCMSの管理画面の場合、プレフィックスが `Admin` でも URL上のプレフィックスが `/baser/admin` となります。`/baser` の部分を変更したい場合は、`/config/.env` にて変更できます。
+
+この時点で認証がかかっていますのでログインが必要です。
+
+```shell
+https://your-host-name/baser/admin/baser-core/users/login
+```
+
+### タイトルをセットする
+テンプレート内にて次のコードを記述することでタイトルをセットできます。
+
+```php
+// /plugins/{YourPlugin}/templates/Admin/Your/index.php
+$this-BcAdmin->setTitle('タイトルを記述');
+```
+
+### 画面のヘルプをセットする
+対象画面の説明用のヘルプを配置するには、事前に `help` ディレクトリに、エレメントを配置する必要があります。
+
+```shell
+/plugins/{YourPlugin}/templates/Admin/element/help/{your_help_name}.php
+```
+エレメントにヘルプ内容を記述したら、呼び出し側のテンプレートにヘルプの呼び出し定義を記述します。
+
+```php
+// /plugins/{YourPlugin}/templates/Admin/Your/index.php
+$this-BcAdmin->setHelp('your_help_name');
+```
+
+### 検索フォームをセットする
+データの一覧画面などで検索フォームを設置するには、事前に `search` ディレクトリに、エレメントを配置する必要があります。
+
+```shell
+/plugins/{YourPlugin}/templates/Admin/element/search/{your_search_name}.php
+```
+
+エレメントに検索フォームの内容を記述したら、呼び出し側のテンプレートに検索フォームの呼び出し定義を記述します。
+
+```php
+// /plugins/{YourPlugin}/templates/Admin/Your/index.php
+$this-BcAdmin->setSearch('your_search_name');
+```
+
+### タイトルの右側にボタンをセットする
+タイトルの右側に新規登録ボタンなどを設置するには、次の呼び出し定義を記述します。
+
+```php
+// /plugins/{YourPlugin}/templates/Admin/Your/index.php
+// 例
+$this->BcAdmin->addAdminMainBodyHeaderLinks([
+  'url' => ['action' => 'add', $id],
+  'title' => '新規記事追加',
+]);
+```
+
+## データベースのマイグレーション
+マイグレーションファイルやシードファイルを設置することで、インストール時、自動的に読み込むことができます。
+
+データベースのテーブルからマイグレーションファイルを作成する場合はコマンドで実行します。下記コマンドを実行すると、`/plugins/{YourPlugin}/config/Migrations/` 内に自動生成します。
+
+```
+bin/cake bake migration_snapshot Initial --plugin {YourPlugin}
+```
+
+データベースのテーブルからシードファイルを作成する場合は次のようになります。
+```shell
+bin/cake bake seed --data {TableName} -p {YourPlugin}
+```
 
 
-## アップデートの処理
+なお、コマンドでマイグレーションファイルを作る際、事前にオートローダーの再作成が必要です。
+
+```shell
+composer dump-autoload
+```
+
+## インストール時の処理
+プラグインのインストール時に、マイグレーションファイルの読み込み以外に何らかの処理を行いたい場合は、Plugin クラスに記述することができます。
+
+```php
+// /plugins/{YourPlugin}/src/Plugin.php
+class Plugin extends \BaserCore\BcPlugin
+{
+    public function install($options = []) : bool
+    {
+        // ここに必要なインストール処理を記述
+        return parent::install($options);
+    }
+}
+```
+
+
+
+## アンインストール時の処理
+プラグインの削除時に、マイグレーションファイルの読み込み以外に何らかの処理を行いたい場合は、Plugin クラスに記述することができます。
+
+```php
+// /plugins/{YourPlugin}/src/Plugin.php
+class Plugin extends \BaserCore\BcPlugin
+{
+    public function uninstall($options = []) : bool
+    {
+        // ここに必要なアンインストール処理を記述
+        return parent::uninstall($options);
+    }
+}
+```
+
+
+## アップデート時の処理
 プラグインのアップデート時にマイグレーションやスクリプトの実行を行いたい場合、いくつかのファイルを調整します。
 
 ### バージョンファイル
@@ -109,7 +237,7 @@ https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3
 `/config/update/` 内にバージョン番号のフォルダを配置すると、対象バージョン用のスクリプトとして認識されます。
 
 ```shell
-# バージョン 5.0.0 の場合
+# アップデート対象のバージョンが「5.0.0」の場合
 /config/update/5.0.0/
 ```
 
@@ -117,7 +245,7 @@ https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3
 対象バージョン用スクリプト設置フォルダに `config.php` を配置することでアップデート画面に表示するアラートメッセージを定義することができます。
 
 ```php
-// /config/update/5.0.0/config.php
+// /plugins/{YourPlugin}/config/update/5.0.0/config.php
 <?php
 return [
     'updateMessage' => 'アラートメッセージを記述します。'
@@ -127,7 +255,7 @@ return [
 #### アップデートスクリプト
 対象バージョン用プログラム設置フォルダに `updater.php` を配置することで、アップデート時に実行するスクリプトを定義することができます。
 ```php
-// /config/update/5.0.0/updater.php
+// /plugins/{YourPlugin}/config/update/5.0.0/updater.php
 <?php
 // 例）
 $users = TableRegistry::getTableLocator()->get('BaserCore.Users');
@@ -144,7 +272,53 @@ $users->save($user);
 
 
 ## サービスクラスの利用
-https://github.com/baserproject/ucmitz/wiki/ucmitz%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B#%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88
+MVCモデルにサービスレイヤーを追加するとメンテナンス性が高くテスタブルなコードとなりやすいです。
+baserCMS本体のコードは全てサービスレイヤーを利用する前提で構築されています。
+
+### サービスクラスを利用する場合
+#### サービスクラス
+テーブルに紐づくサービスクラスの場合は、`PagesService` のように複数形の名称を推奨しています。
+
+```php
+// /plugins/{YourPlugin}/src/Service/PagesService.php
+class PagesService
+{
+}
+```
+#### サービスプロバイダ
+サービスを読み込むためのサービスプロバイダは、 `{YourPluginName}ServiceProvider` の名称を推奨しています。
+
+```php
+// /plugins/{YourPlugin}/src/Service/{YourPluginName}ServiceProvider.php
+class YourPluginNameServiceProvider extends ServiceProvider
+{
+    protected $provides = [
+        PagesServiceInterface::class
+    ];
+    
+    public function services($container): void
+    {
+        $container->add(PagesServiceInterface::class, PagesService::class);
+    }    
+}
+```
+
+#### サービスプロバイダの追加
+サービスプロバイダを準備したら、`Plugin` クラスにて忘れないようにコンテナに追加しておきます。
+```php
+class Plugin extends BcPlugin
+{
+    public function services(ContainerInterface $container): void
+    {
+        $container->addServiceProvider(new YourPluginNameServiceProvider());
+    }
+}
+```
+
+
+サービスクラスの利用方法、及びサービスプロバイダー定義方法の詳細は次のページをご覧ください。
+
+- [CakePHP Cookbook: 依存性の注入(DI)](https://book.cakephp.org/4/ja/development/dependency-injection.html){:target="_blank"}
 
 ## APIドキュメント
 baserCMSで利用できるAPIについては次をご覧ください。
