@@ -341,8 +341,8 @@ class PagesController extends AppController
 ## APIドキュメント
 baserCMSで利用できるAPIについては次をご覧ください。
 
-- [baserCMS クラスメソッドリファレンス](./reference/)
-- [CakePHP API ドキュメント](https://api.cakephp.org/){target="_blank"}
+- [baserCMS クラスリファレンス](./reference/){:target="_blank"}
+- [CakePHP API ドキュメント](https://api.cakephp.org/){:target="_blank"}
 
 ## プラグイン配布・販売する
 プラグインができたら、早速、GitHubや、baserマーケットで公開しましょう。
