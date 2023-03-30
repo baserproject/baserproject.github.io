@@ -108,7 +108,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [選択可能なデバイスと言語の一覧を取得](baser-core/sites/get_selectable_devices_and_lang)
 
 ### テーマ管理
-- [テーマ一覧の習得](baser-core/themes/index)
+- [テーマ一覧の取得](baser-core/themes/index)
 - [単一テーマ情報の取得](baser-core/themes/view)
 - [新しいテーマのアップロード](baser-core/themes/add)
 - [テーマの適用](baser-core/themes/apply)
@@ -128,5 +128,47 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [検索ボックスの表示状態を保存する](baser-core/utilities/save_search_opend)
 
 ## ブログ
+
+### ブログコンテンツ
+- [ブログコンテンツの一覧の取得](bc-blog/blog_contents/index)
+- [単一ブログコンテンツの取得](bc-blog/blog_contents/view)
+- [ブログコンテンツのリストを取得](bc-blog/blog_contents/list)
+- [ブログコンテンツの新規追加](bc-blog/blog_contents/add)
+- [ブログコンテンツの編集](bc-blog/blog_contents/edit)
+- [ブログコンテンツの削除](bc-blog/blog_contents/delete)
+- [ブログコンテンツのコピー](bc-blog/blog_contents/copy)
+
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
+- [単一ブログ記事の取得](bc-blog/blog_posts/view)
+- [ブログ記事一覧の新規追加](bc-blog/blog_posts/add)
+- [ブログ記事一覧の編集](bc-blog/blog_posts/edit)
+- [ブログ記事一覧の削除](bc-blog/blog_posts/delete)
+- [ブログ記事一覧のコピー](bc-blog/blog_posts/copy)
+- [ブログ記事一覧の公開状態に設定](bc-blog/blog_posts/publish)
+- [ブログ記事一覧の非公開状態に設定](bc-blog/blog_posts/unpublish)
+- [ブログ記事一覧の一括処理](bc-blog/blog_posts/batch)
+
+### ブログカテゴリ
+- [ブログカテゴリの一覧の取得](bc-blog/blog_categories/index)
+- [単一ブログカテゴリの取得](bc-blog/blog_categories/view)
+- [ブログカテゴリのリストを取得](bc-blog/blog_categories/list)
+- [ブログカテゴリの新規追加](bc-blog/blog_categories/add)
+- [ブログカテゴリの編集](bc-blog/blog_categories/edit)
+- [ブログカテゴリの削除](bc-blog/blog_categories/delete)
+- [ブログカテゴリの一括処理](bc-blog/blog_categories/batch)
+
+### ブログタグ
+- [ブログタグの一覧の取得](bc-blog/blog_tags/index)
+- [単一ブログタグの取得](bc-blog/blog_tags/view)
+- [ブログタグの新規追加](bc-blog/blog_tags/add)
+- [ブログタグの編集](bc-blog/blog_tags/edit)
+- [ブログタグの削除](bc-blog/blog_tags/delete)
+- [ブログタグの一括処理](bc-blog/blog_tags/batch)
+
+### ブログコメント
+- [ブログコメントの一覧の取得](bc-blog/blog_comments/index)
+- [単一ブログコメントの取得](bc-blog/blog_comments/view)
+- [ブログコメントの新規追加](bc-blog/blog_comments/add)
+- [ブログコメントの削除](bc-blog/blog_comments/delete)
+- [ブログコメントの一括処理](bc-blog/blog_comments/batch)
