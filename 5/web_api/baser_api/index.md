@@ -157,3 +157,18 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ブログカテゴリの編集](bc-blog/blog_categories/edit)
 - [ブログカテゴリの削除](bc-blog/blog_categories/delete)
 - [ブログカテゴリの一括処理](bc-blog/blog_categories/batch)
+
+### ブログタグ
+- [ブログタグの一覧の取得](bc-blog/blog_tags/index)
+- [単一ブログタグの取得](bc-blog/blog_tags/view)
+- [ブログタグの新規追加](bc-blog/blog_tags/add)
+- [ブログタグの編集](bc-blog/blog_tags/edit)
+- [ブログタグの削除](bc-blog/blog_tags/delete)
+- [ブログタグの一括処理](bc-blog/blog_tags/batch)
+
+### ブログコメント
+- [ブログコメントの一覧の取得](bc-blog/blog_comments/index)
+- [単一ブログコメントの取得](bc-blog/blog_comments/view)
+- [ブログコメントの新規追加](bc-blog/blog_comments/add)
+- [ブログコメントの削除](bc-blog/blog_comments/delete)
+- [ブログコメントの一括処理](bc-blog/blog_comments/batch)

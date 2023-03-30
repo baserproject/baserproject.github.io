@@ -1,6 +1,6 @@
-# ブログカテゴリの一括処理
+# ブログタグの一括処理
 
-指定したブログカテゴリについて一括処理ができます。
+指定したブログタグについて一括にて次の処理ができます。
 
 ### 実行可能な権限
 ```
@@ -9,14 +9,14 @@
 
 ### リクエスト
 ```
-POST /baser/api/bc-blog/blog_comments/batch.json
+POST /baser/api/bc-blog/blog_tags/batch.json
 ``` 
 
 ### リクエストボディ
 
 | パラメーター名       | 型     | 必須    | 内容                                                 |
 |---------------|-------|-------|----------------------------------------------------|
-| batch_targets | 配列   | ●     | カテゴリID                                            |
+| batch_targets | 配列   | ●     | ブログタグID                                            |
 | batch         | 文字列 | ●     | 削除する: delete |
 
 ### レスポンス例
@@ -25,5 +25,6 @@ POST /baser/api/bc-blog/blog_comments/batch.json
 {
   "message": "一括処理が完了しました。"
 }
+
 
 ```
