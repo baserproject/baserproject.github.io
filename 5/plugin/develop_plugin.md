@@ -275,8 +275,9 @@ $users->save($user);
 MVCモデルにサービスレイヤーを追加するとメンテナンス性が高くテスタブルなコードとなりやすいです。
 baserCMS本体のコードは全てサービスレイヤーを利用する前提で構築されています。
 
-### サービスクラスを利用する場合
-#### サービスクラス
+サービスクラスを利用する場合は、次のようにサービスクラスとサービスプロバイダを定義してください。
+
+### サービスクラス
 テーブルに紐づくサービスクラスの場合は、`PagesService` のように複数形の名称を推奨しています。
 
 ```php
@@ -285,7 +286,7 @@ class PagesService
 {
 }
 ```
-#### サービスプロバイダ
+### サービスプロバイダ
 サービスを読み込むためのサービスプロバイダは、 `{YourPluginName}ServiceProvider` の名称を推奨しています。
 
 ```php
@@ -303,7 +304,7 @@ class YourPluginNameServiceProvider extends ServiceProvider
 }
 ```
 
-#### サービスプロバイダの追加
+### サービスプロバイダの追加
 サービスプロバイダを準備したら、`Plugin` クラスにて忘れないようにコンテナに追加しておきます。
 ```php
 class Plugin extends BcPlugin
@@ -315,6 +316,23 @@ class Plugin extends BcPlugin
 }
 ```
 
+### コントローラーでサービスクラスを読み込む
+サービスクラスはコントローラーの引数の型にインターフェイスを定義すると自動的にインスタンスを注入します。
+
+パスパラメーターを利用する場合には、その次の引数に定義すると参照することができます。
+```php
+class PagesController extends AppController
+{
+    public function index(
+        PagesServiceInterface $service,
+        UsersServiceInterface $usersService,
+        string $argString,
+        int $argInt
+    ) {
+        $service->yourMethod();
+    }
+}
+```
 
 サービスクラスの利用方法、及びサービスプロバイダー定義方法の詳細は次のページをご覧ください。
 
