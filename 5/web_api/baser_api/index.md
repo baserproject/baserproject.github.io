@@ -55,7 +55,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### 固定ページ
 - [固定ページ一覧の取得](baser-core/pages/index)
-- [固定ページ情報の取得](baser-core/pages/view)
+- [固定ページ情報の単一取得](baser-core/pages/view)
 - [固定ページの追加](baser-core/pages/add)
 - [固定ページの編集](baser-core/pages/edit)
 - [固定ページの削除](baser-core/pages/delete)
@@ -63,7 +63,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### アクセス制限設定
 - [アクセス制限設定一覧の取得](baser-core/permissions/index)
-- [アクセス制限設定情報の取得](baser-core/permissions/view)
+- [アクセス制限設定情報の単一取得](baser-core/permissions/view)
 - [アクセス制限設定の追加](baser-core/permissions/add)
 - [アクセス制限設定の編集](baser-core/permissions/edit)
 - [アクセス制限設定の削除](baser-core/permissions/delete)
@@ -73,7 +73,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### アクセスルールグループ
 - [アクセスルールグループ一覧の取得](baser-core/permission_groups/index)
-- [アクセスルールグループの取得](baser-core/permission_groups/view)
+- [アクセスルールグループの単一取得](baser-core/permission_groups/view)
 - [アクセスルールグループの追加](baser-core/permission_groups/add)
 - [アクセスルールグループの編集](baser-core/permission_groups/edit)
 - [アクセスルールグループの削除](baser-core/permission_groups/delete)
@@ -82,7 +82,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### プラグイン管理
 - [プラグイン一覧の取得](baser-core/plugins/index)
-- [単一プラグインの取得](baser-core/plugins/view)
+- [プラグインの単一取得](baser-core/plugins/view)
 - [プラグインの追加](baser-core/plugins/add)
 - [プラグインの有効化](baser-core/plugins/attach)
 - [プラグインの無効化](baser-core/plugins/detach)
@@ -101,7 +101,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### サイト管理
 - [サイト一覧の取得](baser-core/sites/index)
-- [単一サイトの取得](baser-core/sites/view)
+- [サイトの単一取得](baser-core/sites/view)
 - [サイトの新規追加](baser-core/sites/add)
 - [サイトの編集](baser-core/sites/edit)
 - [サイトの削除](baser-core/sites/delete)
@@ -109,7 +109,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### テーマ管理
 - [テーマ一覧の取得](baser-core/themes/index)
-- [単一テーマ情報の取得](baser-core/themes/view)
+- [テーマ情報の単一取得](baser-core/themes/view)
 - [新しいテーマのアップロード](baser-core/themes/add)
 - [テーマの適用](baser-core/themes/apply)
 - [初期データの読み込む](baser-core/themes/load_default_data)
@@ -131,7 +131,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログコンテンツ
 - [ブログコンテンツの一覧の取得](bc-blog/blog_contents/index)
-- [単一ブログコンテンツの取得](bc-blog/blog_contents/view)
+- [ブログコンテンツの単一取得](bc-blog/blog_contents/view)
 - [ブログコンテンツのリストを取得](bc-blog/blog_contents/list)
 - [ブログコンテンツの新規追加](bc-blog/blog_contents/add)
 - [ブログコンテンツの編集](bc-blog/blog_contents/edit)
@@ -140,7 +140,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
-- [単一ブログ記事の取得](bc-blog/blog_posts/view)
+- [ブログ記事の単一取得](bc-blog/blog_posts/view)
 - [ブログ記事一覧の新規追加](bc-blog/blog_posts/add)
 - [ブログ記事一覧の編集](bc-blog/blog_posts/edit)
 - [ブログ記事一覧の削除](bc-blog/blog_posts/delete)
@@ -151,7 +151,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログカテゴリ
 - [ブログカテゴリの一覧の取得](bc-blog/blog_categories/index)
-- [単一ブログカテゴリの取得](bc-blog/blog_categories/view)
+- [ブログカテゴリの単一取得](bc-blog/blog_categories/view)
 - [ブログカテゴリのリストを取得](bc-blog/blog_categories/list)
 - [ブログカテゴリの新規追加](bc-blog/blog_categories/add)
 - [ブログカテゴリの編集](bc-blog/blog_categories/edit)
@@ -160,7 +160,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログタグ
 - [ブログタグの一覧の取得](bc-blog/blog_tags/index)
-- [単一ブログタグの取得](bc-blog/blog_tags/view)
+- [ブログタグの単一取得](bc-blog/blog_tags/view)
 - [ブログタグの新規追加](bc-blog/blog_tags/add)
 - [ブログタグの編集](bc-blog/blog_tags/edit)
 - [ブログタグの削除](bc-blog/blog_tags/delete)
@@ -168,7 +168,25 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログコメント
 - [ブログコメントの一覧の取得](bc-blog/blog_comments/index)
-- [単一ブログコメントの取得](bc-blog/blog_comments/view)
+- [ブログコメントの単一取得](bc-blog/blog_comments/view)
 - [ブログコメントの新規追加](bc-blog/blog_comments/add)
 - [ブログコメントの削除](bc-blog/blog_comments/delete)
 - [ブログコメントの一括処理](bc-blog/blog_comments/batch)
+
+## その他
+
+### コンテンツリンク
+- [コンテンツリンクの単一取得](bc-content-link/content_links/view)
+- [コンテンツリンクの新規追加](bc-content-link/content_links/add)
+- [コンテンツリンクの編集](bc-content-link/content_links/edit)
+- [コンテンツリンクの削除](bc-content-link/content_links/delete)
+
+### お気に入り
+- [お気に入りの一覧の取得](bc-favorite/favorites/index)
+- [お気に入りの単一取得](bc-favorite/favorites/view)
+- [お気に入りの新規追加](bc-favorite/favorites/add)
+- [お気に入りの編集](bc-favorite/favorites/edit)
+- [お気に入りの削除](bc-favorite/favorites/delete)
+- [お気に入りの並び替え](bc-favorite/favorites/change_sort)
+- [よく使う項目の表示状態を保存](bc-favorite/favorites/save_favorite_box)
+- [よく使う項目の表示状態を取得](bc-favorite/favorites/get_favorite_box_opened)

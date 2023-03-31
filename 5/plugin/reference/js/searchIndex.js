@@ -13606,6 +13606,11 @@ Search.appendIndex(
             "summary": "CustomLinksController",
             "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html"
         },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize",
+            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_initialize"
+        },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u4E00\u89A7\u53D6\u5F97API",
