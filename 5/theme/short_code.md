@@ -53,7 +53,7 @@ return [
 
 ### 配列の引数を持つメソッドについて
 
-配列の引数を持つ場合は、| で区切って key と value を指定します。
+配列の引数を持つ場合は、`|` で区切って key と value を指定します。
 
 ```shell
 [Example.methodName 1,key1|value1|key2|value2,3]
