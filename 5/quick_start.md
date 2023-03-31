@@ -82,3 +82,52 @@ baserタグや、その他テーマに関する詳しいドキュメントは[�
 
 ## プラグイン
 
+プラグインをbaserCMSに認識させて、新しい管理画面を作ります。
+baserCMSを設置したフォルダで以下のコマンドを叩きます。
+
+```bash
+bin/cake bake plugin CustomPlugin
+```
+
+```bash
+Look okay? (y/n/q)
+Do you want to overwrite? (y/n/a/q)
+```
+
+上記のようにコンソールから聞かれるので何も入力せずエンターを押します。
+処理が走り、プラフインフォルダに `CustomPlugin` フォルダが作成されます。
+
+次に、プラグインをbaserCMSに認識させるため、`CustomPlugin/config.php` を作成します。
+
+```php
+<?php
+return [
+    'type' => ['Plugin'],
+    'title' => 'カスタムプラグイン',
+    'description' => 'カスタムプラグインです',
+    'author' => 'baserCMS User Community',
+    'url' => 'https://basercms.net',
+    'installMessage' => ''
+];
+```
+
+続いて、プラグイン管理のためのファイル `CustomPlugin/src/Plugin.php` を作成します。
+
+```php
+<?php
+declare(strict_types=1);
+
+namespace CustomPlugin;
+
+use BaserCore\BcPlugin;
+
+class Plugin extends BcPlugin
+{
+}
+```
+
+管理画面からプラグインを有効化します。
+`管理画面 > プラグイン管理 > プラグイン` へアクセスすると、プラグイン一覧に「CustomPlugin（カスタムプラグイン）」が表示されています。
+同じ行の右から2番めのインストールアイコンをクリックし、利用できるユーザを指定してインストールします。
+
+プラグインでできることを詳細に記載したドキュメントは[プラグインガイド](plugin/)を参照してください。
