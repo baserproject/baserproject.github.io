@@ -180,3 +180,13 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [コンテンツリンクの新規追加](bc-content-link/content_links/add)
 - [コンテンツリンクの編集](bc-content-link/content_links/edit)
 - [コンテンツリンクの削除](bc-content-link/content_links/delete)
+
+### お気に入り
+- [お気に入りの一覧の取得](bc-favorite/favorites/index)
+- [お気に入りの単一取得](bc-favorite/favorites/view)
+- [お気に入りの新規追加](bc-favorite/favorites/add)
+- [お気に入りの編集](bc-favorite/favorites/edit)
+- [お気に入りの削除](bc-favorite/favorites/delete)
+- [お気に入りの並び替え](bc-favorite/favorites/change_sort)
+- [よく使う項目の表示状態を保存](bc-favorite/favorites/save_favorite_box)
+- [よく使う項目の表示状態を取得](bc-favorite/favorites/get_favorite_box_opened)
