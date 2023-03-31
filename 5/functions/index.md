@@ -312,14 +312,14 @@ BcFavorite プラグインにより提供。
 ### テーマ
 テーマ制作を便利にする仕組みが揃っています。
 
-|機能|説明|
-|---|---|
-|[テーマブートストラップ](http://basercms.net/functions/theme_bootstrap)|テーマ用の起動処理を記述する為のファイルを配置する事ができます。|
-|[テーマヘルパー](http://basercms.net/functions/theme_helper)|CakePHPの仕様に合わせて作られたヘルパーをテーマに同梱できる仕組みです。|
-|[エディタCSS](/functions/editor_css)|WYSIWYGエディタ領域に指定したCSSを適用する事ができる機能です。|
-|[初期データダウンロード](/functions/download_default_data)|インストール時に最初から登録される初期データ作成する機能です。|
-|[初期データ読み込み](/functions/load_default_data)|テーマ管理よりテーマの初期データを読み込む機能です。|
-|[テーマ内プラグイン同梱機能](/functions/themes_plugin)|テーマ内にプラグインを同梱できる機能です。|
+| 機能                                                           | 説明                                   |
+|--------------------------------------------------------------|--------------------------------------|
+| [テーマブートストラップ](http://basercms.net/functions/theme_bootstrap) | テーマ用の起動処理を記述する為のファイルを配置する事ができます。     |
+| [テーマヘルパー](../theme/theme_helper)                             | テーマ作成を補助するヘルパークラスをテーマに同梱できる仕組みです。    |
+| [エディタCSS](/functions/editor_css)                             | WYSIWYGエディタ領域に指定したCSSを適用する事ができる機能です。 |
+| [初期データダウンロード](/functions/download_default_data)              | インストール時に最初から登録される初期データ作成する機能です。      |
+| [初期データ読み込み](/functions/load_default_data)                    | テーマ管理よりテーマの初期データを読み込む機能です。           |
+| [テーマ内プラグイン同梱機能](/functions/themes_plugin)                    | テーマ内にプラグインを同梱できる機能です。                |
 
 ### プラグイン
 プラグイン制作を便利にする仕組みが揃っています。
