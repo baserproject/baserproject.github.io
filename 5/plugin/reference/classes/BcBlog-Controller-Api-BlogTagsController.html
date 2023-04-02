@@ -547,7 +547,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">23</span>
 
     </aside>
 
@@ -624,20 +624,6 @@
 <dd>Securityコンポーネントのブラックホールからのコールバック</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_add">add()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>[ADMIN] ブログタグ登録</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_batch">batch()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>ブログタグのバッチ処理</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_beforeFilter">beforeFilter()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void    </span>
@@ -652,25 +638,11 @@
 <dd>Before render</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_delete">delete()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>[API] ブログタグ削除</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a>
     <span>
                                 &nbsp;: bool|<abbr title="\Cake\Event\Event">Event</abbr>    </span>
 </dt>
 <dd>イベントを発火</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_edit">edit()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>[API] ブログタグ編集</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_getAccessToken">getAccessToken()</a>
@@ -701,25 +673,11 @@
 <dd>[API] ブログタグ一覧取得</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_initialize">initialize()</a>
+    <a href="classes/BaserCore-Controller-AppController.html#method_initialize">initialize()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>initialize</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_isAdminApiEnabled">isAdminApiEnabled()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>認証が必要なAPIを利用可能かどうか判定</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_isAvailableUser">isAvailableUser()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>ログインユーザーが有効か判定する</dd>
+<dd>Initialize</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_notFound">notFound()</a>
@@ -1227,155 +1185,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_add">
-        add()
-        <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">102</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">[ADMIN] ブログタグ登録</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>ブログのタグを登録する
-ブログタグの登録に失敗した場合、HTTPレスポンスのステータスに400を返します。</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_batch">
-        batch()
-        <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_batch" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">206</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">ブログタグのバッチ処理</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">batch</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsService.html"><abbr title="\BcBlog\Service\BlogTagsService">BlogTagsService</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"><p>指定したブログのコメントに対して削除処理を一括で行う</p>
-<h3>エラー</h3>
-<p>delete以外のHTTPメソッドには500エラーを返す
-一括処理に失敗すると400エラーを返す</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsService.html"><abbr title="\BcBlog\Service\BlogTagsService">BlogTagsService</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_beforeFilter">
         beforeFilter()
         <a href="classes/BaserCore-Controller-AppController.html#method_beforeFilter" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1516,83 +1325,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_delete">
-        delete()
-        <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">170</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">[API] ブログタグ削除</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blogTagId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$blogTagId</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_dispatchLayerEvent">
         dispatchLayerEvent()
         <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1678,83 +1410,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_edit">
-        edit()
-        <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_edit" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">135</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">[API] ブログタグ編集</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">edit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$blogTagId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BcBlog-Service-BlogTagsServiceInterface.html"><abbr title="\BcBlog\Service\BlogTagsServiceInterface">BlogTagsServiceInterface</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$blogTagId</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getAccessToken">
         getAccessToken()
         <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_getAccessToken" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1762,7 +1417,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1972,7 +1627,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">51</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
@@ -2037,16 +1692,16 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 >
     <h4 class="phpdocumentor-element__name" id="method_initialize">
         initialize()
-        <a href="classes/BcBlog-Controller-Api-BlogTagsController.html#method_initialize" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-AppController.html#method_initialize" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">initialize</p>
+        <p class="phpdocumentor-summary">Initialize</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2074,87 +1729,19 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                                                                 
                                              
                                     </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">note</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                             
+                                                 <section class="phpdocumentor-description"><p>(value=&quot;BcEmailを実装したあとに確認&quot;)</p>
+</section>
+
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isAdminApiEnabled">
-        isAdminApiEnabled()
-        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_isAdminApiEnabled" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">119</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">認証が必要なAPIを利用可能かどうか判定</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isAdminApiEnabled</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isAvailableUser">
-        isAvailableUser()
-        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_isAvailableUser" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">136</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">ログインユーザーが有効か判定する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isAvailableUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-        <section class="phpdocumentor-description"><p>サービスクラス、または、テーブルクラスにおいて、isAvailable / get メソッドが
-存在するかを確認し、あれば実行し、その結果を返す。
-ない場合は、 true を返却する</p>
-</section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -2430,7 +2017,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php"><a href="files/plugins-bc-blog-src-controller-api-blogtagscontroller.html"><abbr title="plugins/bc-blog/src/Controller/Api/BlogTagsController.php">BlogTagsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
