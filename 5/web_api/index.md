@@ -10,7 +10,7 @@ Web API を利用するには、 `config/.env` の編集が必要です。
 ```shell
 # Web API 自体を有効にする 
 USE_CORE_API="true"
-# 管理機能の Web API を有効にする
+# 認証必要領域の Web API を有効にする
 USE_CORE_ADMIN_API="true"
 ```
 
@@ -21,7 +21,7 @@ USE_CORE_ADMIN_API="true"
 トークンを取得するためには、次のURLに、POSTで、`email` と `password` を送信します。
 
 ```
-https://localhost/baser/api/baser-core/users/login.json
+https://localhost/baser/api/admin/baser-core/users/login.json
 ```
 
 ログインが正常に完了すると、トークンを返却しますので、次のリクエスト以降はこのトークンを使って Web APIにアクセスします。
@@ -46,16 +46,19 @@ Web APIへのアクセス時、次のセグメントごとに認可を提供し�
 Web APIへのリクエストは次のURL構成で行います。  
 baserCMS コアについての APIリクエスト先の詳細については [baser API](baser_api/) を参照してください。
 
-```
+```shell
+# 認証不要の領域
 https://localhost/baser/api/baser-core/controller_name/action_name.json
+# 認証が必要な領域
+https://localhost/baser/api/admin/baser-core/controller_name/action_name.json
 ```
 
-リクエストする際には、ヘッダーに `Authorization` パラメーターとして、ログインAPIで取得した `access_token` を埋め込みます。
+認証が必要な領域へリクエストする際には、ヘッダーに `Authorization` パラメーターとして、ログインAPIで取得した `access_token` を埋め込みます。
 
 もしくは、クエリパラメーターにトークンを引き渡すことでもアクセス可能です。
 
 ```
-https://localhost/baser/api/baser-core/controller_name/action_name.json?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJiYXNlciIsInN1YiI6MSwiZXhwIjoxNjIyNTQ5MTYyfQ.CCiO_8_U5h98pbSLNIsWZsc591iQDEHMq8G75jPY-5yhVnGguUXl09Ie0Xm474o12Imij9Yo_7VbXt6DrOwhsbdvUq0iLKAOk8C5UmdKL2Tvx_7-TtUN0gkBTnMHD8YOFncUsWo8xrT0zBVd2h9YwaeYQwX5unBU0sgIzpmkMJo
+https://localhost/baser/api/admin/baser-core/controller_name/action_name.json?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJiYXNlciIsInN1YiI6MSwiZXhwIjoxNjIyNTQ5MTYyfQ.CCiO_8_U5h98pbSLNIsWZsc591iQDEHMq8G75jPY-5yhVnGguUXl09Ie0Xm474o12Imij9Yo_7VbXt6DrOwhsbdvUq0iLKAOk8C5UmdKL2Tvx_7-TtUN0gkBTnMHD8YOFncUsWo8xrT0zBVd2h9YwaeYQwX5unBU0sgIzpmkMJo
 ```
 
 ## APIのレスポンス
@@ -84,7 +87,7 @@ https://localhost/baser/api/baser-core/controller_name/action_name.json?token=ey
 アクセストークンの有効期限はデフォルトで30分です。アクセストークンの有効期限が切れた場合は、リフレッシュトークンを利用することで新しいアクセストークンを取得できます。新しいトークンを取得する場合は、次のURLより取得します。
 
 ```
-https://localhost/baser/api/baser-core/users/refresh_token.json
+https://localhost/baser/api/admin/baser-core/users/refresh_token.json
 ```
 
 リクエストの際には、通常のAPIと同樣に、ヘッダーかクエリパラメーターに有効なリフレッシュトークンを仕込みます。  
@@ -105,6 +108,7 @@ https://localhost/baser/api/baser-core/users/refresh_token.json
 - プレフィックスが `Api` である
 - 管理システムへのログインが完了している
 - リファラが自身のサイトである
+- CSRFトークンのチェックをパスする
 
 ## サンプルを参考にする
 vue.js で作成した SPA（シングルページアプリケーション）のサンプルアプリケーションを BcSpaSample プラグインとして提供しています。  

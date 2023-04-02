@@ -27,6 +27,8 @@ baserCMSでは、URLにおける特定の領域（プレフィックス）に対
   - 1.ホワイトリスト: 全て拒否してアクセスルールで許可を設定
   - 2.ブラックリスト: 全て許可してアクセスルールで拒否を設定
 - `disabled`: 設定を無効にする場合は true に設定（キーがない場合は有効とみなす）
+- `withCorePrefix`: プレフィックスの前に baserのコアプレフィックスを追加するかどうか
+- `isRestApi`: REST API かどうか
 
 ### 設定例
 ```php
@@ -70,6 +72,7 @@ return [
             'password' => 'password',
             'userModel' => 'BaserCore.Users',
             'permissionType' => 1,
+            'isRestApi' => true
         ],
 ]
 ```
