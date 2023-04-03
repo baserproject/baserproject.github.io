@@ -173,6 +173,18 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ブログコメントの削除](bc-blog/blog_comments/delete)
 - [ブログコメントの一括処理](bc-blog/blog_comments/batch)
 
+
+## メールフォーム
+
+### メールコンテンツ
+- [メールコンテンツの一覧の取得](bc-mail/mail_contents/index)
+- [メールコンテンツの単一取得](bc-mail/mail_contents/view)
+- [メールコンテンツのリストを取得](bc-mail/mail_contents/list)
+- [メールコンテンツの新規追加](bc-mail/mail_contents/add)
+- [メールコンテンツの編集](bc-mail/mail_contents/edit)
+- [メールコンテンツの削除](bc-mail/mail_contents/delete)
+- [メールコンテンツのコピー](bc-mail/mail_contents/copy)
+
 ## その他
 
 ### コンテンツリンク

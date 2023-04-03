@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/bc-content-link/content_links.json
+POST /baser/api/admin/bc-content-link/content_links.json
 ```
 
 ### リクエストボディ

@@ -11,7 +11,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/utilities/download_log.json
+GET /baser/api/admin/baser-core/utilities/download_log.json
 ```
 
 ### レスポンス例

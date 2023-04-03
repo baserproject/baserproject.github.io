@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/baser-core/user_groups/{userGroupId}.json
+DELETE baser/api/admin/baser-core/user_groups/{userGroupId}.json
 ``` 
 
 ### パスパラメーター

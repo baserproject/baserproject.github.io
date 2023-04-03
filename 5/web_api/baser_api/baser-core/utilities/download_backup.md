@@ -14,7 +14,7 @@ CakePHPのマイグレーションは、時系列で管理するためのもの�
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/utilities/download_backup.json
+GET /baser/api/admin/baser-core/utilities/download_backup.json
 ```
 
 ### レスポンス例

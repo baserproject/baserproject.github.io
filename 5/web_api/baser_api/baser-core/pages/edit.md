@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-PATCH baser/api/baser-core/pages/{pageId}.json
+PATCH baser/api/admin/baser-core/pages/{pageId}.json
 ``` 
 
 ### パスパラメーター

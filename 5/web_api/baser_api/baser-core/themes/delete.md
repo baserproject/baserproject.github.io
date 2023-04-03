@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE /baser/api/baser-core/themes/delete/{theme}.json
+DELETE /baser/api/admin/baser-core/themes/delete/{theme}.json
 ``` 
 
 ### パスパラメーター

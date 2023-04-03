@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-DELETE /baser/api/baser-core/contens/{contentId}.json
+DELETE /baser/api/admin/baser-core/contens/{contentId}.json
 ``` 
 
 ### パスパラメーター

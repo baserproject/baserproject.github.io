@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/detach/{pluginName}.json
+POST /baser/api/admin/baser-core/plugins/detach/{pluginName}.json
 ```
 
 ### パスパラメーター

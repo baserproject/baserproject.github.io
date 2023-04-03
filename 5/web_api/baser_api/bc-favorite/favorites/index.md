@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-GET /baser/api/bc-favorite/favorites/get_favorite_box_opened.json
+GET /baser/api/admin/bc-favorite/favorites/get_favorite_box_opened.json
 ```
 ## レスポンス例
 

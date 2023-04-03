@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/permission_groups/list.json
+GET /baser/api/admin/baser-core/permission_groups/list.json
 ```
 
 ### レスポンス例

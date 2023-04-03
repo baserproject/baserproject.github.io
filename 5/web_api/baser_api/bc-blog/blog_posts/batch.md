@@ -13,7 +13,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/bc-blog/blog_posts/batch.json
+POST /baser/api/admin/bc-blog/blog_posts/batch.json
 ``` 
 
 ### リクエストボディ

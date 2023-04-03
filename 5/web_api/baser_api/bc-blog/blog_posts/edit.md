@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-PATCH /baser/api/bc-blog/blog_posts/{blogPostId}.json
+PATCH /baser/api/admin/bc-blog/blog_posts/{blogPostId}.json
 ``` 
 
 ### パスパラメーター

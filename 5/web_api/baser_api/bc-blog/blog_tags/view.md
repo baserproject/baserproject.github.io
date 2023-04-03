@@ -9,7 +9,10 @@
 
 ### URL
 ```
+認証なし場合、
 GET /baser/api/bc-blog/blog_tags/{blogTagId}.json
+認証した場合、
+GET /baser/api/admin/bc-blog/blog_tags/{blogTagId}.json
 ``` 
 
 ### クエリパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/view.json
+GET /baser/api/admin/baser-core/view.json
 ```
 
 ### レスポンス例

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/dblogs.json
+GET /baser/admin/api/baser-core/dblogs.json
 ``` 
 
 ### クエリパラメーター

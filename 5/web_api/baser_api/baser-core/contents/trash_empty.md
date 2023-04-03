@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contens/trash_empty.json
+POST /baser/api/admin/baser-core/contens/trash_empty.json
 ```
 
 ### レスポンス例

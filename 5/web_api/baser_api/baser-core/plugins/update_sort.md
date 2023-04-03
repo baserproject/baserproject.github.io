@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/plugins/update_sort.json
+POST /baser/api/admin/baser-core/plugins/update_sort.json
 ```
 
 ### リクエストボディ

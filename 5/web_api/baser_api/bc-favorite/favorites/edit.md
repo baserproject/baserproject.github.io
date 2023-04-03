@@ -11,7 +11,7 @@
 
 ## リクエスト
 ```
-PATCH /baser/api/bc-favorite/favorites/{favoriteId}.json
+PATCH /baser/api/admin/bc-favorite/favorites/{favoriteId}.json
 ```
 
 ### パスパラメーター

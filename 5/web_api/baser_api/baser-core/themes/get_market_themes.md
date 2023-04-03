@@ -9,7 +9,7 @@ baserマーケットよりテーマの一覧を取得します。
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/themes/get_market_themes.json
+GET /baser/api/admin/baser-core/themes/get_market_themes.json
 ``` 
 
 ### レスポンス例

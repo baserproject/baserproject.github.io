@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/content_folders.json
+POST /baser/api/admin/baser-core/content_folders.json
 ```
 
 ### リクエストボディ

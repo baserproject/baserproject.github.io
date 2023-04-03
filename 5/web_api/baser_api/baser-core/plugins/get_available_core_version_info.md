@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/get_available_core_version_info.json
+POST /baser/api/admin/baser-core/plugins/get_available_core_version_info.json
 ```
 ## レスポンス例
 

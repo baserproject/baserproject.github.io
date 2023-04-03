@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/clear_cache.json
+POST /baser/api/admin/baser-core/utilities/clear_cache.json
 ```
 
 ### レスポンス例

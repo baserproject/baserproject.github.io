@@ -10,7 +10,10 @@
  
 ### リクエスト
 ```
+認証なし場合、
 GET /baser/api/baser-core/contents.json
+認証した場合、
+GET /baser/api/admin/baser-core/contents.json
 ``` 
 
 ### クエリパラメーター

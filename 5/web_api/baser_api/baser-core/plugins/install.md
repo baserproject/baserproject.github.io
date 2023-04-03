@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/install/{pluginName}.json
+POST /baser/api/admin/baser-core/plugins/install/{pluginName}.json
 ```
 
 ### パスパラメーター

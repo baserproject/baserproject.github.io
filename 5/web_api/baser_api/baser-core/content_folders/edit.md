@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-PATCH /baser/api/baser-core/content_folders/{contentFolderId}.json
+PATCH /baser/api/admin/baser-core/content_folders/{contentFolderId}.json
 ``` 
 
 ### パスパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/baser-core/permission_groups/{permissionGroupsId}.json
+DELETE baser/api/admin/baser-core/permission_groups/{permissionGroupsId}.json
 ``` 
 
 ### パスパラメーター

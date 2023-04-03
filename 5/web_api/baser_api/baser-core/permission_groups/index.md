@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-GET /baser/api/baser-core/permission_groups.json
+GET /baser/api/admin/baser-core/permission_groups.json
 ```
 
 ### クエリパラメーター

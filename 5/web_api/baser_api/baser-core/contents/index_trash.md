@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-GET /baser/api/baser-core/contents/index_trash.json
+GET /baser/api/admin/baser-core/contents/index_trash.json
 ``` 
 
 ### クエリパラメーター

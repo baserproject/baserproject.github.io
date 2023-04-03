@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/baser-core/sites/get_selectable_devices_and_lang/{mainSiteId}/{currentSiteId}.json
+DELETE baser/api/admin/baser-core/sites/get_selectable_devices_and_lang/{mainSiteId}/{currentSiteId}.json
 ``` 
 
 ### パスパラメーター

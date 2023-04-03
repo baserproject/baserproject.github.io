@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/themes/load_default_data/{siteId}.json
+POST /baser/api/admin/baser-core/themes/load_default_data/{siteId}.json
 ``` 
 
 ### パスパラメーター

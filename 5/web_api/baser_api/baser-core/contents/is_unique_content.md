@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contents/is_unique_content.json
+POST /baser/api/admin/baser-core/contents/is_unique_content.json
 ``` 
 
 ### リクエストボディ

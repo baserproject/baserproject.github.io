@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/bc-favorite/favorites/change_sort.json
+POST /baser/api/admin/bc-favorite/favorites/change_sort.json
 ```
 
 ### リクエストボディ

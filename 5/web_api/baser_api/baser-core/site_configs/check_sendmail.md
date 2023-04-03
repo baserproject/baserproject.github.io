@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/site_configs/check_sendmail.json
+POST /baser/api/admin/baser-core/site_configs/check_sendmail.json
 ``` 
 
 ### リクエストボディ

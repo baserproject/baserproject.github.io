@@ -10,7 +10,7 @@ baserマーケットのプラグインデータを取得します。
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/get_market_plugins.json
+POST /baser/api/admin/baser-core/plugins/get_market_plugins.json
 ```
 ## レスポンス例
 

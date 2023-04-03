@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/bc-content-link/content_links/{contentLinkId}.json
+DELETE baser/api/admin/bc-content-link/content_links/{contentLinkId}.json
 ``` 
 
 ### パスパラメーター

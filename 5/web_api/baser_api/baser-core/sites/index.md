@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/sites.json
+GET /baser/api/admin/baser-core/sites.json
 ``` 
 
 ### クエリパラメーター
