@@ -27,7 +27,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/admin/bc-blog/blog_contents.json
+PATCH /baser/api/admin/bc-blog/blog_contents.json
 ```
 
 ### リクエストボディ
