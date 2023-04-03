@@ -83,9 +83,26 @@ WebAPIを利用してフロントエンドアプリケーションを作成し�
 - [独自のWeb API を開発](web_api/develop_api)
 
 ## 参加・貢献
-### baserCMSの開発に貢献する
+### 開発者として参加・貢献する
 baserCMS本体の開発に貢献頂ける方は次のドキュメントをご覧ください。  
-- [ucmitz 開発への貢献方法](./ucmitz/index)
+- [コンセプト・基本方針](policy/)
+- [パッケージ概要](package/)
+- [規約](terms/)
+- [開発者として参加・貢献する](contribution_developer/)
+- [コアの開発](core/)
+- [コアテーマの開発](core_theme/)
+- [コアプラグインの開発](core_plugin/)
+- [ucmitz（baserCMS５の開発版） 開発への貢献方法](./ucmitz/index)
+
+### 開発以外の方法で参加・貢献する
+開発だけでなく他にもバグのフィードバックの他、ドキュメント作成、国際化などで貢献する方法があります。
+- [開発以外の方法で参加・貢献する](contribution_etc/)
+- [ドキュメントの更新](doc_writing/)
+- [国際化](i18n/)
+
+### コラボレーターの方へ
+baserCMSの開発コラボレーターの方は次のドキュメントをご覧ください。
+- [コラボレーターガイド](collaborator/)
 
 ## べっしーとは
 「べっしー」は、デザイナー「[カネウチカズコ](https://www.facebook.com/kaneuchi.kazuko){:target="_blank"}」作の、baserCMSのオフィシャルマスコットキャラクターです。
