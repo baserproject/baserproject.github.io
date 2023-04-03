@@ -2361,6 +2361,16 @@ Search.appendIndex(
             "summary": "build\u0020Schema",
             "url": "classes/BaserCore-Form-ContentsSearchForm.html#method__buildSchema"
         },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver\\PrefixOrmResolver",
+            "name": "PrefixOrmResolver",
+            "summary": "PrefixOrmResolver",
+            "url": "classes/BaserCore-Identifier-Resolver-PrefixOrmResolver.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver\\PrefixOrmResolver\u003A\u003Afind\u0028\u0029",
+            "name": "find",
+            "summary": "Find",
+            "url": "classes/BaserCore-Identifier-Resolver-PrefixOrmResolver.html#method_find"
+        },                {
             "fqsen": "\\BaserCore\\Mailer\\Admin\\BcAdminMailer",
             "name": "BcAdminMailer",
             "summary": "BcAdminMailer",
@@ -19800,6 +19810,16 @@ Search.appendIndex(
             "name": "Form",
             "summary": "",
             "url": "namespaces/basercore-form.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver",
+            "name": "Resolver",
+            "summary": "",
+            "url": "namespaces/basercore-identifier-resolver.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier",
+            "name": "Identifier",
+            "summary": "",
+            "url": "namespaces/basercore-identifier.html"
         },                {
             "fqsen": "\\BaserCore\\Mailer\\Admin",
             "name": "Admin",
