@@ -10,7 +10,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/verity_contents_tree.json
+POST /baser/api/admin/baser-core/utilities/verity_contents_tree.json
 ```
 
 ### レスポンス例

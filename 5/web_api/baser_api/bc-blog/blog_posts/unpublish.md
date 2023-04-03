@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/bc-blog/blog_posts/unpublish/{blogPostId}.json
+POST /baser/api/admin/bc-blog/blog_posts/unpublish/{blogPostId}.json
 ``` 
 
 ### パスパラメーター

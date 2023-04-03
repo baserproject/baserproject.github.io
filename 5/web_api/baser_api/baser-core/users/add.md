@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/users.json
+POST /baser/api/admin/baser-core/users.json
 ``` 
 
 ### リクエストボディ

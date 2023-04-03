@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contens/update_sort/{userGroupId}.json
+POST /baser/api/admin/baser-core/contens/update_sort/{userGroupId}.json
 ``` 
 ### パスパラメーター
 

@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/dblogs.json
+POST /baser/api/admin/baser-core/dblogs.json
 ```
 
 ### リクエストボディ

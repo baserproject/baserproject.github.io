@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/delete_log.json
+POST /baser/api/admin/baser-core/utilities/delete_log.json
 ```
 
 ### レスポンス例

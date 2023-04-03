@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-GET /baser/api/baser-core/contents/view_trash/{contentId}.json
+GET /baser/api/admin/baser-core/contents/view_trash/{contentId}.json
 ``` 
 
 ### パスパラメーター

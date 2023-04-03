@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/themes/view/{theme}.json
+GET /baser/api/admin/baser-core/themes/view/{theme}.json
 ``` 
 
 ### パスパラメーター

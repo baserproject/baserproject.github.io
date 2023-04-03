@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/restore_db.json
+POST /baser/api/admin/baser-core/utilities/restore_db.json
 ```
 
 ### レスポンス例

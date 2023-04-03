@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/pages/copy.json
+POST /baser/api/admin/baser-core/pages/copy.json
 ``` 
 
 ### リクエストボディ

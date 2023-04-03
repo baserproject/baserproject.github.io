@@ -10,7 +10,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contens/rename.json
+POST /baser/api/admin/baser-core/contens/rename.json
 ``` 
 
 ### リクエストボディ

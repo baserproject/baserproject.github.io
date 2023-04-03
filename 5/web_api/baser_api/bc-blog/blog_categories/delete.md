@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE /baser/api/bc-blog/blog_categories/{blogCategoryId}.json
+DELETE /baser/api/admin/bc-blog/blog_categories/{blogCategoryId}.json
 ``` 
 
 ### パスパラメーター

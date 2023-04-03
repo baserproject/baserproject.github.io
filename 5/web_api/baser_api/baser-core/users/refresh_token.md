@@ -10,7 +10,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/users/refresh_token.json
+POST /baser/api/admin/baser-core/users/refresh_token.json
 ```
 
 ### レスポンス例

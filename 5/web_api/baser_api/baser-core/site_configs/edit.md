@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-PATCH /baser/api/baser-core/site_configs.json
+PATCH /baser/api/admin/baser-core/site_configs.json
 ```
 
 ### リクエストボディ

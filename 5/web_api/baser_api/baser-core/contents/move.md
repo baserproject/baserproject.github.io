@@ -12,7 +12,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contens/move.json
+POST /baser/api/admin/baser-core/contens/move.json
 ``` 
 
 ### リクエストボディ

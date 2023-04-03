@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-GET /baser/api/bc-favorite/favorites/{favoriteId}.json
+GET /baser/api/admin/bc-favorite/favorites/{favoriteId}.json
 ```
 
 ### パスパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/plugins/batch.json
+POST /baser/api/admin/baser-core/plugins/batch.json
 ``` 
 
 ### リクエストボディ

@@ -826,35 +826,610 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BaserCore-Controller-AnalyseController.html#constant_CONVERT_CLASS_NAME"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\BcAdminApiController",
+            "name": "BcAdminApiController",
+            "summary": "BcAdminApiController",
+            "url": "classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\BcAdminApiController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize",
+            "url": "classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_initialize"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\BcAdminApiController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "Before\u0020Filter",
+            "url": "classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\BcAdminApiController\u003A\u003AisAdminApiEnabled\u0028\u0029",
+            "name": "isAdminApiEnabled",
+            "summary": "\u8A8D\u8A3C\u304C\u5FC5\u8981\u306AAPI\u3092\u5229\u7528\u53EF\u80FD\u304B\u3069\u3046\u304B\u5224\u5B9A",
+            "url": "classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_isAdminApiEnabled"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\BcAdminApiController\u003A\u003AisAvailableUser\u0028\u0029",
+            "name": "isAvailableUser",
+            "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FC\u304C\u6709\u52B9\u304B\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_isAvailableUser"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController",
+            "name": "ContentFoldersController",
+            "summary": "Class\u0020ContentFoldersController",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u767B\u9332",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentFoldersController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u30FC\u60C5\u5831\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentFoldersController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController",
+            "name": "ContentsController",
+            "summary": "Class\u0020ContentsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aview_trash\u0028\u0029",
+            "name": "view_trash",
+            "summary": "\u30B4\u30DF\u7BB1\u60C5\u5831\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_view_trash"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aindex_trash\u0028\u0029",
+            "name": "index_trash",
+            "summary": "\u30B4\u30DF\u7BB1\u5185\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_index_trash"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u524A\u9664\u0028\u8AD6\u7406\u524A\u9664\u0029\n\u203B\u0020\u5B50\u8981\u7D20\u304C\u3042\u308C\u3070\u3001\u5B50\u8981\u7D20\u3082\u524A\u9664\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Atrash_empty\u0028\u0029",
+            "name": "trash_empty",
+            "summary": "\u30B4\u30DF\u7BB1\u3092\u7A7A\u306B\u3059\u308B\u0028\u7269\u7406\u524A\u9664\u0029",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_trash_empty"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Atrash_return\u0028\u0029",
+            "name": "trash_return",
+            "summary": "trash_return",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_trash_return"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Achange_status\u0028\u0029",
+            "name": "change_status",
+            "summary": "\u516C\u958B\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_change_status"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aget_full_url\u0028\u0029",
+            "name": "get_full_url",
+            "summary": "get_full_url",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_get_full_url"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "\u6307\u5B9A\u3057\u305FID\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u5B58\u5728\u3059\u308B\u304B\u78BA\u8A8D\u3059\u308B\n\u30B4\u30DF\u7BB1\u306E\u3082\u306E\u306F\u7121\u8996",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_exists"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aget_content_folder_list\u0028\u0029",
+            "name": "get_content_folder_list",
+            "summary": "\u30B5\u30A4\u30C8\u306B\u7D10\u4ED8\u3044\u305F\u30D5\u30A9\u30EB\u30C0\u30EA\u30B9\u30C8\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_get_content_folder_list"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Arename\u0028\u0029",
+            "name": "rename",
+            "summary": "\u30EA\u30CD\u30FC\u30E0",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_rename"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Aadd_alias\u0028\u0029",
+            "name": "add_alias",
+            "summary": "add_alias",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_add_alias"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Ais_unique_content\u0028\u0029",
+            "name": "is_unique_content",
+            "summary": "\u6307\u5B9A\u3057\u305FURL\u306E\u30D1\u30B9\u4E0A\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3067\u30D5\u30A9\u30EB\u30C0\u4EE5\u5916\u304C\u5B58\u5728\u3059\u308B\u304B\u78BA\u8A8D",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_is_unique_content"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "\u4E26\u3073\u9806\u3092\u79FB\u52D5\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_move"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ContentsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "batch",
+            "url": "classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_batch"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\DblogsController",
+            "name": "DblogsController",
+            "summary": "Class\u0020DblogsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-DblogsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\DblogsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020DB\u30ED\u30B0\u4E00\u89A7",
+            "url": "classes/BaserCore-Controller-Api-Admin-DblogsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\DblogsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u30ED\u30B0\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BaserCore-Controller-Api-Admin-DblogsController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\DblogsController\u003A\u003Adelete_all\u0028\u0029",
+            "name": "delete_all",
+            "summary": "\u005BAPI\u005D\u0020\u6700\u8FD1\u306E\u52D5\u304D\u3092\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-DblogsController.html#method_delete_all"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\JwksController",
+            "name": "JwksController",
+            "summary": "Class\u0020JwksController",
+            "url": "classes/BaserCore-Controller-Api-Admin-JwksController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\JwksController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize",
+            "url": "classes/BaserCore-Controller-Api-Admin-JwksController.html#method_initialize"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\JwksController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30C8\u30FC\u30AF\u30F3\u3092\u691C\u8A3C\u3059\u308B\uFF08RS256\u306E\u307F\uFF09",
+            "url": "classes/BaserCore-Controller-Api-Admin-JwksController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController",
+            "name": "PagesController",
+            "summary": "Class\u0020PagesController",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u767B\u9332",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u60C5\u5831\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PagesController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC",
+            "url": "classes/BaserCore-Controller-Api-Admin-PagesController.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController",
+            "name": "PermissionGroupsController",
+            "summary": "Class\u0020PermissionGroupsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u306E\u4E00\u89A7",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u306E\u30EA\u30B9\u30C8",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_list"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u767B\u9332\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u524A\u9664\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u7DE8\u96C6\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionGroupsController\u003A\u003Arebuild_by_user_group\u0028\u0029",
+            "name": "rebuild_by_user_group",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u3092\u6307\u5B9A\u3057\u3066\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u3092\u518D\u69CB\u7BC9\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionGroupsController.html#method_rebuild_by_user_group"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController",
+            "name": "PermissionsController",
+            "summary": "Class\u0020PermissionsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u306E\u4E00\u89A7",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u767B\u9332\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u524A\u9664\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B3\u30D4\u30FC",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u7DE8\u96C6\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u4E00\u62EC\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_batch"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PermissionsController\u003A\u003Aupdate_sort\u0028\u0029",
+            "name": "update_sort",
+            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PermissionsController.html#method_update_sort"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController",
+            "name": "PluginsController",
+            "summary": "Class\u0020PluginsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u60C5\u5831\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Ainstall\u0028\u0029",
+            "name": "install",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_install"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Adetach\u0028\u0029",
+            "name": "detach",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u7121\u52B9\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_detach"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aattach\u0028\u0029",
+            "name": "attach",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u6709\u52B9\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_attach"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Areset_db\u0028\u0029",
+            "name": "reset_db",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u3092\u521D\u671F\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_reset_db"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Auninstall\u0028\u0029",
+            "name": "uninstall",
+            "summary": "\u30A2\u30F3\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_uninstall"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u3000\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u8FFD\u52A0",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aupdate_sort\u0028\u0029",
+            "name": "update_sort",
+            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_update_sort"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aget_market_plugins\u0028\u0029",
+            "name": "get_market_plugins",
+            "summary": "baser\u30DE\u30FC\u30B1\u30C3\u30C8\u306E\u30D7\u30E9\u30B0\u30A4\u30F3\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_get_market_plugins"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_batch"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\PluginsController\u003A\u003Aget_available_core_version_info\u0028\u0029",
+            "name": "get_available_core_version_info",
+            "summary": "\u53D6\u5F97\u53EF\u80FD\u306A\u30B3\u30A2\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u60C5\u5831\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-PluginsController.html#method_get_available_core_version_info"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SiteConfigsController",
+            "name": "SiteConfigsController",
+            "summary": "SiteConfigsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-SiteConfigsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SiteConfigsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30B7\u30B9\u30C6\u30E0\u57FA\u672C\u8A2D\u5B9A\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-SiteConfigsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SiteConfigsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30B7\u30B9\u30C6\u30E0\u57FA\u672C\u8A2D\u5B9A\u3092\u7DE8\u96C6\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-SiteConfigsController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SiteConfigsController\u003A\u003Acheck_sendmail\u0028\u0029",
+            "name": "check_sendmail",
+            "summary": "\u30E1\u30FC\u30EB\u306E\u9001\u4FE1\u30C6\u30B9\u30C8\u3092\u5B9F\u884C\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-SiteConfigsController.html#method_check_sendmail"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController",
+            "name": "SitesController",
+            "summary": "Class\u0020SitesController",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u767B\u9332",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\SitesController\u003A\u003Aget_selectable_devices_and_lang\u0028\u0029",
+            "name": "get_selectable_devices_and_lang",
+            "summary": "\u9078\u629E\u53EF\u80FD\u306A\u30C7\u30D0\u30A4\u30B9\u3068\u8A00\u8A9E\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-SitesController.html#method_get_selectable_devices_and_lang"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController",
+            "name": "ThemesController",
+            "summary": "Class\u0020ThemesController",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30C6\u30FC\u30DE\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u65B0\u3057\u3044\u30C6\u30FC\u30DE\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u524A\u9664\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aload_default_data\u0028\u0029",
+            "name": "load_default_data",
+            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u306E\u521D\u671F\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080API\u3092\u5B9F\u88C5",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_load_default_data"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aapply\u0028\u0029",
+            "name": "apply",
+            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u9069\u7528\u3059\u308BAPI",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_apply"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\ThemesController\u003A\u003Aget_market_themes\u0028\u0029",
+            "name": "get_market_themes",
+            "summary": "\u005BAPI\u005D\u0020baser\u30DE\u30FC\u30B1\u30C3\u30C8\u3088\u308A\u30C6\u30FC\u30DE\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-ThemesController.html#method_get_market_themes"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController",
+            "name": "UserGroupsController",
+            "summary": "Class\u0020UserGroupsController",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u767B\u9332",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30EA\u30B9\u30C8\u51FA\u529B",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_list"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UserGroupsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u30B3\u30D4\u30FC",
+            "url": "classes/BaserCore-Controller-Api-Admin-UserGroupsController.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController",
+            "name": "UsersController",
+            "summary": "Class\u0020UsersController",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_initialize"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Alogin\u0028\u0029",
+            "name": "login",
+            "summary": "\u30ED\u30B0\u30A4\u30F3",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_login"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Arefresh_token\u0028\u0029",
+            "name": "refresh_token",
+            "summary": "\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_refresh_token"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_index"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u53D6\u5F97",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_view"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u767B\u9332",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_add"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u7DE8\u96C6",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UsersController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-UsersController.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController",
+            "name": "UtilitiesController",
+            "summary": "Class\u0020UtilitiesController",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Aclear_cache\u0028\u0029",
+            "name": "clear_cache",
+            "summary": "\u005BAPI\u005D\u0020\u30B5\u30FC\u30D0\u30FC\u30AD\u30E3\u30C3\u30B7\u30E5\u3092\u524A\u9664\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_clear_cache"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Areset_contents_tree\u0028\u0029",
+            "name": "reset_contents_tree",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30C4\u30EA\u30FC\u69CB\u9020\u30EA\u30BB\u30C3\u30C8",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_reset_contents_tree"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Averity_contents_tree\u0028\u0029",
+            "name": "verity_contents_tree",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30C4\u30EA\u30FC\u69CB\u9020\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_verity_contents_tree"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Adownload_backup\u0028\u0029",
+            "name": "download_backup",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_download_backup"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Arestore_db\u0028\u0029",
+            "name": "restore_db",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u3088\u308A\u30EC\u30B9\u30C8\u30A2",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_restore_db"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Adownload_log\u0028\u0029",
+            "name": "download_log",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30ED\u30B0\u30D5\u30A1\u30A4\u30EB\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_download_log"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Adelete_log\u0028\u0029",
+            "name": "delete_log",
+            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30ED\u30B0\u30D5\u30A1\u30A4\u30EB\u3092\u524A\u9664",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_delete_log"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin\\UtilitiesController\u003A\u003Asave_search_opened\u0028\u0029",
+            "name": "save_search_opened",
+            "summary": "\u691C\u7D22\u30DC\u30C3\u30AF\u30B9\u306E\u8868\u793A\u72B6\u614B\u3092\u4FDD\u5B58\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-Admin-UtilitiesController.html#method_save_search_opened"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController",
             "name": "BcApiController",
             "summary": "Class\u0020BcApiController",
             "url": "classes/BaserCore-Controller-Api-BcApiController.html"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Initialize",
-            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_initialize"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AgetAccessToken\u0028\u0029",
             "name": "getAccessToken",
             "summary": "\u30C8\u30FC\u30AF\u30F3\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_getAccessToken"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AbeforeFilter\u0028\u0029",
-            "name": "beforeFilter",
-            "summary": "Before\u0020Filter",
-            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_beforeFilter"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AisAdminApiEnabled\u0028\u0029",
-            "name": "isAdminApiEnabled",
-            "summary": "\u8A8D\u8A3C\u304C\u5FC5\u8981\u306AAPI\u3092\u5229\u7528\u53EF\u80FD\u304B\u3069\u3046\u304B\u5224\u5B9A",
-            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_isAdminApiEnabled"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AisAvailableUser\u0028\u0029",
-            "name": "isAvailableUser",
-            "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FC\u304C\u6709\u52B9\u304B\u5224\u5B9A\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_isAvailableUser"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AbeforeRender\u0028\u0029",
             "name": "beforeRender",
@@ -866,11 +1441,6 @@ Search.appendIndex(
             "summary": "Class\u0020ContentFoldersController",
             "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentFoldersController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html#method_initialize"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\ContentFoldersController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u4E00\u89A7\u53D6\u5F97",
@@ -881,160 +1451,25 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u53D6\u5F97",
             "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html#method_view"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentFoldersController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u767B\u9332",
-            "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentFoldersController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentFoldersController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u30FC\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-ContentFoldersController.html#method_edit"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController",
             "name": "ContentsController",
             "summary": "Class\u0020ContentsController",
             "url": "classes/BaserCore-Controller-Api-ContentsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_initialize"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u53D6\u5F97",
             "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_view"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aview_trash\u0028\u0029",
-            "name": "view_trash",
-            "summary": "\u30B4\u30DF\u7BB1\u60C5\u5831\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_view_trash"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
             "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_index"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aindex_trash\u0028\u0029",
-            "name": "index_trash",
-            "summary": "\u30B4\u30DF\u7BB1\u5185\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_index_trash"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u524A\u9664\u0028\u8AD6\u7406\u524A\u9664\u0029\n\u203B\u0020\u5B50\u8981\u7D20\u304C\u3042\u308C\u3070\u3001\u5B50\u8981\u7D20\u3082\u524A\u9664\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Atrash_empty\u0028\u0029",
-            "name": "trash_empty",
-            "summary": "\u30B4\u30DF\u7BB1\u3092\u7A7A\u306B\u3059\u308B\u0028\u7269\u7406\u524A\u9664\u0029",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_trash_empty"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Atrash_return\u0028\u0029",
-            "name": "trash_return",
-            "summary": "trash_return",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_trash_return"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Achange_status\u0028\u0029",
-            "name": "change_status",
-            "summary": "\u516C\u958B\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_change_status"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_full_url\u0028\u0029",
-            "name": "get_full_url",
-            "summary": "get_full_url",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_full_url"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "\u6307\u5B9A\u3057\u305FID\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u5B58\u5728\u3059\u308B\u304B\u78BA\u8A8D\u3059\u308B\n\u30B4\u30DF\u7BB1\u306E\u3082\u306E\u306F\u7121\u8996",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_exists"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_content_folder_list\u0028\u0029",
-            "name": "get_content_folder_list",
-            "summary": "\u30B5\u30A4\u30C8\u306B\u7D10\u4ED8\u3044\u305F\u30D5\u30A9\u30EB\u30C0\u30EA\u30B9\u30C8\u3092\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_content_folder_list"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Arename\u0028\u0029",
-            "name": "rename",
-            "summary": "\u30EA\u30CD\u30FC\u30E0",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_rename"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aadd_alias\u0028\u0029",
-            "name": "add_alias",
-            "summary": "add_alias",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_add_alias"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Ais_unique_content\u0028\u0029",
-            "name": "is_unique_content",
-            "summary": "\u6307\u5B9A\u3057\u305FURL\u306E\u30D1\u30B9\u4E0A\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3067\u30D5\u30A9\u30EB\u30C0\u4EE5\u5916\u304C\u5B58\u5728\u3059\u308B\u304B\u78BA\u8A8D",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_is_unique_content"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Amove\u0028\u0029",
-            "name": "move",
-            "summary": "\u4E26\u3073\u9806\u3092\u79FB\u52D5\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_move"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "batch",
-            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_batch"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\DblogsController",
-            "name": "DblogsController",
-            "summary": "Class\u0020DblogsController",
-            "url": "classes/BaserCore-Controller-Api-DblogsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\DblogsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u005BAPI\u005D\u0020DB\u30ED\u30B0\u4E00\u89A7",
-            "url": "classes/BaserCore-Controller-Api-DblogsController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\DblogsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u30ED\u30B0\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BaserCore-Controller-Api-DblogsController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\DblogsController\u003A\u003Adelete_all\u0028\u0029",
-            "name": "delete_all",
-            "summary": "\u005BAPI\u005D\u0020\u6700\u8FD1\u306E\u52D5\u304D\u3092\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-DblogsController.html#method_delete_all"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\JwksController",
-            "name": "JwksController",
-            "summary": "Class\u0020JwksController",
-            "url": "classes/BaserCore-Controller-Api-JwksController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\JwksController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Initialize",
-            "url": "classes/BaserCore-Controller-Api-JwksController.html#method_initialize"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\JwksController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u30C8\u30FC\u30AF\u30F3\u3092\u691C\u8A3C\u3059\u308B\uFF08RS256\u306E\u307F\uFF09",
-            "url": "classes/BaserCore-Controller-Api-JwksController.html#method_index"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\PagesController",
             "name": "PagesController",
             "summary": "Class\u0020PagesController",
             "url": "classes/BaserCore-Controller-Api-PagesController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BaserCore-Controller-Api-PagesController.html#method_initialize"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -1045,406 +1480,6 @@ Search.appendIndex(
             "name": "view",
             "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u53D6\u5F97",
             "url": "classes/BaserCore-Controller-Api-PagesController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u767B\u9332",
-            "url": "classes/BaserCore-Controller-Api-PagesController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-PagesController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-PagesController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PagesController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u30B3\u30D4\u30FC",
-            "url": "classes/BaserCore-Controller-Api-PagesController.html#method_copy"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController",
-            "name": "PermissionGroupsController",
-            "summary": "Class\u0020PermissionGroupsController",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u306E\u4E00\u89A7",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u306E\u30EA\u30B9\u30C8",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_list"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u767B\u9332\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u524A\u9664\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u7DE8\u96C6\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionGroupsController\u003A\u003Arebuild_by_user_group\u0028\u0029",
-            "name": "rebuild_by_user_group",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u3092\u6307\u5B9A\u3057\u3066\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u3092\u518D\u69CB\u7BC9\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PermissionGroupsController.html#method_rebuild_by_user_group"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController",
-            "name": "PermissionsController",
-            "summary": "Class\u0020PermissionsController",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u306E\u4E00\u89A7",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u767B\u9332\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u524A\u9664\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u005BAPI\u005D\u0020\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30B3\u30D4\u30FC",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_copy"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u7DE8\u96C6\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u4E00\u62EC\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_batch"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PermissionsController\u003A\u003Aupdate_sort\u0028\u0029",
-            "name": "update_sort",
-            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PermissionsController.html#method_update_sort"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController",
-            "name": "PluginsController",
-            "summary": "Class\u0020PluginsController",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u60C5\u5831\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Ainstall\u0028\u0029",
-            "name": "install",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_install"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Adetach\u0028\u0029",
-            "name": "detach",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u7121\u52B9\u5316\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_detach"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aattach\u0028\u0029",
-            "name": "attach",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u6709\u52B9\u5316\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_attach"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Areset_db\u0028\u0029",
-            "name": "reset_db",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u3092\u521D\u671F\u5316\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_reset_db"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Auninstall\u0028\u0029",
-            "name": "uninstall",
-            "summary": "\u30A2\u30F3\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_uninstall"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u3000\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u8FFD\u52A0",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aupdate_sort\u0028\u0029",
-            "name": "update_sort",
-            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_update_sort"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aget_market_plugins\u0028\u0029",
-            "name": "get_market_plugins",
-            "summary": "baser\u30DE\u30FC\u30B1\u30C3\u30C8\u306E\u30D7\u30E9\u30B0\u30A4\u30F3\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_get_market_plugins"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_batch"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\PluginsController\u003A\u003Aget_available_core_version_info\u0028\u0029",
-            "name": "get_available_core_version_info",
-            "summary": "\u53D6\u5F97\u53EF\u80FD\u306A\u30B3\u30A2\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u60C5\u5831\u3092\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-PluginsController.html#method_get_available_core_version_info"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SiteConfigsController",
-            "name": "SiteConfigsController",
-            "summary": "SiteConfigsController",
-            "url": "classes/BaserCore-Controller-Api-SiteConfigsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SiteConfigsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30B7\u30B9\u30C6\u30E0\u57FA\u672C\u8A2D\u5B9A\u3092\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-SiteConfigsController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SiteConfigsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30B7\u30B9\u30C6\u30E0\u57FA\u672C\u8A2D\u5B9A\u3092\u7DE8\u96C6\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-SiteConfigsController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SiteConfigsController\u003A\u003Acheck_sendmail\u0028\u0029",
-            "name": "check_sendmail",
-            "summary": "\u30E1\u30FC\u30EB\u306E\u9001\u4FE1\u30C6\u30B9\u30C8\u3092\u5B9F\u884C\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-SiteConfigsController.html#method_check_sendmail"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController",
-            "name": "SitesController",
-            "summary": "Class\u0020SitesController",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u767B\u9332",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30B5\u30A4\u30C8\u60C5\u5831\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\SitesController\u003A\u003Aget_selectable_devices_and_lang\u0028\u0029",
-            "name": "get_selectable_devices_and_lang",
-            "summary": "\u9078\u629E\u53EF\u80FD\u306A\u30C7\u30D0\u30A4\u30B9\u3068\u8A00\u8A9E\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-SitesController.html#method_get_selectable_devices_and_lang"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController",
-            "name": "ThemesController",
-            "summary": "Class\u0020ThemesController",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30C6\u30FC\u30DE\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u65B0\u3057\u3044\u30C6\u30FC\u30DE\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u524A\u9664\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u30B3\u30D4\u30FC\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_copy"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aload_default_data\u0028\u0029",
-            "name": "load_default_data",
-            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u306E\u521D\u671F\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080API\u3092\u5B9F\u88C5",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_load_default_data"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aapply\u0028\u0029",
-            "name": "apply",
-            "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u3092\u9069\u7528\u3059\u308BAPI",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_apply"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\ThemesController\u003A\u003Aget_market_themes\u0028\u0029",
-            "name": "get_market_themes",
-            "summary": "\u005BAPI\u005D\u0020baser\u30DE\u30FC\u30B1\u30C3\u30C8\u3088\u308A\u30C6\u30FC\u30DE\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-ThemesController.html#method_get_market_themes"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController",
-            "name": "UserGroupsController",
-            "summary": "Class\u0020UserGroupsController",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u767B\u9332",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30EA\u30B9\u30C8\u51FA\u529B",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_list"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UserGroupsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u30B3\u30D4\u30FC",
-            "url": "classes/BaserCore-Controller-Api-UserGroupsController.html#method_copy"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController",
-            "name": "UsersController",
-            "summary": "Class\u0020UsersController",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Initialize",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_initialize"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Alogin\u0028\u0029",
-            "name": "login",
-            "summary": "\u30ED\u30B0\u30A4\u30F3",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_login"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Arefresh_token\u0028\u0029",
-            "name": "refresh_token",
-            "summary": "\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_refresh_token"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_index"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u53D6\u5F97",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_view"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u767B\u9332",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_add"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_edit"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UsersController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-UsersController.html#method_delete"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController",
-            "name": "UtilitiesController",
-            "summary": "Class\u0020UtilitiesController",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Aclear_cache\u0028\u0029",
-            "name": "clear_cache",
-            "summary": "\u005BAPI\u005D\u0020\u30B5\u30FC\u30D0\u30FC\u30AD\u30E3\u30C3\u30B7\u30E5\u3092\u524A\u9664\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_clear_cache"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Areset_contents_tree\u0028\u0029",
-            "name": "reset_contents_tree",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30C4\u30EA\u30FC\u69CB\u9020\u30EA\u30BB\u30C3\u30C8",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_reset_contents_tree"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Averity_contents_tree\u0028\u0029",
-            "name": "verity_contents_tree",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30C4\u30EA\u30FC\u69CB\u9020\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_verity_contents_tree"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Adownload_backup\u0028\u0029",
-            "name": "download_backup",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_download_backup"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Arestore_db\u0028\u0029",
-            "name": "restore_db",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7\u3088\u308A\u30EC\u30B9\u30C8\u30A2",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_restore_db"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Adownload_log\u0028\u0029",
-            "name": "download_log",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30ED\u30B0\u30D5\u30A1\u30A4\u30EB\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_download_log"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Adelete_log\u0028\u0029",
-            "name": "delete_log",
-            "summary": "\u005BAPI\u005D\u0020\u30E6\u30FC\u30C6\u30A3\u30EA\u30C6\u30A3\uFF1A\u30ED\u30B0\u30D5\u30A1\u30A4\u30EB\u3092\u524A\u9664",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_delete_log"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Api\\UtilitiesController\u003A\u003Asave_search_opened\u0028\u0029",
-            "name": "save_search_opened",
-            "summary": "\u691C\u7D22\u30DC\u30C3\u30AF\u30B9\u306E\u8868\u793A\u72B6\u614B\u3092\u4FDD\u5B58\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Api-UtilitiesController.html#method_save_search_opened"
         },                {
             "fqsen": "\\BaserCore\\Controller\\AppController",
             "name": "AppController",
@@ -2325,6 +2360,16 @@ Search.appendIndex(
             "name": "_buildSchema",
             "summary": "build\u0020Schema",
             "url": "classes/BaserCore-Form-ContentsSearchForm.html#method__buildSchema"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver\\PrefixOrmResolver",
+            "name": "PrefixOrmResolver",
+            "summary": "PrefixOrmResolver",
+            "url": "classes/BaserCore-Identifier-Resolver-PrefixOrmResolver.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver\\PrefixOrmResolver\u003A\u003Afind\u0028\u0029",
+            "name": "find",
+            "summary": "Find",
+            "url": "classes/BaserCore-Identifier-Resolver-PrefixOrmResolver.html#method_find"
         },                {
             "fqsen": "\\BaserCore\\Mailer\\Admin\\BcAdminMailer",
             "name": "BcAdminMailer",
@@ -10981,20 +11026,205 @@ Search.appendIndex(
             "summary": "\u005BADMIN\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u306E\u524A\u9664\u51E6\u7406",
             "url": "classes/BcBlog-Controller-Admin-BlogTagsController.html#method_delete"
         },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController",
+            "name": "BlogCategoriesController",
+            "summary": "BlogCategoriesController",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_batch"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_index"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_view"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u30EA\u30B9\u30C8\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_list"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_add"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u7DE8\u96C6",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_edit"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u524A\u9664",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController",
+            "name": "BlogCommentsController",
+            "summary": "BlogCommentsController",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html#method_index"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u30FC\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html#method_view"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u524A\u9664",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html#method_batch"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u3092\u767B\u9332\u3059\u308B",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCommentsController.html#method_add"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController",
+            "name": "BlogContentsController",
+            "summary": "BlogContentsController",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_index"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_view"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30B9\u30C8\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_list"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_add"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u7DE8\u96C6",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u524A\u9664",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogContentsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogContentsController.html#method_copy"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController",
+            "name": "BlogPostsController",
+            "summary": "BlogPostsController",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u4E00\u89A7\u30C7\u30FC\u30BF\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_index"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_view"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_add"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u7DE8\u96C6\u306EAPI\u5B9F\u88C5",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u8907\u88FD\u306EAPI\u5B9F\u88C5",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_copy"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Apublish\u0028\u0029",
+            "name": "publish",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u516C\u958B\u72B6\u614B\u306B\u8A2D\u5B9A\u306EAPI\u5B9F\u88C5",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_publish"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Aunpublish\u0028\u0029",
+            "name": "unpublish",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u975E\u516C\u958B\u72B6\u614B\u306B\u8A2D\u5B9A\u306EAPI\u5B9F\u88C5",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_unpublish"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u524A\u9664\u51E6\u7406",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogPostsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogPostsController.html#method_batch"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController",
+            "name": "BlogTagsController",
+            "summary": "BlogTagsController",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_index"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30BF\u30B0\u30FC\u53D6\u5F97",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_view"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BADMIN\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u767B\u9332",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_add"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u7DE8\u96C6",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u524A\u9664",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogTagsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogTagsController.html#method_batch"
+        },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController",
             "name": "BlogCategoriesController",
             "summary": "BlogCategoriesController",
             "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_initialize"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_batch"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11011,30 +11241,10 @@ Search.appendIndex(
             "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u30EA\u30B9\u30C8\u53D6\u5F97",
             "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_list"
         },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_add"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u7DE8\u96C6",
-            "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_edit"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCategoriesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u524A\u9664",
-            "url": "classes/BcBlog-Controller-Api-BlogCategoriesController.html#method_delete"
-        },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController",
             "name": "BlogCommentsController",
             "summary": "BlogCommentsController",
             "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html#method_initialize"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11046,30 +11256,10 @@ Search.appendIndex(
             "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u30FC\u53D6\u5F97",
             "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html#method_view"
         },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u524A\u9664",
-            "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html#method_batch"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogCommentsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u3092\u767B\u9332\u3059\u308B",
-            "url": "classes/BcBlog-Controller-Api-BlogCommentsController.html#method_add"
-        },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController",
             "name": "BlogContentsController",
             "summary": "BlogContentsController",
             "url": "classes/BcBlog-Controller-Api-BlogContentsController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_initialize"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11081,40 +11271,10 @@ Search.appendIndex(
             "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u53D6\u5F97",
             "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_view"
         },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30B9\u30C8\u53D6\u5F97",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_list"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_add"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30FC\u7DE8\u96C6",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u524A\u9664",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogContentsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u30B3\u30D4\u30FC",
-            "url": "classes/BcBlog-Controller-Api-BlogContentsController.html#method_copy"
-        },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController",
             "name": "BlogPostsController",
             "summary": "BlogPostsController",
             "url": "classes/BcBlog-Controller-Api-BlogPostsController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_initialize"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11126,50 +11286,10 @@ Search.appendIndex(
             "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
             "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_view"
         },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_add"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u7DE8\u96C6\u306EAPI\u5B9F\u88C5",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u8907\u88FD\u306EAPI\u5B9F\u88C5",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_copy"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Apublish\u0028\u0029",
-            "name": "publish",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u516C\u958B\u72B6\u614B\u306B\u8A2D\u5B9A\u306EAPI\u5B9F\u88C5",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_publish"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Aunpublish\u0028\u0029",
-            "name": "unpublish",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u975E\u516C\u958B\u72B6\u614B\u306B\u8A2D\u5B9A\u306EAPI\u5B9F\u88C5",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_unpublish"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u8A18\u4E8B\u524A\u9664\u51E6\u7406",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogPostsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcBlog-Controller-Api-BlogPostsController.html#method_batch"
-        },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController",
             "name": "BlogTagsController",
             "summary": "BlogTagsController",
             "url": "classes/BcBlog-Controller-Api-BlogTagsController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_initialize"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11180,26 +11300,6 @@ Search.appendIndex(
             "name": "view",
             "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30D6\u30ED\u30B0\u30BF\u30B0\u30FC\u53D6\u5F97",
             "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_view"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BADMIN\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u767B\u9332",
-            "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_add"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u7DE8\u96C6",
-            "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30BF\u30B0\u524A\u9664",
-            "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Api\\BlogTagsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcBlog-Controller-Api-BlogTagsController.html#method_batch"
         },                {
             "fqsen": "\\BcBlog\\Controller\\BlogController",
             "name": "BlogController",
@@ -13211,30 +13311,35 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u66F4\u65B0\u3059\u308B",
             "url": "classes/BcContentLink-Controller-Admin-ContentLinksController.html#method_edit"
         },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin\\ContentLinksController",
+            "name": "ContentLinksController",
+            "summary": "Class\u0020ContentLinksController",
+            "url": "classes/BcContentLink-Controller-Api-Admin-ContentLinksController.html"
+        },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin\\ContentLinksController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u767B\u9332\u3059\u308B\uFF08\u8A8D\u8A3C\u8981\uFF09",
+            "url": "classes/BcContentLink-Controller-Api-Admin-ContentLinksController.html#method_add"
+        },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin\\ContentLinksController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u7DE8\u96C6\uFF08\u8A8D\u8A3C\u8981\uFF09",
+            "url": "classes/BcContentLink-Controller-Api-Admin-ContentLinksController.html#method_edit"
+        },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin\\ContentLinksController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u524A\u9664\uFF08\u8A8D\u8A3C\u8981\uFF09",
+            "url": "classes/BcContentLink-Controller-Api-Admin-ContentLinksController.html#method_delete"
+        },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin\\ContentLinksController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u53D6\u5F97",
+            "url": "classes/BcContentLink-Controller-Api-Admin-ContentLinksController.html#method_view"
+        },                {
             "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController",
             "name": "ContentLinksController",
             "summary": "Class\u0020ContentLinksController",
             "url": "classes/BcContentLink-Controller-Api-ContentLinksController.html"
-        },                {
-            "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcContentLink-Controller-Api-ContentLinksController.html#method_initialize"
-        },                {
-            "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u767B\u9332\u3059\u308B\uFF08\u8A8D\u8A3C\u8981\uFF09",
-            "url": "classes/BcContentLink-Controller-Api-ContentLinksController.html#method_add"
-        },                {
-            "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u7DE8\u96C6\uFF08\u8A8D\u8A3C\u8981\uFF09",
-            "url": "classes/BcContentLink-Controller-Api-ContentLinksController.html#method_edit"
-        },                {
-            "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30EA\u30F3\u30AF\u3092\u524A\u9664\uFF08\u8A8D\u8A3C\u8981\uFF09",
-            "url": "classes/BcContentLink-Controller-Api-ContentLinksController.html#method_delete"
         },                {
             "fqsen": "\\BcContentLink\\Controller\\Api\\ContentLinksController\u003A\u003Aview\u0028\u0029",
             "name": "view",
@@ -13486,15 +13591,190 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u306E\u524A\u9664",
             "url": "classes/BcCustomContent-Controller-Admin-CustomTablesController.html#method_delete"
         },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController",
+            "name": "CustomContentsController",
+            "summary": "CustomContentsController",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u4E00\u89A7\u53D6\u5F97API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_index"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_view"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_add"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u7DE8\u96C6API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u524A\u9664API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomContentsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30EA\u30B9\u30C8API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomContentsController.html#method_list"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController",
+            "name": "CustomEntriesController",
+            "summary": "CustomEntriesController",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u5358\u4E00\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_view"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_index"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u8FFD\u52A0",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_add"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u7DE8\u96C6",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_edit"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u524A\u9664",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomEntriesController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u30EA\u30B9\u30C8",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomEntriesController.html#method_list"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController",
+            "name": "CustomFieldsController",
+            "summary": "CustomFieldsController",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u4E00\u89A7\u53D6\u5F97API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_index"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_view"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u65B0\u898F\u8FFD\u52A0API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_add"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u7DE8\u96C6API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u524A\u9664API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomFieldsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30EA\u30B9\u30C8API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_list"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController",
+            "name": "CustomLinksController",
+            "summary": "CustomLinksController",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u4E00\u89A7\u53D6\u5F97API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_index"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_view"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u65B0\u898F\u8FFD\u52A0API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_add"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u7DE8\u96C6API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_edit"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u524A\u9664API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_delete"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30EA\u30B9\u30C8API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_list"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomLinksController\u003A\u003Aget_parent_list\u0028\u0029",
+            "name": "get_parent_list",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u306E\u89AA\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomLinksController.html#method_get_parent_list"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController",
+            "name": "CustomTablesController",
+            "summary": "CustomTablesController",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u4E00\u89A7\u53D6\u5F97API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_index"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_view"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u65B0\u898F\u8FFD\u52A0API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_add"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u7DE8\u96C6API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_edit"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u524A\u9664API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin\\CustomTablesController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30EA\u30B9\u30C8API",
+            "url": "classes/BcCustomContent-Controller-Api-Admin-CustomTablesController.html#method_list"
+        },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController",
             "name": "CustomContentsController",
             "summary": "CustomContentsController",
             "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_initialize"
         },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -13506,35 +13786,10 @@ Search.appendIndex(
             "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
             "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_view"
         },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_add"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u7DE8\u96C6API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u524A\u9664API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomContentsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30EA\u30B9\u30C8API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomContentsController.html#method_list"
-        },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController",
             "name": "CustomEntriesController",
             "summary": "CustomEntriesController",
             "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_initialize"
         },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Aview\u0028\u0029",
             "name": "view",
@@ -13546,70 +13801,10 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_index"
         },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u8FFD\u52A0",
-            "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_add"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u7DE8\u96C6",
-            "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_edit"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u524A\u9664",
-            "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_delete"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomEntriesController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3000\u30EA\u30B9\u30C8",
-            "url": "classes/BcCustomContent-Controller-Api-CustomEntriesController.html#method_list"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController",
-            "name": "CustomFieldsController",
-            "summary": "CustomFieldsController",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u4E00\u89A7\u53D6\u5F97API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_index"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_view"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u65B0\u898F\u8FFD\u52A0API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_add"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u7DE8\u96C6API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u524A\u9664API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomFieldsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30EA\u30B9\u30C8API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomFieldsController.html#method_list"
-        },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController",
             "name": "CustomLinksController",
             "summary": "CustomLinksController",
             "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_initialize"
         },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -13620,66 +13815,6 @@ Search.appendIndex(
             "name": "view",
             "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
             "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_view"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u65B0\u898F\u8FFD\u52A0API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_add"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u7DE8\u96C6API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_edit"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u524A\u9664API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_delete"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30EA\u30B9\u30C8API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_list"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomLinksController\u003A\u003Aget_parent_list\u0028\u0029",
-            "name": "get_parent_list",
-            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u306E\u89AA\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcCustomContent-Controller-Api-CustomLinksController.html#method_get_parent_list"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController",
-            "name": "CustomTablesController",
-            "summary": "CustomTablesController",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u4E00\u89A7\u53D6\u5F97API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_index"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_view"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u65B0\u898F\u8FFD\u52A0API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_add"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u7DE8\u96C6API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_edit"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u524A\u9664API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_delete"
-        },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Api\\CustomTablesController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30EA\u30B9\u30C8API",
-            "url": "classes/BcCustomContent-Controller-Api-CustomTablesController.html#method_list"
         },                {
             "fqsen": "\\BcCustomContent\\Controller\\CustomContentController",
             "name": "CustomContentController",
@@ -14991,40 +15126,40 @@ Search.appendIndex(
             "summary": "\u005BADMIN\u005D\u0020CKEditor\u7528\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u7528\u306Ejavascript\u3092\u51FA\u529B\u3059\u308B",
             "url": "classes/BcEditorTemplate-Controller-Admin-EditorTemplatesController.html#method_js"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController",
             "name": "EditorTemplatesController",
             "summary": "Class\u0020EditorTemplatesController",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u4E00\u89A7\u53D6\u5F97API",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_index"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_index"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u5358\u4E00\u30C7\u30FC\u30BFAPI",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_view"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_view"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u65B0\u898F\u8FFD\u52A0API",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_add"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_add"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u7DE8\u96C6API",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_edit"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_edit"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u524A\u9664API",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_delete"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_delete"
         },                {
-            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\EditorTemplatesController\u003A\u003Alist\u0028\u0029",
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin\\EditorTemplatesController\u003A\u003Alist\u0028\u0029",
             "name": "list",
             "summary": "\u30EA\u30B9\u30C8API",
-            "url": "classes/BcEditorTemplate-Controller-Api-EditorTemplatesController.html#method_list"
+            "url": "classes/BcEditorTemplate-Controller-Api-Admin-EditorTemplatesController.html#method_list"
         },                {
             "fqsen": "\\BcEditorTemplate\\Model\\Entity\\EditorTemplate",
             "name": "EditorTemplate",
@@ -15136,50 +15271,50 @@ Search.appendIndex(
             "summary": "Provides",
             "url": "classes/BcEditorTemplate-ServiceProvider-BcEditorTemplateServiceProvider.html#property_provides"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController",
             "name": "FavoritesController",
             "summary": "Class\u0020FavoritesController",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u304A\u6C17\u306B\u5165\u308A\u60C5\u5831\u53D6\u5F97",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_view"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_view"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u304A\u6C17\u306B\u5165\u308A\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_index"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_index"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u304A\u6C17\u306B\u5165\u308A\u60C5\u5831\u767B\u9332",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_add"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_add"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u304A\u6C17\u306B\u5165\u308A\u60C5\u5831\u7DE8\u96C6",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_edit"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_edit"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u304A\u6C17\u306B\u5165\u308A\u60C5\u5831\u524A\u9664",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_delete"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_delete"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Achange_sort\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Achange_sort\u0028\u0029",
             "name": "change_sort",
             "summary": "\u005BADMIN\u005D\u0020\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_change_sort"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_change_sort"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Asave_favorite_box\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Asave_favorite_box\u0028\u0029",
             "name": "save_favorite_box",
             "summary": "\u3088\u304F\u4F7F\u3046\u9805\u76EE\u306E\u8868\u793A\u72B6\u614B\u3092\u4FDD\u5B58\u3059\u308B",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_save_favorite_box"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_save_favorite_box"
         },                {
-            "fqsen": "\\BcFavorite\\Controller\\Api\\FavoritesController\u003A\u003Aget_favorite_box_opened\u0028\u0029",
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin\\FavoritesController\u003A\u003Aget_favorite_box_opened\u0028\u0029",
             "name": "get_favorite_box_opened",
             "summary": "\u3088\u304F\u4F7F\u3046\u9805\u76EE\u306E\u8868\u793A\u72B6\u614B\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcFavorite-Controller-Api-FavoritesController.html#method_get_favorite_box_opened"
+            "url": "classes/BcFavorite-Controller-Api-Admin-FavoritesController.html#method_get_favorite_box_opened"
         },                {
             "fqsen": "\\BcFavorite\\Event\\BcFavoriteViewEventListener",
             "name": "BcFavoriteViewEventListener",
@@ -15921,65 +16056,150 @@ Search.appendIndex(
             "summary": "\u30E1\u30C3\u30BB\u30FC\u30B8CSV\u30D5\u30A1\u30A4\u30EB\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3059\u308B",
             "url": "classes/BcMail-Controller-Admin-MailMessagesController.html#method_download_csv"
         },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController",
+            "name": "MailContentsController",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_index"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_view"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u30EA\u30B9\u30C8\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_list"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u767B\u9332",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_add"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u7DE8\u96C6",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u524A\u9664",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailContentsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC",
+            "url": "classes/BcMail-Controller-Api-Admin-MailContentsController.html#method_copy"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController",
+            "name": "MailFieldsController",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_batch"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Aupdate_sort\u0028\u0029",
+            "name": "update_sort",
+            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B\u0020\u005BAJAX\u005D",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_update_sort"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_index"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_view"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u30EA\u30B9\u30C8\u53D6\u5F97",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_list"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_add"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u7DE8\u96C6",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_edit"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u524A\u9664",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_delete"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailFieldsController\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u30B3\u30D4\u30FC",
+            "url": "classes/BcMail-Controller-Api-Admin-MailFieldsController.html#method_copy"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController",
+            "name": "MailMessagesController",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u4E00\u89A7",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_index"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Aview\u0028\u0029",
+            "name": "view",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8A73\u7D30",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_view"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8FFD\u52A0",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_add"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Aedit\u0028\u0029",
+            "name": "edit",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u7DE8\u96C6",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_edit"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u524A\u9664",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30E1\u30FC\u30EB\u30E1\u30C3\u30BB\u30FC\u30B8\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_batch"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin\\MailMessagesController\u003A\u003Adownload\u0028\u0029",
+            "name": "download",
+            "summary": "\u005BAPI\u005D\u0020CSV\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
+            "url": "classes/BcMail-Controller-Api-Admin-MailMessagesController.html#method_download"
+        },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController",
             "name": "MailContentsController",
             "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
             "url": "classes/BcMail-Controller-Api-MailContentsController.html"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_initialize"
         },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u4E00\u89A7\u53D6\u5F97",
             "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_index"
         },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_view"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u30EA\u30B9\u30C8\u53D6\u5F97",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_list"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u767B\u9332",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_add"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u7DE8\u96C6",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4API\u0020\u524A\u9664",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailContentsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u30B3\u30D4\u30FC",
-            "url": "classes/BcMail-Controller-Api-MailContentsController.html#method_copy"
-        },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController",
             "name": "MailFieldsController",
             "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
             "url": "classes/BcMail-Controller-Api-MailFieldsController.html"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_batch"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Aupdate_sort\u0028\u0029",
-            "name": "update_sort",
-            "summary": "\u4E26\u3073\u66FF\u3048\u3092\u66F4\u65B0\u3059\u308B\u0020\u005BAJAX\u005D",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_update_sort"
         },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -15990,71 +16210,6 @@ Search.appendIndex(
             "name": "view",
             "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
             "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_view"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Alist\u0028\u0029",
-            "name": "list",
-            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u30EA\u30B9\u30C8\u53D6\u5F97",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_list"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_add"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u7DE8\u96C6",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_edit"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u524A\u9664",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_delete"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailFieldsController\u003A\u003Acopy\u0028\u0029",
-            "name": "copy",
-            "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u30B3\u30D4\u30FC",
-            "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_copy"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController",
-            "name": "MailMessagesController",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aindex\u0028\u0029",
-            "name": "index",
-            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u4E00\u89A7",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_index"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aview\u0028\u0029",
-            "name": "view",
-            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8A73\u7D30",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_view"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aadd\u0028\u0029",
-            "name": "add",
-            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8FFD\u52A0",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_add"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aedit\u0028\u0029",
-            "name": "edit",
-            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u7DE8\u96C6",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_edit"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u524A\u9664",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_delete"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30E1\u30FC\u30EB\u30E1\u30C3\u30BB\u30FC\u30B8\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_batch"
-        },                {
-            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Adownload\u0028\u0029",
-            "name": "download",
-            "summary": "\u005BAPI\u005D\u0020CSV\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
-            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_download"
         },                {
             "fqsen": "\\BcMail\\Controller\\MailController",
             "name": "MailController",
@@ -17366,45 +17521,55 @@ Search.appendIndex(
             "summary": "\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u3092\u518D\u69CB\u7BC9\u3059\u308B",
             "url": "classes/BcSearchIndex-Controller-Admin-SearchIndexesController.html#method_reconstruct"
         },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController",
+            "name": "SearchIndexesController",
+            "summary": "SearchIndicesController",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "Before\u0020filter",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003Achange_priority\u0028\u0029",
+            "name": "change_priority",
+            "summary": "\u005BAJAX\u005D\u0020\u512A\u5148\u9806\u4F4D\u3092\u5909\u66F4\u3059\u308B",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_change_priority"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003Abatch\u0028\u0029",
+            "name": "batch",
+            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_batch"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003Areconstruct\u0028\u0029",
+            "name": "reconstruct",
+            "summary": "",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_reconstruct"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "\u005BAPI\u005D\u0020\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_index"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin\\SearchIndexesController\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u005BAPI\u005D\u0020\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u524A\u9664",
+            "url": "classes/BcSearchIndex-Controller-Api-Admin-SearchIndexesController.html#method_delete"
+        },                {
             "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController",
             "name": "SearchIndexesController",
             "summary": "SearchIndicesController",
             "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html"
-        },                {
-            "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_initialize"
         },                {
             "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003AbeforeFilter\u0028\u0029",
             "name": "beforeFilter",
             "summary": "Before\u0020filter",
             "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_beforeFilter"
         },                {
-            "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Achange_priority\u0028\u0029",
-            "name": "change_priority",
-            "summary": "\u005BAJAX\u005D\u0020\u512A\u5148\u9806\u4F4D\u3092\u5909\u66F4\u3059\u308B",
-            "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_change_priority"
-        },                {
-            "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Abatch\u0028\u0029",
-            "name": "batch",
-            "summary": "\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_batch"
-        },                {
-            "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Areconstruct\u0028\u0029",
-            "name": "reconstruct",
-            "summary": "",
-            "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_reconstruct"
-        },                {
             "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u005BAPI\u005D\u0020\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u4E00\u89A7\u53D6\u5F97",
             "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_index"
-        },                {
-            "fqsen": "\\BcSearchIndex\\Controller\\Api\\SearchIndexesController\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u005BAPI\u005D\u0020\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u524A\u9664",
-            "url": "classes/BcSearchIndex-Controller-Api-SearchIndexesController.html#method_delete"
         },                {
             "fqsen": "\\BcSearchIndex\\Controller\\SearchIndexesController",
             "name": "SearchIndexesController",
@@ -17696,20 +17861,20 @@ Search.appendIndex(
             "summary": "\u005BADMIN\u005D\u0020\u8A2D\u5B9A\u7DE8\u96C6",
             "url": "classes/BcThemeConfig-Controller-Admin-ThemeConfigsController.html#method_index"
         },                {
-            "fqsen": "\\BcThemeConfig\\Controller\\Api\\ThemeConfigsController",
+            "fqsen": "\\BcThemeConfig\\Controller\\Api\\Admin\\ThemeConfigsController",
             "name": "ThemeConfigsController",
             "summary": "Class\u0020ThemeConfigsController",
-            "url": "classes/BcThemeConfig-Controller-Api-ThemeConfigsController.html"
+            "url": "classes/BcThemeConfig-Controller-Api-Admin-ThemeConfigsController.html"
         },                {
-            "fqsen": "\\BcThemeConfig\\Controller\\Api\\ThemeConfigsController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcThemeConfig\\Controller\\Api\\Admin\\ThemeConfigsController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u005BAPI\u005D\u0020\u53D6\u5F97",
-            "url": "classes/BcThemeConfig-Controller-Api-ThemeConfigsController.html#method_view"
+            "url": "classes/BcThemeConfig-Controller-Api-Admin-ThemeConfigsController.html#method_view"
         },                {
-            "fqsen": "\\BcThemeConfig\\Controller\\Api\\ThemeConfigsController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcThemeConfig\\Controller\\Api\\Admin\\ThemeConfigsController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u005BAPI\u005D\u0020\u4FDD\u5B58",
-            "url": "classes/BcThemeConfig-Controller-Api-ThemeConfigsController.html#method_edit"
+            "url": "classes/BcThemeConfig-Controller-Api-Admin-ThemeConfigsController.html#method_edit"
         },                {
             "fqsen": "\\BcThemeConfig\\Model\\Entity\\ThemeConfig",
             "name": "ThemeConfig",
@@ -17976,100 +18141,100 @@ Search.appendIndex(
             "summary": "\u5F15\u304D\u6570\u3092\u89E3\u6790\u3059\u308B",
             "url": "classes/BcThemeFile-Controller-Admin-ThemeFilesController.html#method_parseArgs"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController",
             "name": "ThemeFilesController",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u30D5\u30A1\u30A4\u30EB\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_add"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_add"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u30D5\u30A1\u30A4\u30EB\u7DE8\u96C6",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_edit"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_edit"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u30D5\u30A1\u30A4\u30EB\u524A\u9664",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_delete"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_delete"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Acopy\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u30D5\u30A1\u30A4\u30EB\u30B3\u30D4\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_copy"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_copy"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Acopy_to_theme\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Acopy_to_theme\u0028\u0029",
             "name": "copy_to_theme",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u73FE\u5728\u306E\u30C6\u30FC\u30DE\u306B\u30D5\u30A1\u30A4\u30EB\u3092\u30B3\u30D4\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_copy_to_theme"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_copy_to_theme"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u30D5\u30A1\u30A4\u30EB\u3092\u8868\u793A",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_view"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_view"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aimg\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aimg\u0028\u0029",
             "name": "img",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u753B\u50CF\u3092\u8868\u793A",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_img"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_img"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aimg_thumb\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aimg_thumb\u0028\u0029",
             "name": "img_thumb",
             "summary": "\u005BAPI\u005D\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u0020\u753B\u50CF\u306E\u30B5\u30E0\u30CD\u30A4\u30EB\u3092\u8868\u793A",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_img_thumb"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_img_thumb"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFilesController\u003A\u003Aupload\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController\u003A\u003Aupload\u0028\u0029",
             "name": "upload",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30A2API\u0020\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFilesController.html#method_upload"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFilesController.html#method_upload"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController",
             "name": "ThemeFoldersController",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Abatch\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Abatch\u0028\u0029",
             "name": "batch",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_batch"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_batch"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_index"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_index"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_add"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_add"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u7DE8\u96C6",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_edit"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_edit"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u524A\u9664",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_delete"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_delete"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Acopy\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u30B3\u30D4\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_copy"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_copy"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Acopy_to_theme\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Acopy_to_theme\u0028\u0029",
             "name": "copy_to_theme",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u73FE\u5728\u306E\u30C6\u30FC\u30DE\u306B\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0\u3092\u30B3\u30D4\u30FC",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_copy_to_theme"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_copy_to_theme"
         },                {
-            "fqsen": "\\BcThemeFile\\Controller\\Api\\ThemeFoldersController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFoldersController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A9\u30EB\u30C0API\u0020\u30D5\u30A9\u30EB\u30C0\u3092\u8868\u793A",
-            "url": "classes/BcThemeFile-Controller-Api-ThemeFoldersController.html#method_view"
+            "url": "classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_view"
         },                {
             "fqsen": "\\BcThemeFile\\Form\\ThemeFileForm",
             "name": "ThemeFileForm",
@@ -18651,80 +18816,80 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u671F\u9593\u306E\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
             "url": "classes/BcUploader-Controller-Admin-UploaderFilesController.html#method_view_limited_file"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController",
             "name": "UploaderCategoriesController",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30AB\u30C6\u30B4\u30EA\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u4E00\u89A7\u53D6\u5F97API",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_index"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_index"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u65B0\u898F\u8FFD\u52A0API",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_add"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_add"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u7DE8\u96C6API",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_edit"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_edit"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u524A\u9664API",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_delete"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_delete"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Acopy\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
             "summary": "\u30B3\u30D4\u30FCAPI",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_copy"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_copy"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderCategoriesController\u003A\u003Abatch\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController\u003A\u003Abatch\u0028\u0029",
             "name": "batch",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30AB\u30C6\u30B4\u30EA\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcUploader-Controller-Api-UploaderCategoriesController.html#method_batch"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderCategoriesController.html#method_batch"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderConfigsController",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderConfigsController",
             "name": "UploaderConfigsController",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C0\u30FC\u30D7\u30E9\u30B0\u30A4\u30F3",
-            "url": "classes/BcUploader-Controller-Api-UploaderConfigsController.html"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderConfigsController.html"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderConfigsController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderConfigsController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u53D6\u5F97API",
-            "url": "classes/BcUploader-Controller-Api-UploaderConfigsController.html#method_view"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderConfigsController.html#method_view"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderConfigsController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderConfigsController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u4FDD\u5B58API",
-            "url": "classes/BcUploader-Controller-Api-UploaderConfigsController.html#method_edit"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderConfigsController.html#method_edit"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderFilesController",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderFilesController",
             "name": "UploaderFilesController",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
-            "url": "classes/BcUploader-Controller-Api-UploaderFilesController.html"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderFilesController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderFilesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u4E00\u89A7\u53D6\u5F97API",
-            "url": "classes/BcUploader-Controller-Api-UploaderFilesController.html#method_index"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html#method_index"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderFilesController\u003A\u003Aupload\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderFilesController\u003A\u003Aupload\u0028\u0029",
             "name": "upload",
             "summary": "\u005BADMIN\u005D\u0020Ajax\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9",
-            "url": "classes/BcUploader-Controller-Api-UploaderFilesController.html#method_upload"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html#method_upload"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderFilesController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderFilesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u7DE8\u96C6\u51E6\u7406",
-            "url": "classes/BcUploader-Controller-Api-UploaderFilesController.html#method_edit"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html#method_edit"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Api\\UploaderFilesController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderFilesController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u3092\u524A\u9664\u3059\u308B",
-            "url": "classes/BcUploader-Controller-Api-UploaderFilesController.html#method_delete"
+            "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html#method_delete"
         },                {
             "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener",
             "name": "BcUploaderViewEventListener",
@@ -19201,65 +19366,65 @@ Search.appendIndex(
             "summary": "\u005BADMIN\u005D\u0020\u524A\u9664\u51E6\u7406\u3000\u0028ajax\u0029",
             "url": "classes/BcWidgetArea-Controller-Admin-WidgetAreasController.html#method_delete"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController",
             "name": "WidgetAreasController",
             "summary": "Class\u0020WidgetAreasController",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aindex\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u4E00\u89A7\u53D6\u5F97",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_index"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_index"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Alist\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Alist\u0028\u0029",
             "name": "list",
             "summary": "\u30EA\u30B9\u30C8\u30C7\u30FC\u30BF\u53D6\u5F97",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_list"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_list"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aadd\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u65B0\u898F\u8FFD\u52A0",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_add"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_add"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aedit\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u30A8\u30EA\u30A2\u7BA1\u7406\u0020API\u0020\u7DE8\u96C6",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_edit"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_edit"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Adelete\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u524A\u9664",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_delete"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_delete"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Abatch\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Abatch\u0028\u0029",
             "name": "batch",
             "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u30D0\u30C3\u30C1\u51E6\u7406",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_batch"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_batch"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aupdate_title\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aupdate_title\u0028\u0029",
             "name": "update_title",
             "summary": "\u005BAJAX\u005D\u0020\u30BF\u30A4\u30C8\u30EB\u66F4\u65B0",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_update_title"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_update_title"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aupdate_widget\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aupdate_widget\u0028\u0029",
             "name": "update_widget",
             "summary": "\u005BAJAX\u005D\u0020\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u66F4\u65B0",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_update_widget"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_update_widget"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aupdate_sort\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aupdate_sort\u0028\u0029",
             "name": "update_sort",
             "summary": "\u4E26\u3073\u9806\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_update_sort"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_update_sort"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Adelete_widget\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Adelete_widget\u0028\u0029",
             "name": "delete_widget",
             "summary": "\u005BAJAX\u005D\u0020\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u3092\u524A\u9664",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_delete_widget"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_delete_widget"
         },                {
-            "fqsen": "\\BcWidgetArea\\Controller\\Api\\WidgetAreasController\u003A\u003Aview\u0028\u0029",
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin\\WidgetAreasController\u003A\u003Aview\u0028\u0029",
             "name": "view",
             "summary": "\u005BAPI\u005D\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
-            "url": "classes/BcWidgetArea-Controller-Api-WidgetAreasController.html#method_view"
+            "url": "classes/BcWidgetArea-Controller-Api-Admin-WidgetAreasController.html#method_view"
         },                {
             "fqsen": "\\BcWidgetArea\\Event\\BcWidgetAreaControllerEventListener",
             "name": "BcWidgetAreaControllerEventListener",
@@ -19601,6 +19766,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/basercore-controller.html"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/basercore-controller-api-admin.html"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -19640,6 +19810,16 @@ Search.appendIndex(
             "name": "Form",
             "summary": "",
             "url": "namespaces/basercore-form.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier\\Resolver",
+            "name": "Resolver",
+            "summary": "",
+            "url": "namespaces/basercore-identifier-resolver.html"
+        },                {
+            "fqsen": "\\BaserCore\\Identifier",
+            "name": "Identifier",
+            "summary": "",
+            "url": "namespaces/basercore-identifier.html"
         },                {
             "fqsen": "\\BaserCore\\Mailer\\Admin",
             "name": "Admin",
@@ -19761,6 +19941,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcblog-controller-admin.html"
         },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcblog-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcBlog\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -19841,6 +20026,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bccontentlink-controller-admin.html"
         },                {
+            "fqsen": "\\BcContentLink\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bccontentlink-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcContentLink\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -19885,6 +20075,11 @@ Search.appendIndex(
             "name": "Admin",
             "summary": "",
             "url": "namespaces/bccustomcontent-controller-admin.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bccustomcontent-controller-api-admin.html"
         },                {
             "fqsen": "\\BcCustomContent\\Controller\\Api",
             "name": "Api",
@@ -19966,6 +20161,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bceditortemplate-controller.html"
         },                {
+            "fqsen": "\\BcEditorTemplate\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bceditortemplate-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcEditorTemplate\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -20005,6 +20205,11 @@ Search.appendIndex(
             "name": "ServiceProvider",
             "summary": "",
             "url": "namespaces/bceditortemplate-serviceprovider.html"
+        },                {
+            "fqsen": "\\BcFavorite\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcfavorite-controller-api-admin.html"
         },                {
             "fqsen": "\\BcFavorite\\Controller\\Api",
             "name": "Api",
@@ -20121,6 +20326,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcmail-controller-admin.html"
         },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcmail-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcMail\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -20200,6 +20410,11 @@ Search.appendIndex(
             "name": "Admin",
             "summary": "",
             "url": "namespaces/bcsearchindex-controller-admin.html"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcsearchindex-controller-api-admin.html"
         },                {
             "fqsen": "\\BcSearchIndex\\Controller\\Api",
             "name": "Api",
@@ -20281,6 +20496,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcthemeconfig-controller.html"
         },                {
+            "fqsen": "\\BcThemeConfig\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcthemeconfig-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcThemeConfig\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -20341,6 +20561,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcthemefile-controller.html"
         },                {
+            "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcthemefile-controller-api-admin.html"
+        },                {
             "fqsen": "\\BcThemeFile\\Controller\\Api",
             "name": "Api",
             "summary": "",
@@ -20400,6 +20625,11 @@ Search.appendIndex(
             "name": "Controller",
             "summary": "",
             "url": "namespaces/bcuploader-controller.html"
+        },                {
+            "fqsen": "\\BcUploader\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcuploader-controller-api-admin.html"
         },                {
             "fqsen": "\\BcUploader\\Controller\\Api",
             "name": "Api",
@@ -20465,6 +20695,11 @@ Search.appendIndex(
             "name": "Controller",
             "summary": "",
             "url": "namespaces/bcwidgetarea-controller.html"
+        },                {
+            "fqsen": "\\BcWidgetArea\\Controller\\Api\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcwidgetarea-controller-api-admin.html"
         },                {
             "fqsen": "\\BcWidgetArea\\Controller\\Api",
             "name": "Api",

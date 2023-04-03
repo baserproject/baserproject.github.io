@@ -9,7 +9,10 @@
 
 ### リクエスト
 ```
+認証なし場合、
 GET baser/api/bc-blog/blog_contents/list.json
+認証した場合、
+GET baser/api/admin/bc-blog/blog_contents/list.json
 ```
 
 ### レスポンス例

@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/uninstall/{pluginName}.json
+POST /baser/api/admin/baser-core/plugins/uninstall/{pluginName}.json
 ```
 
 ### パスパラメーター

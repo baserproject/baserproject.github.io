@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/permissions/copy/{permissionId}.json
+POST /baser/api/admin/baser-core/permissions/copy/{permissionId}.json
 ``` 
 
 ### パスパラメーター

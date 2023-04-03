@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/themes/add.json
+POST /baser/api/admin/baser-core/themes/add.json
 ```
 
 ### リクエストボディ

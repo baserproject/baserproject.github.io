@@ -10,7 +10,10 @@
 
 ### リクエスト
 ```
+認証なし場合、
 GET baser/api/bc-blog/blog_contents/{blogContentId}.json
+認証した場合、
+GET baser/api/admin/bc-blog/blog_contents/{blogContentId}.json
 ``` 
 
 ### パスパラメーター

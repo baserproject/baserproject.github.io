@@ -10,7 +10,10 @@
  
 ### URL
 ```
+認証なし、
 GET /baser/api/bc-blog/blog_posts.json
+認証した、
+GET /baser/api/admin/bc-blog/blog_posts.json
 ``` 
 
 ### クエリパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/user_groups/{userGroupId}.json
+POST /baser/api/admin/baser-core/user_groups/{userGroupId}.json
 ``` 
 
 ### パスパラメーター

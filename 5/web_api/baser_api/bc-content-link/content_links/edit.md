@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-PATCH /baser/api/bc-content-link/content_links/{contentLinkId}.json
+PATCH /baser/api/admin/bc-content-link/content_links/{contentLinkId}.json
 ```
 
 ### パスパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/utilities/save_search_opened/{key}/{open}.json
+POST /baser/api/admin/baser-core/utilities/save_search_opened/{key}/{open}.json
 ```
 
 ### パスパラメーター

@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/plugins/reset_db/{pluginName}.json
+POST /baser/api/admin/baser-core/plugins/reset_db/{pluginName}.json
 ```
 
 ### パスパラメーター

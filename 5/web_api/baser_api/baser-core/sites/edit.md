@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-PATCH baser/api/baser-core/sites/{siteId}.json
+PATCH baser/api/admin/baser-core/sites/{siteId}.json
 ``` 
 
 ### パスパラメーター

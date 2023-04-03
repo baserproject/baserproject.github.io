@@ -10,7 +10,10 @@
  
 ### リクエスト
 ```
+認証なし場合、
 GET /baser/api/baser-core/content_folders/{contentFolderId}.json
+認証した場合、
+GET /baser/api/admin/baser-core/content_folders/{contentFolderId}.json
 ``` 
 
 ### パスパラメーター

@@ -11,7 +11,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/bc-favorite/favorites.json
+POST /baser/api/admin/bc-favorite/favorites.json
 ```
 
 ### リクエストボディ

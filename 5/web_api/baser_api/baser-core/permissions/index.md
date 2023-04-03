@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-GET /baser/api/baser-core/permissions/index/{userGroupId}.json
+GET /baser/api/admin/baser-core/permissions/index/{userGroupId}.json
 ``` 
 
 ### パスパラメーター

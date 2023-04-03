@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/bc-blog/blog_contents/{blogContentId}.json
+DELETE baser/api/admin/bc-blog/blog_contents/{blogContentId}.json
 ``` 
 
 ### パスパラメーター

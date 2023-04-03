@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/permissions.json
+POST /baser/api/admin/baser-core/permissions.json
 ```
 
 ### リクエストボディ

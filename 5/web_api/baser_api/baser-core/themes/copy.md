@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/baser-core/themes/copy/{theme}.json
+POST /baser/api/admin/baser-core/themes/copy/{theme}.json
 ``` 
 
 ### パスパラメーター

@@ -11,7 +11,7 @@
 
 ## リクエスト
 ```
-PATCH /baser/api/bc-blog/blog_tags.json
+PATCH /baser/api/admin/bc-blog/blog_tags.json
 ```
 
 ### リクエストボディ

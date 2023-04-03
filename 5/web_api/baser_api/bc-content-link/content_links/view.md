@@ -11,7 +11,10 @@
 
 ## リクエスト
 ```
+認証なし場合、
 GET /baser/api/bc-content-link/content_links/{contentLinkId}.json
+認証した場合、
+GET /baser/api/admin/bc-content-link/content_links/{contentLinkId}.json
 ```
 
 ### パスパラメーター

@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-PATCH baser/api/baser-core/permission_groups/{permissionGroupsId}.json
+PATCH baser/api/admin/baser-core/permission_groups/{permissionGroupsId}.json
 ``` 
 
 ### パスパラメーター

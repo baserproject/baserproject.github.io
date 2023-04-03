@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/baser-core/pages/{pageId}.json
+DELETE baser/api/admin/baser-core/pages/{pageId}.json
 ``` 
 
 ### パスパラメーター

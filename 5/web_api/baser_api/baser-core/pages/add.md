@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/baser-core/pages.json
+POST /baser/api/admin/baser-core/pages.json
 ```
 
 ### リクエストボディ

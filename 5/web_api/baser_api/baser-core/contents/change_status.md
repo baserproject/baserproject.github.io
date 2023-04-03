@@ -9,7 +9,7 @@
  
 ### リクエスト
 ```
-POST /baser/api/baser-core/contens/change_status.json
+POST /baser/api/admin/baser-core/contens/change_status.json
 ``` 
 
 ### リクエストボディ

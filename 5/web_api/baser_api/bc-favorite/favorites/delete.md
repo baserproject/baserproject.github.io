@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-DELETE /baser/api/bc-favorite/favorites/{favoriteId}.json
+DELETE /baser/api/admin/bc-favorite/favorites/{favoriteId}.json
 ```
 
 ### パスパラメーター

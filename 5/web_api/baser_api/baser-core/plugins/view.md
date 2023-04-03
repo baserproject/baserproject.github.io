@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-GET /baser/api/baser-core/plugins/{pluginId}.json
+GET /baser/api/admin/baser-core/plugins/{pluginId}.json
 ``` 
 
 ### パスパラメーター
