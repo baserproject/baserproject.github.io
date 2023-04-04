@@ -195,6 +195,15 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [メールフィールドのコピー](bc-mail/mail_fields/copy)
 - [メールフィールドの一括処理](bc-mail/mail_fields/batch)
 
+### メールメッセージ
+- [メールメッセージの一覧取得](bc-mail/mail_messages/index)
+- [メールメッセージの単一取得](bc-mail/mail_messages/view)
+- [メールメッセージの新規追加](bc-mail/mail_messages/add)
+- [メールメッセージの編集](bc-mail/mail_messages/edit)
+- [メールメッセージの削除](bc-mail/mail_messages/delete)
+- [メールメッセージの一括処理](bc-mail/mail_messages/batch)
+- [メールメッセージのCSVダウンロード](bc-mail/mail_messages/download)
+
 ## その他
 
 ### コンテンツリンク
