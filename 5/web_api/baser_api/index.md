@@ -228,3 +228,28 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [お気に入りの並び替え](bc-favorite/favorites/change_sort)
 - [よく使う項目の表示状態を保存](bc-favorite/favorites/save_favorite_box)
 - [よく使う項目の表示状態を取得](bc-favorite/favorites/get_favorite_box_opened)
+
+### テーマファイル管理
+
+#### テーマファイル
+
+- [テーマファイルの新規追加](bc-theme-file/theme_files/add)
+- [テーマファイルの編集](bc-theme-file/theme_files/edit)
+- [テーマファイルの削除](bc-theme-file/theme_files/delete)
+- [テーマファイルのコピー](bc-theme-file/theme_files/copy)
+- [現在のテーマにファイルをコピー](bc-theme-file/theme_files/copy_to_theme)
+- [テーマファイルのファイル表示](bc-theme-file/theme_files/view)
+- [テーマファイルの画像表示](bc-theme-file/theme_files/img)
+- [テーマファイルの画像のサムネイル表示](bc-theme-file/theme_files/img_thumb)
+- [ファイルアップロード](bc-theme-file/theme_files/upload)
+
+#### テーマフォルダー
+
+- [テーマフォルダーの一覧取得](bc-theme-file/theme_folders/index)
+- [テーマフォルダーの表示](bc-theme-file/theme_folders/view)
+- [テーマフォルダーの新規追加](bc-theme-file/theme_folders/add)
+- [テーマフォルダーの編集](bc-theme-file/theme_folders/edit)
+- [テーマフォルダーの削除](bc-theme-file/theme_folders/delete)
+- [テーマフォルダーのコピー](bc-theme-file/theme_folders/copy)
+- [現在のテーマにフォルダをコピー](bc-theme-file/theme_folders/copy_to_theme)
+- [テーマフォルダーの一括処理](bc-theme-file/theme_folders/batch)
