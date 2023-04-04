@@ -61,6 +61,13 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [固定ページの削除](baser-core/pages/delete)
 - [固定ページのコピー](baser-core/pages/copy)
 
+### 検索インデックス
+- [検索インデックス一覧の取得](bc-search-index/search_indexes/index)
+- [検索インデックスの削除](bc-search-index/search_indexes/delete)
+- [検索インデックスの優先度変更](bc-search-index/search_indexes/change_priority)
+- [検索インデックスの再構築](bc-search-index/search_indexes/reconstruct)
+- [検索インデックスの一括処理](bc-search-index/search_indexes/batch)
+
 ### アクセス制限設定
 - [アクセス制限設定一覧の取得](baser-core/permissions/index)
 - [アクセス制限設定情報の単一取得](baser-core/permissions/view)
