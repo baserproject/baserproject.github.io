@@ -167,7 +167,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [ブログタグの一括処理](bc-blog/blog_tags/batch)
 
 ### ブログコメント
-- [ブログコメントの一覧の取得](bc-blog/blog_comments/index)
+- [ブログコメントの一覧取得](bc-blog/blog_comments/index)
 - [ブログコメントの単一取得](bc-blog/blog_comments/view)
 - [ブログコメントの新規追加](bc-blog/blog_comments/add)
 - [ブログコメントの削除](bc-blog/blog_comments/delete)
@@ -177,13 +177,23 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 ## メールフォーム
 
 ### メールコンテンツ
-- [メールコンテンツの一覧の取得](bc-mail/mail_contents/index)
+- [メールコンテンツ一覧の取得](bc-mail/mail_contents/index)
 - [メールコンテンツの単一取得](bc-mail/mail_contents/view)
 - [メールコンテンツのリストを取得](bc-mail/mail_contents/list)
 - [メールコンテンツの新規追加](bc-mail/mail_contents/add)
 - [メールコンテンツの編集](bc-mail/mail_contents/edit)
 - [メールコンテンツの削除](bc-mail/mail_contents/delete)
 - [メールコンテンツのコピー](bc-mail/mail_contents/copy)
+
+### メールフィールド
+- [メールフィールドの一覧取得](bc-mail/mail_fields/index)
+- [メールフィールド情報の取得](bc-mail/mail_fields/view)
+- [メールフィールドリストの取得](bc-mail/mail_fields/list)
+- [メールフィールドの新規追加](bc-mail/mail_fields/add)
+- [メールフィールドの編集](bc-mail/mail_fields/edit)
+- [メールフィールドの削除](bc-mail/mail_fields/delete)
+- [メールフィールドのコピー](bc-mail/mail_fields/copy)
+- [メールフィールドの一括処理](bc-mail/mail_fields/batch)
 
 ## その他
 
@@ -194,7 +204,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [コンテンツリンクの削除](bc-content-link/content_links/delete)
 
 ### お気に入り
-- [お気に入りの一覧の取得](bc-favorite/favorites/index)
+- [お気に入り一覧の取得](bc-favorite/favorites/index)
 - [お気に入りの単一取得](bc-favorite/favorites/view)
 - [お気に入りの新規追加](bc-favorite/favorites/add)
 - [お気に入りの編集](bc-favorite/favorites/edit)

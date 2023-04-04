@@ -28,10 +28,12 @@
 PATCH /baser/api/admin/bc-mail/mail_contents/{mailContentId}.json
 ```
 
-### リクエスト
-```
-DELETE /baser/api/admin/bc-mail/mail_contents/{mailContentId}.json
-``` 
+### パスパラメーター
+
+| パラメーター名   | 型   | 必須  | 内容                |
+|-----------|-----|-----|-------------------|
+| mailContentId        | 数値  | ●   | メールコンテンツID              |
+
 
 ### リクエストボディ
 
