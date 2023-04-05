@@ -286,3 +286,12 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [テーマフォルダーのコピー](bc-theme-file/theme_folders/copy)
 - [現在のテーマにフォルダをコピー](bc-theme-file/theme_folders/copy_to_theme)
 - [テーマフォルダーの一括処理](bc-theme-file/theme_folders/batch)
+
+### エディタテンプレート管理
+
+- [エディタテンプレートの一覧取得](bc-editor-template/editor_templates/index)
+- [エディタテンプレートの表示](bc-editor-template/editor_templates/view)
+- [エディタテンプレートの新規追加](bc-editor-template/editor_templates/add)
+- [エディタテンプレートの編集](bc-editor-template/editor_templates/edit)
+- [エディタテンプレートの削除](bc-editor-template/editor_templates/delete)
+- [エディタテンプレートのリスト取得](bc-editor-template/editor_templates/list)
