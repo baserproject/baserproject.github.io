@@ -211,6 +211,26 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [メールメッセージの一括処理](bc-mail/mail_messages/batch)
 - [メールメッセージのCSVダウンロード](bc-mail/mail_messages/download)
 
+## ファイルアップローダー
+
+### アップロードファイル管理
+- [アップロードファイルの一覧取得](bc-uploader/uploader_files/index)
+- [アップロードファイルの新規追加](bc-uploader/uploader_files/upload)
+- [アップロードファイルの編集](bc-uploader/uploader_files/edit)
+- [アップロードファイルの削除](bc-uploader/uploader_files/delete)
+
+### アップロードファイルカテゴリ管理
+- [アップロードカテゴリの一覧取得](bc-uploader/uploader_categories/index)
+- [アップロードカテゴリの新規追加](bc-uploader/uploader_categories/add)
+- [アップロードカテゴリの編集](bc-uploader/uploader_categories/edit)
+- [アップロードカテゴリの削除](bc-uploader/uploader_categories/delete)
+- [アップロードカテゴリのコピー](bc-uploader/uploader_categories/copy)
+- [アップロードカテゴリの一括処理](bc-uploader/uploader_categories/batch)
+
+### ファイルアップローダー設定
+- [アップロードカテゴリの取得](bc-uploader/uploader_configs/view)
+- [アップロードカテゴリの保存](bc-uploader/uploader_configs/edit)
+
 ## その他
 
 ### コンテンツリンク
