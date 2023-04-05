@@ -249,6 +249,19 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [よく使う項目の表示状態を保存](bc-favorite/favorites/save_favorite_box)
 - [よく使う項目の表示状態を取得](bc-favorite/favorites/get_favorite_box_opened)
 
+### ウィジェットエリア
+- [ウィジェットエリアの一覧取得](bc-widget-area/widget_areas/index)
+- [ウィジェットエリアの単一取得](bc-widget-area/widget_areas/view)
+- [ウィジェットエリアの新規追加](bc-widget-area/widget_areas/add)
+- [ウィジェットエリアの編集](bc-widget-area/widget_areas/edit)
+- [ウィジェットエリアの削除](bc-widget-area/widget_areas/delete)
+- [ウィジェットエリアのリスト取得](bc-widget-area/widget_areas/list)
+- [ウィジェットエリアの一括処理](bc-widget-area/widget_areas/batch)
+- [ウィジェットエリア名の変更](bc-widget-area/widget_areas/update_title)
+- [ウィジェットの並び替え](bc-widget-area/widget_areas/update_sort)
+- [ウィジェットの更新](bc-widget-area/widget_areas/update_widget)
+- [ウィジェットの削除](bc-widget-area/widget_areas/delete_widget)
+
 ### テーマファイル管理
 
 #### テーマファイル
