@@ -332,7 +332,6 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [カスタムフィールドの新規追加](bc-custom-content/custom_fields/add)
 - [カスタムフィールドの編集](bc-custom-content/custom_fields/edit)
 - [カスタムフィールドの削除](bc-custom-content/custom_fields/delete)
-- [カスタムフィールドのコピー](bc-custom-content/custom_fields/copy)
 - [カスタムフィールドのリスト取得](bc-custom-content/custom_fields/list)
 
 #### カスタムエントリー
