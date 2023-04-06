@@ -1,15 +1,19 @@
 # カスタムコンテンツの単一取得
 
-指定してカスタムコンテンツを取得します。
+指定したカスタムコンテンツを取得します。
 
 ## 実行に必要な権限
 
 ```
-システム管理者以上
+すべてのユーザー：公開された情報のみ
+ログインユーザー以上：全て
 ```
 
 ## リクエスト
 ```
+認証なし場合、
+GET /baser/api/bc-custom-content/custom_contents/{customContentId}.json
+認証した場合、
 GET /baser/api/admin/bc-custom-content/custom_contents/{customContentId}.json
 ```
 

@@ -17,7 +17,7 @@ GET baser/api/bc-custom-content/custom_contents.json
 GET baser/api/admin/bc-custom-content/custom_contents.json
 ```
 
-### パスパラメーター
+### クエリパラメーター
 
 | パラメーター名   | 型   | 必須  | 内容                |
 |-----------|-----|-----|-------------------|

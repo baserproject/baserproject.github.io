@@ -341,5 +341,4 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [カスタムエントリーの新規追加](bc-custom-content/custom_entries/add)
 - [カスタムエントリーの編集](bc-custom-content/custom_entries/edit)
 - [カスタムエントリーの削除](bc-custom-content/custom_entries/delete)
-- [カスタムエントリーのコピー](bc-custom-content/custom_entries/copy)
 - [カスタムエントリーのリスト取得](bc-custom-content/custom_entries/list)
