@@ -308,7 +308,6 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 - [カスタムコンテンツの新規追加](bc-custom-content/custom_contents/add)
 - [カスタムコンテンツの編集](bc-custom-content/custom_contents/edit)
 - [カスタムコンテンツの削除](bc-custom-content/custom_contents/delete)
-- [カスタムコンテンツのコピー](bc-custom-content/custom_contents/copy)
 - [カスタムコンテンツのリスト取得](bc-custom-content/custom_contents/list)
 
 #### カスタムテーブル
