@@ -44,7 +44,7 @@ Web APIへのアクセス時、次のセグメントごとに認可を提供し�
 
 ## APIのリクエスト
 Web APIへのリクエストは次のURL構成で行います。  
-baserCMS コアについての APIリクエスト先の詳細については [baser API](baser_api/) を参照してください。
+baserCMS コアについての APIリクエスト先の詳細については [baser API](baser_api/) 、または、[baser Admin Api](baser_admin_api/) を参照してください。
 
 ```shell
 # 認証不要の領域
