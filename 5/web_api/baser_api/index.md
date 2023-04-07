@@ -16,7 +16,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ユーザーグループ
 - [ユーザーグループ一覧の取得](baser-core/user_groups/index)
-- [ユーザーグループの取得](baser-core/user_groups/view)
+- [ユーザーグループ情報の取得](baser-core/user_groups/view)
 - [ユーザーグループの追加](baser-core/user_groups/add)
 - [ユーザーグループの編集](baser-core/user_groups/edit)
 - [ユーザーグループの削除](baser-core/user_groups/delete)

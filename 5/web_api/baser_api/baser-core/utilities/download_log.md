@@ -14,8 +14,3 @@
 GET /baser/api/admin/baser-core/utilities/download_log.json
 ```
 
-### レスポンス例
-#### レスポンスボディ
-```json
-
-```

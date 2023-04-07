@@ -18,5 +18,4 @@ POST /baser/api/admin/baser-core/utilities/clear_cache.json
 {
   "message": "サーバーキャッシュを削除しました。"
 }
-
 ```

@@ -25,5 +25,4 @@ POST /baser/api/admin/baser-core/utilities/save_search_opened/{key}/{open}.json
 {
   "result": true
 }
-
 ```

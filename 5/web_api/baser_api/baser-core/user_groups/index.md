@@ -1,6 +1,6 @@
-# ユーザーグループの追加
+# ユーザーグループの一覧取得
 
-ユーザーグループを新しく登録します。
+ユーザーグループ情報の一覧を取得します。
 
 ### 実行可能な権限
 ```
@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-POST /baser/api/admin/baser-core/user_groups.json
+GET /baser/api/admin/baser-core/user_groups.json
 ``` 
 
 ### クエリパラメーター

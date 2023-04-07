@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-DELETE /baser/api/admin/bc-favorite/favorites/save_favorite_box.json
+POST /baser/api/admin/bc-favorite/favorites/save_favorite_box.json
 ```
 ## レスポンス例
 

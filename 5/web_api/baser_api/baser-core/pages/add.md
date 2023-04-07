@@ -21,9 +21,6 @@ POST /baser/api/admin/baser-core/pages.json
 | content[site_id]   | 数値 |  ●   | サイトID              |
 | content[parent_id]   | 数値 |   ●  | 親コンテンツID              |
 | content[title]   | 文字列 |  ●   | タイトル              |
-| contents | 文字列	  |     | 本文              |
-| draft | 文字列	  |     | 草稿              |
-| page_template | 文字列	  |     | テンプレート              |
 | content[plugin]   | 文字列 |     | プラグイン名              |
 | content[type]   | 文字列 |     | コンテンツタイプ              |
 | content[entity_id]   | 数値 |     | 実体ID               |
@@ -50,6 +47,9 @@ POST /baser/api/admin/baser-core/pages.json
 | content[deleted_date]   | 真偽値 |     | 削除日              |
 | content[exclude_menu]   | 真偽値 |     | 公開ページのメニューより除外              |
 | content[blank_link]   | 真偽値 |     | メニューのリンクを別ウィンドウで開く              |
+| contents | 文字列	  |     | 本文              |
+| draft | 文字列	  |     | 草稿              |
+| page_template | 文字列	  |     | テンプレート              |
 
 ## レスポンス例
 

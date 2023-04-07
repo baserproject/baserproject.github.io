@@ -10,7 +10,7 @@
 
 ## リクエスト
 ```
-POST /baser/api/admin/bc-uploader/uploader_files/edit/{uploaderFileId}.json
+PATCH /baser/api/admin/bc-uploader/uploader_files/{uploaderFileId}.json
 ```
 
 ### パスパラメーター

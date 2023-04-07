@@ -17,7 +17,7 @@ GET /baser/api/admin/baser-core/permissions/index/{userGroupId}.json
 | パラメーター名   | 型   | 必須  | 内容         |
 |-----------|-----|-----|------------|
 | userGroupId        | 数値  | ●   | ユーザーグループID |
-`
+
 ### クエリパラメーター
 
 | パラメーター名           | 型 | 内容              |
@@ -25,7 +25,7 @@ GET /baser/api/admin/baser-core/permissions/index/{userGroupId}.json
 | permission_group_id            | 数値 | アクセスルールグループID   |
 | permission_group_type             | 文字列 | アクセスルールグループのタイプ |
 
-### レスポンス例`
+### レスポンス例
 #### レスポンスボディ
 ```json
 {

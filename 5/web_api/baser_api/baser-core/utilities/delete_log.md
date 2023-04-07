@@ -18,5 +18,4 @@ POST /baser/api/admin/baser-core/utilities/delete_log.json
 {
   "message": "エラーログを削除しました。"
 }
-
 ```

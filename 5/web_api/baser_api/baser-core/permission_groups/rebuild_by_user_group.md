@@ -9,7 +9,7 @@
 
 ### リクエスト
 ```
-DELETE baser/api/admin/baser-core/permission_groups/rebuild_by_user_group/{userGroupId}.json
+POST baser/api/admin/baser-core/permission_groups/rebuild_by_user_group/{userGroupId}.json
 ``` 
 
 ### パスパラメーター

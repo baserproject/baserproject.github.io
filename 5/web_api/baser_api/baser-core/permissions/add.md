@@ -26,6 +26,7 @@ POST /baser/api/admin/baser-core/permissions.json
 | status　   | 真偽値	  |     | 利用状態               |
 | permission_group_id　   | 数字	  |     | アクセスルールグループID               |
 | url　   | 数字	  |     | 対象URL               |
+
 ## レスポンス例
 
 ### レスポンスボディ

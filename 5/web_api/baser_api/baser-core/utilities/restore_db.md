@@ -18,5 +18,4 @@ POST /baser/api/admin/baser-core/utilities/restore_db.json
 {
   "message": "データの復元が完了しました。"
 }
-
 ```

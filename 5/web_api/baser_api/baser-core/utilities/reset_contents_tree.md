@@ -18,5 +18,4 @@ POST /baser/api/admin/baser-core/utilities/reset_contents_tree.json
 {
   "message": "コンテンツのツリー構造をリセットしました。"
 }
-
 ```
