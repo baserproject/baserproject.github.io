@@ -55,7 +55,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### 固定ページ
 - [固定ページ一覧の取得](baser-core/pages/index)
-- [固定ページ情報の単一取得](baser-core/pages/view)
+- [固定ページ情報の取得](baser-core/pages/view)
 - [固定ページの追加](baser-core/pages/add)
 - [固定ページの編集](baser-core/pages/edit)
 - [固定ページの削除](baser-core/pages/delete)
@@ -70,7 +70,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### アクセス制限設定
 - [アクセス制限設定一覧の取得](baser-core/permissions/index)
-- [アクセス制限設定情報の単一取得](baser-core/permissions/view)
+- [アクセス制限設定情報の取得](baser-core/permissions/view)
 - [アクセス制限設定の追加](baser-core/permissions/add)
 - [アクセス制限設定の編集](baser-core/permissions/edit)
 - [アクセス制限設定の削除](baser-core/permissions/delete)
@@ -80,7 +80,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### アクセスルールグループ
 - [アクセスルールグループ一覧の取得](baser-core/permission_groups/index)
-- [アクセスルールグループの単一取得](baser-core/permission_groups/view)
+- [アクセスルールグループ情報の取得](baser-core/permission_groups/view)
 - [アクセスルールグループの追加](baser-core/permission_groups/add)
 - [アクセスルールグループの編集](baser-core/permission_groups/edit)
 - [アクセスルールグループの削除](baser-core/permission_groups/delete)
@@ -89,7 +89,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### プラグイン管理
 - [プラグイン一覧の取得](baser-core/plugins/index)
-- [プラグインの単一取得](baser-core/plugins/view)
+- [プラグイン情報の取得](baser-core/plugins/view)
 - [プラグインの追加](baser-core/plugins/add)
 - [プラグインの有効化](baser-core/plugins/attach)
 - [プラグインの無効化](baser-core/plugins/detach)
@@ -108,7 +108,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### サイト管理
 - [サイト一覧の取得](baser-core/sites/index)
-- [サイトの単一取得](baser-core/sites/view)
+- [サイトの情報の取得](baser-core/sites/view)
 - [サイトの新規追加](baser-core/sites/add)
 - [サイトの編集](baser-core/sites/edit)
 - [サイトの削除](baser-core/sites/delete)
@@ -116,7 +116,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### テーマ管理
 - [テーマ一覧の取得](baser-core/themes/index)
-- [テーマ情報の単一取得](baser-core/themes/view)
+- [テーマ情報の取得](baser-core/themes/view)
 - [新しいテーマのアップロード](baser-core/themes/add)
 - [テーマの適用](baser-core/themes/apply)
 - [初期データの読み込む](baser-core/themes/load_default_data)
@@ -138,7 +138,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログコンテンツ
 - [ブログコンテンツの一覧の取得](bc-blog/blog_contents/index)
-- [ブログコンテンツの単一取得](bc-blog/blog_contents/view)
+- [ブログコンテンツ情報の取得](bc-blog/blog_contents/view)
 - [ブログコンテンツのリストを取得](bc-blog/blog_contents/list)
 - [ブログコンテンツの新規追加](bc-blog/blog_contents/add)
 - [ブログコンテンツの編集](bc-blog/blog_contents/edit)
@@ -147,7 +147,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
-- [ブログ記事の単一取得](bc-blog/blog_posts/view)
+- [ブログ記事情報の取得](bc-blog/blog_posts/view)
 - [ブログ記事一覧の新規追加](bc-blog/blog_posts/add)
 - [ブログ記事一覧の編集](bc-blog/blog_posts/edit)
 - [ブログ記事一覧の削除](bc-blog/blog_posts/delete)
@@ -158,7 +158,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログカテゴリ
 - [ブログカテゴリの一覧の取得](bc-blog/blog_categories/index)
-- [ブログカテゴリの単一取得](bc-blog/blog_categories/view)
+- [ブログカテゴリ情報の取得](bc-blog/blog_categories/view)
 - [ブログカテゴリのリストを取得](bc-blog/blog_categories/list)
 - [ブログカテゴリの新規追加](bc-blog/blog_categories/add)
 - [ブログカテゴリの編集](bc-blog/blog_categories/edit)
@@ -167,7 +167,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログタグ
 - [ブログタグの一覧の取得](bc-blog/blog_tags/index)
-- [ブログタグの単一取得](bc-blog/blog_tags/view)
+- [ブログタグ情報の取得](bc-blog/blog_tags/view)
 - [ブログタグの新規追加](bc-blog/blog_tags/add)
 - [ブログタグの編集](bc-blog/blog_tags/edit)
 - [ブログタグの削除](bc-blog/blog_tags/delete)
@@ -175,7 +175,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ブログコメント
 - [ブログコメントの一覧取得](bc-blog/blog_comments/index)
-- [ブログコメントの単一取得](bc-blog/blog_comments/view)
+- [ブログコメント情報の取得](bc-blog/blog_comments/view)
 - [ブログコメントの新規追加](bc-blog/blog_comments/add)
 - [ブログコメントの削除](bc-blog/blog_comments/delete)
 - [ブログコメントの一括処理](bc-blog/blog_comments/batch)
@@ -185,7 +185,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### メールコンテンツ
 - [メールコンテンツ一覧の取得](bc-mail/mail_contents/index)
-- [メールコンテンツの単一取得](bc-mail/mail_contents/view)
+- [メールコンテンツ情報の取得](bc-mail/mail_contents/view)
 - [メールコンテンツのリストを取得](bc-mail/mail_contents/list)
 - [メールコンテンツの新規追加](bc-mail/mail_contents/add)
 - [メールコンテンツの編集](bc-mail/mail_contents/edit)
@@ -204,7 +204,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### メールメッセージ
 - [メールメッセージの一覧取得](bc-mail/mail_messages/index)
-- [メールメッセージの単一取得](bc-mail/mail_messages/view)
+- [メールメッセージ情報の取得](bc-mail/mail_messages/view)
 - [メールメッセージの新規追加](bc-mail/mail_messages/add)
 - [メールメッセージの編集](bc-mail/mail_messages/edit)
 - [メールメッセージの削除](bc-mail/mail_messages/delete)
@@ -234,14 +234,14 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 ## その他
 
 ### コンテンツリンク
-- [コンテンツリンクの単一取得](bc-content-link/content_links/view)
+- [コンテンツリンク情報の取得](bc-content-link/content_links/view)
 - [コンテンツリンクの新規追加](bc-content-link/content_links/add)
 - [コンテンツリンクの編集](bc-content-link/content_links/edit)
 - [コンテンツリンクの削除](bc-content-link/content_links/delete)
 
 ### お気に入り
 - [お気に入り一覧の取得](bc-favorite/favorites/index)
-- [お気に入りの単一取得](bc-favorite/favorites/view)
+- [お気に入り情報の取得](bc-favorite/favorites/view)
 - [お気に入りの新規追加](bc-favorite/favorites/add)
 - [お気に入りの編集](bc-favorite/favorites/edit)
 - [お気に入りの削除](bc-favorite/favorites/delete)
@@ -251,7 +251,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 ### ウィジェットエリア
 - [ウィジェットエリアの一覧取得](bc-widget-area/widget_areas/index)
-- [ウィジェットエリアの単一取得](bc-widget-area/widget_areas/view)
+- [ウィジェットエリア情報の取得](bc-widget-area/widget_areas/view)
 - [ウィジェットエリアの新規追加](bc-widget-area/widget_areas/add)
 - [ウィジェットエリアの編集](bc-widget-area/widget_areas/edit)
 - [ウィジェットエリアの削除](bc-widget-area/widget_areas/delete)
@@ -304,7 +304,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 #### カスタムコンテンツ
 - [カスタムコンテンツの一覧取得](bc-custom-content/custom_contents/index)
-- [カスタムコンテンツの表示](bc-custom-content/custom_contents/view)
+- [カスタムコンテンツ情報の取得](bc-custom-content/custom_contents/view)
 - [カスタムコンテンツの新規追加](bc-custom-content/custom_contents/add)
 - [カスタムコンテンツの編集](bc-custom-content/custom_contents/edit)
 - [カスタムコンテンツの削除](bc-custom-content/custom_contents/delete)
@@ -312,7 +312,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 #### カスタムテーブル
 - [カスタムテーブルの一覧取得](bc-custom-content/custom_tables/index)
-- [カスタムテーブルの表示](bc-custom-content/custom_tables/view)
+- [カスタムテーブル情報の表示](bc-custom-content/custom_tables/view)
 - [カスタムテーブルの新規追加](bc-custom-content/custom_tables/add)
 - [カスタムテーブルの編集](bc-custom-content/custom_tables/edit)
 - [カスタムテーブルの削除](bc-custom-content/custom_tables/delete)
@@ -320,14 +320,14 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 #### 関連フィールド
 - [関連フィールドの一覧取得](bc-custom-content/custom_links/index)
-- [関連フィールドの表示](bc-custom-content/custom_links/view)
+- [関連フィールド情報の表示](bc-custom-content/custom_links/view)
 - [関連フィールドの新規追加](bc-custom-content/custom_links/add)
 - [関連フィールドの編集](bc-custom-content/custom_links/edit)
 - [関連フィールドの削除](bc-custom-content/custom_links/delete)
 
 #### カスタムフィールド
 - [カスタムフィールドの一覧取得](bc-custom-content/custom_fields/index)
-- [カスタムフィールドの表示](bc-custom-content/custom_fields/view)
+- [カスタムフィールド情報の表示](bc-custom-content/custom_fields/view)
 - [カスタムフィールドの新規追加](bc-custom-content/custom_fields/add)
 - [カスタムフィールドの編集](bc-custom-content/custom_fields/edit)
 - [カスタムフィールドの削除](bc-custom-content/custom_fields/delete)
@@ -335,7 +335,7 @@ baserCMSコアが提供するAPIの一覧です。利用方法については、
 
 #### カスタムエントリー
 - [カスタムエントリーの一覧取得](bc-custom-content/custom_entries/index)
-- [カスタムエントリーの表示](bc-custom-content/custom_entries/view)
+- [カスタムエントリー情報の表示](bc-custom-content/custom_entries/view)
 - [カスタムエントリーの新規追加](bc-custom-content/custom_entries/add)
 - [カスタムエントリーの編集](bc-custom-content/custom_entries/edit)
 - [カスタムエントリーの削除](bc-custom-content/custom_entries/delete)
