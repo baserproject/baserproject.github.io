@@ -4,6 +4,20 @@ baserCMS５のテーマはまだ少なく、テーマの自動マイグレーシ
 
 ここでは baserCMS４のテーマを baserCMS５用に変換する手順を説明します。
 
+## プラグインクラス追加
+CakePHP4より、テーマもプラグインとして扱われることとなりました。  
+次のファイルが必要となります。クラスの中身は空でも構いません。
+
+```php
+// Sample という名称のテーマの場合
+// /plugins/Sample/src/Plugin.php
+namespace Sample;
+
+use BaserCore\BcPlugin;
+
+class Plugin extends BcPlugin {}
+```
+
 ## config.php の変更
 配列を返却する形式に変換となりましたので例に習って書き換えます。  
 また、その際、`type` キーを追加し、`Theme` を設定する事でテーマ管理に認識されます。
@@ -52,20 +66,6 @@ templates/plugin/BcMail/Mail/
 baserCMS５でフィードは削除となりました。  
 テンプレートの `Feed` フォルダがあれば削除します。  
 また、`config/data/Feed/` が存在する場合、そちらも削除します。
-
-## プラグインクラス追加
-CakePHP4より、テーマもプラグインとして扱われることとなりました。  
-次のファイルが必要となります。クラスの中身は空でも構いません。
-
-```php
-// Sample という名称のテーマの場合
-// /plugins/Sample/src/Plugin.php
-namespace Sample;
-
-use BaserCore\BcPlugin;
-
-class Plugin extends BcPlugin {}
-```
 
 ## テンプレートファイルの編集
 
