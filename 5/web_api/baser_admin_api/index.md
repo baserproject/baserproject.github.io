@@ -1,6 +1,9 @@
-# baser API
+# baser Admin API
 
-baserCMSコアが提供するAPIの一覧です。利用方法については、[Web API](../index) をご覧ください。
+baserCMSコアが提供する管理用APIの一覧です。  
+baser Admin API では、JWT 認証が必要となります。
+
+利用方法については、[Web API](../index) をご覧ください。
 
 ## コア
 ### ユーザー

@@ -13,6 +13,12 @@
 POST /baser/api/bc-mail/mail_messages.json
 ```
 
+### リクエストヘッダ
+| ヘッダ名            | 型                                       |
+|-----------------|-----------------------------------------|
+| X-CSRF-Token | `GET /baser-core/bc_form/get_token` で取得 |
+
+
 ### クエリパラメーター
 
 | パラメーター名   | 型   | 必須  | 内容          |

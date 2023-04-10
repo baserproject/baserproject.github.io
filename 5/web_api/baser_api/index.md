@@ -1,6 +1,9 @@
 # baser API
 
-baserCMSコアが提供するAPIの一覧です。利用方法については、[Web API](../index) をご覧ください。
+baserCMSコアが提供する公開APIの一覧です。  
+baser API は認証は不要です。
+
+利用方法については、[Web API](../index) をご覧ください。
 
 ## コア
 
