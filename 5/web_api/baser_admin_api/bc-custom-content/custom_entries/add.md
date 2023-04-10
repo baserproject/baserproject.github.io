@@ -10,14 +10,14 @@
 
 ## リクエスト
 ```
-POST /baser/api/admin/bc-custom-content/custom_entries/add/{customTableId}.json
+POST /baser/api/admin/bc-custom-content/custom_entries.json
 ```
 
-### パスパラメーター
+### クエリパラメーター
 
 | パラメーター名   | 型   | 必須  | 内容         |
 |-----------|-----|-----|------------|
-| customTableId            | 数値 |●  | カスタムテーブルID |
+| custom_table_id            | 数値 |●  | カスタムテーブルID |
 
 ### リクエストボディ
 
