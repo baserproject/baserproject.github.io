@@ -288,12 +288,6 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcfront.html" class="">BcFront</a>
 </h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/bcfront-view.html" class="">View</a>
-                
-            </li>
-            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcinstaller.html" class="">BcInstaller</a>
@@ -624,6 +618,13 @@
 <dd>管理画面の画面タイトルの横に配置するボタンをを追加する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_addLink">addLink()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>固定ページ新規追加画面へのリンクを出力する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_contentsMenu">contentsMenu()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -643,6 +644,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>編集画面へのリンクを出力する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_existsAddLink">existsAddLink()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>現在のページで固定ページの新規登録が有効かどうか</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_existsEditLink">existsEditLink()</a>
@@ -1016,6 +1024,59 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addLink">
+        addLink()
+        <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_addLink" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">476</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">固定ページ新規追加画面へのリンクを出力する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_contentsMenu">
         contentsMenu()
         <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_contentsMenu" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1168,7 +1229,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">446</span>
+    <span class="phpdocumentor-element-found-in__line">462</span>
 
     </aside>
 
@@ -1211,6 +1272,61 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_existsAddLink">
+        existsAddLink()
+        <a href="classes/BaserCore-View-Helper-BcAdminHelper.html#method_existsAddLink" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">424</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">現在のページで固定ページの新規登録が有効かどうか</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">existsAddLink</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>フロントページでコンテンツフォルダを表示している事が条件</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
         
     
@@ -1352,7 +1468,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">481</span>
+    <span class="phpdocumentor-element-found-in__line">517</span>
 
     </aside>
 
@@ -1794,7 +1910,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">462</span>
+    <span class="phpdocumentor-element-found-in__line">498</span>
 
     </aside>
 
@@ -1916,7 +2032,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">438</span>
 
     </aside>
 
@@ -2056,7 +2172,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcAdminHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcadminhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcAdminHelper.php">BcAdminHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">434</span>
+    <span class="phpdocumentor-element-found-in__line">450</span>
 
     </aside>
 
