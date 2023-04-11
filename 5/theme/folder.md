@@ -106,7 +106,7 @@ Pages フォルダの中には、default.php をはじめ、複数のテンプ�
 テーマ内で利用するCSSファイルを入れておきます。ここに含まれるCSSの記述は一般的なものと特に相違ありませんが、背景画像などを指定する際は以下のような注意が必要です。ここに入れた CSS ファイルは、ヘルパで呼び出すことが出来ます。
 
 ```php
-<?php echo $this->BcBaser->css('your-css') ?>
+<?php $this->BcBaser->css('your-css') ?>
 ```
 
 ### img フォルダ
@@ -121,7 +121,7 @@ Pages フォルダの中には、default.php をはじめ、複数のテンプ�
 テーマで利用するjavascript ファイルが入るフォルダです。ここに入れた javascript ファイルはヘルパで呼び出す事ができます。
 
 ```php
-<?php echo $this->BcBaser->js('your-javascript.js') ?>
+<?php $this->BcBaser->js('your-javascript.js') ?>
 ```
 
 ## Helper フォルダ
