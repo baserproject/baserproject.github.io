@@ -28,6 +28,6 @@ bin/cake plugin load BaserCore
 
 https://your-host-name/install
 
-※ インストーラーがうまく起動しない場合は、app_local.php が存在するか確認してください。存在しない場合は、app_local.default.php をコピーして作成してください。
+※ インストーラーがうまく起動しない場合は、`app_local.php` が存在するか確認してください。存在しない場合は、`app_local.default.php` をコピーして作成してください。
 　
 
