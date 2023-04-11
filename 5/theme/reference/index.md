@@ -15,7 +15,7 @@ $this->BcBaser->img('/img/baser.power.gif', ['width' => 200]);
 ここでは、BcBaserHelperのリファレンスをご紹介しますが、
 その他にも、様々なヘルパや、クラスメソッドがあります。
 
-詳しく知るには、[baserCMS クラスリファレンス](../../plugin/reference/) をご覧ください。
+詳しく知るには、[baserCMS クラスリファレンス](../../plugin/reference/){:target="_blank"} をご覧ください。
 
 ## 静的ファイルの呼び出し
 
