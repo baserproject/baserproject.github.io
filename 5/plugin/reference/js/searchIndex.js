@@ -121,10 +121,35 @@ Search.appendIndex(
             "summary": "\u30EB\u30FC\u30C6\u30A3\u30F3\u30B0\u8A2D\u5B9A",
             "url": "classes/BaserCore-BcPlugin.html#method_routes"
         },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AcontentsRoutingForReverse\u0028\u0029",
+            "name": "contentsRoutingForReverse",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u7BA1\u7406\u30EB\u30FC\u30C6\u30A3\u30F3\u30B0",
+            "url": "classes/BaserCore-BcPlugin.html#method_contentsRoutingForReverse"
+        },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AfrontPageRouting\u0028\u0029",
+            "name": "frontPageRouting",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u30D5\u30ED\u30F3\u30C8\u30A8\u30F3\u30C9\u7528\u30EB\u30FC\u30C6\u30A3\u30F3\u30B0\uFF08\u30D7\u30E9\u30B0\u30A4\u30F3\u540D\u304C\u30C0\u30C3\u30B7\u30E5\u533A\u5207\u308A\u306E\u5834\u5408\uFF09",
+            "url": "classes/BaserCore-BcPlugin.html#method_frontPageRouting"
+        },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AprefixRouting\u0028\u0029",
+            "name": "prefixRouting",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u7BA1\u7406\u753B\u9762\u7528\u30EB\u30FC\u30C6\u30A3\u30F3\u30B0",
+            "url": "classes/BaserCore-BcPlugin.html#method_prefixRouting"
+        },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AsiteRouting\u0028\u0029",
+            "name": "siteRouting",
+            "summary": "\u30B5\u30D6\u30B5\u30A4\u30C8\u306E\u30D7\u30E9\u30B0\u30A4\u30F3\u7528\u30EB\u30FC\u30C6\u30A3\u30F3\u30B0",
+            "url": "classes/BaserCore-BcPlugin.html#method_siteRouting"
+        },                {
             "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AapplyAsTheme\u0028\u0029",
             "name": "applyAsTheme",
             "summary": "\u30C6\u30FC\u30DE\u3092\u9069\u7528\u3059\u308B",
             "url": "classes/BaserCore-BcPlugin.html#method_applyAsTheme"
+        },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AupdateDateNow\u0028\u0029",
+            "name": "updateDateNow",
+            "summary": "\u5BFE\u8C61\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u73FE\u5728\u306E\u65E5\u4ED8\u306B\u66F4\u65B0\u3059\u308B",
+            "url": "classes/BaserCore-BcPlugin.html#method_updateDateNow"
         },                {
             "fqsen": "\\BaserCore\\BcPlugin\u003A\u003A\u0024migrations",
             "name": "migrations",
@@ -351,6 +376,11 @@ Search.appendIndex(
             "summary": "initialize",
             "url": "classes/BaserCore-Controller-Admin-PagesController.html#method_initialize"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\PagesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u65B0\u898F\u8FFD\u52A0",
+            "url": "classes/BaserCore-Controller-Admin-PagesController.html#method_add"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\PagesController\u003A\u003Aedit\u0028\u0029",
             "name": "edit",
             "summary": "\u005BADMIN\u005D\u0020\u56FA\u5B9A\u30DA\u30FC\u30B8\u60C5\u5831\u7DE8\u96C6",
@@ -535,6 +565,11 @@ Search.appendIndex(
             "name": "_createPreviewRequest",
             "summary": "\u30D7\u30EC\u30D3\u30E5\u30FC\u7528\u306E\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u4F5C\u6210\u3059\u308B",
             "url": "classes/BaserCore-Controller-Admin-PreviewController.html#method__createPreviewRequest"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\PreviewController\u003A\u003AencodePath\u0028\u0029",
+            "name": "encodePath",
+            "summary": "URL\u306E\u30D1\u30B9\u90E8\u5206\u3092\u0020urlencode\u0020\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Admin-PreviewController.html#method_encodePath"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\SiteConfigsController",
             "name": "SiteConfigsController",
@@ -1466,6 +1501,31 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u4E00\u89A7\u53D6\u5F97",
             "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_index"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_prev\u0028\u0029",
+            "name": "get_prev",
+            "summary": "\u524D\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_prev"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_next\u0028\u0029",
+            "name": "get_next",
+            "summary": "\u6B21\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_next"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_global_navi\u0028\u0029",
+            "name": "get_global_navi",
+            "summary": "\u30B0\u30ED\u30FC\u30D0\u30EB\u30CA\u30D3\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_global_navi"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_crumbs\u0028\u0029",
+            "name": "get_crumbs",
+            "summary": "\u30D1\u30F3\u304F\u305A\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_crumbs"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\ContentsController\u003A\u003Aget_local_navi\u0028\u0029",
+            "name": "get_local_navi",
+            "summary": "\u30ED\u30FC\u30AB\u30EB\u30CA\u30D3\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Api-ContentsController.html#method_get_local_navi"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\PagesController",
             "name": "PagesController",
             "summary": "Class\u0020PagesController",
@@ -1770,6 +1830,11 @@ Search.appendIndex(
             "name": "editAction",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u7DE8\u96C6\u7528\u306E\u30A2\u30AF\u30B7\u30E7\u30F3\u540D\n\u5224\u5B9A\u306B\u5229\u7528\nsettings\u0020\u3067\u6307\u5B9A\u3059\u308B",
             "url": "classes/BaserCore-Controller-Component-BcAdminContentsComponent.html#property_editAction"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Component\\BcAdminContentsComponent\u003A\u003A\u0024addAction",
+            "name": "addAction",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u65B0\u898F\u767B\u9332\u7528\u306E\u30A2\u30AF\u30B7\u30E7\u30F3\u540D\n\u5224\u5B9A\u306B\u5229\u7528\nsettings\u0020\u3067\u6307\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Component-BcAdminContentsComponent.html#property_addAction"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Component\\BcFrontContentsComponent",
             "name": "BcFrontContentsComponent",
@@ -4156,6 +4221,11 @@ Search.appendIndex(
             "summary": "Setup\u0020the\u0020middleware\u0020queue\u0020your\u0020application\u0020will\u0020use.",
             "url": "classes/BaserCore-Plugin.html#method_middleware"
         },                {
+            "fqsen": "\\BaserCore\\Plugin\u003A\u003AgetSkipCsrfUrl\u0028\u0029",
+            "name": "getSkipCsrfUrl",
+            "summary": "Web\u0020API\u0020\u306EPOST\u9001\u4FE1\u306B\u304A\u3044\u3066\u0020CSRF\u0020\u3092\u30B9\u30AD\u30C3\u30D7\u3059\u308BURL\u306B\u3064\u3044\u3066\u3001\nRouter\u0020\u3067\u5909\u63DB\u3057\u305F\u4E0A\u3067\u53D6\u5F97",
+            "url": "classes/BaserCore-Plugin.html#method_getSkipCsrfUrl"
+        },                {
             "fqsen": "\\BaserCore\\Plugin\u003A\u003AgetAuthenticationService\u0028\u0029",
             "name": "getAuthenticationService",
             "summary": "\u8A8D\u8A3C\u30B5\u30FC\u30D3\u30B9\u30D7\u30ED\u30D0\u30A4\u30C0\u751F\u6210",
@@ -4311,6 +4381,11 @@ Search.appendIndex(
             "summary": "BcAdminContentsService",
             "url": "classes/BaserCore-Service-Admin-BcAdminContentsService.html"
         },                {
+            "fqsen": "\\BaserCore\\Service\\Admin\\BcAdminContentsService\u003A\u003AgetViewVarsForAdd\u0028\u0029",
+            "name": "getViewVarsForAdd",
+            "summary": "\u65B0\u898F\u767B\u9332\u753B\u9762\u7528\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\nBcAdminContentsComponent\u0020\u3088\u308A\u547C\u3073\u51FA\u3055\u308C\u308B",
+            "url": "classes/BaserCore-Service-Admin-BcAdminContentsService.html#method_getViewVarsForAdd"
+        },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\BcAdminContentsService\u003A\u003AgetViewVarsForEdit\u0028\u0029",
             "name": "getViewVarsForEdit",
             "summary": "\u7DE8\u96C6\u753B\u9762\u7528\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\nBcAdminContentsComponent\u0020\u3088\u308A\u547C\u3073\u51FA\u3055\u308C\u308B",
@@ -4425,6 +4500,11 @@ Search.appendIndex(
             "name": "PagesAdminService",
             "summary": "PagesAdminService",
             "url": "classes/BaserCore-Service-Admin-PagesAdminService.html"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\Admin\\PagesAdminService\u003A\u003AgetViewVarsForAdd\u0028\u0029",
+            "name": "getViewVarsForAdd",
+            "summary": "\u65B0\u898F\u767B\u9332\u753B\u9762\u7528\u306E\u0020view\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-Admin-PagesAdminService.html#method_getViewVarsForAdd"
         },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\PagesAdminService\u003A\u003AgetViewVarsForEdit\u0028\u0029",
             "name": "getViewVarsForEdit",
@@ -5505,6 +5585,36 @@ Search.appendIndex(
             "name": "setCurrentToRequest",
             "summary": "ServerRequest\u0020\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u306B\u6307\u5B9A\u3057\u305F\u30B3\u30F3\u30C6\u30F3\u30C4\u30C7\u30FC\u30BF\u3092\u73FE\u5728\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3068\u3057\u3066\u30BB\u30C3\u30C8\u3059\u308B",
             "url": "classes/BaserCore-Service-ContentsService.html#method_setCurrentToRequest"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetPrev\u0028\u0029",
+            "name": "getPrev",
+            "summary": "\u524D\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getPrev"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetNext\u0028\u0029",
+            "name": "getNext",
+            "summary": "\u6B21\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getNext"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetGlobalNavi\u0028\u0029",
+            "name": "getGlobalNavi",
+            "summary": "\u30B0\u30ED\u30FC\u30D0\u30EB\u30CA\u30D3\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getGlobalNavi"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetCrumbs\u0028\u0029",
+            "name": "getCrumbs",
+            "summary": "\u30D1\u30F3\u304F\u305A\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getCrumbs"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetLocalNavi\u0028\u0029",
+            "name": "getLocalNavi",
+            "summary": "\u30ED\u30FC\u30AB\u30EB\u30CA\u30D3\u7528\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getLocalNavi"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AgetParent\u0028\u0029",
+            "name": "getParent",
+            "summary": "\u89AA\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Service-ContentsService.html#method_getParent"
         },                {
             "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003A\u0024Contents",
             "name": "Contents",
@@ -8636,6 +8746,11 @@ Search.appendIndex(
             "summary": "\u6307\u5B9A\u3057\u305F\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_getRequestPrefix"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AisDebug\u0028\u0029",
+            "name": "isDebug",
+            "summary": "\u30C7\u30D0\u30C3\u30B0\u30E2\u30FC\u30C9\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_isDebug"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003A\u0024_detectors",
             "name": "_detectors",
             "summary": "detectors",
@@ -8881,6 +8996,21 @@ Search.appendIndex(
             "summary": "initialize",
             "url": "classes/BaserCore-View-BcFrontEmailView.html#method_initialize"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BaserCoreBaserHelper",
+            "name": "BaserCoreBaserHelper",
+            "summary": "BaserCoreBaserHelper",
+            "url": "classes/BaserCore-View-Helper-BaserCoreBaserHelper.html"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BaserCoreBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u30EA\u30B9\u30C8",
+            "url": "classes/BaserCore-View-Helper-BaserCoreBaserHelper.html#method_methods"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BaserCoreBaserHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "\u30D8\u30EB\u30D1\u30FC",
+            "url": "classes/BaserCore-View-Helper-BaserCoreBaserHelper.html#property_helpers"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcAdminFormHelper",
             "name": "BcAdminFormHelper",
             "summary": "Class\u0020BcAdminFormHelper",
@@ -8981,6 +9111,11 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u30DA\u30FC\u30B8\u3078\u306E\u30EA\u30F3\u30AF\u304C\u5B58\u5728\u3059\u308B\u304B\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_existsPublishLink"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003AexistsAddLink\u0028\u0029",
+            "name": "existsAddLink",
+            "summary": "\u73FE\u5728\u306E\u30DA\u30FC\u30B8\u3067\u56FA\u5B9A\u30DA\u30FC\u30B8\u306E\u65B0\u898F\u767B\u9332\u304C\u6709\u52B9\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_existsAddLink"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003AsetEditLink\u0028\u0029",
             "name": "setEditLink",
             "summary": "\u7DE8\u96C6\u30EA\u30F3\u30AF\u3092\u8A2D\u5B9A\u3059\u308B",
@@ -8995,6 +9130,11 @@ Search.appendIndex(
             "name": "editLink",
             "summary": "\u7DE8\u96C6\u753B\u9762\u3078\u306E\u30EA\u30F3\u30AF\u3092\u51FA\u529B\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_editLink"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003AaddLink\u0028\u0029",
+            "name": "addLink",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u65B0\u898F\u8FFD\u52A0\u753B\u9762\u3078\u306E\u30EA\u30F3\u30AF\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_addLink"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003ApublishLink\u0028\u0029",
             "name": "publishLink",
@@ -9691,6 +9831,16 @@ Search.appendIndex(
             "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u304C\u30ED\u30FC\u30C9\u3055\u308C\u3066\u3044\u308B\u304B\u5224\u5B9A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_isPluginLoaded"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AisDebug\u0028\u0029",
+            "name": "isDebug",
+            "summary": "\u30C7\u30D0\u30C3\u30B0\u30E2\u30FC\u30C9\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_isDebug"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AgetFullUrl\u0028\u0029",
+            "name": "getFullUrl",
+            "summary": "\u30D5\u30EBURL\u306B\u5909\u63DB\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getFullUrl"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
             "summary": "\u30D8\u30EB\u30D1\u30FC",
@@ -9700,16 +9850,6 @@ Search.appendIndex(
             "name": "siteConfig",
             "summary": "\u30B5\u30A4\u30C8\u57FA\u672C\u8A2D\u5B9A\u30C7\u30FC\u30BF",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#property_siteConfig"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003A\u0024_Page",
-            "name": "_Page",
-            "summary": "\u30DA\u30FC\u30B8\u30E2\u30C7\u30EB",
-            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#property__Page"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003A\u0024_Permission",
-            "name": "_Permission",
-            "summary": "\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u30E2\u30C7\u30EB",
-            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#property__Permission"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003A\u0024_categoryTitleOn",
             "name": "_categoryTitleOn",
@@ -9941,6 +10081,11 @@ Search.appendIndex(
             "summary": "\u6307\u5B9A\u3057\u305F\u56FA\u5B9A\u30DA\u30FC\u30B8\u30C7\u30FC\u30BF\u306E\u6B21\u3001\u307E\u305F\u306F\u3001\u524D\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcContentsHelper.html#method_getPageNeighbors"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcContentsHelper\u003A\u003AgetPublishedSites\u0028\u0029",
+            "name": "getPublishedSites",
+            "summary": "\u516C\u958B\u72B6\u614B\u306E\u30B5\u30A4\u30C8\u3092\u5168\u3066\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcContentsHelper.html#method_getPublishedSites"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcContentsHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
             "summary": "Helper",
@@ -10066,11 +10211,6 @@ Search.appendIndex(
             "summary": "Creates\u0020a\u0020submit\u0020button\u0020element.\u0020This\u0020method\u0020will\u0020generate\u0020\u0060\u003Cinput\u0020\/\u003E\u0060\u0020elements\u0020that\ncan\u0020be\u0020used\u0020to\u0020submit,\u0020and\u0020reset\u0020forms\u0020by\u0020using\u0020\u0024options.\u0020image\u0020submits\u0020can\u0020be\u0020created\u0020by\u0020supplying\u0020an\nimage\u0020path\u0020for\u0020\u0024caption.",
             "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_submit"
         },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003AdateTime\u0028\u0029",
-            "name": "dateTime",
-            "summary": "Returns\u0020a\u0020set\u0020of\u0020SELECT\u0020elements\u0020for\u0020a\u0020full\u0020datetime\u0020setup\u003A\u0020day,\u0020month\u0020and\u0020year,\u0020and\u0020then\u0020time.",
-            "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_dateTime"
-        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003A_selectOptions\u0028\u0029",
             "name": "_selectOptions",
             "summary": "Returns\u0020an\u0020array\u0020of\u0020formatted\u0020OPTION\/OPTGROUP\u0020elements",
@@ -10115,11 +10255,6 @@ Search.appendIndex(
             "name": "prefTag",
             "summary": "\u90FD\u9053\u5E9C\u770C\u7528\u306ESELECT\u30BF\u30B0\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_prefTag"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003Awyear\u0028\u0029",
-            "name": "wyear",
-            "summary": "\u548C\u66A6\u5E74",
-            "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_wyear"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003AgenerateList\u0028\u0029",
             "name": "generateList",
@@ -10411,6 +10546,16 @@ Search.appendIndex(
             "summary": "\u30D8\u30EB\u30D1\u30FC",
             "url": "classes/BaserCore-View-Helper-BcPageHelper.html#property_helpers"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcPluginBaserHelperInterface",
+            "name": "BcPluginBaserHelperInterface",
+            "summary": "BcPluginBaserHelperInterface",
+            "url": "classes/BaserCore-View-Helper-BcPluginBaserHelperInterface.html"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcPluginBaserHelperInterface\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u30EA\u30B9\u30C8",
+            "url": "classes/BaserCore-View-Helper-BcPluginBaserHelperInterface.html#method_methods"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcSearchBoxHelper",
             "name": "BcSearchBoxHelper",
             "summary": "\u691C\u7D22\u30DC\u30C3\u30AF\u30B9\u30D8\u30EB\u30D1\nClass\u0020BcSearchBoxHelper",
@@ -10681,6 +10826,11 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u30DA\u30FC\u30B8\u3078\u306E\u30EA\u30F3\u30AF\u304C\u5229\u7528\u53EF\u80FD\u304B\u3069\u3046\u304B",
             "url": "classes/BaserCore-View-Helper-BcToolbarHelper.html#method_isAvailablePublishLink"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcToolbarHelper\u003A\u003AisAvailableAddLink\u0028\u0029",
+            "name": "isAvailableAddLink",
+            "summary": "\u73FE\u5728\u306E\u30DA\u30FC\u30B8\u3067\u56FA\u5B9A\u30DA\u30FC\u30B8\u306E\u65B0\u898F\u767B\u9332\u304C\u6709\u52B9\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-View-Helper-BcToolbarHelper.html#method_isAvailableAddLink"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcToolbarHelper\u003A\u003AisAvailableMode\u0028\u0029",
             "name": "isAvailableMode",
             "summary": "\u30E2\u30FC\u30C9\u306E\u8868\u793A\u304C\u5229\u7528\u53EF\u80FD\u304B\u3069\u3046\u304B",
@@ -10770,6 +10920,11 @@ Search.appendIndex(
             "name": "publishLink",
             "summary": "\u516C\u958B\u753B\u9762\u30EA\u30F3\u30AF\u51FA\u529B",
             "url": "classes/BaserCore-View-Helper-BcToolbarHelper.html#method_publishLink"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcToolbarHelper\u003A\u003AaddLink\u0028\u0029",
+            "name": "addLink",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u65B0\u898F\u8FFD\u52A0\u753B\u9762\u3078\u306E\u30EA\u30F3\u30AF\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcToolbarHelper.html#method_addLink"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcToolbarHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -11361,6 +11516,11 @@ Search.appendIndex(
             "summary": "BcBlogViewEventListener",
             "url": "classes/BcBlog-Event-BcBlogViewEventListener.html"
         },                {
+            "fqsen": "\\BcBlog\\Event\\BcBlogViewEventListener\u003A\u003AleftOfToolbar\u0028\u0029",
+            "name": "leftOfToolbar",
+            "summary": "leftOfToolbar",
+            "url": "classes/BcBlog-Event-BcBlogViewEventListener.html#method_leftOfToolbar"
+        },                {
             "fqsen": "\\BcBlog\\Event\\BcBlogViewEventListener\u003A\u003AbeforeRender\u0028\u0029",
             "name": "beforeRender",
             "summary": "Before\u0020render",
@@ -11585,6 +11745,11 @@ Search.appendIndex(
             "name": "validationDefault",
             "summary": "\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u30EB\u30FC\u30EB\u3092\u8A2D\u5B9A",
             "url": "classes/BcBlog-Model-Table-BlogPostsTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogPostsTable\u003A\u003AbeforeSave\u0028\u0029",
+            "name": "beforeSave",
+            "summary": "Before\u0020Save",
+            "url": "classes/BcBlog-Model-Table-BlogPostsTable.html#method_beforeSave"
         },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogPostsTable\u003A\u003AsetupUpload\u0028\u0029",
             "name": "setupUpload",
@@ -12576,6 +12741,11 @@ Search.appendIndex(
             "summary": "\u8A18\u4E8B\u4E00\u89A7\u7528\u306E\u0020view\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Service-Front-BlogFrontService.html#method_getViewVarsForIndex"
         },                {
+            "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontService\u003A\u003AgetViewVarsForIndexRss\u0028\u0029",
+            "name": "getViewVarsForIndexRss",
+            "summary": "RSS\u7528\u0020\u306E\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97",
+            "url": "classes/BcBlog-Service-Front-BlogFrontService.html#method_getViewVarsForIndexRss"
+        },                {
             "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontService\u003A\u003AsetupPreviewForIndex\u0028\u0029",
             "name": "setupPreviewForIndex",
             "summary": "\u30D7\u30EC\u30D3\u30E5\u30FC\u7528\u306E\u30BB\u30C3\u30C8\u30A2\u30C3\u30D7\u3092\u3059\u308B",
@@ -12766,90 +12936,10 @@ Search.appendIndex(
             "summary": "BlogBaser\u30D8\u30EB\u30D1\u30FC",
             "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html"
         },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AblogPosts\u0028\u0029",
-            "name": "blogPosts",
-            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u4E00\u89A7\u51FA\u529B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_blogPosts"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogPosts\u0028\u0029",
-            "name": "getBlogPosts",
-            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogPosts"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogCategory\u0028\u0029",
-            "name": "isBlogCategory",
-            "summary": "\u30AB\u30C6\u30B4\u30EA\u30FC\u5225\u8A18\u4E8B\u4E00\u89A7\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogCategory"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogTag\u0028\u0029",
-            "name": "isBlogTag",
-            "summary": "\u30BF\u30B0\u5225\u8A18\u4E8B\u4E00\u89A7\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogTag"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogDate\u0028\u0029",
-            "name": "isBlogDate",
-            "summary": "\u65E5\u5225\u8A18\u4E8B\u4E00\u89A7\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogDate"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogMonth\u0028\u0029",
-            "name": "isBlogMonth",
-            "summary": "\u6708\u5225\u8A18\u4E8B\u4E00\u89A7\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogMonth"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogYear\u0028\u0029",
-            "name": "isBlogYear",
-            "summary": "\u5E74\u5225\u8A18\u4E8B\u4E00\u89A7\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogYear"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogSingle\u0028\u0029",
-            "name": "isBlogSingle",
-            "summary": "\u500B\u5225\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogSingle"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlogHome\u0028\u0029",
-            "name": "isBlogHome",
-            "summary": "\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u30DA\u30FC\u30B8\u5224\u5B9A",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlogHome"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogs\u0028\u0029",
-            "name": "getBlogs",
-            "summary": "Blog\u306E\u57FA\u672C\u60C5\u5831\u3092\u5168\u3066\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogs"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AisBlog\u0028\u0029",
-            "name": "isBlog",
-            "summary": "\u73FE\u5728\u306E\u30DA\u30FC\u30B8\u304C\u30D6\u30ED\u30B0\u30D7\u30E9\u30B0\u30A4\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_isBlog"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogCategories\u0028\u0029",
-            "name": "getBlogCategories",
-            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogCategories"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AhasChildBlogCategory\u0028\u0029",
-            "name": "hasChildBlogCategory",
-            "summary": "\u5B50\u30AB\u30C6\u30B4\u30EA\u3092\u6301\u3063\u3066\u3044\u308B\u304B\u3069\u3046\u304B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_hasChildBlogCategory"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogTagList\u0028\u0029",
-            "name": "getBlogTagList",
-            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogTagList"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AblogTagList\u0028\u0029",
-            "name": "blogTagList",
-            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u30EA\u30B9\u30C8\u3092\u51FA\u529B\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_blogTagList"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogContentsUrl\u0028\u0029",
-            "name": "getBlogContentsUrl",
-            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogContentsUrl"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003AgetBlogPostCount\u0028\u0029",
-            "name": "getBlogPostCount",
-            "summary": "\u8A18\u4E8B\u4EF6\u6570\u3092\u53D6\u5F97\u3059\u308B\n\u4E00\u89A7\u3067\u306E\u307F\u5229\u7528\u53EF\u80FD",
-            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_getBlogPostCount"
+            "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBlog-View-Helper-BcBlogBaserHelper.html#method_methods"
         },                {
             "fqsen": "\\BcBlog\\View\\Helper\\BcBlogBaserHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -13005,11 +13095,6 @@ Search.appendIndex(
             "name": "getCategoryList",
             "summary": "\u30AB\u30C6\u30B4\u30EA\u30FC\u306E\u4E00\u89A7\u3092\u30EA\u30B9\u30C8\u30BF\u30B0\u3067\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-View-Helper-BlogHelper.html#method_getCategoryList"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BlogHelper\u003A\u003A_getCategoryList\u0028\u0029",
-            "name": "_getCategoryList",
-            "summary": "\u30AB\u30C6\u30B4\u30EA\u30FC\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-View-Helper-BlogHelper.html#method__getCategoryList"
         },                {
             "fqsen": "\\BcBlog\\View\\Helper\\BlogHelper\u003A\u003AprevLink\u0028\u0029",
             "name": "prevLink",
@@ -13295,6 +13380,96 @@ Search.appendIndex(
             "name": "content",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4",
             "url": "classes/BcBlog-View-Helper-BlogHelper.html#property_content"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper",
+            "name": "RssHelper",
+            "summary": "RSS\u0020Helper\u0020class\u0020for\u0020easy\u0020output\u0020RSS\u0020structures.",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method___construct"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Adocument\u0028\u0029",
+            "name": "document",
+            "summary": "Returns\u0020an\u0020RSS\u0020document\u0020wrapped\u0020in\u0020\u0060\u003Crss\u0020\/\u003E\u0060\u0020tags",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_document"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Achannel\u0028\u0029",
+            "name": "channel",
+            "summary": "Returns\u0020an\u0020RSS\u0020\u0060\u003Cchannel\u0020\/\u003E\u0060\u0020element",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_channel"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Aitems\u0028\u0029",
+            "name": "items",
+            "summary": "Transforms\u0020an\u0020array\u0020of\u0020data\u0020using\u0020an\u0020optional\u0020callback,\u0020and\u0020maps\u0020it\u0020to\u0020a\u0020set\nof\u0020\u0060\u003Citem\u0020\/\u003E\u0060\u0020tags",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_items"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Aitem\u0028\u0029",
+            "name": "item",
+            "summary": "Converts\u0020an\u0020array\u0020into\u0020an\u0020\u0060\u003Citem\u0020\/\u003E\u0060\u0020element\u0020and\u0020its\u0020contents",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_item"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Atime\u0028\u0029",
+            "name": "time",
+            "summary": "Converts\u0020a\u0020time\u0020in\u0020any\u0020format\u0020to\u0020an\u0020RSS\u0020time",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_time"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Aelem\u0028\u0029",
+            "name": "elem",
+            "summary": "Generates\u0020an\u0020XML\u0020element",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_elem"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003AimplementedEvents\u0028\u0029",
+            "name": "implementedEvents",
+            "summary": "Event\u0020listeners.",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#method_implementedEvents"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "Helpers\u0020used\u0020by\u0020RSS\u0020Helper",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_helpers"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024base",
+            "name": "base",
+            "summary": "Base\u0020URL",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_base"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024here",
+            "name": "here",
+            "summary": "URL\u0020to\u0020current\u0020action.",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_here"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024params",
+            "name": "params",
+            "summary": "Parameter\u0020array.",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_params"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024action",
+            "name": "action",
+            "summary": "Current\u0020action.",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_action"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024data",
+            "name": "data",
+            "summary": "POSTed\u0020model\u0020data",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_data"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024model",
+            "name": "model",
+            "summary": "Name\u0020of\u0020the\u0020current\u0020model",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_model"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024field",
+            "name": "field",
+            "summary": "Name\u0020of\u0020the\u0020current\u0020field",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_field"
+        },                {
+            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A\u0024version",
+            "name": "version",
+            "summary": "Default\u0020spec\u0020version\u0020of\u0020generated\u0020RSS",
+            "url": "classes/BcBlog-View-Helper-RssHelper.html#property_version"
         },                {
             "fqsen": "\\BcContentLink\\Controller\\Admin\\ContentLinksController",
             "name": "ContentLinksController",
@@ -14831,6 +15006,21 @@ Search.appendIndex(
             "summary": "initialize",
             "url": "classes/BcCustomContent-View-CustomContentFrontAppView.html#method_initialize"
         },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\BcCustomContentBaserHelper",
+            "name": "BcCustomContentBaserHelper",
+            "summary": "MailBaserHelper",
+            "url": "classes/BcCustomContent-View-Helper-BcCustomContentBaserHelper.html"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\BcCustomContentBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcCustomContent-View-Helper-BcCustomContentBaserHelper.html#method_methods"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\BcCustomContentBaserHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "\u30D8\u30EB\u30D1\u30FC",
+            "url": "classes/BcCustomContent-View-Helper-BcCustomContentBaserHelper.html#property_helpers"
+        },                {
             "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentAdminHelper",
             "name": "CustomContentAdminHelper",
             "summary": "CustomContentAdminHelper",
@@ -15506,16 +15696,6 @@ Search.appendIndex(
             "summary": "plugin\u0020for\u0020BcFront",
             "url": "classes/BcFront-Plugin.html"
         },                {
-            "fqsen": "\\BcFront\\View\\Helper\\BcSampleHelper",
-            "name": "BcSampleHelper",
-            "summary": "BcSampleHelper",
-            "url": "classes/BcFront-View-Helper-BcSampleHelper.html"
-        },                {
-            "fqsen": "\\BcFront\\View\\Helper\\BcSampleHelper\u003A\u003Ashow\u0028\u0029",
-            "name": "show",
-            "summary": "",
-            "url": "classes/BcFront-View-Helper-BcSampleHelper.html#method_show"
-        },                {
             "fqsen": "\\BcInstaller\\Command\\InstallCheckCommand",
             "name": "InstallCheckCommand",
             "summary": "InstallCheckCommand",
@@ -15791,6 +15971,11 @@ Search.appendIndex(
             "summary": "\u74B0\u5883\u60C5\u5831\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
             "url": "classes/BcInstaller-Service-InstallationsService.html#method_checkEnv"
         },                {
+            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003A_getMemoryLimit\u0028\u0029",
+            "name": "_getMemoryLimit",
+            "summary": "memory_limit\u0020\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcInstaller-Service-InstallationsService.html#method__getMemoryLimit"
+        },                {
             "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AconstructionDb\u0028\u0029",
             "name": "constructionDb",
             "summary": "baserCMS\u30B3\u30A2\u306E\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u3092\u69CB\u7BC9\u3059\u308B",
@@ -15836,10 +16021,10 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u4F5C\u6210\u65E5\u3092\u66F4\u65B0\u3059\u308B",
             "url": "classes/BcInstaller-Service-InstallationsService.html#method__updateContents"
         },                {
-            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003A_updatePluginStatus\u0028\u0029",
-            "name": "_updatePluginStatus",
-            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u30B9\u30C6\u30FC\u30BF\u30B9\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BcInstaller-Service-InstallationsService.html#method__updatePluginStatus"
+            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003A_updateBlogPosts\u0028\u0029",
+            "name": "_updateBlogPosts",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u4F5C\u6210\u65E5\u3092\u66F4\u65B0\u3059\u308B",
+            "url": "classes/BcInstaller-Service-InstallationsService.html#method__updateBlogPosts"
         },                {
             "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AinstallCorePlugin\u0028\u0029",
             "name": "installCorePlugin",
@@ -16211,6 +16396,21 @@ Search.appendIndex(
             "summary": "\u005BAPI\u005D\u0020\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u0020API\u0020\u5358\u4E00\u30C7\u30FC\u30BF\u53D6\u5F97",
             "url": "classes/BcMail-Controller-Api-MailFieldsController.html#method_view"
         },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController",
+            "name": "MailMessagesController",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcMail-Controller-Api-MailMessagesController.html"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "",
+            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aadd\u0028\u0029",
+            "name": "add",
+            "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8FFD\u52A0",
+            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_add"
+        },                {
             "fqsen": "\\BcMail\\Controller\\MailController",
             "name": "MailController",
             "summary": "\u304A\u554F\u3044\u5408\u308F\u305B\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u7528\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
@@ -16325,6 +16525,11 @@ Search.appendIndex(
             "name": "MailContent",
             "summary": "Class\u0020MailContent",
             "url": "classes/BcMail-Model-Entity-MailContent.html"
+        },                {
+            "fqsen": "\\BcMail\\Model\\Entity\\MailContent\u003A\u003AgetNumberOfMessages\u0028\u0029",
+            "name": "getNumberOfMessages",
+            "summary": "\u30E1\u30C3\u30BB\u30FC\u30B8\u4EF6\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-Model-Entity-MailContent.html#method_getNumberOfMessages"
         },                {
             "fqsen": "\\BcMail\\Model\\Entity\\MailContent\u003A\u003A\u0024_accessible",
             "name": "_accessible",
@@ -17011,6 +17216,11 @@ Search.appendIndex(
             "summary": "\u30D6\u30ED\u30B0\u3092\u30B3\u30D4\u30FC\u3059\u308B",
             "url": "classes/BcMail-Service-MailContentsService.html#method_copy"
         },                {
+            "fqsen": "\\BcMail\\Service\\MailContentsService\u003A\u003AgetPublishedAll\u0028\u0029",
+            "name": "getPublishedAll",
+            "summary": "\u516C\u958B\u72B6\u614B\u306E\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u5168\u3066\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-Service-MailContentsService.html#method_getPublishedAll"
+        },                {
             "fqsen": "\\BcMail\\Service\\MailContentsServiceInterface",
             "name": "MailContentsServiceInterface",
             "summary": "MailContentsServiceInterface",
@@ -17130,6 +17340,11 @@ Search.appendIndex(
             "name": "changeSort",
             "summary": "\u4E26\u3073\u9806\u3092\u5909\u66F4\u3059\u308B",
             "url": "classes/BcMail-Service-MailFieldsService.html#method_changeSort"
+        },                {
+            "fqsen": "\\BcMail\\Service\\MailFieldsService\u003A\u003AgetAutoCompleteOptions\u0028\u0029",
+            "name": "getAutoCompleteOptions",
+            "summary": "\u30AA\u30FC\u30C8\u30B3\u30F3\u30D7\u30EA\u30FC\u30C8\u30AA\u30D7\u30B7\u30E7\u30F3\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-Service-MailFieldsService.html#method_getAutoCompleteOptions"
         },                {
             "fqsen": "\\BcMail\\Service\\MailFieldsServiceInterface",
             "name": "MailFieldsServiceInterface",
@@ -17316,15 +17531,20 @@ Search.appendIndex(
             "summary": "Provides",
             "url": "classes/BcMail-ServiceProvider-BcMailServiceProvider.html#property_provides"
         },                {
-            "fqsen": "\\BcMail\\View\\Helper\\MailBaserHelper",
-            "name": "MailBaserHelper",
+            "fqsen": "\\BcMail\\View\\Helper\\BcMailBaserHelper",
+            "name": "BcMailBaserHelper",
             "summary": "MailBaserHelper",
-            "url": "classes/BcMail-View-Helper-MailBaserHelper.html"
+            "url": "classes/BcMail-View-Helper-BcMailBaserHelper.html"
         },                {
-            "fqsen": "\\BcMail\\View\\Helper\\MailBaserHelper\u003A\u003AisMail\u0028\u0029",
-            "name": "isMail",
-            "summary": "\u73FE\u5728\u306E\u30DA\u30FC\u30B8\u304C\u30E1\u30FC\u30EB\u30D7\u30E9\u30B0\u30A4\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
-            "url": "classes/BcMail-View-Helper-MailBaserHelper.html#method_isMail"
+            "fqsen": "\\BcMail\\View\\Helper\\BcMailBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcMail-View-Helper-BcMailBaserHelper.html#method_methods"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\BcMailBaserHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "\u30D8\u30EB\u30D1\u30FC",
+            "url": "classes/BcMail-View-Helper-BcMailBaserHelper.html#property_helpers"
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\MaildataHelper",
             "name": "MaildataHelper",
@@ -17460,6 +17680,16 @@ Search.appendIndex(
             "name": "beforeRender",
             "summary": "beforeRender",
             "url": "classes/BcMail-View-Helper-MailHelper.html#method_beforeRender"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AisMail\u0028\u0029",
+            "name": "isMail",
+            "summary": "\u73FE\u5728\u306E\u30DA\u30FC\u30B8\u304C\u30E1\u30FC\u30EB\u30D7\u30E9\u30B0\u30A4\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_isMail"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AgetPublishedMailContents\u0028\u0029",
+            "name": "getPublishedMailContents",
+            "summary": "\u516C\u958B\u72B6\u614B\u306E\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_getPublishedMailContents"
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -17996,15 +18226,10 @@ Search.appendIndex(
             "summary": "BcThemeConfigBaserHelper",
             "url": "classes/BcThemeConfig-View-Helper-BcThemeConfigBaserHelper.html"
         },                {
-            "fqsen": "\\BcThemeConfig\\View\\Helper\\BcThemeConfigBaserHelper\u003A\u003Alogo\u0028\u0029",
-            "name": "logo",
-            "summary": "\u30E1\u30A4\u30F3\u30A4\u30E1\u30FC\u30B8\u3092\u51FA\u529B\u3059\u308B",
-            "url": "classes/BcThemeConfig-View-Helper-BcThemeConfigBaserHelper.html#method_logo"
-        },                {
-            "fqsen": "\\BcThemeConfig\\View\\Helper\\BcThemeConfigBaserHelper\u003A\u003AmainImage\u0028\u0029",
-            "name": "mainImage",
-            "summary": "\u30ED\u30B4\u3092\u51FA\u529B\u3059\u308B",
-            "url": "classes/BcThemeConfig-View-Helper-BcThemeConfigBaserHelper.html#method_mainImage"
+            "fqsen": "\\BcThemeConfig\\View\\Helper\\BcThemeConfigBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcThemeConfig-View-Helper-BcThemeConfigBaserHelper.html#method_methods"
         },                {
             "fqsen": "\\BcThemeConfig\\View\\Helper\\BcThemeConfigBaserHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -18811,11 +19036,6 @@ Search.appendIndex(
             "summary": "\u691C\u7D22\u30DC\u30C3\u30AF\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcUploader-Controller-Admin-UploaderFilesController.html#method_ajax_get_search_box"
         },                {
-            "fqsen": "\\BcUploader\\Controller\\Admin\\UploaderFilesController\u003A\u003Aview_limited_file\u0028\u0029",
-            "name": "view_limited_file",
-            "summary": "\u516C\u958B\u671F\u9593\u306E\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
-            "url": "classes/BcUploader-Controller-Admin-UploaderFilesController.html#method_view_limited_file"
-        },                {
             "fqsen": "\\BcUploader\\Controller\\Api\\Admin\\UploaderCategoriesController",
             "name": "UploaderCategoriesController",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30AB\u30C6\u30B4\u30EA\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
@@ -18890,6 +19110,16 @@ Search.appendIndex(
             "name": "delete",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u3092\u524A\u9664\u3059\u308B",
             "url": "classes/BcUploader-Controller-Api-Admin-UploaderFilesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcUploader\\Controller\\UploaderFilesController",
+            "name": "UploaderFilesController",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C0\u30FC\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcUploader-Controller-UploaderFilesController.html"
+        },                {
+            "fqsen": "\\BcUploader\\Controller\\UploaderFilesController\u003A\u003Aview_limited_file\u0028\u0029",
+            "name": "view_limited_file",
+            "summary": "\u516C\u958B\u671F\u9593\u306E\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
+            "url": "classes/BcUploader-Controller-UploaderFilesController.html#method_view_limited_file"
         },                {
             "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener",
             "name": "BcUploaderViewEventListener",
@@ -19070,6 +19300,11 @@ Search.appendIndex(
             "name": "services",
             "summary": "services",
             "url": "classes/BcUploader-Plugin.html#method_services"
+        },                {
+            "fqsen": "\\BcUploader\\Plugin\u003A\u003Aroutes\u0028\u0029",
+            "name": "routes",
+            "summary": "Routes",
+            "url": "classes/BcUploader-Plugin.html#method_routes"
         },                {
             "fqsen": "\\BcUploader\\Service\\Admin\\UploaderConfigsAdminService",
             "name": "UploaderConfigsAdminService",
@@ -19491,15 +19726,15 @@ Search.appendIndex(
             "summary": "Class\u0020WidgetArea",
             "url": "classes/BcWidgetArea-Model-Table-WidgetAreasTable.html"
         },                {
-            "fqsen": "\\BcWidgetArea\\Model\\Table\\WidgetAreasTable\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "WidgetArea\u0020constructor.",
-            "url": "classes/BcWidgetArea-Model-Table-WidgetAreasTable.html#method___construct"
+            "fqsen": "\\BcWidgetArea\\Model\\Table\\WidgetAreasTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize",
+            "url": "classes/BcWidgetArea-Model-Table-WidgetAreasTable.html#method_initialize"
         },                {
-            "fqsen": "\\BcWidgetArea\\Model\\Table\\WidgetAreasTable\u003A\u003A\u0024actsAs",
-            "name": "actsAs",
-            "summary": "\u30D3\u30D8\u30A4\u30D3\u30A2",
-            "url": "classes/BcWidgetArea-Model-Table-WidgetAreasTable.html#property_actsAs"
+            "fqsen": "\\BcWidgetArea\\Model\\Table\\WidgetAreasTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Validation\u0020Default",
+            "url": "classes/BcWidgetArea-Model-Table-WidgetAreasTable.html#method_validationDefault"
         },                {
             "fqsen": "\\BcWidgetArea\\Plugin",
             "name": "Plugin",
@@ -19696,15 +19931,10 @@ Search.appendIndex(
             "summary": "BcWidgetAreaBaserHelper",
             "url": "classes/BcWidgetArea-View-Helper-BcWidgetAreaBaserHelper.html"
         },                {
-            "fqsen": "\\BcWidgetArea\\View\\Helper\\BcWidgetAreaBaserHelper\u003A\u003AwidgetArea\u0028\u0029",
-            "name": "widgetArea",
-            "summary": "\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u30A8\u30EA\u30A2\u3092\u8868\u793A\u3059\u308B",
-            "url": "classes/BcWidgetArea-View-Helper-BcWidgetAreaBaserHelper.html#method_widgetArea"
-        },                {
-            "fqsen": "\\BcWidgetArea\\View\\Helper\\BcWidgetAreaBaserHelper\u003A\u003AgetWidgetArea\u0028\u0029",
-            "name": "getWidgetArea",
-            "summary": "\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u30A8\u30EA\u30A2\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcWidgetArea-View-Helper-BcWidgetAreaBaserHelper.html#method_getWidgetArea"
+            "fqsen": "\\BcWidgetArea\\View\\Helper\\BcWidgetAreaBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcWidgetArea-View-Helper-BcWidgetAreaBaserHelper.html#method_methods"
         },                {
             "fqsen": "\\BcWidgetArea\\View\\Helper\\BcWidgetAreaBaserHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -20266,16 +20496,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcfront.html"
         },                {
-            "fqsen": "\\BcFront\\View\\Helper",
-            "name": "Helper",
-            "summary": "",
-            "url": "namespaces/bcfront-view-helper.html"
-        },                {
-            "fqsen": "\\BcFront\\View",
-            "name": "View",
-            "summary": "",
-            "url": "namespaces/bcfront-view.html"
-        },                {
             "fqsen": "\\BcInstaller\\Command",
             "name": "Command",
             "summary": "",
@@ -20621,11 +20841,6 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcuploader-controller-admin.html"
         },                {
-            "fqsen": "\\BcUploader\\Controller",
-            "name": "Controller",
-            "summary": "",
-            "url": "namespaces/bcuploader-controller.html"
-        },                {
             "fqsen": "\\BcUploader\\Controller\\Api\\Admin",
             "name": "Admin",
             "summary": "",
@@ -20635,6 +20850,11 @@ Search.appendIndex(
             "name": "Api",
             "summary": "",
             "url": "namespaces/bcuploader-controller-api.html"
+        },                {
+            "fqsen": "\\BcUploader\\Controller",
+            "name": "Controller",
+            "summary": "",
+            "url": "namespaces/bcuploader-controller.html"
         },                {
             "fqsen": "\\BcUploader\\Event",
             "name": "Event",

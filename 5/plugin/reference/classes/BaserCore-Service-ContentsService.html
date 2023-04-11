@@ -288,12 +288,6 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcfront.html" class="">BcFront</a>
 </h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/bcfront-view.html" class="">View</a>
-                
-            </li>
-            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcinstaller.html" class="">BcInstaller</a>
@@ -764,6 +758,20 @@
 <dd>コンテンツ情報を取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getCrumbs">getCrumbs()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>    </span>
+</dt>
+<dd>パンくず用のコンテンツ一覧を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getGlobalNavi">getGlobalNavi()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>|false    </span>
+</dt>
+<dd>グローバルナビ用のコンテンツ一覧を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Service-ContentsService.html#method_getIndex">getIndex()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\ORM\Query">Query</abbr>    </span>
@@ -776,6 +784,13 @@
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>リストデータを取得</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getLocalNavi">getLocalNavi()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>    </span>
+</dt>
+<dd>ローカルナビ用のコンテンツ一覧を取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Service-ContentsService.html#method_getNeighbors">getNeighbors()</a>
@@ -792,6 +807,20 @@
 <dd>新しいデータの初期値を取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getNext">getNext()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null    </span>
+</dt>
+<dd>次のコンテンツを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getParent">getParent()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false    </span>
+</dt>
+<dd>親コンテンツを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Service-ContentsService.html#method_getParentLayoutTemplate">getParentLayoutTemplate()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -804,6 +833,13 @@
                                 &nbsp;: <abbr title="\Cake\Datasource\QueryInterface">QueryInterface</abbr>    </span>
 </dt>
 <dd>ツリー構造のパスを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Service-ContentsService.html#method_getPrev">getPrev()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
+</dt>
+<dd>前のコンテンツを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a>
@@ -1214,7 +1250,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">408</span>
+    <span class="phpdocumentor-element-found-in__line">414</span>
 
     </aside>
 
@@ -1292,7 +1328,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1458</span>
+    <span class="phpdocumentor-element-found-in__line">1462</span>
 
     </aside>
 
@@ -1370,7 +1406,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">388</span>
 
     </aside>
 
@@ -1440,7 +1476,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">880</span>
+    <span class="phpdocumentor-element-found-in__line">884</span>
 
     </aside>
 
@@ -1610,7 +1646,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">434</span>
+    <span class="phpdocumentor-element-found-in__line">440</span>
 
     </aside>
 
@@ -1683,7 +1719,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">549</span>
+    <span class="phpdocumentor-element-found-in__line">555</span>
 
     </aside>
 
@@ -1753,7 +1789,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">693</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
     </aside>
 
@@ -1832,7 +1868,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1098</span>
+    <span class="phpdocumentor-element-found-in__line">1102</span>
 
     </aside>
 
@@ -1904,7 +1940,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1419</span>
+    <span class="phpdocumentor-element-found-in__line">1423</span>
 
     </aside>
 
@@ -1977,7 +2013,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">959</span>
+    <span class="phpdocumentor-element-found-in__line">963</span>
 
     </aside>
 
@@ -2056,7 +2092,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1316</span>
+    <span class="phpdocumentor-element-found-in__line">1320</span>
 
     </aside>
 
@@ -2281,7 +2317,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1369</span>
+    <span class="phpdocumentor-element-found-in__line">1373</span>
 
     </aside>
 
@@ -2343,7 +2379,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">352</span>
 
     </aside>
 
@@ -2421,7 +2457,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">641</span>
+    <span class="phpdocumentor-element-found-in__line">647</span>
 
     </aside>
 
@@ -2474,6 +2510,132 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCrumbs">
+        getCrumbs()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getCrumbs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1621</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パンくず用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCrumbs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGlobalNavi">
+        getGlobalNavi()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getGlobalNavi" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1597</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">グローバルナビ用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getGlobalNavi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>|false</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>|false</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getIndex">
         getIndex()
         <a href="classes/BaserCore-Service-ContentsService.html#method_getIndex" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2481,7 +2643,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">286</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -2611,6 +2773,69 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getLocalNavi">
+        getLocalNavi()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getLocalNavi" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1638</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ローカルナビ用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getLocalNavi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getNeighbors">
         getNeighbors()
         <a href="classes/BaserCore-Service-ContentsService.html#method_getNeighbors" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2618,7 +2843,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1384</span>
+    <span class="phpdocumentor-element-found-in__line">1388</span>
 
     </aside>
 
@@ -2753,6 +2978,132 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getNext">
+        getNext()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getNext" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1572</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">次のコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getNext</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getParent">
+        getParent()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getParent" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1656</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">親コンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getParentLayoutTemplate">
         getParentLayoutTemplate()
         <a href="classes/BaserCore-Service-ContentsService.html#method_getParentLayoutTemplate" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2760,7 +3111,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">722</span>
+    <span class="phpdocumentor-element-found-in__line">729</span>
 
     </aside>
 
@@ -2768,15 +3119,22 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getParentLayoutTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getParentLayoutTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parentId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -2832,7 +3190,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1444</span>
+    <span class="phpdocumentor-element-found-in__line">1448</span>
 
     </aside>
 
@@ -2885,6 +3243,69 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\QueryInterface">QueryInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPrev">
+        getPrev()
+        <a href="classes/BaserCore-Service-ContentsService.html#method_getPrev" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1547</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">前のコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getPrev</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
             &mdash;
         
     
@@ -2972,7 +3393,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1302</span>
+    <span class="phpdocumentor-element-found-in__line">1306</span>
 
     </aside>
 
@@ -3042,7 +3463,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
     </aside>
 
@@ -3112,7 +3533,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1482</span>
+    <span class="phpdocumentor-element-found-in__line">1486</span>
 
     </aside>
 
@@ -3260,7 +3681,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">329</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
     </aside>
 
@@ -3407,7 +3828,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">784</span>
+    <span class="phpdocumentor-element-found-in__line">788</span>
 
     </aside>
 
@@ -3511,7 +3932,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">758</span>
+    <span class="phpdocumentor-element-found-in__line">762</span>
 
     </aside>
 
@@ -3591,7 +4012,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">493</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -3670,7 +4091,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">564</span>
+    <span class="phpdocumentor-element-found-in__line">570</span>
 
     </aside>
 
@@ -3740,7 +4161,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">520</span>
+    <span class="phpdocumentor-element-found-in__line">526</span>
 
     </aside>
 
@@ -3880,7 +4301,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1271</span>
+    <span class="phpdocumentor-element-found-in__line">1275</span>
 
     </aside>
 
@@ -3962,7 +4383,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1331</span>
+    <span class="phpdocumentor-element-found-in__line">1335</span>
 
     </aside>
 
@@ -4043,7 +4464,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1208</span>
+    <span class="phpdocumentor-element-found-in__line">1212</span>
 
     </aside>
 
@@ -4124,7 +4545,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1257</span>
+    <span class="phpdocumentor-element-found-in__line">1261</span>
 
     </aside>
 
@@ -4194,7 +4615,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">976</span>
+    <span class="phpdocumentor-element-found-in__line">980</span>
 
     </aside>
 
@@ -4264,7 +4685,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">995</span>
+    <span class="phpdocumentor-element-found-in__line">999</span>
 
     </aside>
 
@@ -4344,7 +4765,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">918</span>
+    <span class="phpdocumentor-element-found-in__line">922</span>
 
     </aside>
 
@@ -4414,7 +4835,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1497</span>
+    <span class="phpdocumentor-element-found-in__line">1501</span>
 
     </aside>
 
@@ -4491,7 +4912,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">578</span>
+    <span class="phpdocumentor-element-found-in__line">584</span>
 
     </aside>
 
@@ -4563,7 +4984,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">621</span>
+    <span class="phpdocumentor-element-found-in__line">627</span>
 
     </aside>
 
@@ -4635,7 +5056,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1052</span>
+    <span class="phpdocumentor-element-found-in__line">1056</span>
 
     </aside>
 
@@ -4780,7 +5201,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1528</span>
+    <span class="phpdocumentor-element-found-in__line">1532</span>
 
     </aside>
 
@@ -4857,7 +5278,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1356</span>
+    <span class="phpdocumentor-element-found-in__line">1360</span>
 
     </aside>
 
@@ -4934,7 +5355,7 @@ targetId が空の場合は、同親中、一番下に移動する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">668</span>
+    <span class="phpdocumentor-element-found-in__line">674</span>
 
     </aside>
 
@@ -5005,7 +5426,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">938</span>
+    <span class="phpdocumentor-element-found-in__line">942</span>
 
     </aside>
 
@@ -5075,7 +5496,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">862</span>
+    <span class="phpdocumentor-element-found-in__line">866</span>
 
     </aside>
 
@@ -5167,7 +5588,7 @@ TODO: キャッシュビヘイビアー実装後復活させる</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ContentsService.php"><a href="files/plugins-baser-core-src-service-contentsservice.html"><abbr title="plugins/baser-core/src/Service/ContentsService.php">ContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1139</span>
+    <span class="phpdocumentor-element-found-in__line">1143</span>
 
     </aside>
 

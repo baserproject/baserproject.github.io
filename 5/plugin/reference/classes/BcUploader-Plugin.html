@@ -288,12 +288,6 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcfront.html" class="">BcFront</a>
 </h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/bcfront-view.html" class="">View</a>
-                
-            </li>
-            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcinstaller.html" class="">BcInstaller</a>
@@ -549,7 +543,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Plugin.php"><a href="files/plugins-bc-uploader-src-plugin.html"><abbr title="plugins/bc-uploader/src/Plugin.php">Plugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -591,6 +585,13 @@
 <dd>bootstrap</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-BcPlugin.html#method_contentsRoutingForReverse">contentsRoutingForReverse()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>    </span>
+</dt>
+<dd>コンテンツ管理ルーティング</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-BcPlugin.html#method_createAssetsSymlink">createAssetsSymlink()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -610,6 +611,13 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>アップデートプログラムを実行する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-BcPlugin.html#method_frontPageRouting">frontPageRouting()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>    </span>
+</dt>
+<dd>プラグインのフロントエンド用ルーティング（プラグイン名がダッシュ区切りの場合）</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a>
@@ -663,6 +671,13 @@
 <dd>マイグレーションを実行する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-BcPlugin.html#method_prefixRouting">prefixRouting()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>    </span>
+</dt>
+<dd>プラグインの管理画面用ルーティング</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-BcPlugin.html#method_rollbackDb">rollbackDb()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -670,11 +685,11 @@
 <dd>プラグインのテーブルをリセットする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-BcPlugin.html#method_routes">routes()</a>
+    <a href="classes/BcUploader-Plugin.html#method_routes">routes()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>ルーティング設定</dd>
+<dd>Routes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcUploader-Plugin.html#method_services">services()</a>
@@ -684,11 +699,25 @@
 <dd>services</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-BcPlugin.html#method_siteRouting">siteRouting()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>    </span>
+</dt>
+<dd>サブサイトのプラグイン用ルーティング</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcUploader-Plugin.html#method_uninstall">uninstall()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>プラグインをアンインストールする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-BcPlugin.html#method_updateDateNow">updateDateNow()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>対象のフィールドを現在の日付に更新する</dd>
 
         </dl>
 
@@ -718,7 +747,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -754,7 +783,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">516</span>
+    <span class="phpdocumentor-element-found-in__line">566</span>
 
     </aside>
 
@@ -831,7 +860,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
     </aside>
 
@@ -867,6 +896,58 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_contentsRoutingForReverse">
+        contentsRoutingForReverse()
+        <a href="classes/BaserCore-BcPlugin.html#method_contentsRoutingForReverse" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">436</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">コンテンツ管理ルーティング</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">contentsRoutingForReverse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>リバースルーティングのために必要</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routes</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$plugin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_createAssetsSymlink">
         createAssetsSymlink()
         <a href="classes/BaserCore-BcPlugin.html#method_createAssetsSymlink" class="headerlink"><i class="fas fa-link"></i></a>
@@ -874,7 +955,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">187</span>
 
     </aside>
 
@@ -934,7 +1015,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1004,7 +1085,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -1020,6 +1101,60 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_frontPageRouting">
+        frontPageRouting()
+        <a href="classes/BaserCore-BcPlugin.html#method_frontPageRouting" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">462</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">プラグインのフロントエンド用ルーティング（プラグイン名がダッシュ区切りの場合）</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">frontPageRouting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>BcPrefixAuthより先に定義が必要
+定義しない場合、CSRFトークン取得などの処理にて、BcPrefixAuthのルーティングに捕まり認証を求められてしまう場合がある。
+例）認証付 MyPage の定義で、alias を '/' とした場合</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routes</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$plugin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
             &mdash;
         
     
@@ -1107,7 +1242,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -1180,7 +1315,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">272</span>
 
     </aside>
 
@@ -1331,7 +1466,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -1391,7 +1526,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Plugin.php"><a href="files/plugins-bc-uploader-src-plugin.html"><abbr title="plugins/bc-uploader/src/Plugin.php">Plugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -1441,7 +1576,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -1477,6 +1612,58 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_prefixRouting">
+        prefixRouting()
+        <a href="classes/BaserCore-BcPlugin.html#method_prefixRouting" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">487</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">プラグインの管理画面用ルーティング</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">prefixRouting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>プラグイン名がダッシュ区切りの場合</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routes</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$plugin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_rollbackDb">
         rollbackDb()
         <a href="classes/BaserCore-BcPlugin.html#method_rollbackDb" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1484,7 +1671,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">352</span>
+    <span class="phpdocumentor-element-found-in__line">353</span>
 
     </aside>
 
@@ -1558,44 +1745,27 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_routes">
         routes()
-        <a href="classes/BaserCore-BcPlugin.html#method_routes" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BcUploader-Plugin.html#method_routes" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Plugin.php"><a href="files/plugins-bc-uploader-src-plugin.html"><abbr title="plugins/bc-uploader/src/Plugin.php">Plugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">ルーティング設定</p>
+        <p class="phpdocumentor-summary">Routes</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">routes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">routes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>次のルートを設定するが、未インストールの場合はスキップする。</p>
-<h3>コンテンツ管理のプラグイン用のリバースルーティング</h3>
-<p>['plugin' =&gt; 'BcBlog', 'controller' =&gt; 'Blog', 'action' =&gt; 'index'] → /news/
-['plugin' =&gt; 'BcBlog', 'controller' =&gt; 'Blog', 'action' =&gt; 'archives', 1] → /news/archives/1</p>
-<h3>管理画面のプラグイン用ルーティング</h3>
-<p>/baser/admin/plugin-name/controller_name/index
-/baser/admin/plugin-name/controller_name/action_name/*</p>
-<h3>フロントエンドのプラグイン用ルーティング</h3>
-<p>/plugin-name/controller_name/index
-/plugin-name/controller_name/action_name/*</p>
-<h3>サブサイトのプラグイン用ルーティング</h3>
-<p>/site_alias/plugin-name/controller_name/index
-/site_alias/plugin-name/controller_name/action_name/*</p>
-<h3>APIのプラグイン用ルーティング</h3>
-<p>/baser/api/plugin-name/controller_name/index.json
-/baser/api/plugin-name/controller_name/action_name/*.json</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$routes</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1603,33 +1773,6 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
@@ -1650,7 +1793,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Plugin.php"><a href="files/plugins-bc-uploader-src-plugin.html"><abbr title="plugins/bc-uploader/src/Plugin.php">Plugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -1706,6 +1849,58 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_siteRouting">
+        siteRouting()
+        <a href="classes/BaserCore-BcPlugin.html#method_siteRouting" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">534</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">サブサイトのプラグイン用ルーティング</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">siteRouting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$routes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span></code>
+
+        <section class="phpdocumentor-description"><p>プラグイン名がダッシュ区切りの場合</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$routes</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$plugin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Routing\RouteBuilder">RouteBuilder</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_uninstall">
         uninstall()
         <a href="classes/BcUploader-Plugin.html#method_uninstall" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1713,7 +1908,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Plugin.php"><a href="files/plugins-bc-uploader-src-plugin.html"><abbr title="plugins/bc-uploader/src/Plugin.php">Plugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -1740,6 +1935,85 @@
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updateDateNow">
+        updateDateNow()
+        <a href="classes/BaserCore-BcPlugin.html#method_updateDateNow" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">582</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">対象のフィールドを現在の日付に更新する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">updateDateNow</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fields</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$conditions</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     

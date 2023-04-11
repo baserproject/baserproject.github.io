@@ -288,12 +288,6 @@
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcfront.html" class="">BcFront</a>
 </h4>
-    <ul class="phpdocumentor-list">
-                    <li>
-                <a href="namespaces/bcfront-view.html" class="">View</a>
-                
-            </li>
-            </ul>
 
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/bcinstaller.html" class="">BcInstaller</a>
@@ -647,6 +641,41 @@
                                 &nbsp;: bool|<abbr title="\Cake\Event\Event">Event</abbr>    </span>
 </dt>
 <dd>イベントを発火</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_crumbs">get_crumbs()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>パンくず用のコンテンツ一覧を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_global_navi">get_global_navi()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>グローバルナビ用のコンテンツ一覧を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_local_navi">get_local_navi()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>ローカルナビ用のコンテンツ一覧を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_next">get_next()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>次のコンテンツを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_prev">get_prev()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>前のコンテンツを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_getAccessToken">getAccessToken()</a>
@@ -1097,7 +1126,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1266,7 +1295,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">199</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
     </aside>
 
@@ -1404,6 +1433,356 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_crumbs">
+        get_crumbs()
+        <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_crumbs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/ContentsController.php">ContentsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">209</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パンくず用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get_crumbs</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_global_navi">
+        get_global_navi()
+        <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_global_navi" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/ContentsController.php">ContentsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">177</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">グローバルナビ用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get_global_navi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_local_navi">
+        get_local_navi()
+        <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_local_navi" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/ContentsController.php">ContentsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">241</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ローカルナビ用のコンテンツ一覧を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get_local_navi</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_next">
+        get_next()
+        <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_next" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/ContentsController.php">ContentsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">145</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">次のコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get_next</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_get_prev">
+        get_prev()
+        <a href="classes/BaserCore-Controller-Api-ContentsController.html#method_get_prev" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/ContentsController.php">ContentsController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">前のコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">get_prev</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Service-ContentsServiceInterface.html"><abbr title="\BaserCore\Service\ContentsServiceInterface">ContentsServiceInterface</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -1763,7 +2142,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">523</span>
 
     </aside>
 
@@ -1831,7 +2210,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">323</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -1891,7 +2270,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -1961,7 +2340,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -2098,7 +2477,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">263</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -2181,7 +2560,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">467</span>
 
     </aside>
 
@@ -2282,7 +2661,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">403</span>
+    <span class="phpdocumentor-element-found-in__line">411</span>
 
     </aside>
 
@@ -2387,7 +2766,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -2490,7 +2869,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">290</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -2551,7 +2930,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -2612,7 +2991,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
