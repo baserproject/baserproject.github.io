@@ -1,69 +1,67 @@
 # 独自のテーマを作成する
 
-チュートリアルを通じて、baserCMSが提供する機能に触れながら新しくテーマを作成します。
+チュートリアルを通じて、baserCMSが提供する機能に触れながら新しくテーマを作成しましょう。
 
 ## 基礎知識
 
-基礎的なHTML、CSS、PHPとCakePHPの知識を要します。
-CakePHPのことで不明なことがある場合は、CakePHPの[クックブック](https://book.cakephp.org/4/ja/index.html)を参照してください。
+テーマの作成には、基礎的なHTML、CSS、そして、少しのPHPの知識を要します。
 
 ### テンプレートの構成
 
-<!--
-    TODO: 図のせる
--->
+<p style="text-align:center">
+    <img src="img/layout.jpg" alt="テンプレートの構成" style="border:none;width:400px" />
+</p>
 
-baserCMSのテンプレートは上図のように構成されています。
+baserCMSのテンプレートは上の図のように構成されています。
 
-- レイアウト
+- [レイアウト](glossary#レイアウトテンプレート)
     - Webページの全体を構成するテンプレートです
     - エレメントやコンテンツを配置します
-- エレメント
+- [エレメント](glossary#エレメントテンプレート)
     - 繰り返し利用される部品となるテンプレートです
     - ヘッダーやフッターなどに利用します
-- コンテンツ
+- [コンテンツ](glossary#コンテンツテンプレート)
     - CMSで管理しているコンテンツが出力されるエリアです
 
 
 ## チュートリアルの準備
 
-ローカル環境を構築し、開発を始められる状態にしてください。
-- [ローカル環境を構築する](/5/developer/build_local_env)
+まずは、baserCMSをインストールし、テーマの制作を開始できる状態にしてください。
+- [インストールガイド](../introduce/)
 
-## テーマの作成
+## テーマフォルダの作成
 
-### テーマフォルダの作成
-
-pluginsディレクトリに任意の名前のフォルダを作成します。
-ここでは「corp-theme」というテーマ名で進めます。
+`/plugins` ディレクトリに任意の名前のフォルダを作成します。
+ここでは「CorpTheme」というテーマ名で進めます。
 チュートリアルではこのフォルダを「テーマフォルダ」と呼びます。
 
-`{baserCMSの設置フォルダ}/plugins/corp-theme/`
+```shell
+{baserCMSの設置フォルダ}/plugins/CorpTheme/
+```
 
-### 最小限のフォルダ・ファイルを作成する
+## 最小限のフォルダ・ファイルを作成する
 
-テーマフォルダの中に以下の構成となるようにフォルダ・ファイルを作成します。
-ファイルの中身は次のセクションで書いていくので空で構いません。
-※screenshot.pngは現時点でなくて構いません
+テーマフォルダの中に以下の構成となるようにフォルダ・ファイルを作成します。  
+ファイルの中身は次のセクションで書いていくので空で構いません。  
+※ screenshot.pngは現時点でなくて構いません
 
-- corp-theme/
-    - src/
-        Plugin.php
+- CorpTheme/
+    - src/  
+        - Plugin.php
     - templates/
         - layout/
             - default.php
     - config.php
     - screenshot.png
 
-### プラグインファイルを作成する
+### プラグインクラスを作成する
 
-baserCMSでは、テーマもプラグインのひとつとして動作します。
-プラグインの動作のために必要なおまじないとして、以下の内容で `corp-theme/src/Plugin.php` を作成します。
+baserCMSでは、テーマもプラグインのひとつとして動作します。  
+プラグインの動作のために必要なおまじないとして、以下の内容でプラグインクラス を作成します。
 
 ```php
 <?php
-declare(strict_types=1);
-
+// CorpTheme/src/Plugin.php
 namespace CorpTheme;
 
 use BaserCore\BcPlugin;
@@ -74,10 +72,11 @@ class Plugin extends BcPlugin{}
 ### Configファイルを作成する
 
 baserCMSのコアに、プラグインの情報を認識させるためにConfigファイルを作成します。
-以下の内容を参考に `corp-theme/config.php` を作成します。
+以下の内容を参考に作成します。
 
 ```php
 <?php
+// CorpTheme/config.php
 return [
     'type' => 'Theme',
     'title' => 'コーポレートテーマ',
@@ -88,22 +87,21 @@ return [
 ];
 ```
 
-- type: `Theme` を記載してください。
-- title: テーマの名前を任意で記載してください。
-- description: テーマの詳細を記載してください。
-- author: 制作者・企業の名前を記載してください。
-- url: 制作者・企業のURLを記載してください。
-- installMessage: テーマでは利用しません。空白のままにしてください。
+- **type**: `Theme` を記載してください。そうすることでテーマ管理で認識できます。
+- **title**: テーマの名前を任意で記載してください。
+- **description**: テーマの詳細を記載してください。
+- **author**: 制作者・企業の名前を記載してください。
+- **url**: 制作者・企業のURLを記載してください。
+- **installMessage**: インストール完了時にメッセージを表示したい場合に入力します。
 
-### レイアウトテンプレートの作成
-
-
+## レイアウトテンプレートの作成
 レイアウトテンプレートとは、Webページの枠組みを記述するファイルです。
+
 全ての Webページでの共通部分を含める事でメンテナンス性を高める事ができます。
 このファイルを変更するだけで、あらかじめ用意されているブログや、メールフォームのレイアウトも変更する事ができます。
 
-以下の内容で `corp-theme/templates/layout/default.php` を作成します。
-これからこのファイルに、baserCMSのタグを組み込んでいきます。
+以下の内容で `CorpTheme/templates/layout/default.php` を作成します。
+これからこのファイルに、baserCMS用のタグ「baserタグ」を組み込んでいきます。
 
 ```php
 <!DOCTYPE html>
@@ -115,9 +113,9 @@ return [
 </head>
 <body>
 
-    <div id="Head">
+    <header>
         ヘッダー内容を記述
-    </div>
+    </header>
 
     <div id="Wrap">
         <div id="contensBody">
@@ -128,139 +126,183 @@ return [
         </div>
     </div>
 
-    <div id="Footer">
+    <foolter>
         フッター内容を記述
-    </div>
+    </foolter>
 
 </body>
 </html>
 ```
 
-#### baserCMSのタグを学ぶ
+### baserCMSのタグを学ぶ
 
-baserCMSでは、CMS内で管理しているコンテンツを動的に表示・利用するために「baserタグ」を提供しています。
-テーマ内で「baserタグ」を利用することでます。
-baserタグは以下のような形で利用します。
+baserCMSでは、CMS内で管理しているコンテンツを動的に表示するために「baserタグ」を提供しています。
+テーマのテンプレート上で「baserタグ」を利用することでき、次のような形で利用します。
 
+タイトルタグを出力する例
 ```php
 <?php $this->BcBaser->title() ?>
 ```
 
-baserタグには、大きく3つの系統があります。
+baserタグには、大きく３つの系統があります。
 
-- 取得系
+- **取得系**
     - コンテンツの情報などを取得します。
     - e.g. `$this->BcBaser->getTitle()`
-- 出力系
+- **出力系**
     - 情報の取得と出力を行います。
     - e.g. `$this->BcBaser->title()`
-- 判定系
+- **判定系**
     - 現在のページ情報やユーザ情報から真偽を判定します。条件分岐に利用します。
     - e.g. `$this->BcBaser->isHome()`
 
 
 ### baserタグを埋め込む
 
-`corp-theme/templates/layout/default.php` にbaserタグを埋め込んでいきます。
+`CorpTheme/templates/layout/default.php` にbaserタグを埋め込んでいきます。
 ファイルの中身を以下に書き換えてください。
 
 ```php
-<?php $this->BcBaser->docType('html5') ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<?php $this->BcBaser->title() ?>
 	<?php $this->BcBaser->metaDescription() ?>
 	<?php $this->BcBaser->metaKeywords() ?>
+	<?php $this->BcBaser->scripts() ?>
 </head>
 <body>
 
-    <div id="Head">
+    <?php $this->BcBaser->func() ?>
+
+    <header>
         ヘッダー内容を記述
-    </div>
+    </header>
 
     <div id="Wrap">
         <div id="contensBody">
 			<?php $this->BcBaser->content() ?>
+			<?php $this->BcBaser->contentsNavi() ?>
         </div>
         <div id="Sidebar">
-            <?php $this->BcBaser->contentsMenu() ?>
+            <?php $this->BcBaser->widgetArea() ?>
         </div>
     </div>
 
-    <div id="Footer">
+    <footer>
         フッター内容を記述
-    </div>
+    </footer>
 
 </body>
 </html>
 ```
 
-#### $this->BcBaser->docType('html5')
+### タイトルタグ
 
-ドキュメントタイプを指定するタグを出力します。
-以下のように展開されます。
-
-```html
-<!DOCTYPE html>
+```php
+<?php $this->BcBaser->title() ?>
 ```
 
-#### $this->BcBaser->title()
-
 メタタグのtitleを出力します。
-以下のように展開されます。
+次のように展開されます。
 
 ```html
 <title>コンテンツタイトル  | カテゴリ| サイト名</title>
 ```
 
-#### $this->BcBaser->metaDescription()
+### メタディスクリプションタグ
+
+```php
+<?php $this->BcBaser->metaDescription() ?>
+```
 
 ページ説明文用のメタタグを出力します。
-以下のように展開されます。
+次のように展開されます。
 
 ```html
 <meta name="description" content="baserCMS は、CakePHPを利用し、環境準備の素早さに重点を置いた基本開発支援プロジェクトです。WEBサイトに最低限必要となるプラグイン、そしてそのプラグインを組み込みやすい管理画面、認証付きのメンバーマイページを最初から装備しています。">
 ```
 
-#### $this->BcBaser->metaKeywords()
+### メタキーワードタグ
+
+```php
+<?php $this->BcBaser->metaKeywords() ?>
+```
 
 キーワードメタタグを出力します。
-以下のように展開されます。
+次のように展開されます。
 
 ```html
 <meta name="keywords" content="baser,CMS,コンテンツマネジメントシステム,開発支援">
 ```
 
-#### その他
 
-baserCMSは他にも多数のbaserタグを提供しています。
-是非、[関数リファレンス](reference/index)を御覧ください。
+### scripts タグ
+閉じヘッダータグの直前に配置します。コンテンツ内で定義したスクリプトやCSS、ツールバー表示用のスクリプトやCSS、そして、管理システムのシステム基本設定で設定したヘッダー埋め込みスクリプトなどを出力します。おまじないと思ってください。
+```php
+<?php $this->BcBaser->scripts() ?>
+```
 
-### 共通部品を利用する
+### func タグ
+ツールバー用のHTMLや、管理システムのシステム基本設定で設定したフッター埋め込みスクリプト等を出力します。こちらもおまじないと思ってください。
+
+なお、ツールバーを表示するには、scripts タグと func タグの両方の定義が必要です。
+```php
+<?php $this->BcBaser->func() ?>
+```
+    
+### コンテンツタグ
+CMSで登録したコンテンツデータを出力します。
+```php
+<?php $this->BcBaser->content() ?>
+```
+
+### コンテンツナビゲーションタグ
+ページの前後ナビゲーションを出力します。
+```php
+<?php $this->BcBaser->contentsNavi() ?>
+```
+
+### ウィジェットエリアタグ
+管理システムで設定したウィジェットエリアを出力します。
+
+```php
+<?php $this->BcBaser->widgetArea() ?>
+```
+         
+### その他
+
+baserCMSでは、他にも多数のbaserタグを提供しています。
+是非、[関数リファレンス](reference/)を御覧ください。
+
+
+## 共通部品を利用する
 
 これまででbaserタグを利用して、動的に変化する文章などを表示することができました。
+
 ヘッダーやフッターのように、別のレイアウトテンプレートからも同じテンプレートを共通で利用するケースがあります。
 baserCMSでは、エレメントと呼ばれる共通部品を作成・利用できる機能を提供しています。
 
-`corp-theme/templates/` に `element` フォルダを作成し、その中に `header.php` と `footer.php` を作成します。
+`CorpTheme/templates/` に `element` フォルダを作成し、その中に `header.php` と `footer.php` を作成します。
 
-- corp-theme/
+- CorpTheme/
     - src/
         Plugin.php
     - templates/
         - element/
-            - header.php
-            - footer.php
+            - **header.php**
+            - **footer.php**
         - layout/
             - default.php
     - config.php
     - screenshot.png
 
-#### ヘッダーファイルを作成する
+### ヘッダーファイルを作成する
 
-以下の内容で `corp-theme/templates/element/header.php` を作成します。
+次の内容でヘッダーファイルを作成します。
 
 ```php
+// CorpTheme/templates/element/header.php
 <header>
     <ul>
         <li><a href="/">トップページ</a></li>
@@ -268,101 +310,139 @@ baserCMSでは、エレメントと呼ばれる共通部品を作成・利用で
 </header>
 ```
 
-#### フッターファイルを作成する
+### フッターファイルを作成する
 
-以下の内容で `corp-theme/templates/element/footer.php` を作成します。
+次の内容でフッターファイルを作成します。
 
 ```php
-<footer class="bs-footer">
-	<p> Copyright(C)
-		<?php $this->BcBaser->copyYear(2022) ?>
-		baserCMS Users Community All rights Reserved.
-	</p>
+// CorpTheme/templates/element/footer.php
+<footer>
+    <p> Copyright(C)
+        <?php $this->BcBaser->copyYear(2022) ?>
+        baserCMS Users Community All rights Reserved.
+    </p>
 </footer>
 ```
 
-`$this->BcBaser->copyYear()` はコピーライト用の年を出力するbaserタグです。
-`2022 - 2023` のように出力されます。
+`$this->BcBaser->copyYear()` はコピーライト用の年を出力するbaserタグです。  
+開始年を指定すると `2022 - 2023` のように出力されます。
 
-#### エレメントを埋め込む
 
-`corp-theme/templates/layout/default.php` にbaserタグを使ってエレメントを埋め込みます。
+### エレメントを埋め込む
+レイアウトにbaserタグを使ってエレメントを埋め込みます。
 
 ファイルの中身を以下に書き換えてください。
 
 ```php
-<?php $this->BcBaser->docType('html5') ?>
+// CorpTheme/templates/layout/default.php
+<!DOCTYPE html>
 <html>
 <head>
-	<?php $this->BcBaser->title() ?>
-	<?php $this->BcBaser->metaDescription() ?>
-	<?php $this->BcBaser->metaKeywords() ?>
+    <?php $this->BcBaser->title() ?>
+    <?php $this->BcBaser->metaDescription() ?>
+    <?php $this->BcBaser->metaKeywords() ?>
 </head>
 <body>
 
-    <div id="Head">
-        <?php $this->BcBaser->header() ?>
-    </div>
+    <?php $this->BcBaser->func() ?>
+
+    <?php $this->BcBaser->header() ?>
 
     <div id="Wrap">
         <div id="contensBody">
-			<?php $this->BcBaser->content() ?>
+            <?php $this->BcBaser->content() ?>
+            <?php $this->BcBaser->contentsNavi() ?>
         </div>
         <div id="Sidebar">
-            <?php $this->BcBaser->contentsMenu() ?>
+            <?php $this->BcBaser->widgetArea() ?>
         </div>
     </div>
 
-    <div id="Footer">
-        <?php $this->BcBaser->footer() ?>
-    </div>
+    <?php $this->BcBaser->footer() ?>
 
 </body>
 </html>
 ```
 
-`$this->BcBaser->header()` `$this->BcBaser->footer()` は、`corp-theme/templates/element/` からそれぞれ `header.php` と `footer.php` を読み込むbaserタグです。
+### ヘッダータグ
 
-baserCMSが標準で提供しているエレメントを作成、利用する場合は、 `$this->BcBaser->element()` を使用してください。
-`$this->BcBaser->element('sidebar')` と記述した場合、 `/テーマフォルダ/templates/element/sidebar.php` を読み込みます。
+ヘッダータグは、エレメントフォルダ内の `header.php` を読み込みます。
+
+```php
+<?php $this->BcBaser->header() ?>
+```
+
+### フッタータグ
+フッタータグは、エレメントフォルダ内の `footer.php` を読み込みます。
+
+```php
+<?php $this->BcBaser->footer() ?>
+```
+
+### その他のエレメント
+その他のエレメントを作成し、読み込む場合は、`element` 関数を利用します。
+
+次の場合、`Corptheme/templates/element/sidebar.php` を読み込みます。
+```php
+$this->BcBaser->element('sidebar')
+```
 
 
-### テーマを有効化する
+## テーマを有効化する
 
 これまで作成してきたテーマを確認します。
-baserCMSの管理画面にログインし、サイドナビ「テーマ管理」 > 「テーマ」を選択します。
-サンプルテーマの他に今回作成した「コーポレートテーマ（CorpTheme）」が表示されています。
-イメージ画像※下部のチェックボックスをクリックすると、「テーマを適用します。よろしいですか？」とポップアップで表示されるので「OK」をクリックします。
 
-※ screenshot.pngを作成していない場合「NO IMAGE」画像が表示されます。
+baserCMSの管理画面にログインし、`テーマ管理` を選択すると、サンプルテーマの他に今回作成した「コーポレートテーマ（CorpTheme）」が表示されています。
+
+対象テーマ下部のチェックボタンをクリックすると、「テーマを適用します。よろしいですか？」とポップアップで表示されるので「OK」をクリックします。
 
 テーマが適用されると、「現在のテーマ」が「コーポレートテーマ（CorpTheme）」に変わっていることが確認できます。
+
 管理画面左上の「サイト表示」をクリックし、フロントサイトにアクセスしCSSの適用されていない画面が表示されていればテーマが切り替わっています。
 
-## もっと詳しく知る
+チュートリアルはこれで終了です。お疲れさまでした！
 
-- [関数リファレンス](reference/index)
-- [テーマのフォルダ構造](folder)
-- [用語集]()
+## アセットファイルを配置する
 
-### 静的ファイルを配置する
+CSSや画像、JavaScript等のアセットファイルは、テーマフォルダの `webroot` フォルダ配下に配置します。
 
-CSSや画像、JavaScript等の静的ファイルは、テーマフォルダの `webroot` フォルダ配下にフォルダとファイルを配置します。
-
-- corp-theme/
+- CorpTheme/
     - webroot/
-        - img/
-        - css/
-        - js/
+        - **img/**
+        - **css/**
+        - **js/**
 
-これらは以下のように呼び出すことができます。
+これらは次のように呼び出すことができます。
 
 ```php
 <?php $this->BcBaser->js('example') ?>
 <?php $this->BcBaser->js(['example1.js', 'example2.js']) ?>
 ```
 
+## 静的HTMLを配置する
 
-## 作ったテーマを販売する
+HTMLなどの静的なファイルは、ドキュメントルート直下の `webroot` フォルダに配置します。
 
-- [プラグイン・テーマを配布・販売する](/5/developer/market/sell)
+`test.html` ファイルを `webroot` フォルダに配置します。 
+```shell
+/webroot/test.html
+```
+
+次のURLで参照することができます。
+
+```shell
+https://your-domain/test.html
+```
+
+## 作ったテーマを配布・販売する
+
+作ったテーマは baserマーケットで配布・販売することができます。  
+詳しくは [プラグイン・テーマを配布・販売する](/5/developer/market/sell) をご覧ください。
+
+## テーマについてもっと詳しく知る
+
+- [用語集](glossary)
+- [テーマのフォルダ構造](folder)
+- [ファイル読み込みの優先順位](file_priority)
+- [テンプレートのカスタマイズ](customizing_template)
+- [関数リファレンス](reference/index)
