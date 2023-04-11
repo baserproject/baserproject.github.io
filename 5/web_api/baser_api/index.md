@@ -11,6 +11,11 @@ baser API は認証は不要です。
 ### コンテンツ
 - [コンテンツ情報の取得](baser-core/contents/view)
 - [コンテンツ一覧の取得](baser-core/contents/index)
+- [前のコンテンツの取得](baser-core/contents/get_next)
+- [次のコンテンツの取得](baser-core/contents/get_prev)
+- [グローバルナビ用のコンテンツ一覧の取得](baser-core/contents/get_global_navi)
+- [パンくず用のコンテンツ一覧の取得](baser-core/contents/get_crumbs)
+- [ローカルナビ用のコンテンツ一覧の取得](baser-core/contents/get_local_navi)
 
 ### コンテンツフォルダ
 - [コンテンツフォルダ情報の取得](baser-core/content_folders/view)
