@@ -30,8 +30,6 @@ cp docker/docker-compose.yml.default docker/docker-compose.yml
 
 ※ このファイルは自由に編集可能です。
 
-M1チップをご利用の場合は、docker-compose.yml の中で、コメントアウトされている `platform` が３箇所ほどあるので、そのコメントアウトを全て解除します。 
-
 ### Docker を起動する
 docker ディレクトリに移動してから Docker 起動します。
 
