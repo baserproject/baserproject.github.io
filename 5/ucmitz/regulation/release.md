@@ -32,8 +32,7 @@ vendor/bin/monorepo-builder merge
 その後、コミットしてプッシュします。
 
 ```shell
-git commit -a -m "ucmitz-2.0.0 をリリース"
-git push origin dev
+git commit -a -m "ucmitz-4.0.0 をリリース"
 ```
 
  
@@ -51,7 +50,7 @@ git merge dev
 自動的にタグを作成しプッシュします。
 
 ```shell
-vendor/bin/monorepo-builder release 2.0.0
+vendor/bin/monorepo-builder release 4.0.0
 ```
 
  
