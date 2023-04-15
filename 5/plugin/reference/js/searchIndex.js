@@ -8786,15 +8786,20 @@ Search.appendIndex(
             "summary": "\u30B3\u30DE\u30F3\u30C9\u306B\u3088\u308B\u5C55\u958B",
             "url": "classes/BaserCore-Utility-BcZip.html#method__extractByCommand"
         },                {
-            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A__destruct\u0028\u0029",
-            "name": "__destruct",
-            "summary": "Destruct",
-            "url": "classes/BaserCore-Utility-BcZip.html#method___destruct"
-        },                {
             "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_escapePath\u0028\u0029",
             "name": "_escapePath",
             "summary": "CUI\u0020\u5411\u3051\u306B\u30D1\u30B9\u3092\u30A8\u30B9\u30B1\u30FC\u30D7\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcZip.html#method__escapePath"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "zip\u751F\u6210",
+            "url": "classes/BaserCore-Utility-BcZip.html#method_create"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003AzipSub\u0028\u0029",
+            "name": "zipSub",
+            "summary": "\u518D\u5E30\u7684\u306Bzip\u751F\u6210\u5BFE\u8C61\u30D5\u30A1\u30A4\u30EB\u3092\u8FFD\u52A0\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcZip.html#method_zipSub"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A\u0024Zip",
             "name": "Zip",
@@ -8865,76 +8870,6 @@ Search.appendIndex(
             "name": "getKeyString",
             "summary": "",
             "url": "classes/KCAPTCHA.html#method_getKeyString"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip",
-            "name": "Simplezip",
-            "summary": "\u30B7\u30F3\u30D7\u30EB\u306AZIP\u5229\u7528\u30AF\u30E9\u30B9",
-            "url": "classes/BaserCore-Vendor-Simplezip.html"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003AgetMTime\u0028\u0029",
-            "name": "getMTime",
-            "summary": "Get\u0020Hexd\u0020Time",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_getMTime"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003AaddFolder\u0028\u0029",
-            "name": "addFolder",
-            "summary": "\u30D5\u30A9\u30EB\u30C0\u3092\u8FFD\u52A0\u3059\u308B",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_addFolder"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003AaddFile\u0028\u0029",
-            "name": "addFile",
-            "summary": "\u5727\u7E2E\u5BFE\u8C61\u30C7\u30FC\u30BF\u3092\u8FFD\u52A0",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_addFile"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003Aunix2DosTime\u0028\u0029",
-            "name": "unix2DosTime",
-            "summary": "Adds\u0020\u0022file\u0022\u0020to\u0020archive",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_unix2DosTime"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003AgetZippedData\u0028\u0029",
-            "name": "getZippedData",
-            "summary": "\u5727\u7E2E\u3055\u308C\u305F\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_getZippedData"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003Adownload\u0028\u0029",
-            "name": "download",
-            "summary": "\u5727\u7E2E\u30D5\u30A1\u30A4\u30EB\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3059\u308B",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_download"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003Aunzip\u0028\u0029",
-            "name": "unzip",
-            "summary": "\u89E3\u51CD\u3057\u305F\u30D5\u30A1\u30A4\u30EB\u3092\u51FA\u529B\u3059\u308B",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method_unzip"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A_readFile\u0028\u0029",
-            "name": "_readFile",
-            "summary": "ZIP\u30D5\u30A1\u30A4\u30EB\u3092\u8AAD\u307F\u8FBC\u3080",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#method__readFile"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A\u0024compressedData",
-            "name": "compressedData",
-            "summary": "\u5727\u7E2E\u30C7\u30FC\u30BF",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#property_compressedData"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A\u0024centralDirectory",
-            "name": "centralDirectory",
-            "summary": "Central\u0020Directory",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#property_centralDirectory"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A\u0024endOfCentralDirectory",
-            "name": "endOfCentralDirectory",
-            "summary": "End\u0020Of\u0020Central\u0020Directory\u0020Record",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#property_endOfCentralDirectory"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A\u0024oldOffset",
-            "name": "oldOffset",
-            "summary": "\u30AA\u30D5\u30BB\u30C3\u30C8",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#property_oldOffset"
-        },                {
-            "fqsen": "\\BaserCore\\Vendor\\Simplezip\u003A\u003A\u0024entries",
-            "name": "entries",
-            "summary": "\u30A8\u30F3\u30C8\u30EA\uFF08\u89E3\u51CD\u7528\uFF09",
-            "url": "classes/BaserCore-Vendor-Simplezip.html#property_entries"
         },                {
             "fqsen": "\\BaserCore\\View\\AppView",
             "name": "AppView",
@@ -9480,11 +9415,6 @@ Search.appendIndex(
             "name": "icon",
             "summary": "\u30A2\u30A4\u30B3\u30F3\uFF08favicon\uFF09\u30BF\u30B0\u3092\u51FA\u529B\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_icon"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AdocType\u0028\u0029",
-            "name": "docType",
-            "summary": "\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\u30BF\u30A4\u30D7\u3092\u6307\u5B9A\u3059\u308B\u30BF\u30B0\u3092\u51FA\u529B\u3059\u308B",
-            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_docType"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003Acss\u0028\u0029",
             "name": "css",
@@ -10371,6 +10301,11 @@ Search.appendIndex(
             "summary": "TEL\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_tel"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Anumber\u0028\u0029",
+            "name": "number",
+            "summary": "\u6570\u5024\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_number"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Apassword\u0028\u0029",
             "name": "password",
             "summary": "\u30D1\u30B9\u30EF\u30FC\u30C9\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
@@ -10675,11 +10610,6 @@ Search.appendIndex(
             "name": "booleanExists",
             "summary": "boolean\u578B\u7528\u3092\u6709\u7121\u3067\u51FA\u529B",
             "url": "classes/BaserCore-View-Helper-BcTextHelper.html#method_booleanExists"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcTextHelper\u003A\u003AdateTimeWareki\u0028\u0029",
-            "name": "dateTimeWareki",
-            "summary": "\u914D\u5217\u5F62\u5F0F\u306E\u548C\u66A6\u30C7\u30FC\u30BF\u3092\u6587\u5B57\u5217\u30C7\u30FC\u30BF\u306B\u5909\u63DB\u3059\u308B",
-            "url": "classes/BaserCore-View-Helper-BcTextHelper.html#method_dateTimeWareki"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcTextHelper\u003A\u003AmoneyFormat\u0028\u0029",
             "name": "moneyFormat",
@@ -13746,6 +13676,11 @@ Search.appendIndex(
             "summary": "CustomTablesController",
             "url": "classes/BcCustomContent-Controller-Admin-CustomTablesController.html"
         },                {
+            "fqsen": "\\BcCustomContent\\Controller\\Admin\\CustomTablesController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "before\u0020filter",
+            "url": "classes/BcCustomContent-Controller-Admin-CustomTablesController.html#method_beforeFilter"
+        },                {
             "fqsen": "\\BcCustomContent\\Controller\\Admin\\CustomTablesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u306E\u4E00\u89A7\u3092\u8868\u793A",
@@ -14091,6 +14026,11 @@ Search.appendIndex(
             "summary": "Initialize",
             "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_initialize"
         },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomContentsTable\u003A\u003AvalidationWithTable\u0028\u0029",
+            "name": "validationWithTable",
+            "summary": "\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u3092\u8A2D\u5B9A\u3059\u308B",
+            "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_validationWithTable"
+        },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomEntriesTable",
             "name": "CustomEntriesTable",
             "summary": "CustomEntriesTable",
@@ -14205,6 +14145,11 @@ Search.appendIndex(
             "name": "findAll",
             "summary": "Find\u0020all",
             "url": "classes/BcCustomContent-Model-Table-CustomEntriesTable.html#method_findAll"
+        },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomEntriesTable\u003A\u003AdecodeRow\u0028\u0029",
+            "name": "decodeRow",
+            "summary": "\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u306EJSON\u5316\u3057\u305F\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u30C7\u30B3\u30FC\u30C9\u3057\u3066\u8FD4\u3059",
+            "url": "classes/BcCustomContent-Model-Table-CustomEntriesTable.html#method_decodeRow"
         },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomEntriesTable\u003A\u003AisJson\u0028\u0029",
             "name": "isJson",
@@ -16746,11 +16691,6 @@ Search.appendIndex(
             "summary": "\u4E0D\u5B8C\u5168\u30C7\u30FC\u30BF\u30C1\u30A7\u30C3\u30AF",
             "url": "classes/BcMail-Model-Table-MailMessagesTable.html#method__validGroupComplete"
         },                {
-            "fqsen": "\\BcMail\\Model\\Table\\MailMessagesTable\u003A\u003A_validWarekiComplate\u0028\u0029",
-            "name": "_validWarekiComplate",
-            "summary": "\u548C\u66A6\u4E0D\u5B8C\u5168\u30C7\u30FC\u30BF\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BcMail-Model-Table-MailMessagesTable.html#method__validWarekiComplate"
-        },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailMessagesTable\u003A\u003AconvertToDb\u0028\u0029",
             "name": "convertToDb",
             "summary": "\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u7528\u306E\u30C7\u30FC\u30BF\u306B\u5909\u63DB\u3059\u308B",
@@ -18500,6 +18440,16 @@ Search.appendIndex(
             "name": "_execute",
             "summary": "\u30D5\u30A9\u30EB\u30C0\u306E\u4F5C\u6210\u3001\u30EA\u30CD\u30FC\u30E0\u3092\u5B9F\u884C\u3059\u308B",
             "url": "classes/BcThemeFile-Form-ThemeFolderForm.html#method__execute"
+        },                {
+            "fqsen": "\\BcThemeFile\\Form\\ThemeFolderForm\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Validation\u0020default",
+            "url": "classes/BcThemeFile-Form-ThemeFolderForm.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcThemeFile\\Form\\ThemeFolderForm\u003A\u003AduplicateThemeFolder\u0028\u0029",
+            "name": "duplicateThemeFolder",
+            "summary": "\u30D5\u30A9\u30EB\u30C0\u30FC\u306E\u91CD\u8907\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcThemeFile-Form-ThemeFolderForm.html#method_duplicateThemeFolder"
         },                {
             "fqsen": "\\BcThemeFile\\Model\\Entity\\ThemeFile",
             "name": "ThemeFile",

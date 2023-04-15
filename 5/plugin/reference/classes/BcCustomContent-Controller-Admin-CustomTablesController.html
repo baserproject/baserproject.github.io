@@ -545,7 +545,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">25</span>
 
     </aside>
 
@@ -678,11 +678,11 @@
 <dd>Ajax用のエラーを出力する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-AppController.html#method_beforeFilter">beforeFilter()</a>
+    <a href="classes/BcCustomContent-Controller-Admin-CustomTablesController.html#method_beforeFilter">beforeFilter()</a>
     <span>
-                                &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void    </span>
+                                &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
-<dd>Before Filter</dd>
+<dd>before filter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_beforeRender">beforeRender()</a>
@@ -1586,7 +1586,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
     </aside>
 
@@ -1678,22 +1678,26 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 >
     <h4 class="phpdocumentor-element__name" id="method_beforeFilter">
         beforeFilter()
-        <a href="classes/BaserCore-Controller-AppController.html#method_beforeFilter" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BcCustomContent-Controller-Admin-CustomTablesController.html#method_beforeFilter" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Before Filter</p>
+        <p class="phpdocumentor-summary">before filter</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">beforeFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void</span></code>
+                    <span class="phpdocumentor-signature__name">beforeFilter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void|null</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>削除処理について、レイアウト上の問題にて、vue.js のアプリケーション内に削除ボタンを配置する必要があるが、
+アプリケーション内では、FormHelper::postLink() の JS が無効化されてしまうため、vue.js 内で実装。
+_Token フィールドの生成が JS上で難しいため、validatePost を false にしている</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1712,30 +1716,18 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
+                    <span class="phpdocumentor-tag__name">see</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
+                                                 <section class="phpdocumentor-description"><p>plugins/bc-admin-third/src/bc_custom_content/js/admin/custom_tables/form.js</p>
+</section>
+
                                     </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void|null</span>
             &mdash;
         
     
@@ -1823,7 +1815,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
     </aside>
 
@@ -1958,7 +1950,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">69</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
     </aside>
 
@@ -2148,7 +2140,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php"><a href="files/plugins-bc-custom-content-src-controller-admin-customtablescontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Admin/CustomTablesController.php">CustomTablesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
