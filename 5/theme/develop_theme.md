@@ -94,6 +94,11 @@ return [
 - **url**: 制作者・企業のURLを記載してください。
 - **installMessage**: インストール完了時にメッセージを表示したい場合に入力します。
 
+## baserCMS４からの変更点
+baserCMS５は、CakePHP４に対応することにより、アーキテクチャーも大幅に変更となり、テーマやプラグインの作り方も変更となっています。詳細についてはこちらをご覧ください。
+
+- [baserCMS４からの変更点](../core/difference_from_basercms4)
+
 ## レイアウトテンプレートの作成
 レイアウトテンプレートとは、Webページの枠組みを記述するファイルです。
 
@@ -156,6 +161,8 @@ baserタグには、大きく３つの系統があります。
 - **判定系**
     - 現在のページ情報やユーザ情報から真偽を判定します。条件分岐に利用します。
     - e.g. `$this->BcBaser->isHome()`
+
+「baserタグ」についてもっと詳しく知りたい場合は、[テーマ関数リファレンス](reference/) をご覧ください。
 
 ### baserタグを埋め込む
 
@@ -464,4 +471,4 @@ https://your-domain/test.html
 - [テーマのフォルダ構造](folder)
 - [ファイル読み込みの優先順位](file_priority)
 - [テンプレートのカスタマイズ](customizing_template)
-- [関数リファレンス](reference/index)
+- [テーマ関数リファレンス](reference/index)

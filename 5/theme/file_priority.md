@@ -1,6 +1,6 @@
 # ファイル読み込みの優先順位
 
-baserCMSでは、テーマにおいて、動作に必要な全てのテンプレートを準備しなくても動くように、読み込み対象のファイルが現在のテーマに存在しない場合は、デフォルトテーマを読み込む仕様となっています。
+baserCMSでは、テーマにおいて、動作に必要な全てのテンプレートを準備しなくても動くように、読み込み対象のファイルが現在のテーマに存在しない場合は、コアテーマを読み込む仕様となっています。
 
 また、デフォルトのテーマのファイルをコピーして、現在のテーマに配置すると、そちらのファイルが優先して読み込まれるようになっています。
 
@@ -13,15 +13,15 @@ baserCMSでは、テーマにおいて、動作に必要な全てのテンプレ
 # レイアウトンプレート（defaultの場合）
 1. /plugins/{現在のテーマ}/templates/plugin/{PluginName}/layout/default.php
 2. /plugins/{現在のテーマ}/templates/layout/default.php
-3. /plugins/{デフォルトテーマ}/templates/plugin/{PluginName}/layout/default.php
-4. /plugins/{デフォルトテーマ}/templates/layout/default.php
+3. /plugins/{コアテーマ}/templates/plugin/{PluginName}/layout/default.php
+4. /plugins/{コアテーマ}/templates/layout/default.php
 5. /plugins/{PluginName}/templates/layout/default.php
 
 # コンテンツテンプレート
 1. /plugins/{現在のテーマ}/templates/plugin/{PluginName}/{ControllerName}/{action_name}.php
 2. /plugins/{現在のテーマ}/templates/{ControllerName}/{action_name}.php
-3. /plugins/{デフォルトテーマ}/templates/plugin/{PluginName}/{ControllerName}/{action_name}.php
-4. /plugins/{デフォルトテーマ}/templates/{ControllerName}/{action_name}.php
+3. /plugins/{コアテーマ}/templates/plugin/{PluginName}/{ControllerName}/{action_name}.php
+4. /plugins/{コアテーマ}/templates/{ControllerName}/{action_name}.php
 5. /plugins/{PluginName}/templates/{ControllerName}/{action_name}.php
 ```
 
