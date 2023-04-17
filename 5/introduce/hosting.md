@@ -14,11 +14,9 @@ baserCMSの動作を確認したレンタルサーバーはこちらより確認
 
 ## ホスティングでの利用手順
 ### パッケージをダウンロードする
-baserCMSオフィシャルサイトにて最新版のパッケージをダウンロードします。  
-※ baserCMS５をダウンロードできるのは、2023年4月19日以降となりますので、それまでは、GitHubより開発版をダウンロードしてください。
+baserCMSオフィシャルサイトにて最新版のパッケージをダウンロードします。
 
-- [baserCMSオフィシャル（baserCMS４）](https://basercms.net/download/index.html)
-- [GitHub（開発版）](https://github.com/baserproject/ucmitz/archive/refs/heads/dev.zip)
+- [baserCMSオフィシャル - ダウンロード](https://basercms.net/download/index.html)
 
 ### サーバーにアップロードする
 Zipファイルを解凍後、FTPやSSHを使って、ファイル全てをサーバーのドキュメントルートにアップロードします。
