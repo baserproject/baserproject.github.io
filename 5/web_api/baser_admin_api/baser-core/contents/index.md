@@ -81,7 +81,7 @@ GET /baser/api/admin/baser-core/contents.json
 
 ```
 
-通常一覧（list_type=tree）の場合
+ツリー構造（list_type=tree）の場合
 ```json
 {
   "contents": [
