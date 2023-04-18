@@ -20,7 +20,7 @@ GET /baser/api/admin/baser-core/contents.json
 
 | パラメーター名   | 型   | 内容                                   |
 |-----------|-----|--------------------------------------|
-| list_type | 文字列 | index：通常一覧（デフォルト）<br>tree：ツリー構造      |
+| list_type | 文字列 |レスポンスボディの掲載パターンを増やします。 <br>index：通常一覧（デフォルト）<br>tree：ツリー構造      |
 | limit     | 数値  | 取得件数                                 |
 | page      | 数値  | ページ数                                 |
 | id        | 数値  | コンテンツID                              |
