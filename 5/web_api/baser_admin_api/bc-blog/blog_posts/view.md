@@ -16,6 +16,12 @@ GET /baser/api/bc-blog/blog_posts/{blogPostId}.json
 GET /baser/api/admin/bc-blog/blog_posts/{blogPostId}.json
 ``` 
 
+### パスパラメーター
+
+| パラメーター名         | 型   | 内容       |
+|-----------------|-----|----------|
+| blogPostId | 数値  |ブログ記事のID |
+
 ### レスポンス例
 #### レスポンスボディ
 ```json

@@ -765,11 +765,12 @@
 <dd>NOT FOUNDページを出力する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_redirect">redirect()</a>
+    <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite">redirectIfIsNotSameSite()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
-<dd>Redirects to given $url, after turning off $this-&gt;autoRender.</dd>
+<dd>siteUrlや、sslUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
+setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそちらを優先する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_redirectIfIsRequireMaintenance">redirectIfIsRequireMaintenance()</a>
@@ -1659,7 +1660,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">722</span>
+    <span class="phpdocumentor-element-found-in__line">670</span>
 
     </aside>
 
@@ -1853,7 +1854,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php"><a href="files/plugins-bc-editor-template-src-controller-admin-editortemplatescontroller.html"><abbr title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php">EditorTemplatesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">141</span>
 
     </aside>
 
@@ -2008,7 +2009,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php"><a href="files/plugins-bc-editor-template-src-controller-admin-editortemplatescontroller.html"><abbr title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php">EditorTemplatesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">97</span>
 
     </aside>
 
@@ -2343,7 +2344,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">598</span>
+    <span class="phpdocumentor-element-found-in__line">574</span>
 
     </aside>
 
@@ -2388,7 +2389,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php"><a href="files/plugins-bc-editor-template-src-controller-admin-editortemplatescontroller.html"><abbr title="plugins/bc-editor-template/src/Controller/Admin/EditorTemplatesController.php">EditorTemplatesController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -2451,7 +2452,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">523</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -2512,56 +2513,59 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_redirect">
-        redirect()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_redirect" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_redirectIfIsNotSameSite">
+        redirectIfIsNotSameSite()
+        <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">640</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Redirects to given $url, after turning off $this-&gt;autoRender.</p>
+        <p class="phpdocumentor-summary">siteUrlや、sslUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
+setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそちらを優先する</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">redirect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">302</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"><p>Script execution is halted after the redirect.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>A string or array-based URL pointing to another location within the app, or an absolute URL</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$status</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">302</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Optional HTTP status code (eg: 404)</p>
-</section>
-
-            </dd>
-            </dl>
+                    <span class="phpdocumentor-signature__name">redirectIfIsNotSameSite</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void|null</span></code>
 
     
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void|null</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>if $exit = false. Terminates script if $exit = true</p>
-</section>
-
+        
     
 </article>
                     <article
@@ -2637,7 +2641,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">667</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
@@ -2694,7 +2698,7 @@ of rendered action if 'return' is set in $extra.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
     </aside>
 
@@ -2771,7 +2775,7 @@ of rendered action if 'return' is set in $extra.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">694</span>
+    <span class="phpdocumentor-element-found-in__line">642</span>
 
     </aside>
 
@@ -3042,7 +3046,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -3102,7 +3106,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">751</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
     </aside>
 
@@ -3140,7 +3144,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">558</span>
+    <span class="phpdocumentor-element-found-in__line">534</span>
 
     </aside>
 
@@ -3194,7 +3198,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">534</span>
+    <span class="phpdocumentor-element-found-in__line">510</span>
 
     </aside>
 
@@ -3257,7 +3261,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">580</span>
+    <span class="phpdocumentor-element-found-in__line">556</span>
 
     </aside>
 
@@ -3304,7 +3308,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">220</span>
 
     </aside>
 
@@ -3339,7 +3343,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">619</span>
+    <span class="phpdocumentor-element-found-in__line">595</span>
 
     </aside>
 
@@ -3374,7 +3378,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">467</span>
+    <span class="phpdocumentor-element-found-in__line">460</span>
 
     </aside>
 
@@ -3475,7 +3479,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">767</span>
+    <span class="phpdocumentor-element-found-in__line">715</span>
 
     </aside>
 
@@ -3545,7 +3549,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
@@ -3650,7 +3654,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -3713,7 +3717,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
     </aside>
 
@@ -3783,7 +3787,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -3853,7 +3857,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">375</span>
 
     </aside>
 
@@ -4078,7 +4082,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">181</span>
 
     </aside>
 
@@ -4112,7 +4116,7 @@ beforeRenderで呼び出される</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 

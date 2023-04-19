@@ -286,6 +286,11 @@ Search.appendIndex(
             "summary": "\u30EA\u30D5\u30A1\u30E9\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
             "url": "classes/BaserCore-Controller-Admin-BcAdminAppController.html#method__checkReferer"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\BcAdminAppController\u003A\u003AredirectIfIsNotSameSite\u0028\u0029",
+            "name": "redirectIfIsNotSameSite",
+            "summary": "siteUrl\u3084\u3001sslUrl\u3068\u73FE\u5728\u306EURL\u304C\u9055\u3046\u5834\u5408\u306B\u306F\u3001\u305D\u3061\u3089\u306EURL\u306B\u30EA\u30C0\u30A4\u30EC\u30AF\u30C8\u3092\u884C\u3046\nsetting.php\u0020\u306B\u3066\u3001cmsUrl\u3068\u3057\u3066\u3001cmsUrl\u3092\u5B9A\u7FA9\u3057\u305F\u5834\u5408\u306B\u306F\u305D\u3061\u3089\u3092\u512A\u5148\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\ContentFoldersController",
             "name": "ContentFoldersController",
             "summary": "Class\u0020ContentFoldersController",
@@ -1681,11 +1686,6 @@ Search.appendIndex(
             "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u3055\u308C\u305F\u753B\u9762\u306B\u5BFE\u3057\u3066\u306E\u8A8D\u8A3C\u7528\u30E6\u30FC\u30B6\u30FC\u30E2\u30C7\u30EB\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Controller-BcAppController.html#method_getUserModel"
         },                {
-            "fqsen": "\\BaserCore\\Controller\\BcAppController\u003A\u003Aredirect\u0028\u0029",
-            "name": "redirect",
-            "summary": "Redirects\u0020to\u0020given\u0020\u0024url,\u0020after\u0020turning\u0020off\u0020\u0024this\u002D\u003EautoRender.",
-            "url": "classes/BaserCore-Controller-BcAppController.html#method_redirect"
-        },                {
             "fqsen": "\\BaserCore\\Controller\\BcAppController\u003A\u003ArequestAction\u0028\u0029",
             "name": "requestAction",
             "summary": "Calls\u0020a\u0020controller\u0027s\u0020method\u0020from\u0020any\u0020location.",
@@ -1795,11 +1795,6 @@ Search.appendIndex(
             "name": "beforeRender",
             "summary": "Before\u0020Render",
             "url": "classes/BaserCore-Controller-BcFrontAppController.html#method_beforeRender"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\BcFrontAppController\u003A\u003AredirectIfIsNotSameSite\u0028\u0029",
-            "name": "redirectIfIsNotSameSite",
-            "summary": "siteUrl\u3084\u3001sslUrl\u3068\u73FE\u5728\u306EURL\u304C\u9055\u3046\u5834\u5408\u306B\u306F\u3001\u305D\u3061\u3089\u306EURL\u306B\u30EA\u30C0\u30A4\u30EC\u30AF\u30C8\u3092\u884C\u3046\nsetting.php\u0020\u306B\u3066\u3001cmsUrl\u3068\u3057\u3066\u3001cmsUrl\u3092\u5B9A\u7FA9\u3057\u305F\u5834\u5408\u306B\u306F\u305D\u3061\u3089\u3092\u512A\u5148\u3059\u308B",
-            "url": "classes/BaserCore-Controller-BcFrontAppController.html#method_redirectIfIsNotSameSite"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Component\\BcAdminContentsComponent",
             "name": "BcAdminContentsComponent",
@@ -2486,21 +2481,6 @@ Search.appendIndex(
             "summary": "\u73FE\u5728\u306E\u7BA1\u7406\u5BFE\u8C61\u306E\u30B5\u30A4\u30C8\u3092\u8A2D\u5B9A\u3059\u308B",
             "url": "classes/BaserCore-Middleware-BcAdminMiddleware.html#method_setCurrentSite"
         },                {
-            "fqsen": "\\BaserCore\\Middleware\\BcAssetDispatcher",
-            "name": "BcAssetDispatcher",
-            "summary": "Class\u0020BcAssetDispatcher",
-            "url": "classes/BaserCore-Middleware-BcAssetDispatcher.html"
-        },                {
-            "fqsen": "\\BaserCore\\Middleware\\BcAssetDispatcher\u003A\u003Aprocess\u0028\u0029",
-            "name": "process",
-            "summary": "Process",
-            "url": "classes/BaserCore-Middleware-BcAssetDispatcher.html#method_process"
-        },                {
-            "fqsen": "\\BaserCore\\Middleware\\BcAssetDispatcher\u003A\u003A\u0024priority",
-            "name": "priority",
-            "summary": "Default\u0020priority\u0020for\u0020all\u0020methods\u0020in\u0020this\u0020filter\nThis\u0020filter\u0020should\u0020run\u0020before\u0020the\u0020request\u0020gets\u0020parsed\u0020by\u0020router",
-            "url": "classes/BaserCore-Middleware-BcAssetDispatcher.html#property_priority"
-        },                {
             "fqsen": "\\BaserCore\\Middleware\\BcCacheDispatcher",
             "name": "BcCacheDispatcher",
             "summary": "Class\u0020BcCacheDispatcher",
@@ -3051,45 +3031,20 @@ Search.appendIndex(
             "summary": "Initialize",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_initialize"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AbeforeSave\u0028\u0029",
-            "name": "beforeSave",
-            "summary": "Before\u0020Save",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_beforeSave"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AconvertEncodingByArray\u0028\u0029",
             "name": "convertEncodingByArray",
             "summary": "\u914D\u5217\u306E\u6587\u5B57\u30B3\u30FC\u30C9\u3092\u5909\u63DB\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_convertEncodingByArray"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AsaveDbLog\u0028\u0029",
-            "name": "saveDbLog",
-            "summary": "\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u30ED\u30B0\u3092\u8A18\u9332\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_saveDbLog"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AgetControlSource\u0028\u0029",
             "name": "getControlSource",
             "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_getControlSource"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AgetChildIdsList\u0028\u0029",
-            "name": "getChildIdsList",
-            "summary": "\u5B50\u30AB\u30C6\u30B4\u30EA\u306EID\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_getChildIdsList"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AreplaceText\u0028\u0029",
             "name": "replaceText",
             "summary": "\u6A5F\u7A2E\u4F9D\u5B58\u6587\u5B57\u306E\u5909\u63DB\u51E6\u7406",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_replaceText"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AloadSchema\u0028\u0029",
-            "name": "loadSchema",
-            "summary": "\u30B9\u30AD\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u3092\u5229\u7528\u3057\u3066\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u69CB\u9020\u3092\u5909\u66F4\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_loadSchema"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AloadCsv\u0028\u0029",
-            "name": "loadCsv",
-            "summary": "CSV\u3092\u8AAD\u307F\u8FBC\u3080",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_loadCsv"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Abetween\u0028\u0029",
             "name": "between",
@@ -3100,31 +3055,6 @@ Search.appendIndex(
             "name": "getMax",
             "summary": "\u6307\u5B9A\u30D5\u30A3\u30FC\u30EB\u30C9\u306EMAX\u5024\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_getMax"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AaddField\u0028\u0029",
-            "name": "addField",
-            "summary": "\u30C6\u30FC\u30D6\u30EB\u306B\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u8FFD\u52A0\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_addField"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AeditField\u0028\u0029",
-            "name": "editField",
-            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u69CB\u9020\u3092\u5909\u66F4\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_editField"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AdelField\u0028\u0029",
-            "name": "delField",
-            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u524A\u9664\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_delField"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003ArenameField\u0028\u0029",
-            "name": "renameField",
-            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u3092\u5909\u66F4\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_renameField"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AtableExists\u0028\u0029",
-            "name": "tableExists",
-            "summary": "\u30C6\u30FC\u30D6\u30EB\u306E\u5B58\u5728\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_tableExists"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AalphaNumeric\u0028\u0029",
             "name": "alphaNumeric",
@@ -3156,40 +3086,10 @@ Search.appendIndex(
             "summary": "\u6307\u5B9A\u3057\u305F\u30E2\u30C7\u30EB\u4EE5\u5916\u306E\u30A2\u30BD\u30B7\u30A8\u30FC\u30B7\u30E7\u30F3\u3092\u9664\u5916\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AdeleteAll\u0028\u0029",
-            "name": "deleteAll",
-            "summary": "",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_deleteAll"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AupdateAll\u0028\u0029",
-            "name": "updateAll",
-            "summary": "",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_updateAll"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AcakeError\u0028\u0029",
             "name": "cakeError",
             "summary": "Used\u0020to\u0020report\u0020user\u0020friendly\u0020errors.",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_cakeError"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Afind\u0028\u0029",
-            "name": "find",
-            "summary": "Creates\u0020a\u0020new\u0020Query\u0020for\u0020this\u0020repository\u0020and\u0020applies\u0020some\u0020defaults\u0020based\u0020on\u0020the\ntype\u0020of\u0020search\u0020that\u0020was\u0020selected.",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_find"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AisPublish\u0028\u0029",
-            "name": "isPublish",
-            "summary": "\u30C7\u30FC\u30BF\u304C\u516C\u958B\u6E08\u307F\u304B\u3069\u3046\u304B\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_isPublish"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_exists"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u007B\u0040inheritDoc\u007D",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_delete"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AgetUrlPattern\u0028\u0029",
             "name": "getUrlPattern",
@@ -3853,7 +3753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003AfindByUrl\u0028\u0029",
             "name": "findByUrl",
-            "summary": "URL\u3088\u308A\u30B5\u30A4\u30C8\u3092\u53D6\u5F97\u3059\u308B\nTODO\u003A\u0020\u30C6\u30B9\u30C8\u304C\u30A8\u30E9\u30FC\u306B\u306A\u308B",
+            "summary": "URL\u3088\u308A\u30B5\u30A4\u30C8\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-SitesTable.html#method_findByUrl"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003AgetMainByUrl\u0028\u0029",
@@ -3905,41 +3805,6 @@ Search.appendIndex(
             "name": "changedAlias",
             "summary": "\u4FDD\u5B58\u6642\u306B\u30A8\u30A4\u30EA\u30A2\u30B9\u304C\u5909\u66F4\u3055\u308C\u305F\u304B\u3069\u3046\u304B",
             "url": "classes/BaserCore-Model-Table-SitesTable.html#property_changedAlias"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable",
-            "name": "ToolsTable",
-            "summary": "Class\u0020Tool",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003AgetControlSource\u0028\u0029",
-            "name": "getControlSource",
-            "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#method_getControlSource"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003AgetListModels\u0028\u0029",
-            "name": "getListModels",
-            "summary": "\u30C7\u30FC\u30BF\u30BD\u30FC\u30B9\u3092\u6307\u5B9A\u3057\u3066\u30E2\u30C7\u30EB\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#method_getListModels"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003AwriteSchema\u0028\u0029",
-            "name": "writeSchema",
-            "summary": "\u30B9\u30AD\u30FC\u30DE\u3092\u66F8\u304D\u51FA\u3059",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#method_writeSchema"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003AloadSchemaFile\u0028\u0029",
-            "name": "loadSchemaFile",
-            "summary": "\u30B9\u30AD\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u3092\u8AAD\u307F\u8FBC\u3080",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#method_loadSchemaFile"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003A_writeSchema\u0028\u0029",
-            "name": "_writeSchema",
-            "summary": "\u30B9\u30AD\u30FC\u30DE\u3092\u66F8\u304D\u51FA\u3059",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#method__writeSchema"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ToolsTable\u003A\u003A\u0024useTable",
-            "name": "useTable",
-            "summary": "\u30C6\u30FC\u30D6\u30EB",
-            "url": "classes/BaserCore-Model-Table-ToolsTable.html#property_useTable"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\UserGroupsTable",
             "name": "UserGroupsTable",
@@ -5438,7 +5303,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AsoftDeleteFromTree\u0028\u0029",
             "name": "softDeleteFromTree",
-            "summary": "\u30C4\u30EA\u30FC\u69CB\u9020\u3088\u308A\u8AD6\u7406\u524A\u9664\u3059\u308B\nTODO\u003A\u0020\u30AD\u30E3\u30C3\u30B7\u30E5\u30D3\u30D8\u30A4\u30D3\u30A2\u30FC\u5B9F\u88C5\u5F8C\u5FA9\u6D3B\u3055\u305B\u308B",
+            "summary": "\u30C4\u30EA\u30FC\u69CB\u9020\u3088\u308A\u8AD6\u7406\u524A\u9664\u3059\u308B",
             "url": "classes/BaserCore-Service-ContentsService.html#method_softDeleteFromTree"
         },                {
             "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AdeleteRecursive\u0028\u0029",
@@ -10151,11 +10016,6 @@ Search.appendIndex(
             "summary": "Generates\u0020option\u0020lists\u0020for\u0020common\u0020\u003Cselect\u0020\/\u003E\u0020menus",
             "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method__generateOptions"
         },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003Aradio\u0028\u0029",
-            "name": "radio",
-            "summary": "Creates\u0020a\u0020set\u0020of\u0020radio\u0020widgets.\u0020Will\u0020create\u0020a\u0020legend\u0020and\u0020fieldset\nby\u0020default.\u0020Use\u0020\u0024options\u0020to\u0020control\u0020this",
-            "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_radio"
-        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003AcreateId\u0028\u0029",
             "name": "createId",
             "summary": "\u30D5\u30A9\u30FC\u30E0\u306EID\u3092\u4F5C\u6210\u3059\u308B\nBcForm\u003A\u003Acreate\u0020\u3088\u308A\u547C\u51FA\u3055\u308C\u308B\u4E8B\u304C\u524D\u63D0",
@@ -10190,11 +10050,6 @@ Search.appendIndex(
             "name": "generateList",
             "summary": "\u30E2\u30C7\u30EB\u3088\u308A\u30EA\u30B9\u30C8\u3092\u751F\u6210\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_generateList"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003AjsonList\u0028\u0029",
-            "name": "jsonList",
-            "summary": "JsonList",
-            "url": "classes/BaserCore-View-Helper-BcFormHelper.html#method_jsonList"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFormHelper\u003A\u003AselectText\u0028\u0029",
             "name": "selectText",
@@ -10293,13 +10148,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Aimage\u0028\u0029",
             "name": "image",
-            "summary": "\u30D5\u30A1\u30A4\u30EB\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\uFF08\u753B\u50CF\uFF09\u3092\u8868\u793A\u3059\u308B\nTODO\u0020\u78BA\u8A8D\u753B\u9762\u306B\u306F\u672A\u30C1\u30A7\u30C3\u30AF",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\uFF08\u753B\u50CF\uFF09\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_image"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Atel\u0028\u0029",
             "name": "tel",
             "summary": "TEL\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_tel"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Aemail\u0028\u0029",
+            "name": "email",
+            "summary": "\u30C6\u30AD\u30B9\u30C8\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_email"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Anumber\u0028\u0029",
             "name": "number",
@@ -10310,11 +10170,6 @@ Search.appendIndex(
             "name": "password",
             "summary": "\u30D1\u30B9\u30EF\u30FC\u30C9\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_password"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003AjsonList\u0028\u0029",
-            "name": "jsonList",
-            "summary": "JsonList\nTODO\u0020\u78BA\u8A8D\u753B\u9762\u7528\u306E\u5B9F\u88C5\u306F\u5168\u304F\u3057\u3066\u306A\u3044",
-            "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_jsonList"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Adatepicker\u0028\u0029",
             "name": "datepicker",
@@ -10960,11 +10815,6 @@ Search.appendIndex(
             "name": "BlogCategoriesController",
             "summary": "\u30AB\u30C6\u30B4\u30EA\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
             "url": "classes/BcBlog-Controller-Admin-BlogCategoriesController.html"
-        },                {
-            "fqsen": "\\BcBlog\\Controller\\Admin\\BlogCategoriesController\u003A\u003AbeforeFilter\u0028\u0029",
-            "name": "beforeFilter",
-            "summary": "beforeFilter",
-            "url": "classes/BcBlog-Controller-Admin-BlogCategoriesController.html#method_beforeFilter"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Admin\\BlogCategoriesController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -11640,6 +11490,11 @@ Search.appendIndex(
             "name": "createSearchIndex",
             "summary": "\u691C\u7D22\u7528\u30C7\u30FC\u30BF\u3092\u751F\u6210\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogContentsTable.html#method_createSearchIndex"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogContentsTable\u003A\u003AcreateRelatedSearchIndexes\u0028\u0029",
+            "name": "createRelatedSearchIndexes",
+            "summary": "\u95A2\u9023\u3059\u308B\u30D6\u30ED\u30B0\u8A18\u4E8B\u306E\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogContentsTable.html#method_createRelatedSearchIndexes"
         },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogContentsTable\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
@@ -16456,6 +16311,11 @@ Search.appendIndex(
             "summary": "\u30E6\u30FC\u30B6\u30FC\u5B9B\u306B\u30D5\u30A9\u30FC\u30E0\u306E\u5185\u5BB9\u3092\u9001\u4FE1\u3059\u308B\uFF08\u30B5\u30F3\u30AF\u30B9\u30E1\u30FC\u30EB\uFF09",
             "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_sendFormToUser"
         },                {
+            "fqsen": "\\BcMail\\Mailer\\MailMessageMailer\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "\u9001\u4FE1\u5143\u540D\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_getFrom"
+        },                {
             "fqsen": "\\BcMail\\Model\\Entity\\MailConfig",
             "name": "MailConfig",
             "summary": "Class\u0020MailConfig",
@@ -18536,35 +18396,10 @@ Search.appendIndex(
             "summary": "Class\u0020ThemeFile",
             "url": "classes/BcThemeFile-Model-Table-ThemeFilesTable.html"
         },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFilesTable\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Initialize",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFilesTable.html#method_initialize"
-        },                {
             "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable",
             "name": "ThemeFoldersTable",
             "summary": "Class\u0020ThemeFolder",
             "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "ThemeFolder\u0020constructor.",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method___construct"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003AduplicateThemeFolder\u0028\u0029",
-            "name": "duplicateThemeFolder",
-            "summary": "\u30D5\u30A9\u30EB\u30C0\u306E\u91CD\u8907\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method_duplicateThemeFolder"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "\u30C7\u30FC\u30BF\u306E\u5B58\u5728\u78BA\u8A8D\nvalidates\u0020\u306E\u3001on\u0020\u30AA\u30D7\u30B7\u30E7\u30F3\u3092\u52D5\u4F5C\u3059\u308B\u70BA\u306B\u5B9A\u7FA9",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method_exists"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003A\u0024useTable",
-            "name": "useTable",
-            "summary": "use\u0020table",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#property_useTable"
         },                {
             "fqsen": "\\BcThemeFile\\Plugin",
             "name": "Plugin",
@@ -19213,7 +19048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcUploader\\Model\\Table\\UploaderFilesTable\u003A\u003AvalidationDefault\u0028\u0029",
             "name": "validationDefault",
-            "summary": "MailField\u0020constructor.",
+            "summary": "validationDefault",
             "url": "classes/BcUploader-Model-Table-UploaderFilesTable.html#method_validationDefault"
         },                {
             "fqsen": "\\BcUploader\\Model\\Table\\UploaderFilesTable\u003A\u003AbeforeSave\u0028\u0029",

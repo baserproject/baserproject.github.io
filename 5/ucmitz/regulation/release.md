@@ -32,7 +32,7 @@ vendor/bin/monorepo-builder merge
 その後、コミットしてプッシュします。
 
 ```shell
-git commit -a -m "ucmitz-4.0.0 をリリース"
+git commit -a -m "ucmitz-5.0.0 をリリース"
 ```
 
  
@@ -41,7 +41,7 @@ git commit -a -m "ucmitz-4.0.0 をリリース"
 
 ```shell
 git checkout master
-git merge dev
+git merge dev-5
 ```
 
  
@@ -50,16 +50,16 @@ git merge dev
 自動的にタグを作成しプッシュします。
 
 ```shell
-vendor/bin/monorepo-builder release 4.0.0
+vendor/bin/monorepo-builder release 5.0.0
 ```
 
  
 ## dev ブランチにマージ
 master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
-git checkout dev
+git checkout dev-5
 git merge master
-git push origin dev
+git push origin dev-5
 ```
 
  
