@@ -10156,6 +10156,11 @@ Search.appendIndex(
             "summary": "TEL\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_tel"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Aemail\u0028\u0029",
+            "name": "email",
+            "summary": "\u30C6\u30AD\u30B9\u30C8\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcFreezeHelper.html#method_email"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcFreezeHelper\u003A\u003Anumber\u0028\u0029",
             "name": "number",
             "summary": "\u6570\u5024\u30DC\u30C3\u30AF\u30B9\u3092\u8868\u793A\u3059\u308B",
@@ -16306,6 +16311,11 @@ Search.appendIndex(
             "summary": "\u30E6\u30FC\u30B6\u30FC\u5B9B\u306B\u30D5\u30A9\u30FC\u30E0\u306E\u5185\u5BB9\u3092\u9001\u4FE1\u3059\u308B\uFF08\u30B5\u30F3\u30AF\u30B9\u30E1\u30FC\u30EB\uFF09",
             "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_sendFormToUser"
         },                {
+            "fqsen": "\\BcMail\\Mailer\\MailMessageMailer\u003A\u003AgetFrom\u0028\u0029",
+            "name": "getFrom",
+            "summary": "\u9001\u4FE1\u5143\u540D\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_getFrom"
+        },                {
             "fqsen": "\\BcMail\\Model\\Entity\\MailConfig",
             "name": "MailConfig",
             "summary": "Class\u0020MailConfig",
@@ -18386,35 +18396,10 @@ Search.appendIndex(
             "summary": "Class\u0020ThemeFile",
             "url": "classes/BcThemeFile-Model-Table-ThemeFilesTable.html"
         },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFilesTable\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "Initialize",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFilesTable.html#method_initialize"
-        },                {
             "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable",
             "name": "ThemeFoldersTable",
             "summary": "Class\u0020ThemeFolder",
             "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "ThemeFolder\u0020constructor.",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method___construct"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003AduplicateThemeFolder\u0028\u0029",
-            "name": "duplicateThemeFolder",
-            "summary": "\u30D5\u30A9\u30EB\u30C0\u306E\u91CD\u8907\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method_duplicateThemeFolder"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003Aexists\u0028\u0029",
-            "name": "exists",
-            "summary": "\u30C7\u30FC\u30BF\u306E\u5B58\u5728\u78BA\u8A8D\nvalidates\u0020\u306E\u3001on\u0020\u30AA\u30D7\u30B7\u30E7\u30F3\u3092\u52D5\u4F5C\u3059\u308B\u70BA\u306B\u5B9A\u7FA9",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#method_exists"
-        },                {
-            "fqsen": "\\BcThemeFile\\Model\\Table\\ThemeFoldersTable\u003A\u003A\u0024useTable",
-            "name": "useTable",
-            "summary": "use\u0020table",
-            "url": "classes/BcThemeFile-Model-Table-ThemeFoldersTable.html#property_useTable"
         },                {
             "fqsen": "\\BcThemeFile\\Plugin",
             "name": "Plugin",
@@ -19063,7 +19048,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcUploader\\Model\\Table\\UploaderFilesTable\u003A\u003AvalidationDefault\u0028\u0029",
             "name": "validationDefault",
-            "summary": "MailField\u0020constructor.",
+            "summary": "validationDefault",
             "url": "classes/BcUploader-Model-Table-UploaderFilesTable.html#method_validationDefault"
         },                {
             "fqsen": "\\BcUploader\\Model\\Table\\UploaderFilesTable\u003A\u003AbeforeSave\u0028\u0029",
