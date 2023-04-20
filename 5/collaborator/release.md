@@ -85,7 +85,11 @@ cd tmp
 mv basercms.zip basercms-5.x.x.zip
 ```
 
-master ブランチより作成しますので、**必ずリリースコマンド実行後** に行います。
+master ブランチより作成しますので、**必ずリリースコマンド実行後** に行う必要がありますが、開発ブランチでパッケージを作成し、インストール等の動作を確認したい場合は、`branch` オプションとして引数にブランチ名を追加します。
+
+```shell
+bin/cake create release dev-5
+```
 
 ## パッケージのアップロード
 baserCMSのオフィシャルサイトの /files/basercms/ ディレクトリにアップロードします。
