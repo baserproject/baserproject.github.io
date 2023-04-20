@@ -23,7 +23,7 @@ Docker コンテナにログインし、コマンドを実行します。
 
 ```shell
 cd docker
-docker exec -it bc5-php /bin/bash
+docker exec -it bc-php /bin/bash
 bin/cake i18n extract  --paths /var/www/html/plugins/baser-core,\
 	/var/www/html/plugins/bc-admin-third,\
 	/var/www/html/plugins/bc-blog,\

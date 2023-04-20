@@ -11,7 +11,7 @@ lsyncd の同期の問題で、JWTのキーの権限が変更されてしまっ�
 権限を変更します。
 ```
 cd docker
-docker exec bc5-php chmod 604 ./config/jwt.key
+docker exec bc-php chmod 604 ./config/jwt.key
 ```
 
 　
@@ -27,7 +27,7 @@ Error: Fatal Error (1): Trait 'SoftDelete\Model\Table\SoftDeleteTrait' not found
 
 次のコマンドを実行してパッケージを追加します。
 ```
-docker exec -it bc5-php /bin/bash
+docker exec -it bc-php /bin/bash
 composer update --prefer-source
 ```
 

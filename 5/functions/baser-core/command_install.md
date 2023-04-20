@@ -16,7 +16,7 @@ bin/cake install check
 データベースのユーザー名、パスワードなどを指定してインストールを実行します。
 
 ```shell
-bin/cake install https://localhost [管理者メールアドレス] [管理者パスワード] [データベース名] --host bc5-db --username root --password root
+bin/cake install https://localhost [管理者メールアドレス] [管理者パスワード] [データベース名] --host bc-db --username root --password root
 ```
 
 オプション
