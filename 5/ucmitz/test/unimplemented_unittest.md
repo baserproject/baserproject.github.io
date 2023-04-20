@@ -58,7 +58,7 @@ git checkout -b branch-name
 ```shell
 # コンテナにログイン
 cd docker
-docker exec -it bc5-php /bin/bash
+docker exec -it bc-php /bin/bash
 
 # テスト実行
 # vendor/bin/phpunit ファイル名 --filter メソッド名

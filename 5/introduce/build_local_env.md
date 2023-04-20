@@ -57,7 +57,7 @@ docker-compose up -d
 
 | name | value                       |
 |-----------|-----------------------------|
-| host | MySQL：bc5-db<br>PostgreSQL：bc5-pg |
+| host | MySQL：bc-db<br>PostgreSQL：bc-pg |
 | database | basercms                    |
 | user | root                        |
 | password | root                        |
@@ -69,7 +69,7 @@ docker ディレクトリに移動してからログインします。
 
 ```
 cd docker
-docker exec -it bc5-php /bin/bash
+docker exec -it bc-php /bin/bash
 ```
  
 ### 環境を再構築する
@@ -96,7 +96,7 @@ cd docker
 # docker を起動している場合は止める
 docker-compose stop
 # コンテナを削除する
-docker rm bc5-php
+docker rm bc-php
 # IMAGE ID を確認する
 docker images
 # イメージ削除する
@@ -110,7 +110,7 @@ docker rmi [IMAGE ID]
 #### Docker の設定変更
 docker-compose.yml の設定を変更します。
 
-bc5-php の 調整
+bc-php の 調整
 - volumes を `'../../:/var/www/html:delegated'` に変更
 - command を `'bash -c "apache2-foreground"'` に変更
 
@@ -132,7 +132,7 @@ export SSL_URL="https://localhost/basercms/"
 Docker コンテナにログインしシンボリックリンクの作成コマンドを実行します。
 
 ```shell
-docker exec -it bc5-php /bin/bash
+docker exec -it bc-php /bin/bash
 bin/cake plugin assets symlink
 ```
 
