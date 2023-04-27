@@ -48,8 +48,10 @@ class PagesTable {
 - ビュー：BcViewEventListener
 - ヘルパー：BcHelperEventListener
 
+なお、イベントリスナークラスは、`Event` ディレクトリーに配置します。
+
 ```php
-// 例
+// 例 /plugins/YourPlugin/Event/YourPluginControllerEventListener.php
 class YourPluginControllerEventListener extends BcControllerEventListener
 {
 
@@ -84,4 +86,15 @@ class YourPluginControllerEventListener extends BcControllerEventListener
 イベントの種類は、CakePHPが用意している、モデルの `beforeFind` や、コントローラーの `startup` など様々なものがありますが、それに加えて、baserCMSが定義しているイベントも多く存在します。
 
 詳しくは、[イベント一覧](https://docs.google.com/spreadsheets/d/1YT5PuZQdDNU0wrZdqYbh74KuLSw1SIt4_EKwPWOfDKA/edit#gid=1008573296){:target="_blank"} をご覧ください。
+
+
+## コールバック処理で利用できる変数
+コールバック処理内では主に２つの変数を取得して利用します。
+
+```php
+// 呼び出し元のクラスを取得する
+$event->getSubject();
+// イベントが提供する変数を取得する
+$event->getData();
+```
 
