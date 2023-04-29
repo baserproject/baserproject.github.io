@@ -1,7 +1,8 @@
 version: '3.7'
 services:
   app:
-    platform: linux/x86_64
+#    platform: linux/x86_64
+    platform: linux/arm64
     build: "./"
     command: jekyll serve --force_polling
     volumes:
