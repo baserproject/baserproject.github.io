@@ -115,5 +115,7 @@ baserCMSは WordPressと共存させることもできます。共存させた�
 
 - [WordPressとの共存](./coexist_with_wordpress)
 
-　
+## サブフォルダへの設置
 
+- [サブフォルダに設置する](/5/ucmitz/etc/subfolder)
+- [Dockerでサブフォルダの環境を作る](./build_local_env#docker-でサブフォルダの環境を作る)
