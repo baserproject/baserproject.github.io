@@ -13,14 +13,10 @@ Docker Desktop をインストールします。
 - [Docker Desktop for Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ### baserCMS をクローンする
-ucmitz をクローンし、`dev-5` ブランチに切り替えます。
 
 ```
 git clone https://github.com/baserproject/basercms.git
-git checkout dev-5
 ```
-
-※ 2023年3月27日現在、baserCMS５はまだリリースされていません。 `https://github.com/baserproject/ucmitz.git` の `dev` ブランチを利用してください。
 
 ### docker-compose をコピーする
 
