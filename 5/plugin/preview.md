@@ -58,6 +58,7 @@ https://localhost/baser/admin/baser-core/preview/view?
 # 例）PagesController の view アクション場合
 PagesFrontService::setupPreviewForView()
 ```
+なお、サービスクラスを利用する場合は、インターフェイスとサービスプロバイダーの定義が必要ですのでご注意ください。サービスクラスについて、詳しくは [サービスクラスの利用](./develop_plugin#サービスクラスの利用) をご覧ください。
 
 ### アクション内での処理
 このメソッドでは引数としてコントローラーを受け取るので、テンプレートの値のセットや、テンプレートの変更などを行うことができます。  
