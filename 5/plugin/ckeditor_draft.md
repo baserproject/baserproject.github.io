@@ -1,9 +1,11 @@
 # CKEditorの利用
 
-BcAdminFormHelper を利用することで CKEditor を簡単に利用することができます
+`BcAdminFormHelper` を利用することで CKEditor を簡単に利用することができます
 
 
 ## CKEditorを表示する
+主によく利用するオプションを次に示します。  
+詳細については、`BcCkeditorHelper::build()` をご覧ください。
 
 ```php
 <?php echo $this->BcAdminForm->ckeditor('content', [
