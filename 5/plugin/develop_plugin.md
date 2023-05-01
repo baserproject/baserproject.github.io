@@ -286,6 +286,15 @@ class PagesService
 {
 }
 ```
+
+また、サービスクラスを利用する場合は、インターフェイスの定義も必要となります。
+```php
+// /plugins/{YourPlugin}/src/Service/PagesServiceInterface.php
+interface PagesServiceInterface
+{
+}
+```
+
 ### サービスプロバイダ
 サービスを読み込むためのサービスプロバイダは、 `{YourPluginName}ServiceProvider` の名称を推奨しています。
 
