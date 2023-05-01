@@ -4,8 +4,8 @@
 
 ## .env の設定
 
-- SITE_URL / SSL_URL にセットされているURLにサブフォルダが含まれいている事
-- SITE_URL / SSL_URL にセットされているURLの最後がスラッシュで終わっている事
+- `SITE_URL` / `SSL_URL` にセットされているURLにサブフォルダが含まれいている事
+- `SITE_URL` / `SSL_URL` にセットされているURLの最後がスラッシュで終わっている事
 
 ## .htaccess の設定
 
