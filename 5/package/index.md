@@ -17,10 +17,10 @@ baserCMSのコア（BaserCore）、デフォルトの管理画面テーマ（BcA
 なお、BaserCore は、主にURLに紐づくルーティングと、ビジネスロジックを提供します。
 
 これらのパッケージは、配布版では Composer でインストールするので `/vendor` 配下に配置されます。
-- [BaserCore](https://github.com/baserproject/basercms/tree/dev-5/plugins/baser-core)
-- [BcAdminThird](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-admin-third)
-- [BcFront](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-front)
-- [BcInstaller](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-installer)
+- [BaserCore](https://github.com/baserproject/basercms/tree/dev-5/plugins/baser-core)：baserCMS本体
+- [BcAdminThird](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-admin-third)：管理画面デフォルトテーマ
+- [BcFront](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-front)：フロントページデフォルトテーマ
+- [BcInstaller](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-installer)：インストーラー
 
 
  
@@ -28,14 +28,15 @@ baserCMSのコア（BaserCore）、デフォルトの管理画面テーマ（BcA
 baserCMSのコアパッケージと共にコアに梱包するいくつかのプラグインはコアプラグインとコアテーマもコアパッケージ同様 `/plugins/` 配下に配置し開発しています。
 
 これらのパッケージは、配布版では Composer でインストールするので `/vendor` 配下に配置されます。
-- [BcBlog](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-blog)
-- [BcColumn](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-column)
-- [BcMail](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-mail)
-- [BcUploader](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-uploader)
-- [BcEditorTemplate](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-editor-template)
-- [BcThemeConfig](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-config)
-- [BcThemeFile](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-file)
-- [BcWidgetArea](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-widget-area)
+- [BcBlog](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-blog)：簡易ブログ機能
+- [BcColumn](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-column)：フロントページテーマ
+- [BcMail](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-custom-content)：カスタムコンテンツ機能
+- [BcMail](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-mail)：メールフォーム機能
+- [BcUploader](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-uploader)：アップロードファイル管理機能
+- [BcEditorTemplate](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-editor-template)：CKeditorテンプレート管理機能
+- [BcThemeConfig](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-config)：テーマ設定機能
+- [BcThemeFile](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-file)：テーマファイル管理機能
+- [BcWidgetArea](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-widget-area)：ウィジェットエリア管理機能
 
 
 
@@ -63,6 +64,7 @@ Composer の Packagist はこちらのレポジトリに紐付いています。
 - [BcInstaller レポジトリ](https://github.com/baserproject/bc-installer)
 - [BcBlog レポジトリ](https://github.com/baserproject/bc-blog)
 - [BcColumn レポジトリ](https://github.com/baserproject/bc-column)
+- [BcCustomContent レポジトリ](https://github.com/baserproject/bc-custom-content)
 - [BcMail レポジトリ](https://github.com/baserproject/bc-mail)
 - [BcUploader レポジトリ](https://github.com/baserproject/bc-uploader)
 - [BcEditorTemplate レポジトリ](https://github.com/baserproject/bc-editor-template)
