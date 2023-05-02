@@ -173,15 +173,22 @@ $this->BcAdmin->addAdminMainBodyHeaderLinks([
 ## データベースのマイグレーション
 マイグレーションファイルやシードファイルを設置することで、インストール時、自動的に読み込むことができます。
 
+### マイグレーションファイルの作成
 データベースのテーブルからマイグレーションファイルを作成する場合はコマンドで実行します。下記コマンドを実行すると、`/plugins/{YourPlugin}/config/Migrations/` 内に自動生成します。
 
 ```
 bin/cake bake migration_snapshot Initial --plugin {YourPlugin}
 ```
 
-データベースのテーブルからシードファイルを作成する場合は次のようになります。
-```shell
-bin/cake bake seed --data {TableName} -p {YourPlugin}
+また、CakePHPの標準の機能として、DBテーブルのプレフィックスに対応していませんが、baserCMSではそれに対応するためにマイグレーションファイルのクラスにおいて、 `BaserCore\Database\Migration\BcMigration` を継承する必要があります。  
+これを忘れると、プレフィックスを設定しているサイトにおいて、マイグレーションファイルがうまく読み込めなくなりますので忘れないようにしてください。
+
+```php
+// 例
+use BaserCore\Database\Migration\BcMigration;
+class CreatePages extends BcMigration
+{
+}
 ```
 
 
@@ -189,6 +196,12 @@ bin/cake bake seed --data {TableName} -p {YourPlugin}
 
 ```shell
 composer dump-autoload
+```
+
+### シードファイルの作成
+データベースのテーブルからシードファイルを作成する場合は次のようになります。
+```shell
+bin/cake bake seed --data {TableName} -p {YourPlugin}
 ```
 
 ## インストール時の処理
@@ -269,6 +282,10 @@ $users->save($user);
 マイグレーションファイル作成方法については次をご覧ください。
 
 - [CakePHP Migrations](https://book.cakephp.org/migrations/3/ja/index.html#)
+
+その際においても、`BcMigration` の継承を忘れないようにしてください。
+
+- [マイグレーションファイルの作成](#マイグレーションファイルの作成)
 
 
 ## サービスクラスの利用
