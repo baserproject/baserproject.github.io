@@ -14,7 +14,7 @@ baserCMSの開発に関するコンセプトや基本方針については次を
 ## パッケージ概要
 baserCMSのパッケージの構成、アーキテクチャー、データベース構造などについては次をご覧ください。
 
-- [パッケージ構成](../package/)（調整中）
+- [パッケージ構成](../package/)
 - [アーキテクチャー](../package/architecture)（調整中）
 - [データベース構造](../package/database)
 - [ディレクトリ構成](../package/directory_structure)（調整中）
