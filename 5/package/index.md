@@ -33,7 +33,7 @@ baserCMSのコアパッケージと共にコアに梱包するいくつかのプ
 - [BcMail](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-custom-content)：カスタムコンテンツ機能
 - [BcMail](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-mail)：メールフォーム機能
 - [BcUploader](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-uploader)：アップロードファイル管理機能
-- [BcEditorTemplate](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-editor-template)：CKeditorテンプレート管理機能
+- [BcEditorTemplate](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-editor-template)：CKEditorテンプレート管理機能
 - [BcThemeConfig](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-config)：テーマ設定機能
 - [BcThemeFile](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-theme-file)：テーマファイル管理機能
 - [BcWidgetArea](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-widget-area)：ウィジェットエリア管理機能
