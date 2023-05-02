@@ -41,7 +41,7 @@ baserCMS コアの新機能、新しいコアプラグインについては、ba
 ## セキュリティ
 セキュリティについては、[IPA](https://www.ipa.go.jp/){:target="_blank"} が定める「[安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity/index.html){:target="_blank"} 」に準ずるものとし、脆弱性が発生した場合の対応については、[JPCERT](https://www.jpcert.or.jp/){:target="_blank"} をはじめとした各種機関と連携し、迅速に対応していきます。
 
-なお、その他、Web脆弱性検査ツール「VAddy」を活用し、継続的な脆弱性検査を実施します。
+なお、そのほか、Web脆弱性検査ツール「[VAddy](https://vaddy.net/ja/){:target="_blank"}」を活用し、継続的な脆弱性検査を実施します。
 
 ## バージョンアップ
 ### CakePHPのバージョンアップへの対応
