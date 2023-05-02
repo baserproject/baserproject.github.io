@@ -35,12 +35,17 @@ baserCMS コアの新機能、新しいコアプラグインについては、ba
 基本的に、永続の可能性が薄い外部サービスとの連携プログラムについては、コアへは実装しないものとします。
 
 ## 国際化
+国際化について、オフィシャルとしては、英語のみを対応します。  
+なお、翻訳関数に記述するマスターとなる言語は日本語で記述します。
 
 ## セキュリティ
+セキュリティについては、[IPA](https://www.ipa.go.jp/){:target="_blank"} が定める「[安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity/index.html){:target="_blank"} 」に準ずるものとし、脆弱性が発生した場合の対応については、[JPCERT](https://www.jpcert.or.jp/){:target="_blank"} をはじめとした各種機関と連携し、迅速に対応していきます。
+
+なお、その他、Web脆弱性検査ツール「VAddy」を活用し、継続的な脆弱性検査を実施します。
 
 ## バージョンアップ
 ### CakePHPのバージョンアップへの対応
-baserCMSは、フレームワークにとして [CakePHP](https://cakephp.org) を採用していますが、CakePHP本体がバージョンアップした際、場合によってはbaserCMS側で大掛かりな改修作業が発生し、テーマやプラグインのAPIにも影響を与えることがあります。
+baserCMSは、フレームワークにとして [CakePHP](https://cakephp.org){:target="_blank"} を採用していますが、CakePHP本体がバージョンアップした際、場合によってはbaserCMS側で大掛かりな改修作業が発生し、テーマやプラグインのAPIにも影響を与えることがあります。
 
 ただし、CakePHPの開発が完全にストップしてしまわない限り、CakePHP本体のバージョンアップには、随時対応していく方針とします。
 
@@ -53,6 +58,5 @@ baserCMSは、フレームワークにとして [CakePHP](https://cakephp.org) �
 ## プラグインの管理とライセンス
 baserCMSプロジェクトとして管理するプラグインは、コアプラグインのみとし、全て [MITライセンス](https://licenses.opensource.jp/MIT/MIT.html)とします。その他のプラグインについては、baserCMS プロジェクトでは管理しません。  
 
-## ロードマップ
 
 
