@@ -60,6 +60,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% else %}
           {% include menu_guide.html %}
         {% endif %}
+
+		<div class="search">
+			<input type="text" name="text" value="" class="search-text" placeholder="検索">
+			<form action="https://www.google.com/search" method="GET" target="_blank">
+				<input type="hidden" name="q" value="" data-prefix="site:https://baserproject.github.io/">
+				<input type="submit" value="Google">
+			</form>
+			<form action="https://github.com/search" method="GET" target="_blank">
+				<input type="hidden" name="type" value="code">
+				<input type="hidden" name="q" value="" data-prefix="repo:baserproject/baserproject.github.io">
+				<input type="submit" value="GitHub">
+			</form>
+		</div>
         
         <p class="view">
           <a href="{{ site.github.repository_url }}/blob/master/{{ page.path }}">GitHubでこのページを編集</a>

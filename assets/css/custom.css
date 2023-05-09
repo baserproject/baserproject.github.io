@@ -365,3 +365,25 @@ header p.view a {
   margin-bottom: 20px;
   margin-top:20px;
 }
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+.search input {
+  margin-right: 5px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+.search input[type="text"] {
+  width: 120px;
+  padding: 0 5px;
+}
+.search input[type="submit"] {
+  cursor: pointer;
+}
+.search input[type="submit"]:hover {
+  color: #069;
+}

@@ -33,3 +33,9 @@ $(".local-navi a").each(function(){
 	}
 });
 
+
+$('.search input[type="submit"]').click(function() {
+  const textField = $('.search-text');
+  const qField = $(this).parent().find('input[name="q"]');
+  qField.val(qField.data('prefix') + ' ' + textField.val());
+});
