@@ -79,7 +79,7 @@ CakePHPでのプラグイン有効化手順である、オートローダーの�
 ## baserCMS４からの変更点
 CakePHP４に対応することにより、アーキテクチャーも大幅に変更となり、テーマやプラグインの作り方も変更となっています。詳細についてはこちらをご覧ください。
 
-- [baserCMS４からの変更点](./core/difference_from_basercms4)
+- [baserCMS４からの変更点](../core/difference_from_basercms4)
 
 
 ## 管理システムを作成する
