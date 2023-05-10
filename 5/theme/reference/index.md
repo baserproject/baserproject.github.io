@@ -84,7 +84,7 @@ $this->BcBaser->js([
 
 ---
 
-### CSS・JSファイルの呼び出し
+### CSS・JavaScriptの呼び出し
 
 ```
 BcBaserHelper::scripts(): void
@@ -108,12 +108,12 @@ BcBaserHelper::element(string $name, array $data = [], array $options = []): voi
 以下の例では、elementフォルダ内のmenu.phpを呼び出しています。
 
 ```
-# 呼び出し元
+// 呼び出し元
 $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
 ```
 
 ```
-# 呼び出し先
+// 呼び出し先
 <ul>
   <?php foreach ($menus as $menu): ?>
     <li>
@@ -121,6 +121,14 @@ $this->BcBaser->element('menu', ['menus' => ['a', 'b', 'c']]);
     </li>
   <?php endforeach ?>
 </ul>
+
+/*
+<ul>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+</ul>
+*/
 ```
 
 ---
@@ -167,6 +175,7 @@ BcBaserHelper::globalMenu(int $level = 1, array $options = []): void
 
 グローバルメニューを出力します。
 `$level`には最上位の階層から何階層までのコンテンツを出力するか指定します。
+出力されるタグを調整したい場合は、 element/global_menu.php を変更します。
 
 ---
 
@@ -191,6 +200,7 @@ BcBaserHelper::link(string $title, mixed $url = null, array $htmlAttributes = []
 
 ```
 $this->BcBaser->link('top', '/', ['target' => '_blank'], 'ページを開きますか?');
+// <a href="/" target="_blank" data-confirm-message="ページを開きますか?" onclick="if (confirm(this.dataset.confirmMessage)) { return true; } return false;">top</a>
 ```
 
 ---
@@ -217,7 +227,7 @@ baserCMSの設置フォルダを考慮したURLを出力します。
 ```
 $this->BcBaser->url('/test', true);
 
-# baserが https://example.com/baser/ に設置されている場合、 「https://example.com/baser/test」を出力
+// baserが https://example.com/baser/ に設置されている場合、 「https://example.com/baser/test」を出力
 ```
 
 ---
@@ -245,7 +255,7 @@ BcBaserHelper::siteUrl(bool $ssl = false): void
 ### WebサイトURL取得
 
 ```
-BcBaserHelper::getSiteUrl(bool $ssl = false): void
+BcBaserHelper::getSiteUrl(bool $ssl = false): string
 ```
 
 システム基本設定のWebサイトURLを取得します。
@@ -412,6 +422,8 @@ BcBaserHelper::isAdminUser(array| User $user = null): bool
 指定したユーザーが管理者グループに属しているか判定を行います。
 `$user`を指定しない場合はログイン中のユーザーを対象にします。
 
+---
+
 ### デバッグモード判定
 
 ```
@@ -419,6 +431,8 @@ BcBaserHelper::isDebug(): bool
 ```
 
 デバッグモードか判定します。
+
+---
 
 ### プラグインロード判定
 
@@ -433,6 +447,8 @@ if ($this->BcBaser->isPluginLoaded('BcBlog')) {
   echo 'ブログプラグインが有効';
 }
 ```
+
+---
 
 ### コンテンツフォルダ判定
 
@@ -519,7 +535,7 @@ metaタグ用のキーワードタグを出力します。
 BcBaserHelper::getKeywords(): string
 ```
 
-metaタグ用のキーワードタグを取得します。
+metaタグ用のキーワードを取得します。
 
 ---
 
@@ -550,8 +566,6 @@ BcBaserHelper::getDescription(): string
 ```
 
 metaタグ用の説明文を取得します。
-
----
 
 ## パンくずリスト
 
@@ -619,6 +633,8 @@ BcBaserHelper::contentsTitle(): void
 ```
 
 コンテンツのタイトルを出力します。
+
+---
 
 ### コンテンツのタイトルを取得
 
@@ -692,7 +708,7 @@ ID指定できるのはフォルダのみ
 ### コンテンツメニュー取得
 
 ```
-BcBaserHelper::getContentsMenu(mixed $id = null, int $level = null, string $currentId = null, array $options = [])
+BcBaserHelper::getContentsMenu(mixed $id = null, int $level = null, string $currentId = null, array $options = []): string
 ```
 
 コンテンツメニューを取得します。
@@ -761,6 +777,8 @@ BcBaserHelper::pagination(string $name = 'default', array $data = [], array $opt
 
 ページネーションを出力します。
 `$name`で指定したエレメントを出力します。
+出力されるタグを調整したい場合は、 element/paginations 配下を変更します。
+細かくカスタマイズしたい場合は[CakePHPのドキュメント](https://book.cakephp.org/4/ja/views/helpers/paginator.html)もご覧ください。
 
 ## 他
 
