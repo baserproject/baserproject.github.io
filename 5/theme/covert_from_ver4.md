@@ -170,7 +170,7 @@ $this->getRequest()->is('maintenance')
 
 ```php
 // 一覧の表示件数
-$this->passedArgs['num']
+$this->passedArgs['limit']
 // 置き換え後
 $this->getRequest()->getQuery('limit')
 ```
