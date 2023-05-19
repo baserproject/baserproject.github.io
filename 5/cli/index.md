@@ -45,6 +45,25 @@ bin/cake install https://localhost [管理者メールアドレス] [管理者�
 bin/cake setup install
 ```
 
+### オフィシャルのダウンロードパッケージを利用する場合の注意事項
+オフィシャルの[ダウンロードパッケージ](https://basercms.net/download) を利用する場合、インストールを実行する前に、baserCMSのコアプラグインを composer でインストールする必要があります。配置後に、まず、次のコマンドを実行してください。  
+※ baserCMS本体の開発が目的でない場合はオフィシャルのダウンロードパッケージの利用を推奨しています。
+
+```shell
+# composer によるコアプラグインのインストール
+comoser install
+# 環境設定ファイルの準備
+cp config/.env.example config/.env
+```
+
+### 環境がSSLでない場合の注意事項
+管理画面にアクセスする際、デフォルト状態では、SSL通信が前提となっており、http でアクセスするとエラーとなってしまいます。  
+SSL通信でない場合は、`/config/.env` を編集します。
+
+```shell
+# 次の設定値を false に設定
+export ADMIN_SSL="true"
+```
 
 ## ユニットテスト関連
 PHPUnitにおけるユニットテストに関するコマンドです。
