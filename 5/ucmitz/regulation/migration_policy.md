@@ -115,7 +115,7 @@ public function get($id, $options = [])
 Ajaxのリクエスト対象の処理は、API用のコントローラーに移行し、戻り値をJSON化してください。
 どうしてもHTMLレンダリングが必要な場合のみ、Admin 用のコントローラーに配置します。
 
-[そのほか、コントローラーにおける注意点はこちら](development/migration/controller)
+[そのほか、コントローラーにおける注意点はこちら](../development/migration/controller)
 
 ### APIにおけるデータベース操作の例外処理
 
@@ -162,7 +162,7 @@ CakePHP2系のモデルはテーブルへと移行となりますが、ファッ
 ### getControlSource() メソッド
 サービスに移行します。
 
-[そのほか、モデルにおける注意点はこちら](development/migration/model)
+[そのほか、モデルにおける注意点はこちら](../development/migration/model)
 
  
 ## サービス
@@ -298,7 +298,7 @@ UsersFrontHelper
 
 
 
-[そのほか、ビューにおける注意点はこちら](development/migration/view)
+[そのほか、ビューにおける注意点はこちら](../development/migration/view)
 
  
 ## ヘルパ

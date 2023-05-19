@@ -63,18 +63,18 @@ baserCMS５で利用できるものはまだまだ少ないですが（2023/03/2
 ### baserCMSをインストールする
 まずは、baserCMSをインストールしてみましょう。サーバーの準備が必要ですが、標準で提供している Docker を利用すると簡単にインストール環境が構築できます。
 - [インストールガイド](introduce/index)
-- [サーバーにインストールする](introduce/install)
+- [サーバーにインストールする](introduce/hosting)
 - [ローカル環境を構築する](introduce/build_local_env)
 
 ### テーマについて学ぶ
 baserCMSで利用するテーマは、baserマーケットからダウンロードできますが、オリジナルのデザインを適用した独自のテーマを作成することもできます。
 - [テーマガイド](theme/index)
-- [独自のテーマを作成する](theme/development/index)
+- [独自のテーマを作成する](theme/develop_theme)
 
 ### プラグインについて学ぶ
 baserCMSで利用できるプラグインは、baserマーケットからダウンロードできますが、オリジナルのデータベース設計を元に管理画面を作ったりと、独自のプラグインを開発することもできます。
 - [プラグインガイド](plugin/index)
-- [独自のプラグインを作成する](plugin/development/index)
+- [独自のプラグインを作成する](plugin/develop_plugin)
 
 ### WebAPIを利用する
 WebAPIを利用してフロントエンドアプリケーションを作成したい方は次のドキュメントをご覧ください。  
@@ -85,7 +85,7 @@ WebAPIを利用してフロントエンドアプリケーションを作成し�
 ## 参加・貢献
 ### 開発者として参加・貢献する
 baserCMS本体の開発に貢献頂ける方は次のドキュメントをご覧ください。  
-- [コンセプト・基本方針](policy/)
+- [コンセプト・基本方針](contribution/policy/)
 - [パッケージ概要](package/)
 - [規約](terms/)
 - [開発者として参加・貢献する](contribution_developer/)

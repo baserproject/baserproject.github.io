@@ -463,7 +463,7 @@ https://your-domain/test.html
 ## 作ったテーマを配布・販売する
 
 作ったテーマは baserマーケットで配布・販売することができます。  
-詳しくは [プラグイン・テーマを配布・販売する](/5/developer/market/sell) をご覧ください。
+詳しくは [プラグイン・テーマを配布・販売する](../market.html#テーマやプラグインを配布販売する) をご覧ください。
 
 ## テーマについてもっと詳しく知る
 
@@ -472,3 +472,4 @@ https://your-domain/test.html
 - [ファイル読み込みの優先順位](file_priority)
 - [テンプレートのカスタマイズ](customizing_template)
 - [テーマ関数リファレンス](reference/index)
+- [標準テーマ](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-front)
