@@ -29,6 +29,7 @@ vendor/bin/monorepo-builder merge
  
 ## VERSION.txt を更新
 `VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
+plugins/baser-core/VERSION.txt  
 その後、コミットしてプッシュします。
 
 ```shell
@@ -50,7 +51,7 @@ git merge dev-5
 自動的にタグを作成しプッシュします。
 
 ```shell
-vendor/bin/monorepo-builder release 5.0.0
+vendor/bin/monorepo-builder release 5.x.x
 ```
 
  
@@ -61,6 +62,16 @@ git checkout dev-5
 git merge master
 git push origin dev-5
 ```
+
+## dev ブランチのバージョン更新
+plugins/baser-core/VERSION.txt の１行目に次回リリースバージョンの開発版として変更  
+例) 5.0.1 -> 5.0.2-dev  
+
+## パッケージの作成
+```shell
+bin/cake create release 5.x.x
+```
+
 
  
 ## リリース記事を作成
