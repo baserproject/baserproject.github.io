@@ -176,6 +176,11 @@ Search.appendIndex(
             "summary": "CreateReleaseCommand",
             "url": "classes/BaserCore-Command-CreateReleaseCommand.html"
         },                {
+            "fqsen": "\\BaserCore\\Command\\CreateReleaseCommand\u003A\u003AbuildOptionParser\u0028\u0029",
+            "name": "buildOptionParser",
+            "summary": "buildOptionParser",
+            "url": "classes/BaserCore-Command-CreateReleaseCommand.html#method_buildOptionParser"
+        },                {
             "fqsen": "\\BaserCore\\Command\\CreateReleaseCommand\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
             "summary": "execute",
@@ -3160,6 +3165,11 @@ Search.appendIndex(
             "name": "setBeforeRecord",
             "summary": "\u4FDD\u5B58\u524D\u306EURL\u3092\u30BB\u30C3\u30C8\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-ContentFoldersTable.html#method_setBeforeRecord"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\ContentFoldersTable\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-ContentFoldersTable.html#method_copy"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\ContentFoldersTable\u003A\u003A\u0024beforeStatus",
             "name": "beforeStatus",
@@ -8616,6 +8626,11 @@ Search.appendIndex(
             "summary": "\u30C7\u30D0\u30C3\u30B0\u30E2\u30FC\u30C9\u304B\u3069\u3046\u304B",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_isDebug"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AcheckTime\u0028\u0029",
+            "name": "checkTime",
+            "summary": "\u6642\u523B\u306E\u6709\u52B9\u6027\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_checkTime"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003A\u0024_detectors",
             "name": "_detectors",
             "summary": "detectors",
@@ -11441,6 +11456,11 @@ Search.appendIndex(
             "summary": "\u30AB\u30C6\u30B4\u30EA\u540D\u3088\u308A\u30AB\u30C6\u30B4\u30EA\u3092\u53D6\u5F97",
             "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_getByName"
         },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_copy"
+        },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003A\u0024validationParams",
             "name": "validationParams",
             "summary": "\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u8A2D\u5B9A",
@@ -11640,6 +11660,11 @@ Search.appendIndex(
             "name": "getByName",
             "summary": "\u6307\u5B9A\u3057\u305F\u540D\u79F0\u306E\u30D6\u30ED\u30B0\u30BF\u30B0\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogTagsTable.html#method_getByName"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogTagsTable\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogTagsTable.html#method_copy"
         },                {
             "fqsen": "\\BcBlog\\Model\\Validation\\BlogCategoryValidation",
             "name": "BlogCategoryValidation",
@@ -13171,11 +13196,6 @@ Search.appendIndex(
             "summary": "RSS\u0020Helper\u0020class\u0020for\u0020easy\u0020output\u0020RSS\u0020structures.",
             "url": "classes/BcBlog-View-Helper-RssHelper.html"
         },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/BcBlog-View-Helper-RssHelper.html#method___construct"
-        },                {
             "fqsen": "\\BcBlog\\View\\Helper\\RssHelper\u003A\u003Adocument\u0028\u0029",
             "name": "document",
             "summary": "Returns\u0020an\u0020RSS\u0020document\u0020wrapped\u0020in\u0020\u0060\u003Crss\u0020\/\u003E\u0060\u0020tags",
@@ -13345,6 +13365,11 @@ Search.appendIndex(
             "name": "validationDefault",
             "summary": "Validation\u0020Default",
             "url": "classes/BcContentLink-Model-Table-ContentLinksTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcContentLink\\Model\\Table\\ContentLinksTable\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BcContentLink-Model-Table-ContentLinksTable.html#method_copy"
         },                {
             "fqsen": "\\BcContentLink\\Plugin",
             "name": "Plugin",
