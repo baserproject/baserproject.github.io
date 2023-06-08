@@ -74,6 +74,17 @@ $this->BcBaser->blogPostTitle($post);
 $this->BcBaser->blogPostContent($post, true, false, 46);
 ```
 
+### posts.php を設置しても反映できない場合
+posts.php は、エレメントとして動作させているという特殊な仕様となっており、element フォルダがないと動作しません。  
+次のパスに element ディレクトリを配置していください。
+
+```shell
+# プラグインフォルダを作成する場合
+/plugins/{YourTheme}/templates/plugin/BcBlog/element/
+# プラグインフォルダを作成しない場合
+/plugins/{YourTheme}/templates/element/
+```
+
 ## メールフォーム
 baserCMSで提供されるメールフォームプラグインは、複数のメールフォームを同時に設置できる機能をもった高性能メールフォームです。管理システムより、フォームの入力欄を独自に定義することができ、バリデーションも細かく設定できます。
 
