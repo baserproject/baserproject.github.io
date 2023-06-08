@@ -76,7 +76,7 @@ $this->BcBaser->blogPostContent($post, true, false, 46);
 
 ### posts.php を設置しても反映できない場合
 posts.php は、エレメントとして動作させているという特殊な仕様となっており、element フォルダがないと動作しません。  
-次のパスに element ディレクトリを配置していください。
+次のパスに element ディレクトリを配置していください。（空で大丈夫です）
 
 ```shell
 # プラグインフォルダを作成する場合
