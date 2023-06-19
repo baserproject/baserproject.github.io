@@ -542,13 +542,13 @@
     
             <span class="phpdocumentor-element__extends">
             Uses
-                            <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
+                            <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html"><abbr title="\BaserCore\Event\BcEventDispatcherTrait">BcEventDispatcherTrait</abbr></a>,                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
@@ -600,6 +600,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>一時イベント
 イベントを一時にオフにする場合に対象のコールバック処理を一時的に格納する</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a>
+    <span>
+                        &nbsp;: <abbr title="\Cake\View\View">View</abbr>            </span>
+</dt>
+<dd>View</dd>
+
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix">addPrefix()</a>
     <span>
@@ -650,11 +657,25 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>配列の文字コードを変換する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcBlog-Model-Table-BlogTagsTable.html#method_copy">copy()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
+</dt>
+<dd>コピーする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct">deconstruct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Deconstructs a complex data type (array or object) into a single field value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a>
+    <span>
+                                &nbsp;: bool|<abbr title="\Cake\Event\Event">Event</abbr>    </span>
+</dt>
+<dd>イベントを発火</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcBlog-Model-Table-BlogTagsTable.html#method_getByName">getByName()</a>
@@ -925,6 +946,39 @@ AppTable::getConditionAllowPublish() で利用</p>
         <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$tmpEvents</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__View">
+        $_View
+        <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php"><a href="files/plugins-baser-core-src-event-bceventdispatchertrait.html"><abbr title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php">BcEventDispatcherTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">View</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Cake\View\View">View</abbr></span>
+    <span class="phpdocumentor-signature__name">$_View</span>
+    </code>
 
     
     
@@ -1393,6 +1447,77 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_copy">
+        copy()
+        <a href="classes/BcBlog-Model-Table-BlogTagsTable.html#method_copy" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">コピーする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">copy</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Throwable">Throwable</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_deconstruct">
         deconstruct()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1449,6 +1574,91 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_dispatchLayerEvent">
+        dispatchLayerEvent()
+        <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php"><a href="files/plugins-baser-core-src-event-bceventdispatchertrait.html"><abbr title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php">BcEventDispatcherTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">イベントを発火</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">dispatchLayerEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getByName">
         getByName()
         <a href="classes/BcBlog-Model-Table-BlogTagsTable.html#method_getByName" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1456,7 +1666,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">124</span>
 
     </aside>
 
@@ -1882,7 +2092,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -2026,7 +2236,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
@@ -2494,7 +2704,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php"><a href="files/plugins-bc-blog-src-model-table-blogtagstable.html"><abbr title="plugins/bc-blog/src/Model/Table/BlogTagsTable.php">BlogTagsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
