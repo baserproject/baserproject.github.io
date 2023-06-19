@@ -120,4 +120,6 @@ READMEを参考にしてみてください。
 
 [独自のWeb API の開発](./develop_api) をご覧ください。
 
-　
+## APIの処理の流れ
+
+![APIの処理の流れ](./img/api_flow.jpg)
