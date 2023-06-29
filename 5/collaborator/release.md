@@ -33,7 +33,7 @@ vendor/bin/monorepo-builder merge
 その後、コミットしてプッシュします。
 
 ```shell
-git commit -a -m "basercms-5.0.0 をリリース"
+git commit -a -m "basercms-5.x.x をリリース"
 ```
 
  
@@ -52,7 +52,7 @@ git merge dev-5
 自動的にタグを作成しプッシュします。
 
 ```shell
-vendor/bin/monorepo-builder release 5.0.0
+vendor/bin/monorepo-builder release 5.x.x
 ```
 
 親パッケージより一括リリースするため、子パッケージは、読み取り専用の扱いとします。
@@ -82,7 +82,7 @@ git push origin dev-5
 Dockerコンテナにログインし、次のコマンドを実行しパッケージを作成します。
 
 ```shell
-bin/cake create release
+bin/cake create release master
 cd tmp
 # バージョン番号付きのファイル名にリネーム
 mv basercms.zip basercms-5.x.x.zip
