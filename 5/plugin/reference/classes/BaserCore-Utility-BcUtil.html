@@ -591,6 +591,20 @@
 <dd>認証用のキーを取得</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Utility-BcUtil.html#method_base64UrlSafeDecode">base64UrlSafeDecode()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>パーセントエンコーディングされないURLセーフなbase64デコード</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Utility-BcUtil.html#method_base64UrlsafeEncode">base64UrlsafeEncode()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>パーセントエンコーディングされないURLセーフなbase64エンコード</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Utility-BcUtil.html#method_baseUrl">baseUrl()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -965,6 +979,13 @@
 <dd>コンソールから実行されているかチェックする
 $_ENV は、bootstrap にて設定
 ユニットテストで状態を変更できる仕様とする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Utility-BcUtil.html#method_isCorePlugin">isCorePlugin()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>指定したプラグインがコアプラグインかどうかを判定する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Utility-BcUtil.html#method_isDebug">isDebug()</a>
@@ -1394,6 +1415,102 @@ ServerRequest::_detectors を初期化する際に利用</p>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_base64UrlSafeDecode">
+        base64UrlSafeDecode()
+        <a href="classes/BaserCore-Utility-BcUtil.html#method_base64UrlSafeDecode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1971</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パーセントエンコーディングされないURLセーフなbase64デコード</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">base64UrlSafeDecode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$val</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>対象文字列</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_base64UrlsafeEncode">
+        base64UrlsafeEncode()
+        <a href="classes/BaserCore-Utility-BcUtil.html#method_base64UrlsafeEncode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1989</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パーセントエンコーディングされないURLセーフなbase64エンコード</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">base64UrlsafeEncode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$val</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"><p>base64エンコード時でに出てくる記号 +(プラス) , /(スラッシュ) , =(イコール)
+このbase64エンコードした値をさらにURLのパラメータで使うためにURLエンコードすると
+パーセントエンコーディングされてしまいます。
+そのため、このメソッドではパーセントエンコーディングされないURLセーフな
+base64エンコードを行います。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$val</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>対象文字列</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_baseUrl">
         baseUrl()
         <a href="classes/BaserCore-Utility-BcUtil.html#method_baseUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1510,7 +1627,7 @@ ServerRequest::_detectors を初期化する際に利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1942</span>
+    <span class="phpdocumentor-element-found-in__line">1946</span>
 
     </aside>
 
@@ -2411,7 +2528,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1896</span>
+    <span class="phpdocumentor-element-found-in__line">1901</span>
 
     </aside>
 
@@ -2421,7 +2538,13 @@ UserDir に対応</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getAuthPrefixList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-    
+        <section class="phpdocumentor-description"><p>設定 <code class="prettyprint">BcPrefixAuth</code> で定義されているものより取得する</p>
+<ul>
+<li>フロント用のAPIでないこと</li>
+<li>disabled = true でないこと</li>
+</ul>
+</section>
+
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -3777,7 +3900,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1916</span>
+    <span class="phpdocumentor-element-found-in__line">1920</span>
 
     </aside>
 
@@ -4668,6 +4791,76 @@ $_ENV は、bootstrap にて設定
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isCorePlugin">
+        isCorePlugin()
+        <a href="classes/BaserCore-Utility-BcUtil.html#method_isCorePlugin" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2004</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">指定したプラグインがコアプラグインかどうかを判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isCorePlugin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$plugin</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_isDebug">
         isDebug()
         <a href="classes/BaserCore-Utility-BcUtil.html#method_isDebug" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4675,7 +4868,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1928</span>
+    <span class="phpdocumentor-element-found-in__line">1932</span>
 
     </aside>
 
