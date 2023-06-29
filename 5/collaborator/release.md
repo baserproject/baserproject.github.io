@@ -33,16 +33,16 @@ vendor/bin/monorepo-builder merge
 その後、コミットしてプッシュします。
 
 ```shell
-git commit -a -m "ucmitz-5.0.0 をリリース"
+git commit -a -m "basercms-5.0.0 をリリース"
 ```
 
  
 ## master ブランチにマージ
-`dev` ブランチを `master` ブランチにマージします。
+`dev-5` ブランチを `master` ブランチにマージします。
 
 ```shell
 git checkout master
-git merge dev
+git merge dev-5
 ```
 
  
