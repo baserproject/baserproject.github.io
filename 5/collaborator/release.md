@@ -72,9 +72,9 @@ vendor/bin/monorepo-builder release 5.0.0
 ## dev ブランチにマージ
 master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
-git checkout dev
+git checkout dev-5
 git merge master
-git push origin dev
+git push origin dev-5
 ```
 
 
