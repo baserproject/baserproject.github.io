@@ -127,6 +127,12 @@ class BcBaserHelper extends Cake\View\Helper
      */
 ```
 
+## リクエスト
+### データ送信
+データの変更を伴う処理について、原則 POST送信を要求するものとします。
+### 検索クエリ
+検索を伴う処理について、原則 GET送信を要求するものとします。
+
 ## ユニットテスト
 全てのメソッドにはユニットテストが必要です。
 その際、テストの実装がどうしても間に合わない場合は、 `markTestIncomplete()` を記載しておいてください。その際、アノテーションで、`@unitTest` を付けてはいけません。
@@ -134,6 +140,18 @@ class BcBaserHelper extends Cake\View\Helper
 ```php
 $this->markTestIncomplete('Not implemented yet.');
 ```
+
+## マイグレーションファイル
+マイグレーションファイルは、１テーブル１つ作成するようにしてください。  
+なお、マイグレーションファイルの命名規則は次のとおりです。
+
+【命名規則】
+
+- テーブル作成：Create{TableName}
+- テーブル削除：Drop{TableName}
+- フィールド追加：Add{FieldName}To{TableName}
+- フィールド変更：Change{FieldName}On{TableName}
+- フィールド削除：Remove{FieldName}From{TableName}
 
 
 ## CakePHPのコード修正時のコメント
