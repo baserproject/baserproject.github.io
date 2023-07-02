@@ -17,14 +17,14 @@ baserCMSのパッケージの構成、アーキテクチャー、データベー
 - [パッケージ構成](../package/)
 - [アーキテクチャー](../package/architecture)（調整中）
 - [データベース構造](../package/database)
-- [ディレクトリ構成](../package/directory_structure)（調整中）
+- [ディレクトリ構成](../package/directory_structure)
 - [設計書](../package/specification/)（調整中）
 
 ## 規約
 baserCMSの開発規約、コーディング規約、リファクタリング方針などについては次をご覧ください。
 - [開発規約](../terms/)（調整中）
-- [バージョン番号](../terms/version)（調整中）
-- [コーディング規約](../terms/coding)（調整中）
+- [バージョン番号](../terms/version)
+- [コーディング規約](../terms/coding)
 - [リファクタリング方針](../terms/refactoring)（調整中）
 - [ユーザーインターフェイス設計方針](../terms/user_interface_design)（調整中）
 - [非推奨処理の対応方針](../terms/deprecated)（調整中）
@@ -35,7 +35,7 @@ baserCMSの開発規約、コーディング規約、リファクタリング方
 - [開発者として参加・貢献する](../contribution_developer/)（調整中）
 - [開発サイクル](../contribution_developer/cycle)（調整中）
 - [開発への参加方法](../contribution_developer/participation)（調整中）
-- [コアの開発](../core/)（調整中）
+- [コアの開発](../core/)
 - [コアテーマの開発](../core_theme/)（調整中）
 - [コアプラグインの開発](../core_plugin/)（調整中）
 
