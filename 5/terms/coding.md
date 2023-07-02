@@ -68,9 +68,75 @@ class SitesController extends BcAdminAppController {}
 public function index(SiteManageServiceInterface $siteManage){}
 ```
 
+## コード移行時のマーキング
+クラスメソッドやビューファイルの移行実装時、および新規ファイル追加時には、ヘッダーコメントにアノテーションでマーキングをします。
+
+```
+@checked : コードの精査が完了している
+@noTodo : Todo が発生しない
+@unitTest : unitTest が実装済である
+```
+
+これにより進行管理表に自動反映し、進捗状況をわかるようにしています。
+
+- [baserCMS-進行管理](https://docs.google.com/spreadsheets/d/1EGxMk-dy8WIg2NmgOKsS_fBXqDB6oJky9M0mB7TADEk/edit#gid=938641024)
+
+なお、クラスの冒頭にアノテーションのインポートが必要となりますので忘れないようにしてください。
+
+```php
+use BaserCore\Annotation\UnitTest;
+use BaserCore\Annotation\NoTodo;
+use BaserCore\Annotation\Checked;
+```
+　
+マーキングの例
+```php
+// 例）
+use BaserCore\Annotation\UnitTest;
+use BaserCore\Annotation\NoTodo;
+use BaserCore\Annotation\Checked;
+
+class BcBaserHelper extends Cake\View\Helper 
+{
+    /**
+     * コンテンツを特定する文字列を出力する
+     *
+     * URL を元に、第一階層までの文字列をキャメルケースで取得する
+     * ※ 利用例、出力例については BcBaserHelper::getContentsName() を参照
+     *
+     * @param bool $detail 詳細モード true にした場合は、ページごとに一意となる文字列をキャメルケースで出力する（初期値 : false）
+     * @param array $options オプション（初期値 : array()）
+     *    ※ オプションの詳細については、BcBaserHelper::getContentsName() を参照
+     * @return void
+     * @checked
+     * @noTodo
+     */
+```
+
+なお、 ucmitz 進行管理に、メモを反映したい場合には、 Note アノテーションが利用できます。
+```php
+// 例
+use BaserCore\Annotation\Note;
+
+class BcBaserHelper extends Cake\View\Helper 
+{
+    /**
+     * Contents Before Move
+     *
+     * @note(value="固定ページを実装するまではTODO消化できない")
+     */
+```
+
+## ユニットテスト
+全てのメソッドにはユニットテストが必要です。
+その際、テストの実装がどうしても間に合わない場合は、 `markTestIncomplete()` を記載しておいてください。その際、アノテーションで、`@unitTest` を付けてはいけません。
+
+```php
+$this->markTestIncomplete('Not implemented yet.');
+```
 
 
-## CakePHPのコードを修正する場合のコメントルール
+## CakePHPのコード修正時のコメント
 CakePHPのコードを修正するには、[CakePHPのクラスを上書きする](../core/index#cakephpのクラスを上書きする) を参考に書き換えますが、その際、次のルールに則り、コメントによるマーキングを行ってください。
 
 また、修正理由はできるだけ細かく記載をします。  

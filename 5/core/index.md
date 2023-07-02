@@ -142,5 +142,5 @@ $this->BcBaser->js('/path/to/javascript');
 composer dump-autoload
 ```
 
-なお、CakePHPのソースコードを変更する場合は、[CakePHPのコードを修正する場合のコメントルール](../terms/coding#cakephpのコードを修正する場合のコメントルール) に従って、必ずコメントを記述しておきます。
+なお、CakePHPのソースコードを変更する場合は、[CakePHPのコード修正時のコメント](../terms/coding#cakephpのコード修正時のコメント) に従って、必ずコメントを記述しておきます。
 
