@@ -33,16 +33,16 @@ vendor/bin/monorepo-builder merge
 その後、コミットしてプッシュします。
 
 ```shell
-git commit -a -m "ucmitz-5.0.0 をリリース"
+git commit -a -m "basercms-5.x.x をリリース"
 ```
 
  
 ## master ブランチにマージ
-`dev` ブランチを `master` ブランチにマージします。
+`dev-5` ブランチを `master` ブランチにマージします。
 
 ```shell
 git checkout master
-git merge dev
+git merge dev-5
 ```
 
  
@@ -52,7 +52,7 @@ git merge dev
 自動的にタグを作成しプッシュします。
 
 ```shell
-vendor/bin/monorepo-builder release 5.0.0
+vendor/bin/monorepo-builder release 5.x.x
 ```
 
 親パッケージより一括リリースするため、子パッケージは、読み取り専用の扱いとします。
@@ -72,9 +72,9 @@ vendor/bin/monorepo-builder release 5.0.0
 ## dev ブランチにマージ
 master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
-git checkout dev
+git checkout dev-5
 git merge master
-git push origin dev
+git push origin dev-5
 ```
 
 
@@ -82,7 +82,7 @@ git push origin dev
 Dockerコンテナにログインし、次のコマンドを実行しパッケージを作成します。
 
 ```shell
-bin/cake create release
+bin/cake create release master
 cd tmp
 # バージョン番号付きのファイル名にリネーム
 mv basercms.zip basercms-5.x.x.zip

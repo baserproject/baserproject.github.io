@@ -1471,6 +1471,11 @@ Search.appendIndex(
             "summary": "Class\u0020BcApiController",
             "url": "classes/BaserCore-Controller-Api-BcApiController.html"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "Before\u0020Filter",
+            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_beforeFilter"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AgetAccessToken\u0028\u0029",
             "name": "getAccessToken",
             "summary": "\u30C8\u30FC\u30AF\u30F3\u3092\u53D6\u5F97\u3059\u308B",
@@ -4110,11 +4115,6 @@ Search.appendIndex(
             "name": "isRequiredAuthentication",
             "summary": "\u8A8D\u8A3C\u304C\u5FC5\u8981\u304B\u5224\u5B9A\u3059\u308B",
             "url": "classes/BaserCore-Plugin.html#method_isRequiredAuthentication"
-        },                {
-            "fqsen": "\\BaserCore\\Plugin\u003A\u003AisEnabledCoreApi\u0028\u0029",
-            "name": "isEnabledCoreApi",
-            "summary": "API\u304C\u5229\u7528\u3067\u304D\u308B\u304B\u78BA\u8A8D\u3059\u308B",
-            "url": "classes/BaserCore-Plugin.html#method_isEnabledCoreApi"
         },                {
             "fqsen": "\\BaserCore\\Plugin\u003A\u003AsetupSessionAuth\u0028\u0029",
             "name": "setupSessionAuth",
@@ -8630,6 +8630,21 @@ Search.appendIndex(
             "name": "checkTime",
             "summary": "\u6642\u523B\u306E\u6709\u52B9\u6027\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_checkTime"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003Abase64UrlSafeDecode\u0028\u0029",
+            "name": "base64UrlSafeDecode",
+            "summary": "\u30D1\u30FC\u30BB\u30F3\u30C8\u30A8\u30F3\u30B3\u30FC\u30C7\u30A3\u30F3\u30B0\u3055\u308C\u306A\u3044URL\u30BB\u30FC\u30D5\u306Abase64\u30C7\u30B3\u30FC\u30C9",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_base64UrlSafeDecode"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003Abase64UrlsafeEncode\u0028\u0029",
+            "name": "base64UrlsafeEncode",
+            "summary": "\u30D1\u30FC\u30BB\u30F3\u30C8\u30A8\u30F3\u30B3\u30FC\u30C7\u30A3\u30F3\u30B0\u3055\u308C\u306A\u3044URL\u30BB\u30FC\u30D5\u306Abase64\u30A8\u30F3\u30B3\u30FC\u30C9",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_base64UrlsafeEncode"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AisCorePlugin\u0028\u0029",
+            "name": "isCorePlugin",
+            "summary": "\u6307\u5B9A\u3057\u305F\u30D7\u30E9\u30B0\u30A4\u30F3\u304C\u30B3\u30A2\u30D7\u30E9\u30B0\u30A4\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_isCorePlugin"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003A\u0024_detectors",
             "name": "_detectors",
@@ -16228,7 +16243,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003AbeforeFilter\u0028\u0029",
             "name": "beforeFilter",
-            "summary": "",
+            "summary": "Before\u0020Filter",
             "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_beforeFilter"
         },                {
             "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Aadd\u0028\u0029",

@@ -10,7 +10,7 @@ gulp と Webpack が動作するように、npm でライブラリをインス�
 ```shell
 npm install
 ```
-
+※ node v16.8.0 で動作確認
  
 ## ファイル監視
 gulpによる監視は、 npm workspace を利用するため、アプリケーションルートで次のコマンドを実行します。
