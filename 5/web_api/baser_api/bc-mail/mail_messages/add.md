@@ -10,20 +10,20 @@
 
 ## リクエスト
 ```
-POST /baser/api/bc-mail/mail_messages.json
+POST /baser/api/bc-mail/mail_messages/add/{mailContentId}.json
 ```
 
 ### リクエストヘッダ
+
 | ヘッダ名            | 型                                       |
 |-----------------|-----------------------------------------|
 | X-CSRF-Token | `GET /baser-core/bc_form/get_token` で取得 |
 
-
-### クエリパラメーター
+### パスパラメーター
 
 | パラメーター名   | 型   | 必須  | 内容          |
 |-----------|-----|-----|-------------|
-| mail_content_id        | 数値  | ●   | メールコンテンツのID |
+| mailContentId        | 数値  | ●   | メールコンテンツのID |
 
 ### リクエストボディ
 
