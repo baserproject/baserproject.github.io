@@ -55,7 +55,8 @@ git merge dev-5
 vendor/bin/monorepo-builder release 5.x.x
 ```
 
-親パッケージより一括リリースするため、子パッケージは、読み取り専用の扱いとします。
+親パッケージより一括リリースするため、子パッケージのレポジトリは、読み取り専用の扱いとします。
+
 
 ## GitHubActions の実行結果を確認
 
@@ -113,4 +114,54 @@ GitHubにて [新しいリリース記事](https://github.com/baserproject/baser
 これでリリース作業は完了です。お疲れさまでした。
 
 
-　
+## トラブルシューティング
+### リリースコマンドを再度実行するには
+リリースについてコミット漏れがあるなど、同じバージョンで再度リリース作業を行いたい場合があります。
+
+その際、次の手順に従います。
+
+#### 1. composer.json を戻す
+リリースコマンドを実行すると、composer.json の `replace` の箇所について、各パッケージごとのバージョン番号が、最新バージョン番号で更新されます。  
+こちらを手動で元のバージョンに戻します。
+
+```json
+    "replace": {
+        "baserproject/baser-core": "5.0.2",
+        "baserproject/bc-admin-third": "5.0.2",
+        "baserproject/bc-blog": "5.0.2",
+        "baserproject/bc-column": "5.0.2",
+        "baserproject/bc-content-link": "5.0.2",
+        "baserproject/bc-custom-content": "5.0.2",
+        "baserproject/bc-editor-template": "5.0.2",
+        "baserproject/bc-favorite": "5.0.2",
+        "baserproject/bc-front": "5.0.2",
+        "baserproject/bc-installer": "5.0.2",
+        "baserproject/bc-mail": "5.0.2",
+        "baserproject/bc-search-index": "5.0.2",
+        "baserproject/bc-theme-config": "5.0.2",
+        "baserproject/bc-theme-file": "5.0.2",
+        "baserproject/bc-uploader": "5.0.2",
+        "baserproject/bc-widget-area": "5.0.2"
+    },
+```
+
+#### 2. ローカルのタグを削除する
+リリースコマンドで作成されたローカルタグを削除します。
+
+```shell
+git tag -d 5.0.2
+```
+
+#### 3. リモートのタグを削除する
+リリースコマンドで作成されたリモートタグを削除します。
+
+```shell
+git push origin :5.0.2
+```
+
+#### 4. リリースコマンドを実行する
+その後、修正コミットなどを追加して、準備ができたら、リリースコマンドを実行します。
+
+```shell
+vendor/bin/monorepo-builder release 5.0.2
+```
