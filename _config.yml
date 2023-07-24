@@ -2,6 +2,9 @@ remote_theme: pages-themes/minimal
 repository: baserproject/baserproject.github.io
 lang: ja
 title: baserCMS Documentation
+image: https://baserproject.github.io/5/img/ogp.jpg
+twitter:
+  card: summary_large_image
 
 kramdown:
   input: GFM
