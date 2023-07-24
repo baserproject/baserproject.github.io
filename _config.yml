@@ -4,6 +4,7 @@ lang: ja
 title: baserCMS Documentation
 image: https://baserproject.github.io/5/img/ogp.jpg
 twitter:
+  username: basercms
   card: summary_large_image
 
 kramdown:
