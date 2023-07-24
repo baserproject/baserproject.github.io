@@ -1,6 +1,3 @@
----
-image: https://baserproject.github.io/5/img/ogp.jpg
----
 # baserCMS５ 公式ガイド
 
 ## baserCMS概要
