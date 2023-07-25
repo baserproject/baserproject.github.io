@@ -101,6 +101,20 @@ class YourController extends \BaserCore\Controller\Admin\BcAdminAppController
 }
 ```
 
+#### beforeFilter 利用時の注意点
+`beforeFilter` メソッドは、アクションが実行される前のタイミングで処理を入れるのに都合がよいメソッドですが、baserCMSで利用する場合には注意が必要です。
+
+メソッド内にて親メソッドを呼び出すことが前提になりますが、戻り値を必ずリターンで返却するようにしてください。これは、親メソッド内にて、アクセス制限の判定を行っていて、アクセス不可と判定された場合に、`Response` クラスが戻ってくるのですが、これを返却しないと呼び出し対象となるアクションが実行されてしまうからです。
+
+```php
+public function beforeFilter(Event $event)
+{
+    $response = parent::beforeFilter($event);
+    if($response) return $response;
+    // 処理を記述
+}
+```
+
 ### Template の配置
 
 管理画面を実装する Template は、`Admin` ディレクトリ内に配置します。
