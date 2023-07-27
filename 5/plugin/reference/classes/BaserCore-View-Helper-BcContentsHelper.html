@@ -548,7 +548,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -632,11 +632,25 @@
 <dd>フォルダリストを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentContent">getCurrentContent()</a>
+    <span>
+                                &nbsp;: false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>    </span>
+</dt>
+<dd>フロントページにおいて現在のコンテンツを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentRelatedSiteUrl">getCurrentRelatedSiteUrl()</a>
     <span>
                                 &nbsp;: mixed|string    </span>
 </dt>
 <dd>現在のURLを元に指定したサブサイトのURLを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentSite">getCurrentSite()</a>
+    <span>
+                                &nbsp;: false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>    </span>
+</dt>
+<dd>フロントページにおいて現在のサイトを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getFolderLinkedUrl">getFolderLinkedUrl()</a>
@@ -905,7 +919,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -1008,7 +1022,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -1158,7 +1172,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">526</span>
+    <span class="phpdocumentor-element-found-in__line">525</span>
 
     </aside>
 
@@ -1224,7 +1238,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">546</span>
+    <span class="phpdocumentor-element-found-in__line">545</span>
 
     </aside>
 
@@ -1315,7 +1329,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">473</span>
 
     </aside>
 
@@ -1358,6 +1372,66 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCurrentContent">
+        getCurrentContent()
+        <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentContent" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">933</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">フロントページにおいて現在のコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCurrentContent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a></span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getCurrentRelatedSiteUrl">
         getCurrentRelatedSiteUrl()
         <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentRelatedSiteUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1365,7 +1439,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 
     </aside>
 
@@ -1401,6 +1475,66 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCurrentSite">
+        getCurrentSite()
+        <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentSite" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">920</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">フロントページにおいて現在のサイトを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCurrentSite</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a></span></code>
+
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">false|<a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getFolderLinkedUrl">
         getFolderLinkedUrl()
         <a href="classes/BaserCore-View-Helper-BcContentsHelper.html#method_getFolderLinkedUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1408,7 +1542,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">677</span>
+    <span class="phpdocumentor-element-found-in__line">676</span>
 
     </aside>
 
@@ -1482,7 +1616,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -1515,7 +1649,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">757</span>
+    <span class="phpdocumentor-element-found-in__line">756</span>
 
     </aside>
 
@@ -1616,7 +1750,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
     </aside>
 
@@ -1674,7 +1808,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">823</span>
+    <span class="phpdocumentor-element-found-in__line">822</span>
 
     </aside>
 
@@ -1770,7 +1904,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">907</span>
+    <span class="phpdocumentor-element-found-in__line">906</span>
 
     </aside>
 
@@ -1803,7 +1937,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -1853,7 +1987,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">421</span>
+    <span class="phpdocumentor-element-found-in__line">420</span>
 
     </aside>
 
@@ -1908,7 +2042,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -2029,7 +2163,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">614</span>
+    <span class="phpdocumentor-element-found-in__line">613</span>
 
     </aside>
 
@@ -2072,7 +2206,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">628</span>
+    <span class="phpdocumentor-element-found-in__line">627</span>
 
     </aside>
 
@@ -2142,7 +2276,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">316</span>
 
     </aside>
 
@@ -2203,7 +2337,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">650</span>
+    <span class="phpdocumentor-element-found-in__line">649</span>
 
     </aside>
 
@@ -2280,7 +2414,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">661</span>
+    <span class="phpdocumentor-element-found-in__line">660</span>
 
     </aside>
 
@@ -2403,7 +2537,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -2482,7 +2616,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
     </aside>
 
@@ -2572,7 +2706,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">734</span>
+    <span class="phpdocumentor-element-found-in__line">733</span>
 
     </aside>
 
@@ -2626,7 +2760,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">490</span>
+    <span class="phpdocumentor-element-found-in__line">489</span>
 
     </aside>
 
@@ -2698,7 +2832,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">600</span>
+    <span class="phpdocumentor-element-found-in__line">599</span>
 
     </aside>
 
@@ -2731,7 +2865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">583</span>
+    <span class="phpdocumentor-element-found-in__line">582</span>
 
     </aside>
 
@@ -2785,7 +2919,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
@@ -2843,7 +2977,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">803</span>
+    <span class="phpdocumentor-element-found-in__line">802</span>
 
     </aside>
 
@@ -2938,7 +3072,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">869</span>
+    <span class="phpdocumentor-element-found-in__line">868</span>
 
     </aside>
 
@@ -3035,7 +3169,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -3068,7 +3202,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
     </aside>
 
@@ -3101,7 +3235,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">884</span>
+    <span class="phpdocumentor-element-found-in__line">883</span>
 
     </aside>
 
@@ -3182,7 +3316,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcContentsHelper.php"><a href="files/plugins-baser-core-src-view-helper-bccontentshelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcContentsHelper.php">BcContentsHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">562</span>
+    <span class="phpdocumentor-element-found-in__line">561</span>
 
     </aside>
 

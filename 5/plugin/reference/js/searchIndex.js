@@ -6356,6 +6356,11 @@ Search.appendIndex(
             "summary": "\u30D1\u30FC\u30DF\u30C3\u30B7\u30E7\u30F3\u30EA\u30B9\u30C8\u3092\u691C\u8A3C\u3059\u308B",
             "url": "classes/BaserCore-Service-PermissionsService.html#method_checkGroup"
         },                {
+            "fqsen": "\\BaserCore\\Service\\PermissionsService\u003A\u003AisAuthorized\u0028\u0029",
+            "name": "isAuthorized",
+            "summary": "URL\u3068\u30E1\u30BD\u30C3\u30C9\u306B\u3064\u3044\u3066\u8A31\u53EF\u3055\u308C\u3066\u3044\u308B\u304B\u78BA\u8A8D",
+            "url": "classes/BaserCore-Service-PermissionsService.html#method_isAuthorized"
+        },                {
             "fqsen": "\\BaserCore\\Service\\PermissionsService\u003A\u003AconvertRegexUrl\u0028\u0029",
             "name": "convertRegexUrl",
             "summary": "URL\u3092\u6B63\u898F\u8868\u73FE\u7528\u306E\u6587\u5B57\u5217\u306B\u5909\u63DB\u3059\u308B",
@@ -8976,6 +8981,11 @@ Search.appendIndex(
             "summary": "\u521D\u56DE\u30A2\u30AF\u30BB\u30B9\u6642\u306E\u30E1\u30C3\u30BB\u30FC\u30B8\u8868\u793A",
             "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_firstAccess"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003AgetCurrentSite\u0028\u0029",
+            "name": "getCurrentSite",
+            "summary": "\u7BA1\u7406\u753B\u9762\u306B\u304A\u3044\u3066\u73FE\u5728\u306E\u30B5\u30A4\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcAdminHelper.html#method_getCurrentSite"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcAdminHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
             "summary": "Helper",
@@ -9546,11 +9556,6 @@ Search.appendIndex(
             "summary": "URL\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getUrlParams"
         },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AgetCurrentContent\u0028\u0029",
-            "name": "getCurrentContent",
-            "summary": "\u73FE\u5728\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getCurrentContent"
-        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AgetCurrentPrefix\u0028\u0029",
             "name": "getCurrentPrefix",
             "summary": "\u73FE\u5728\u306E\u30B5\u30A4\u30C8\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9\u3092\u53D6\u5F97\u3059\u308B",
@@ -9910,6 +9915,16 @@ Search.appendIndex(
             "name": "getPublishedSites",
             "summary": "\u516C\u958B\u72B6\u614B\u306E\u30B5\u30A4\u30C8\u3092\u5168\u3066\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcContentsHelper.html#method_getPublishedSites"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcContentsHelper\u003A\u003AgetCurrentSite\u0028\u0029",
+            "name": "getCurrentSite",
+            "summary": "\u30D5\u30ED\u30F3\u30C8\u30DA\u30FC\u30B8\u306B\u304A\u3044\u3066\u73FE\u5728\u306E\u30B5\u30A4\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentSite"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcContentsHelper\u003A\u003AgetCurrentContent\u0028\u0029",
+            "name": "getCurrentContent",
+            "summary": "\u30D5\u30ED\u30F3\u30C8\u30DA\u30FC\u30B8\u306B\u304A\u3044\u3066\u73FE\u5728\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcContentsHelper.html#method_getCurrentContent"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcContentsHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
