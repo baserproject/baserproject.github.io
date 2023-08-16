@@ -55,6 +55,14 @@ https://localhost/baser/api/admin/baser-core/controller_name/action_name.json
 
 認証が必要な領域へリクエストする際には、ヘッダーに `Authorization` パラメーターとして、ログインAPIで取得した `access_token` を埋め込みます。
 
+```javascript
+// jQueryの場合
+$.ajax({
+    headers: {"Authorization": "{アクセストークン}"},
+    url: '/baser/api/baser-core/pages/add.json'
+});
+```
+
 もしくは、クエリパラメーターにトークンを引き渡すことでもアクセス可能です。
 
 ```
