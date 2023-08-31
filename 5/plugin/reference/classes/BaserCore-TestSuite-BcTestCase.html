@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -517,8 +518,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore.html">BaserCore</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-testsuite.html">TestSuite</a></li>
     </ul>
@@ -541,13 +543,18 @@
     
             <span class="phpdocumentor-element__extends">
             Uses
-                            <abbr title="\Cake\TestSuite\IntegrationTestTrait">IntegrationTestTrait</abbr>,                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
+                            <abbr title="\Cake\TestSuite\IntegrationTestTrait">IntegrationTestTrait</abbr>,                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>,                             <abbr title="\CakephpTestSuiteLight\Fixture\TruncateDirtyTables">TruncateDirtyTables</abbr>                    </span>
     </h2>
+
+<div class="phpdocumentor-label-line">
+
+
+</div>
 
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -558,14 +565,23 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/BaserCore-TestSuite-BcTestCase.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_CONTROLLER">EVENT_LAYER_CONTROLLER</a>
@@ -580,35 +596,39 @@ entryEventToMock() の引数として利用</dd>
     <span>
         &nbsp;= &#039;Helper&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_MODEL">EVENT_LAYER_MODEL</a>
     <span>
         &nbsp;= &#039;Model&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_VIEW">EVENT_LAYER_VIEW</a>
     <span>
         &nbsp;= &#039;View&#039;                            </span>
 </dt>
-<dd></dd>
 
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_Application">$Application</a>
     <span>
                         &nbsp;: <abbr title="\App\Application">Application</abbr>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_BaserCore">$BaserCore</a>
     <span>
                         &nbsp;: <a href="classes/BaserCore-Plugin.html"><abbr title="\BaserCore\Plugin">Plugin</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector">$FixtureInjector</a>
@@ -633,7 +653,15 @@ entryEventToMock() の引数として利用</dd>
 </dt>
 <dd>FixtureStrategy にて、TruncateStrategy を利用するかどうか</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_attachEvent">attachEvent()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -763,16 +791,6 @@ IntegrationTestTrait を使ったテストで利用する</dd>
 <dd>private・protectedメソッドを実行する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getFixtureStrategy">getFixtureStrategy()</a>
-    <span>
-                                &nbsp;: <abbr title="\Cake\TestSuite\Fixture\FixtureStrategyInterface">FixtureStrategyInterface</abbr>    </span>
-</dt>
-<dd>getFixtureStrategy
-フィクスチャの削除処理の高速化を図るため、FixtureStrategy に TransactionStrategy を設定。
-ベースをこちらにし、 auto increment による問題が発生した場合は、個別のテストケースごとに
-TruncateStrategy を利用するようにする。</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getPrivateProperty">getPrivateProperty()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -793,7 +811,8 @@ TruncateStrategy を利用するようにする。</dd>
 </dt>
 <dd>管理画面にログインする</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -802,17 +821,19 @@ TruncateStrategy を利用するようにする。</dd>
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/BaserCore-TestSuite-BcTestCase.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_CONTROLLER">
         EVENT_LAYER_CONTROLLER
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_CONTROLLER" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 
     </aside>
 
@@ -836,35 +857,7 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_HELPER">
         EVENT_LAYER_HELPER
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_HELPER" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
 
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">91</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">EVENT_LAYER_HELPER</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;Helper&#039;</span>
-</code>
-
-
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_MODEL">
-        EVENT_LAYER_MODEL
-        <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_MODEL" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -878,22 +871,21 @@ entryEventToMock() の引数として利用</p>
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">EVENT_LAYER_MODEL</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;Model&#039;</span>
+    <span class="phpdocumentor-signature__name">EVENT_LAYER_HELPER</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Helper&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
                     <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_VIEW">
-        EVENT_LAYER_VIEW
-        <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_VIEW" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_MODEL">
+        EVENT_LAYER_MODEL
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_MODEL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -907,15 +899,41 @@ entryEventToMock() の引数として利用</p>
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EVENT_LAYER_MODEL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;Model&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_VIEW">
+        EVENT_LAYER_VIEW
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_VIEW" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">EVENT_LAYER_VIEW</span>
     = <span class="phpdocumentor-signature__default-value">&#039;View&#039;</span>
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -926,6 +944,7 @@ entryEventToMock() の引数として利用</p>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/BaserCore-TestSuite-BcTestCase.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -937,13 +956,14 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="property_Application">
         $Application
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_Application" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -969,13 +989,14 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="property_BaserCore">
         $BaserCore
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_BaserCore" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -1001,13 +1022,14 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="property_FixtureInjector">
         $FixtureInjector
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">108</span>
 
     </aside>
 
@@ -1025,7 +1047,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1044,7 +1067,7 @@ entryEventToMock() の引数として利用</p>
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
 </article>
                     <article
@@ -1057,13 +1080,14 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="property_FixtureManager">
         $FixtureManager
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureManager" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -1081,7 +1105,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureManager#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1100,7 +1125,7 @@ entryEventToMock() の引数として利用</p>
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
 </article>
                     <article
@@ -1113,13 +1138,14 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="property_fixtureTruncate">
         $fixtureTruncate
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#property_fixtureTruncate" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1142,6 +1168,7 @@ entryEventToMock() の引数として利用</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/BaserCore-TestSuite-BcTestCase.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1152,11 +1179,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_attachEvent">
         attachEvent()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_attachEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">392</span>
 
     </aside>
 
@@ -1164,14 +1192,16 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">attachEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">attachEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$events</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1181,7 +1211,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_attachEvent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1205,12 +1236,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1222,11 +1249,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_classMethod">
         classMethod()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_classMethod" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -1236,14 +1264,12 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">classMethod</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1255,11 +1281,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_dropTable">
         dropTable()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_dropTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">468</span>
 
     </aside>
 
@@ -1269,6 +1296,8 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">dropTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1284,7 +1313,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_dropTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1308,12 +1338,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1325,11 +1351,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_getRequest">
         getRequest()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getRequest" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">264</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
     </aside>
 
@@ -1339,6 +1366,8 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;/&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;GET&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1354,31 +1383,29 @@ entryEventToMock() の引数として利用</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$method</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;GET&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$config</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getRequest#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1402,13 +1429,13 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1419,6 +1446,7 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_getService">
         getService()
         <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
@@ -1431,14 +1459,16 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1448,7 +1478,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1472,13 +1503,13 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1489,6 +1520,7 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_hasService">
         hasService()
         <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
@@ -1501,14 +1533,16 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1518,7 +1552,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1542,13 +1577,13 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1559,11 +1594,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_resetEvent">
         resetEvent()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_resetEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -1573,12 +1609,15 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resetEvent</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_resetEvent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1602,12 +1641,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1619,11 +1654,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_setFixtureTruncate">
         setFixtureTruncate()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setFixtureTruncate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -1633,12 +1669,15 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setFixtureTruncate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setFixtureTruncate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1662,12 +1701,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1679,11 +1714,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_setUp">
         setUp()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -1693,12 +1729,15 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setUp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUp#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1722,12 +1761,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1739,11 +1774,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_setUpFixtureManager">
         setUpFixtureManager()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUpFixtureManager" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -1753,6 +1789,8 @@ entryEventToMock() の引数として利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setUpFixtureManager</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>CakePHP4系より、FixtureManagerが非推奨となったが、$this-&gt;autoFixtures = false を利用した動的フィクスチャーを
 利用するために FixtureManager が必要となる。phpunit.xml.dist からは、FixtureManager の定義を除外し、
 基本的に利用しない方針だが、動的フィクスチャーが必要なテストの場合にだけ利用する。
@@ -1763,7 +1801,8 @@ entryEventToMock() の引数として利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUpFixtureManager#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1774,12 +1813,8 @@ entryEventToMock() の引数として利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1791,11 +1826,12 @@ entryEventToMock() の引数として利用</p>
     <h4 class="phpdocumentor-element__name" id="method_setUploadFileToRequest">
         setUploadFileToRequest()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUploadFileToRequest" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">460</span>
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
     </aside>
 
@@ -1806,6 +1842,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setUploadFileToRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$error</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">UPLOAD_ERR_OK</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1842,7 +1880,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUploadFileToRequest#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1866,12 +1905,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1883,11 +1918,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_tearDown">
         tearDown()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDown" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">245</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -1897,12 +1933,15 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tearDown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDown#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1926,12 +1965,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1943,11 +1978,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_tearDownAfterClass">
         tearDownAfterClass()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownAfterClass" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">442</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -1959,12 +1995,15 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">tearDownAfterClass</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownAfterClass#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1988,12 +2027,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2005,11 +2040,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_tearDownFixtureManager">
         tearDownFixtureManager()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownFixtureManager" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -2019,12 +2055,15 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tearDownFixtureManager</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownFixtureManager#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2064,12 +2103,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2081,11 +2116,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_truncateTable">
         truncateTable()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_truncateTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 
     </aside>
 
@@ -2095,6 +2131,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">truncateTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2110,7 +2148,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_truncateTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2136,12 +2175,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2153,11 +2188,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_apiLoginAdmin">
         apiLoginAdmin()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_apiLoginAdmin" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">308</span>
 
     </aside>
 
@@ -2167,6 +2203,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">apiLoginAdmin</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2182,7 +2220,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_apiLoginAdmin#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2206,13 +2245,13 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2223,11 +2262,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_entryEventToMock">
         entryEventToMock()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_entryEventToMock" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">327</span>
 
     </aside>
 
@@ -2235,8 +2275,10 @@ IntegrationTestTrait を使ったテストで利用する</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">entryEventToMock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">entryEventToMock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2245,19 +2287,18 @@ IntegrationTestTrait を使ったテストで利用する</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$eventName</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2267,7 +2308,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_entryEventToMock#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2291,13 +2333,13 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2308,11 +2350,12 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <h4 class="phpdocumentor-element__name" id="method_execPrivateMethod">
         execPrivateMethod()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_execPrivateMethod" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">375</span>
+    <span class="phpdocumentor-element-found-in__line">356</span>
 
     </aside>
 
@@ -2322,6 +2365,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">execPrivateMethod</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2357,7 +2402,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_execPrivateMethod#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2381,78 +2427,17 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$value</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$value</p>
 </section>
 
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getFixtureStrategy">
-        getFixtureStrategy()
-        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getFixtureStrategy" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+            </section>
 
-    </aside>
-
-        <p class="phpdocumentor-summary">getFixtureStrategy
-フィクスチャの削除処理の高速化を図るため、FixtureStrategy に TransactionStrategy を設定。
-ベースをこちらにし、 auto increment による問題が発生した場合は、個別のテストケースごとに
-TruncateStrategy を利用するようにする。</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getFixtureStrategy</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\TestSuite\Fixture\FixtureStrategyInterface">FixtureStrategyInterface</abbr></span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\TestSuite\Fixture\FixtureStrategyInterface">FixtureStrategyInterface</abbr></span>
-            &mdash;
-        
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2463,11 +2448,12 @@ TruncateStrategy を利用するようにする。</p>
     <h4 class="phpdocumentor-element__name" id="method_getPrivateProperty">
         getPrivateProperty()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getPrivateProperty" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">395</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -2477,6 +2463,8 @@ TruncateStrategy を利用するようにする。</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getPrivateProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$class</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$property</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2499,7 +2487,8 @@ TruncateStrategy を利用するようにする。</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getPrivateProperty#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2531,12 +2520,8 @@ TruncateStrategy を利用するようにする。</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2548,11 +2533,12 @@ TruncateStrategy を利用するようにする。</p>
     <h4 class="phpdocumentor-element__name" id="method_getUser">
         getUser()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
     </aside>
 
@@ -2562,6 +2548,8 @@ TruncateStrategy を利用するようにする。</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">getUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2570,15 +2558,15 @@ TruncateStrategy を利用するようにする。</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getUser#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2602,12 +2590,8 @@ TruncateStrategy を利用するようにする。</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2619,11 +2603,12 @@ TruncateStrategy を利用するようにする。</p>
     <h4 class="phpdocumentor-element__name" id="method_loginAdmin">
         loginAdmin()
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_loginAdmin" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/TestSuite/BcTestCase.php"><a href="files/plugins-baser-core-src-testsuite-bctestcase.html"><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">282</span>
 
     </aside>
 
@@ -2633,6 +2618,8 @@ TruncateStrategy を利用するようにする。</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">loginAdmin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2641,23 +2628,22 @@ TruncateStrategy を利用するようにする。</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-TestSuite-BcTestCase.html#method_loginAdmin#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2681,80 +2667,177 @@ TruncateStrategy を利用するようにする。</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/TestSuite/BcTestCase.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_CONTROLLER">EVENT_LAYER_CONTROLLER</a></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_HELPER">EVENT_LAYER_HELPER</a></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_MODEL">EVENT_LAYER_MODEL</a></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#constant_EVENT_LAYER_VIEW">EVENT_LAYER_VIEW</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_Application">$Application<a href="classes/BaserCore-TestSuite-BcTestCase.html"></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_BaserCore">$BaserCore<a href="classes/BaserCore-TestSuite-BcTestCase.html"></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector">$FixtureInjector<a href="classes/BaserCore-TestSuite-BcTestCase.html"></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureManager">$FixtureManager<a href="classes/BaserCore-TestSuite-BcTestCase.html"></li>
+                                                    <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_fixtureTruncate">$fixtureTruncate<a href="classes/BaserCore-TestSuite-BcTestCase.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_attachEvent">attachEvent()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_classMethod">classMethod()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_dropTable">dropTable()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getRequest">getRequest()</a></li>
+                                            <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
+                                            <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_resetEvent">resetEvent()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setFixtureTruncate">setFixtureTruncate()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUp">setUp()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUpFixtureManager">setUpFixtureManager()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUploadFileToRequest">setUploadFileToRequest()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDown">tearDown()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownAfterClass">tearDownAfterClass()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownFixtureManager">tearDownFixtureManager()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_truncateTable">truncateTable()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_apiLoginAdmin">apiLoginAdmin()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_entryEventToMock">entryEventToMock()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_execPrivateMethod">execPrivateMethod()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getPrivateProperty">getPrivateProperty()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_getUser">getUser()</a></li>
+                                            <li><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_loginAdmin">loginAdmin()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2765,7 +2848,6 @@ TruncateStrategy を利用するようにする。</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/BaserCore-TestSuite-BcTestCase.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

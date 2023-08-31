@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -517,8 +518,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore.html">BaserCore</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-service.html">Service</a></li>
     </ul>
@@ -544,6 +546,11 @@
                             <abbr title="\Cake\Log\LogTrait">LogTrait</abbr>,                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>,                             <abbr title="\Migrations\ConfigurationTrait">ConfigurationTrait</abbr>                    </span>
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
@@ -557,35 +564,49 @@
 
 
 
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-BcDatabaseServiceInterface.html"><abbr title="\BaserCore\Service\BcDatabaseServiceInterface">BcDatabaseServiceInterface</abbr></a></dt>
-        <dd>BcDatabaseServiceInterface</dd>
-    
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/BaserCore-Service-BcDatabaseService.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-BcDatabaseServiceInterface.html"><abbr title="\BaserCore\Service\BcDatabaseServiceInterface">BcDatabaseServiceInterface</abbr></a></dt><dd>BcDatabaseServiceInterface</dd>    </dl>
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/BaserCore-Service-BcDatabaseService.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/BaserCore-Service-BcDatabaseService.html#property__encodingMaps">$_encodingMaps</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd>PHP←→DBエンコーディングマップ</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/BaserCore-Service-BcDatabaseService.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Service-BcDatabaseService.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -895,7 +916,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 </dt>
 <dd>アダプターを初期化する</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -906,6 +928,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/BaserCore-Service-BcDatabaseService.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -917,6 +940,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="property__encodingMaps">
         $_encodingMaps
         <a href="classes/BaserCore-Service-BcDatabaseService.html#property__encodingMaps" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -946,6 +970,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/BaserCore-Service-BcDatabaseService.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -956,6 +981,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -970,14 +996,12 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -989,6 +1013,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_addColumn">
         addColumn()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_addColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1003,6 +1028,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">addColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1039,7 +1066,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_addColumn#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1063,13 +1091,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1080,6 +1108,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_checkDbConnection">
         checkDbConnection()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_checkDbConnection" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1094,6 +1123,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkDbConnection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1124,7 +1155,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_checkDbConnection#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1164,12 +1196,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1181,6 +1209,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_clearAppTableList">
         clearAppTableList()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_clearAppTableList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1195,12 +1224,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">clearAppTableList</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_clearAppTableList#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1224,12 +1256,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1241,6 +1269,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_columnExists">
         columnExists()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_columnExists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1255,6 +1284,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">columnExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1276,11 +1307,11 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1291,6 +1322,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_connectDb">
         connectDb()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_connectDb" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1305,6 +1337,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">connectDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1320,15 +1354,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_connectDb#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1352,13 +1386,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1369,6 +1403,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_constructionTable">
         constructionTable()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_constructionTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1383,6 +1418,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">constructionTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfigKeyName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1412,7 +1449,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_constructionTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1436,13 +1474,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1453,6 +1491,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_createTable">
         createTable()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_createTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1467,6 +1506,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1489,7 +1530,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_createTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1499,13 +1541,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1516,6 +1558,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_deleteTables">
         deleteTables()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_deleteTables" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1530,6 +1573,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteTables</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfigKeyName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1552,7 +1597,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_deleteTables#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1576,13 +1622,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1593,6 +1639,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_dropTable">
         dropTable()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_dropTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1607,6 +1654,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">dropTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1622,7 +1671,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_dropTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1632,13 +1682,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1649,6 +1699,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getAppTableList">
         getAppTableList()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getAppTableList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1663,6 +1714,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getAppTableList</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1671,15 +1724,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getAppTableList#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1703,13 +1756,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1720,6 +1773,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getDataSource">
         getDataSource()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1734,6 +1788,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getDataSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfigKeyName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbConfig</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1742,8 +1798,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dbConfig</span>
@@ -1757,7 +1812,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1781,13 +1837,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Database\Connection">Connection</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1798,6 +1854,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getDatasourceName">
         getDatasourceName()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDatasourceName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1812,6 +1869,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getDatasourceName</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datasource</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1829,7 +1888,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDatasourceName#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1853,13 +1913,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1870,6 +1930,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getEncoding">
         getEncoding()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getEncoding" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1884,12 +1945,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getEncoding</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getEncoding#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1913,15 +1977,17 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The database encoding</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The database encoding</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1932,6 +1998,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getMigrationsTable">
         getMigrationsTable()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getMigrationsTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -1946,6 +2013,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMigrationsTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Migrations\Table">Table</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1961,7 +2030,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getMigrationsTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1985,13 +2055,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Migrations\Table">Table</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Migrations\Table">Table</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2002,6 +2072,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getSequence">
         getSequence()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getSequence" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2016,6 +2087,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSequence</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;id&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2024,25 +2097,19 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$field</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;id&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2054,6 +2121,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_getService">
         getService()
         <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
@@ -2066,14 +2134,16 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2083,7 +2153,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2107,13 +2178,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2124,6 +2195,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_hasService">
         hasService()
         <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
@@ -2136,14 +2208,16 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2153,7 +2227,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2177,13 +2252,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2194,6 +2269,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_initMessageTables">
         initMessageTables()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initMessageTables" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2208,12 +2284,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">initMessageTables</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initMessageTables#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2237,13 +2316,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2254,6 +2333,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_initSystemData">
         initSystemData()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initSystemData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2268,6 +2348,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">initSystemData</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2283,7 +2365,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initSystemData#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2307,13 +2390,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2324,6 +2407,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_loadCsv">
         loadCsv()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsv" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2338,6 +2422,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">loadCsv</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2359,7 +2445,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsv#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2383,13 +2470,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2400,6 +2487,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_loadCsvToArray">
         loadCsvToArray()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsvToArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2414,6 +2502,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">loadCsvToArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$encoding</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;auto&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2429,15 +2519,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;auto&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsvToArray#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2461,13 +2551,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">false|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">false|array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2478,6 +2568,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_loadDefaultDataPattern">
         loadDefaultDataPattern()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadDefaultDataPattern" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2490,21 +2581,23 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">loadDefaultDataPattern</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pattern</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">loadDefaultDataPattern</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pattern</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$theme</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pattern</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2514,7 +2607,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadDefaultDataPattern#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2538,13 +2632,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2555,6 +2649,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_loadSchema">
         loadSchema()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2567,14 +2662,16 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">loadSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">loadSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2584,7 +2681,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadSchema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2608,13 +2706,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2625,6 +2723,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_migrate">
         migrate()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_migrate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2639,6 +2738,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">migrate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$connection</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;default&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2661,7 +2762,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_migrate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2685,13 +2787,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2702,6 +2804,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_removeColumn">
         removeColumn()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_removeColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2716,6 +2819,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">removeColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2738,7 +2843,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_removeColumn#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2762,13 +2868,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2779,6 +2885,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_renameColumn">
         renameColumn()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_renameColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2793,6 +2900,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">renameColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newColumnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2822,7 +2931,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_renameColumn#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2846,13 +2956,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2863,6 +2973,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_renameTable">
         renameTable()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_renameTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2877,6 +2988,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">renameTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$oldTableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$newTableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2898,11 +3011,11 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2913,6 +3026,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_resetAllTables">
         resetAllTables()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetAllTables" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -2927,6 +3041,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resetAllTables</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>プラグインは有効となっているもののみ
 現在のテーマでないテーマの梱包プラグインを検出できない為</p>
 </section>
@@ -2938,15 +3054,15 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetAllTables#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2970,13 +3086,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2987,6 +3103,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_resetTables">
         resetTables()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetTables" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3001,6 +3118,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resetTables</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;BaserCore&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3023,7 +3142,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetTables#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3047,13 +3167,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3064,6 +3184,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_tableExists">
         tableExists()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_tableExists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3078,6 +3199,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">tableExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3093,7 +3216,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_tableExists#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3117,13 +3241,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3134,6 +3258,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_testConnectDb">
         testConnectDb()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_testConnectDb" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3148,6 +3273,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">testConnectDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3163,7 +3290,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_testConnectDb#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3180,12 +3308,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3197,6 +3321,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_truncate">
         truncate()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_truncate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3209,14 +3334,16 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">truncate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">truncate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$table</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3226,7 +3353,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_truncate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3250,13 +3378,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3267,6 +3395,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_updateSequence">
         updateSequence()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_updateSequence" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3281,14 +3410,12 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">updateSequence</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3300,6 +3427,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_writeCsv">
         writeCsv()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeCsv" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3314,6 +3442,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">writeCsv</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3322,8 +3452,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
@@ -3342,7 +3471,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeCsv#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3366,13 +3496,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3383,6 +3513,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method_writeSchema">
         writeSchema()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3397,6 +3528,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">writeSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3405,8 +3538,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
@@ -3425,7 +3557,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeSchema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3449,15 +3582,17 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|false</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>スキーマファイルの内容</p>
+        <span class="phpdocumentor-signature__response_type">string|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>スキーマファイルの内容</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3468,6 +3603,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method__convertFieldToCsv">
         _convertFieldToCsv()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertFieldToCsv" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3482,6 +3618,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_convertFieldToCsv</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dc</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3506,7 +3644,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertFieldToCsv#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3530,13 +3669,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3547,6 +3686,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method__convertRecordToCsv">
         _convertRecordToCsv()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertRecordToCsv" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3561,6 +3701,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_convertRecordToCsv</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$record</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3576,7 +3718,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertRecordToCsv#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3600,13 +3743,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3617,6 +3760,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method__dbEncToPhp">
         _dbEncToPhp()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__dbEncToPhp" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3631,6 +3775,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_dbEncToPhp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enc</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3646,7 +3792,8 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__dbEncToPhp#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3670,13 +3817,13 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3687,6 +3834,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <h4 class="phpdocumentor-element__name" id="method__generateSchema">
         _generateSchema()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__generateSchema" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3702,6 +3850,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_generateSchema</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Database\Schema\TableSchemaInterface">TableSchemaInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3717,7 +3867,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__generateSchema#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3743,13 +3894,13 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3760,6 +3911,7 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <h4 class="phpdocumentor-element__name" id="method__loadDefaultDataPattern">
         _loadDefaultDataPattern()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__loadDefaultDataPattern" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3774,6 +3926,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_loadDefaultDataPattern</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pattern</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;BaserCore&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3810,7 +3964,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__loadDefaultDataPattern#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3834,13 +3989,13 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3851,6 +4006,7 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <h4 class="phpdocumentor-element__name" id="method__phpEncToDb">
         _phpEncToDb()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__phpEncToDb" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3865,6 +4021,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_phpEncToDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$enc</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3880,7 +4038,8 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__phpEncToDb#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3904,13 +4063,13 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3921,6 +4080,7 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <h4 class="phpdocumentor-element__name" id="method__values">
         _values()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method__values" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -3936,6 +4096,8 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_values</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3953,7 +4115,8 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method__values#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3979,15 +4142,17 @@ Bake\Command\FixtureCommand::_values() を移植</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Formatted values</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Formatted values</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3998,6 +4163,7 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     <h4 class="phpdocumentor-element__name" id="method_initAdapter">
         initAdapter()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initAdapter" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
@@ -4012,6 +4178,8 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">initAdapter</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>アダプターはテーブルのマイグレーションに利用する</p>
 </section>
 
@@ -4019,7 +4187,8 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_initAdapter#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4043,80 +4212,182 @@ Bake\Command\FixtureCommand::_values() を移植</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/Service/BcDatabaseService.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/BaserCore-Service-BcDatabaseService.html#property__encodingMaps">$_encodingMaps<a href="classes/BaserCore-Service-BcDatabaseService.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_addColumn">addColumn()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_checkDbConnection">checkDbConnection()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_clearAppTableList">clearAppTableList()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_columnExists">columnExists()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_connectDb">connectDb()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_constructionTable">constructionTable()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_createTable">createTable()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_deleteTables">deleteTables()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_dropTable">dropTable()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getAppTableList">getAppTableList()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource">getDataSource()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDatasourceName">getDatasourceName()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getEncoding">getEncoding()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getMigrationsTable">getMigrationsTable()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getSequence">getSequence()</a></li>
+                                            <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
+                                            <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_initMessageTables">initMessageTables()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_initSystemData">initSystemData()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsv">loadCsv()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadCsvToArray">loadCsvToArray()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadDefaultDataPattern">loadDefaultDataPattern()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_loadSchema">loadSchema()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_migrate">migrate()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_removeColumn">removeColumn()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_renameColumn">renameColumn()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_renameTable">renameTable()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetAllTables">resetAllTables()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_resetTables">resetTables()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_tableExists">tableExists()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_testConnectDb">testConnectDb()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_truncate">truncate()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_updateSequence">updateSequence()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeCsv">writeCsv()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_writeSchema">writeSchema()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertFieldToCsv">_convertFieldToCsv()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__convertRecordToCsv">_convertRecordToCsv()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__dbEncToPhp">_dbEncToPhp()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__generateSchema">_generateSchema()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__loadDefaultDataPattern">_loadDefaultDataPattern()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__phpEncToDb">_phpEncToDb()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method__values">_values()</a></li>
+                                            <li><a href="classes/BaserCore-Service-BcDatabaseService.html#method_initAdapter">initAdapter()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -4127,7 +4398,6 @@ Bake\Command\FixtureCommand::_values() を移植</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/BaserCore-Service-BcDatabaseService.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

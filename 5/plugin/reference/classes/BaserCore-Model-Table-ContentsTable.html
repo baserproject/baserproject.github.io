@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -517,8 +518,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore.html">BaserCore</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-model.html">Model</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-model-table.html">Table</a></li>
@@ -545,6 +547,11 @@
                             <abbr title="\SoftDelete\Model\Table\SoftDeleteTrait">SoftDeleteTrait</abbr>                    </span>
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
@@ -559,16 +566,27 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/BaserCore-Model-Table-ContentsTable.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/BaserCore-Model-Table-ContentsTable.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -public">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId">$beforeSaveParentId</a>
     <span>
                         &nbsp;: null            </span>
@@ -604,7 +622,6 @@ AppTable::getConditionAllowPublish() で利用</dd>
     <span>
                         &nbsp;: <a href="classes/BaserCore-Model-Table-SitesTable.html"><abbr title="\BaserCore\Model\Table\SitesTable">SitesTable</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#property_tmpEvents">$tmpEvents</a>
@@ -633,7 +650,6 @@ AppTable::getConditionAllowPublish() で利用</dd>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData">$updatingSystemData</a>
@@ -642,7 +658,15 @@ AppTable::getConditionAllowPublish() で利用</dd>
 </dt>
 <dd>システムデータを更新する</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/BaserCore-Model-Table-ContentsTable.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix">addPrefix()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -1052,7 +1076,8 @@ BcModelEventDispatcherは対象外とする</dd>
 </dt>
 <dd>URL用に文字列を変換する</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -1063,6 +1088,7 @@ BcModelEventDispatcherは対象外とする</dd>
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/BaserCore-Model-Table-ContentsTable.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -1074,6 +1100,7 @@ BcModelEventDispatcherは対象外とする</dd>
     <h4 class="phpdocumentor-element__name" id="property_beforeSaveParentId">
         $beforeSaveParentId
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1109,6 +1136,7 @@ BcModelEventDispatcherは対象外とする</dd>
     <h4 class="phpdocumentor-element__name" id="property_publishBeginField">
         $publishBeginField
         <a href="classes/BaserCore-Model-Table-AppTable.html#property_publishBeginField" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1143,6 +1171,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_publishEndField">
         $publishEndField
         <a href="classes/BaserCore-Model-Table-AppTable.html#property_publishEndField" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1177,6 +1206,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_publishStatusField">
         $publishStatusField
         <a href="classes/BaserCore-Model-Table-AppTable.html#property_publishStatusField" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1211,6 +1241,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_Sites">
         $Sites
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_Sites" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1229,8 +1260,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     </code>
 
     
-        <section class="phpdocumentor-description"></section>
-
+    
     
 
 </article>
@@ -1244,6 +1274,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_tmpEvents">
         $tmpEvents
         <a href="classes/BaserCore-Model-Table-AppTable.html#property_tmpEvents" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1278,6 +1309,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_updatingRelated">
         $updatingRelated
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingRelated" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1311,6 +1343,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property__View">
         $_View
         <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1344,6 +1377,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_softDeleteField">
         $softDeleteField
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_softDeleteField" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1361,10 +1395,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__name">$softDeleteField</span>
      = <span class="phpdocumentor-signature__default-value">&#039;deleted_date&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1378,6 +1410,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="property_updatingSystemData">
         $updatingSystemData
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1407,6 +1440,7 @@ AppTable::getConditionAllowPublish() で利用</p>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/BaserCore-Model-Table-ContentsTable.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1417,6 +1451,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_addPrefix">
         addPrefix()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1429,8 +1464,10 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addPrefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">addPrefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>$this-&gt;getConnection()-&gt;config() を利用するとユニットテストで問題が発生するため、BcUtil::getCurrentDbConfig()を利用する</p>
 <p>$this-&gt;getConnection()-&gt;config()を利用すると、
 そのテーブルに connection が設定されてしまう。</p>
@@ -1443,7 +1480,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$table</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1453,7 +1490,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1470,13 +1508,13 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1487,6 +1525,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_afterSave">
         afterSave()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_afterSave" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -1501,6 +1540,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">afterSave</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1530,7 +1571,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_afterSave#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1554,12 +1596,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1571,6 +1609,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_alphaNumeric">
         alphaNumeric()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_alphaNumeric" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1585,6 +1624,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">alphaNumeric</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1601,11 +1642,11 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1616,6 +1657,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_beforeMarshal">
         beforeMarshal()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeMarshal" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -1630,6 +1672,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">beforeMarshal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1659,7 +1703,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeMarshal#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1683,15 +1728,17 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$content</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$content</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1702,6 +1749,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_beforeSave">
         beforeSave()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeSave" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -1716,6 +1764,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">beforeSave</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1745,7 +1795,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeSave#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1769,12 +1820,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1786,6 +1833,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_belongsToMany">
         belongsToMany()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1800,6 +1848,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">belongsToMany</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$associated</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Association\BelongsToMany">BelongsToMany</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>joinTable にプレフィックスを追加</p>
 </section>
 
@@ -1824,7 +1874,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1841,13 +1892,13 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Association\BelongsToMany">BelongsToMany</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Association\BelongsToMany">BelongsToMany</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1858,6 +1909,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_between">
         between()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_between" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1872,6 +1924,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">between</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$check</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$min</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$max</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1906,10 +1960,6 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1921,6 +1971,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <h4 class="phpdocumentor-element__name" id="method_cakeError">
         cakeError()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_cakeError" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1935,6 +1986,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">cakeError</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$messages</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>If there is a file app/error.php or app/app_error.php this file will be loaded
 error.php is the AppError class it should extend ErrorHandler class.</p>
 </section>
@@ -1963,10 +2016,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1978,6 +2027,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_changeSort">
         changeSort()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -1992,6 +2042,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">changeSort</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2025,11 +2077,11 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2040,6 +2092,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_convertEncodingByArray">
         convertEncodingByArray()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_convertEncodingByArray" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -2054,6 +2107,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">convertEncodingByArray</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$outenc</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inenc</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2089,7 +2144,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_convertEncodingByArray#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2101,15 +2157,17 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>変換後のデータ</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>変換後のデータ</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2120,6 +2178,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_copyContentFolderPath">
         copyContentFolderPath()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_copyContentFolderPath" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2133,21 +2192,23 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">copyContentFolderPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetSiteId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
+                    <span class="phpdocumentor-signature__name">copyContentFolderPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$currentUrl</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$targetSiteId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$currentUrl</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$targetSiteId</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2157,7 +2218,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_copyContentFolderPath#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2181,13 +2243,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2198,6 +2260,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_createContent">
         createContent()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2212,6 +2275,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2248,15 +2313,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createContent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2280,13 +2345,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2297,6 +2362,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_createUrl">
         createUrl()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2311,6 +2377,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">createUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2328,7 +2396,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2352,15 +2421,17 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>URL | false</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>URL | false</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2371,6 +2442,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_deconstruct">
         deconstruct()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -2385,6 +2457,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deconstruct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2410,13 +2484,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The resulting data that should be assigned to a field</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>The resulting data that should be assigned to a field</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2427,6 +2503,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteAlias">
         deleteAlias()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2441,6 +2518,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteAlias</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>全サイトにおけるエイリアスを全て削除</p>
 </section>
 
@@ -2458,7 +2537,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2482,12 +2562,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2499,6 +2575,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteAssocCache">
         deleteAssocCache()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAssocCache" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2513,6 +2590,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteAssocCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2527,10 +2606,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2542,6 +2617,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteByType">
         deleteByType()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2556,6 +2632,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteByType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2579,11 +2657,11 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2594,6 +2672,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_deleteRelateSubSiteContent">
         deleteRelateSubSiteContent()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteRelateSubSiteContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2608,6 +2687,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deleteRelateSubSiteContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2623,7 +2704,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteRelateSubSiteContent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2647,12 +2729,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2664,6 +2742,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_disableUpdatingSystemData">
         disableUpdatingSystemData()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2678,12 +2757,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">disableUpdatingSystemData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2707,12 +2789,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2724,6 +2802,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_dispatchLayerEvent">
         dispatchLayerEvent()
         <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php"><a href="files/plugins-baser-core-src-event-bceventdispatchertrait.html"><abbr title="plugins/baser-core/src/Event/BcEventDispatcherTrait.php">BcEventDispatcherTrait.php</abbr></a></abbr>
@@ -2738,6 +2817,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">dispatchLayerEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2760,15 +2841,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2792,13 +2873,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2809,6 +2890,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_duplicateRelatedSiteContent">
         duplicateRelatedSiteContent()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_duplicateRelatedSiteContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2822,8 +2904,10 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">duplicateRelatedSiteContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$check</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">duplicateRelatedSiteContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$check</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><ul>
 <li>新規の際は、存在するだけでエラー</li>
 <li>編集の際は、main_site_content_id が自身のIDでない、alias_id が自身のIDでない場合エラー</li>
@@ -2834,7 +2918,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$check</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2843,11 +2927,11 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2858,6 +2942,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_enableUpdatingSystemData">
         enableUpdatingSystemData()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2872,12 +2957,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">enableUpdatingSystemData</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2901,12 +2989,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2918,6 +3002,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_findByType">
         findByType()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -2932,6 +3017,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">findByType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entityId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2956,7 +3043,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByType#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2980,13 +3068,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2997,6 +3085,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_findByUrl">
         findByUrl()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3012,6 +3101,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">findByUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$publish</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extend</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sameUrl</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$useSubDomain</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3065,7 +3156,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3089,15 +3181,17 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>false|array Content データ</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>false|array Content データ</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3108,6 +3202,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getCacheTime">
         getCacheTime()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getCacheTime" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3122,6 +3217,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCacheTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3130,20 +3227,21 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>int or false</p>
+        <span class="phpdocumentor-signature__response_type">mixed</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>int or false</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3154,6 +3252,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getConditionAllowPublish">
         getConditionAllowPublish()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3168,12 +3267,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getConditionAllowPublish</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3197,15 +3299,17 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>公開条件（conditions 形式）</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>公開条件（conditions 形式）</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3216,6 +3320,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getControlSource">
         getControlSource()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getControlSource" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -3228,8 +3333,10 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getControlSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getControlSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>継承先でオーバーライドする事</p>
 </section>
 
@@ -3237,7 +3344,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$field</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3246,11 +3353,11 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3261,6 +3368,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getMax">
         getMax()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -3275,6 +3383,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMax</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>現在数値フィールドのみ対応</p>
 </section>
 
@@ -3299,7 +3409,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3323,13 +3434,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3340,6 +3451,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getOrderSameParent">
         getOrderSameParent()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getOrderSameParent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3354,6 +3466,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getOrderSameParent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|int|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>id が空の場合は、一番最後とみなす</p>
 </section>
 
@@ -3378,7 +3492,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getOrderSameParent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3402,13 +3517,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|int|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3419,6 +3534,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getParentTemplate">
         getParentTemplate()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getParentTemplate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3431,14 +3547,16 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getParentTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getParentTemplate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3448,7 +3566,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getParentTemplate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3472,12 +3591,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3489,6 +3604,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getRelatedSiteContents">
         getRelatedSiteContents()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getRelatedSiteContents" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3503,6 +3619,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getRelatedSiteContents</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3518,18 +3636,17 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3540,6 +3657,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getTable">
         getTable()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -3554,6 +3672,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getTable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>プレフィックスを追加する</p>
 </section>
 
@@ -3561,7 +3681,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_getTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3578,13 +3699,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3595,6 +3716,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getTrash">
         getTrash()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getTrash" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3609,6 +3731,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getTrash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3624,7 +3748,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getTrash#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3656,13 +3781,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3673,6 +3798,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getUniqueName">
         getUniqueName()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getUniqueName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3687,6 +3813,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUniqueName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contentId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3704,23 +3832,22 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$contentId</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getUniqueName#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3744,13 +3871,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3761,6 +3888,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_getUrlPattern">
         getUrlPattern()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getUrlPattern" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -3775,6 +3903,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUrlPattern</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3790,7 +3920,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_getUrlPattern#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3814,13 +3945,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3831,6 +3962,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_implementedEvents">
         implementedEvents()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_implementedEvents" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3845,12 +3977,15 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">implementedEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_implementedEvents#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3874,13 +4009,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -3891,6 +4026,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_initialize">
         initialize()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_initialize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3905,6 +4041,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">initialize</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -3922,7 +4060,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_initialize#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -3946,12 +4085,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -3963,6 +4098,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_isPublish">
         isPublish()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublish" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -3977,6 +4113,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isPublish</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$publishBegin</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$publishEnd</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4012,7 +4150,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublish#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4036,13 +4175,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4053,6 +4192,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_isPublishById">
         isPublishById()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublishById" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4065,14 +4205,16 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isPublishById</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">isPublishById</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4082,7 +4224,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublishById#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4106,13 +4249,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4123,6 +4266,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_moveOffset">
         moveOffset()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_moveOffset" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4135,21 +4279,23 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">moveOffset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|bool</span></code>
+                    <span class="phpdocumentor-signature__name">moveOffset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$offset</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4159,7 +4305,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_moveOffset#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4183,13 +4330,13 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4200,6 +4347,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_offEvent">
         offEvent()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_offEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4214,6 +4362,8 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">offEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4228,10 +4378,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4243,6 +4389,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <h4 class="phpdocumentor-element__name" id="method_onEvent">
         onEvent()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_onEvent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4258,6 +4405,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">onEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventKey</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4273,7 +4422,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_onEvent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4297,12 +4447,8 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4314,6 +4460,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_pureUrl">
         pureUrl()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_pureUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4328,6 +4475,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">pureUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$siteId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4350,7 +4499,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_pureUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4374,13 +4524,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4391,6 +4541,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_reduceAssociations">
         reduceAssociations()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4405,6 +4556,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">reduceAssociations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4413,8 +4566,7 @@ BcModelEventDispatcherは対象外とする</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$reset</span>
@@ -4429,10 +4581,6 @@ BcModelEventDispatcherは対象外とする</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4444,6 +4592,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_replaceText">
         replaceText()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4458,6 +4607,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">replaceText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>内部文字コードがUTF-8である必要がある。
 多次元配列には対応していない。</p>
 </section>
@@ -4469,15 +4620,15 @@ BcModelEventDispatcherは対象外とする</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4489,15 +4640,17 @@ BcModelEventDispatcherは対象外とする</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>変換後文字列</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>変換後文字列</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4508,6 +4661,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_resetTree">
         resetTree()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_resetTree" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4522,12 +4676,15 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">resetTree</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_resetTree#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4551,12 +4708,8 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4568,6 +4721,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_setTable">
         setTable()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_setTable" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4582,6 +4736,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">setTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Table-AppTable.html"><abbr title="\BaserCore\Model\Table\AppTable">AppTable</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>プレフィックスを追加する</p>
 </section>
 
@@ -4599,7 +4755,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_setTable#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4616,13 +4773,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Table-AppTable.html"><abbr title="\BaserCore\Model\Table\AppTable">AppTable</abbr></a></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Table-AppTable.html"><abbr title="\BaserCore\Model\Table\AppTable">AppTable</abbr></a></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4633,6 +4790,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_sortdown">
         sortdown()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_sortdown" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4647,6 +4805,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">sortdown</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4668,11 +4828,11 @@ BcModelEventDispatcherは対象外とする</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4683,6 +4843,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_sortup">
         sortup()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_sortup" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
@@ -4697,6 +4858,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">sortup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditions</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4718,11 +4881,11 @@ BcModelEventDispatcherは対象外とする</p>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4733,6 +4896,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updateAllUrl">
         updateAllUrl()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateAllUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4747,15 +4911,17 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">updateAllUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4766,6 +4932,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updateChildren">
         updateChildren()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildren" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4778,14 +4945,16 @@ BcModelEventDispatcherは対象外とする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">updateChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">updateChildren</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4795,7 +4964,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildren#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4819,13 +4989,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4836,6 +5006,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updateChildrenUrl">
         updateChildrenUrl()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildrenUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4848,14 +5019,16 @@ BcModelEventDispatcherは対象外とする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">updateChildrenUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">updateChildrenUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4865,7 +5038,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildrenUrl#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4889,12 +5063,8 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -4906,6 +5076,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_validationDefault">
         validationDefault()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_validationDefault" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4920,6 +5091,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">validationDefault</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Validation\Validator">Validator</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validator</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Validation\Validator">Validator</abbr></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -4935,7 +5108,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_validationDefault#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -4959,13 +5133,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Validation\Validator">Validator</abbr></span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Validation\Validator">Validator</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4976,6 +5150,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_textFormatting">
         textFormatting()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_textFormatting" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -4988,14 +5163,16 @@ BcModelEventDispatcherは対象外とする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">textFormatting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">textFormatting</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -5005,7 +5182,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_textFormatting#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -5029,13 +5207,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -5046,6 +5224,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updatePublishDate">
         updatePublishDate()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updatePublishDate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -5060,6 +5239,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">updatePublishDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a></span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -5075,7 +5256,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updatePublishDate#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -5099,15 +5281,17 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>$content</p>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a></span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$content</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -5118,6 +5302,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updateRelateSubSiteContent">
         updateRelateSubSiteContent()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateRelateSubSiteContent" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -5132,6 +5317,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">updateRelateSubSiteContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -5147,7 +5334,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateRelateSubSiteContent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -5171,13 +5359,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -5188,6 +5376,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_updateSystemData">
         updateSystemData()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateSystemData" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -5202,6 +5391,8 @@ BcModelEventDispatcherは対象外とする</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">updateSystemData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>URL / 公開状態 / メインサイトの関連コンテンツID</p>
 </section>
 
@@ -5219,7 +5410,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateSystemData#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -5243,13 +5435,13 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|false</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -5260,6 +5452,7 @@ BcModelEventDispatcherは対象外とする</p>
     <h4 class="phpdocumentor-element__name" id="method_urlEncode">
         urlEncode()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_urlEncode" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
@@ -5272,14 +5465,16 @@ BcModelEventDispatcherは対象外とする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">urlEncode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">urlEncode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -5289,7 +5484,8 @@ BcModelEventDispatcherは対象外とする</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_urlEncode#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -5313,80 +5509,209 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/Model/Table/ContentsTable.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId">$beforeSaveParentId<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishBeginField">$publishBeginField<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishEndField">$publishEndField<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishStatusField">$publishStatusField<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_Sites">$Sites<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-AppTable.html#property_tmpEvents">$tmpEvents<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingRelated">$updatingRelated<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_softDeleteField">$softDeleteField<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                                    <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData">$updatingSystemData<a href="classes/BaserCore-Model-Table-ContentsTable.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix">addPrefix()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_afterSave">afterSave()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_alphaNumeric">alphaNumeric()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeMarshal">beforeMarshal()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeSave">beforeSave()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_between">between()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_cakeError">cakeError()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_convertEncodingByArray">convertEncodingByArray()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_copyContentFolderPath">copyContentFolderPath()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createContent">createContent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createUrl">createUrl()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct">deconstruct()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias">deleteAlias()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAssocCache">deleteAssocCache()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType">deleteByType()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteRelateSubSiteContent">deleteRelateSubSiteContent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData">disableUpdatingSystemData()</a></li>
+                                            <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_duplicateRelatedSiteContent">duplicateRelatedSiteContent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData">enableUpdatingSystemData()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByType">findByType()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByUrl">findByUrl()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getCacheTime">getCacheTime()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getControlSource">getControlSource()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax">getMax()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getOrderSameParent">getOrderSameParent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getParentTemplate">getParentTemplate()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getRelatedSiteContents">getRelatedSiteContents()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getTable">getTable()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getTrash">getTrash()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getUniqueName">getUniqueName()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getUrlPattern">getUrlPattern()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_implementedEvents">implementedEvents()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_initialize">initialize()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublish">isPublish()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_isPublishById">isPublishById()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_moveOffset">moveOffset()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_offEvent">offEvent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_onEvent">onEvent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_pureUrl">pureUrl()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations">reduceAssociations()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText">replaceText()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_resetTree">resetTree()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_setTable">setTable()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_sortdown">sortdown()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_sortup">sortup()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateAllUrl">updateAllUrl()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildren">updateChildren()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateChildrenUrl">updateChildrenUrl()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_validationDefault">validationDefault()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_textFormatting">textFormatting()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updatePublishDate">updatePublishDate()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateRelateSubSiteContent">updateRelateSubSiteContent()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_updateSystemData">updateSystemData()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_urlEncode">urlEncode()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -5397,7 +5722,6 @@ BcModelEventDispatcherは対象外とする</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

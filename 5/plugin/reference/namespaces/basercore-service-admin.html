@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -517,8 +518,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore.html">BaserCore</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-service.html">Service</a></li>
     </ul>
@@ -527,81 +529,155 @@
         <h2 class="phpdocumentor-content__title">Admin</h2>
 
         
+<h3 id="toc">
+    Table of Contents
+    <a href="namespaces/basercore-service-admin.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-BcAdminAppServiceInterface.html"><abbr title="\BaserCore\Service\Admin\BcAdminAppServiceInterface">BcAdminAppServiceInterface</abbr></a></dt>
-        <dd>Interface BcAdminAppServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-BcAdminContentsServiceInterface.html"><abbr title="\BaserCore\Service\Admin\BcAdminContentsServiceInterface">BcAdminContentsServiceInterface</abbr></a></dt>
-        <dd>BcAdminContentsServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ContentFoldersAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ContentFoldersAdminServiceInterface">ContentFoldersAdminServiceInterface</abbr></a></dt>
-        <dd>Interface ContentFoldersAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ContentsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ContentsAdminServiceInterface">ContentsAdminServiceInterface</abbr></a></dt>
-        <dd>ContentsAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-DashboardAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\DashboardAdminServiceInterface">DashboardAdminServiceInterface</abbr></a></dt>
-        <dd>DashboardAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PagesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PagesAdminServiceInterface">PagesAdminServiceInterface</abbr></a></dt>
-        <dd>PagesAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PermissionGroupsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PermissionGroupsAdminServiceInterface">PermissionGroupsAdminServiceInterface</abbr></a></dt>
-        <dd>PermissionGroupsAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PermissionsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PermissionsAdminServiceInterface">PermissionsAdminServiceInterface</abbr></a></dt>
-        <dd>PermissionsAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PluginsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PluginsAdminServiceInterface">PluginsAdminServiceInterface</abbr></a></dt>
-        <dd>PluginsAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-SiteConfigsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\SiteConfigsAdminServiceInterface">SiteConfigsAdminServiceInterface</abbr></a></dt>
-        <dd>SiteConfigsAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-SitesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\SitesAdminServiceInterface">SitesAdminServiceInterface</abbr></a></dt>
-        <dd>SitesAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ThemesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ThemesAdminServiceInterface">ThemesAdminServiceInterface</abbr></a></dt>
-        <dd>ThemesAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-UsersAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\UsersAdminServiceInterface">UsersAdminServiceInterface</abbr></a></dt>
-        <dd>Interface UsersAdminServiceInterface</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-UtilitiesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\UtilitiesAdminServiceInterface">UtilitiesAdminServiceInterface</abbr></a></dt>
-        <dd>UtilitiesAdminServiceInterface</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-BcAdminAppService.html"><abbr title="\BaserCore\Service\Admin\BcAdminAppService">BcAdminAppService</abbr></a></dt>
-        <dd>BcAdminAppService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-BcAdminContentsService.html"><abbr title="\BaserCore\Service\Admin\BcAdminContentsService">BcAdminContentsService</abbr></a></dt>
-        <dd>BcAdminContentsService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ContentFoldersAdminService.html"><abbr title="\BaserCore\Service\Admin\ContentFoldersAdminService">ContentFoldersAdminService</abbr></a></dt>
-        <dd>ContentFoldersAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ContentsAdminService.html"><abbr title="\BaserCore\Service\Admin\ContentsAdminService">ContentsAdminService</abbr></a></dt>
-        <dd>ContentsAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-DashboardAdminService.html"><abbr title="\BaserCore\Service\Admin\DashboardAdminService">DashboardAdminService</abbr></a></dt>
-        <dd>DashboardAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PagesAdminService.html"><abbr title="\BaserCore\Service\Admin\PagesAdminService">PagesAdminService</abbr></a></dt>
-        <dd>PagesAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PermissionGroupsAdminService.html"><abbr title="\BaserCore\Service\Admin\PermissionGroupsAdminService">PermissionGroupsAdminService</abbr></a></dt>
-        <dd>PermissionGroupsAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PermissionsAdminService.html"><abbr title="\BaserCore\Service\Admin\PermissionsAdminService">PermissionsAdminService</abbr></a></dt>
-        <dd>PermissionsAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PluginsAdminService.html"><abbr title="\BaserCore\Service\Admin\PluginsAdminService">PluginsAdminService</abbr></a></dt>
-        <dd>PluginsAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-SiteConfigsAdminService.html"><abbr title="\BaserCore\Service\Admin\SiteConfigsAdminService">SiteConfigsAdminService</abbr></a></dt>
-        <dd>SiteConfigsAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-SitesAdminService.html"><abbr title="\BaserCore\Service\Admin\SitesAdminService">SitesAdminService</abbr></a></dt>
-        <dd>SitesAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ThemesAdminService.html"><abbr title="\BaserCore\Service\Admin\ThemesAdminService">ThemesAdminService</abbr></a></dt>
-        <dd>ThemesAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-UsersAdminService.html"><abbr title="\BaserCore\Service\Admin\UsersAdminService">UsersAdminService</abbr></a></dt>
-        <dd>UsersAdminService</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-UtilitiesAdminService.html"><abbr title="\BaserCore\Service\Admin\UtilitiesAdminService">UtilitiesAdminService</abbr></a></dt>
-        <dd>UtilitiesAdminService</dd>
-    
-    
-    </dl>
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="namespaces/basercore-service-admin.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-BcAdminAppServiceInterface.html"><abbr title="\BaserCore\Service\Admin\BcAdminAppServiceInterface">BcAdminAppServiceInterface</abbr></a></dt><dd>Interface BcAdminAppServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-BcAdminContentsServiceInterface.html"><abbr title="\BaserCore\Service\Admin\BcAdminContentsServiceInterface">BcAdminContentsServiceInterface</abbr></a></dt><dd>BcAdminContentsServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ContentFoldersAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ContentFoldersAdminServiceInterface">ContentFoldersAdminServiceInterface</abbr></a></dt><dd>Interface ContentFoldersAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ContentsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ContentsAdminServiceInterface">ContentsAdminServiceInterface</abbr></a></dt><dd>ContentsAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-DashboardAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\DashboardAdminServiceInterface">DashboardAdminServiceInterface</abbr></a></dt><dd>DashboardAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PagesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PagesAdminServiceInterface">PagesAdminServiceInterface</abbr></a></dt><dd>PagesAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PermissionGroupsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PermissionGroupsAdminServiceInterface">PermissionGroupsAdminServiceInterface</abbr></a></dt><dd>PermissionGroupsAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PermissionsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PermissionsAdminServiceInterface">PermissionsAdminServiceInterface</abbr></a></dt><dd>PermissionsAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-PluginsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\PluginsAdminServiceInterface">PluginsAdminServiceInterface</abbr></a></dt><dd>PluginsAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-SiteConfigsAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\SiteConfigsAdminServiceInterface">SiteConfigsAdminServiceInterface</abbr></a></dt><dd>SiteConfigsAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-SitesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\SitesAdminServiceInterface">SitesAdminServiceInterface</abbr></a></dt><dd>SitesAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-ThemesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\ThemesAdminServiceInterface">ThemesAdminServiceInterface</abbr></a></dt><dd>ThemesAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-UsersAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\UsersAdminServiceInterface">UsersAdminServiceInterface</abbr></a></dt><dd>Interface UsersAdminServiceInterface</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/BaserCore-Service-Admin-UtilitiesAdminServiceInterface.html"><abbr title="\BaserCore\Service\Admin\UtilitiesAdminServiceInterface">UtilitiesAdminServiceInterface</abbr></a></dt><dd>UtilitiesAdminServiceInterface</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="namespaces/basercore-service-admin.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-BcAdminAppService.html"><abbr title="\BaserCore\Service\Admin\BcAdminAppService">BcAdminAppService</abbr></a></dt><dd>BcAdminAppService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ContentFoldersAdminService.html"><abbr title="\BaserCore\Service\Admin\ContentFoldersAdminService">ContentFoldersAdminService</abbr></a></dt><dd>ContentFoldersAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ContentsAdminService.html"><abbr title="\BaserCore\Service\Admin\ContentsAdminService">ContentsAdminService</abbr></a></dt><dd>ContentsAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-DashboardAdminService.html"><abbr title="\BaserCore\Service\Admin\DashboardAdminService">DashboardAdminService</abbr></a></dt><dd>DashboardAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PagesAdminService.html"><abbr title="\BaserCore\Service\Admin\PagesAdminService">PagesAdminService</abbr></a></dt><dd>PagesAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PermissionGroupsAdminService.html"><abbr title="\BaserCore\Service\Admin\PermissionGroupsAdminService">PermissionGroupsAdminService</abbr></a></dt><dd>PermissionGroupsAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PermissionsAdminService.html"><abbr title="\BaserCore\Service\Admin\PermissionsAdminService">PermissionsAdminService</abbr></a></dt><dd>PermissionsAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-PluginsAdminService.html"><abbr title="\BaserCore\Service\Admin\PluginsAdminService">PluginsAdminService</abbr></a></dt><dd>PluginsAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-SiteConfigsAdminService.html"><abbr title="\BaserCore\Service\Admin\SiteConfigsAdminService">SiteConfigsAdminService</abbr></a></dt><dd>SiteConfigsAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-SitesAdminService.html"><abbr title="\BaserCore\Service\Admin\SitesAdminService">SitesAdminService</abbr></a></dt><dd>SitesAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-ThemesAdminService.html"><abbr title="\BaserCore\Service\Admin\ThemesAdminService">ThemesAdminService</abbr></a></dt><dd>ThemesAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-UsersAdminService.html"><abbr title="\BaserCore\Service\Admin\UsersAdminService">UsersAdminService</abbr></a></dt><dd>UsersAdminService</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Service-Admin-UtilitiesAdminService.html"><abbr title="\BaserCore\Service\Admin\UtilitiesAdminService">UtilitiesAdminService</abbr></a></dt><dd>UtilitiesAdminService</dd>    </dl>
+
+
+
+
+
 
 
 
         
 
         
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                <li><a href="namespaces/basercore-service-admin.html#toc-interfaces">Interfaces</a></li>
+                                                            <li><a href="namespaces/basercore-service-admin.html#toc-classes">Classes</a></li>
+                                                                                                                    </ul>
+            </li>
+
+            
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -612,7 +688,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="namespaces/basercore-service-admin.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
