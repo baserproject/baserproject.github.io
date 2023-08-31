@@ -29,7 +29,7 @@ vendor/bin/monorepo-builder merge
 
  
 ## VERSION.txt を更新
-`VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
+`plugins/baser-core/VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
 その後、コミットしてプッシュします。
 
 ```shell
