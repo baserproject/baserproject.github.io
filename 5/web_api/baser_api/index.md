@@ -65,6 +65,7 @@ baser API は認証は不要です。
 
 ### メールメッセージ
 - [メールメッセージの新規追加](bc-mail/mail_messages/add)
+- [メールメッセージのバリデーション](bc-mail/mail_messages/validate)
 
 ## その他
 
