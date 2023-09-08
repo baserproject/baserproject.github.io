@@ -22,18 +22,18 @@ baserCMSのパッケージの構成、アーキテクチャー、データベー
 
 ## 規約
 baserCMSの開発規約、コーディング規約、リファクタリング方針などについては次をご覧ください。
-- [開発規約](../terms/)（調整中）
+- [開発規約](../terms/)
 - [バージョン番号](../terms/version)
 - [コーディング規約](../terms/coding)
-- [リファクタリング方針](../terms/refactoring)（調整中）
-- [ユーザーインターフェイス設計方針](../terms/user_interface_design)（調整中）
-- [非推奨処理の対応方針](../terms/deprecated)（調整中）
+- [リファクタリング方針](../terms/refactoring)
+- [ユーザーインターフェイス設計方針](../terms/user_interface_design)
+- [非推奨処理の対応方針](../terms/deprecated)
 
 ## 開発者として参加・貢献する
 あなたがエンジニアで開発者として参加・貢献したい場合はこちらをご覧ください。
 
-- [開発者として参加・貢献する](../contribution_developer/)（調整中）
-- [開発サイクル](../contribution_developer/cycle)（調整中）
+- [開発者として参加・貢献する](../contribution_developer/)
+- [開発サイクル](../contribution_developer/cycle)
 - [開発への参加方法](../contribution_developer/participation)（調整中）
 - [コアの開発](../core/)
 - [コアテーマの開発](../core_theme/)（調整中）
