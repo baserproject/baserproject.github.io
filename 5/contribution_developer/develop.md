@@ -102,7 +102,7 @@ git remote add basercms git@github.com:basercms/basercms.git
 ### リモートの変更内容を取り込む
 ```shell
 git pull {リモート名} {開発ブランチ名}
-#（例）リモート名 basercms から、dev-3 ブランチの内容を取り込む
+#（例）リモート名 basercms から、dev-5 ブランチの内容を取り込む
 git pull basercms dev-5
 ```
 これで次の開発を行う準備が整いました。
