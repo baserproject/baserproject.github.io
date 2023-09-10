@@ -1,3 +1,5 @@
 # 開発への参加方法
 
-{% include looking_for.html %}
+ここでは、baserCMSコアの開発への参加方法について説明します。
+
+

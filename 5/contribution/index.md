@@ -34,7 +34,7 @@ baserCMSの開発規約、コーディング規約、リファクタリング方
 
 - [開発者として参加・貢献する](../contribution_developer/)
 - [開発サイクル](../contribution_developer/cycle)
-- [開発への参加方法](../contribution_developer/participation)（調整中）
+- [開発への参加方法](../contribution_developer/participation)
 - [コアの開発](../core/)
 - [コアテーマの開発](../core_theme/)（調整中）
 - [コアプラグインの開発](../core_plugin/)（調整中）
