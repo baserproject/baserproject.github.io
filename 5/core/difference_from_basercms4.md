@@ -1,5 +1,7 @@
 # baserCMS４からの変更点
 
+baserCMS５では、CakePHP4系にアップデートしたことに伴い、baserCMS４からの変更点が多数ありますのでご注意ください。
+
 ## ルーティング
 ### URL解析
 ```php
