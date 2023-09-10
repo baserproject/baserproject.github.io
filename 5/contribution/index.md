@@ -36,24 +36,24 @@ baserCMSの開発規約、コーディング規約、リファクタリング方
 - [開発サイクル](../contribution_developer/cycle)
 - [開発への参加方法](../contribution_developer/participation)
 - [コアの開発](../core/)
-- [コアテーマの開発](../core_theme/)（調整中）
-- [コアプラグインの開発](../core_plugin/)（調整中）
+- [コアテーマの開発](../core_theme/)
+- [コアプラグインの開発](../core_plugin/)
 
 ## 開発以外の方法で参加・貢献する
 開発以外でも貢献する方法はたくさんあります。開発以外の方法で参加・貢献したい場合はこちらをご覧ください。
 
-- [開発以外の方法で参加・貢献する](../contribution_etc/)（調整中）
-- [フィードバックガイドライン](../contribution_etc/feedback)（調整中）
+- [開発以外の方法で参加・貢献する](../contribution_etc/)
+- [フィードバックガイドライン](../contribution_etc/feedback)
 - [ドキュメントの更新](../doc_writing/)
-- [国際化](../i18n/)（調整中）
+- [国際化](../i18n/)
 
 ## コラボレーターガイド
 いつも貢献して頂きありがとうございます。コラボレーターの方がオープンソースプロジェクトを運用するためのドキュメントはこちらです。
 
-- [コラボレーターガイド](../collaborator/)（調整中）
-- [Issue 駆動開発](../collaborator/issue_driven)（調整中）
-- [マイルストーンミーティング](../collaborator/milestone_meeting)（調整中）
-- [ラベル運用ガイドライン](../collaborator/label_operation)（調整中）
-- [プルリクエスト対応手順](../collaborator/pull_request)（調整中）
-- [リリース手順](../collaborator/release)（調整中）
+- [コラボレーターガイド](../collaborator/)
+- [Issue 駆動開発](../collaborator/issue_driven)
+- [マイルストーンミーティング](../collaborator/milestone_meeting)
+- [ラベル運用ガイドライン](../collaborator/label_operation)
+- [プルリクエスト対応手順](../collaborator/pull_request)
+- [リリース手順](../collaborator/release)
 
