@@ -1,5 +1,7 @@
 # コアプラグインの開発
 
+{% include looking_for.html %}
+
 ## Composer によるパッケージの追加
 ### 統合的なパッケージ管理
 [パッケージ構成](../package/index) に記載しているとおり、baserCMSではモノレポによる統合的なパッケージ管理を採用しています。  

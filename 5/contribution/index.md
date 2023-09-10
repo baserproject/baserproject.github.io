@@ -37,7 +37,7 @@ baserCMSの開発規約、コーディング規約、リファクタリング方
 - [開発への参加方法](../contribution_developer/participation)
 - [コアの開発](../core/)
 - [コアテーマの開発](../core_theme/index)
-- [コアプラグインの開発](../core_plugin/index)
+- [コアプラグインの開発](../core_plugin/index)（調整中）
 
 ## 開発以外の方法で参加・貢献する
 開発以外でも貢献する方法はたくさんあります。開発以外の方法で参加・貢献したい場合はこちらをご覧ください。
