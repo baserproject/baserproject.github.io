@@ -30,6 +30,31 @@ vendor/bin/monorepo-builder merge
  
 ## VERSION.txt を更新
 `plugins/baser-core/VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
+
+現在(2023年1月時点)では月に一度行われるマイルストーンミーティングにて、記載内容を決定します。
+
+VERSION.txt に記載するログは、次の形式でまとめます。
+```shell
+-改修タイプ: [パッケージの省略文字] 改修内容
+（例）
+-BUG: [FD] fixes #7385 RSSフィードの読込時に本文中の<img>タグが読み取れていない 問題を改善
+```
+
+改修タイプ
+- 新機能：NEW
+- 仕様変更：CHG
+- 不具合修正：BUG
+- パッケージの省略文字
+
+パッケージの省略文字
+- baserCMSコア：BC
+- ブログプラグイン：BG
+- メールプラグイン：ML
+- フィードプラグイン：FD
+- アップローダー：UL
+
+
+
 その後、コミットしてプッシュします。
 
 ```shell
@@ -108,10 +133,31 @@ GitHubにて [新しいリリース記事](https://github.com/baserproject/baser
 
 こちらの記事に先ほど作成した、basercms-5.x.x.zip を添付します。
 
+## 機能一覧の更新
+必要があれば、[baserCMS公式ガイドの機能一覧](../functions/index)を更新します。
+
 ## オフィシャルサイトでリリース記事を作成
-最後にbaserCMSのオフィシャルサイトでリリース記事を作成します。
+最後にbaserCMSのオフィシャルサイトでリリース記事を作成します。  
+その際、カテゴリについて「リリースノート」を選択します。
+
+## スペシャルサンクス更新
+baserCMSプロジェクトメンバー名簿より、新しくメンバーとなった方で、スペシャルサンクスへの登録希望の方をピックアップし、baserCMS公式サイトのスペシャルサンクスリストに追加します。
+
+## 告知
+バージョンアップした事を広く認知してもらえるよう、告知を行います。
+
+- 広報担当に連絡
+- [Slack](https://basercms.slack.com/archives/C03CAUKTU) に告知
+- [baserCMSユーザーズフォーラム](https://forum.basercms.net/c/news/6) に告知
+- [Facebookページ](https://www.facebook.com/basercms) に告知 　
+
 
 これでリリース作業は完了です。お疲れさまでした。
+
+## 事後作業
+バージョンアップに合わせて次の２サイトのアップデートを行います。
+- [baserCMS公式サイト](https://basercms.net/)
+- [baserCMSデモサイト](https://trial.basercms.net/)
 
 
 ## トラブルシューティング
