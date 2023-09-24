@@ -15,10 +15,10 @@ baserCMSの開発に関するコンセプトや基本方針については次を
 baserCMSのパッケージの構成、アーキテクチャー、データベース構造などについては次をご覧ください。
 
 - [パッケージ構成](../package/)
-- [アーキテクチャー](../package/architecture)（調整中）
+- [アーキテクチャー](../package/architecture)
 - [データベース構造](../package/database)
 - [ディレクトリ構成](../package/directory_structure)
-- [設計書](../package/specification/)（調整中）
+- [設計書](../package/specification/)
 
 ## 規約
 baserCMSの開発規約、コーディング規約、リファクタリング方針などについては次をご覧ください。
@@ -37,7 +37,7 @@ baserCMSの開発規約、コーディング規約、リファクタリング方
 - [開発への参加方法](../contribution_developer/participation)
 - [コアの開発](../core/)
 - [コアテーマの開発](../core_theme/index)
-- [コアプラグインの開発](../core_plugin/index)（調整中）
+- [コアプラグインの開発](../core_plugin/index)
 
 ## 開発以外の方法で参加・貢献する
 開発以外でも貢献する方法はたくさんあります。開発以外の方法で参加・貢献したい場合はこちらをご覧ください。
