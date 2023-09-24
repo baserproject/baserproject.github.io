@@ -106,8 +106,8 @@ public function index(SiteManageServiceInterface $siteManage){}
  */
 ```
 
-## コード移行時のマーキング
-クラスメソッドやビューファイルの移行実装時、および新規ファイル追加時には、ヘッダーコメントにアノテーションでマーキングをします。
+## マーキング
+クラスメソッドやビューファイルの実装時、および新規ファイル追加時には、ヘッダーコメントにアノテーションでマーキングをします。
 
 ```
 @checked : コードの精査が完了している
@@ -151,7 +151,7 @@ class BcBaserHelper extends Cake\View\Helper
      */
 ```
 
-なお、 ucmitz 進行管理に、メモを反映したい場合には、 Note アノテーションが利用できます。
+なお、 baserCMS 進行管理に、メモを反映したい場合には、 Note アノテーションが利用できます。
 ```php
 // 例
 use BaserCore\Annotation\Note;
