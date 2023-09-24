@@ -1,3 +1,3 @@
-# 検索インデックス
+# 検索インデックス管理
 
 {% include looking_for.html %}
