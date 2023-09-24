@@ -76,5 +76,5 @@ baserCMS５リリース時の各機能の設計書です。
 - [コアプラグインの開発](baser-core/common/core_plugin)
 - [管理画面テーマカスタマイズ](baser-core/common/customize_admin_theme)
 - [提供コマンド](baser-core/common/command)
-
+- [phpDocumentor](etc/php_documentor)
 　
