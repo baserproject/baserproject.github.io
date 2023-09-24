@@ -1,5 +1,8 @@
 # baserCMS 設計書
 
+baserCMS５リリース時の各機能の設計書です。  
+内容については、一部古い場合がありますのでご了承ください。
+
 ## 基本設計
 - [共通クラス図](baser-core/common/index.md)
 
