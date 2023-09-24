@@ -50,6 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% else %}
 				<ul>
 					<li><a href="{{ "/5/" | relative_url }}">baserCMS５公式ガイド</a></li>
+					<li><a href="/5/sitemap">サイトマップ</a></li>
 				</ul>
         {% endif %}
 				</div>
@@ -60,7 +61,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {% if page.url contains '/5/ucmitz/' %}
           {% include menu_contributing.html %}
         {% else %}
+		<div class="local-navi">
           {% include menu_guide.html %}
+		</div>
         {% endif %}
 
 		<div class="search">

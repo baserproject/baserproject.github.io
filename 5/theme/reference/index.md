@@ -843,3 +843,19 @@ BcBaserHelper::func(): void
 [ツールバー](/5/plugin/toolbar)の出力を行います。
 
 ---
+
+### 現在のサイトエンティティを取得
+```php
+BcBaserHelper::getCurrentSite(): Site
+```
+現在表示しているページのサイトエンティティを取得します。
+
+---
+
+### 現在のコンテンツエンティティを取得
+```php
+BcBaserHelper::getCurrentContent(): Content
+```
+現在表示しているページのコンテンツエンティティを取得します。
+
+---
