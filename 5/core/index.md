@@ -319,6 +319,10 @@ class DummyController extends BcAdminApiController {}
 - edit(): エンティティの更新
 - delete(): エンティティの削除
 
+## ユニットテスト
+baserCMSのユニットテストは、PHPUnitを利用しています。詳細については次のページを御覧ください。
+- [ユニットテスト](./unittest)
+
 ## CakePHPのクラスを上書きする
 基本的に、CakePHPが提供するコードは修正してはいけません。変更したい場合はCakePHPの本家にプルリクを送信しましょう。  
 
