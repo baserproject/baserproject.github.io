@@ -109,7 +109,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				{% endif %}
 				<div style="text-align: right;">
-					modified: {{ page.last_modified_at | date: "%Y/%m/%d" }}<br>
+					modified: {{ page.last_modified_at | date: "%Y/%m/%d" }}
+					1:{% last_modified_at %}
+					2:{{ page.last_modified_at }}
 				</div>
 				{{ content }}
       
