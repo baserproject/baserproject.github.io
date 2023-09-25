@@ -16,6 +16,6 @@ plugins:
 defaults:
   -
     scope:
-      path:            "5/ucmitz/**/**"
+      path:            "5/ucmitz/**/*"
     values:
       sitemap:         false
