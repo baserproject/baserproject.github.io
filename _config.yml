@@ -13,3 +13,9 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path:            "5/ucmitz/**/**"
+    values:
+      sitemap:         false
