@@ -12,5 +12,4 @@ kramdown:
   hard_wrap: true
 
 plugins:
-  - jekyll-last-modified-at
   - jekyll-sitemap
