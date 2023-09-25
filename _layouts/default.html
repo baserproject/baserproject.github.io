@@ -108,7 +108,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					{% include toc.html html=content h_min=2 %}
 				</div>
 				{% endif %}
-					
+				<div style="text-align: right;">
+					modified: {{ page.last_modified_at | date: "%Y/%m/%d" }}<br>
+				</div>
 				{{ content }}
       
       </div>
