@@ -129,7 +129,8 @@ baserCMSのオフィシャルサイトのダウンロードページを更新し
 - [baserCMSのダウンロード](https://basercms.net/download/index.html)
  
 ## GitHubでリリース記事を作成
-GitHubにて [新しいリリース記事](https://github.com/baserproject/basercms/releases/new) を作成します。
+GitHubにて [新しいリリース記事](https://github.com/baserproject/basercms/releases/new) を作成します。  
+※ コミット履歴から参加者を抽出するコマンド `git log --after="YYYY-MM-DD" --pretty=format:"%an" |sort| uniq` 
 
 こちらの記事に先ほど作成した、basercms-5.x.x.zip を添付します。
 
