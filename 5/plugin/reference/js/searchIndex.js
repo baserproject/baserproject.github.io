@@ -4051,6 +4051,11 @@ Search.appendIndex(
             "summary": "\u4E3B\u306B\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u306E\u4E88\u7D04\u8A9E\u3068\u3057\u3066\u5229\u7528\u3067\u304D\u306A\u3044\u30D5\u30A3\u30FC\u30EB\u30C9\u304B\u3069\u3046\u304B\u5224\u5B9A",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_reserved"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AcheckSelectList\u0028\u0029",
+            "name": "checkSelectList",
+            "summary": "\u9078\u629E\u30EA\u30B9\u30C8\u306B\u540C\u3058\u9805\u76EE\u3092\u8907\u6570\u767B\u9332\u3059\u308B\u304B\u3092\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_checkSelectList"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\PageValidation",
             "name": "PageValidation",
             "summary": "Class\u0020PageValidation",
@@ -13111,15 +13116,15 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u8A73\u7D30\u30DA\u30FC\u30B8\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BcCustomContent-Controller-CustomContentController.html#method_view"
         },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Admin\\CustomContentFrontAppController",
+            "fqsen": "\\BcCustomContent\\Controller\\CustomContentFrontAppController",
             "name": "CustomContentFrontAppController",
             "summary": "CustomContentFrontAppController",
-            "url": "classes/BcCustomContent-Controller-Admin-CustomContentFrontAppController.html"
+            "url": "classes/BcCustomContent-Controller-CustomContentFrontAppController.html"
         },                {
-            "fqsen": "\\BcCustomContent\\Controller\\Admin\\CustomContentFrontAppController\u003A\u003AbeforeRender\u0028\u0029",
+            "fqsen": "\\BcCustomContent\\Controller\\CustomContentFrontAppController\u003A\u003AbeforeRender\u0028\u0029",
             "name": "beforeRender",
             "summary": "Before\u0020Render",
-            "url": "classes/BcCustomContent-Controller-Admin-CustomContentFrontAppController.html#method_beforeRender"
+            "url": "classes/BcCustomContent-Controller-CustomContentFrontAppController.html#method_beforeRender"
         },                {
             "fqsen": "\\BcCustomContent\\Event\\BcCustomContentViewEventListener",
             "name": "BcCustomContentViewEventListener",
@@ -15520,6 +15525,11 @@ Search.appendIndex(
             "name": "add",
             "summary": "\u005BAPI\u005D\u0020\u53D7\u4FE1\u30E1\u30FC\u30EB\u8FFD\u52A0",
             "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_add"
+        },                {
+            "fqsen": "\\BcMail\\Controller\\Api\\MailMessagesController\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
+            "summary": "\u005BAPI\u005D\u0020\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3",
+            "url": "classes/BcMail-Controller-Api-MailMessagesController.html#method_validate"
         },                {
             "fqsen": "\\BcMail\\Controller\\MailController",
             "name": "MailController",
