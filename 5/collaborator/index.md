@@ -15,7 +15,7 @@
 ## 運用手法
 コラボレーターによる運用手法を以下に示します。
 - [Issue駆動開発](./issue_driven)
-- [マイルストーンミーティング](./milestone_meeting)
+- [マイルストーンミーティング](./milestone_meeting.md)
 - [ラベル運用ガイドライン](./label_operation)
 - [プルリクエスト対応手順](./pull_request)
 - [リリース手順](./release)
