@@ -13,3 +13,4 @@ kramdown:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-relative-links
