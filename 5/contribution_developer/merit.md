@@ -2,7 +2,7 @@
 
 オープンソースの開発は、さまざまな立場の人が開発に関わります。そのため、開発環境の統一化やテストの自動化の仕組みなど、最新の技術に触れる機会が多いです。
 
-baserCMSでは、現時点（2023年9月）において、開発環境の統一化に、[Dockerを採用](../introduce/build_local_env.md)し、ユニットテストに[PHPUnit](https://phpunit.de/){:target="_blank"} 、CI（継続的インテグレーション）に[GitHubActions](https://github.co.jp/features/actions){:target="_blank"}を採用しています。これにより、開発者は安心して開発に参加する事ができます。
+baserCMSでは、現時点（2023年9月）において、開発環境の統一化に、[Dockerを採用](../introduce/build_local_env)し、ユニットテストに[PHPUnit](https://phpunit.de/){:target="_blank"} 、CI（継続的インテグレーション）に[GitHubActions](https://github.co.jp/features/actions){:target="_blank"}を採用しています。これにより、開発者は安心して開発に参加する事ができます。
 
 ## リードデベロッパーのコードレビューが得られる
 baserCMSは、開発レポジトリに [GitHub](https://github.com/)を採用しており、誰でも、プルリクエスト（コードの取込依頼）を行うことができます。  

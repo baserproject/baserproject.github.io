@@ -4,14 +4,14 @@ baserCMS５リリース時の各機能の設計書です。
 内容については、一部古い場合がありますのでご了承ください。
 
 ## 基本設計
-- [共通クラス図](baser-core/common/index.md)
+- [共通クラス図](baser-core/common/index)
 
 ## コア
-- [メニュー](baser-core/common/menu.md)
-- [ツールバー](baser-core/common/toolbar.md)
-- [ヘルプ](baser-core/common/help.md)
-- [システムメッセージ](baser-core/common/system_message.md)
-- [ダッシュボード](baser-core/dashboard/index.md)
+- [メニュー](baser-core/common/menu)
+- [ツールバー](baser-core/common/toolbar)
+- [ヘルプ](baser-core/common/help)
+- [システムメッセージ](baser-core/common/system_message)
+- [ダッシュボード](baser-core/dashboard/index)
 - [サイト基本設定](baser-core/site_configs/index)
 - [ユーザー管理](baser-core/users/index)
 - [ユーザーグループ管理](baser-core/user_groups/index)

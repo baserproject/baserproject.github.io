@@ -137,7 +137,7 @@
 
  
 ## 特性
-- [コンテンツマネージャーAPI](./contents_manager_api.md)
+- [コンテンツマネージャーAPI](./contents_manager_api)
 - [論理削除機能](./soft_delete)
 - [ツリー構造機能](https://book.cakephp.org/4/ja/orm/behaviors/tree.html)
 - [コンテンツ管理用ビヘイビア](./bc_contents_behavior)

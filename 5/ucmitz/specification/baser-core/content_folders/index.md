@@ -6,7 +6,7 @@
 
 ![ユースケース図：コンテンツ管理](../../../svg/use_case/baser-core/content_folders.svg)
 
-コンテンツ自体の操作については [コンテンツ管理設計書](../contents/index.md) を参照
+コンテンツ自体の操作については [コンテンツ管理設計書](../contents/index) を参照
 
  
 ## 機能
@@ -29,6 +29,6 @@
 
  
 ## クラス図
-クラス図については [コンテンツ管理設計書](../contents/index.md) を参照
+クラス図については [コンテンツ管理設計書](../contents/index) を参照
 
 

@@ -29,10 +29,10 @@ git checkout -b dev-5 remotes/origin/dev-5
 これで開発の準備が整いました。
 
 ## 4. Issueを立てる
-baserCMSの開発は、[Issue駆動開発](../collaborator/issue_driven.md) を前提としています。まずは、開発する内容について、Issueを立ててください。  
+baserCMSの開発は、[Issue駆動開発](../collaborator/issue_driven) を前提としています。まずは、開発する内容について、Issueを立ててください。  
 既存のIssueに取り掛かる場合は、その旨、Issueにコメントを追加してください。
 
-なお、公式開発メンバーの場合は、[ラベル運用ガイドライン](../collaborator/label_operation.md)に従って、ラベルを付与してください。
+なお、公式開発メンバーの場合は、[ラベル運用ガイドライン](../collaborator/label_operation)に従って、ラベルを付与してください。
 
 
 ## 5. トピックブランチで開発＆コミット
@@ -110,4 +110,4 @@ git pull basercms dev-5
 ## 更に貢献したい場合は
 あなたが、baserCMSコアの開発に更に貢献したい場合は、公式開発メンバーとして参加を希望することができます。
 
-[開発への参加方法](./participation.md) をご覧ください。
+[開発への参加方法](./participation) をご覧ください。
