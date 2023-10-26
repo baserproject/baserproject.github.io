@@ -648,8 +648,9 @@ AppTable::getConditionAllowPublish() で利用</dd>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_softDeleteField">$softDeleteField</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
+<dd>論理削除フィールド名</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData">$updatingSystemData</a>
@@ -716,13 +717,6 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>範囲を指定しての長さチェック</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-AppTable.html#method_cakeError">cakeError()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Used to report user friendly errors.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -759,25 +753,11 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>コンテンツデータよりURLを生成する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct">deconstruct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Deconstructs a complex data type (array or object) into a single field value.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias">deleteAlias()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd>自データのエイリアスを削除する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAssocCache">deleteAssocCache()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>関連するコンテンツ本体のデータキャッシュを削除する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType">deleteByType()</a>
@@ -838,25 +818,11 @@ AppTable::getConditionAllowPublish() で利用</dd>
 サイト情報を含む</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getCacheTime">getCacheTime()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>キャッシュ時間を取得する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>公開済の conditions を取得</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-AppTable.html#method_getControlSource">getControlSource()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>コントロールソースを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax">getMax()</a>
@@ -970,13 +936,6 @@ BcModelEventDispatcherは対象外とする</dd>
                                 &nbsp;: string    </span>
 </dt>
 <dd>サブサイトのプレフィックスがついていない純粋なURLを取得</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations">reduceAssociations()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>指定したモデル以外のアソシエーションを除外する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText">replaceText()</a>
@@ -1107,7 +1066,7 @@ BcModelEventDispatcherは対象外とする</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -1143,7 +1102,7 @@ BcModelEventDispatcherは対象外とする</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
     </aside>
 
@@ -1178,7 +1137,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -1213,7 +1172,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1281,7 +1240,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -1316,7 +1275,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -1384,14 +1343,15 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">論理削除フィールド名</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$softDeleteField</span>
      = <span class="phpdocumentor-signature__default-value">&#039;deleted_date&#039;</span></code>
 
@@ -1417,7 +1377,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">94</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1456,7 +1416,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1530,7 +1490,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">462</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -1614,7 +1574,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
     </aside>
 
@@ -1662,7 +1622,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">301</span>
+    <span class="phpdocumentor-element-found-in__line">309</span>
 
     </aside>
 
@@ -1754,7 +1714,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -1838,7 +1798,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -1914,7 +1874,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">286</span>
+    <span class="phpdocumentor-element-found-in__line">268</span>
 
     </aside>
 
@@ -1968,62 +1928,6 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_cakeError">
-        cakeError()
-        <a href="classes/BaserCore-Model-Table-AppTable.html#method_cakeError" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">644</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Used to report user friendly errors.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">cakeError</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$messages</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>If there is a file app/error.php or app/app_error.php this file will be loaded
-error.php is the AppError class it should extend ErrorHandler class.</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Method to be called in the error class (AppError or ErrorHandler classes)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$messages</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Message that is to be displayed by the error class</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_changeSort">
         changeSort()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2032,7 +1936,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
     </aside>
 
@@ -2076,6 +1980,27 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2097,7 +2022,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">160</span>
 
     </aside>
 
@@ -2183,7 +2108,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">747</span>
+    <span class="phpdocumentor-element-found-in__line">732</span>
 
     </aside>
 
@@ -2265,7 +2190,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">840</span>
+    <span class="phpdocumentor-element-found-in__line">825</span>
 
     </aside>
 
@@ -2367,7 +2292,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">871</span>
+    <span class="phpdocumentor-element-found-in__line">856</span>
 
     </aside>
 
@@ -2439,67 +2364,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_deconstruct">
-        deconstruct()
-        <a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">419</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Deconstructs a complex data type (array or object) into a single field value.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">deconstruct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$field</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The name of the field to be deconstructed</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>An array or object to be deconstructed into a field</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>The resulting data that should be assigned to a field</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_deleteAlias">
         deleteAlias()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2508,7 +2372,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">500</span>
 
     </aside>
 
@@ -2572,48 +2436,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_deleteAssocCache">
-        deleteAssocCache()
-        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAssocCache" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">485</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">関連するコンテンツ本体のデータキャッシュを削除する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">deleteAssocCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$content</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$content</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/BaserCore-Model-Entity-Content.html"><abbr title="\BaserCore\Model\Entity\Content">Content</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_deleteByType">
         deleteByType()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2622,7 +2444,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1103</span>
+    <span class="phpdocumentor-element-found-in__line">1088</span>
 
     </aside>
 
@@ -2677,7 +2499,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">581</span>
+    <span class="phpdocumentor-element-found-in__line">566</span>
 
     </aside>
 
@@ -2747,7 +2569,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1537</span>
+    <span class="phpdocumentor-element-found-in__line">1490</span>
 
     </aside>
 
@@ -2895,7 +2717,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -2947,7 +2769,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1550</span>
+    <span class="phpdocumentor-element-found-in__line">1503</span>
 
     </aside>
 
@@ -3007,7 +2829,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1079</span>
+    <span class="phpdocumentor-element-found-in__line">1064</span>
 
     </aside>
 
@@ -3090,7 +2912,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1427</span>
+    <span class="phpdocumentor-element-found-in__line">1380</span>
 
     </aside>
 
@@ -3199,56 +3021,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getCacheTime">
-        getCacheTime()
-        <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getCacheTime" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1258</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">キャッシュ時間を取得する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getCacheTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>int or false</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getConditionAllowPublish">
         getConditionAllowPublish()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3257,7 +3029,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1133</span>
+    <span class="phpdocumentor-element-found-in__line">1118</span>
 
     </aside>
 
@@ -3317,54 +3089,6 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getControlSource">
-        getControlSource()
-        <a href="classes/BaserCore-Model-Table-AppTable.html#method_getControlSource" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">186</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">コントロールソースを取得する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getControlSource</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>継承先でオーバーライドする事</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$field</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getMax">
         getMax()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3373,7 +3097,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">287</span>
 
     </aside>
 
@@ -3456,7 +3180,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1484</span>
+    <span class="phpdocumentor-element-found-in__line">1437</span>
 
     </aside>
 
@@ -3539,7 +3263,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1192</span>
+    <span class="phpdocumentor-element-found-in__line">1177</span>
 
     </aside>
 
@@ -3609,7 +3333,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1216</span>
+    <span class="phpdocumentor-element-found-in__line">1201</span>
 
     </aside>
 
@@ -3662,7 +3386,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -3721,7 +3445,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
     </aside>
 
@@ -3803,7 +3527,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">396</span>
 
     </aside>
 
@@ -3893,7 +3617,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">667</span>
+    <span class="phpdocumentor-element-found-in__line">409</span>
 
     </aside>
 
@@ -3967,7 +3691,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -4031,7 +3755,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -4103,7 +3827,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1159</span>
+    <span class="phpdocumentor-element-found-in__line">1144</span>
 
     </aside>
 
@@ -4197,7 +3921,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1041</span>
+    <span class="phpdocumentor-element-found-in__line">1026</span>
 
     </aside>
 
@@ -4271,7 +3995,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1515</span>
+    <span class="phpdocumentor-element-found-in__line">1468</span>
 
     </aside>
 
@@ -4352,7 +4076,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">712</span>
+    <span class="phpdocumentor-element-found-in__line">456</span>
 
     </aside>
 
@@ -4377,6 +4101,27 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_offEvent#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 </article>
@@ -4394,7 +4139,7 @@ error.php is the AppError class it should extend ErrorHandler class.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">727</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -4465,7 +4210,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">818</span>
+    <span class="phpdocumentor-element-found-in__line">803</span>
 
     </aside>
 
@@ -4538,57 +4283,6 @@ BcModelEventDispatcherは対象外とする</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_reduceAssociations">
-        reduceAssociations()
-        <a href="classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">546</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">指定したモデル以外のアソシエーションを除外する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">reduceAssociations</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$reset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arguments</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$reset</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>バインド時に１回の find でリセットするかどうか</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_replaceText">
         replaceText()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4597,7 +4291,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -4605,7 +4299,7 @@ BcModelEventDispatcherは対象外とする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">replaceText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">replaceText</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$str</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4617,10 +4311,12 @@ BcModelEventDispatcherは対象外とする</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$str</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>変換対象文字列</p>
+</section>
+
             </dd>
             </dl>
 
@@ -4632,13 +4328,18 @@ BcModelEventDispatcherは対象外とする</p>
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">TODO</span>
+                    <span class="phpdocumentor-tag__name">checked</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>AppExModeに移行すべきかも</p>
-</section>
-
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
                                     </dd>
                                             </dl>
 
@@ -4666,7 +4367,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1339</span>
+    <span class="phpdocumentor-element-found-in__line">1292</span>
 
     </aside>
 
@@ -4726,7 +4427,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -4795,7 +4496,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 
     </aside>
 
@@ -4827,6 +4528,27 @@ BcModelEventDispatcherは対象外とする</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_sortdown#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4848,7 +4570,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -4880,6 +4602,27 @@ BcModelEventDispatcherは対象外とする</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_sortup#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4901,7 +4644,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1289</span>
+    <span class="phpdocumentor-element-found-in__line">1242</span>
 
     </aside>
 
@@ -4937,7 +4680,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1055</span>
+    <span class="phpdocumentor-element-found-in__line">1040</span>
 
     </aside>
 
@@ -5011,7 +4754,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1318</span>
+    <span class="phpdocumentor-element-found-in__line">1271</span>
 
     </aside>
 
@@ -5081,7 +4824,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -5155,7 +4898,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">561</span>
+    <span class="phpdocumentor-element-found-in__line">546</span>
 
     </aside>
 
@@ -5229,7 +4972,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1017</span>
+    <span class="phpdocumentor-element-found-in__line">1002</span>
 
     </aside>
 
@@ -5307,7 +5050,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">625</span>
+    <span class="phpdocumentor-element-found-in__line">610</span>
 
     </aside>
 
@@ -5381,7 +5124,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">948</span>
+    <span class="phpdocumentor-element-found-in__line">933</span>
 
     </aside>
 
@@ -5457,7 +5200,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">543</span>
+    <span class="phpdocumentor-element-found-in__line">528</span>
 
     </aside>
 
@@ -5653,15 +5396,12 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_beforeSave">beforeSave()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_between">between()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_cakeError">cakeError()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_convertEncodingByArray">convertEncodingByArray()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_copyContentFolderPath">copyContentFolderPath()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createContent">createContent()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_createUrl">createUrl()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_deconstruct">deconstruct()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAlias">deleteAlias()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteAssocCache">deleteAssocCache()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType">deleteByType()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteRelateSubSiteContent">deleteRelateSubSiteContent()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData">disableUpdatingSystemData()</a></li>
@@ -5670,9 +5410,7 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData">enableUpdatingSystemData()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByType">findByType()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByUrl">findByUrl()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getCacheTime">getCacheTime()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getControlSource">getControlSource()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax">getMax()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getOrderSameParent">getOrderSameParent()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_getParentTemplate">getParentTemplate()</a></li>
@@ -5689,7 +5427,6 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_offEvent">offEvent()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_onEvent">onEvent()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_pureUrl">pureUrl()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_reduceAssociations">reduceAssociations()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_replaceText">replaceText()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_resetTree">resetTree()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_setTable">setTable()</a></li>

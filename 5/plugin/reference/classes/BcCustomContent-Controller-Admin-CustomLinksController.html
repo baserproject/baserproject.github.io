@@ -584,13 +584,6 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_adminTheme">$adminTheme</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>管理画面テーマ</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#property_Authentication">$Authentication</a>
     <span>
                         &nbsp;: <abbr title="\Authentication\Controller\Component\AuthenticationComponent">AuthenticationComponent</abbr>            </span>
@@ -609,51 +602,16 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_content">$content</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>コンテンツデータ</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_contentsTitle">$contentsTitle</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>コンテンツタイトル</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator</a>
     <span>
                         &nbsp;: <abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_preview">$preview</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd>プレビューフラグ</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/BaserCore-Controller-AppController.html#property_Security">$Security</a>
     <span>
                         &nbsp;: <abbr title="\Cake\Controller\Component\SecurityComponent">SecurityComponent</abbr>            </span>
 </dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_site">$site</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>サイトデータ</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#property_subDir">$subDir</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>サブディレクトリ</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a>
@@ -673,9 +631,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method___construct">__construct()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void|<abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
 </dt>
-<dd>BcAppController constructor.</dd>
+<dd>AppController constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method__blackHoleCallback">_blackHoleCallback()</a>
@@ -685,7 +643,7 @@
 <dd>Securityコンポーネントのブラックホールからのコールバック</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_ajaxError">ajaxError()</a>
+    <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
@@ -734,13 +692,6 @@
 <dd>Initialize</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_isAuthorized">isAuthorized()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>認証完了後処理</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_notFound">notFound()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -761,27 +712,6 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
 <dd>メンテナンス画面へのリダイレクトが必要な場合にリダイレクトする</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_requestAction">requestAction()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Calls a controller&#039;s method from any location.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_sendMail">sendMail()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>メールを送信する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_setAction">setAction()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Internally redirects one action to another. Examples:</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Controller-AppController.html#method_setTitle">setTitle()</a>
@@ -812,48 +742,6 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
 <dd>リファラチェックを行う</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method__checkSubmitToken">_checkSubmitToken()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>リクエストメソッドとトークンをチェックする</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_convertBetweenCondition">convertBetweenCondition()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>BETWEEN 条件を生成</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_convertSelectTextCondition">convertSelectTextCondition()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Select Text 用の条件を生成する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_generatePassword">generatePassword()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>ランダムなパスワード文字列を生成する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_getCakeVersion">getCakeVersion()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>CakePHPのバージョンを取得する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_getUserModel">getUserModel()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>リクエストされた画面に対しての認証用ユーザーモデルを取得する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -861,7 +749,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
 <dd>画面の情報をセッションから読み込む</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method_saveDblog">saveDblog()</a>
+    <a href="classes/BaserCore-Controller-AppController.html#method_saveDblog">saveDblog()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
 </dt>
@@ -919,14 +807,6 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
 とりあえず、UTF-8で固定</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/BaserCore-Controller-BcAppController.html#method___loadDataToView">__loadDataToView()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>View用のデータを読み込む。
-beforeRenderで呼び出される</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method___updateFirstAccess">__updateFirstAccess()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -954,40 +834,6 @@ beforeRenderで呼び出される</dd>
             <a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_adminTheme">
-        $adminTheme
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_adminTheme" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">69</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">管理画面テーマ</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$adminTheme</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-    
-    
-
-</article>
                     <article
         class="
             phpdocumentor-element
@@ -1094,74 +940,6 @@ beforeRenderで呼び出される</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_content">
-        $content
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_content" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">83</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">コンテンツデータ</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$content</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_contentsTitle">
-        $contentsTitle
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_contentsTitle" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">55</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">コンテンツタイトル</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$contentsTitle</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_Paginator">
         $Paginator
         <a href="classes/BaserCore-Controller-AppController.html#property_Paginator" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1182,40 +960,6 @@ beforeRenderで呼び出される</dd>
         <span class="phpdocumentor-signature__type"><abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr></span>
     <span class="phpdocumentor-signature__name">$Paginator</span>
     </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_preview">
-        $preview
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_preview" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">62</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">プレビューフラグ</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$preview</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
 
     
     
@@ -1253,90 +997,6 @@ beforeRenderで呼び出される</dd>
     
     
     
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_site">
-        $site
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_site" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">76</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">サイトデータ</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$site</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_subDir">
-        $subDir
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_subDir" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">サブディレクトリ</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$subDir</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Controller-BcAppController.html#property_subDir#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">access</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>public</p>
-</section>
-
-                                    </dd>
-                                            </dl>
 
 </article>
                     <article
@@ -1395,15 +1055,15 @@ beforeRenderで呼び出される</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">BcAppController constructor.</p>
+        <p class="phpdocumentor-summary">AppController constructor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\Response">Response</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventManagerInterface">EventManagerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventManager</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Controller\ComponentRegistry">ComponentRegistry</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$components</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\Response">Response</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$response</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventManagerInterface">EventManagerInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventManager</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Controller\ComponentRegistry">ComponentRegistry</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$components</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void|<abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1477,7 +1137,11 @@ beforeRenderで呼び出される</dd>
                                     </dd>
                                             </dl>
 
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">void|<abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1493,7 +1157,7 @@ beforeRenderで呼び出される</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1581,23 +1245,23 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_ajaxError">
         ajaxError()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">670</span>
+    <span class="phpdocumentor-element-found-in__line">563</span>
 
     </aside>
 
         <p class="phpdocumentor-summary">Ajax用のエラーを出力する</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">ajaxError</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">500</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
@@ -1627,6 +1291,36 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>since 5.0.5 このメソッドは非推奨です。</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 </article>
@@ -1644,7 +1338,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
     </aside>
 
@@ -1718,7 +1412,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">220</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -2028,7 +1722,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -2082,54 +1776,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_isAuthorized">
-        isAuthorized()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_isAuthorized" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">574</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">認証完了後処理</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isAuthorized</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$user</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>認証されたユーザー情報</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_notFound">
         notFound()
         <a href="classes/BaserCore-Controller-AppController.html#method_notFound" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2138,7 +1784,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">529</span>
+    <span class="phpdocumentor-element-found-in__line">533</span>
 
     </aside>
 
@@ -2206,7 +1852,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">195</span>
 
     </aside>
 
@@ -2271,7 +1917,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">344</span>
+    <span class="phpdocumentor-element-found-in__line">348</span>
 
     </aside>
 
@@ -2327,212 +1973,6 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_requestAction">
-        requestAction()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_requestAction" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">615</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Calls a controller&#039;s method from any location.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">requestAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extra</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>String or array-based url.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$extra</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>if array includes the key &quot;return&quot; it sets the AutoRender to true.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Boolean true or false on success/failure, or contents
-of rendered action if 'return' is set in $extra.</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_sendMail">
-        sendMail()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_sendMail" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">248</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">メールを送信する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">sendMail</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$to</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$to</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>送信先アドレス</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$title</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>タイトル</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$body</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>本文</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$options</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>オプション</p>
-<ul>
-<li>bool agentTemplate : テンプレートの配置場所についてサイト名をサブフォルダとして利用するかどうか（初期値：true）</li>
-</ul>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>送信結果</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setAction">
-        setAction()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_setAction" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">642</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Internally redirects one action to another. Examples:</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__variadic-operator">...</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>setAction('another_action');
-setAction('action_with_parameters', $parameter1);</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The new action to be redirected to</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$args</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Returns the return value of the called action</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_setTitle">
         setTitle()
         <a href="classes/BaserCore-Controller-AppController.html#method_setTitle" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2541,7 +1981,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">336</span>
 
     </aside>
 
@@ -2611,7 +2051,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">232</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -2671,7 +2111,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">284</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
@@ -2760,7 +2200,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -2816,298 +2256,6 @@ setAction('action_with_parameters', $parameter1);</p>
             -protected
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method__checkSubmitToken">
-        _checkSubmitToken()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method__checkSubmitToken" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">699</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">リクエストメソッドとトークンをチェックする</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">_checkSubmitToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><ul>
-<li>GETでのアクセスの場合 not found</li>
-<li>トークンが送信されていない場合 not found</li>
-</ul>
-</section>
-
-    
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_convertBetweenCondition">
-        convertBetweenCondition()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_convertBetweenCondition" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">534</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">BETWEEN 条件を生成</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">convertBetweenCondition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fieldName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>フィールド名</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>値</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_convertSelectTextCondition">
-        convertSelectTextCondition()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_convertSelectTextCondition" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">510</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Select Text 用の条件を生成する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">convertSelectTextCondition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fieldName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>フィールド名</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$values</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>値</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$options</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>オプション</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_generatePassword">
-        generatePassword()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_generatePassword" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">556</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">ランダムなパスワード文字列を生成する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">generatePassword</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$len</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">8</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$len</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">8</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>文字列の長さ</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>パスワード</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getCakeVersion">
-        getCakeVersion()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_getCakeVersion" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">220</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">CakePHPのバージョンを取得する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getCakeVersion</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>Baserバージョン</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getUserModel">
-        getUserModel()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_getUserModel" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">595</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">リクエストされた画面に対しての認証用ユーザーモデルを取得する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">getUserModel</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">mixed</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>string Or false</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_loadViewConditions">
         loadViewConditions()
         <a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3116,7 +2264,7 @@ setAction('action_with_parameters', $parameter1);</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">473</span>
+    <span class="phpdocumentor-element-found-in__line">477</span>
 
     </aside>
 
@@ -3211,13 +2359,13 @@ ServerRequestに設定する。</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_saveDblog">
         saveDblog()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_saveDblog" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-AppController.html#method_saveDblog" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">715</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 
     </aside>
 
@@ -3244,7 +2392,7 @@ ServerRequestに設定する。</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/BaserCore-Controller-BcAppController.html#method_saveDblog#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-AppController.html#method_saveDblog#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -3291,7 +2439,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">417</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
     </aside>
 
@@ -3396,7 +2544,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">138</span>
 
     </aside>
 
@@ -3459,7 +2607,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
     </aside>
 
@@ -3529,7 +2677,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -3599,7 +2747,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">392</span>
 
     </aside>
 
@@ -3702,7 +2850,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">311</span>
+    <span class="phpdocumentor-element-found-in__line">315</span>
 
     </aside>
 
@@ -3763,7 +2911,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -3816,39 +2964,6 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
             -private
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___loadDataToView">
-        __loadDataToView()
-        <a href="classes/BaserCore-Controller-BcAppController.html#method___loadDataToView" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/BcAppController.php"><a href="files/plugins-baser-core-src-controller-bcappcontroller.html"><abbr title="plugins/baser-core/src/Controller/BcAppController.php">BcAppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">181</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">View用のデータを読み込む。
-beforeRenderで呼び出される</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                    <span class="phpdocumentor-signature__name">__loadDataToView</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method___updateFirstAccess">
         __updateFirstAccess()
         <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method___updateFirstAccess" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3857,7 +2972,7 @@ beforeRenderで呼び出される</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -3872,6 +2987,27 @@ beforeRenderで呼び出される</p>
     
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method___updateFirstAccess#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 </article>
@@ -3889,7 +3025,7 @@ beforeRenderで呼び出される</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -3906,6 +3042,27 @@ beforeRenderで呼び出される</p>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Controller-AppController.html#method_checkPermission#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4026,17 +3183,11 @@ beforeRenderで呼び出される</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_adminTheme">$adminTheme<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#property_Authentication">$Authentication<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Authentication">$Authentication<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_BcMessage">$BcMessage<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_content">$content<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_contentsTitle">$contentsTitle<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_preview">$preview<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Security">$Security<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_site">$site<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
-                                                    <li><a href="classes/BaserCore-Controller-BcAppController.html#property_subDir">$subDir<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                                     <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View<a href="classes/BcCustomContent-Controller-Admin-CustomLinksController.html"></li>
                                             </ul>
                 </li>
@@ -4046,32 +3197,22 @@ beforeRenderで呼び出される</p>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method__blackHoleCallback">_blackHoleCallback()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_ajaxError">ajaxError()</a></li>
+                                            <li><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_beforeFilter">beforeFilter()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_beforeRender">beforeRender()</a></li>
                                             <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
                                             <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
                                             <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_initialize">initialize()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_isAuthorized">isAuthorized()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_notFound">notFound()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite">redirectIfIsNotSameSite()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_redirectIfIsRequireMaintenance">redirectIfIsRequireMaintenance()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_requestAction">requestAction()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_sendMail">sendMail()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_setAction">setAction()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_setTitle">setTitle()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_setupFrontView">setupFrontView()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method__autoConvertEncodingByArray">_autoConvertEncodingByArray()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method__checkReferer">_checkReferer()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method__checkSubmitToken">_checkSubmitToken()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_convertBetweenCondition">convertBetweenCondition()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_convertSelectTextCondition">convertSelectTextCondition()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_generatePassword">generatePassword()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_getCakeVersion">getCakeVersion()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_getUserModel">getUserModel()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method_saveDblog">saveDblog()</a></li>
+                                            <li><a href="classes/BaserCore-Controller-AppController.html#method_saveDblog">saveDblog()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_saveViewConditions">saveViewConditions()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_setAdminTheme">setAdminTheme()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_setHelp">setHelp()</a></li>
@@ -4079,7 +3220,6 @@ beforeRenderで呼び出される</p>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_setViewConditions">setViewConditions()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method___cleanupQueryParams">__cleanupQueryParams()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method___convertEncodingHttpInput">__convertEncodingHttpInput()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-BcAppController.html#method___loadDataToView">__loadDataToView()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method___updateFirstAccess">__updateFirstAccess()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_checkPermission">checkPermission()</a></li>
                                     </ul>
