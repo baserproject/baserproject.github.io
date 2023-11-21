@@ -156,7 +156,7 @@ echo $page->contents
 blog_comments.php エレメントについて、BcFront テーマを参考に Javascript 読込処理を変更します。
 
 ```shell
-plugins/bc-front/templates/plugin/BcBlog/element/blog_comments.php
+vendor/baserproject/bc-front/templates/plugin/BcBlog/element/blog_comments.php
 ```
 
 ### その他の変更

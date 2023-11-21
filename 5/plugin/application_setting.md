@@ -13,9 +13,9 @@ baserCMSでは、`Configure` というクラスを利用して、アプリケー
 例えば次のようなパスになります。
 ```shell
 # BaserCore
-/plugins/baser-core/config/setting.php
+/vendor/baserproject/baser-core/config/setting.php
 # BcBlog
-/plugins/bc-blog/config/setting.php
+/vendor/baserproject/bc-blog/config/setting.php
 ```
 
 ## 設定ファイルの準備
