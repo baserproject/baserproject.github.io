@@ -80,7 +80,7 @@ namespace CustomTheme\View\Helper;
 
 存在しないファイルの実体は、コアテーマである、`BcFront` テーマの中に存在します。
 
-例えば、スタイルシート `/plugin/bc-front/webroot/css/style.css` というファイルが存在しますが、適用しているテーマ内で、baserCMSの関数を使って `style.css` を呼び出した場合、こちらが読み込まれます。
+例えば、スタイルシート `/vendor/baserproject/bc-front/webroot/css/style.css` というファイルが存在しますが、適用しているテーマ内で、baserCMSの関数を使って `style.css` を呼び出した場合、こちらが読み込まれます。
 
 ```php
 $this->BcBaser->css('style.css');
@@ -100,7 +100,7 @@ $this->BcBaser->css('style.css');
 まずは、`style.css` をコアテーマから テーマ「CustomTheme」内にコピーします。
 
 ```
-/plugin/bc-front/webroot/css/style.css
+/vendor/baserproject/bc-front/webroot/css/style.css
 ↓
 /plugin/CustomTheme/webroot/css/style.css
 ```
