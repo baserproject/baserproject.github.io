@@ -1,5 +1,8 @@
 # リリース手順
 
+# この情報は古くなっています。下記のURLを参照してください。  
+https://baserproject.github.io/5/collaborator/release
+
 ## プラグインをモノレポと Packagist に登録する
 
 新しいプラグインを作成した場合は、リリース時にモノレポの分割対象のパッケージとして登録します。  

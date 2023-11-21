@@ -639,6 +639,13 @@
 <dd>アップロードしたかどうか</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/BaserCore-Utility-BcFileUploader.html#property_bcUploadId">$bcUploadId</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>同一テーブルのデータを複数扱う場合の競合対策のための固有ID</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a href="classes/BaserCore-Utility-BcFileUploader.html#property_uploadingFiles">$uploadingFiles</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -733,7 +740,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Utility-BcFileUploader.html#method_getSaveDir">getSaveDir()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: string|bool    </span>
 </dt>
 <dd>保存先のフォルダを設定し、取得する</dd>
 
@@ -1225,6 +1232,40 @@ $data は参照渡し</dd>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_bcUploadId">
+        $bcUploadId
+        <a href="classes/BaserCore-Utility-BcFileUploader.html#property_bcUploadId" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">同一テーブルのデータを複数扱う場合の競合対策のための固有ID</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$bcUploadId</span>
+     = <span class="phpdocumentor-signature__default-value">1</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_uploadingFiles">
         $uploadingFiles
         <a href="classes/BaserCore-Utility-BcFileUploader.html#property_uploadingFiles" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1274,7 +1315,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">593</span>
+    <span class="phpdocumentor-element-found-in__line">607</span>
 
     </aside>
 
@@ -1357,7 +1398,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1012</span>
+    <span class="phpdocumentor-element-found-in__line">1029</span>
 
     </aside>
 
@@ -1434,7 +1475,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">997</span>
+    <span class="phpdocumentor-element-found-in__line">1014</span>
 
     </aside>
 
@@ -1525,7 +1566,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">974</span>
+    <span class="phpdocumentor-element-found-in__line">991</span>
 
     </aside>
 
@@ -1602,7 +1643,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">419</span>
+    <span class="phpdocumentor-element-found-in__line">433</span>
 
     </aside>
 
@@ -1696,7 +1737,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">371</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
     </aside>
 
@@ -1780,7 +1821,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">393</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -1878,7 +1919,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">840</span>
+    <span class="phpdocumentor-element-found-in__line">854</span>
 
     </aside>
 
@@ -1959,7 +2000,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">767</span>
+    <span class="phpdocumentor-element-found-in__line">781</span>
 
     </aside>
 
@@ -2060,7 +2101,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">809</span>
+    <span class="phpdocumentor-element-found-in__line">823</span>
 
     </aside>
 
@@ -2141,7 +2182,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">646</span>
+    <span class="phpdocumentor-element-found-in__line">660</span>
 
     </aside>
 
@@ -2223,7 +2264,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">917</span>
+    <span class="phpdocumentor-element-found-in__line">931</span>
 
     </aside>
 
@@ -2231,7 +2272,7 @@ $data は参照渡し</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSaveDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isTheme</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limited</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getSaveDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isTheme</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limited</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2286,7 +2327,7 @@ $data は参照渡し</dd>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
+        <span class="phpdocumentor-signature__response_type">string|bool</span>
             </section>
 
 </article>
@@ -2304,7 +2345,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">496</span>
+    <span class="phpdocumentor-element-found-in__line">510</span>
 
     </aside>
 
@@ -2385,7 +2426,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1123</span>
+    <span class="phpdocumentor-element-found-in__line">1140</span>
 
     </aside>
 
@@ -2547,7 +2588,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -2621,7 +2662,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">861</span>
+    <span class="phpdocumentor-element-found-in__line">875</span>
 
     </aside>
 
@@ -2713,7 +2754,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1041</span>
+    <span class="phpdocumentor-element-found-in__line">1058</span>
 
     </aside>
 
@@ -2721,12 +2762,22 @@ $data は参照渡し</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getUploadingFiles</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getUploadingFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bcUploadId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$bcUploadId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -2851,7 +2902,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
     </aside>
 
@@ -2928,7 +2979,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">950</span>
+    <span class="phpdocumentor-element-found-in__line">967</span>
 
     </aside>
 
@@ -3002,7 +3053,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -3090,7 +3141,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1143</span>
+    <span class="phpdocumentor-element-found-in__line">1160</span>
 
     </aside>
 
@@ -3154,7 +3205,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">448</span>
+    <span class="phpdocumentor-element-found-in__line">462</span>
 
     </aside>
 
@@ -3235,7 +3286,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">694</span>
+    <span class="phpdocumentor-element-found-in__line">708</span>
 
     </aside>
 
@@ -3330,7 +3381,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">679</span>
 
     </aside>
 
@@ -3407,7 +3458,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1154</span>
+    <span class="phpdocumentor-element-found-in__line">1171</span>
 
     </aside>
 
@@ -3467,7 +3518,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">621</span>
+    <span class="phpdocumentor-element-found-in__line">635</span>
 
     </aside>
 
@@ -3580,7 +3631,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1164</span>
+    <span class="phpdocumentor-element-found-in__line">1183</span>
 
     </aside>
 
@@ -3605,6 +3656,27 @@ $data は参照渡し</dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Utility-BcFileUploader.html#method_rollbackFile#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
     
 </article>
@@ -3622,7 +3694,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">527</span>
+    <span class="phpdocumentor-element-found-in__line">541</span>
 
     </aside>
 
@@ -3696,7 +3768,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">357</span>
 
     </aside>
 
@@ -3783,7 +3855,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -3853,7 +3925,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">318</span>
 
     </aside>
 
@@ -3956,7 +4028,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1094</span>
+    <span class="phpdocumentor-element-found-in__line">1111</span>
 
     </aside>
 
@@ -4050,7 +4122,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1056</span>
+    <span class="phpdocumentor-element-found-in__line">1073</span>
 
     </aside>
 
@@ -4131,7 +4203,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1030</span>
+    <span class="phpdocumentor-element-found-in__line">1047</span>
 
     </aside>
 
@@ -4139,7 +4211,7 @@ $data は参照渡し</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setUploadingFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$files</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setUploadingFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$files</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bcUploadId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -4149,6 +4221,13 @@ $data は参照渡し</dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$files</span>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$bcUploadId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -4201,7 +4280,7 @@ $data は参照渡し</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">196</span>
 
     </aside>
 
@@ -4272,7 +4351,7 @@ $data は参照渡し</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -4343,7 +4422,7 @@ $data は参照渡し</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFileUploader.php"><a href="files/plugins-baser-core-src-utility-bcfileuploader.html"><abbr title="plugins/baser-core/src/Utility/BcFileUploader.php">BcFileUploader.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">168</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -4514,6 +4593,7 @@ $data は参照渡し</p>
                                                     <li><a href="classes/BaserCore-Utility-BcFileUploader.html#property_table">$table<a href="classes/BaserCore-Utility-BcFileUploader.html"></li>
                                                     <li><a href="classes/BaserCore-Utility-BcFileUploader.html#property_tmpId">$tmpId<a href="classes/BaserCore-Utility-BcFileUploader.html"></li>
                                                     <li><a href="classes/BaserCore-Utility-BcFileUploader.html#property_uploaded">$uploaded<a href="classes/BaserCore-Utility-BcFileUploader.html"></li>
+                                                    <li><a href="classes/BaserCore-Utility-BcFileUploader.html#property_bcUploadId">$bcUploadId<a href="classes/BaserCore-Utility-BcFileUploader.html"></li>
                                                     <li><a href="classes/BaserCore-Utility-BcFileUploader.html#property_uploadingFiles">$uploadingFiles<a href="classes/BaserCore-Utility-BcFileUploader.html"></li>
                                             </ul>
                 </li>

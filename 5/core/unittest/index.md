@@ -19,7 +19,7 @@ baserCMSの全てのメソッドはユニットテストが実装されなけれ
 
 ```shell
 # コンテナにログイン
-composer exec -it bc-php /bin/bash
+docker exec -it bc-php /bin/bash
 
 # composerのインストール
 composer install --no-plugins
