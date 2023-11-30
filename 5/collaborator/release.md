@@ -157,7 +157,7 @@ baserCMSプロジェクトメンバー名簿より、新しくメンバーとな
 
 ## 事後作業
 `plugins/baser-core/VERSION.txt` の先頭行を開発バージョンに変更します。  
-dev-5ブランチにpushします。  
+コミットメッセージを `バージョンを5.x.x開発版に変更` としdev-5ブランチにpushします。  
 
 バージョンアップに合わせて次の２サイトのアップデートを行います。
 - [baserCMS公式サイト](https://basercms.net/)
