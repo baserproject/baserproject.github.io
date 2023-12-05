@@ -75,3 +75,9 @@ baserマーケットでは、自身が作成したオリジナルのプラグイ
 こちらもぜひチャレンジしてみてください。
 
 - [baserマーケット：テーマやプラグインを配布・販売する](../market#テーマやプラグインを配布・販売する)
+
+## baserCMS４のプラグインを変換する
+baserCMS４のテーマを baserCMS５用に変換するにはこちらをご覧ください。
+
+- [baserCMS４のプラグインを変換](migration_plugin_from_ver4)
+- [baserCMS４からのアップグレードガイド](../ver5_migration)

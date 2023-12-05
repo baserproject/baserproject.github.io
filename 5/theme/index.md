@@ -22,8 +22,7 @@ __※「baserメンバー」への登録が必要になります。__
 
 
 ## baserCMS４のテーマを変換する
-baserCMS５のテーマはまだ少なく、過去バージョンのテーマをマイグレーションする機能も存在しません。（2023/04/10現在）
-
 baserCMS４のテーマを baserCMS５用に変換するにはこちらをご覧ください。
 
-- [baserCMS４のテーマを変換](covert_from_ver4)
+- [baserCMS４のテーマを変換](migration_theme_from_ver4)
+- [baserCMS４からのアップグレードガイド](../ver5_migration)
