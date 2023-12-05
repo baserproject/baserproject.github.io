@@ -51,7 +51,7 @@ bin/cake setup install
 
 ```shell
 # composer によるコアプラグインのインストール
-comoser install
+composer install
 # 環境設定ファイルの準備
 cp config/.env.example config/.env
 ```
