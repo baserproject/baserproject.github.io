@@ -10,12 +10,12 @@ baserCMS4からbaserCMS5へのアップグレードは、データベース、�
 ## プラグインの変換
 プラグイン変換用のプラグインを利用することで、プラグインの基本的な変換作業を行うことができますが、プラグインによっては、手動での変換が必要な場合もあります。
 
-- [baserCMS４のプラグインを変換](./migration_plugin_from_ver4)
+- [baserCMS４のプラグインを変換](./plugin/migration_plugin_from_ver4)
 
 ## テーマの変換
 テーマ変換用のプラグインを利用することで、テーマの基本的な変換作業を行うことができますが、テーマによっては、手動での変換が必要な場合もあります。
 
-- [baserCMS４のテーマを変換](./migration_theme_from_ver4)
+- [baserCMS４のテーマを変換](./theme/migration_theme_from_ver4)
 
 ## ご自分でのアップグレードが難しい場合
 ご自分でのアップグレードが難しい場合は、[baserCMSのオフィシャルパートナー](https://basercms.net/partners/){:target="_blank"} に相談しましょう。
