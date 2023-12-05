@@ -52,3 +52,4 @@ baserCMS v5.0.7までは、プラグインが全てインストールされて�
 こちらも合わせてご覧ください。
 - [baserCMS４のテーマを変換](./theme/migration_theme_from_ver4)
 - [baserCMS４のプラグインを変換](./plugin/migration_plugin_from_ver4)
+- [baserCMS４からの変更点](./core/difference_from_basercms4)

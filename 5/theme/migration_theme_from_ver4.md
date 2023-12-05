@@ -212,3 +212,4 @@ $value = base64_encode(serialize($value));
 こちらも合わせてご覧ください。
 - [baserCMS４のプラグインを変換](../plugin/migration_plugin_from_ver4)
 - [baserCMS４のデータベースを変換](../migration_db_from_ver4)
+- [baserCMS４からの変更点](../core/difference_from_basercms4)

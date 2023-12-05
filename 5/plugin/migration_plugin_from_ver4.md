@@ -133,3 +133,4 @@ $users = $this->Users->find()
 こちらも合わせてご覧ください。
 - [baserCMS４のテーマを変換](../theme/migration_theme_from_ver4)
 - [baserCMS４のデータベースを変換](../migration_db_from_ver4)
+- [baserCMS４からの変更点](../core/difference_from_basercms4)
