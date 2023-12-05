@@ -1,71 +1,48 @@
 # baserCMS４のテーマを変換
 
-ここでは baserCMS４のテーマを baserCMS５用に変換する手順を説明します。
+ここでは [BcAddonMigrator](https://github.com/baserproject/BcAddonMigrator) を利用して、baserCMS４のテーマを baserCMS５用に変換する手順を説明します。
 
-## プラグインクラス追加
-CakePHP4より、テーマもプラグインとして扱われることとなりました。  
-次のファイルが必要となります。クラスの中身は空でも構いません。
+## BcAddonMigratorプラグインについて
+BcAddonMigratorプラグインは、baserCMS４から、baserCMS５への移行をサポートするプラグインです。
 
-```php
-// Sample という名称のテーマの場合
-// /plugins/Sample/src/Plugin.php
-namespace Sample;
+baserCMS５では、かなりの大きな仕様変更が入っており、完全に自動変換することはできませんが、BcAddonMigratorプラグインを利用することで、手作業で変更する部分を最小限にすることができます。
 
-use BaserCore\BcPlugin;
+## テーマをZIP化する
+OSの機能やツールを使って既存のテーマをZIP化します。
 
-class Plugin extends BcPlugin {}
-```
+## 新しい環境を準備する
+既存のサイトをそのままbaserCMS５系にアップグレードすることはできません。新しい環境にbaserCMS５をインストールしておく必要があります。
 
-## config.php の変更
-配列を返却する形式に変換となりましたので例に習って書き換えます。  
-また、その際、`type` キーを追加し、`Theme` を設定する事でテーマ管理に認識されます。
-```php
-// 例
-return [
-    'type' => 'Theme',
-    'title' => 'BcColumn',
-    'description' => 'bcColumnは「1カラム」「2カラム左サイド」「2カラム右サイド」のレイアウトが準備されているデザインテーマです。
-管理画面からレイアウトを選択することで、基本的な3パターンのレイアウトを簡単に切り替えることができるのが、名前のコンセプトです。
-基本的なテーマカラーはテーマ設定から変更できることはもちろん、どんな色にもマッチするサブカラーで『シンプルでカッコいい』デザインを目指しています。
+- [インストールガイド](./introduce/index)
 
-レスポンシブデザインなので、システム設定の「スマホ対応しない」を選択してください。',
-    'author' => '小桃クリップ',
-    'url' => 'https://komomo.biz/'
-];
-```
+## BcAddonMigratorプラグインをインストール
+[GitHub](https://github.com/baserproject/BcAddonMigrator){:target="_blank"} 、または、baserマーケットより、BcAddonMigratorプラグインを取得し、新しい環境の `/plugins/` フォルダに配置します。
 
-## ファイルの配置変更
-### アセットファイルの移動
-`webroot` フォルダを作成し、img / js / css / files をそこに移動します。
+その後、プラグイン管理よりインストールを実行します。
 
-### テンプレートの移動
-`templates` フォルダを作成し、テンプレートは全てそこに移動します。
+## テーマを変換する
+プラグイン一覧より、BcAddonMigratorプラグインの右側にある歯車マークををクリックします。
 
-### レイアウトフォルダのリネーム
-`Layouts` を `layout` にリネームします。
+既存の環境のZip化したテーマをアップロードすると変換が始まります。baserCMS５用への変換が完了するとダウンロードボタンが表示されますのでダウンロードします。
 
-### エレメントフォルダのリネーム
-`Elements` を `element` にリネームします。
+### 問題が発生した場合
+問題が発生した場合は、[ユーザーズフォーラム](https://forum.basercms.net/) に報告するか、[GitHubのIssue](https://github.com/baserproject/BcAddonMigrator/issues) を作成してください。
 
-### Config のリネーム
-`Config` を `config` にリネームします。
+## テーマを適用する
+新しい環境の、`/plugins/` に、ダウンロードしたテーマを解凍して、配置します。
 
-### プラグインのテンプレートの移動
-`Blog`、`Mail` など、プラグインのコンテンツテンプレートを `templates/plugin/{PluginName}/` へ移動します。
+その後、管理システムの「テーマ管理」よりテーマを適用します。
 
-```shell
-# Blog の場合
-templates/plugin/BcBlog/Blog/
-# Mail の場合
-templates/plugin/BcMail/Mail/
-```
+## フロントページの確認
+フロントページにアクセスに問題が発生していないか確認します。
 
-### Feed関連ファイルの削除
-baserCMS５でフィードは削除となりました。  
-テンプレートの `Feed` フォルダがあれば削除します。  
-また、`config/data/Feed/` が存在する場合、そちらも削除します。
+問題がなければ、これで、baserCMS４のテーマをbaserCMS５用の環境に移行することができました。お疲れ様でした。
 
-## テンプレートファイルの編集
+問題が発生していたら、テーマを問題の内容に合わせて修正します。
+以下に、手動による調整についてポイントを記載しています。
+
+
+## テンプレートファイルの調整
 
 ### モデルデータの変換
 モデルより取得したデータは配列よりエンティティオブジェクトに変更となりました。
@@ -200,8 +177,7 @@ baserCMSのコア BaserCore をシンプルにするという方針から、各�
 - `content_links.csv` を `BcContentLink` フォルダへ
 
 ### 初期データのカラム変更
-DB設計書を参考にし、カラムの変更を行います。
-https://baserproject.github.io/5/ucmitz/specification/db
+[DB設計書](../package/database) を参考にし、カラムの変更を行います。
  
 ### 初期データのデータの変更 
 #### contents.csv
@@ -226,3 +202,13 @@ $value = base64_encode(serialize($value));
 #### search_indexes
 `site_id` カラムを 0 から 1 に変更します。
 
+## 問題が発生した場合
+自分で解決できない場合は、[ユーザーズフォーラム](https://forum.basercms.net/) に相談するか、[GitHubのIssue](https://github.com/baserproject/BcAddonMigrator/issues) を作成してください。
+
+## フィードバックしたい場合
+例えば、コードの置換処理で追加したいものがある場合は、GitHubでプルリクエストを送信してください。Issueの作成でも構いません。
+一緒にコードを育てる事で他の人も喜びます。
+
+こちらも合わせてご覧ください。
+- [baserCMS４のプラグインを変換](../plugin/migration_plugin_from_ver4)
+- [baserCMS４のデータベースを変換](../migration_db_from_ver4)
