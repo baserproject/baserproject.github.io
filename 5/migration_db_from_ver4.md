@@ -19,7 +19,7 @@ baserCMS5用のデータは、baserCMS4のバックアップデータから作�
 - [インストールガイド](./introduce/index)
 
 ## BcDbMigratorプラグインをインストール
-[GitHub](https://github.com/baserproject/BcDbMigrator){:target="_blank"} 、または、baserマーケットより、BcDbMigratorプラグインを取得し、新しい環境の `/plugins/` フォルダに配置します。
+[GitHub](https://github.com/baserproject/BcDbMigrator){:target="_blank"} 、または、[baserマーケット](https://market.basercms.net/products/detail.php?product_id=157){:target="_blank"} 、もしくは、[composer](https://packagist.org/packages/baserproject/bc-db-migrator){:target="_blank"} より、BcDbMigratorプラグインを取得し、新しい環境の `/plugins/` フォルダに配置します。
 
 その後、プラグイン管理よりインストールを実行します。
 
