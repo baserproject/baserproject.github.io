@@ -55,6 +55,16 @@ chmod -R 777 /var/www/html/db
 chmod -R 777 /var/www/html/plugins/ThemeName
 ```
 
+## テーマへのシンボリックリンクを再作成
+
+下記のコマンドでwebrootフォルダ内のシンボリックリンクを再作成できます。（インストール画面のデザインが崩れていたりする場合など）
+
+```shell
+# baserCMSの設置パスが /var/www/html の場合
+cd /var/www/html/
+bin/cake plugin assets symlink
+```
+
 
 ## ブラウザで動作確認
 ブラウザで、新しいサーバーのURL へアクセスして動作を確認します。  
