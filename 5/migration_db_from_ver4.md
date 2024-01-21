@@ -47,6 +47,31 @@ baserCMS v5.0.7までは、プラグインが全てインストールされて�
 
 「データの復元」より、変換したバックアップファイルをアップロードし、復元します。
 
+### インポートするテーブルの key というカラムがある場合
+プラグインなどで、key というカラムを利用している場合は注意が必要です。MySQL8以降では、key というカラムが、予約語であるため、インポート時にエラーとなってしまいます。
+`/config/install.php` に `quoteIdentifiers` という設定を追加し、`true` に設定してください。
+そうすることでエラーを回避することができます。
+
+```php
+return [
+    'Datasources.default' => [
+        'className' => 'Cake\\Database\\Connection',
+        'driver' => 'Cake\\Database\\Driver\\Mysql',
+        'host' => 'xxxx',
+        'port' => '3306',
+        'username' => 'xxxx',
+        'password' => 'xxxx',
+        'database' => 'basercms',
+        'prefix' => '',
+        'schema' => '',
+        'persistent' => '',
+        'encoding' => 'utf8mb4',
+        'log' => filter_var(env('SQL_LOG', false), FILTER_VALIDATE_BOOLEAN),
+        'quoteIdentifiers' => true, // この行を追加
+    ],
+];
+```
+
 特に問題がなければ、これで、baserCMS４のデータベースをbaserCMS５用の環境に移行することができました。お疲れ様でした。
 
 こちらも合わせてご覧ください。
