@@ -2558,13 +2558,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Model\\Behavior\\BcUploadBehavior\u003A\u003AbeforeMarshal\u0028\u0029",
             "name": "beforeMarshal",
-            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u7528\u306E\u30EA\u30AF\u30A8\u30B9\u30C8\u30C7\u30FC\u30BF\u3092\u5909\u63DB\u3059\u308B",
+            "summary": "Before\u0020Marshal",
             "url": "classes/BaserCore-Model-Behavior-BcUploadBehavior.html#method_beforeMarshal"
         },                {
             "fqsen": "\\BaserCore\\Model\\Behavior\\BcUploadBehavior\u003A\u003AafterMarshal\u0028\u0029",
             "name": "afterMarshal",
             "summary": "After\u0020Marshal",
             "url": "classes/BaserCore-Model-Behavior-BcUploadBehavior.html#method_afterMarshal"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Behavior\\BcUploadBehavior\u003A\u003AbuildValidator\u0028\u0029",
+            "name": "buildValidator",
+            "summary": "Build\u0020Validator",
+            "url": "classes/BaserCore-Model-Behavior-BcUploadBehavior.html#method_buildValidator"
         },                {
             "fqsen": "\\BaserCore\\Model\\Behavior\\BcUploadBehavior\u003A\u003AafterSave\u0028\u0029",
             "name": "afterSave",
@@ -3651,6 +3656,11 @@ Search.appendIndex(
             "summary": "Before\u0020Save",
             "url": "classes/BaserCore-Model-Table-SitesTable.html#method_beforeSave"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003Asave\u0028\u0029",
+            "name": "save",
+            "summary": "\u4FDD\u5B58\u6642\u306B\u7BA1\u7406\u753B\u9762\u306E\u30BB\u30C3\u30B7\u30E7\u30F3\u4E2D\u306E\u30AB\u30EC\u30F3\u30C8\u30B5\u30A4\u30C8\u3068\u540C\u3058\u30C7\u30FC\u30BF\u306E\u4FDD\u5B58\u306E\u5834\u5408\u3001\n\u30BB\u30C3\u30B7\u30E7\u30F3\u306B\u3082\u53CD\u6620\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-SitesTable.html#method_save"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003A\u0024Contents",
             "name": "Contents",
             "summary": "Contents",
@@ -3766,11 +3776,6 @@ Search.appendIndex(
             "summary": "\u82F1\u6570\u30C1\u30A7\u30C3\u30AF\u30D7\u30E9\u30B9",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericPlus"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AalphaNumericDashUnderscore\u0028\u0029",
-            "name": "alphaNumericDashUnderscore",
-            "summary": "\u534A\u89D2\u82F1\u6570\u5B57\u002B\u30A2\u30F3\u30C0\u30FC\u30D0\u30FC\uFF0B\u30CF\u30A4\u30D5\u30F3\u306E\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericDashUnderscore"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AbcUtileUrlencodeBlank\u0028\u0029",
             "name": "bcUtileUrlencodeBlank",
             "summary": "\u524A\u9664\u6587\u5B57\u30C1\u30A7\u30C3\u30AF",
@@ -3831,11 +3836,6 @@ Search.appendIndex(
             "summary": "\u534A\u89D2\u30C1\u30A7\u30C3\u30AF",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_halfText"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AcheckDate\u0028\u0029",
-            "name": "checkDate",
-            "summary": "\u65E5\u4ED8\u306E\u6B63\u5F53\u6027\u30C1\u30A7\u30C3\u30AF",
-            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_checkDate"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AcheckDateRange\u0028\u0029",
             "name": "checkDateRange",
             "summary": "\u65E5\u6642\u30C1\u30A7\u30C3\u30AF\n\u002D\u0020\u958B\u59CB\u65E5\u6642\u304C\u7D42\u4E86\u65E5\u6642\u3088\u308A\u904E\u53BB\u306E\u5834\u5408\u3001true\u0020\u3092\u8FD4\u3059",
@@ -3875,6 +3875,11 @@ Search.appendIndex(
             "name": "between",
             "summary": "\u7BC4\u56F2\u3092\u6307\u5B9A\u3057\u3066\u306E\u9577\u3055\u30C1\u30A7\u30C3\u30AF",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_between"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AnotBlankOnlyString\u0028\u0029",
+            "name": "notBlankOnlyString",
+            "summary": "\u30B9\u30DA\u30FC\u30B9\u3057\u304B\u306A\u3044\u6587\u5B57\u5217",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_notBlankOnlyString"
         },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\PageValidation",
             "name": "PageValidation",
@@ -8041,11 +8046,6 @@ Search.appendIndex(
             "summary": "Class\u0020BcText",
             "url": "classes/BaserCore-Utility-BcText.html"
         },                {
-            "fqsen": "\\BaserCore\\Utility\\BcText\u003A\u003AstripScriptTag\u0028\u0029",
-            "name": "stripScriptTag",
-            "summary": "\u6587\u5B57\u5217\u3088\u308A\u30B9\u30AF\u30EA\u30D7\u30C8\u30BF\u30B0\u3092\u9664\u53BB\u3059\u308B",
-            "url": "classes/BaserCore-Utility-BcText.html#method_stripScriptTag"
-        },                {
             "fqsen": "\\BaserCore\\Utility\\BcUpdateLog",
             "name": "BcUpdateLog",
             "summary": "BcUpdateLog",
@@ -8200,6 +8200,21 @@ Search.appendIndex(
             "name": "getExt",
             "summary": "\u62E1\u5F35\u5B50\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-AppView.html#method_getExt"
+        },                {
+            "fqsen": "\\BaserCore\\View\\AppView\u003A\u003A_getTemplateFileName\u0028\u0029",
+            "name": "_getTemplateFileName",
+            "summary": "Returns\u0020filename\u0020of\u0020given\u0020action\u0027s\u0020template\u0020file\u0020as\u0020a\u0020string.",
+            "url": "classes/BaserCore-View-AppView.html#method__getTemplateFileName"
+        },                {
+            "fqsen": "\\BaserCore\\View\\AppView\u003A\u003A_getLayoutFileName\u0028\u0029",
+            "name": "_getLayoutFileName",
+            "summary": "Returns\u0020layout\u0020filename\u0020for\u0020this\u0020template\u0020as\u0020a\u0020string.",
+            "url": "classes/BaserCore-View-AppView.html#method__getLayoutFileName"
+        },                {
+            "fqsen": "\\BaserCore\\View\\AppView\u003A\u003A_getElementFileName\u0028\u0029",
+            "name": "_getElementFileName",
+            "summary": "Finds\u0020an\u0020element\u0020filename,\u0020returns\u0020false\u0020on\u0020failure.",
+            "url": "classes/BaserCore-View-AppView.html#method__getElementFileName"
         },                {
             "fqsen": "\\BaserCore\\View\\BcAdminAppView",
             "name": "BcAdminAppView",
@@ -16331,6 +16346,11 @@ Search.appendIndex(
             "summary": "\u30E1\u30C3\u30BB\u30FC\u30B8\u4FDD\u5B58\u7528\u30C6\u30FC\u30D6\u30EB\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u6700\u9069\u5316\u3059\u308B\n\u521D\u56DE\u306E\u5834\u5408\u3001id\/created\/modified\u3092\u8FFD\u52A0\u3059\u308B\n2\u56DE\u76EE\u4EE5\u964D\u306E\u5834\u5408\u306F\u3001\u6700\u5F8C\u306E\u30AB\u30E9\u30E0\u306B\u8FFD\u52A0\u3059\u308B",
             "url": "classes/BcMail-Service-MailMessagesService.html#method_construction"
         },                {
+            "fqsen": "\\BcMail\\Service\\MailMessagesService\u003A\u003AreconstructionAll\u0028\u0029",
+            "name": "reconstructionAll",
+            "summary": "\u5168\u3066\u306E\u30E1\u30FC\u30EB\u53D7\u4FE1\u30C6\u30FC\u30D6\u30EB\u306E\u518D\u69CB\u7BC9\u3092\u884C\u3046",
+            "url": "classes/BcMail-Service-MailMessagesService.html#method_reconstructionAll"
+        },                {
             "fqsen": "\\BcMail\\Service\\MailMessagesService\u003A\u003AgetNew\u0028\u0029",
             "name": "getNew",
             "summary": "\u521D\u671F\u5024\u306E\u8A2D\u5B9A\u3092\u3059\u308B",
@@ -16401,6 +16421,11 @@ Search.appendIndex(
             "summary": "\u30E1\u30C3\u30BB\u30FC\u30B8\u4FDD\u5B58\u7528\u30C6\u30FC\u30D6\u30EB\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u6700\u9069\u5316\u3059\u308B\n\u521D\u56DE\u306E\u5834\u5408\u3001id\/created\/modified\u3092\u8FFD\u52A0\u3059\u308B\n2\u56DE\u76EE\u4EE5\u964D\u306E\u5834\u5408\u306F\u3001\u6700\u5F8C\u306E\u30AB\u30E9\u30E0\u306B\u8FFD\u52A0\u3059\u308B",
             "url": "classes/BcMail-Service-MailMessagesServiceInterface.html#method_construction"
         },                {
+            "fqsen": "\\BcMail\\Service\\MailMessagesServiceInterface\u003A\u003AreconstructionAll\u0028\u0029",
+            "name": "reconstructionAll",
+            "summary": "\u5168\u3066\u306E\u30E1\u30FC\u30EB\u53D7\u4FE1\u30C6\u30FC\u30D6\u30EB\u306E\u518D\u69CB\u7BC9\u3092\u884C\u3046",
+            "url": "classes/BcMail-Service-MailMessagesServiceInterface.html#method_reconstructionAll"
+        },                {
             "fqsen": "\\BcMail\\Service\\MailMessagesServiceInterface\u003A\u003AgetNew\u0028\u0029",
             "name": "getNew",
             "summary": "\u521D\u671F\u5024\u306E\u8A2D\u5B9A\u3092\u3059\u308B",
@@ -16430,6 +16455,16 @@ Search.appendIndex(
             "name": "provides",
             "summary": "Provides",
             "url": "classes/BcMail-ServiceProvider-BcMailServiceProvider.html#property_provides"
+        },                {
+            "fqsen": "\\BcMail\\View\\Cell\\MailCell",
+            "name": "MailCell",
+            "summary": "MailCell",
+            "url": "classes/BcMail-View-Cell-MailCell.html"
+        },                {
+            "fqsen": "\\BcMail\\View\\Cell\\MailCell\u003A\u003Adisplay\u0028\u0029",
+            "name": "display",
+            "summary": "display",
+            "url": "classes/BcMail-View-Cell-MailCell.html#method_display"
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\BcMailBaserHelper",
             "name": "BcMailBaserHelper",
@@ -19495,6 +19530,11 @@ Search.appendIndex(
             "name": "ServiceProvider",
             "summary": "",
             "url": "namespaces/bcmail-serviceprovider.html"
+        },                {
+            "fqsen": "\\BcMail\\View\\Cell",
+            "name": "Cell",
+            "summary": "",
+            "url": "namespaces/bcmail-view-cell.html"
         },                {
             "fqsen": "\\BcMail\\View\\Helper",
             "name": "Helper",

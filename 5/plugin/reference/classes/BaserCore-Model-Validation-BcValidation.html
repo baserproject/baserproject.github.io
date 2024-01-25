@@ -585,13 +585,6 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericDashUnderscore">alphaNumericDashUnderscore()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>半角英数字+アンダーバー＋ハイフンのチェック</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericPlus">alphaNumericPlus()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -611,13 +604,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>範囲を指定しての長さチェック</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDate">checkDate()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>日付の正当性チェック</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDateAfterThan">checkDateAfterThan()</a>
@@ -724,6 +710,13 @@
 - 対象となる値の長さが、指定した最短値より長い場合、trueを返す</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notBlankOnlyString">notBlankOnlyString()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>スペースしかない文字列</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notEmptyMultiple">notEmptyMultiple()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -767,82 +760,6 @@
             <a href="classes/BaserCore-Model-Validation-BcValidation.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_alphaNumericDashUnderscore">
-        alphaNumericDashUnderscore()
-        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericDashUnderscore" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">73</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">半角英数字+アンダーバー＋ハイフンのチェック</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">alphaNumericDashUnderscore</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>確認する値を含む配列。先頭の要素のみチェックされる</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericDashUnderscore#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -944,7 +861,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -1022,7 +939,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">612</span>
+    <span class="phpdocumentor-element-found-in__line">583</span>
 
     </aside>
 
@@ -1076,82 +993,6 @@
             -public
                                     -static                    "
 >
-    <h4 class="phpdocumentor-element__name" id="method_checkDate">
-        checkDate()
-        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDate" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">434</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">日付の正当性チェック</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">checkDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>確認する値</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDate#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
     <h4 class="phpdocumentor-element__name" id="method_checkDateAfterThan">
         checkDateAfterThan()
         <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDateAfterThan" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1160,7 +1001,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">446</span>
 
     </aside>
 
@@ -1250,7 +1091,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">453</span>
+    <span class="phpdocumentor-element-found-in__line">424</span>
 
     </aside>
 
@@ -1341,7 +1182,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">528</span>
 
     </aside>
 
@@ -1429,7 +1270,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">528</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -1517,7 +1358,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">597</span>
+    <span class="phpdocumentor-element-found-in__line">568</span>
 
     </aside>
 
@@ -1591,7 +1432,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">324</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 
     </aside>
 
@@ -1683,7 +1524,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">494</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
     </aside>
 
@@ -1759,7 +1600,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">349</span>
 
     </aside>
 
@@ -1835,7 +1676,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">169</span>
 
     </aside>
 
@@ -1927,7 +1768,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -2010,7 +1851,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">415</span>
+    <span class="phpdocumentor-element-found-in__line">401</span>
 
     </aside>
 
@@ -2086,7 +1927,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">149</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -2172,7 +2013,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -2258,7 +2099,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
     </aside>
 
@@ -2336,6 +2177,80 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_notBlankOnlyString">
+        notBlankOnlyString()
+        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notBlankOnlyString" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">598</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">スペースしかない文字列</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">notBlankOnlyString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$string</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notBlankOnlyString#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">notodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_notEmptyMultiple">
         notEmptyMultiple()
         <a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notEmptyMultiple" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2344,7 +2259,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">390</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -2425,7 +2340,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -2506,7 +2421,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">167</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -2596,7 +2511,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Validation/BcValidation.php"><a href="files/plugins-baser-core-src-model-validation-bcvalidation.html"><abbr title="plugins/baser-core/src/Model/Validation/BcValidation.php">BcValidation.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">580</span>
+    <span class="phpdocumentor-element-found-in__line">551</span>
 
     </aside>
 
@@ -2762,11 +2677,9 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericDashUnderscore">alphaNumericDashUnderscore()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_alphaNumericPlus">alphaNumericPlus()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_bcUtileUrlencodeBlank">bcUtileUrlencodeBlank()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_between">between()</a></li>
-                                            <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDate">checkDate()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDateAfterThan">checkDateAfterThan()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkDateRange">checkDateRange()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_checkHiragana">checkHiragana()</a></li>
@@ -2781,6 +2694,7 @@
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_maxByte">maxByte()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_maxLength">maxLength()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_minLength">minLength()</a></li>
+                                            <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notBlankOnlyString">notBlankOnlyString()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notEmptyMultiple">notEmptyMultiple()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notFileEmpty">notFileEmpty()</a></li>
                                             <li><a href="classes/BaserCore-Model-Validation-BcValidation.html#method_notInList">notInList()</a></li>
