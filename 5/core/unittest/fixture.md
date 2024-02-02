@@ -10,7 +10,15 @@ CakePHP4.3 より、これまでのフィクスチャマネージャーが非推
 データを生成するためのクラスです。各エンティティごとに定義します。  
 複数のデータを一括で作成できるなどのメリットがあります。また、Faker を利用することで、ランダムな文字列などを当て込むことができます。
 
-作りたいレコードの種類ごとにメソッドを用意する方針で利用していきます。
+### フィクスチャファクトリ利用方針
+- クラス名にはテーブル名の単数形を含めます。
+- `setDefaultTemplate` メソッドには、`id`、`modified`、`created` を除く全てのフィールドを定義し、一番使いやすい初期値を設定します。
+- テストデータの再利用を行うため、作りたいレコードの種類ごとにメソッドを作成します。
+- レコードを作成するメソッドは分かりやすいメソッド名で作成します。
+- レコードを作成するメソッドの中では、他のレコードを作成してはいけません。
+- 負荷軽減のため、ユニットテストの setUp()では、できるだけフィクスチャファクトリを呼び出さないようにし、テストメソッド内で呼び出すようにします。
+- フィクスチャファクトリの呼び出しセットが多くなり、再利用性が高い場合はシナリオに移行します。
+
 
 ```php
 namespace BaserCore\Test\Factory;
@@ -19,6 +27,23 @@ use CakephpFixtureFactories\Factory\BaseFactory as CakephpBaseFactory;
 use Faker\Generator;
 class UserFactory extends CakephpBaseFactory
 {
+    /**
+     * setDefaultTemplate
+     */
+    protected function setDefaultTemplate(): void
+    {
+        $this->setDefaultData(function (Generator $faker) {
+            return [
+                'name' => $faker->text(),
+                'real_name_1' => $faker->text(),
+                'real_name_2' => $faker->text(),
+                'password' => 'password',
+                'email' => $faker->email,
+                'nickname' => '',
+                'status' => true
+            ];
+        });
+    }
     /**
      * 管理ユーザーに設定する
      * @return UserFactory
@@ -38,7 +63,11 @@ bin/cake bake fixture_factory -p BaserCore TableName
 
 ## フィクスチャシナリオ
 データを利用したいシチュエーション別にシナリオを用意することができます。
-例えば、インストール直後の最低限のデータや、大量のブログ記事データなど。
+例えば、インストール直後の最低限のデータや、マルチサイトのデータなどでシナリオを作ります。
+
+### フィクスチャシナリオ利用方針
+- 再利用性の高いものだけをシナリオとします。
+- 複数のレコードをただ作成するだけのものはシナリオにはしません。なぜなら、フィクスチャマネージャーの場合と同じように様々なパターンに対応するために多くのシナリオを作らざるを得なくなってしまい、再利用性が低くなるためです。（例：UsersScenarioなど）その場合、テストメソッド内で呼び出すようにします。
 
 ```php
 // 最低限のメインサイトと管理ユーザーをだけを準備する
