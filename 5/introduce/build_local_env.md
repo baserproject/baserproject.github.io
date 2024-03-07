@@ -40,7 +40,7 @@ docker-compose up -d
 
 - アプリケーション：[https://localhost/](https://localhost/){:target="_blank"}
 - phpMyAdmin：[http://localhost:8080/](http://localhost:8080/){:target="_blank"}
-- phpPgAdmin：[http://localhost:10080/](http://localhost:10080/){:target="_blank"}
+- phpPgAdmin：[http://localhost:8000/](http://localhost:8000/){:target="_blank"}
 - MailCatcher：[http://localhost:1080/](http://localhost:1080/){:target="_blank"}
 
 ### インストーラーを起動する

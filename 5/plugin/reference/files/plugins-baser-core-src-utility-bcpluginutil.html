@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-            <title>    baserCMS クラスリファレンス &raquo; Deprecated elements
-</title>
+            <title>baserCMS クラスリファレンス</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
@@ -520,70 +519,203 @@
 </aside>
 
             <div class="phpdocumentor-column -nine phpdocumentor-content">
-                                        <section>
-        <ul class="phpdocumentor-breadcrumbs">
-            <li><a href="">Home</a></li>
-        </ul>
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+    </ul>
 
-        <div class="phpdocumentor-row">
-            <h2 class="phpdocumentor-content__title">Deprecated</h2>
+    <article class="phpdocumentor-element -file">
+        <h2 class="phpdocumentor-content__title">BcPluginUtil.php</h2>
 
-                        <h3>Table of Contents</h3>
-            <table class="phpdocumentor-table_of_contents">
-                                    <tr>
-                        <td class="phpdocumentor-cell"><a href="reports/deprecated.html#plugins/baser-core/src/Controller/AppController.php">plugins/baser-core/src/Controller/AppController.php</a></td>
-                    </tr>
-                                    <tr>
-                        <td class="phpdocumentor-cell"><a href="reports/deprecated.html#plugins/baser-core/src/TestSuite/BcTestCase.php">plugins/baser-core/src/TestSuite/BcTestCase.php</a></td>
-                    </tr>
-                            </table>
+            <p class="phpdocumentor-summary">baserCMS :  Based Website Development Project &lt;https://basercms.net&gt;
+Copyright (c) NPO baser foundation &lt;https://baserfoundation.org/&gt;</p>
+
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="files/plugins-baser-core-src-utility-bcpluginutil.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">copyright</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>Copyright (c) NPO baser foundation</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">link</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://basercms.net"> <p>baserCMS Project</p>
+ </a>
+                    
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">5.0.0</span>
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">license</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>https://basercms.net/license/index.html MIT License</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="files/plugins-baser-core-src-utility-bcpluginutil.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="files/plugins-baser-core-src-utility-bcpluginutil.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/BaserCore-Utility-BcPluginUtil.html"><abbr title="\BaserCore\Utility\BcPluginUtil">BcPluginUtil</abbr></a></dt><dd>Class BcPluginUtil</dd>    </dl>
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/Utility/BcPluginUtil.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                                        <li><a href="files/plugins-baser-core-src-utility-bcpluginutil.html#toc-classes">Classes</a></li>
+                                                                                                                    </ul>
+            </li>
+
             
-                            <a id="plugins/baser-core/src/Controller/AppController.php"></a>
-                <h3><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></h3>
-                <table>
-                    <tr>
-                        <th class="phpdocumentor-heading">Line</th>
-                        <th class="phpdocumentor-heading">Element</th>
-                        <th class="phpdocumentor-heading">Reason</th>
-                    </tr>
-                                                                        <tr>
-                                <td class="phpdocumentor-cell">518</td>
-                                <td class="phpdocumentor-cell"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError"><abbr title="\BaserCore\Controller\AppController::ajaxError()">AppController::ajaxError()</abbr></a></td>
-                                <td class="phpdocumentor-cell"><p>since 5.0.5 このメソッドは非推奨です。</p>
-</td>
-                            </tr>
-                                                            </table>
-                            <a id="plugins/baser-core/src/TestSuite/BcTestCase.php"></a>
-                <h3><abbr title="plugins/baser-core/src/TestSuite/BcTestCase.php">BcTestCase.php</abbr></h3>
-                <table>
-                    <tr>
-                        <th class="phpdocumentor-heading">Line</th>
-                        <th class="phpdocumentor-heading">Element</th>
-                        <th class="phpdocumentor-heading">Reason</th>
-                    </tr>
-                                                                        <tr>
-                                <td class="phpdocumentor-cell">145</td>
-                                <td class="phpdocumentor-cell"><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_setUpFixtureManager"><abbr title="\BaserCore\TestSuite\BcTestCase::setUpFixtureManager()">BcTestCase::setUpFixtureManager()</abbr></a></td>
-                                <td class="phpdocumentor-cell"></td>
-                            </tr>
-                                                                                                <tr>
-                                <td class="phpdocumentor-cell">160</td>
-                                <td class="phpdocumentor-cell"><a href="classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownFixtureManager"><abbr title="\BaserCore\TestSuite\BcTestCase::tearDownFixtureManager()">BcTestCase::tearDownFixtureManager()</abbr></a></td>
-                                <td class="phpdocumentor-cell"></td>
-                            </tr>
-                                                                                                <tr>
-                                <td class="phpdocumentor-cell">99</td>
-                                <td class="phpdocumentor-cell"><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureManager"><abbr title="\BaserCore\TestSuite\BcTestCase::$FixtureManager">BcTestCase::$FixtureManager</abbr></a></td>
-                                <td class="phpdocumentor-cell"></td>
-                            </tr>
-                                                                                                <tr>
-                                <td class="phpdocumentor-cell">108</td>
-                                <td class="phpdocumentor-cell"><a href="classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector"><abbr title="\BaserCore\TestSuite\BcTestCase::$FixtureInjector">BcTestCase::$FixtureInjector</abbr></a></td>
-                                <td class="phpdocumentor-cell"></td>
-                            </tr>
-                                                            </table>
-                    </div>
+                    </ul>
     </section>
+
+                </section>
                             </div>
             <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
@@ -597,7 +729,7 @@
     </section>
 </section>
         </div>
-        <a href="reports/deprecated.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="files/plugins-baser-core-src-utility-bcpluginutil.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
