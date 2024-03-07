@@ -21,9 +21,12 @@ jobs:
 また、新しいプラグインのリポジトリを [Packagist](https://packagist.org/packages/submit) に登録します。
 
 ## composer の設定をマージ
-マージコマンドを使って、パッケージの設定をルートの composer.json にマージします。
+Dockerコンテナにログインし、マージコマンドを使って、パッケージの設定をルートの composer.json にマージします。
 
 ```shell
+# PHPの実行環境が必要
+cd docker
+docker exec -it bc-php /bin/bash
 vendor/bin/monorepo-builder merge
 ```
 
@@ -37,7 +40,7 @@ VERSION.txt に記載するログは、次の形式でまとめます。
 ```shell
 -改修タイプ: [パッケージの省略文字] 改修内容
 （例）
--BUG: [FD] fixes #7385 RSSフィードの読込時に本文中の<img>タグが読み取れていない 問題を改善
+-BUG [BC] fixes #7385 RSSフィードの読込時に本文中の<img>タグが読み取れていない 問題を改善
 ```
 
 改修タイプ
@@ -50,8 +53,8 @@ VERSION.txt に記載するログは、次の形式でまとめます。
 - baserCMSコア：BC
 - ブログプラグイン：BG
 - メールプラグイン：ML
-- フィードプラグイン：FD
 - アップローダー：UL
+- カスタムコンテンツ：CC
 
 
 
@@ -76,7 +79,11 @@ git merge dev-5
 リリースの際は、モノレポのリリースコマンドを実行します。  
 自動的にタグを作成しプッシュします。
 
+**GitHubへのプッシュ権限が必要となり、Dockerのコンテナ内で実行する場合、Gitのセットアップができているかを確認してください。**
+
+事前に dev-5 ブランチをプッシュすることでテストを行ってもよいかもしれません。
 ```shell
+# PHPの実行環境が必要
 vendor/bin/monorepo-builder release 5.x.x
 ```
 
@@ -108,6 +115,7 @@ git push origin dev-5
 Dockerコンテナにログインし、次のコマンドを実行しパッケージを作成します。
 
 ```shell
+# PHPの実行環境が必要
 bin/cake create release master
 cd tmp
 # バージョン番号付きのファイル名にリネーム
@@ -156,10 +164,10 @@ baserCMSプロジェクトメンバー名簿より、新しくメンバーとな
 これでリリース作業は完了です。お疲れさまでした。
 
 ## 事後作業
-`plugins/baser-core/VERSION.txt` の先頭行を開発バージョンに変更します。  
+1. `plugins/baser-core/VERSION.txt` の先頭行を開発バージョンに変更します。  
 コミットメッセージを `バージョンを5.x.x開発版に変更` としdev-5ブランチにpushします。  
 
-バージョンアップに合わせて次の２サイトのアップデートを行います。
+2. バージョンアップに合わせて次の２サイトのアップデートを行います。
 - [baserCMS公式サイト](https://basercms.net/)
 - [baserCMSデモサイト](https://trial.basercms.net/)
 
