@@ -3576,6 +3576,11 @@ Search.appendIndex(
             "summary": "Validation\u0020Default",
             "url": "classes/BaserCore-Model-Table-SitesTable.html#method_validationDefault"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003ApluginExistsByDasherize\u0028\u0029",
+            "name": "pluginExistsByDasherize",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u304C\u5B58\u5728\u3059\u308B\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-Model-Table-SitesTable.html#method_pluginExistsByDasherize"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SitesTable\u003A\u003AgetPublishedAll\u0028\u0029",
             "name": "getPublishedAll",
             "summary": "\u516C\u958B\u3055\u308C\u3066\u3044\u308B\u5168\u3066\u306E\u30B5\u30A4\u30C8\u3092\u53D6\u5F97\u3059\u308B",
@@ -8041,6 +8046,26 @@ Search.appendIndex(
             "summary": "\u8A2D\u5B9A\u30D5\u30A1\u30A4\u30EB\u306E\u30AD\u30FC\u540D",
             "url": "classes/BaserCore-Utility-BcLang.html#property__configName"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcPluginUtil",
+            "name": "BcPluginUtil",
+            "summary": "Class\u0020BcPluginUtil",
+            "url": "classes/BaserCore-Utility-BcPluginUtil.html"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcPluginUtil\u003A\u003AgetPluginConfig\u0028\u0029",
+            "name": "getPluginConfig",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306Econfig\u5185\u5BB9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcPluginUtil.html#method_getPluginConfig"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcPluginUtil\u003A\u003AisPlugin\u0028\u0029",
+            "name": "isPlugin",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcPluginUtil.html#method_isPlugin"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcPluginUtil\u003A\u003AisTheme\u0028\u0029",
+            "name": "isTheme",
+            "summary": "\u30C6\u30FC\u30DE\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcPluginUtil.html#method_isTheme"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcSiteConfig",
             "name": "BcSiteConfig",
             "summary": "BcSiteConfig",
@@ -8590,6 +8615,11 @@ Search.appendIndex(
             "name": "getLink",
             "summary": "\u30A2\u30F3\u30AB\u30FC\u30BF\u30B0\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getLink"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AisLinkEnabled\u0028\u0029",
+            "name": "isLinkEnabled",
+            "summary": "\u30EA\u30F3\u30AF\u304C\u6709\u52B9\u5316\u3069\u3046\u304B",
+            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_isLinkEnabled"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AisAdminUser\u0028\u0029",
             "name": "isAdminUser",
