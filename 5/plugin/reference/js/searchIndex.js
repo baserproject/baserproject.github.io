@@ -151,10 +151,20 @@ Search.appendIndex(
             "summary": "\u5BFE\u8C61\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u73FE\u5728\u306E\u65E5\u4ED8\u306B\u66F4\u65B0\u3059\u308B",
             "url": "classes/BaserCore-BcPlugin.html#method_updateDateNow"
         },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003AclearCurrentSite\u0028\u0029",
+            "name": "clearCurrentSite",
+            "summary": "\u30AB\u30EC\u30F3\u30C8\u30B5\u30A4\u30C8\u3092\u521D\u671F\u5316\u3059\u308B",
+            "url": "classes/BaserCore-BcPlugin.html#method_clearCurrentSite"
+        },                {
             "fqsen": "\\BaserCore\\BcPlugin\u003A\u003A\u0024migrations",
             "name": "migrations",
             "summary": "",
             "url": "classes/BaserCore-BcPlugin.html#property_migrations"
+        },                {
+            "fqsen": "\\BaserCore\\BcPlugin\u003A\u003A\u0024currentSite",
+            "name": "currentSite",
+            "summary": "\u73FE\u5728\u306E\u30B5\u30A4\u30C8\n\u30AD\u30E3\u30C3\u30B7\u30E5\u7528",
+            "url": "classes/BaserCore-BcPlugin.html#property_currentSite"
         },                {
             "fqsen": "\\BaserCore\\Command\\ComposerCommand",
             "name": "ComposerCommand",
@@ -2521,6 +2531,11 @@ Search.appendIndex(
             "summary": "After\u0020delete",
             "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#method_afterDelete"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003A\u0024table",
+            "name": "table",
+            "summary": "Table",
+            "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#property_table"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003A\u0024Contents",
             "name": "Contents",
             "summary": "Contents",
@@ -3370,6 +3385,16 @@ Search.appendIndex(
             "name": "copy",
             "summary": "\u30DA\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u30B3\u30D4\u30FC\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-PagesTable.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\PagesTable\u003A\u003A\u0024Contents",
+            "name": "Contents",
+            "summary": "Contents\u0020Table",
+            "url": "classes/BaserCore-Model-Table-PagesTable.html#property_Contents"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\PagesTable\u003A\u003A\u0024Sites",
+            "name": "Sites",
+            "summary": "Sites\u0020Table",
+            "url": "classes/BaserCore-Model-Table-PagesTable.html#property_Sites"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\PagesTable\u003A\u003A\u0024searchIndexSaving",
             "name": "searchIndexSaving",
@@ -4481,6 +4506,11 @@ Search.appendIndex(
             "summary": "\u30ED\u30B0\u30A4\u30F3\u753B\u9762\u306B\u5FC5\u8981\u306A\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Service-Admin-UsersAdminService.html#method_getViewVarsForLogin"
         },                {
+            "fqsen": "\\BaserCore\\Service\\Admin\\UsersAdminService\u003A\u003A\u0024UserGroupsService",
+            "name": "UserGroupsService",
+            "summary": "UserGroups\u0020Service",
+            "url": "classes/BaserCore-Service-Admin-UsersAdminService.html#property_UserGroupsService"
+        },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\UsersAdminServiceInterface",
             "name": "UsersAdminServiceInterface",
             "summary": "Interface\u0020UsersAdminServiceInterface",
@@ -4825,6 +4855,11 @@ Search.appendIndex(
             "name": "migrate",
             "summary": "\u30C7\u30FC\u30BF\u30D9\u30FC\u30B9\u306E\u30DE\u30A4\u30B0\u30EC\u30FC\u30B7\u30E7\u30F3\u3092\u5B9F\u884C\u3059\u308B",
             "url": "classes/BaserCore-Service-BcDatabaseService.html#method_migrate"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\BcDatabaseService\u003A\u003A\u0024_adapter",
+            "name": "_adapter",
+            "summary": "Cake\u0020Adapter",
+            "url": "classes/BaserCore-Service-BcDatabaseService.html#property__adapter"
         },                {
             "fqsen": "\\BaserCore\\Service\\BcDatabaseService\u003A\u003A\u0024_encodingMaps",
             "name": "_encodingMaps",
@@ -5826,6 +5861,16 @@ Search.appendIndex(
             "summary": "Pages\u0020Table",
             "url": "classes/BaserCore-Service-PagesService.html#property_Pages"
         },                {
+            "fqsen": "\\BaserCore\\Service\\PagesService\u003A\u003A\u0024Contents",
+            "name": "Contents",
+            "summary": "Contents\u0020Table",
+            "url": "classes/BaserCore-Service-PagesService.html#property_Contents"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\PagesService\u003A\u003A\u0024Users",
+            "name": "Users",
+            "summary": "Users\u0020Table",
+            "url": "classes/BaserCore-Service-PagesService.html#property_Users"
+        },                {
             "fqsen": "\\BaserCore\\Service\\PagesServiceInterface",
             "name": "PagesServiceInterface",
             "summary": "Interface\u0020PagesServiceInterface",
@@ -5950,6 +5995,16 @@ Search.appendIndex(
             "name": "buildDefaultEtcRuleGroup",
             "summary": "\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u305D\u306E\u4ED6\u306E\u30EB\u30FC\u30EB\u30B0\u30EB\u30FC\u30D7\u3092\u4F5C\u6210\u3059\u308B",
             "url": "classes/BaserCore-Service-PermissionGroupsService.html#method_buildDefaultEtcRuleGroup"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\PermissionGroupsService\u003A\u003A\u0024PermissionGroups",
+            "name": "PermissionGroups",
+            "summary": "PermissionGroups\u0020Table",
+            "url": "classes/BaserCore-Service-PermissionGroupsService.html#property_PermissionGroups"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\PermissionGroupsService\u003A\u003A\u0024UserGroups",
+            "name": "UserGroups",
+            "summary": "UserGroups\u0020Table",
+            "url": "classes/BaserCore-Service-PermissionGroupsService.html#property_UserGroups"
         },                {
             "fqsen": "\\BaserCore\\Service\\PermissionGroupsServiceInterface",
             "name": "PermissionGroupsServiceInterface",
@@ -7055,6 +7110,16 @@ Search.appendIndex(
             "name": "isAvailable",
             "summary": "\u30E6\u30FC\u30B6\u30FC\u304C\u6709\u52B9\u5316\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
             "url": "classes/BaserCore-Service-UsersService.html#method_isAvailable"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003A\u0024Users",
+            "name": "Users",
+            "summary": "Users\u0020Table",
+            "url": "classes/BaserCore-Service-UsersService.html#property_Users"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003A\u0024LoginStores",
+            "name": "LoginStores",
+            "summary": "LoginStores\u0020Table",
+            "url": "classes/BaserCore-Service-UsersService.html#property_LoginStores"
         },                {
             "fqsen": "\\BaserCore\\Service\\UsersServiceInterface",
             "name": "UsersServiceInterface",
@@ -8216,6 +8281,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/KCAPTCHA.html#method_getKeyString"
         },                {
+            "fqsen": "\\KCAPTCHA\u003A\u003A\u0024keystring",
+            "name": "keystring",
+            "summary": "",
+            "url": "classes/KCAPTCHA.html#property_keystring"
+        },                {
             "fqsen": "\\BaserCore\\View\\AppView",
             "name": "AppView",
             "summary": "Class\u0020AppView",
@@ -9160,6 +9230,11 @@ Search.appendIndex(
             "name": "editor",
             "summary": "CKEditor\u306E\u30C6\u30AD\u30B9\u30C8\u30A8\u30EA\u30A2\u3092\u51FA\u529B\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcCkeditorHelper.html#method_editor"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcCkeditorHelper\u003A\u003AcreateDomId\u0028\u0029",
+            "name": "createDomId",
+            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u304B\u3089\u0020Dom\u0020ID\u0020\u3092\u751F\u6210\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcCkeditorHelper.html#method_createDomId"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcCkeditorHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -11221,6 +11296,11 @@ Search.appendIndex(
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u5BFE\u8C61\u3068\u306A\u308B\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u683C\u7D0D\u3059\u308B\u30D5\u30A1\u30A4\u30EB\u540D\u3092\u3001\u6307\u5B9A\u3057\u305F\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3092\u5229\u7528\u3057\u305F\u30D5\u30A1\u30A4\u30EB\u540D\u306B\u5909\u66F4\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogCommentsService.html#method_batch"
         },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCommentsService\u003A\u003A\u0024BlogComments",
+            "name": "BlogComments",
+            "summary": "BlogComments\u0020Table",
+            "url": "classes/BcBlog-Service-BlogCommentsService.html#property_BlogComments"
+        },                {
             "fqsen": "\\BcBlog\\Service\\BlogCommentsServiceInterface",
             "name": "BlogCommentsServiceInterface",
             "summary": "BlogCommentsServiceInterface",
@@ -11295,6 +11375,11 @@ Search.appendIndex(
             "name": "checkRequireSearchIndexReconstruction",
             "summary": "\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u306E\u518D\u69CB\u7BC9\u304C\u5FC5\u8981\u304B\u5224\u5B9A",
             "url": "classes/BcBlog-Service-BlogContentsService.html#method_checkRequireSearchIndexReconstruction"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003A\u0024BlogContents",
+            "name": "BlogContents",
+            "summary": "BlogContents",
+            "url": "classes/BcBlog-Service-BlogContentsService.html#property_BlogContents"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogContentsServiceInterface",
             "name": "BlogContentsServiceInterface",
@@ -11501,6 +11586,11 @@ Search.appendIndex(
             "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogPostsService.html#method_getUrl"
         },                {
+            "fqsen": "\\BcBlog\\Service\\BlogPostsService\u003A\u003A\u0024BlogPosts",
+            "name": "BlogPosts",
+            "summary": "BlogPostsTable",
+            "url": "classes/BcBlog-Service-BlogPostsService.html#property_BlogPosts"
+        },                {
             "fqsen": "\\BcBlog\\Service\\BlogPostsServiceInterface",
             "name": "BlogPostsServiceInterface",
             "summary": "BlogPostsServiceInterface",
@@ -11671,6 +11761,11 @@ Search.appendIndex(
             "summary": "\u4E00\u62EC\u51E6\u7406",
             "url": "classes/BcBlog-Service-BlogTagsService.html#method_batch"
         },                {
+            "fqsen": "\\BcBlog\\Service\\BlogTagsService\u003A\u003A\u0024BlogTags",
+            "name": "BlogTags",
+            "summary": "BlogTags\u0020Table",
+            "url": "classes/BcBlog-Service-BlogTagsService.html#property_BlogTags"
+        },                {
             "fqsen": "\\BcBlog\\Service\\BlogTagsServiceInterface",
             "name": "BlogTagsServiceInterface",
             "summary": "BlogTagsServiceInterface",
@@ -11820,6 +11915,21 @@ Search.appendIndex(
             "name": "getViewVarsRecentEntriesWidget",
             "summary": "\u6700\u8FD1\u306E\u6295\u7A3F\u30A6\u30A3\u30B8\u30A7\u30C3\u30C8\u7528\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Service-Front-BlogFrontService.html#method_getViewVarsRecentEntriesWidget"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontService\u003A\u003A\u0024BlogContentsService",
+            "name": "BlogContentsService",
+            "summary": "BlogContentsService",
+            "url": "classes/BcBlog-Service-Front-BlogFrontService.html#property_BlogContentsService"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontService\u003A\u003A\u0024BlogPostsService",
+            "name": "BlogPostsService",
+            "summary": "BlogPostsService",
+            "url": "classes/BcBlog-Service-Front-BlogFrontService.html#property_BlogPostsService"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontService\u003A\u003A\u0024BlogCategoriesService",
+            "name": "BlogCategoriesService",
+            "summary": "BlogCategoriesService",
+            "url": "classes/BcBlog-Service-Front-BlogFrontService.html#property_BlogCategoriesService"
         },                {
             "fqsen": "\\BcBlog\\Service\\Front\\BlogFrontServiceInterface",
             "name": "BlogFrontServiceInterface",
@@ -12596,6 +12706,11 @@ Search.appendIndex(
             "summary": "\u30EA\u30F3\u30AF\u3092\u3092\u524A\u9664\u3059\u308B",
             "url": "classes/BcContentLink-Service-ContentLinksService.html#method_delete"
         },                {
+            "fqsen": "\\BcContentLink\\Service\\ContentLinksService\u003A\u003A\u0024ContentLinks",
+            "name": "ContentLinks",
+            "summary": "ContentLinks\u0020Table",
+            "url": "classes/BcContentLink-Service-ContentLinksService.html#property_ContentLinks"
+        },                {
             "fqsen": "\\BcContentLink\\Service\\ContentLinksServiceInterface",
             "name": "ContentLinksServiceInterface",
             "summary": "ContentLinksServiceInterface",
@@ -13256,6 +13371,16 @@ Search.appendIndex(
             "summary": "Find\u0020all",
             "url": "classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_findAll"
         },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomFieldsTable\u003A\u003AdecodeEntity\u0028\u0029",
+            "name": "decodeEntity",
+            "summary": "\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u30C7\u30B3\u30FC\u30C9\u3059\u308B",
+            "url": "classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity"
+        },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomFieldsTable\u003A\u003AencodeEntity\u0028\u0029",
+            "name": "encodeEntity",
+            "summary": "\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u30A8\u30F3\u30B3\u30FC\u30C9\u3059\u308B",
+            "url": "classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity"
+        },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomLinksTable",
             "name": "CustomLinksTable",
             "summary": "CustomLinksTable",
@@ -13516,6 +13641,11 @@ Search.appendIndex(
             "summary": "\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomContentsService.html#method_getList"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomContentsService\u003A\u003A\u0024CustomContents",
+            "name": "CustomContents",
+            "summary": "CustomContents\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomContentsService.html#property_CustomContents"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomContentsServiceInterface",
             "name": "CustomContentsServiceInterface",
             "summary": "CustomContentsServiceInterface",
@@ -13671,6 +13801,21 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u4E0B\u306B\u79FB\u52D5",
             "url": "classes/BcCustomContent-Service-CustomEntriesService.html#method_moveDown"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003A\u0024CustomEntries",
+            "name": "CustomEntries",
+            "summary": "CustomEntries\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#property_CustomEntries"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003A\u0024CustomTables",
+            "name": "CustomTables",
+            "summary": "CustomTables\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#property_CustomTables"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003A\u0024BcDatabaseService",
+            "name": "BcDatabaseService",
+            "summary": "BcDatabaseService",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#property_BcDatabaseService"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomEntriesServiceInterface",
             "name": "CustomEntriesServiceInterface",
             "summary": "CustomEntriesServiceInterface",
@@ -13735,6 +13880,16 @@ Search.appendIndex(
             "name": "getControlSource",
             "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomFieldsService.html#method_getControlSource"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomFieldsService\u003A\u003A\u0024CustomFields",
+            "name": "CustomFields",
+            "summary": "CustomEntries\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomFieldsService.html#property_CustomFields"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomFieldsService\u003A\u003A\u0024CustomEntries",
+            "name": "CustomEntries",
+            "summary": "CustomEntries\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomFieldsService.html#property_CustomEntries"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomFieldsServiceInterface",
             "name": "CustomFieldsServiceInterface",
@@ -13805,6 +13960,11 @@ Search.appendIndex(
             "name": "deleteFields",
             "summary": "\u524A\u9664\u3055\u308C\u305F\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u53CD\u6620\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomLinksService.html#method_deleteFields"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomLinksService\u003A\u003A\u0024CustomLinks",
+            "name": "CustomLinks",
+            "summary": "CustomLinks\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomLinksService.html#property_CustomLinks"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomLinksServiceInterface",
             "name": "CustomLinksServiceInterface",
@@ -13886,6 +14046,11 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4ID\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomTablesService.html#method_getCustomContentId"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomTablesService\u003A\u003A\u0024CustomTables",
+            "name": "CustomTables",
+            "summary": "CustomTables\u0020Table",
+            "url": "classes/BcCustomContent-Service-CustomTablesService.html#property_CustomTables"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomTablesServiceInterface",
             "name": "CustomTablesServiceInterface",
             "summary": "CustomTablesServiceInterface",
@@ -13946,15 +14111,15 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u8A73\u7D30\u30DA\u30FC\u30B8\u7528\u306E\u30D7\u30EC\u30D3\u30E5\u30FC\u306E\u30BB\u30C3\u30C8\u30A2\u30C3\u30D7\u3092\u884C\u3046",
             "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_setupPreviewForIndex"
         },                {
-            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003A\u0024entriesService",
-            "name": "entriesService",
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003A\u0024EntriesService",
+            "name": "EntriesService",
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u30B5\u30FC\u30D3\u30B9",
-            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#property_entriesService"
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#property_EntriesService"
         },                {
-            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003A\u0024contentsService",
-            "name": "contentsService",
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003A\u0024ContentsService",
+            "name": "ContentsService",
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u30B5\u30FC\u30D3\u30B9",
-            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#property_contentsService"
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#property_ContentsService"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontServiceInterface",
             "name": "CustomContentFrontServiceInterface",
@@ -14445,6 +14610,11 @@ Search.appendIndex(
             "name": "getList",
             "summary": "\u30A8\u30C7\u30A3\u30BF\u30FC\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcEditorTemplate-Service-EditorTemplatesService.html#method_getList"
+        },                {
+            "fqsen": "\\BcEditorTemplate\\Service\\EditorTemplatesService\u003A\u003A\u0024EditorTemplates",
+            "name": "EditorTemplates",
+            "summary": "EditorTemplates\u0020Table",
+            "url": "classes/BcEditorTemplate-Service-EditorTemplatesService.html#property_EditorTemplates"
         },                {
             "fqsen": "\\BcEditorTemplate\\Service\\EditorTemplatesServiceInterface",
             "name": "EditorTemplatesServiceInterface",
@@ -15045,6 +15215,11 @@ Search.appendIndex(
             "name": "buildPermissions",
             "summary": "\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u3092\u69CB\u7BC9\u3059\u308B",
             "url": "classes/BcInstaller-Service-InstallationsService.html#method_buildPermissions"
+        },                {
+            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003A\u0024BcDatabase",
+            "name": "BcDatabase",
+            "summary": "BcDatabase\u0020Service",
+            "url": "classes/BcInstaller-Service-InstallationsService.html#property_BcDatabase"
         },                {
             "fqsen": "\\BcInstaller\\Service\\InstallationsServiceInterface",
             "name": "InstallationsServiceInterface",
@@ -15981,6 +16156,11 @@ Search.appendIndex(
             "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u306E\u5B8C\u4E86\u753B\u9762\u7528\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u540D\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcMail-Service-Front-MailFrontService.html#method_getThanksTemplate"
         },                {
+            "fqsen": "\\BcMail\\Service\\Front\\MailFrontService\u003A\u003A\u0024MailContentsService",
+            "name": "MailContentsService",
+            "summary": "MailContentsService",
+            "url": "classes/BcMail-Service-Front-MailFrontService.html#property_MailContentsService"
+        },                {
             "fqsen": "\\BcMail\\Service\\Front\\MailFrontServiceInterface",
             "name": "MailFrontServiceInterface",
             "summary": "MailFrontServiceInterface",
@@ -16176,6 +16356,11 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u72B6\u614B\u306E\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u5168\u3066\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcMail-Service-MailContentsService.html#method_getPublishedAll"
         },                {
+            "fqsen": "\\BcMail\\Service\\MailContentsService\u003A\u003A\u0024MailContents",
+            "name": "MailContents",
+            "summary": "MailContentsTable",
+            "url": "classes/BcMail-Service-MailContentsService.html#property_MailContents"
+        },                {
             "fqsen": "\\BcMail\\Service\\MailContentsServiceInterface",
             "name": "MailContentsServiceInterface",
             "summary": "MailContentsServiceInterface",
@@ -16301,6 +16486,16 @@ Search.appendIndex(
             "summary": "\u30AA\u30FC\u30C8\u30B3\u30F3\u30D7\u30EA\u30FC\u30C8\u30AA\u30D7\u30B7\u30E7\u30F3\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcMail-Service-MailFieldsService.html#method_getAutoCompleteOptions"
         },                {
+            "fqsen": "\\BcMail\\Service\\MailFieldsService\u003A\u003A\u0024MailFields",
+            "name": "MailFields",
+            "summary": "MailFieldsTable",
+            "url": "classes/BcMail-Service-MailFieldsService.html#property_MailFields"
+        },                {
+            "fqsen": "\\BcMail\\Service\\MailFieldsService\u003A\u003A\u0024MailMessagesService",
+            "name": "MailMessagesService",
+            "summary": "MailMessagesService",
+            "url": "classes/BcMail-Service-MailFieldsService.html#property_MailMessagesService"
+        },                {
             "fqsen": "\\BcMail\\Service\\MailFieldsServiceInterface",
             "name": "MailFieldsServiceInterface",
             "summary": "MailFieldsServiceInterface",
@@ -16400,6 +16595,16 @@ Search.appendIndex(
             "name": "autoConvert",
             "summary": "\u81EA\u52D5\u5909\u63DB\n\u78BA\u8A8D\u753B\u9762\u3067\u5229\u7528\u3055\u308C\u308B\u4E8B\u3082\u8E0F\u307E\u3048\u3066\u30D0\u30EA\u30C7\u30FC\u30C8\u3092\u901A\u3059\u70BA\u306E\n\u53EF\u80FD\u306A\u5909\u63DB\u51E6\u7406\u3092\u884C\u3046\u3002",
             "url": "classes/BcMail-Service-MailMessagesService.html#method_autoConvert"
+        },                {
+            "fqsen": "\\BcMail\\Service\\MailMessagesService\u003A\u003A\u0024BcDatabaseService",
+            "name": "BcDatabaseService",
+            "summary": "BcDatabaseService",
+            "url": "classes/BcMail-Service-MailMessagesService.html#property_BcDatabaseService"
+        },                {
+            "fqsen": "\\BcMail\\Service\\MailMessagesService\u003A\u003A\u0024MailMessages",
+            "name": "MailMessages",
+            "summary": "BcDatabaseService",
+            "url": "classes/BcMail-Service-MailMessagesService.html#property_MailMessages"
         },                {
             "fqsen": "\\BcMail\\Service\\MailMessagesServiceInterface",
             "name": "MailMessagesServiceInterface",
@@ -16861,6 +17066,26 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30E1\u30BF\u60C5\u5831\u3092\u66F4\u65B0\u3059\u308B",
             "url": "classes/BcSearchIndex-Model-Behavior-BcSearchIndexManagerBehavior.html#method_updateSearchIndexMeta"
         },                {
+            "fqsen": "\\BcSearchIndex\\Model\\Behavior\\BcSearchIndexManagerBehavior\u003A\u003A\u0024table",
+            "name": "table",
+            "summary": "Table",
+            "url": "classes/BcSearchIndex-Model-Behavior-BcSearchIndexManagerBehavior.html#property_table"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Model\\Behavior\\BcSearchIndexManagerBehavior\u003A\u003A\u0024Contents",
+            "name": "Contents",
+            "summary": "ContentsTable",
+            "url": "classes/BcSearchIndex-Model-Behavior-BcSearchIndexManagerBehavior.html#property_Contents"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Model\\Behavior\\BcSearchIndexManagerBehavior\u003A\u003A\u0024SiteConfigs",
+            "name": "SiteConfigs",
+            "summary": "SiteConfigsTable",
+            "url": "classes/BcSearchIndex-Model-Behavior-BcSearchIndexManagerBehavior.html#property_SiteConfigs"
+        },                {
+            "fqsen": "\\BcSearchIndex\\Model\\Behavior\\BcSearchIndexManagerBehavior\u003A\u003A\u0024SearchIndexes",
+            "name": "SearchIndexes",
+            "summary": "SearchIndexesTable",
+            "url": "classes/BcSearchIndex-Model-Behavior-BcSearchIndexManagerBehavior.html#property_SearchIndexes"
+        },                {
             "fqsen": "\\BcSearchIndex\\Model\\Entity\\SearchIndex",
             "name": "SearchIndex",
             "summary": "Class\u0020SearchIndex",
@@ -17180,6 +17405,11 @@ Search.appendIndex(
             "name": "entity",
             "summary": "\u30AD\u30E3\u30C3\u30B7\u30E5\u7528\u0020Entity",
             "url": "classes/BcThemeConfig-Service-ThemeConfigsService.html#property_entity"
+        },                {
+            "fqsen": "\\BcThemeConfig\\Service\\ThemeConfigsService\u003A\u003A\u0024ThemeConfigs",
+            "name": "ThemeConfigs",
+            "summary": "ThemeConfigs\u0020Table",
+            "url": "classes/BcThemeConfig-Service-ThemeConfigsService.html#property_ThemeConfigs"
         },                {
             "fqsen": "\\BcThemeConfig\\Service\\ThemeConfigsServiceInterface",
             "name": "ThemeConfigsServiceInterface",
@@ -17761,6 +17991,11 @@ Search.appendIndex(
             "summary": "\u30C6\u30FC\u30DE\u5185\u306E\u753B\u50CF\u306E\u30B5\u30E0\u30CD\u30A4\u30EB\u30A4\u30E1\u30FC\u30B8\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcThemeFile-Service-ThemeFilesService.html#method_getImgThumb"
         },                {
+            "fqsen": "\\BcThemeFile\\Service\\ThemeFilesService\u003A\u003A\u0024ThemeFileForm",
+            "name": "ThemeFileForm",
+            "summary": "ThemeFile\u0020Form",
+            "url": "classes/BcThemeFile-Service-ThemeFilesService.html#property_ThemeFileForm"
+        },                {
             "fqsen": "\\BcThemeFile\\Service\\ThemeFilesServiceInterface",
             "name": "ThemeFilesServiceInterface",
             "summary": "ThemeFilesServiceInterface",
@@ -18106,6 +18341,11 @@ Search.appendIndex(
             "summary": "Events",
             "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#property_events"
         },                {
+            "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener\u003A\u003A\u0024BcHtml",
+            "name": "BcHtml",
+            "summary": "BcHtmlHelper",
+            "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#property_BcHtml"
+        },                {
             "fqsen": "\\BcUploader\\Model\\Entity\\UploaderCategory",
             "name": "UploaderCategory",
             "summary": "Class\u0020UploaderCategory",
@@ -18361,6 +18601,11 @@ Search.appendIndex(
             "summary": "ID\u304B\u3089\u30BF\u30A4\u30C8\u30EB\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcUploader-Service-UploaderCategoriesService.html#method_getTitlesById"
         },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderCategoriesService\u003A\u003A\u0024UploaderCategories",
+            "name": "UploaderCategories",
+            "summary": "UploaderCategories\u0020Table",
+            "url": "classes/BcUploader-Service-UploaderCategoriesService.html#property_UploaderCategories"
+        },                {
             "fqsen": "\\BcUploader\\Service\\UploaderCategoriesServiceInterface",
             "name": "UploaderCategoriesServiceInterface",
             "summary": "UploaderCategoriesServiceInterface",
@@ -18395,6 +18640,11 @@ Search.appendIndex(
             "name": "entity",
             "summary": "\u30AD\u30E3\u30C3\u30B7\u30E5\u7528\u0020Entity",
             "url": "classes/BcUploader-Service-UploaderConfigsService.html#property_entity"
+        },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderConfigsService\u003A\u003A\u0024UploaderConfigs",
+            "name": "UploaderConfigs",
+            "summary": "UploaderConfigs\u0020Table",
+            "url": "classes/BcUploader-Service-UploaderConfigsService.html#property_UploaderConfigs"
         },                {
             "fqsen": "\\BcUploader\\Service\\UploaderConfigsServiceInterface",
             "name": "UploaderConfigsServiceInterface",
@@ -18455,6 +18705,16 @@ Search.appendIndex(
             "name": "getNew",
             "summary": "\u521D\u671F\u30C7\u30FC\u30BF\u53D6\u5F97",
             "url": "classes/BcUploader-Service-UploaderFilesService.html#method_getNew"
+        },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderFilesService\u003A\u003A\u0024UploaderFiles",
+            "name": "UploaderFiles",
+            "summary": "UploaderFiles\u0020Table",
+            "url": "classes/BcUploader-Service-UploaderFilesService.html#property_UploaderFiles"
+        },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderFilesService\u003A\u003A\u0024uploaderConfigsService",
+            "name": "uploaderConfigsService",
+            "summary": "UploaderConfigs\u0020Service",
+            "url": "classes/BcUploader-Service-UploaderFilesService.html#property_uploaderConfigsService"
         },                {
             "fqsen": "\\BcUploader\\Service\\UploaderFilesServiceInterface",
             "name": "UploaderFilesServiceInterface",
@@ -18795,6 +19055,11 @@ Search.appendIndex(
             "name": "getControlSource",
             "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u53D6\u5F97",
             "url": "classes/BcWidgetArea-Service-WidgetAreasService.html#method_getControlSource"
+        },                {
+            "fqsen": "\\BcWidgetArea\\Service\\WidgetAreasService\u003A\u003A\u0024WidgetAreas",
+            "name": "WidgetAreas",
+            "summary": "WidgetAreas\u0020Table",
+            "url": "classes/BcWidgetArea-Service-WidgetAreasService.html#property_WidgetAreas"
         },                {
             "fqsen": "\\BcWidgetArea\\Service\\WidgetAreasServiceInterface",
             "name": "WidgetAreasServiceInterface",

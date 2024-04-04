@@ -552,7 +552,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -659,11 +659,25 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>並び順を変更する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity">decodeEntity()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>エンティティをデコードする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a>
     <span>
                                 &nbsp;: bool|<abbr title="\Cake\Event\Event">Event</abbr>    </span>
 </dt>
 <dd>イベントを発火</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity">encodeEntity()</a>
+    <span>
+                                &nbsp;: <abbr title="\ArrayObject">ArrayObject</abbr>    </span>
+</dt>
+<dd>エンティティをエンコードする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_findAll">findAll()</a>
@@ -1041,7 +1055,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -1272,6 +1286,48 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_decodeEntity">
+        decodeEntity()
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">エンティティをデコードする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">decodeEntity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_dispatchLayerEvent">
         dispatchLayerEvent()
         <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1360,6 +1416,73 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_encodeEntity">
+        encodeEntity()
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">エンティティをエンコードする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">encodeEntity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\ArrayObject">ArrayObject</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_findAll">
         findAll()
         <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_findAll" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1368,7 +1491,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1728,7 +1851,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -2218,7 +2341,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">55</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -2399,7 +2522,9 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_beforeMarshal">beforeMarshal()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
+                                            <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity">decodeEntity()</a></li>
                                             <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
+                                            <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity">encodeEntity()</a></li>
                                             <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_findAll">findAll()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax">getMax()</a></li>
