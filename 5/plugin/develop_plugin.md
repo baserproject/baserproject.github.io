@@ -48,12 +48,12 @@ return [
 - AdminTheme: 管理画面用テーマ
 
 ### BcPluginを継承する
-`/src/Plugin.php` にて、`BcPlugin` を継承します。これにより、プラグイン管理でインストールやアンインストールが行えるようになります。
+`/src/{YourPlugin}Plugin.php` にて、`BcPlugin` を継承します。これにより、プラグイン管理でインストールやアンインストールが行えるようになります。
 
 ```php
-// /plugins/{YourPlugin}/src/Plugin.php
+// /plugins/{YourPlugin}/src/{YourPlugin}Plugin.php
 use BaserCore\BcPlugin;
-class Plugin extends BcPlugin
+class {YourPlugin}Plugin extends BcPlugin
 {
 }
 ```
