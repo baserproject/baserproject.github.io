@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -546,7 +546,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <abbr title="\Cake\TestSuite\IntegrationTestTrait">IntegrationTestTrait</abbr>,                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>,                             <abbr title="\CakephpTestSuiteLight\Fixture\TruncateDirtyTables">TruncateDirtyTables</abbr>                    </span>
     </h2>
 
@@ -563,6 +563,8 @@
     </aside>
 
             <p class="phpdocumentor-summary">Class BcTestCase</p>
+
+
 
 
 
@@ -819,7 +821,6 @@ IntegrationTestTrait を使ったテストで利用する</dd>
 
 
 
-
         
     <section class="phpdocumentor-constants">
         <h3 class="phpdocumentor-elements__header" id="constants">
@@ -856,6 +857,8 @@ entryEventToMock() の引数として利用</p>
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_HELPER">
@@ -882,6 +885,8 @@ entryEventToMock() の引数として利用</p>
 
     
     
+    
+
     
 
 </article>
@@ -912,6 +917,8 @@ entryEventToMock() の引数として利用</p>
     
     
 
+    
+
 </article>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_EVENT_LAYER_VIEW">
@@ -938,6 +945,8 @@ entryEventToMock() の引数として利用</p>
 
     
     
+    
+
     
 
 </article>
@@ -982,6 +991,8 @@ entryEventToMock() の引数として利用</p>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1013,6 +1024,8 @@ entryEventToMock() の引数として利用</p>
 
     
     
+    
+
     
 
 </article>
@@ -1073,6 +1086,8 @@ entryEventToMock() の引数として利用</p>
                                     </dd>
                                             </dl>
 
+    
+
 </article>
                     <article
         class="
@@ -1131,6 +1146,8 @@ entryEventToMock() の引数として利用</p>
                                     </dd>
                                             </dl>
 
+    
+
 </article>
                     <article
         class="
@@ -1165,6 +1182,8 @@ entryEventToMock() の引数として利用</p>
     
     
 
+    
+
 </article>
             </section>
 
@@ -1196,7 +1215,7 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">attachEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">attachEvent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$events</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1205,7 +1224,7 @@ entryEventToMock() の引数として利用</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$events</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1241,6 +1260,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1294,6 +1315,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1364,6 +1387,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1456,6 +1481,8 @@ entryEventToMock() の引数として利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
@@ -1484,7 +1511,7 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1493,7 +1520,7 @@ entryEventToMock() の引数として利用</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1530,6 +1557,8 @@ entryEventToMock() の引数として利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
@@ -1558,7 +1587,7 @@ entryEventToMock() の引数として利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1567,7 +1596,7 @@ entryEventToMock() の引数として利用</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1603,6 +1632,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1669,6 +1700,8 @@ entryEventToMock() の引数として利用</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1727,6 +1760,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1789,6 +1824,8 @@ entryEventToMock() の引数として利用</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1839,6 +1876,8 @@ entryEventToMock() の引数として利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1933,6 +1972,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1991,6 +2032,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2053,6 +2096,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2131,6 +2176,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2203,6 +2250,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2272,6 +2321,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -2300,7 +2351,7 @@ IntegrationTestTrait を使ったテストで利用する</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">entryEventToMock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">entryEventToMock</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$layer</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$eventName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Event\EventListenerInterface">EventListenerInterface</abbr>|<abbr title="\PHPUnit\Framework\MockObject\MockObject">MockObject</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2316,14 +2367,14 @@ IntegrationTestTrait を使ったテストで利用する</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$eventName</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2359,6 +2410,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2454,6 +2507,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -2548,6 +2603,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2616,6 +2673,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2693,6 +2752,8 @@ IntegrationTestTrait を使ったテストで利用する</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>

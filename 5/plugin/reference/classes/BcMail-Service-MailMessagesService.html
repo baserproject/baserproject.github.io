@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -546,7 +546,7 @@
                             <a href="classes/BcMail-Service-MailMessagesServiceInterface.html"><abbr title="\BcMail\Service\MailMessagesServiceInterface">MailMessagesServiceInterface</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
     </h2>
 
@@ -558,11 +558,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">MailMessagesService</p>
+
+
 
 
 
@@ -668,6 +670,13 @@
 <dd>メッセージ保存用テーブルのフィールドを最適化する
 初回の場合、id/created/modifiedを追加する
 2回目以降の場合は、最後のカラムに追加する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcMail-Service-MailMessagesService.html#method_convertToForm">convertToForm()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
+</dt>
+<dd>エンティティをフォーム用のデータに変換する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcMail-Service-MailMessagesService.html#method_create">create()</a>
@@ -779,7 +788,6 @@ int型でなかったら強制終了</dd>
 
 
 
-
         
 
         
@@ -821,6 +829,8 @@ int型でなかったら強制終了</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -839,7 +849,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -853,6 +863,8 @@ int型でなかったら強制終了</dd>
 
     
     
+    
+
     
 
 </article>
@@ -888,6 +900,8 @@ int型でなかったら強制終了</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -906,7 +920,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">53</span>
 
     </aside>
 
@@ -920,6 +934,8 @@ int型でなかったら強制終了</dd>
 
     
     
+    
+
     
 
 </article>
@@ -945,7 +961,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -990,6 +1006,8 @@ int型でなかったら強制終了</dd>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1005,7 +1023,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -1066,6 +1084,8 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1086,7 +1106,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">435</span>
+    <span class="phpdocumentor-element-found-in__line">459</span>
 
     </aside>
 
@@ -1149,6 +1169,8 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -1173,7 +1195,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">218</span>
 
     </aside>
 
@@ -1234,6 +1256,8 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1254,7 +1278,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">328</span>
+    <span class="phpdocumentor-element-found-in__line">352</span>
 
     </aside>
 
@@ -1310,9 +1334,80 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_convertToForm">
+        convertToForm()
+        <a href="classes/BcMail-Service-MailMessagesService.html#method_convertToForm" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">163</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">エンティティをフォーム用のデータに変換する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">convertToForm</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mailMessage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$mailMessage</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BcMail-Service-MailMessagesService.html#method_convertToForm#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
             </section>
 
 </article>
@@ -1330,7 +1425,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1391,6 +1486,8 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -1411,7 +1508,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -1465,6 +1562,8 @@ int型でなかったら強制終了</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1485,7 +1584,7 @@ int型でなかったら強制終了</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1540,6 +1639,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1560,7 +1661,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">203</span>
 
     </aside>
 
@@ -1614,6 +1715,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1634,7 +1737,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">293</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
     </aside>
 
@@ -1695,6 +1798,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool</span>
@@ -1715,7 +1820,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -1769,6 +1874,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1789,7 +1896,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">90</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1843,6 +1950,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -1863,7 +1972,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">105</span>
 
     </aside>
 
@@ -1917,6 +2026,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Query">Query</abbr></span>
@@ -1937,7 +2048,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">392</span>
+    <span class="phpdocumentor-element-found-in__line">416</span>
 
     </aside>
 
@@ -1998,6 +2109,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -2026,7 +2139,7 @@ int型でなかったら強制終了</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2035,7 +2148,7 @@ int型でなかったら強制終了</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2072,6 +2185,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
@@ -2100,7 +2215,7 @@ int型でなかったら強制終了</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2109,7 +2224,7 @@ int型でなかったら強制終了</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2146,6 +2261,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -2166,7 +2283,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">381</span>
 
     </aside>
 
@@ -2180,6 +2297,8 @@ int型でなかったら強制終了</p>
         </div>
     
     
+    
+
     
 
             <section>
@@ -2202,7 +2321,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
     </aside>
 
@@ -2270,6 +2389,8 @@ int型でなかったら強制終了</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|bool</span>
@@ -2290,7 +2411,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -2354,6 +2475,8 @@ int型でなかったら強制終了</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2369,7 +2492,7 @@ int型でなかったら強制終了</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mail/src/Service/MailMessagesService.php"><a href="files/plugins-bc-mail-src-service-mailmessagesservice.html"><abbr title="plugins/bc-mail/src/Service/MailMessagesService.php">MailMessagesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -2422,6 +2545,8 @@ int型でなかったら強制終了</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2557,6 +2682,7 @@ int型でなかったら強制終了</p>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_autoConvert">autoConvert()</a></li>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_batch">batch()</a></li>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_construction">construction()</a></li>
+                                            <li><a href="classes/BcMail-Service-MailMessagesService.html#method_convertToForm">convertToForm()</a></li>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_create">create()</a></li>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_createTable">createTable()</a></li>
                                             <li><a href="classes/BcMail-Service-MailMessagesService.html#method_createTableName">createTableName()</a></li>

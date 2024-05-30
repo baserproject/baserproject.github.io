@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -548,7 +548,7 @@
     
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
     </h2>
 
@@ -565,6 +565,8 @@
     </aside>
 
             <p class="phpdocumentor-summary">BcAdminApiController</p>
+
+
 
 
 
@@ -592,13 +594,13 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-Api-BcApiController.html#property_Authentication">$Authentication</a>
+    <a href="classes/BaserCore-Controller-AppController.html#property_Authentication">$Authentication</a>
     <span>
                         &nbsp;: <abbr title="\Authentication\Controller\Component\AuthenticationComponent">AuthenticationComponent</abbr>            </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/BaserCore-Controller-AppController.html#property_Authentication">$Authentication</a>
+    <a href="classes/BaserCore-Controller-Api-BcApiController.html#property_Authentication">$Authentication</a>
     <span>
                         &nbsp;: <abbr title="\Authentication\Controller\Component\AuthenticationComponent">AuthenticationComponent</abbr>            </span>
 </dt>
@@ -665,11 +667,12 @@
 <dd>Before Filter</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-Controller-AppController.html#method_beforeRender">beforeRender()</a>
+    <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender">beforeRender()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
-<dd>Before render</dd>
+<dd>Before render
+日本語を Unicode エスケープしないようにする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a>
@@ -795,7 +798,6 @@
 
 
 
-
         
 
         
@@ -805,6 +807,41 @@
             <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_Authentication">
+        $Authentication
+        <a href="classes/BaserCore-Controller-AppController.html#property_Authentication" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Authentication\Controller\Component\AuthenticationComponent">AuthenticationComponent</abbr></span>
+    <span class="phpdocumentor-signature__name">$Authentication</span>
+    </code>
+
+    
+    
+    
+
+    
+
+</article>
                     <article
         class="
             phpdocumentor-element
@@ -837,37 +874,6 @@
     
     
 
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_Authentication">
-        $Authentication
-        <a href="classes/BaserCore-Controller-AppController.html#property_Authentication" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Authentication\Controller\Component\AuthenticationComponent">AuthenticationComponent</abbr></span>
-    <span class="phpdocumentor-signature__name">$Authentication</span>
-    </code>
-
-    
-    
     
 
 </article>
@@ -903,6 +909,8 @@
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -934,6 +942,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -969,6 +979,8 @@
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1001,6 +1013,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -1108,6 +1122,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">void|<abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
@@ -1211,6 +1227,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                         </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1294,6 +1312,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1371,6 +1391,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void|null</span>
@@ -1385,17 +1407,18 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 >
     <h4 class="phpdocumentor-element__name" id="method_beforeRender">
         beforeRender()
-        <a href="classes/BaserCore-Controller-AppController.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Before render</p>
+        <p class="phpdocumentor-summary">Before render
+日本語を Unicode エスケープしないようにする</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1418,7 +1441,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/BaserCore-Controller-AppController.html#method_beforeRender#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -1444,6 +1467,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1533,6 +1558,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
@@ -1607,6 +1634,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -1635,7 +1664,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1644,7 +1673,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1681,6 +1710,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
@@ -1709,7 +1740,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1718,7 +1749,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1754,6 +1785,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1820,6 +1853,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1878,6 +1913,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1939,6 +1976,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2013,6 +2052,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2071,6 +2112,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2147,6 +2190,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2205,6 +2250,8 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2308,6 +2355,8 @@ ServerRequestに設定する。</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2376,6 +2425,8 @@ ServerRequestに設定する。</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2487,6 +2538,8 @@ ServerRequestに設定する。</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2590,6 +2643,8 @@ ServerRequestに設定する。</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2651,6 +2706,8 @@ ServerRequestに設定する。</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2704,6 +2761,8 @@ ServerRequestに設定する。</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2824,8 +2883,8 @@ ServerRequestに設定する。</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/BaserCore-Controller-Api-BcApiController.html#property_Authentication">$Authentication<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Authentication">$Authentication<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
+                                                    <li><a href="classes/BaserCore-Controller-Api-BcApiController.html#property_Authentication">$Authentication<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_BcMessage">$BcMessage<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
                                                     <li><a href="classes/BaserCore-Controller-AppController.html#property_Security">$Security<a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html"></li>
@@ -2840,7 +2899,7 @@ ServerRequestに設定する。</p>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method__blackHoleCallback">_blackHoleCallback()</a></li>
                                             <li><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter">beforeFilter()</a></li>
-                                            <li><a href="classes/BaserCore-Controller-AppController.html#method_beforeRender">beforeRender()</a></li>
+                                            <li><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender">beforeRender()</a></li>
                                             <li><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
                                             <li><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_getAccessToken">getAccessToken()</a></li>
                                             <li><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -561,6 +561,8 @@
     </aside>
 
             <p class="phpdocumentor-summary">CustomFieldsTable</p>
+
+
 
 
 
@@ -640,6 +642,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
                                 &nbsp;: string    </span>
 </dt>
 <dd>テーブル名にプレフィックスを追加する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_afterMarshal">afterMarshal()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>afterMarshal</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_beforeMarshal">beforeMarshal()</a>
@@ -779,7 +788,6 @@ BcModelEventDispatcherは対象外とする</dd>
 
 
 
-
         
 
         
@@ -823,6 +831,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -856,6 +866,8 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     
     
+    
+
     
 
 </article>
@@ -893,6 +905,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -926,6 +940,8 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     
     
+    
+
     
 
 </article>
@@ -962,6 +978,8 @@ AppTable::getConditionAllowPublish() で利用</p>
     
     
 
+    
+
 </article>
             </section>
 
@@ -993,7 +1011,7 @@ AppTable::getConditionAllowPublish() で利用</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addPrefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">addPrefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1009,7 +1027,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$table</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1039,11 +1057,106 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_afterMarshal">
+        afterMarshal()
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_afterMarshal" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">afterMarshal</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">afterMarshal</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$event</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_afterMarshal#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1059,7 +1172,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">104</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -1119,6 +1232,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1191,6 +1306,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1278,6 +1395,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1298,7 +1417,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">134</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -1321,6 +1440,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1408,6 +1529,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
@@ -1428,7 +1551,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">200</span>
 
     </aside>
 
@@ -1475,6 +1598,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
@@ -1495,7 +1620,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">171</span>
 
     </aside>
 
@@ -1550,6 +1675,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1618,6 +1745,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1702,6 +1831,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">int</span>
@@ -1760,6 +1891,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1835,6 +1968,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -1903,6 +2038,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1964,6 +2101,8 @@ AppTable::getConditionAllowPublish() で利用</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2037,6 +2176,8 @@ BcModelEventDispatcherは対象外とする</p>
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2103,6 +2244,8 @@ BcModelEventDispatcherは対象外とする</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2176,6 +2319,8 @@ BcModelEventDispatcherは対象外とする</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2251,6 +2396,8 @@ BcModelEventDispatcherは対象外とする</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -2325,6 +2472,8 @@ BcModelEventDispatcherは対象外とする</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -2345,7 +2494,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -2390,7 +2539,16 @@ BcModelEventDispatcherは対象外とする</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2523,6 +2681,7 @@ BcModelEventDispatcherは対象外とする</p>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_addPrefix">addPrefix()</a></li>
+                                            <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_afterMarshal">afterMarshal()</a></li>
                                             <li><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_beforeMarshal">beforeMarshal()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>

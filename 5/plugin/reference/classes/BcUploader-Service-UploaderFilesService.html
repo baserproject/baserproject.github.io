@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -546,7 +546,7 @@
                             <a href="classes/BcUploader-Service-UploaderFilesServiceInterface.html"><abbr title="\BcUploader\Service\UploaderFilesServiceInterface">UploaderFilesServiceInterface</abbr></a>                    </span>
     
             <span class="phpdocumentor-element__extends">
-            Uses
+            uses
                             <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
     </h2>
 
@@ -558,11 +558,13 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">UploaderFilesService</p>
+
+
 
 
 
@@ -640,6 +642,13 @@
 <dd>アップロードファイルを削除する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BcUploader-Service-UploaderFilesService.html#method_filesExistsByName">filesExistsByName()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|false    </span>
+</dt>
+<dd>ファイル名から実ファイルが存在するかどうかを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BcUploader-Service-UploaderFilesService.html#method_get">get()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
@@ -706,7 +715,6 @@
 
 
 
-
         
 
         
@@ -733,7 +741,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -747,6 +755,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -767,7 +777,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
     </aside>
 
@@ -781,6 +791,8 @@
 
     
     
+    
+
     
 
 </article>
@@ -806,7 +818,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -851,6 +863,8 @@
                                             </dl>
 
     
+
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -866,7 +880,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">201</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
     </aside>
 
@@ -920,6 +934,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -940,7 +956,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -994,9 +1010,59 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_filesExistsByName">
+        filesExistsByName()
+        <a href="classes/BcUploader-Service-UploaderFilesService.html#method_filesExistsByName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">289</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ファイル名から実ファイルが存在するかどうかを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">filesExistsByName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
             </section>
 
 </article>
@@ -1014,7 +1080,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -1068,6 +1134,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -1088,7 +1156,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">148</span>
 
     </aside>
 
@@ -1151,6 +1219,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
@@ -1175,7 +1245,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -1229,6 +1299,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Query">Query</abbr></span>
@@ -1249,7 +1321,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">276</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -1293,6 +1365,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -1321,7 +1395,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1330,7 +1404,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1367,6 +1441,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
@@ -1395,7 +1471,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1404,7 +1480,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1441,6 +1517,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1461,7 +1539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
@@ -1508,6 +1586,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -1528,7 +1608,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">233</span>
+    <span class="phpdocumentor-element-found-in__line">234</span>
 
     </aside>
 
@@ -1589,6 +1669,8 @@
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
@@ -1609,7 +1691,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-uploader/src/Service/UploaderFilesService.php"><a href="files/plugins-bc-uploader-src-service-uploaderfilesservice.html"><abbr title="plugins/bc-uploader/src/Service/UploaderFilesService.php">UploaderFilesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
@@ -1662,6 +1744,8 @@
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1793,6 +1877,7 @@
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_create">create()</a></li>
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_delete">delete()</a></li>
+                                            <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_filesExistsByName">filesExistsByName()</a></li>
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_get">get()</a></li>
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_getControlSource">getControlSource()</a></li>
                                             <li><a href="classes/BcUploader-Service-UploaderFilesService.html#method_getIndex">getIndex()</a></li>

@@ -54,7 +54,7 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -three phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/basercore.html" class="">BaserCore</a>
@@ -501,7 +501,7 @@
             </ul>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="">Application</a>
@@ -509,14 +509,14 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
@@ -561,6 +561,8 @@
     </aside>
 
             <p class="phpdocumentor-summary">メールフォームヘルパー</p>
+
+
 
 
 
@@ -684,19 +686,19 @@
 ファイル添付の対応のためにデフォルト値を変更</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_datePicker">datePicker()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>カレンダーピッカー</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker">datepicker()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
 <dd>カレンダーコントロール付きのテキストフィールド
 jquery-ui-1.7.2 必須</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_datePicker">datePicker()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>カレンダーピッカー</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_dateTime">dateTime()</a>
@@ -749,11 +751,11 @@ jquery-ui-1.7.2 必須</dd>
 input fields where appropriate.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_file">file()</a>
+    <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_file">file()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd>ファイルインプットボックス出力</dd>
+<dd>ファイルタグを出力</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_freeze">freeze()</a>
@@ -924,7 +926,6 @@ BcForm::create より呼出される事が前提</dd>
 
 
 
-
         
 
         
@@ -966,6 +967,8 @@ BcForm::create より呼出される事が前提</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -997,6 +1000,8 @@ BcForm::create より呼出される事が前提</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1032,6 +1037,8 @@ BcForm::create より呼出される事が前提</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1063,6 +1070,8 @@ BcForm::create より呼出される事が前提</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1099,6 +1108,8 @@ BcForm::create より呼出される事が前提</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1131,6 +1142,8 @@ BcForm::create より呼出される事が前提</dd>
 
     
     
+    
+
     
 
 </article>
@@ -1167,6 +1180,8 @@ BcForm::create より呼出される事が前提</dd>
     
     
 
+    
+
 </article>
                     <article
         class="
@@ -1201,6 +1216,8 @@ BcForm::create より呼出される事が前提</dd>
     
     
 
+    
+
 </article>
             </section>
 
@@ -1232,7 +1249,7 @@ BcForm::create より呼出される事が前提</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">authCaptcha</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">authCaptcha</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1241,7 +1258,7 @@ BcForm::create より呼出される事が前提</dd>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldName</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1285,6 +1302,8 @@ BcForm::create より呼出される事が前提</dd>
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -1359,6 +1378,8 @@ BcForm::create より呼出される事が前提</dd>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1438,6 +1459,8 @@ BcForm::create より呼出される事が前提</dd>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1515,6 +1538,8 @@ $type, $fieldName, $options, $attributes = [])</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -1560,7 +1585,11 @@ $type, $fieldName, $options, $attributes = [])</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>The context for which the form is being defined.
+Can be a ContextInterface instance, ORM entity, ORM resultset, or an
+array of meta data. You can use <code class="prettyprint">null</code> to make a context-less form.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$options</span>
@@ -1594,92 +1623,11 @@ $type, $fieldName, $options, $attributes = [])</p>
                                     </dd>
                                             </dl>
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_datepicker">
-        datepicker()
-        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcfreezehelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php">BcFreezeHelper.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">573</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">カレンダーコントロール付きのテキストフィールド
-jquery-ui-1.7.2 必須</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">datepicker</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
     
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$fieldName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>フィールド文字列</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$options</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>HTML属性</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>html</p>
-</section>
-
             </section>
 
 </article>
@@ -1759,6 +1707,93 @@ jquery-ui-1.7.2 必須</p>
                                              
                                     </dd>
                                             </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>html</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_datepicker">
+        datepicker()
+        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcfreezehelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php">BcFreezeHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">573</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">カレンダーコントロール付きのテキストフィールド
+jquery-ui-1.7.2 必須</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">datepicker</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fieldName</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>フィールド文字列</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>HTML属性</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1840,6 +1875,8 @@ jquery-ui-1.7.2 必須</p>
 
             </dd>
             </dl>
+
+    
 
     
 
@@ -1929,6 +1966,8 @@ jquery-ui-1.7.2 必須</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2020,6 +2059,8 @@ $event-&gt;setData('fields', [
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2113,6 +2154,8 @@ $event-&gt;setData('fields', [
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool|<abbr title="\Cake\Event\Event">Event</abbr></span>
@@ -2186,6 +2229,8 @@ $event-&gt;setData('fields', [
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2264,6 +2309,8 @@ $event-&gt;setData('fields', [
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2356,6 +2403,8 @@ into the hidden input elements generated for the Security Component.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2374,17 +2423,17 @@ into the hidden input elements generated for the Security Component.</p>
 >
     <h4 class="phpdocumentor-element__name" id="method_file">
         file()
-        <a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_file" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_file" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFormHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcformhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFormHelper.php">BcFormHelper.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcfreezehelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFreezeHelper.php">BcFreezeHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">791</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">ファイルインプットボックス出力</p>
+        <p class="phpdocumentor-summary">ファイルタグを出力</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2392,17 +2441,7 @@ into the hidden input elements generated for the Security Component.</p>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>画像の場合は画像タグ、その他の場合はファイルへのリンク
-そして削除用のチェックボックスを表示する</p>
-<p>《オプション》
-imgsize    画像のサイズを指定する
-rel        A タグの rel 属性を指定
-title    A タグの title 属性を指定
-link        大きいサイズへの画像へのリンク有無
-delCheck    削除用チェックボックスの利用可否
-force    ファイルの存在有無に関わらず強制的に画像タグを表示するかどうか</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -2424,7 +2463,7 @@ force    ファイルの存在有無に関わらず強制的に画像タグを�
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_file#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_file#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -2442,14 +2481,9 @@ force    ファイルの存在有無に関わらず強制的に画像タグを�
                                                                                 
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2507,6 +2541,8 @@ force    ファイルの存在有無に関わらず強制的に画像タグを�
                                              
                                     </dd>
                                             </dl>
+
+    
 
     
 </article>
@@ -2590,6 +2626,8 @@ force    ファイルの存在有無に関わらず強制的に画像タグを�
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2678,6 +2716,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -2773,6 +2813,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
@@ -2839,6 +2881,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -2871,7 +2915,7 @@ Model側でメソッドを用意しておく必要がある</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2880,7 +2924,7 @@ Model側でメソッドを用意しておく必要がある</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2917,6 +2961,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
@@ -2937,7 +2983,7 @@ Model側でメソッドを用意しておく必要がある</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFormHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcformhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFormHelper.php">BcFormHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">922</span>
+    <span class="phpdocumentor-element-found-in__line">923</span>
 
     </aside>
 
@@ -2991,6 +3037,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Table">Table</abbr>|false</span>
@@ -3019,7 +3067,7 @@ Model側でメソッドを用意しておく必要がある</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3028,7 +3076,7 @@ Model側でメソッドを用意しておく必要がある</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -3064,6 +3112,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3149,6 +3199,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3241,6 +3293,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -3324,6 +3378,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">bool</span>
@@ -3401,6 +3457,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3487,6 +3545,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -3511,7 +3571,7 @@ Model側でメソッドを用意しておく必要がある</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/View/Helper/BcFormHelper.php"><a href="files/plugins-baser-core-src-view-helper-bcformhelper.html"><abbr title="plugins/baser-core/src/View/Helper/BcFormHelper.php">BcFormHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">750</span>
+    <span class="phpdocumentor-element-found-in__line">751</span>
 
     </aside>
 
@@ -3586,6 +3646,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3677,6 +3739,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3772,6 +3836,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -3804,7 +3870,7 @@ Model側でメソッドを用意しておく必要がある</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -3815,7 +3881,7 @@ Model側でメソッドを用意しておく必要がある</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>フォームID</p>
@@ -3853,6 +3919,8 @@ Model側でメソッドを用意しておく必要がある</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -3978,6 +4046,8 @@ OR if the first character is not /, image is relative to webroot/img.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -4059,6 +4129,8 @@ OR if the first character is not /, image is relative to webroot/img.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4146,6 +4218,8 @@ OR if the first character is not /, image is relative to webroot/img.</p>
                                     </dd>
                                             </dl>
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -4223,6 +4297,8 @@ OR if the first character is not /, image is relative to webroot/img.</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4321,6 +4397,8 @@ OR if the first character is not /, image is relative to webroot/img.</p>
 
     
 
+    
+
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">string</span>
@@ -4402,6 +4480,8 @@ BcForm::create より呼出される事が前提</p>
                                              
                                     </dd>
                                             </dl>
+
+    
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -4541,8 +4621,8 @@ BcForm::create より呼出される事が前提</p>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_ckeditor">ckeditor()</a></li>
                                             <li><a href="classes/BcMail-View-Helper-MailformHelper.html#method_control">control()</a></li>
                                             <li><a href="classes/BcMail-View-Helper-MailformHelper.html#method_create">create()</a></li>
-                                            <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker">datepicker()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_datePicker">datePicker()</a></li>
+                                            <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_datepicker">datepicker()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_dateTime">dateTime()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_dateTimePicker">dateTimePicker()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_dispatchAfterForm">dispatchAfterForm()</a></li>
@@ -4550,7 +4630,7 @@ BcForm::create より呼出される事が前提</p>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_editor">editor()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_email">email()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_end">end()</a></li>
-                                            <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_file">file()</a></li>
+                                            <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_file">file()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_freeze">freeze()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFreezeHelper.html#method_freezeControll">freezeControll()</a></li>
                                             <li><a href="classes/BaserCore-View-Helper-BcFormHelper.html#method_getControlSource">getControlSource()</a></li>
