@@ -4391,6 +4391,16 @@ Search.appendIndex(
             "summary": "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30ED\u30B0\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Service-Admin-PluginsAdminService.html#method_getUpdateLog"
         },                {
+            "fqsen": "\\BaserCore\\Service\\Admin\\PluginsAdminService\u003A\u003AgetViewVarsForAdd\u0028\u0029",
+            "name": "getViewVarsForAdd",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u753B\u9762\u7528\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Service-Admin-PluginsAdminService.html#method_getViewVarsForAdd"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\Admin\\PluginsAdminService\u003A\u003AisPluginsDirWritable\u0028\u0029",
+            "name": "isPluginsDirWritable",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u304C\u66F8\u304D\u8FBC\u307F\u53EF\u80FD\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-Service-Admin-PluginsAdminService.html#method_isPluginsDirWritable"
+        },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\PluginsAdminServiceInterface",
             "name": "PluginsAdminServiceInterface",
             "summary": "PluginsAdminServiceInterface",
