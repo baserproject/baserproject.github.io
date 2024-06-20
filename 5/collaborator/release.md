@@ -81,9 +81,12 @@ git merge dev-5
 
 **GitHubへのプッシュ権限が必要となり、Dockerのコンテナ内で実行する場合、Gitのセットアップができているかを確認してください。**
 
-事前に dev-5 ブランチをプッシュすることでテストを行ってもよいかもしれません。
+Git のセットアップについては、事前に dev-5 ブランチをプルすることでテストを行ってもよいかもしれません。
 ```shell
 # PHPの実行環境が必要
+# パッチの場合
+vendor/bin/monorepo-builder release patch
+# メジャーバー、マイナーの場合
 vendor/bin/monorepo-builder release 5.x.x
 ```
 
