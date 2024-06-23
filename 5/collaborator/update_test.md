@@ -39,7 +39,9 @@ git push origin 5.1.x
 ## Packagist確認
 「baserproject/baser-core」などの子パッケージのレポジトリに開発ブランチが作成されると、自動的に Packagist にも反映されます。
 反映されていれば、これで composer で開発ブランチの取得が可能となります。
-https://packagist.org/packages/baserproject/baser-core
+
+- [baser-core の Packagist](https://packagist.org/packages/baserproject/baser-core)
+
 ```
 # Packagist でのバージョン名
 5.1.x-dev
