@@ -472,4 +472,4 @@ https://your-domain/test.html
 - [ファイル読み込みの優先順位](file_priority)
 - [テンプレートのカスタマイズ](customizing_template)
 - [テーマ関数リファレンス](reference/index)
-- [標準テーマ](https://github.com/baserproject/basercms/tree/dev-5/plugins/bc-front)
+- [標準テーマ](https://github.com/baserproject/basercms/tree/5.1.x/plugins/bc-front)

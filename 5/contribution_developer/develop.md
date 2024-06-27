@@ -23,8 +23,8 @@ git clone git@github.com:{ユーザー名}/basercms.git {フォルダ名}
 ```shell
 git checkout -b {ローカルブランチ名} remotes/origin/{リモートのブランチ名}
 
-#（例）開発ブランチ dev-5 をローカルの開発ブランチ dev-5 としてコピー＆チェックアウト
-git checkout -b dev-5 remotes/origin/dev-5
+#（例）開発ブランチ 5.1.x をローカルの開発ブランチ 5.1.x としてコピー＆チェックアウト
+git checkout -b 5.1.x remotes/origin/5.1.x
 ```
 これで開発の準備が整いました。
 
@@ -102,8 +102,8 @@ git remote add basercms git@github.com:basercms/basercms.git
 ### リモートの変更内容を取り込む
 ```shell
 git pull {リモート名} {開発ブランチ名}
-#（例）リモート名 basercms から、dev-5 ブランチの内容を取り込む
-git pull basercms dev-5
+#（例）リモート名 basercms から、5.1.x ブランチの内容を取り込む
+git pull basercms 5.1.x
 ```
 これで次の開発を行う準備が整いました。
 

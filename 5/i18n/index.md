@@ -78,8 +78,8 @@ bin/cake cache clear baser_core
 
 ```bash
 git pull {リモート名} {開発ブランチ名}
-#（例）本家のリモート名 basercms から、dev-5 ブランチの内容を取り込む
-git pull basercms dev-5
+#（例）本家のリモート名 basercms から、5.1.x ブランチの内容を取り込む
+git pull basercms 5.1.x
 ```
 
 ### 4. Pot ファイルを生成する

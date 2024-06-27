@@ -589,7 +589,7 @@ BcBaserHelper::crumbs(string $separator, string|bool $startText, bool $onSchema)
 ```
 
 パンくずリストを出力します。
-主に[crumbs.php](https://github.com/baserproject/basercms/blob/dev-5/plugins/bc-front/templates/element/crumbs.php)内で使用されています。
+主に[crumbs.php](https://github.com/baserproject/basercms/blob/5.1.x/plugins/bc-front/templates/element/crumbs.php)内で使用されています。
 事前に出力したい内容をBcBaserHelper::addCrumbで追加しておく必要があります。
 
 ---
