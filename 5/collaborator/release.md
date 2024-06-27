@@ -71,11 +71,11 @@ git commit -a -m "basercms-5.x.x をリリース"
 
  
 ## master ブランチにマージ
-`dev-5` ブランチを `master` ブランチにマージします。
+`5.1.x` ブランチを `master` ブランチにマージします。
 
 ```shell
 git checkout master
-git merge dev-5
+git merge 5.1.x
 ```
 
  
@@ -86,12 +86,12 @@ git merge dev-5
 
 **GitHubへのプッシュ権限が必要となり、Dockerのコンテナ内で実行する場合、Gitのセットアップができているかを確認してください。**
 
-Git のセットアップについては、事前に dev-5 ブランチをプルすることでテストを行ってもよいかもしれません。
+Git のセットアップについては、事前に 5.1.x ブランチをプルすることでテストを行ってもよいかもしれません。
 ```shell
 # PHPの実行環境が必要
 # パッチの場合
 vendor/bin/monorepo-builder release patch
-# メジャーバー、マイナーの場合
+# メジャー、マイナーの場合
 vendor/bin/monorepo-builder release 5.x.x
 ```
 
@@ -110,12 +110,12 @@ vendor/bin/monorepo-builder release 5.x.x
 [baser-core の Packagist](https://packagist.org/packages/baserproject/baser-core) に新しいバージョンが反映されているか確認します。
 
  
-## dev ブランチにマージ
+## 開発ブランチにマージ
 master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
-git checkout dev-5
+git checkout 5.1.x
 git merge master
-git push origin dev-5
+git push origin 5.1.x
 ```
 
 
@@ -133,7 +133,7 @@ mv basercms.zip basercms-5.x.x.zip
 master ブランチより作成しますので、**必ずリリースコマンド実行後** に行う必要がありますが、開発ブランチでパッケージを作成し、インストール等の動作を確認したい場合は、`branch` オプションとして引数にブランチ名を追加します。
 
 ```shell
-bin/cake create release dev-5
+bin/cake create release 5.1.x
 ```
 
 ## パッケージのアップロード
@@ -172,10 +172,22 @@ baserCMSプロジェクトメンバー名簿より、新しくメンバーとな
 これでリリース作業は完了です。お疲れさまでした。
 
 ## 事後作業
-1. `plugins/baser-core/VERSION.txt` の先頭行を開発バージョンに変更します。  
-コミットメッセージを `バージョンを5.x.x開発版に変更` としdev-5ブランチにpushします。  
 
-2. バージョンアップに合わせて次の２サイトのアップデートを行います。
+### 1. バージョンファイルの更新
+バージョンファイルの先頭行を次のバージョンに変更し、プッシュします。
+
+```
+# 以前は、5.1.1-dev というようにサフィックスを付けていましたが
+# 5.1.0 以降からは付けなくなりました。
+
+# plugins/baser-core/VERSION.txt
+5.x.x
+
+git commit -a -m "バージョンを5.x.xに変更"
+```
+
+### 2. 運営サイトのアップデート
+バージョンアップに合わせて次の２サイトのアップデートを行います。
 - [baserCMS公式サイト](https://basercms.net/)
 - [baserCMSデモサイト](https://trial.basercms.net/)
 
