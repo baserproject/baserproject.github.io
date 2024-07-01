@@ -20,6 +20,28 @@ jobs:
 
 また、新しいプラグインのリポジトリを [Packagist](https://packagist.org/packages/submit) に登録します。
 
+## BaserCore の composer.json を更新
+require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
+```
+# /plugins/baser-core/composer.json
+    "require": {
+        "baserproject/bc-admin-third": "5.1.0",
+        "baserproject/bc-blog": "5.1.0",
+        "baserproject/bc-content-link": "5.1.0",
+        "baserproject/bc-custom-content": "5.1.0",
+        "baserproject/bc-editor-template": "5.1.0",
+        "baserproject/bc-favorite": "5.1.0",
+        "baserproject/bc-front": "5.1.0",
+        "baserproject/bc-installer": "5.1.0",
+        "baserproject/bc-mail": "5.1.0",
+        "baserproject/bc-search-index": "5.1.0",
+        "baserproject/bc-theme-config": "5.1.0",
+        "baserproject/bc-theme-file": "5.1.0",
+        "baserproject/bc-uploader": "5.1.0",
+        "baserproject/bc-widget-area": "5.1.0",
+    }    
+```
+
 ## composer の設定をマージ
 Dockerコンテナにログインし、マージコマンドを使って、パッケージの設定をルートの composer.json にマージします。
 
