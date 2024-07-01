@@ -23,7 +23,7 @@ filter_var(env('DEBUG', true), FILTER_VALIDATE_BOOLEAN)
 
 - **DEBUG**: デバッグモード。画面にデバッグ情報を表示する場合に `true` を設定します。
 - **INSTALL_MODE**: インストールモード。インストーラーを実行したい場合に `true` に設定します。インストールを実行するには、`/config/install.php` が削除されている必要があります。 
-- **USE_DEBUG_KIT**: CakePHPの DebugKit プラグインを利用する場合いんは `true`に設定します。
+- **USE_DEBUG_KIT**: CakePHPの DebugKit プラグインを利用する場合に `true`に設定します。
 - **SITE_URL**: サイトのURLを設定します。インストール時に自動設定します。  
   （例）http://localhost/
 - **SSL_URL**: SSLのURLを設定します。インストール時に自動設定します。  

@@ -271,11 +271,6 @@ Search.appendIndex(
             "summary": "execute",
             "url": "classes/BaserCore-Command-CreateReleaseCommand.html#method_execute"
         },                {
-            "fqsen": "\\BaserCore\\Command\\CreateReleaseCommand\u003A\u003AsetupComposer\u0028\u0029",
-            "name": "setupComposer",
-            "summary": "composer.json\u0020\u3092\u914D\u5E03\u7528\u306B\u30BB\u30C3\u30C8\u30A2\u30C3\u30D7\u3059\u308B",
-            "url": "classes/BaserCore-Command-CreateReleaseCommand.html#method_setupComposer"
-        },                {
             "fqsen": "\\BaserCore\\Command\\CreateReleaseCommand\u003A\u003AclonePackage\u0028\u0029",
             "name": "clonePackage",
             "summary": "\u30D1\u30C3\u30B1\u30FC\u30B8\u3092\u0020GitHub\u0020\u3088\u308A\u30AF\u30ED\u30FC\u30F3\u3059\u308B",
@@ -608,8 +603,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003Aupdate\u0028\u0029",
             "name": "update",
-            "summary": "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u5B9F\u884C",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u5B9F\u884C",
             "url": "classes/BaserCore-Controller-Admin-PluginsController.html#method_update"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003Aupdate_core\u0028\u0029",
+            "name": "update_core",
+            "summary": "\u30B3\u30A2\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u5B9F\u884C",
+            "url": "classes/BaserCore-Controller-Admin-PluginsController.html#method_update_core"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003Aget_core_update\u0028\u0029",
+            "name": "get_core_update",
+            "summary": "\u30B3\u30A2\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Controller-Admin-PluginsController.html#method_get_core_update"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003Adetach\u0028\u0029",
             "name": "detach",
@@ -3016,6 +3021,11 @@ Search.appendIndex(
             "summary": "Belongs\u0020To\u0020Many",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Afind\u0028\u0029",
+            "name": "find",
+            "summary": "find\u306E\u524D\u5F8C\u306B\u30A4\u30D9\u30F3\u30C8\u3092\u8FFD\u52A0\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-AppTable.html#method_find"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AaddPrefix\u0028\u0029",
             "name": "addPrefix",
             "summary": "\u30C6\u30FC\u30D6\u30EB\u540D\u306B\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9\u3092\u8FFD\u52A0\u3059\u308B",
@@ -4383,7 +4393,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\PluginsAdminService\u003A\u003AisRequireUpdate\u0028\u0029",
             "name": "isRequireUpdate",
-            "summary": "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u304C\u3069\u3046\u304B",
+            "summary": "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u304C\u5FC5\u8981\u304C\u3069\u3046\u304B\nDB\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u3068\u5229\u7528\u53EF\u80FD\u306A\u30D0\u30FC\u30B8\u30E7\u30F3\u304C\u9055\u3046\u5834\u5408\u306B\u5FC5\u8981\u3068\u3059\u308B",
             "url": "classes/BaserCore-Service-Admin-PluginsAdminService.html#method_isRequireUpdate"
         },                {
             "fqsen": "\\BaserCore\\Service\\Admin\\PluginsAdminService\u003A\u003AgetUpdateLog\u0028\u0029",
@@ -6441,10 +6451,20 @@ Search.appendIndex(
             "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3059\u308B",
             "url": "classes/BaserCore-Service-PluginsService.html#method_update"
         },                {
+            "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003ArollbackCore\u0028\u0029",
+            "name": "rollbackCore",
+            "summary": "\u30B3\u30A2\u30D5\u30A1\u30A4\u30EB\u3092\u30ED\u30FC\u30EB\u30D0\u30C3\u30AF\u3059\u308B",
+            "url": "classes/BaserCore-Service-PluginsService.html#method_rollbackCore"
+        },                {
             "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003AupdateCore\u0028\u0029",
             "name": "updateCore",
             "summary": "BaserCore\u3092\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u3059\u308B",
             "url": "classes/BaserCore-Service-PluginsService.html#method_updateCore"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003AupdateCoreFiles\u0028\u0029",
+            "name": "updateCoreFiles",
+            "summary": "\u30B3\u30A2\u30D5\u30A1\u30A4\u30EB\u3092\u66F4\u65B0",
+            "url": "classes/BaserCore-Service-PluginsService.html#method_updateCoreFiles"
         },                {
             "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003AdetachAll\u0028\u0029",
             "name": "detachAll",
@@ -6520,6 +6540,11 @@ Search.appendIndex(
             "name": "getAvailableCoreVersionInfo",
             "summary": "\u53D6\u5F97\u53EF\u80FD\u306A\u30B3\u30A2\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u60C5\u5831\u3092\u53D6\u5F97",
             "url": "classes/BaserCore-Service-PluginsService.html#method_getAvailableCoreVersionInfo"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003AgetCoreUpdate\u0028\u0029",
+            "name": "getCoreUpdate",
+            "summary": "\u30B3\u30A2\u306E\u6700\u65B0\u7248\u3092\u53D6\u5F97\u3059\u308B\ntmp\/update\u0020\u306B\u6700\u65B0\u7248\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3059\u308B",
+            "url": "classes/BaserCore-Service-PluginsService.html#method_getCoreUpdate"
         },                {
             "fqsen": "\\BaserCore\\Service\\PluginsService\u003A\u003AgetAvailableCoreVersion\u0028\u0029",
             "name": "getAvailableCoreVersion",
@@ -7741,6 +7766,11 @@ Search.appendIndex(
             "summary": "composer\u0020require\u0020\u5B9F\u884C",
             "url": "classes/BaserCore-Utility-BcComposer.html#method_require"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "composer\u0020update\u0020\u5B9F\u884C",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_update"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003Ainstall\u0028\u0029",
             "name": "install",
             "summary": "composer\u0020install\u0020\u5B9F\u884C",
@@ -7751,6 +7781,11 @@ Search.appendIndex(
             "summary": "composer\u0020self\u002Dupdate\u0020\u5B9F\u884C",
             "url": "classes/BaserCore-Utility-BcComposer.html#method_selfUpdate"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AclearCache\u0028\u0029",
+            "name": "clearCache",
+            "summary": "\u30AD\u30E3\u30C3\u30B7\u30E5\u3092\u30AF\u30EA\u30A2\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_clearCache"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AexecCommand\u0028\u0029",
             "name": "execCommand",
             "summary": "\u30B3\u30DE\u30F3\u30C9\u5B9F\u884C",
@@ -7760,6 +7795,11 @@ Search.appendIndex(
             "name": "createCommand",
             "summary": "\u30B3\u30DE\u30F3\u30C9\u4F5C\u6210",
             "url": "classes/BaserCore-Utility-BcComposer.html#method_createCommand"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AsetupComposerForDistribution\u0028\u0029",
+            "name": "setupComposerForDistribution",
+            "summary": "\u914D\u5E03\u7528\u306B\u0020composer.json\u0020\u3092\u30BB\u30C3\u30C8\u30A2\u30C3\u30D7\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_setupComposerForDistribution"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003A\u0024cd",
             "name": "cd",
