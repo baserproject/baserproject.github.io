@@ -223,6 +223,8 @@ git commit -a -m "バージョンを5.1.1に変更"
 開発版のバージョンに更新します。
 
 ```json
+// 5.1 系の開発の場合
+// /plugins/baser-core/composer.json
     "require": {
         "baserproject/bc-admin-third": "5.1.x",
         "baserproject/bc-blog": "5.1.x",
