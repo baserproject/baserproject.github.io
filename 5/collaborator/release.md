@@ -20,6 +20,15 @@ jobs:
 
 また、新しいプラグインのリポジトリを [Packagist](https://packagist.org/packages/submit) に登録します。
 
+## ワークスペースの更新
+まず、ローカル環境のワークスペースを最新の状態にします。
+
+```shell
+# 開発ブランチが 5.1.x の場合
+git checkout 5.1.x
+git pull origin 5.1.x
+```
+
 ## BaserCore の composer.json を更新
 require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
 ```
