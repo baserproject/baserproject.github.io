@@ -219,7 +219,29 @@ baserCMSプロジェクトメンバー名簿より、新しくメンバーとな
 git commit -a -m "バージョンを5.1.1に変更"
 ```
 
-### 2. 運営サイトのアップデート
+### 2. baser-core/composer.json の更新
+開発版のバージョンに更新します。
+
+```json
+    "require": {
+        "baserproject/bc-admin-third": "5.1.x",
+        "baserproject/bc-blog": "5.1.x",
+        "baserproject/bc-content-link": "5.1.x",
+        "baserproject/bc-custom-content": "5.1.x",
+        "baserproject/bc-editor-template": "5.1.x",
+        "baserproject/bc-favorite": "5.1.x",
+        "baserproject/bc-front": "5.1.x",
+        "baserproject/bc-installer": "5.1.x",
+        "baserproject/bc-mail": "5.1.x",
+        "baserproject/bc-search-index": "5.1.x",
+        "baserproject/bc-theme-config": "5.1.x",
+        "baserproject/bc-theme-file": "5.1.x",
+        "baserproject/bc-uploader": "5.1.x",
+        "baserproject/bc-widget-area": "5.1.x",
+    }    
+```
+
+### 3. 運営サイトのアップデート
 バージョンアップに合わせて次の２サイトのアップデートを行います。
 - [baserCMS公式サイト](https://basercms.net/)
 - [baserCMSデモサイト](https://trial.basercms.net/)
