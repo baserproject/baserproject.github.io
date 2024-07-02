@@ -31,8 +31,9 @@ git pull origin 5.1.x
 
 ## BaserCore の composer.json を更新
 require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
-```
+```yaml
 # /plugins/baser-core/composer.json
+# 新しいバージョンが 5.1.0 の場合
     "require": {
         "baserproject/bc-admin-third": "5.1.0",
         "baserproject/bc-blog": "5.1.0",
