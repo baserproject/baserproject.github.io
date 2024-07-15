@@ -25,6 +25,13 @@ OSの機能やツールを使って既存のプラグインをZIP化します。
 
 既存の環境のZip化したプラグインをアップロードすると変換が始まります。baserCMS５用への変換が完了するとダウンロードボタンが表示されますのでダウンロードします。
 
+### BcAddonMigrator5.1.0以降の変更点
+baserCMS5.1系より、`/src/Plugin.php` の名称が `{YourPluginName}Plugin.php` 形式に変更されたため、対象プラグインの Plugin クラスの名称によって変換処理を振り分けるようになりました。
+
+- Plugin.php が存在しない：4系のプラグインと判断し全ての変換処理を実行
+- Plugin.php が存在する：5.0系のプラグインと判断し、5.0系 → 5.1系の変換処理のみ実行
+- {YourPluginName}Plugin.php が存在する：5.1系のプラグインと判断し、何もしない
+
 ### 問題が発生した場合
 問題が発生した場合は、[ユーザーズフォーラム](https://forum.basercms.net/) に報告するか、[GitHubのIssue](https://github.com/baserproject/BcAddonMigrator/issues) を作成してください。
 
