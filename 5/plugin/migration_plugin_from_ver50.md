@@ -67,4 +67,20 @@ $data->moveTo($targetPath);
 なお、現在は、baserCMSの基本機能に必要なメソッドだけが移植されており、いくつかのメソッドは未実装となり利用できません。
 必要なメソッドが存在しない場合は、本家にプルリクエストを出してみてください。
 
+## セキュリティコンポーネント
+`SecurityComponet` は廃止されました。`FormProtectionComponent` を利用してください。
 
+## リクエストハンドラーコンポーネント
+`RequestHandlerComponent` は廃止されました。ajax 判定などは `ServerRequest` を利用します。
+
+```php
+// コントローラーなどで
+$this->getRequest()->is('ajax');
+```
+
+## その他
+
+その他、問題がある場合は、CakePHP5系のドキュメントが参考になります。
+
+- [CakePHP 5.0 アップグレードガイド](https://book.cakephp.org/5/ja/appendices/5-0-upgrade-guide.html)
+- [CakePHP 5.0 移行ガイド](https://book.cakephp.org/5/ja/appendices/5-0-migration-guide.html)

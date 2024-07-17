@@ -10,6 +10,8 @@ baserCMSのマイナーアップデート「v5.1.0」にアップデートする
 5. baserCMS v5.1.0 にアップデートする
 6. プラグインを 5.1系に変換する
 
+なお、baserCMS5.1 は、PHP 8.1 以上が必要となります。事前にPHPのバージョンが対応しているか確認してください。
+
 ## 1. BcUpdateSupporter をインストールする
 [BcUpdateSupporter](https://market.basercms.net/products/detail.php?product_id=164) は、baserCMSのアップデートにおける課題を解決する重要なプラグインです。v5.1.0 にアップデートするためには、BcUpdateSupporter が必要です。
 baserマーケットよりダウンロードし、`/plugins/` フォルダに配置して、管理画面よりインストールします。
