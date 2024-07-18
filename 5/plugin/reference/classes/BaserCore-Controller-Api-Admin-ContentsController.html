@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -609,18 +613,6 @@
                         &nbsp;: <a href="classes/BaserCore-Controller-Component-BcMessageComponent.html"><abbr title="\BaserCore\Controller\Component\BcMessageComponent">BcMessageComponent</abbr></a>            </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator</a>
-    <span>
-                        &nbsp;: <abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Controller-AppController.html#property_Security">$Security</a>
-    <span>
-                        &nbsp;: <abbr title="\Cake\Controller\Component\SecurityComponent">SecurityComponent</abbr>            </span>
-</dt>
-
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a>
     <span>
@@ -870,6 +862,13 @@
 </dt>
 <dd>ゴミ箱情報取得</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses">viewClasses()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>View classes</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a>
     <span>
@@ -1038,78 +1037,6 @@
         class="
             phpdocumentor-element
             -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_Paginator">
-        $Paginator
-        <a href="classes/BaserCore-Controller-AppController.html#property_Paginator" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr></span>
-    <span class="phpdocumentor-signature__name">$Paginator</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_Security">
-        $Security
-        <a href="classes/BaserCore-Controller-AppController.html#property_Security" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Cake\Controller\Component\SecurityComponent">SecurityComponent</abbr></span>
-    <span class="phpdocumentor-signature__name">$Security</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
             -protected
                                                         "
 >
@@ -1165,7 +1092,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1371,7 +1298,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">433</span>
+    <span class="phpdocumentor-element-found-in__line">435</span>
 
     </aside>
 
@@ -1528,7 +1455,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">533</span>
+    <span class="phpdocumentor-element-found-in__line">535</span>
 
     </aside>
 
@@ -1686,7 +1613,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
     </aside>
 
@@ -1764,7 +1691,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">285</span>
+    <span class="phpdocumentor-element-found-in__line">287</span>
 
     </aside>
 
@@ -1837,7 +1764,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -2009,7 +1936,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -2089,7 +2016,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">362</span>
 
     </aside>
 
@@ -2170,7 +2097,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">375</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -2250,7 +2177,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">338</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 
     </aside>
 
@@ -2330,7 +2257,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
     </aside>
 
@@ -2561,7 +2488,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">93</span>
+    <span class="phpdocumentor-element-found-in__line">94</span>
 
     </aside>
 
@@ -2627,7 +2554,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
@@ -2668,6 +2595,13 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
@@ -2756,7 +2690,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">466</span>
+    <span class="phpdocumentor-element-found-in__line">468</span>
 
     </aside>
 
@@ -2964,7 +2898,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">488</span>
 
     </aside>
 
@@ -3175,7 +3109,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">392</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
@@ -3386,7 +3320,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">186</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -3459,7 +3393,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -3541,7 +3475,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
     </aside>
 
@@ -3594,6 +3528,13 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -3614,7 +3555,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php"><a href="files/plugins-baser-core-src-controller-api-admin-contentscontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/ContentsController.php">ContentsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
@@ -3679,6 +3620,66 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     
 
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_viewClasses">
+        viewClasses()
+        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/BcApiController.php"><a href="files/plugins-baser-core-src-controller-api-bcapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/BcApiController.php">BcApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">View classes</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">viewClasses</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -4317,8 +4318,6 @@ ServerRequestに設定する。</p>
                                                     <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_Authentication">$Authentication</li>
                                                     <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#property_Authentication">$Authentication</li>
                                                     <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_BcMessage">$BcMessage</li>
-                                                    <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator</li>
-                                                    <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_Security">$Security</li>
                                                     <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</li>
                                             </ul>
                 </li>
@@ -4359,6 +4358,7 @@ ServerRequestに設定する。</p>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_trash_return">trash_return()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_view">view()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-Admin-ContentsController.html#method_view_trash">view_trash()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses">viewClasses()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveDblog">saveDblog()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveViewConditions">saveViewConditions()</a></li>
