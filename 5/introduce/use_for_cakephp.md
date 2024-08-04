@@ -7,11 +7,17 @@ CakePHP4で開発しているあなたのアプリケーションで、baserCMS 
 ### composer でインストール
 
 ```shell
+// baserCMSコアをインストール
 composer require baserproject/baser-core
+// サンプル用のデザインテーマをインストール
+composer require baserproject/bc-theme-sample
+// もしくは、BcColumnテーマをインストール
+composer require baserproject/bc-column
 ```
+
 開発版を取得する場合は、`composer.json` に `"minimum-stability": "dev"` を追加した上で次を実行します。
 ```shell
-composer require baserproject/baser-core:^5.0-dev --with-all-dependencies
+composer require baserproject/baser-core:5.1.x --with-all-dependencies
 ```
 
 ### Application にプラグインを追加する
@@ -30,4 +36,10 @@ https://your-host-name/install
 
 ※ インストーラーがうまく起動しない場合は、`/config/app_local.php` が存在するか確認してください。存在しない場合は、`/config/app_local.example.php` をコピーして作成してください。
 　
+### トップページをbaserCMSのトップページにする
 
+`/config/routes.php` の次の行をコメントアウトします。
+
+```php
+// $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+```
