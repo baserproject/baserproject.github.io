@@ -20,9 +20,9 @@ composer require baserproject/bc-column
 composer require baserproject/baser-core:5.1.x --with-all-dependencies
 ```
 
-### Application にプラグインを追加する
+### プラグインを追加する
 
-次のコマンドを実行すると、`Application::bootstrap()` に、BaserCore プラグインを読み込むコードが追加されます。
+次のコマンドを実行すると、`/config/plugins.php` に、BaserCore プラグインを読み込むコードが追加されます。
 
 ```shell
 bin/cake plugin load BaserCore
@@ -36,10 +36,19 @@ https://your-host-name/install
 
 ※ インストーラーがうまく起動しない場合は、`/config/app_local.php` が存在するか確認してください。存在しない場合は、`/config/app_local.example.php` をコピーして作成してください。
 　
-### トップページをbaserCMSのトップページにする
+### routes.php を有効化する
 
-`/config/routes.php` の次の行をコメントアウトします。
+baserCMSをインストールすると、コンテンツ管理機能のフロントページにおけるルーティングを動作させるために、`/config/routes.php` が無効になります。 
+（何かしら設定を追記しても設定は破棄されます） 
+
+有効化するには、`/config/setting.php` を作成し次のように記述します。
 
 ```php
-// $builder->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+<?php
+return [
+    'BcApp' => [
+        'enableRootRoutes' => true
+    ]
+];
 ```
+その際、routes.php において、`$builder->fallbacks();` が有効になっていると、コンテンツ管理機能のフロントページにおけるルーティングがうまくいかなくなりますので注意してください。
