@@ -29,6 +29,21 @@ composer require baserproject/baser-core:5.1.x
 bin/cake plugin load BaserCore
 ```
 
+### Dotenv を有効化する
+
+baserCMSは、Dotenv が有効になっていないと正常に動作しません。
+`/config/bootstrap.php` にてコメントアウトされている次のコードのコメントをアンコメントしてください。
+
+```php
+if (!env('APP_NAME') && file_exists(CONFIG . '.env')) {
+    $dotenv = new \josegonzalez\Dotenv\Loader([CONFIG . '.env']);
+    $dotenv->parse()
+        ->putenv()
+        ->toEnv()
+        ->toServer();
+}
+```
+
 ### インストーラーを起動する
 
 ブラウザで、次のURLにアクセスするとインストーラーが起動しますので、 [インストールを実行する](./index#インストールを実行する)  に従ってインストールを進めます。
@@ -37,7 +52,7 @@ https://your-host-name/install
 
 ※ インストーラーがうまく起動しない場合は、`/config/app_local.php` が存在するか確認してください。存在しない場合は、`/config/app_local.example.php` をコピーして作成してください。
 　
-### routes.php を有効化する
+### routes.php を有効化する（必要であれば）
 
 baserCMSをインストールすると、コンテンツ管理機能のフロントページにおけるルーティングを動作させるために、`/config/routes.php` が無効になります。 
 （何かしら設定を追記しても設定は破棄されます） 
