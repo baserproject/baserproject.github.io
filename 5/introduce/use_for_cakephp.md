@@ -7,11 +7,11 @@ CakePHP4で開発しているあなたのアプリケーションで、baserCMS 
 ### composer でインストール
 
 ```shell
-// baserCMSコアをインストール
+# baserCMSコアをインストール
 composer require baserproject/baser-core
-// サンプル用のデザインテーマをインストール
+# サンプル用のデザインテーマをインストール
 composer require baserproject/bc-theme-sample
-// もしくは、BcColumnテーマをインストール
+# もしくは、BcColumnテーマをインストール
 composer require baserproject/bc-column
 ```
 
