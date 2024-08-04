@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -545,6 +549,9 @@
             implements
                             <a href="classes/BaserCore-Service-UsersServiceInterface.html"><abbr title="\BaserCore\Service\UsersServiceInterface">UsersServiceInterface</abbr></a>                    </span>
     
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <a href="classes/BaserCore-Utility-BcContainerTrait.html"><abbr title="\BaserCore\Utility\BcContainerTrait">BcContainerTrait</abbr></a>                    </span>
     </h2>
 
 <div class="phpdocumentor-label-line">
@@ -555,7 +562,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -645,6 +652,13 @@
 <dd>ログイン状態の保存確認</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-UsersService.html#method_checkPasswordModified">checkPasswordModified()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>ユーザーのパスワード更新日時チェック</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-UsersService.html#method_create">create()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
@@ -662,7 +676,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-UsersService.html#method_get">get()</a>
     <span>
-                                &nbsp;: <a href="classes/BaserCore-Model-Entity-User.html"><abbr title="\BaserCore\Model\Entity\User">User</abbr></a>    </span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
 </dt>
 <dd>ユーザーを取得する</dd>
 
@@ -686,6 +700,20 @@
                                 &nbsp;: <a href="classes/BaserCore-Model-Entity-User.html"><abbr title="\BaserCore\Model\Entity\User">User</abbr></a>    </span>
 </dt>
 <dd>ユーザーの新規データ用の初期値を含んだエンティティを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|mixed|object    </span>
+</dt>
+<dd>Get Service</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Has Service</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-UsersService.html#method_isAvailable">isAvailable()</a>
@@ -756,6 +784,13 @@
                                 &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
 </dt>
 <dd>ユーザー情報を更新する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-UsersService.html#method_updatePassword">updatePassword()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
+</dt>
+<dd>パスワードを更新する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/BaserCore-Service-UsersService.html#method_getAuthSessionKey">getAuthSessionKey()</a>
@@ -830,7 +865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -903,7 +938,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -945,7 +980,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
     </aside>
 
@@ -1008,7 +1043,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
     </aside>
 
@@ -1084,6 +1119,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkPasswordModified">
+        checkPasswordModified()
+        <a href="classes/BaserCore-Service-UsersService.html#method_checkPasswordModified" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">436</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ユーザーのパスワード更新日時チェック</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkPasswordModified</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$request</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_create">
         create()
         <a href="classes/BaserCore-Service-UsersService.html#method_create" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1092,7 +1183,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
     </aside>
 
@@ -1177,7 +1268,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
     </aside>
 
@@ -1255,7 +1346,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">96</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -1263,7 +1354,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-User.html"><abbr title="\BaserCore\Model\Entity\User">User</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1314,7 +1405,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-User.html"><abbr title="\BaserCore\Model\Entity\User">User</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
             </section>
 
 </article>
@@ -1332,7 +1423,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
     </aside>
 
@@ -1409,7 +1500,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 
     </aside>
 
@@ -1482,7 +1573,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">77</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
     </aside>
 
@@ -1541,6 +1632,160 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getService">
+        getService()
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Get Service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|mixed|object</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasService">
+        hasService()
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcContainerTrait.php"><a href="files/plugins-baser-core-src-utility-bccontainertrait.html"><abbr title="plugins/baser-core/src/Utility/BcContainerTrait.php">BcContainerTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Has Service</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$service</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isAvailable">
         isAvailable()
         <a href="classes/BaserCore-Service-UsersService.html#method_isAvailable" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1549,7 +1794,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">501</span>
+    <span class="phpdocumentor-element-found-in__line">553</span>
 
     </aside>
 
@@ -1628,7 +1873,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -1719,7 +1964,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">411</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 
     </aside>
 
@@ -1817,7 +2062,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">300</span>
 
     </aside>
 
@@ -1908,7 +2153,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">464</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 
     </aside>
 
@@ -1985,7 +2230,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">319</span>
+    <span class="phpdocumentor-element-found-in__line">347</span>
 
     </aside>
 
@@ -2069,7 +2314,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
     </aside>
 
@@ -2150,7 +2395,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">492</span>
 
     </aside>
 
@@ -2242,7 +2487,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">343</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -2334,7 +2579,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -2415,6 +2660,77 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_updatePassword">
+        updatePassword()
+        <a href="classes/BaserCore-Service-UsersService.html#method_updatePassword" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">216</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パスワードを更新する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">updatePassword</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$postData</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$postData</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Service-UsersService.html#method_updatePassword#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Cake\ORM\Exception\PersistenceFailedException">PersistenceFailedException</abbr></span>
+                                                            
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -private
                                                         "
 >
@@ -2426,7 +2742,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UsersService.php"><a href="files/plugins-baser-core-src-service-usersservice.html"><abbr title="plugins/baser-core/src/Service/UsersService.php">UsersService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">300</span>
+    <span class="phpdocumentor-element-found-in__line">328</span>
 
     </aside>
 
@@ -2614,12 +2930,15 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_checkAutoLogin">checkAutoLogin()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_checkPasswordModified">checkPasswordModified()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_create">create()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_delete">delete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_getIndex">getIndex()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_getList">getList()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_getNew">getNew()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_isAvailable">isAvailable()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_login">login()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_loginToAgent">loginToAgent()</a></li>
@@ -2630,6 +2949,7 @@
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_returnLoginUserFromAgent">returnLoginUserFromAgent()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_setCookieAutoLoginKey">setCookieAutoLoginKey()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_update">update()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_updatePassword">updatePassword()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-UsersService.html#method_getAuthSessionKey">getAuthSessionKey()</a></li>
                                     </ul>
             </li>

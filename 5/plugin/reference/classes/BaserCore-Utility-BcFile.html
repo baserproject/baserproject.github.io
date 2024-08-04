@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -608,11 +612,25 @@
 <dd>Constructor</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="-deprecated" href="classes/BaserCore-Utility-BcFile.html#method_close">close()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>close</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcFile.html#method_create">create()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>ファイルを作成する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcFile.html#method_delete">delete()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>ファイルを削除</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcFile.html#method_getPath">getPath()</a>
@@ -627,6 +645,13 @@
                                 &nbsp;: false|string    </span>
 </dt>
 <dd>ファイルを読み込む</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcFile.html#method_size">size()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>ファイルのサイズを取得</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcFile.html#method_write">write()</a>
@@ -777,6 +802,48 @@
         class="phpdocumentor-element
             -method
             -public
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_close">
+        close()
+        <a href="classes/BaserCore-Utility-BcFile.html#method_close" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFile.php"><a href="files/plugins-baser-core-src-utility-bcfile.html"><abbr title="plugins/baser-core/src/Utility/BcFile.php">BcFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">close</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">close</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>since 5.1.0 後方互換用に配置</p>
+
+            </article>
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_create">
@@ -831,6 +898,45 @@
                                              
                                     </dd>
                                             </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_delete">
+        delete()
+        <a href="classes/BaserCore-Utility-BcFile.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFile.php"><a href="files/plugins-baser-core-src-utility-bcfile.html"><abbr title="plugins/baser-core/src/Utility/BcFile.php">BcFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">108</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ファイルを削除</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">delete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
 
     
 
@@ -943,6 +1049,45 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">false|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_size">
+        size()
+        <a href="classes/BaserCore-Utility-BcFile.html#method_size" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcFile.php"><a href="files/plugins-baser-core-src-utility-bcfile.html"><abbr title="plugins/baser-core/src/Utility/BcFile.php">BcFile.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ファイルのサイズを取得</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">size</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
             </section>
 
 </article>
@@ -1155,9 +1300,12 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method___construct">__construct()</a></li>
+                                            <li class="-deprecated"><a href="classes/BaserCore-Utility-BcFile.html#method_close">close()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_create">create()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_delete">delete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_getPath">getPath()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_read">read()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_size">size()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_write">write()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcFile.html#method_checkParentFolder">checkParentFolder()</a></li>
                                     </ul>

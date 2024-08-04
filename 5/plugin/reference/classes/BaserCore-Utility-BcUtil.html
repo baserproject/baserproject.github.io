@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -697,7 +701,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcUtil.html#method_createRequest">createRequest()</a>
     <span>
-                                &nbsp;: <abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>    </span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>    </span>
 </dt>
 <dd>Request を取得する</dd>
 
@@ -1252,7 +1256,7 @@ base64_decode が前提</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -1339,7 +1343,7 @@ base64_decode が前提</dd>
     <span class="phpdocumentor-signature__visibility">protected</span>
     <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
     <span class="phpdocumentor-signature__name">$_detectors</span>
-     = <span class="phpdocumentor-signature__default-value">[&#039;get&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;GET&#039;], &#039;post&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;POST&#039;], &#039;put&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;PUT&#039;], &#039;patch&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;PATCH&#039;], &#039;delete&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;DELETE&#039;], &#039;head&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;HEAD&#039;], &#039;options&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;OPTIONS&#039;], &#039;ssl&#039; =&gt; [&#039;env&#039; =&gt; &#039;HTTPS&#039;, &#039;options&#039; =&gt; [1, &#039;on&#039;]], &#039;ajax&#039; =&gt; [&#039;env&#039; =&gt; &#039;HTTP_X_REQUESTED_WITH&#039;, &#039;value&#039; =&gt; &#039;XMLHttpRequest&#039;], &#039;json&#039; =&gt; [&#039;accept&#039; =&gt; [&#039;application/json&#039;], &#039;param&#039; =&gt; &#039;_ext&#039;, &#039;value&#039; =&gt; &#039;json&#039;], &#039;xml&#039; =&gt; [&#039;accept&#039; =&gt; [&#039;application/xml&#039;, &#039;text/xml&#039;], &#039;param&#039; =&gt; &#039;_ext&#039;, &#039;value&#039; =&gt; &#039;xml&#039;]]</span></code>
+     = <span class="phpdocumentor-signature__default-value">[&#039;get&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;GET&#039;], &#039;post&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;POST&#039;], &#039;put&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;PUT&#039;], &#039;patch&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;PATCH&#039;], &#039;delete&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;DELETE&#039;], &#039;head&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;HEAD&#039;], &#039;options&#039; =&gt; [&#039;env&#039; =&gt; &#039;REQUEST_METHOD&#039;, &#039;value&#039; =&gt; &#039;OPTIONS&#039;], &#039;https&#039; =&gt; [&#039;env&#039; =&gt; &#039;HTTPS&#039;, &#039;options&#039; =&gt; [1, &#039;on&#039;]], &#039;ajax&#039; =&gt; [&#039;env&#039; =&gt; &#039;HTTP_X_REQUESTED_WITH&#039;, &#039;value&#039; =&gt; &#039;XMLHttpRequest&#039;], &#039;json&#039; =&gt; [&#039;accept&#039; =&gt; [&#039;application/json&#039;], &#039;param&#039; =&gt; &#039;_ext&#039;, &#039;value&#039; =&gt; &#039;json&#039;], &#039;xml&#039; =&gt; [&#039;accept&#039; =&gt; [&#039;application/xml&#039;, &#039;text/xml&#039;], &#039;exclude&#039; =&gt; [&#039;text/html&#039;], &#039;param&#039; =&gt; &#039;_ext&#039;, &#039;value&#039; =&gt; &#039;xml&#039;]]</span></code>
 
         <section class="phpdocumentor-description"><p>BcUtil::createRequest() にて
 ServerRequest::_detectors を初期化する際に利用</p>
@@ -1373,7 +1377,7 @@ ServerRequest::_detectors を初期化する際に利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1480</span>
+    <span class="phpdocumentor-element-found-in__line">1500</span>
 
     </aside>
 
@@ -1447,7 +1451,7 @@ ServerRequest::_detectors を初期化する際に利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">620</span>
+    <span class="phpdocumentor-element-found-in__line">625</span>
 
     </aside>
 
@@ -1520,7 +1524,7 @@ ServerRequest::_detectors を初期化する際に利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2124</span>
+    <span class="phpdocumentor-element-found-in__line">2144</span>
 
     </aside>
 
@@ -1568,6 +1572,13 @@ ServerRequest::_detectors を初期化する際に利用</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1592,7 +1603,7 @@ ServerRequest::_detectors を初期化する際に利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2144</span>
+    <span class="phpdocumentor-element-found-in__line">2165</span>
 
     </aside>
 
@@ -1646,6 +1657,13 @@ base64エンコードを行います。</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1670,7 +1688,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1398</span>
+    <span class="phpdocumentor-element-found-in__line">1418</span>
 
     </aside>
 
@@ -1745,7 +1763,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1786</span>
+    <span class="phpdocumentor-element-found-in__line">1803</span>
 
     </aside>
 
@@ -1804,7 +1822,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1759</span>
+    <span class="phpdocumentor-element-found-in__line">1777</span>
 
     </aside>
 
@@ -1881,7 +1899,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2097</span>
+    <span class="phpdocumentor-element-found-in__line">2116</span>
 
     </aside>
 
@@ -1941,6 +1959,13 @@ base64エンコードを行います。</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1965,7 +1990,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1738</span>
+    <span class="phpdocumentor-element-found-in__line">1757</span>
 
     </aside>
 
@@ -2029,7 +2054,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">528</span>
+    <span class="phpdocumentor-element-found-in__line">533</span>
 
     </aside>
 
@@ -2092,7 +2117,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">543</span>
+    <span class="phpdocumentor-element-found-in__line">548</span>
 
     </aside>
 
@@ -2148,7 +2173,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1138</span>
+    <span class="phpdocumentor-element-found-in__line">1145</span>
 
     </aside>
 
@@ -2249,7 +2274,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1655</span>
+    <span class="phpdocumentor-element-found-in__line">1674</span>
 
     </aside>
 
@@ -2257,7 +2282,7 @@ base64エンコードを行います。</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">createRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;/&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;GET&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">createRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;/&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;GET&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2329,7 +2354,7 @@ base64エンコードを行います。</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
             </section>
 
 </article>
@@ -2347,7 +2372,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1323</span>
+    <span class="phpdocumentor-element-found-in__line">1343</span>
 
     </aside>
 
@@ -2435,7 +2460,7 @@ base64エンコードを行います。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1435</span>
+    <span class="phpdocumentor-element-found-in__line">1455</span>
 
     </aside>
 
@@ -2509,7 +2534,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1544</span>
+    <span class="phpdocumentor-element-found-in__line">1564</span>
 
     </aside>
 
@@ -2586,7 +2611,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1580</span>
+    <span class="phpdocumentor-element-found-in__line">1601</span>
 
     </aside>
 
@@ -2692,7 +2717,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1818</span>
+    <span class="phpdocumentor-element-found-in__line">1834</span>
 
     </aside>
 
@@ -2769,7 +2794,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">375</span>
+    <span class="phpdocumentor-element-found-in__line">380</span>
 
     </aside>
 
@@ -2836,7 +2861,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">951</span>
+    <span class="phpdocumentor-element-found-in__line">956</span>
 
     </aside>
 
@@ -2903,7 +2928,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">890</span>
+    <span class="phpdocumentor-element-found-in__line">895</span>
 
     </aside>
 
@@ -2970,7 +2995,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2048</span>
+    <span class="phpdocumentor-element-found-in__line">2065</span>
 
     </aside>
 
@@ -3043,7 +3068,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">388</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -3110,7 +3135,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1101</span>
+    <span class="phpdocumentor-element-found-in__line">1107</span>
 
     </aside>
 
@@ -3178,7 +3203,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1342</span>
+    <span class="phpdocumentor-element-found-in__line">1362</span>
 
     </aside>
 
@@ -3255,7 +3280,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1285</span>
+    <span class="phpdocumentor-element-found-in__line">1300</span>
 
     </aside>
 
@@ -3323,7 +3348,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">476</span>
+    <span class="phpdocumentor-element-found-in__line">481</span>
 
     </aside>
 
@@ -3383,7 +3408,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">464</span>
+    <span class="phpdocumentor-element-found-in__line">469</span>
 
     </aside>
 
@@ -3419,6 +3444,13 @@ UserDir に対応</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -3443,7 +3475,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1036</span>
+    <span class="phpdocumentor-element-found-in__line">1042</span>
 
     </aside>
 
@@ -3510,7 +3542,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1235</span>
+    <span class="phpdocumentor-element-found-in__line">1242</span>
 
     </aside>
 
@@ -3577,7 +3609,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">651</span>
+    <span class="phpdocumentor-element-found-in__line">656</span>
 
     </aside>
 
@@ -3648,7 +3680,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
     </aside>
 
@@ -3727,7 +3759,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">688</span>
+    <span class="phpdocumentor-element-found-in__line">693</span>
 
     </aside>
 
@@ -3819,7 +3851,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2202</span>
+    <span class="phpdocumentor-element-found-in__line">2223</span>
 
     </aside>
 
@@ -3925,7 +3957,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1004</span>
+    <span class="phpdocumentor-element-found-in__line">1010</span>
 
     </aside>
 
@@ -4004,7 +4036,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">418</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
     </aside>
 
@@ -4084,7 +4116,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1853</span>
+    <span class="phpdocumentor-element-found-in__line">1869</span>
 
     </aside>
 
@@ -4184,7 +4216,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1910</span>
+    <span class="phpdocumentor-element-found-in__line">1926</span>
 
     </aside>
 
@@ -4284,7 +4316,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1357</span>
+    <span class="phpdocumentor-element-found-in__line">1377</span>
 
     </aside>
 
@@ -4361,7 +4393,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">857</span>
+    <span class="phpdocumentor-element-found-in__line">862</span>
 
     </aside>
 
@@ -4450,7 +4482,7 @@ UserDir に対応</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -4530,7 +4562,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1022</span>
+    <span class="phpdocumentor-element-found-in__line">1028</span>
 
     </aside>
 
@@ -4597,7 +4629,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1074</span>
+    <span class="phpdocumentor-element-found-in__line">1080</span>
 
     </aside>
 
@@ -4674,7 +4706,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1049</span>
+    <span class="phpdocumentor-element-found-in__line">1055</span>
 
     </aside>
 
@@ -4751,7 +4783,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">401</span>
+    <span class="phpdocumentor-element-found-in__line">406</span>
 
     </aside>
 
@@ -4830,7 +4862,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2068</span>
+    <span class="phpdocumentor-element-found-in__line">2085</span>
 
     </aside>
 
@@ -4907,7 +4939,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1270</span>
+    <span class="phpdocumentor-element-found-in__line">1281</span>
 
     </aside>
 
@@ -4970,7 +5002,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">969</span>
+    <span class="phpdocumentor-element-found-in__line">975</span>
 
     </aside>
 
@@ -5016,6 +5048,13 @@ false の場合は、通常の配列として取得する</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -5040,7 +5079,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">800</span>
+    <span class="phpdocumentor-element-found-in__line">805</span>
 
     </aside>
 
@@ -5124,7 +5163,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">838</span>
+    <span class="phpdocumentor-element-found-in__line">843</span>
 
     </aside>
 
@@ -5205,7 +5244,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">930</span>
+    <span class="phpdocumentor-element-found-in__line">935</span>
 
     </aside>
 
@@ -5272,7 +5311,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">665</span>
+    <span class="phpdocumentor-element-found-in__line">670</span>
 
     </aside>
 
@@ -5355,7 +5394,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -5443,7 +5482,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1212</span>
+    <span class="phpdocumentor-element-found-in__line">1219</span>
 
     </aside>
 
@@ -5510,7 +5549,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">494</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -5591,7 +5630,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2222</span>
+    <span class="phpdocumentor-element-found-in__line">2243</span>
 
     </aside>
 
@@ -5638,7 +5677,7 @@ false の場合は、通常の配列として取得する</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">560</span>
+    <span class="phpdocumentor-element-found-in__line">565</span>
 
     </aside>
 
@@ -5720,7 +5759,7 @@ Router::reload() や、Router::setRequestInfo() で調整しようとしたが�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">589</span>
 
     </aside>
 
@@ -5797,7 +5836,7 @@ Router::reload() や、Router::setRequestInfo() で調整しようとしたが�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">241</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -5864,7 +5903,7 @@ Router::reload() や、Router::setRequestInfo() で調整しようとしたが�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">772</span>
+    <span class="phpdocumentor-element-found-in__line">777</span>
 
     </aside>
 
@@ -5933,7 +5972,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2159</span>
+    <span class="phpdocumentor-element-found-in__line">2180</span>
 
     </aside>
 
@@ -6010,7 +6049,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2082</span>
+    <span class="phpdocumentor-element-found-in__line">2100</span>
 
     </aside>
 
@@ -6046,6 +6085,13 @@ $_ENV は、bootstrap にて設定
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -6070,7 +6116,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1122</span>
+    <span class="phpdocumentor-element-found-in__line">1129</span>
 
     </aside>
 
@@ -6106,6 +6152,13 @@ $_ENV は、bootstrap にて設定
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -6130,7 +6183,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">254</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -6197,7 +6250,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1832</span>
+    <span class="phpdocumentor-element-found-in__line">1848</span>
 
     </aside>
 
@@ -6264,7 +6317,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1166</span>
+    <span class="phpdocumentor-element-found-in__line">1173</span>
 
     </aside>
 
@@ -6331,7 +6384,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2022</span>
+    <span class="phpdocumentor-element-found-in__line">2039</span>
 
     </aside>
 
@@ -6391,7 +6444,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
     </aside>
 
@@ -6468,7 +6521,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">784</span>
+    <span class="phpdocumentor-element-found-in__line">789</span>
 
     </aside>
 
@@ -6528,7 +6581,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1466</span>
+    <span class="phpdocumentor-element-found-in__line">1486</span>
 
     </aside>
 
@@ -6595,7 +6648,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">135</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -6672,7 +6725,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -6749,7 +6802,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">600</span>
+    <span class="phpdocumentor-element-found-in__line">605</span>
 
     </aside>
 
@@ -6820,7 +6873,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">633</span>
+    <span class="phpdocumentor-element-found-in__line">638</span>
 
     </aside>
 
@@ -6887,7 +6940,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1304</span>
+    <span class="phpdocumentor-element-found-in__line">1324</span>
 
     </aside>
 
@@ -6971,7 +7024,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1614</span>
+    <span class="phpdocumentor-element-found-in__line">1634</span>
 
     </aside>
 
@@ -7026,13 +7079,6 @@ $_ENV は、bootstrap にて設定
                                                                                 
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
                                             </dl>
 
     
@@ -7057,7 +7103,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1636</span>
+    <span class="phpdocumentor-element-found-in__line">1655</span>
 
     </aside>
 
@@ -7117,13 +7163,6 @@ $_ENV は、bootstrap にて設定
                                                                                 
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
                                             </dl>
 
     
@@ -7144,7 +7183,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1967</span>
+    <span class="phpdocumentor-element-found-in__line">1984</span>
 
     </aside>
 
@@ -7185,6 +7224,13 @@ $_ENV は、bootstrap にて設定
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -7213,7 +7259,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1997</span>
+    <span class="phpdocumentor-element-found-in__line">2014</span>
 
     </aside>
 
@@ -7307,7 +7353,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">712</span>
+    <span class="phpdocumentor-element-found-in__line">717</span>
 
     </aside>
 
@@ -7386,7 +7432,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1374</span>
+    <span class="phpdocumentor-element-found-in__line">1394</span>
 
     </aside>
 
@@ -7455,7 +7501,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1186</span>
+    <span class="phpdocumentor-element-found-in__line">1193</span>
 
     </aside>
 
@@ -7532,7 +7578,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">2179</span>
+    <span class="phpdocumentor-element-found-in__line">2200</span>
 
     </aside>
 
@@ -7638,7 +7684,7 @@ $_ENV は、bootstrap にて設定
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">727</span>
+    <span class="phpdocumentor-element-found-in__line">732</span>
 
     </aside>
 
@@ -7714,7 +7760,7 @@ base64_decode が前提</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">752</span>
+    <span class="phpdocumentor-element-found-in__line">757</span>
 
     </aside>
 
@@ -7793,7 +7839,7 @@ base64_decode が前提</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcUtil.php"><a href="files/plugins-baser-core-src-utility-bcutil.html"><abbr title="plugins/baser-core/src/Utility/BcUtil.php">BcUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">352</span>
 
     </aside>
 

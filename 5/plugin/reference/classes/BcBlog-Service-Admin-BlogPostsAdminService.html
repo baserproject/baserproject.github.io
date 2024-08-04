@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -660,13 +664,6 @@
 <dd>新規登録</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BcBlog-Service-BlogPostsService.html#method_createAuthorCondition">createAuthorCondition()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>作成者の条件を作成する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcBlog-Service-BlogPostsService.html#method_createCategoryCondition">createCategoryCondition()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -1064,7 +1061,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">634</span>
+    <span class="phpdocumentor-element-found-in__line">615</span>
 
     </aside>
 
@@ -1147,7 +1144,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">775</span>
+    <span class="phpdocumentor-element-found-in__line">756</span>
 
     </aside>
 
@@ -1231,7 +1228,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">747</span>
+    <span class="phpdocumentor-element-found-in__line">728</span>
 
     </aside>
 
@@ -1310,7 +1307,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">583</span>
+    <span class="phpdocumentor-element-found-in__line">564</span>
 
     </aside>
 
@@ -1379,90 +1376,6 @@ select を利用した場合、関連テーブルのカラムを指定しない�
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_createAuthorCondition">
-        createAuthorCondition()
-        <a href="classes/BcBlog-Service-BlogPostsService.html#method_createAuthorCondition" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">548</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">作成者の条件を作成する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">createAuthorCondition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$conditions</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$conditions</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$author</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BcBlog-Service-BlogPostsService.html#method_createAuthorCondition#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_createCategoryCondition">
         createCategoryCondition()
         <a href="classes/BcBlog-Service-BlogPostsService.html#method_createCategoryCondition" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1471,7 +1384,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">404</span>
 
     </aside>
 
@@ -1576,7 +1489,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">487</span>
+    <span class="phpdocumentor-element-found-in__line">485</span>
 
     </aside>
 
@@ -1660,7 +1573,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -1706,6 +1619,13 @@ select を利用した場合、関連テーブルのカラムを指定しない�
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1730,7 +1650,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">465</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 
     </aside>
 
@@ -1816,7 +1736,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">515</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
@@ -1907,7 +1827,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">731</span>
+    <span class="phpdocumentor-element-found-in__line">712</span>
 
     </aside>
 
@@ -2068,7 +1988,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">651</span>
+    <span class="phpdocumentor-element-found-in__line">632</span>
 
     </aside>
 
@@ -2231,7 +2151,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -2308,7 +2228,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">816</span>
+    <span class="phpdocumentor-element-found-in__line">797</span>
 
     </aside>
 
@@ -2316,7 +2236,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getIndexByAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$author</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Query">Query</abbr></span></code>
+                    <span class="phpdocumentor-signature__name">getIndexByAuthor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\ORM\Query">Query</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2325,8 +2245,8 @@ select を利用した場合、関連テーブルのカラムを指定しない�
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$author</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$userId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2392,7 +2312,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">800</span>
+    <span class="phpdocumentor-element-found-in__line">781</span>
 
     </aside>
 
@@ -2476,7 +2396,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">850</span>
+    <span class="phpdocumentor-element-found-in__line">831</span>
 
     </aside>
 
@@ -2574,7 +2494,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">832</span>
+    <span class="phpdocumentor-element-found-in__line">813</span>
 
     </aside>
 
@@ -2658,7 +2578,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">564</span>
+    <span class="phpdocumentor-element-found-in__line">545</span>
 
     </aside>
 
@@ -2742,7 +2662,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">908</span>
+    <span class="phpdocumentor-element-found-in__line">889</span>
 
     </aside>
 
@@ -2821,7 +2741,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">871</span>
+    <span class="phpdocumentor-element-found-in__line">852</span>
 
     </aside>
 
@@ -2977,7 +2897,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">946</span>
+    <span class="phpdocumentor-element-found-in__line">927</span>
 
     </aside>
 
@@ -3138,7 +3058,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">761</span>
+    <span class="phpdocumentor-element-found-in__line">742</span>
 
     </aside>
 
@@ -3215,7 +3135,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">982</span>
+    <span class="phpdocumentor-element-found-in__line">964</span>
 
     </aside>
 
@@ -3270,6 +3190,13 @@ select を利用した場合、関連テーブルのカラムを指定しない�
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
@@ -3642,7 +3569,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">691</span>
+    <span class="phpdocumentor-element-found-in__line">672</span>
 
     </aside>
 
@@ -3721,7 +3648,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">356</span>
 
     </aside>
 
@@ -3874,7 +3801,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">712</span>
+    <span class="phpdocumentor-element-found-in__line">693</span>
 
     </aside>
 
@@ -3953,7 +3880,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">613</span>
+    <span class="phpdocumentor-element-found-in__line">594</span>
 
     </aside>
 
@@ -4039,7 +3966,7 @@ select を利用した場合、関連テーブルのカラムを指定しない�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogPostsService.php"><a href="files/plugins-bc-blog-src-service-blogpostsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogPostsService.php">BlogPostsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
     </aside>
 
@@ -4244,7 +4171,6 @@ select を利用した場合、関連テーブルのカラムを指定しない�
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_batch">batch()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_copy">copy()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_create">create()</a></li>
-                                            <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_createAuthorCondition">createAuthorCondition()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_createCategoryCondition">createCategoryCondition()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_createKeywordCondition">createKeywordCondition()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogPostsService.html#method_createOrder">createOrder()</a></li>

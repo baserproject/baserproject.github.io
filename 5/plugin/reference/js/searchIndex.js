@@ -373,7 +373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\BcAdminAppController\u003A\u003AredirectIfIsNotSameSite\u0028\u0029",
             "name": "redirectIfIsNotSameSite",
-            "summary": "siteUrl\u3084\u3001sslUrl\u3068\u73FE\u5728\u306EURL\u304C\u9055\u3046\u5834\u5408\u306B\u306F\u3001\u305D\u3061\u3089\u306EURL\u306B\u30EA\u30C0\u30A4\u30EC\u30AF\u30C8\u3092\u884C\u3046\nsetting.php\u0020\u306B\u3066\u3001cmsUrl\u3068\u3057\u3066\u3001cmsUrl\u3092\u5B9A\u7FA9\u3057\u305F\u5834\u5408\u306B\u306F\u305D\u3061\u3089\u3092\u512A\u5148\u3059\u308B",
+            "summary": "siteUrl\u3084\u3001cmsUrl\u3068\u73FE\u5728\u306EURL\u304C\u9055\u3046\u5834\u5408\u306B\u306F\u3001\u305D\u3061\u3089\u306EURL\u306B\u30EA\u30C0\u30A4\u30EC\u30AF\u30C8\u3092\u884C\u3046\nsetting.php\u0020\u306B\u3066\u3001cmsUrl\u3068\u3057\u3066\u3001cmsUrl\u3092\u5B9A\u7FA9\u3057\u305F\u5834\u5408\u306B\u306F\u305D\u3061\u3089\u3092\u512A\u5148\u3059\u308B",
             "url": "classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\ContentFoldersController",
@@ -580,11 +580,6 @@ Search.appendIndex(
             "name": "PluginsController",
             "summary": "Class\u0020PluginsController",
             "url": "classes/BaserCore-Controller-Admin-PluginsController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003Ainitialize\u0028\u0029",
-            "name": "initialize",
-            "summary": "initialize",
-            "url": "classes/BaserCore-Controller-Admin-PluginsController.html#method_initialize"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\PluginsController\u003A\u003AbeforeFilter\u0028\u0029",
             "name": "beforeFilter",
@@ -821,6 +816,11 @@ Search.appendIndex(
             "summary": "\u7BA1\u7406\u753B\u9762\u3078\u30ED\u30B0\u30A4\u30F3\u3059\u308B",
             "url": "classes/BaserCore-Controller-Admin-UsersController.html#method_login"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\UsersController\u003A\u003Alogin_code\u0028\u0029",
+            "name": "login_code",
+            "summary": "\u4E8C\u6BB5\u968E\u8A8D\u8A3C\u30B3\u30FC\u30C9\u5165\u529B",
+            "url": "classes/BaserCore-Controller-Admin-UsersController.html#method_login_code"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\UsersController\u003A\u003Alogin_agent\u0028\u0029",
             "name": "login_agent",
             "summary": "\u4EE3\u7406\u30ED\u30B0\u30A4\u30F3",
@@ -850,6 +850,11 @@ Search.appendIndex(
             "name": "edit",
             "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FC\u7DE8\u96C6",
             "url": "classes/BaserCore-Controller-Admin-UsersController.html#method_edit"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\Admin\\UsersController\u003A\u003Aedit_password\u0028\u0029",
+            "name": "edit_password",
+            "summary": "",
+            "url": "classes/BaserCore-Controller-Admin-UsersController.html#method_edit_password"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\UsersController\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
@@ -925,6 +930,11 @@ Search.appendIndex(
             "name": "AnalyseController",
             "summary": "Class\u0020AnalyseController",
             "url": "classes/BaserCore-Controller-AnalyseController.html"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\AnalyseController\u003A\u003AviewClasses\u0028\u0029",
+            "name": "viewClasses",
+            "summary": "View\u0020classes",
+            "url": "classes/BaserCore-Controller-AnalyseController.html#method_viewClasses"
         },                {
             "fqsen": "\\BaserCore\\Controller\\AnalyseController\u003A\u003Aindex\u0028\u0029",
             "name": "index",
@@ -1561,6 +1571,11 @@ Search.appendIndex(
             "summary": "Class\u0020BcApiController",
             "url": "classes/BaserCore-Controller-Api-BcApiController.html"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AviewClasses\u0028\u0029",
+            "name": "viewClasses",
+            "summary": "View\u0020classes",
+            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AbeforeFilter\u0028\u0029",
             "name": "beforeFilter",
             "summary": "Before\u0020Filter",
@@ -2091,6 +2106,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BaserCore-Error-BcFormFailedException.html#property__messageTemplate"
         },                {
+            "fqsen": "\\BaserCore\\Error\\MissingColumnException",
+            "name": "MissingColumnException",
+            "summary": "MissingColumnException",
+            "url": "classes/BaserCore-Error-MissingColumnException.html"
+        },                {
+            "fqsen": "\\BaserCore\\Event\\BcAuthenticationEventListener",
+            "name": "BcAuthenticationEventListener",
+            "summary": "Class\u0020BcAuthenticationEventListener",
+            "url": "classes/BaserCore-Event-BcAuthenticationEventListener.html"
+        },                {
+            "fqsen": "\\BaserCore\\Event\\BcAuthenticationEventListener\u003A\u003AimplementedEvents\u0028\u0029",
+            "name": "implementedEvents",
+            "summary": "implementedEvents",
+            "url": "classes/BaserCore-Event-BcAuthenticationEventListener.html#method_implementedEvents"
+        },                {
+            "fqsen": "\\BaserCore\\Event\\BcAuthenticationEventListener\u003A\u003AafterIdentify\u0028\u0029",
+            "name": "afterIdentify",
+            "summary": "\u8A8D\u8A3C\u5F8C\u51E6\u7406",
+            "url": "classes/BaserCore-Event-BcAuthenticationEventListener.html#method_afterIdentify"
+        },                {
             "fqsen": "\\BaserCore\\Event\\BcContainerEventListener",
             "name": "BcContainerEventListener",
             "summary": "Class\u0020BcContainerEventListener",
@@ -2480,6 +2515,16 @@ Search.appendIndex(
             "name": "plugin",
             "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u540D",
             "url": "classes/BaserCore-Mailer-BcMailer.html#property_plugin"
+        },                {
+            "fqsen": "\\BaserCore\\Mailer\\TwoFactorAuthenticationMailer",
+            "name": "TwoFactorAuthenticationMailer",
+            "summary": "Class\u0020TwoFactorAuthenticationMailer",
+            "url": "classes/BaserCore-Mailer-TwoFactorAuthenticationMailer.html"
+        },                {
+            "fqsen": "\\BaserCore\\Mailer\\TwoFactorAuthenticationMailer\u003A\u003AsendCode\u0028\u0029",
+            "name": "sendCode",
+            "summary": "\u8A8D\u8A3C\u30B3\u30FC\u30C9\u9001\u4FE1",
+            "url": "classes/BaserCore-Mailer-TwoFactorAuthenticationMailer.html#method_sendCode"
         },                {
             "fqsen": "\\BaserCore\\Middleware\\BcAdminMiddleware",
             "name": "BcAdminMiddleware",
@@ -3526,6 +3571,11 @@ Search.appendIndex(
             "summary": "Initialize\u0020method",
             "url": "classes/BaserCore-Model-Table-PermissionGroupsTable.html#method_initialize"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\PermissionGroupsTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Validation\u0020Default",
+            "url": "classes/BaserCore-Model-Table-PermissionGroupsTable.html#method_validationDefault"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\PermissionsTable",
             "name": "PermissionsTable",
             "summary": "Class\u0020PermissionTable",
@@ -3796,6 +3846,56 @@ Search.appendIndex(
             "summary": "\u4FDD\u5B58\u6642\u306B\u30A8\u30A4\u30EA\u30A2\u30B9\u304C\u5909\u66F4\u3055\u308C\u305F\u304B\u3069\u3046\u304B",
             "url": "classes/BaserCore-Model-Table-SitesTable.html#property_changedAlias"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait",
+            "name": "SoftDeleteTrait",
+            "summary": "SoftDeleteTrait",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AgetSoftDeleteField\u0028\u0029",
+            "name": "getSoftDeleteField",
+            "summary": "Get\u0020the\u0020configured\u0020deletion\u0020field",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_getSoftDeleteField"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003ASelectQuery\u0028\u0029",
+            "name": "SelectQuery",
+            "summary": "Query\u0020override.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_SelectQuery"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003A_processDelete\u0028\u0029",
+            "name": "_processDelete",
+            "summary": "Perform\u0020the\u0020delete\u0020operation.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method__processDelete"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AdeleteAll\u0028\u0029",
+            "name": "deleteAll",
+            "summary": "Soft\u0020deletes\u0020all\u0020records\u0020matching\u0020\u0060\u0024conditions\u0060.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_deleteAll"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AhardDelete\u0028\u0029",
+            "name": "hardDelete",
+            "summary": "Hard\u0020deletes\u0020the\u0020given\u0020\u0024entity.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_hardDelete"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AhardDeleteAll\u0028\u0029",
+            "name": "hardDeleteAll",
+            "summary": "Hard\u0020deletes\u0020all\u0020records\u0020that\u0020were\u0020soft\u0020deleted\u0020before\u0020a\u0020given\u0020date.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_hardDeleteAll"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003Arestore\u0028\u0029",
+            "name": "restore",
+            "summary": "Restore\u0020a\u0020soft\u0020deleted\u0020entity\u0020into\u0020an\u0020active\u0020state.",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_restore"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\TwoFactorAuthenticationsTable",
+            "name": "TwoFactorAuthenticationsTable",
+            "summary": "Class\u0020TwoFactorAuthenticationsTable",
+            "url": "classes/BaserCore-Model-Table-TwoFactorAuthenticationsTable.html"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\TwoFactorAuthenticationsTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize",
+            "url": "classes/BaserCore-Model-Table-TwoFactorAuthenticationsTable.html#method_initialize"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\UserGroupsTable",
             "name": "UserGroupsTable",
             "summary": "Class\u0020UserGroupsTable",
@@ -3860,6 +3960,11 @@ Search.appendIndex(
             "name": "validationNew",
             "summary": "Validation\u0020New",
             "url": "classes/BaserCore-Model-Table-UsersTable.html#method_validationNew"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\UsersTable\u003A\u003AvalidationPassword\u0028\u0029",
+            "name": "validationPassword",
+            "summary": "validationPassword",
+            "url": "classes/BaserCore-Model-Table-UsersTable.html#method_validationPassword"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\UsersTable\u003A\u003AvalidationPasswordUpdate\u0028\u0029",
             "name": "validationPasswordUpdate",
@@ -4026,16 +4131,6 @@ Search.appendIndex(
             "summary": "PHP\u69CB\u6587\u30C1\u30A7\u30C3\u30AF",
             "url": "classes/BaserCore-Model-Validation-PageValidation.html#method_phpValidSyntax"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Validation\\SiteConfigValidation",
-            "name": "SiteConfigValidation",
-            "summary": "Class\u0020SiteConfigValidation",
-            "url": "classes/BaserCore-Model-Validation-SiteConfigValidation.html"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Validation\\SiteConfigValidation\u003A\u003AsslUrlExists\u0028\u0029",
-            "name": "sslUrlExists",
-            "summary": "SSL\u7528\u306EURL\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
-            "url": "classes/BaserCore-Model-Validation-SiteConfigValidation.html#method_sslUrlExists"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\SiteValidation",
             "name": "SiteValidation",
             "summary": "Class\u0020SiteValidation",
@@ -4051,6 +4146,11 @@ Search.appendIndex(
             "summary": "\u30A8\u30A4\u30EA\u30A2\u30B9\u3068\u540C\u540D\u306E\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u5B58\u5728\u3059\u308B\u304B\u78BA\u8A8D\u3059\u308B",
             "url": "classes/BaserCore-Model-Validation-SiteValidation.html#method_checkContentExists"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\SiteValidation\u003A\u003AcheckSiteAlias\u0028\u0029",
+            "name": "checkSiteAlias",
+            "summary": "\u30B5\u30A4\u30C8\u30A8\u30EA\u30A2\u30B9\u3092\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\n\u30C9\u30E1\u30A4\u30F3\u30BF\u30A4\u30D7\u304C\u5916\u90E8\u30C9\u30E1\u30A4\u30F3\u306E\u5834\u5408\u3001\n\u82F1\u6570\u3001\u30CF\u30A4\u30D5\u30F3\u3001\u30A2\u30F3\u30C0\u30FC\u30B9\u30B3\u30A2\u4EE5\u5916\u30B9\u30E9\u30C3\u30B7\u30E5\uFF08\/\uFF09\u30FB\u30C9\u30C3\u30C8\uFF08.\uFF09\u3082\u8A31\u5BB9",
+            "url": "classes/BaserCore-Model-Validation-SiteValidation.html#method_checkSiteAlias"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\UserValidation",
             "name": "UserValidation",
             "summary": "Class\u0020UserValidation",
@@ -4060,6 +4160,16 @@ Search.appendIndex(
             "name": "willChangeSelfGroup",
             "summary": "\u81EA\u8EAB\u306E\u5C5E\u3059\u308B\u30E6\u30FC\u30B6\u30FC\u30B0\u30EB\u30FC\u30D7\u3092\u66F4\u65B0\u3057\u3088\u3046\u3068\u3057\u3066\u3044\u308B\u304B\u3069\u3046\u304B\u78BA\u8A8D",
             "url": "classes/BaserCore-Model-Validation-UserValidation.html#method_willChangeSelfGroup"
+        },                {
+            "fqsen": "\\BaserCore\\ORM\\SelectQuery",
+            "name": "SelectQuery",
+            "summary": "Soft\u0020delete\u002Daware\u0020query",
+            "url": "classes/BaserCore-ORM-SelectQuery.html"
+        },                {
+            "fqsen": "\\BaserCore\\ORM\\SelectQuery\u003A\u003AtriggerBeforeFind\u0028\u0029",
+            "name": "triggerBeforeFind",
+            "summary": "Overwriting\u0020triggerBeforeFind\u0028\u0029\u0020to\u0020let\u0020queries\u0020not\u0020return\u0020soft\u0020deleted\u0020records",
+            "url": "classes/BaserCore-ORM-SelectQuery.html#method_triggerBeforeFind"
         },                {
             "fqsen": "\\Cake\\Routing\\Asset",
             "name": "Asset",
@@ -7086,6 +7196,46 @@ Search.appendIndex(
             "summary": "\u6307\u5B9A\u3057\u305F\u30C6\u30FC\u30DE\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u7528\u306E\u30C6\u30FC\u30DE\u3068\u3057\u3066\u4E00\u6642\u30D5\u30A9\u30EB\u30C0\u306B\u4F5C\u6210\u3059\u308B",
             "url": "classes/BaserCore-Service-ThemesServiceInterface.html#method_createDownloadToTmp"
         },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsService",
+            "name": "TwoFactorAuthenticationsService",
+            "summary": "Class\u0020TwoFactorAuthenticationsService",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsService.html"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "TwoFactorAuthenticationsService\u0020constructor.",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsService.html#method___construct"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsService\u003A\u003Asend\u0028\u0029",
+            "name": "send",
+            "summary": "\u8A8D\u8A3C\u30B3\u30FC\u30C9\u9001\u4FE1",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsService.html#method_send"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsService\u003A\u003Averify\u0028\u0029",
+            "name": "verify",
+            "summary": "\u8A8D\u8A3C\u30B3\u30FC\u30C9\u691C\u8A3C",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsService.html#method_verify"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsService\u003A\u003A\u0024TwoFactorAuthentications",
+            "name": "TwoFactorAuthentications",
+            "summary": "TwoFactorAuthentications\u0020Table",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsService.html#property_TwoFactorAuthentications"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsServiceInterface",
+            "name": "TwoFactorAuthenticationsServiceInterface",
+            "summary": "Interface\u0020TwoFactorAuthenticationsServiceInterface",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsServiceInterface.html"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsServiceInterface\u003A\u003Asend\u0028\u0029",
+            "name": "send",
+            "summary": "\u8A8D\u8A3C\u30B3\u30FC\u30C9\u9001\u4FE1",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsServiceInterface.html#method_send"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\TwoFactorAuthenticationsServiceInterface\u003A\u003Averify\u0028\u0029",
+            "name": "verify",
+            "summary": "\u8A8D\u8A3C\u30B3\u30FC\u30C9\u691C\u8A3C",
+            "url": "classes/BaserCore-Service-TwoFactorAuthenticationsServiceInterface.html#method_verify"
+        },                {
             "fqsen": "\\BaserCore\\Service\\UserGroupsService",
             "name": "UserGroupsService",
             "summary": "Class\u0020UserGroupsService",
@@ -7186,6 +7336,11 @@ Search.appendIndex(
             "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u3092\u66F4\u65B0\u3059\u308B",
             "url": "classes/BaserCore-Service-UsersService.html#method_update"
         },                {
+            "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003AupdatePassword\u0028\u0029",
+            "name": "updatePassword",
+            "summary": "\u30D1\u30B9\u30EF\u30FC\u30C9\u3092\u66F4\u65B0\u3059\u308B",
+            "url": "classes/BaserCore-Service-UsersService.html#method_updatePassword"
+        },                {
             "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003Adelete\u0028\u0029",
             "name": "delete",
             "summary": "\u30E6\u30FC\u30B6\u30FC\u60C5\u5831\u3092\u524A\u9664\u3059\u308B\n\u6700\u5F8C\u306E\u30B7\u30B9\u30C6\u30E0\u7BA1\u7406\u8005\u3067\u306A\u3051\u308C\u3070\u524A\u9664",
@@ -7230,6 +7385,11 @@ Search.appendIndex(
             "name": "checkAutoLogin",
             "summary": "\u30ED\u30B0\u30A4\u30F3\u72B6\u614B\u306E\u4FDD\u5B58\u78BA\u8A8D",
             "url": "classes/BaserCore-Service-UsersService.html#method_checkAutoLogin"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003AcheckPasswordModified\u0028\u0029",
+            "name": "checkPasswordModified",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u306E\u30D1\u30B9\u30EF\u30FC\u30C9\u66F4\u65B0\u65E5\u6642\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BaserCore-Service-UsersService.html#method_checkPasswordModified"
         },                {
             "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003AloginToAgent\u0028\u0029",
             "name": "loginToAgent",
@@ -7491,16 +7651,6 @@ Search.appendIndex(
             "summary": "\u30C6\u30FC\u30D6\u30EB\u3092\u7A7A\u306B\u3059\u308B",
             "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_truncateTable"
         },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AsetUpFixtureManager\u0028\u0029",
-            "name": "setUpFixtureManager",
-            "summary": "setup\u0020FixtureManager",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_setUpFixtureManager"
-        },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AtearDownFixtureManager\u0028\u0029",
-            "name": "tearDownFixtureManager",
-            "summary": "tear\u0020down\u0020FixtureManager",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_tearDownFixtureManager"
-        },                {
             "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AsetUp\u0028\u0029",
             "name": "setUp",
             "summary": "Set\u0020Up",
@@ -7610,16 +7760,6 @@ Search.appendIndex(
             "name": "fixtureTruncate",
             "summary": "FixtureStrategy\u0020\u306B\u3066\u3001TruncateStrategy\u0020\u3092\u5229\u7528\u3059\u308B\u304B\u3069\u3046\u304B",
             "url": "classes/BaserCore-TestSuite-BcTestCase.html#property_fixtureTruncate"
-        },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003A\u0024FixtureManager",
-            "name": "FixtureManager",
-            "summary": "FixtureManager\n\u53E4\u3044\u30D5\u30A3\u30AF\u30B9\u30C1\u30E3\u30FC\u306E\u5F8C\u65B9\u4E92\u63DB\u7528",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureManager"
-        },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003A\u0024FixtureInjector",
-            "name": "FixtureInjector",
-            "summary": "FixtureInjector\n\u53E4\u3044\u30D5\u30A3\u30AF\u30B9\u30C1\u30E3\u30FC\u306E\u5F8C\u65B9\u4E92\u63DB\u7528",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#property_FixtureInjector"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcAbstractDetector",
             "name": "BcAbstractDetector",
@@ -7906,6 +8046,21 @@ Search.appendIndex(
             "summary": "\u30D5\u30A1\u30A4\u30EB\u3092\u66F8\u304D\u8FBC\u3080",
             "url": "classes/BaserCore-Utility-BcFile.html#method_write"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFile\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u3092\u524A\u9664",
+            "url": "classes/BaserCore-Utility-BcFile.html#method_delete"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFile\u003A\u003Asize\u0028\u0029",
+            "name": "size",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u306E\u30B5\u30A4\u30BA\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Utility-BcFile.html#method_size"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFile\u003A\u003Aclose\u0028\u0029",
+            "name": "close",
+            "summary": "close",
+            "url": "classes/BaserCore-Utility-BcFile.html#method_close"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcFile\u003A\u003A\u0024path",
             "name": "path",
             "summary": "\u30D1\u30B9",
@@ -8186,10 +8341,60 @@ Search.appendIndex(
             "summary": "\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u3092\u518D\u5E30\u7684\u306B\u524A\u9664\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcFolder.html#method_delete"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Acopy\u0028\u0029",
+            "name": "copy",
+            "summary": "\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u3092\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_copy"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u3092\u79FB\u52D5\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_move"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Achmod\u0028\u0029",
+            "name": "chmod",
+            "summary": "\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u69CB\u9020\u306E\u30E2\u30FC\u30C9\u3092\u518D\u5E30\u7684\u306B\u5909\u66F4\u3057\u307E\u3059\u3002\u3053\u308C\u306B\u306F\u30D5\u30A1\u30A4\u30EB\u306E\u30E2\u30FC\u30C9\u3082\u5909\u66F4\u3059\u308B\u3053\u3068\u304C\u542B\u307E\u308C\u307E\u3059\u3002",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_chmod"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Atree\u0028\u0029",
+            "name": "tree",
+            "summary": "\u5404\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u5185\u306E\u30CD\u30B9\u30C8\u3055\u308C\u305F\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u3068\u30D5\u30A1\u30A4\u30EB\u306E\u914D\u5217\u3092\u8FD4\u3059",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_tree"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Afind\u0028\u0029",
+            "name": "find",
+            "summary": "",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_find"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Aread\u0028\u0029",
+            "name": "read",
+            "summary": "\u30D5\u30A9\u30EB\u30C0\u5185\u306E\u30D5\u30A1\u30A4\u30EB\u3068\u30D5\u30A9\u30EB\u30C0\u3092\u8AAD\u307F\u8FBC\u3080",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_read"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003Apwd\u0028\u0029",
+            "name": "pwd",
+            "summary": "\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcFolder.html#method_pwd"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003A\u0024path",
             "name": "path",
             "summary": "\u30D1\u30B9",
             "url": "classes/BaserCore-Utility-BcFolder.html#property_path"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003A\u0024mode",
+            "name": "mode",
+            "summary": "\u6A29\u9650",
+            "url": "classes/BaserCore-Utility-BcFolder.html#property_mode"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003A\u0024_messages",
+            "name": "_messages",
+            "summary": "Holds\u0020messages\u0020from\u0020last\u0020method.",
+            "url": "classes/BaserCore-Utility-BcFolder.html#property__messages"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFolder\u003A\u003A\u0024_errors",
+            "name": "_errors",
+            "summary": "Holds\u0020errors\u0020from\u0020last\u0020method.",
+            "url": "classes/BaserCore-Utility-BcFolder.html#property__errors"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcGmaps",
             "name": "BcGmaps",
@@ -11591,6 +11796,11 @@ Search.appendIndex(
             "summary": "\u30B3\u30D4\u30FC\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_copy"
         },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AgetParent\u0028\u0029",
+            "name": "getParent",
+            "summary": "\u89AA\u30AB\u30C6\u30B4\u30EA\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_getParent"
+        },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003A\u0024validationParams",
             "name": "validationParams",
             "summary": "\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u8A2D\u5B9A",
@@ -12345,11 +12555,6 @@ Search.appendIndex(
             "name": "createYearMonthDayCondition",
             "summary": "\u5E74\u6708\u65E5\u6761\u4EF6\u3092\u751F\u6210\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogPostsService.html#method_createYearMonthDayCondition"
-        },                {
-            "fqsen": "\\BcBlog\\Service\\BlogPostsService\u003A\u003AcreateAuthorCondition\u0028\u0029",
-            "name": "createAuthorCondition",
-            "summary": "\u4F5C\u6210\u8005\u306E\u6761\u4EF6\u3092\u4F5C\u6210\u3059\u308B",
-            "url": "classes/BcBlog-Service-BlogPostsService.html#method_createAuthorCondition"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogPostsService\u003A\u003AgetNew\u0028\u0029",
             "name": "getNew",
@@ -16626,11 +16831,6 @@ Search.appendIndex(
             "summary": "Validation\u0020Default",
             "url": "classes/BcMail-Model-Table-MailContentsTable.html#method_validationDefault"
         },                {
-            "fqsen": "\\BcMail\\Model\\Table\\MailContentsTable\u003A\u003AcheckSslUrl\u0028\u0029",
-            "name": "checkSslUrl",
-            "summary": "SSL\u7528\u306EURL\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
-            "url": "classes/BcMail-Model-Table-MailContentsTable.html#method_checkSslUrl"
-        },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailContentsTable\u003A\u003AalphaNumeric\u0028\u0029",
             "name": "alphaNumeric",
             "summary": "\u82F1\u6570\u30C1\u30A7\u30C3\u30AF",
@@ -16698,7 +16898,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailFieldsTable\u003A\u003AhalfTextMailField\u0028\u0029",
             "name": "halfTextMailField",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3068\u3057\u3066\u6B63\u3057\u3044\u6587\u5B57\u5217\u304B\u691C\u8A3C\u3059\u308B\n\u534A\u89D2\u82F1\u6570\u002D_",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3068\u3057\u3066\u6B63\u3057\u3044\u6587\u5B57\u5217\u304B\u691C\u8A3C\u3059\u308B\n\u534A\u89D2\u5C0F\u6587\u5B57\u82F1\u6570\u002D_\n\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306F\u3001DB\u30C6\u30FC\u30D6\u30EB\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3068\u3057\u3066\u5229\u7528\u3055\u308C\u308B\u305F\u3081\u3001\n\u5927\u6587\u5B57\u3092\u5229\u7528\u3057\u305F\u5834\u5408\u306B\u30AF\u30A9\u30FC\u30C8\u3092\u5165\u308C\u306A\u3044\u3068\u30A8\u30E9\u30FC\u3068\u306A\u3063\u3066\u3057\u307E\u3046",
             "url": "classes/BcMail-Model-Table-MailFieldsTable.html#method_halfTextMailField"
         },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailFieldsTable\u003A\u003AsourceMailField\u0028\u0029",
@@ -19241,6 +19441,11 @@ Search.appendIndex(
             "summary": "After\u0020Layout",
             "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#method_afterLayout"
         },                {
+            "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener\u003A\u003AsetUploader\u0028\u0029",
+            "name": "setUploader",
+            "summary": "",
+            "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#method_setUploader"
+        },                {
             "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener\u003A\u003A__getCkeditorUploaderScript\u0028\u0029",
             "name": "__getCkeditorUploaderScript",
             "summary": "CKEditor\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C0\u30FC\u3092\u7D44\u307F\u8FBC\u3080\u70BA\u306EJavascript\u3092\u8FD4\u3059",
@@ -19250,11 +19455,6 @@ Search.appendIndex(
             "name": "events",
             "summary": "Events",
             "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#property_events"
-        },                {
-            "fqsen": "\\BcUploader\\Event\\BcUploaderViewEventListener\u003A\u003A\u0024BcHtml",
-            "name": "BcHtml",
-            "summary": "BcHtmlHelper",
-            "url": "classes/BcUploader-Event-BcUploaderViewEventListener.html#property_BcHtml"
         },                {
             "fqsen": "\\BcUploader\\Model\\Entity\\UploaderCategory",
             "name": "UploaderCategory",
@@ -20220,6 +20420,11 @@ Search.appendIndex(
             "name": "Validation",
             "summary": "",
             "url": "namespaces/basercore-model-validation.html"
+        },                {
+            "fqsen": "\\BaserCore\\ORM",
+            "name": "ORM",
+            "summary": "",
+            "url": "namespaces/basercore-orm.html"
         },                {
             "fqsen": "\\Cake\\Routing",
             "name": "Routing",

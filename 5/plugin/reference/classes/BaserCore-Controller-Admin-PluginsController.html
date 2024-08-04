@@ -105,6 +105,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/basercore-orm.html" class="">ORM</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/basercore-routing.html" class="">Routing</a>
                 
             </li>
@@ -614,18 +618,6 @@
                         &nbsp;: <a href="classes/BaserCore-Controller-Component-BcMessageComponent.html"><abbr title="\BaserCore\Controller\Component\BcMessageComponent">BcMessageComponent</abbr></a>            </span>
 </dt>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator</a>
-    <span>
-                        &nbsp;: <abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr>            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Controller-AppController.html#property_Security">$Security</a>
-    <span>
-                        &nbsp;: <abbr title="\Cake\Controller\Component\SecurityComponent">SecurityComponent</abbr>            </span>
-</dt>
-
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a class="" href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a>
     <span>
@@ -733,11 +725,11 @@
 <dd>プラグインの一覧を表示する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Controller-Admin-PluginsController.html#method_initialize">initialize()</a>
+    <a class="" href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_initialize">initialize()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd>initialize</dd>
+<dd>Initialize</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Controller-Admin-PluginsController.html#method_install">install()</a>
@@ -758,7 +750,7 @@
     <span>
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
-<dd>siteUrlや、sslUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
+<dd>siteUrlや、cmsUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
 setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそちらを優先する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -1049,78 +1041,6 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
         class="
             phpdocumentor-element
             -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_Paginator">
-        $Paginator
-        <a href="classes/BaserCore-Controller-AppController.html#property_Paginator" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Cake\Controller\Component\PaginatorComponent">PaginatorComponent</abbr></span>
-    <span class="phpdocumentor-signature__name">$Paginator</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_Security">
-        $Security
-        <a href="classes/BaserCore-Controller-AppController.html#property_Security" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">0</span>
-
-    </aside>
-
-    
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Cake\Controller\Component\SecurityComponent">SecurityComponent</abbr></span>
-    <span class="phpdocumentor-signature__name">$Security</span>
-    </code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
             -protected
                                                         "
 >
@@ -1176,7 +1096,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -1382,7 +1302,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">274</span>
+    <span class="phpdocumentor-element-found-in__line">261</span>
 
     </aside>
 
@@ -1542,7 +1462,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -1621,7 +1541,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">97</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
     </aside>
 
@@ -1698,7 +1618,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">208</span>
 
     </aside>
 
@@ -1871,7 +1791,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">192</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
     </aside>
 
@@ -1948,7 +1868,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">305</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 
     </aside>
 
@@ -2183,7 +2103,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
     </aside>
 
@@ -2250,17 +2170,17 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 >
     <h4 class="phpdocumentor-element__name" id="method_initialize">
         initialize()
-        <a href="classes/BaserCore-Controller-Admin-PluginsController.html#method_initialize" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_initialize" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">51</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">initialize</p>
+        <p class="phpdocumentor-summary">Initialize</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -2274,19 +2194,11 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/BaserCore-Controller-Admin-PluginsController.html#method_initialize#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_initialize#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">checked</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -2301,11 +2213,13 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
                                              
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
+                    <span class="phpdocumentor-tag__name">note</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                             
+                                                 <section class="phpdocumentor-description"><p>(value=&quot;インストーラーを実装してから対応する&quot;)</p>
+</section>
+
                                     </dd>
                                             </dl>
 
@@ -2327,7 +2241,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
@@ -2484,11 +2398,11 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">siteUrlや、sslUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
+        <p class="phpdocumentor-summary">siteUrlや、cmsUrlと現在のURLが違う場合には、そちらのURLにリダイレクトを行う
 setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそちらを優先する</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -2619,7 +2533,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -2843,7 +2757,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -2934,7 +2848,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -3018,7 +2932,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/PluginsController.php"><a href="files/plugins-baser-core-src-controller-admin-pluginscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/PluginsController.php">PluginsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">159</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -3088,7 +3002,7 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 
     </aside>
 
@@ -3444,7 +3358,7 @@ ServerRequestに設定する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -3510,7 +3424,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -3583,7 +3497,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -3826,7 +3740,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php"><a href="files/plugins-baser-core-src-controller-admin-bcadminappcontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/BcAdminAppController.php">BcAdminAppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">132</span>
 
     </aside>
 
@@ -4047,8 +3961,6 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
                                                     <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#property_Authentication">$Authentication</li>
                                                     <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_BcMessage">$BcMessage</li>
                                                     <li class=""><a href="classes/BaserCore-Controller-Admin-PluginsController.html#property_BcMessage">$BcMessage</li>
-                                                    <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_Paginator">$Paginator</li>
-                                                    <li class=""><a href="classes/BaserCore-Controller-AppController.html#property_Security">$Security</li>
                                                     <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</li>
                                             </ul>
                 </li>
@@ -4069,7 +3981,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-PluginsController.html#method_index">index()</a></li>
-                                            <li class=""><a href="classes/BaserCore-Controller-Admin-PluginsController.html#method_initialize">initialize()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_initialize">initialize()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-PluginsController.html#method_install">install()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_notFound">notFound()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_redirectIfIsNotSameSite">redirectIfIsNotSameSite()</a></li>
