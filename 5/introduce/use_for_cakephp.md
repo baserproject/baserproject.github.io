@@ -15,9 +15,10 @@ composer require baserproject/bc-theme-sample
 composer require baserproject/bc-column
 ```
 
-開発版を取得する場合は、`composer.json` に `"minimum-stability": "dev"` を追加した上で次を実行します。
+開発版を取得する場合は、`composer.json` に `"minimum-stability": "dev"` と `"prefer-stable": false` を追加した上で次を実行します。
 ```shell
-composer require baserproject/baser-core:5.1.x --with-all-dependencies
+# 5.1.x 系の場合
+composer require baserproject/baser-core:5.1.x 
 ```
 
 ### プラグインを追加する
