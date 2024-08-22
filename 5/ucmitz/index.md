@@ -12,7 +12,7 @@
 - [ロードマップ](https://docs.google.com/spreadsheets/d/1TZ71-O_9KiQM9xAB_a_jnSFVrH2dsyKowMLkyGLcI9g/edit#gid=2131306554)
 - [システム要件](./basic/system)
 - [アーキテクチャー設計方針](./basic/architecture_design_policy)
-- [設計書](./specification/index)
+- [設計書](../package/specification/index)
 
 ## 開発の準備
 
