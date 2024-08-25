@@ -29,29 +29,6 @@ git checkout 5.1.x
 git pull origin 5.1.x
 ```
 
-## BaserCore の composer.json を更新
-require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
-```yaml
-# /plugins/baser-core/composer.json
-# 新しいバージョンが 5.1.0 の場合
-    "require": {
-        "baserproject/bc-admin-third": "5.1.0",
-        "baserproject/bc-blog": "5.1.0",
-        "baserproject/bc-content-link": "5.1.0",
-        "baserproject/bc-custom-content": "5.1.0",
-        "baserproject/bc-editor-template": "5.1.0",
-        "baserproject/bc-favorite": "5.1.0",
-        "baserproject/bc-front": "5.1.0",
-        "baserproject/bc-installer": "5.1.0",
-        "baserproject/bc-mail": "5.1.0",
-        "baserproject/bc-search-index": "5.1.0",
-        "baserproject/bc-theme-config": "5.1.0",
-        "baserproject/bc-theme-file": "5.1.0",
-        "baserproject/bc-uploader": "5.1.0",
-        "baserproject/bc-widget-area": "5.1.0",
-    }    
-```
-
 ## composer の設定をマージ
 Dockerコンテナにログインし、マージコマンドを使って、パッケージの設定をルートの composer.json にマージします。
 
@@ -110,6 +87,28 @@ git checkout master
 git merge 5.1.x
 ```
 
+## BaserCore の composer.json を更新
+mater ブランチにて、require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
+```yaml
+# /plugins/baser-core/composer.json
+# 新しいバージョンが 5.1.0 の場合
+    "require": {
+        "baserproject/bc-admin-third": "5.1.0",
+        "baserproject/bc-blog": "5.1.0",
+        "baserproject/bc-content-link": "5.1.0",
+        "baserproject/bc-custom-content": "5.1.0",
+        "baserproject/bc-editor-template": "5.1.0",
+        "baserproject/bc-favorite": "5.1.0",
+        "baserproject/bc-front": "5.1.0",
+        "baserproject/bc-installer": "5.1.0",
+        "baserproject/bc-mail": "5.1.0",
+        "baserproject/bc-search-index": "5.1.0",
+        "baserproject/bc-theme-config": "5.1.0",
+        "baserproject/bc-theme-file": "5.1.0",
+        "baserproject/bc-uploader": "5.1.0",
+        "baserproject/bc-widget-area": "5.1.0",
+    }    
+```
  
 ## リリースコマンドを実行
 モノレポを使うことで、GitHub 上のパッケージごとのレポジトリへ、一括でリリースすることができます。  
@@ -143,7 +142,7 @@ vendor/bin/monorepo-builder release 5.x.x
 
  
 ## 開発ブランチにマージ
-master ブランチにおいてのリリースコマンドで更新された composer.json の変更内容を、 dev ブランチにマージした上でプッシュします。
+master ブランチにおける更新内容を、 dev ブランチにマージした上でプッシュします。
 ```shell
 git checkout 5.1.x
 git merge master
