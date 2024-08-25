@@ -13,7 +13,7 @@ OSの機能やツールを使って既存のテーマをZIP化します。
 ## 新しい環境を準備する
 既存のサイトをそのままbaserCMS５系にアップグレードすることはできません。新しい環境にbaserCMS５をインストールしておく必要があります。
 
-- [インストールガイド](./introduce/index)
+- [インストールガイド](../introduce/index)
 
 ## BcAddonMigratorプラグインをインストール
 [GitHub](https://github.com/baserproject/BcAddonMigrator){:target="_blank"} 、または、[baserマーケット](https://market.basercms.net/products/detail.php?product_id=158){:target="_blank"} 、もしくは、[composer](https://packagist.org/packages/baserproject/bc-addon-migrator){:target="_blank"} より、BcAddonMigratorプラグインを取得し、新しい環境の `/plugins/` フォルダに配置します。
