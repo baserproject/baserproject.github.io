@@ -75,7 +75,7 @@ cp config/.env.example config/.env
 
 　
 ### ステップ３：データベース設定
-データベースは、MySQL、PostgreSQL、SQLite を提供予定ですが、現在（2023/3/26）は、MySQLのみ対応している状況です。
+データベースは、MySQL、PostgreSQL、SQLite を提供しています。  
 次の情報を入力し、「接続テスト」ボタンをクリックします。
 
 - データベースホスト名
