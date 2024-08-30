@@ -81,3 +81,7 @@ baserCMS４のテーマを baserCMS５用に変換するにはこちらをご覧
 
 - [baserCMS４のプラグインを変換](migration_plugin_from_ver4)
 - [baserCMS４からのアップグレードガイド](../ver5_migration)
+
+## 5.0のプラグインを5.1に変換する
+
+- [5.0系のプラグインを 5.1系 に移行](migration_plugin_from_ver50)
