@@ -88,7 +88,7 @@ git merge 5.1.x
 ```
 
 ## BaserCore の composer.json を更新
-mater ブランチにて、require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
+**mater** ブランチにて、require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
 ```yaml
 # /plugins/baser-core/composer.json
 # 新しいバージョンが 5.1.0 の場合
@@ -225,20 +225,20 @@ git commit -a -m "バージョンを5.1.1に変更"
 // 5.1 系の開発の場合
 // /plugins/baser-core/composer.json
     "require": {
-        "baserproject/bc-admin-third": "5.1.x",
-        "baserproject/bc-blog": "5.1.x",
-        "baserproject/bc-content-link": "5.1.x",
-        "baserproject/bc-custom-content": "5.1.x",
-        "baserproject/bc-editor-template": "5.1.x",
-        "baserproject/bc-favorite": "5.1.x",
-        "baserproject/bc-front": "5.1.x",
-        "baserproject/bc-installer": "5.1.x",
-        "baserproject/bc-mail": "5.1.x",
-        "baserproject/bc-search-index": "5.1.x",
-        "baserproject/bc-theme-config": "5.1.x",
-        "baserproject/bc-theme-file": "5.1.x",
-        "baserproject/bc-uploader": "5.1.x",
-        "baserproject/bc-widget-area": "5.1.x",
+        "baserproject/bc-admin-third": "5.1.x-dev",
+        "baserproject/bc-blog": "5.1.x-dev",
+        "baserproject/bc-content-link": "5.1.x-dev",
+        "baserproject/bc-custom-content": "5.1.x-dev",
+        "baserproject/bc-editor-template": "5.1.x-dev",
+        "baserproject/bc-favorite": "5.1.x-dev",
+        "baserproject/bc-front": "5.1.x-dev",
+        "baserproject/bc-installer": "5.1.x-dev",
+        "baserproject/bc-mail": "5.1.x-dev",
+        "baserproject/bc-search-index": "5.1.x-dev",
+        "baserproject/bc-theme-config": "5.1.x-dev",
+        "baserproject/bc-theme-file": "5.1.x-dev",
+        "baserproject/bc-uploader": "5.1.x-dev",
+        "baserproject/bc-widget-area": "5.1.x-dev",
     }    
 ```
 
@@ -259,6 +259,7 @@ git commit -a -m "バージョンを5.1.1に変更"
 こちらを手動で元のバージョンに戻します。
 
 ```json
+// /composer.json
     "replace": {
         "baserproject/baser-core": "5.0.2",
         "baserproject/bc-admin-third": "5.0.2",

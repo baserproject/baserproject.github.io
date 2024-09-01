@@ -54,14 +54,14 @@ git push origin 5.1.x
 開発ブランチが取得できるようなバージョン指定になっている必要があります。
 ```
 "require": {
-    "baserproject/baser-core": "5.1.x",
+    "baserproject/baser-core": "5.1.x-dev",
     ...
 }
 ```
 開発版が取得できるように設定を追加します。
 ```
     "minimum-stability": "dev",
-    "prefer-stable": false
+    "prefer-stable": true
 ```
 
 もし、replace があれば除外します。
