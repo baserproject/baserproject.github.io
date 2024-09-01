@@ -155,16 +155,15 @@ Dockerコンテナにログインし、次のコマンドを実行しパッケ�
 
 ```shell
 # PHPの実行環境が必要
-bin/cake create release master
-cd tmp
-# バージョン番号付きのファイル名にリネーム
-mv basercms.zip basercms-5.x.x.zip
+bin/cake create release 5.1.1
 ```
 
-master ブランチより作成しますので、**必ずリリースコマンド実行後** に行う必要がありますが、開発ブランチでパッケージを作成し、インストール等の動作を確認したい場合は、`branch` オプションとして引数にブランチ名を追加します。
+実行後、tmp ディレクトリにパッケージが作成されます。
+
+なお、master ブランチより作成しますので、**必ずリリースコマンド実行後** に行う必要がありますが、開発ブランチでパッケージを作成し、インストール等の動作を確認したい場合は、`branch` オプションとして引数にブランチ名を追加します。
 
 ```shell
-bin/cake create release 5.1.x
+bin/cake create release 5.1.1 5.1.x
 ```
 
 ## パッケージのアップロード
