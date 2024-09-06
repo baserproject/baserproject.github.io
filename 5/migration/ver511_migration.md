@@ -8,7 +8,7 @@ baserCMSのパッチアップデート「v5.1.1」にアップデートするに
 3. baserCMS v5.1.1 にアップデートする
 
 ## 1. BcUpdateSupporter をインストールする
-[BcUpdateSupporter](https://market.basercms.net/products/detail.php?product_id=164) は、baserCMSのアップデートにおける課題を解決する重要なプラグインです。v5.1.0 にアップデートするためには、BcUpdateSupporter が必要です。
+[BcUpdateSupporter](https://market.basercms.net/products/detail.php?product_id=164) は、baserCMSのアップデートにおける課題を解決する重要なプラグインです。v5.1.1 にアップデートするためには、BcUpdateSupporter が必要です。
 baserマーケットよりダウンロードし、`/plugins/` フォルダに配置して、管理画面よりインストールします。
 
 インストールすると、設定メニュー内に、アップデートサポーターのメニューが追加されます。提供する機能は次のとおりです。
