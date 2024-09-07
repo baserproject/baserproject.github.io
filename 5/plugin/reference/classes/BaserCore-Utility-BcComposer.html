@@ -605,6 +605,13 @@
 <dd>Composer Dir</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/BaserCore-Utility-BcComposer.html#property_currentDir">$currentDir</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>現在のディレクトリ</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/BaserCore-Utility-BcComposer.html#property_export">$export</a>
     <span>
                         &nbsp;: string            </span>
@@ -626,6 +633,13 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcComposer.html#method_changeMinimumStabilityToDev">changeMinimumStabilityToDev()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>changeMinimumStabilityToDev</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcComposer.html#method_checkComposer">checkComposer()</a>
     <span>
@@ -653,6 +667,13 @@
                                 &nbsp;: string    </span>
 </dt>
 <dd>コマンド作成</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Utility-BcComposer.html#method_deleteReplace">deleteReplace()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>replace を削除する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcComposer.html#method_execCommand">execCommand()</a>
@@ -699,7 +720,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcComposer.html#method_setupComposerForDistribution">setupComposerForDistribution()</a>
     <span>
-                                &nbsp;: void    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>配布用に composer.json をセットアップする</dd>
 
@@ -804,6 +825,43 @@
             -public
             -static                                            "
 >
+    <h4 class="phpdocumentor-element__name" id="property_currentDir">
+        $currentDir
+        <a href="classes/BaserCore-Utility-BcComposer.html#property_currentDir" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">45</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">現在のディレクトリ</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$currentDir</span>
+    </code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+            -static                                            "
+>
     <h4 class="phpdocumentor-element__name" id="property_export">
         $export
         <a href="classes/BaserCore-Utility-BcComposer.html#property_export" class="headerlink"><i class="fas fa-link"></i></a>
@@ -814,7 +872,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -851,7 +909,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -885,6 +943,62 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_changeMinimumStabilityToDev">
+        changeMinimumStabilityToDev()
+        <a href="classes/BaserCore-Utility-BcComposer.html#method_changeMinimumStabilityToDev" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">277</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">changeMinimumStabilityToDev</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">changeMinimumStabilityToDev</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-Utility-BcComposer.html#method_changeMinimumStabilityToDev#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_checkComposer">
         checkComposer()
         <a href="classes/BaserCore-Utility-BcComposer.html#method_checkComposer" class="headerlink"><i class="fas fa-link"></i></a>
@@ -893,7 +1007,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">83</span>
+    <span class="phpdocumentor-element-found-in__line">96</span>
 
     </aside>
 
@@ -937,6 +1051,13 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -957,7 +1078,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -1001,6 +1122,13 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1021,7 +1149,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">198</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
     </aside>
 
@@ -1060,7 +1188,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -1106,6 +1234,13 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1122,6 +1257,41 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_deleteReplace">
+        deleteReplace()
+        <a href="classes/BaserCore-Utility-BcComposer.html#method_deleteReplace" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">300</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">replace を削除する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">deleteReplace</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_execCommand">
         execCommand()
         <a href="classes/BaserCore-Utility-BcComposer.html#method_execCommand" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1130,7 +1300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -1200,7 +1370,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 
     </aside>
 
@@ -1236,6 +1406,13 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1260,7 +1437,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
     </aside>
 
@@ -1327,7 +1504,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -1404,7 +1581,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -1440,6 +1617,13 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1464,7 +1648,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1545,7 +1729,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">242</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -1553,7 +1737,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setupComposerForDistribution</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$packagePath</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">setupComposerForDistribution</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1562,7 +1746,7 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$packagePath</span>
+                <span class="phpdocumentor-signature__argument__name">$version</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1602,7 +1786,11 @@
 
     
 
-    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1618,7 +1806,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Utility/BcComposer.php"><a href="files/plugins-baser-core-src-utility-bccomposer.html"><abbr title="plugins/baser-core/src/Utility/BcComposer.php">BcComposer.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">180</span>
 
     </aside>
 
@@ -1649,6 +1837,13 @@
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
@@ -1777,20 +1972,23 @@
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_cd">$cd</li>
-                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_composerDir">$composerDir</li>
-                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_export">$export</li>
-                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_php">$php</li>
+                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_cd">$cd</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_composerDir">$composerDir</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_currentDir">$currentDir</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_export">$export</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#property_php">$php</a></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_changeMinimumStabilityToDev">changeMinimumStabilityToDev()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_checkComposer">checkComposer()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_checkEnv">checkEnv()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_clearCache">clearCache()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_createCommand">createCommand()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_deleteReplace">deleteReplace()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_execCommand">execCommand()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_install">install()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcComposer.html#method_installComposer">installComposer()</a></li>

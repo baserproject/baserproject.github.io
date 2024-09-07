@@ -116,6 +116,11 @@ Search.appendIndex(
             "summary": "Routes",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_routes"
         },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AdisableRootRoutes\u0028\u0029",
+            "name": "disableRootRoutes",
+            "summary": "\/config\/routes.php\u0020\u3092\u7121\u52B9\u5316\u3059\u308B",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_disableRootRoutes"
+        },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AupdateDefaultData\u0028\u0029",
             "name": "updateDefaultData",
             "summary": "\u521D\u671F\u30C7\u30FC\u30BF\u8AAD\u307F\u8FBC\u307F\u6642\u306E\u66F4\u65B0\u51E6\u7406",
@@ -760,16 +765,6 @@ Search.appendIndex(
             "name": "screenshot",
             "summary": "\u30B9\u30AF\u30EA\u30FC\u30F3\u30B7\u30E7\u30C3\u30C8\u3092\u8868\u793A",
             "url": "classes/BaserCore-Controller-Admin-ThemesController.html#method_screenshot"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Admin\\UpdatersController",
-            "name": "UpdatersController",
-            "summary": "Class\u0020UpdatersController",
-            "url": "classes/BaserCore-Controller-Admin-UpdatersController.html"
-        },                {
-            "fqsen": "\\BaserCore\\Controller\\Admin\\UpdatersController\u003A\u003Aadmin_exec_script\u0028\u0029",
-            "name": "admin_exec_script",
-            "summary": "\u005BADMIN\u005D\u0020\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u30B9\u30AF\u30EA\u30D7\u30C8\u3092\u5B9F\u884C\u3059\u308B",
-            "url": "classes/BaserCore-Controller-Admin-UpdatersController.html#method_admin_exec_script"
         },                {
             "fqsen": "\\BaserCore\\Controller\\Admin\\UserGroupsController",
             "name": "UserGroupsController",
@@ -3065,11 +3060,6 @@ Search.appendIndex(
             "name": "belongsToMany",
             "summary": "Belongs\u0020To\u0020Many",
             "url": "classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003Afind\u0028\u0029",
-            "name": "find",
-            "summary": "find\u306E\u524D\u5F8C\u306B\u30A4\u30D9\u30F3\u30C8\u3092\u8FFD\u52A0\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-AppTable.html#method_find"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable\u003A\u003AaddPrefix\u0028\u0029",
             "name": "addPrefix",
@@ -7941,6 +7931,16 @@ Search.appendIndex(
             "summary": "\u914D\u5E03\u7528\u306B\u0020composer.json\u0020\u3092\u30BB\u30C3\u30C8\u30A2\u30C3\u30D7\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcComposer.html#method_setupComposerForDistribution"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AchangeMinimumStabilityToDev\u0028\u0029",
+            "name": "changeMinimumStabilityToDev",
+            "summary": "changeMinimumStabilityToDev",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_changeMinimumStabilityToDev"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AdeleteReplace\u0028\u0029",
+            "name": "deleteReplace",
+            "summary": "replace\u0020\u3092\u524A\u9664\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_deleteReplace"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003A\u0024cd",
             "name": "cd",
             "summary": "cd\u0020\u30B3\u30DE\u30F3\u30C9",
@@ -7950,6 +7950,11 @@ Search.appendIndex(
             "name": "composerDir",
             "summary": "Composer\u0020Dir",
             "url": "classes/BaserCore-Utility-BcComposer.html#property_composerDir"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003A\u0024currentDir",
+            "name": "currentDir",
+            "summary": "\u73FE\u5728\u306E\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA",
+            "url": "classes/BaserCore-Utility-BcComposer.html#property_currentDir"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003A\u0024export",
             "name": "export",
@@ -10640,11 +10645,6 @@ Search.appendIndex(
             "name": "getPageList",
             "summary": "\u30DA\u30FC\u30B8\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B\n\u623B\u308A\u5024\u306F\u3001\u56FA\u5B9A\u30DA\u30FC\u30B8\u3001\u307E\u305F\u306F\u3001\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u304C\u5BFE\u8C61",
             "url": "classes/BaserCore-View-Helper-BcPageHelper.html#method_getPageList"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcPageHelper\u003A\u003AallowPublish\u0028\u0029",
-            "name": "allowPublish",
-            "summary": "\u516C\u958B\u72B6\u614B\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BaserCore-View-Helper-BcPageHelper.html#method_allowPublish"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcPageHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -13535,11 +13535,6 @@ Search.appendIndex(
             "name": "helpers",
             "summary": "\u30D8\u30EB\u30D1\u30FC",
             "url": "classes/BcBlog-View-Helper-BlogHelper.html#property_helpers"
-        },                {
-            "fqsen": "\\BcBlog\\View\\Helper\\BlogHelper\u003A\u003A\u0024BlogCategory",
-            "name": "BlogCategory",
-            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30E2\u30C7\u30EB",
-            "url": "classes/BcBlog-View-Helper-BlogHelper.html#property_BlogCategory"
         },                {
             "fqsen": "\\BcBlog\\View\\Helper\\BlogHelper\u003A\u003A\u0024BlogContentsService",
             "name": "BlogContentsService",
