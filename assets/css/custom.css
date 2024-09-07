@@ -156,7 +156,8 @@ ul {
 }
 
 .local-navi .current {
-  color: #006C7F;
+  color: #d33c44;
+  scroll-margin-top: 100px;
 }
 
 .toc a:link,
@@ -168,7 +169,6 @@ ul {
   color: #006C7F !important;
 }
 
-.local-navi a:hover,
 .toc a:hover {
   font-weight: bold;
 }

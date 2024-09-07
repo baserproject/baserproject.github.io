@@ -33,6 +33,9 @@ $(".local-navi a").each(function(){
 	}
 });
 
+$(".local-navi .current")[0].scrollIntoView({
+	block: 'start'
+});
 
 $('.search input[type="submit"]').click(function() {
   const textField = $('.search-text');
