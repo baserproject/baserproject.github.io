@@ -19,6 +19,7 @@ baserCMSのパッケージの構成、アーキテクチャー、データベー
 - [データベース構造](../package/database)
 - [ディレクトリ構成](../package/directory_structure)
 - [設計書](../package/specification/)
+- [composerとの連携](../package/composer)
 
 ## 規約
 baserCMSの開発規約、コーディング規約、リファクタリング方針などについては次をご覧ください。
