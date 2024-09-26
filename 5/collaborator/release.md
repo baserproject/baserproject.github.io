@@ -88,7 +88,7 @@ git merge 5.1.x
 ```
 
 ## BaserCore の composer.json を更新
-**mater** ブランチにて、require の baserproject 内のパッケージのバージョンを新しいバージョンに更新します。
+**mater** ブランチにて、require の baserproject 内のパッケージのバージョンを新しいバージョンに更新し、コミットします。
 ```yaml
 # /plugins/baser-core/composer.json
 # 新しいバージョンが 5.1.0 の場合
@@ -108,6 +108,9 @@ git merge 5.1.x
         "baserproject/bc-uploader": "5.1.0",
         "baserproject/bc-widget-area": "5.1.0",
     }    
+```
+```shell
+git commit -a -m "baser-core の composer.json のバージョン番号を更新"
 ```
  
 ## リリースコマンドを実行
