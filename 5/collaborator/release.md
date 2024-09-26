@@ -124,6 +124,9 @@ Git のセットアップについては、事前に 5.1.x ブランチをプル
 vendor/bin/monorepo-builder release patch
 # メジャー、マイナーの場合
 vendor/bin/monorepo-builder release 5.x.x
+
+# リリース後、masterブランチをプッシュ
+git push origin master
 ```
 
 親パッケージより一括リリースするため、子パッケージのレポジトリは、読み取り専用の扱いとします。
