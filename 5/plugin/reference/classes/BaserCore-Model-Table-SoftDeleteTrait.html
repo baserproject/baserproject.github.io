@@ -542,7 +542,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
     </aside>
 
@@ -570,6 +570,20 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled">$enabled</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>利用状態</dd>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -583,6 +597,20 @@
                                 &nbsp;: int    </span>
 </dt>
 <dd>Soft deletes all records matching `$conditions`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete">disableSoftDelete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>論理削除を利用不可にする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete">enableSoftDelete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>論理削除を利用可能にする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_getSoftDeleteField">getSoftDeleteField()</a>
@@ -615,9 +643,9 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_SelectQuery">SelectQuery()</a>
     <span>
-                                &nbsp;: <a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr>    </span>
 </dt>
-<dd>Query override.</dd>
+<dd>Select Query</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method__processDelete">_processDelete()</a>
@@ -634,6 +662,50 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_enabled">
+        $enabled
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">利用状態</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$enabled</span>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
+
+    
+    
+    
+
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -655,7 +727,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -702,6 +774,76 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_disableSoftDelete">
+        disableSoftDelete()
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">論理削除を利用不可にする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">disableSoftDelete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_enableSoftDelete">
+        enableSoftDelete()
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">論理削除を利用可能にする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">enableSoftDelete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getSoftDeleteField">
         getSoftDeleteField()
         <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_getSoftDeleteField" class="headerlink"><i class="fas fa-link"></i></a>
@@ -710,7 +852,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -764,7 +906,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -819,7 +961,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -874,7 +1016,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -929,21 +1071,23 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Query override.</p>
+        <p class="phpdocumentor-summary">Select Query</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">SelectQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">SelectQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Fatal error: Declaration of SoftDelete\Model\Table\SoftDeleteTrait::query(): SoftDelete\ORM\Query must be compatible with Cake\ORM\Table::query(): Cake\ORM\Query
-上記エラー回避のため戻り値の型宣言では実体と異なるがCakePHP本体のquery()で定義されている上書き元の型（\Cake\ORM\Query）を明示する</p>
+        <section class="phpdocumentor-description"><p>論理削除用の SelectQuery を返却する
+TreeBehavior を利用して、アイテムを移動する場合、
+論理削除されたアイテムも対象としなければツリー構造が壊れてしまうため、
+SoftDeleteTrait を、利用不可にすることで、オリジナルの SelectQueryを返却できるようにしている</p>
 </section>
 
     
@@ -953,7 +1097,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr></span>
             </section>
 
 </article>
@@ -971,7 +1115,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -1147,13 +1291,22 @@ passed entity</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
-                                                <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+                                    <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled">$enabled</a></li>
+                                    </ul>
+            </li>
+                                    <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_deleteAll">deleteAll()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete">disableSoftDelete()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete">enableSoftDelete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_getSoftDeleteField">getSoftDeleteField()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_hardDelete">hardDelete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_hardDeleteAll">hardDeleteAll()</a></li>

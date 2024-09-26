@@ -530,15 +530,15 @@
                                 <section>
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore.html">BaserCore</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-event.html">Event</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/basercore-command.html">Command</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    BcHelperEventListener
+    CreateJwtCommand
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/BaserCore-Event-BcEventListener.html"><abbr title="\BaserCore\Event\BcEventListener">BcEventListener</abbr></a>
+        extends <abbr title="\Cake\Command\Command">Command</abbr>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -557,51 +557,19 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcHelperEventListener.php"><a href="files/plugins-baser-core-src-event-bchelpereventlistener.html"><abbr title="plugins/baser-core/src/Event/BcHelperEventListener.php">BcHelperEventListener.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Command/CreateJwtCommand.php"><a href="files/plugins-baser-core-src-command-createjwtcommand.html"><abbr title="plugins/baser-core/src/Command/CreateJwtCommand.php">CreateJwtCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Class BcHelperEventListener</p>
+            <p class="phpdocumentor-summary">CreateJwtCommand</p>
 
 
-    <section class="phpdocumentor-description"><p>ヘルパーイベントリスナー</p>
-<p>Helperイベントにコールバック処理を登録するための継承用クラス。
-events プロパティに配列で、イベント名を登録する。
-イベント名についてレイヤー名は省略できる。
-コールバック関数はイベント名より .（ドット）をアンダースコアに置き換えた上でキャメルケースに変換したものを
-同クラス内のメソッドとして登録する</p>
-<p>（例）
-Helper.Form.beforeCreate に対してコールバック処理を登録</p>
-<p>public $events = array('Form.beforeCreate');
-public function formBeforeCreate($event) }</p>
+    <section class="phpdocumentor-description"><p>bin/cake create jwt</p>
 </section>
 
 
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Event-BcHelperEventListener.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">uses</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/BaserCore-Event-BcHelperEventListener.html"><abbr title="\BaserCore\Event\BcHelperEventListener">BcHelperEventListener</abbr></a></span>
-                                        
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">used-by</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/BaserCore-Event-BcHelperEventListener.html"><abbr title="\BaserCore\Event\BcHelperEventListener">BcHelperEventListener</abbr></a></span>
-                                        
-                                             
-                                    </dd>
-                        </dl>
 
 
 
@@ -609,7 +577,7 @@ public function formBeforeCreate($event) }</p>
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/BaserCore-Event-BcHelperEventListener.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/BaserCore-Command-CreateJwtCommand.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
@@ -621,68 +589,19 @@ public function formBeforeCreate($event) }</p>
 
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/BaserCore-Event-BcHelperEventListener.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#property_events">$events</a>
-    <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
-</dt>
-<dd>登録イベント</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Event-BcHelperEventListener.html#property_layer">$layer</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>レイヤー名</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#property_plugin">$plugin</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>プラグイン名</dd>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/BaserCore-Event-BcHelperEventListener.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/BaserCore-Command-CreateJwtCommand.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#method___construct">__construct()</a>
+    <a class="" href="classes/BaserCore-Command-CreateJwtCommand.html#method_execute">execute()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: null    </span>
 </dt>
-<dd>コンストラクタ</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#method_getAction">getAction()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>現在のアクションを特定する文字列を取得する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#method_implementedEvents">implementedEvents()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>implementedEvents</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Event-BcEventListener.html#method_isAction">isAction()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-<dd>指定した文字列が現在のアクションとしてみなされるかどうか判定する</dd>
+<dd>execute</dd>
 
     </dl>
 
@@ -691,129 +610,11 @@ public function formBeforeCreate($event) }</p>
         
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/BaserCore-Event-BcHelperEventListener.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_events">
-        $events
-        <a href="classes/BaserCore-Event-BcEventListener.html#property_events" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">登録イベント</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
-    <span class="phpdocumentor-signature__name">$events</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_layer">
-        $layer
-        <a href="classes/BaserCore-Event-BcHelperEventListener.html#property_layer" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcHelperEventListener.php"><a href="files/plugins-baser-core-src-event-bchelpereventlistener.html"><abbr title="plugins/baser-core/src/Event/BcHelperEventListener.php">BcHelperEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">41</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">レイヤー名</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$layer</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;Helper&#039;</span></code>
-
-    
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_plugin">
-        $plugin
-        <a href="classes/BaserCore-Event-BcEventListener.html#property_plugin" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">61</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">プラグイン名</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$plugin</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
-
-    
-    
-    
-
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/BaserCore-Event-BcHelperEventListener.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/BaserCore-Command-CreateJwtCommand.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -822,79 +623,23 @@ public function formBeforeCreate($event) }</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/BaserCore-Event-BcEventListener.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_execute">
+        execute()
+        <a href="classes/BaserCore-Command-CreateJwtCommand.html#method_execute" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Command/CreateJwtCommand.php"><a href="files/plugins-baser-core-src-command-createjwtcommand.html"><abbr title="plugins/baser-core/src/Command/CreateJwtCommand.php">CreateJwtCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">コンストラクタ</p>
+        <p class="phpdocumentor-summary">execute</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Event-BcEventListener.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getAction">
-        getAction()
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_getAction" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">145</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">現在のアクションを特定する文字列を取得する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isContainController</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">execute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Console\Arguments">Arguments</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Console\ConsoleIo">ConsoleIo</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$io</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -903,202 +648,28 @@ public function formBeforeCreate($event) }</p>
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$isContainController</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>コントローラー名を含むかどうか（初期値：true）</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_getAction#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_implementedEvents">
-        implementedEvents()
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_implementedEvents" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">82</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">implementedEvents</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">implementedEvents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_implementedEvents#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_isAction">
-        isAction()
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_isAction" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Event/BcEventListener.php"><a href="files/plugins-baser-core-src-event-bceventlistener.html"><abbr title="plugins/baser-core/src/Event/BcEventListener.php">BcEventListener.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">127</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">指定した文字列が現在のアクションとしてみなされるかどうか判定する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isContainController</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <section class="phpdocumentor-description"><p>コントローラー名、アクション名をキャメルケースに変換する前提で、ドットで結合した文字列とする
-（例）Users.AdminIndex</p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                <span class="phpdocumentor-signature__argument__name">$args</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Console\Arguments">Arguments</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>アクションを特定する為の文字列</p>
-</section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$isContainController</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+                <span class="phpdocumentor-signature__argument__name">$io</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Console\ConsoleIo">ConsoleIo</abbr></span>
+                            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>コントローラー名を含むかどうか（初期値：true）</p>
-</section>
-
+                
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/BaserCore-Event-BcEventListener.html#method_isAction#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">checked</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">noTodo</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">unitTest</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
 
     
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
+        <span class="phpdocumentor-signature__response_type">null</span>
             </section>
 
 </article>
@@ -1108,7 +679,7 @@ public function formBeforeCreate($event) }</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/Event/BcHelperEventListener.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/plugins/baser-core/src/Command/CreateJwtCommand.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -1207,27 +778,15 @@ public function formBeforeCreate($event) }</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/BaserCore-Event-BcHelperEventListener.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/BaserCore-Event-BcHelperEventListener.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/BaserCore-Command-CreateJwtCommand.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#property_events">$events</a></li>
-                                                    <li class=""><a href="classes/BaserCore-Event-BcHelperEventListener.html#property_layer">$layer</a></li>
-                                                    <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#property_plugin">$plugin</a></li>
-                                            </ul>
-                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method___construct">__construct()</a></li>
-                                            <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method_getAction">getAction()</a></li>
-                                            <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method_implementedEvents">implementedEvents()</a></li>
-                                            <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method_isAction">isAction()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Command-CreateJwtCommand.html#method_execute">execute()</a></li>
                                     </ul>
             </li>
                     </ul>
@@ -1247,7 +806,7 @@ public function formBeforeCreate($event) }</p>
     </section>
 </section>
         </div>
-        <a href="classes/BaserCore-Event-BcHelperEventListener.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/BaserCore-Command-CreateJwtCommand.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

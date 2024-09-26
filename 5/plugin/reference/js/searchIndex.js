@@ -261,6 +261,16 @@ Search.appendIndex(
             "summary": "execute",
             "url": "classes/BaserCore-Command-ComposerCommand.html#method_execute"
         },                {
+            "fqsen": "\\BaserCore\\Command\\CreateJwtCommand",
+            "name": "CreateJwtCommand",
+            "summary": "CreateJwtCommand",
+            "url": "classes/BaserCore-Command-CreateJwtCommand.html"
+        },                {
+            "fqsen": "\\BaserCore\\Command\\CreateJwtCommand\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "execute",
+            "url": "classes/BaserCore-Command-CreateJwtCommand.html#method_execute"
+        },                {
             "fqsen": "\\BaserCore\\Command\\CreateReleaseCommand",
             "name": "CreateReleaseCommand",
             "summary": "CreateReleaseCommand",
@@ -3386,11 +3396,6 @@ Search.appendIndex(
             "summary": "\u30B7\u30B9\u30C6\u30E0\u30C7\u30FC\u30BF\u3092\u66F4\u65B0\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\ContentsTable\u003A\u003A\u0024beforeSaveParentId",
-            "name": "beforeSaveParentId",
-            "summary": "\u4FDD\u5B58\u524D\u306E\u89AAID",
-            "url": "classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\DblogsTable",
             "name": "DblogsTable",
             "summary": "Class\u0020AppTable",
@@ -3691,21 +3696,6 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-SiteConfigsTable.html#method_getControlSource"
         },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\SiteConfigsTable\u003A\u003AisChangedContentsSortLastModified\u0028\u0029",
-            "name": "isChangedContentsSortLastModified",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u8868\u793A\u3057\u3066\u304B\u3089\u3001\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u4E26\u3073\u9806\u304C\u5909\u66F4\u3055\u308C\u3066\u3044\u306A\u3044\u304B\u3069\u3046\u304B\n60\u79D2\u3092\u30D6\u30E9\u30A6\u30B6\u306E\u30ED\u30FC\u30C9\u6642\u9593\u3092\u52A0\u5473\u3057\u305F\u30D0\u30C3\u30D5\u30A1\u3068\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-SiteConfigsTable.html#method_isChangedContentsSortLastModified"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\SiteConfigsTable\u003A\u003AupdateContentsSortLastModified\u0028\u0029",
-            "name": "updateContentsSortLastModified",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u4E26\u3073\u9806\u5909\u66F4\u6642\u9593\u3092\u66F4\u65B0\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-SiteConfigsTable.html#method_updateContentsSortLastModified"
-        },                {
-            "fqsen": "\\BaserCore\\Model\\Table\\SiteConfigsTable\u003A\u003AresetContentsSortLastModified\u0028\u0029",
-            "name": "resetContentsSortLastModified",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u4E26\u3073\u66FF\u3048\u9806\u5909\u66F4\u6642\u9593\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B",
-            "url": "classes/BaserCore-Model-Table-SiteConfigsTable.html#method_resetContentsSortLastModified"
-        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SiteConfigsTable\u003A\u003AisChange\u0028\u0029",
             "name": "isChange",
             "summary": "\u6307\u5B9A\u3057\u305F\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u304CDB\u306E\u30C7\u30FC\u30BF\u3068\u6BD4\u8F03\u3057\u3066\u5909\u66F4\u72B6\u614B\u304B\u78BA\u8A8D",
@@ -3841,6 +3831,16 @@ Search.appendIndex(
             "summary": "SoftDeleteTrait",
             "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AenableSoftDelete\u0028\u0029",
+            "name": "enableSoftDelete",
+            "summary": "\u8AD6\u7406\u524A\u9664\u3092\u5229\u7528\u53EF\u80FD\u306B\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AdisableSoftDelete\u0028\u0029",
+            "name": "disableSoftDelete",
+            "summary": "\u8AD6\u7406\u524A\u9664\u3092\u5229\u7528\u4E0D\u53EF\u306B\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003AgetSoftDeleteField\u0028\u0029",
             "name": "getSoftDeleteField",
             "summary": "Get\u0020the\u0020configured\u0020deletion\u0020field",
@@ -3848,7 +3848,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003ASelectQuery\u0028\u0029",
             "name": "SelectQuery",
-            "summary": "Query\u0020override.",
+            "summary": "Select\u0020Query",
             "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_SelectQuery"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003A_processDelete\u0028\u0029",
@@ -3875,6 +3875,11 @@ Search.appendIndex(
             "name": "restore",
             "summary": "Restore\u0020a\u0020soft\u0020deleted\u0020entity\u0020into\u0020an\u0020active\u0020state.",
             "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_restore"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\SoftDeleteTrait\u003A\u003A\u0024enabled",
+            "name": "enabled",
+            "summary": "\u5229\u7528\u72B6\u614B",
+            "url": "classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\TwoFactorAuthenticationsTable",
             "name": "TwoFactorAuthenticationsTable",
@@ -5390,11 +5395,6 @@ Search.appendIndex(
             "name": "exists",
             "summary": "exists",
             "url": "classes/BaserCore-Service-ContentsService.html#method_exists"
-        },                {
-            "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003AisTreeModifiedByAnotherUser\u0028\u0029",
-            "name": "isTreeModifiedByAnotherUser",
-            "summary": "",
-            "url": "classes/BaserCore-Service-ContentsService.html#method_isTreeModifiedByAnotherUser"
         },                {
             "fqsen": "\\BaserCore\\Service\\ContentsService\u003A\u003Amove\u0028\u0029",
             "name": "move",
@@ -7865,6 +7865,11 @@ Search.appendIndex(
             "name": "createAccessToken",
             "summary": "\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u4F5C\u6210\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcApiUtil.html#method_createAccessToken"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcApiUtil\u003A\u003AcreateJwt\u0028\u0029",
+            "name": "createJwt",
+            "summary": "JWT\u30AD\u30FC\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcApiUtil.html#method_createJwt"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer",
             "name": "BcComposer",
@@ -16216,11 +16221,6 @@ Search.appendIndex(
             "summary": "\u30B5\u30A4\u30C8\u57FA\u672C\u8A2D\u5B9A\u306B\u7BA1\u7406\u7528\u30E1\u30FC\u30EB\u30A2\u30C9\u30EC\u30B9\u3092\u767B\u9332\u3059\u308B",
             "url": "classes/BcInstaller-Service-InstallationsService.html#method_setAdminEmailAndVersion"
         },                {
-            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AsetSecuritySalt\u0028\u0029",
-            "name": "setSecuritySalt",
-            "summary": "\u30BB\u30AD\u30E5\u30EA\u30C6\u30A3\u7528\u306E\u30AD\u30FC\u3092\u751F\u6210\u3059\u308B",
-            "url": "classes/BcInstaller-Service-InstallationsService.html#method_setSecuritySalt"
-        },                {
             "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AaddDefaultUser\u0028\u0029",
             "name": "addDefaultUser",
             "summary": "\u521D\u671F\u30E6\u30FC\u30B6\u30FC\u3092\u767B\u9332\u3059\u308B",
@@ -16255,11 +16255,6 @@ Search.appendIndex(
             "name": "createDefaultFiles",
             "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u7528\u521D\u671F\u30D5\u30A9\u30EB\u30C0\u3092\u4F5C\u6210\u3059\u308B",
             "url": "classes/BcInstaller-Service-InstallationsService.html#method_createDefaultFiles"
-        },                {
-            "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AcreateJwt\u0028\u0029",
-            "name": "createJwt",
-            "summary": "JWT\u30AD\u30FC\u3092\u4F5C\u6210\u3059\u308B",
-            "url": "classes/BcInstaller-Service-InstallationsService.html#method_createJwt"
         },                {
             "fqsen": "\\BcInstaller\\Service\\InstallationsService\u003A\u003AdeployEditorTemplateImage\u0028\u0029",
             "name": "deployEditorTemplateImage",

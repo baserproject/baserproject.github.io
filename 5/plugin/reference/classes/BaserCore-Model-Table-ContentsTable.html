@@ -563,7 +563,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -597,13 +597,6 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a class="" href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId">$beforeSaveParentId</a>
-    <span>
-                        &nbsp;: null            </span>
-</dt>
-<dd>保存前の親ID</dd>
-
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a class="" href="classes/BaserCore-Model-Table-AppTable.html#property_publishBeginField">$publishBeginField</a>
     <span>
@@ -669,6 +662,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
                         &nbsp;: bool            </span>
 </dt>
 <dd>システムデータを更新する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled">$enabled</a>
+    <span>
+                        &nbsp;: bool            </span>
+</dt>
+<dd>利用状態</dd>
 
     </dl>
 
@@ -771,6 +771,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>メインサイトの場合、連携設定がされている子サイトのエイリアス削除する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete">disableSoftDelete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>論理削除を利用不可にする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData">disableUpdatingSystemData()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -791,6 +798,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
 </dt>
 <dd>サイト設定にて、エイリアスを利用してメインサイトと自動連携するオプションを利用時に、
 関連するサブサイトで、関連コンテンツを作成する際、同階層に重複名称のコンテンツがないか確認する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete">enableSoftDelete()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>論理削除を利用可能にする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData">enableUpdatingSystemData()</a>
@@ -987,9 +1001,9 @@ BcModelEventDispatcherは対象外とする</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_SelectQuery">SelectQuery()</a>
     <span>
-                                &nbsp;: <a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr>    </span>
 </dt>
-<dd>Query override.</dd>
+<dd>Select Query</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-AppTable.html#method_setTable">setTable()</a>
@@ -1102,45 +1116,6 @@ BcModelEventDispatcherは対象外とする</dd>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_beforeSaveParentId">
-        $beforeSaveParentId
-        <a href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">108</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">保存前の親ID</p>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">null</span>
-    <span class="phpdocumentor-signature__name">$beforeSaveParentId</span>
-     = <span class="phpdocumentor-signature__default-value">null</span></code>
-
-        <section class="phpdocumentor-description"><p>IDの変更比較に利用</p>
-</section>
-
-    
-    
-
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="property_publishBeginField">
         $publishBeginField
         <a href="classes/BaserCore-Model-Table-AppTable.html#property_publishBeginField" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1151,7 +1126,7 @@ BcModelEventDispatcherは対象外とする</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
@@ -1189,7 +1164,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -1227,7 +1202,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1301,7 +1276,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -1339,7 +1314,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">93</span>
 
     </aside>
 
@@ -1413,7 +1388,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -1450,7 +1425,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1461,6 +1436,43 @@ AppTable::getConditionAllowPublish() で利用</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
         <span class="phpdocumentor-signature__type">bool</span>
     <span class="phpdocumentor-signature__name">$updatingSystemData</span>
+     = <span class="phpdocumentor-signature__default-value">true</span></code>
+
+    
+    
+    
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_enabled">
+        $enabled
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">利用状態</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">bool</span>
+    <span class="phpdocumentor-signature__name">$enabled</span>
      = <span class="phpdocumentor-signature__default-value">true</span></code>
 
     
@@ -1492,7 +1504,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 
     </aside>
 
@@ -1545,6 +1557,13 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1569,7 +1588,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">489</span>
+    <span class="phpdocumentor-element-found-in__line">476</span>
 
     </aside>
 
@@ -1656,7 +1675,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 
     </aside>
 
@@ -1751,7 +1770,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">468</span>
+    <span class="phpdocumentor-element-found-in__line">458</span>
 
     </aside>
 
@@ -1893,6 +1912,13 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1917,7 +1943,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -2013,7 +2039,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">751</span>
+    <span class="phpdocumentor-element-found-in__line">733</span>
 
     </aside>
 
@@ -2098,7 +2124,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">844</span>
+    <span class="phpdocumentor-element-found-in__line">826</span>
 
     </aside>
 
@@ -2203,7 +2229,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">875</span>
+    <span class="phpdocumentor-element-found-in__line">857</span>
 
     </aside>
 
@@ -2286,7 +2312,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">519</span>
+    <span class="phpdocumentor-element-found-in__line">501</span>
 
     </aside>
 
@@ -2361,7 +2387,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 
     </aside>
 
@@ -2416,7 +2442,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1113</span>
+    <span class="phpdocumentor-element-found-in__line">1095</span>
 
     </aside>
 
@@ -2474,7 +2500,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">585</span>
+    <span class="phpdocumentor-element-found-in__line">567</span>
 
     </aside>
 
@@ -2539,6 +2565,41 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_disableSoftDelete">
+        disableSoftDelete()
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">論理削除を利用不可にする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">disableSoftDelete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_disableUpdatingSystemData">
         disableUpdatingSystemData()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2547,7 +2608,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1514</span>
+    <span class="phpdocumentor-element-found-in__line">1498</span>
 
     </aside>
 
@@ -2701,7 +2762,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">274</span>
 
     </aside>
 
@@ -2748,6 +2809,41 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_enableSoftDelete">
+        enableSoftDelete()
+        <a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">論理削除を利用可能にする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">enableSoftDelete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_enableUpdatingSystemData">
         enableUpdatingSystemData()
         <a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2756,7 +2852,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1527</span>
+    <span class="phpdocumentor-element-found-in__line">1511</span>
 
     </aside>
 
@@ -2819,7 +2915,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1089</span>
+    <span class="phpdocumentor-element-found-in__line">1071</span>
 
     </aside>
 
@@ -2905,7 +3001,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1401</span>
+    <span class="phpdocumentor-element-found-in__line">1383</span>
 
     </aside>
 
@@ -3025,7 +3121,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1143</span>
+    <span class="phpdocumentor-element-found-in__line">1125</span>
 
     </aside>
 
@@ -3096,7 +3192,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
@@ -3182,7 +3278,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1458</span>
+    <span class="phpdocumentor-element-found-in__line">1440</span>
 
     </aside>
 
@@ -3268,7 +3364,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1202</span>
+    <span class="phpdocumentor-element-found-in__line">1184</span>
 
     </aside>
 
@@ -3341,7 +3437,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1226</span>
+    <span class="phpdocumentor-element-found-in__line">1208</span>
 
     </aside>
 
@@ -3397,7 +3493,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
     </aside>
 
@@ -3451,7 +3547,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
@@ -3489,6 +3585,13 @@ AppTable::getConditionAllowPublish() で利用</p>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -3513,7 +3616,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">401</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
@@ -3598,7 +3701,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">415</span>
+    <span class="phpdocumentor-element-found-in__line">405</span>
 
     </aside>
 
@@ -3691,7 +3794,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
     </aside>
 
@@ -3768,7 +3871,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">184</span>
 
     </aside>
 
@@ -3823,7 +3926,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -3878,7 +3981,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">110</span>
 
     </aside>
 
@@ -3945,7 +4048,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
@@ -4020,7 +4123,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1169</span>
+    <span class="phpdocumentor-element-found-in__line">1151</span>
 
     </aside>
 
@@ -4117,7 +4220,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1051</span>
+    <span class="phpdocumentor-element-found-in__line">1033</span>
 
     </aside>
 
@@ -4194,7 +4297,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1492</span>
+    <span class="phpdocumentor-element-found-in__line">1474</span>
 
     </aside>
 
@@ -4278,7 +4381,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
     </aside>
 
@@ -4367,7 +4470,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">409</span>
+    <span class="phpdocumentor-element-found-in__line">410</span>
 
     </aside>
 
@@ -4433,7 +4536,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">424</span>
+    <span class="phpdocumentor-element-found-in__line">425</span>
 
     </aside>
 
@@ -4507,7 +4610,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">822</span>
+    <span class="phpdocumentor-element-found-in__line">804</span>
 
     </aside>
 
@@ -4591,7 +4694,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -4677,7 +4780,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1315</span>
+    <span class="phpdocumentor-element-found-in__line">1297</span>
 
     </aside>
 
@@ -4740,7 +4843,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 
     </aside>
 
@@ -4795,21 +4898,23 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Query override.</p>
+        <p class="phpdocumentor-summary">Select Query</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">SelectQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">SelectQuery</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>Fatal error: Declaration of SoftDelete\Model\Table\SoftDeleteTrait::query(): SoftDelete\ORM\Query must be compatible with Cake\ORM\Table::query(): Cake\ORM\Query
-上記エラー回避のため戻り値の型宣言では実体と異なるがCakePHP本体のquery()で定義されている上書き元の型（\Cake\ORM\Query）を明示する</p>
+        <section class="phpdocumentor-description"><p>論理削除用の SelectQuery を返却する
+TreeBehavior を利用して、アイテムを移動する場合、
+論理削除されたアイテムも対象としなければツリー構造が壊れてしまうため、
+SoftDeleteTrait を、利用不可にすることで、オリジナルの SelectQueryを返却できるようにしている</p>
 </section>
 
     
@@ -4819,7 +4924,7 @@ BcModelEventDispatcherは対象外とする</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-ORM-SelectQuery.html"><abbr title="\BaserCore\ORM\SelectQuery">SelectQuery</abbr></a>|<abbr title="\Cake\ORM\Query\SelectQuery">SelectQuery</abbr></span>
             </section>
 
 </article>
@@ -4837,7 +4942,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">73</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -4909,7 +5014,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">285</span>
+    <span class="phpdocumentor-element-found-in__line">286</span>
 
     </aside>
 
@@ -4993,7 +5098,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 
     </aside>
 
@@ -5070,7 +5175,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1266</span>
+    <span class="phpdocumentor-element-found-in__line">1248</span>
 
     </aside>
 
@@ -5109,7 +5214,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1065</span>
+    <span class="phpdocumentor-element-found-in__line">1047</span>
 
     </aside>
 
@@ -5186,7 +5291,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1294</span>
+    <span class="phpdocumentor-element-found-in__line">1276</span>
 
     </aside>
 
@@ -5259,7 +5364,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -5336,7 +5441,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php"><a href="files/plugins-baser-core-src-model-table-softdeletetrait.html"><abbr title="plugins/baser-core/src/Model/Table/SoftDeleteTrait.php">SoftDeleteTrait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">106</span>
 
     </aside>
 
@@ -5421,7 +5526,7 @@ passed entity</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 
     </aside>
 
@@ -5498,7 +5603,7 @@ passed entity</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1027</span>
+    <span class="phpdocumentor-element-found-in__line">1009</span>
 
     </aside>
 
@@ -5579,7 +5684,7 @@ passed entity</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">629</span>
+    <span class="phpdocumentor-element-found-in__line">611</span>
 
     </aside>
 
@@ -5656,7 +5761,7 @@ passed entity</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">952</span>
+    <span class="phpdocumentor-element-found-in__line">934</span>
 
     </aside>
 
@@ -5735,7 +5840,7 @@ passed entity</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/ContentsTable.php"><a href="files/plugins-baser-core-src-model-table-contentstable.html"><abbr title="plugins/baser-core/src/Model/Table/ContentsTable.php">ContentsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">547</span>
+    <span class="phpdocumentor-element-found-in__line">529</span>
 
     </aside>
 
@@ -5911,7 +6016,6 @@ passed entity</p>
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_beforeSaveParentId">$beforeSaveParentId</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishBeginField">$publishBeginField</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishEndField">$publishEndField</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#property_publishStatusField">$publishStatusField</a></li>
@@ -5921,6 +6025,7 @@ passed entity</p>
                                                     <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_softDeleteField">$softDeleteField</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#property_updatingSystemData">$updatingSystemData</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#property_enabled">$enabled</a></li>
                                             </ul>
                 </li>
             
@@ -5940,9 +6045,11 @@ passed entity</p>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_deleteAll">deleteAll()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteByType">deleteByType()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_deleteRelateSubSiteContent">deleteRelateSubSiteContent()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_disableSoftDelete">disableSoftDelete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_disableUpdatingSystemData">disableUpdatingSystemData()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_duplicateRelatedSiteContent">duplicateRelatedSiteContent()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SoftDeleteTrait.html#method_enableSoftDelete">enableSoftDelete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_enableUpdatingSystemData">enableUpdatingSystemData()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByType">findByType()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-ContentsTable.html#method_findByUrl">findByUrl()</a></li>
