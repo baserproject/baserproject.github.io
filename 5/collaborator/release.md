@@ -209,24 +209,30 @@ baserCMSプロジェクトメンバー名簿より、新しくメンバーとな
 
 ## 事後作業
 
-### 1. バージョンファイルの更新
-バージョンファイルの先頭行を次のバージョンに変更し、プッシュします。
+### 1. バージョンファイルと baser-core/composer.json の更新
+バージョンファイルの先頭行を次のバージョンに変更し、プッシュします。  
 
 ```
+# 事前に、masterブランチがマージされていることを確認してください。
+git checkout 5.1.x
+git pull origin 5.1.x
+git merge master
+```
+
+```
+# バージョンファイルの更新
+# 
 # 次のバージョンが 5.1.1 の場合
 # 以前は、5.1.1-dev というようにサフィックスを付けていましたが
 # 5.1.0 以降からは付けなくなりました。
 
 # plugins/baser-core/VERSION.txt
 5.1.1
-
-git commit -a -m "バージョンを5.1.1に変更"
 ```
 
-### 2. baser-core/composer.json の更新
-開発版のバージョンに更新します。
-
 ```json
+// baser-core/composer.json を 開発版のバージョンに更新します。
+
 // 5.1 系の開発の場合
 // /plugins/baser-core/composer.json
     "require": {
@@ -246,8 +252,13 @@ git commit -a -m "バージョンを5.1.1に変更"
         "baserproject/bc-widget-area": "5.1.x-dev",
     }    
 ```
+```shell
+git commit -a -m "バージョンを5.1.1に変更"
+git push origin 5.1.x
+```
 
-### 3. 運営サイトのアップデート
+
+### 2. 運営サイトのアップデート
 バージョンアップに合わせて次の２サイトのアップデートを行います。
 - [baserCMS公式サイト](https://basercms.net/)
 - [baserCMSデモサイト](https://trial.basercms.net/)
