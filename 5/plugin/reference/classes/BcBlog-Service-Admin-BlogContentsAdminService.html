@@ -661,16 +661,23 @@
 <dd>ブログを削除する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BcBlog-Service-BlogContentsService.html#method_findByName">findByName()</a>
+    <a class="" href="classes/BcBlog-Service-BlogContentsService.html#method_findByContentId">findByContentId()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null    </span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null    </span>
 </dt>
-<dd>コンテンツ名よりブログコンテンツを取得する</dd>
+<dd>コンテンツ ID よりブログコンテンツを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcBlog-Service-BlogContentsService.html#method_findByUrl">findByUrl()</a>
+    <span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null    </span>
+</dt>
+<dd>URL よりブログコンテンツを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcBlog-Service-BlogContentsService.html#method_get">get()</a>
     <span>
-                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;|null    </span>
+                                &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null    </span>
 </dt>
 <dd>単一データ取得</dd>
 
@@ -908,7 +915,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">336</span>
+    <span class="phpdocumentor-element-found-in__line">366</span>
 
     </aside>
 
@@ -992,7 +999,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">219</span>
 
     </aside>
 
@@ -1073,7 +1080,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">201</span>
 
     </aside>
 
@@ -1165,7 +1172,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
     </aside>
 
@@ -1234,23 +1241,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_findByName">
-        findByName()
-        <a href="classes/BcBlog-Service-BlogContentsService.html#method_findByName" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_findByContentId">
+        findByContentId()
+        <a href="classes/BcBlog-Service-BlogContentsService.html#method_findByContentId" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">コンテンツ名よりブログコンテンツを取得する</p>
+        <p class="phpdocumentor-summary">コンテンツ ID よりブログコンテンツを取得する</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">findByName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span></code>
+                    <span class="phpdocumentor-signature__name">findByContentId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$contentId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1261,7 +1268,86 @@
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
+                <span class="phpdocumentor-signature__argument__name">$contentId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BcBlog-Service-BlogContentsService.html#method_findByContentId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findByUrl">
+        findByUrl()
+        <a href="classes/BcBlog-Service-BlogContentsService.html#method_findByUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">335</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">URL よりブログコンテンツを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">findByUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Contents を含む</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$url</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
@@ -1275,7 +1361,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span>
             </section>
 
 </article>
@@ -1293,7 +1379,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -1301,7 +1387,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;|null</span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1324,6 +1410,8 @@
                     <section class="phpdocumentor-description"><ul>
 <li>
 <code class="prettyprint">status</code>: ステータス。 publish を指定すると公開状態のもののみ取得（初期値：全て）</li>
+<li>
+<code class="prettyprint">contentId</code>: コンテンツID。指定した場合、エイリアスも指定可能。</li>
 </ul>
 </section>
 
@@ -1364,7 +1452,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|array&lt;string|int, mixed&gt;|null</span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null</span>
             </section>
 
 </article>
@@ -1382,7 +1470,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">303</span>
 
     </aside>
 
@@ -1459,7 +1547,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 
     </aside>
 
@@ -1624,7 +1712,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">253</span>
 
     </aside>
 
@@ -1691,7 +1779,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 
     </aside>
 
@@ -1989,7 +2077,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-blog/src/Service/BlogContentsService.php"><a href="files/plugins-bc-blog-src-service-blogcontentsservice.html"><abbr title="plugins/bc-blog/src/Service/BlogContentsService.php">BlogContentsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
     </aside>
 
@@ -2185,7 +2273,8 @@
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_copy">copy()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_create">create()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_delete">delete()</a></li>
-                                            <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_findByName">findByName()</a></li>
+                                            <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_findByContentId">findByContentId()</a></li>
+                                            <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_findByUrl">findByUrl()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_get">get()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_getContentsTemplateRelativePath">getContentsTemplateRelativePath()</a></li>
                                             <li class=""><a href="classes/BcBlog-Service-BlogContentsService.html#method_getControlSource">getControlSource()</a></li>
