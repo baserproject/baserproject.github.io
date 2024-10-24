@@ -2641,6 +2641,21 @@ Search.appendIndex(
             "summary": "initialize",
             "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#method_initialize"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003AgetType\u0028\u0029",
+            "name": "getType",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30BF\u30A4\u30D7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#method_getType"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003AoffAlias\u0028\u0029",
+            "name": "offAlias",
+            "summary": "\u30A2\u30BD\u30B7\u30A8\u30FC\u30B7\u30E7\u30F3\u6642\u306B\u0020alias\u0020\u3092\u9664\u5916\u3059\u308B",
+            "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#method_offAlias"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003AonAlias\u0028\u0029",
+            "name": "onAlias",
+            "summary": "\u30A2\u30BD\u30B7\u30A8\u30FC\u30B7\u30E7\u30F3\u6642\u306B\u0020alias\u0020\u3092\u542B\u3081\u308B",
+            "url": "classes/BaserCore-Model-Behavior-BcContentsBehavior.html#method_onAlias"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Behavior\\BcContentsBehavior\u003A\u003AafterMarshal\u0028\u0029",
             "name": "afterMarshal",
             "summary": "afterMarshal\ncontent\u306E\u9805\u76EE\u304C\u306A\u3044\u5834\u5408\u30A8\u30E9\u30FC\u3092\u30BB\u30C3\u30C8\u3059\u308B",
@@ -10648,7 +10663,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcPageHelper\u003A\u003AgetPageList\u0028\u0029",
             "name": "getPageList",
-            "summary": "\u30DA\u30FC\u30B8\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B\n\u623B\u308A\u5024\u306F\u3001\u56FA\u5B9A\u30DA\u30FC\u30B8\u3001\u307E\u305F\u306F\u3001\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u304C\u5BFE\u8C61",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B\n\u623B\u308A\u5024\u306F\u3001\u56FA\u5B9A\u30DA\u30FC\u30B8\u3001\u307E\u305F\u306F\u3001\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30A9\u30EB\u30C0\u304C\u5BFE\u8C61",
             "url": "classes/BaserCore-View-Helper-BcPageHelper.html#method_getPageList"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcPageHelper\u003A\u003A\u0024helpers",
@@ -12436,10 +12451,15 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u306E\u76F8\u5BFE\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogContentsService.html#method_getContentsTemplateRelativePath"
         },                {
-            "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003AfindByName\u0028\u0029",
-            "name": "findByName",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u540D\u3088\u308A\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
-            "url": "classes/BcBlog-Service-BlogContentsService.html#method_findByName"
+            "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003AfindByUrl\u0028\u0029",
+            "name": "findByUrl",
+            "summary": "URL\u0020\u3088\u308A\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogContentsService.html#method_findByUrl"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003AfindByContentId\u0028\u0029",
+            "name": "findByContentId",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u0020ID\u0020\u3088\u308A\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogContentsService.html#method_findByContentId"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003AcheckRequireSearchIndexReconstruction\u0028\u0029",
             "name": "checkRequireSearchIndexReconstruction",
