@@ -66,10 +66,25 @@ Search.appendIndex(
             "summary": "bootstrap",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_bootstrap"
         },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AaddPlugin\u0028\u0029",
+            "name": "addPlugin",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u8FFD\u52A0\u3059\u308B",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_addPlugin"
+        },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AaddTheme\u0028\u0029",
             "name": "addTheme",
             "summary": "\u30C6\u30FC\u30DE\u3092\u8FFD\u52A0\u3059\u308B",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_addTheme"
+        },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AsetupThemePlugin\u0028\u0029",
+            "name": "setupThemePlugin",
+            "summary": "\u30C6\u30FC\u30DE\u304C\u4FDD\u6709\u3059\u308B\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u30D1\u30B9\u3092\u8FFD\u52A0\u3059\u308B",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_setupThemePlugin"
+        },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AgetAvailableThemes\u0028\u0029",
+            "name": "getAvailableThemes",
+            "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30C6\u30FC\u30DE\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_getAvailableThemes"
         },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AsetupDefaultTemplatesPath\u0028\u0029",
             "name": "setupDefaultTemplatesPath",
@@ -17923,7 +17938,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003Alink\u0028\u0029",
             "name": "link",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u3078\u306E\u30EA\u30F3\u30AF\u3092\u751F\u6210\u3059\u308B",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u3078\u306E\u30EA\u30F3\u30AF\u3092\u751F\u6210\u3059\u308B\n\u0024contentsName\u306F\u30B3\u30F3\u30C6\u30F3\u30C4\u7BA1\u7406\u4E0A\u306E\uFF11\u968E\u5C64\u306E\u307F\u5BFE\u5FDC",
             "url": "classes/BcMail-View-Helper-MailHelper.html#method_link"
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AgetToken\u0028\u0029",
