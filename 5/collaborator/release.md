@@ -123,10 +123,11 @@ git commit -a -m "baser-core の composer.json のバージョン番号を更新
 Git のセットアップについては、事前に 5.1.x ブランチをプルすることでテストを行ってもよいかもしれません。
 ```shell
 # PHPの実行環境が必要
-# パッチの場合
-vendor/bin/monorepo-builder release patch
-# メジャー、マイナーの場合
 vendor/bin/monorepo-builder release 5.x.x
+
+# monorepo-builderによる変更を反映
+git add .
+git commit -m "monorepo-builderによる変更を反映"
 
 # リリース後、masterブランチをプッシュ
 git push origin master
