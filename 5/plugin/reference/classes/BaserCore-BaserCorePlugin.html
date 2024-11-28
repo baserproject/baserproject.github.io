@@ -625,9 +625,16 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-BaserCorePlugin.html#method_addPlugin">addPlugin()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>プラグインを追加する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-BaserCorePlugin.html#method_addTheme">addTheme()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>テーマを追加する</dd>
 
@@ -707,6 +714,13 @@
                                 &nbsp;: <abbr title="\Authentication\AuthenticationServiceInterface">AuthenticationServiceInterface</abbr>    </span>
 </dt>
 <dd>認証サービスプロバイダ生成</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-BaserCorePlugin.html#method_getAvailableThemes">getAvailableThemes()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>利用可能なテーマを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a>
@@ -828,6 +842,13 @@
                                 &nbsp;: <abbr title="\Authentication\AuthenticationService">AuthenticationService</abbr>    </span>
 </dt>
 <dd>セッション認証のセットアップ</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-BaserCorePlugin.html#method_setupThemePlugin">setupThemePlugin()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>テーマが保有するプラグインのパスを追加する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-BcPlugin.html#method_siteRouting">siteRouting()</a>
@@ -969,6 +990,72 @@ Router で変換した上で取得</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_addPlugin">
+        addPlugin()
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_addPlugin" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">204</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">プラグインを追加する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">addPlugin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Core\PluginApplicationInterface">PluginApplicationInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$app</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$app</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Core\PluginApplicationInterface">PluginApplicationInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_addPlugin#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_addTheme">
         addTheme()
         <a href="classes/BaserCore-BaserCorePlugin.html#method_addTheme" class="headerlink"><i class="fas fa-link"></i></a>
@@ -977,7 +1064,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
     </aside>
 
@@ -985,19 +1072,24 @@ Router で変換した上で取得</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addTheme</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Core\PluginApplicationInterface">PluginApplicationInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$application</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">addTheme</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Core\PluginApplicationInterface">PluginApplicationInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$application</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$themes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
-        <section class="phpdocumentor-description"><p>テーマ内のプラグインも追加する</p>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$application</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Cake\Core\PluginApplicationInterface">PluginApplicationInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$themes</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1045,7 +1137,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">609</span>
+    <span class="phpdocumentor-element-found-in__line">613</span>
 
     </aside>
 
@@ -1198,7 +1290,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">658</span>
+    <span class="phpdocumentor-element-found-in__line">662</span>
 
     </aside>
 
@@ -1233,7 +1325,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">686</span>
+    <span class="phpdocumentor-element-found-in__line">736</span>
 
     </aside>
 
@@ -1310,7 +1402,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">469</span>
+    <span class="phpdocumentor-element-found-in__line">471</span>
 
     </aside>
 
@@ -1365,6 +1457,13 @@ Router で変換した上で取得</dd>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1389,7 +1488,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -1456,7 +1555,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">637</span>
+    <span class="phpdocumentor-element-found-in__line">687</span>
 
     </aside>
 
@@ -1516,7 +1615,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">225</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -1593,7 +1692,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">185</span>
+    <span class="phpdocumentor-element-found-in__line">186</span>
 
     </aside>
 
@@ -1649,7 +1748,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">497</span>
+    <span class="phpdocumentor-element-found-in__line">500</span>
 
     </aside>
 
@@ -1706,6 +1805,13 @@ Router で変換した上で取得</dd>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -1730,7 +1836,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">412</span>
 
     </aside>
 
@@ -1797,6 +1903,66 @@ Router で変換した上で取得</dd>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Authentication\AuthenticationServiceInterface">AuthenticationServiceInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAvailableThemes">
+        getAvailableThemes()
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_getAvailableThemes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">271</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">利用可能なテーマを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAvailableThemes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_getAvailableThemes#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             </section>
 
 </article>
@@ -1891,7 +2057,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
     </aside>
 
@@ -1979,7 +2145,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">294</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
     </aside>
 
@@ -2215,7 +2381,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
     </aside>
 
@@ -2303,7 +2469,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">405</span>
+    <span class="phpdocumentor-element-found-in__line">455</span>
 
     </aside>
 
@@ -2380,7 +2546,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">269</span>
+    <span class="phpdocumentor-element-found-in__line">319</span>
 
     </aside>
 
@@ -2471,7 +2637,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">290</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 
     </aside>
 
@@ -2554,7 +2720,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">169</span>
+    <span class="phpdocumentor-element-found-in__line">170</span>
 
     </aside>
 
@@ -2620,7 +2786,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">524</span>
+    <span class="phpdocumentor-element-found-in__line">527</span>
 
     </aside>
 
@@ -2699,7 +2865,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">375</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -2785,7 +2951,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">549</span>
+    <span class="phpdocumentor-element-found-in__line">599</span>
 
     </aside>
 
@@ -2866,7 +3032,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">672</span>
+    <span class="phpdocumentor-element-found-in__line">722</span>
 
     </aside>
 
@@ -2939,7 +3105,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -3002,7 +3168,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">481</span>
+    <span class="phpdocumentor-element-found-in__line">531</span>
 
     </aside>
 
@@ -3086,7 +3252,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">422</span>
+    <span class="phpdocumentor-element-found-in__line">472</span>
 
     </aside>
 
@@ -3155,6 +3321,72 @@ Router で変換した上で取得</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setupThemePlugin">
+        setupThemePlugin()
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_setupThemePlugin" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">247</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">テーマが保有するプラグインのパスを追加する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setupThemePlugin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$themes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$themes</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/BaserCore-BaserCorePlugin.html#method_setupThemePlugin#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">checked</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">noTodo</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_siteRouting">
         siteRouting()
         <a href="classes/BaserCore-BcPlugin.html#method_siteRouting" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3163,7 +3395,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">573</span>
+    <span class="phpdocumentor-element-found-in__line">577</span>
 
     </aside>
 
@@ -3218,6 +3450,13 @@ Router で変換した上で取得</dd>
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">unitTest</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
                                             </dl>
 
     
@@ -3242,7 +3481,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">339</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 
     </aside>
 
@@ -3322,7 +3561,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BcPlugin.php"><a href="files/plugins-baser-core-src-bcplugin.html"><abbr title="plugins/baser-core/src/BcPlugin.php">BcPlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">626</span>
+    <span class="phpdocumentor-element-found-in__line">630</span>
 
     </aside>
 
@@ -3409,7 +3648,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">659</span>
+    <span class="phpdocumentor-element-found-in__line">709</span>
 
     </aside>
 
@@ -3454,7 +3693,7 @@ Router で変換した上で取得</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/BaserCorePlugin.php"><a href="files/plugins-baser-core-src-basercoreplugin.html"><abbr title="plugins/baser-core/src/BaserCorePlugin.php">BaserCorePlugin.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">340</span>
+    <span class="phpdocumentor-element-found-in__line">390</span>
 
     </aside>
 
@@ -3629,6 +3868,7 @@ Router で変換した上で取得</p>
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_addPlugin">addPlugin()</a></li>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_addTheme">addTheme()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_applyAsTheme">applyAsTheme()</a></li>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_bootstrap">bootstrap()</a></li>
@@ -3641,6 +3881,7 @@ Router で変換した上で取得</p>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_execUpdater">execUpdater()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_frontPageRouting">frontPageRouting()</a></li>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_getAuthenticationService">getAuthenticationService()</a></li>
+                                            <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_getAvailableThemes">getAvailableThemes()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_getUpdaters">getUpdaters()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_getUpdateScriptMessages">getUpdateScriptMessages()</a></li>
@@ -3658,6 +3899,7 @@ Router で変換した上で取得</p>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_setupDefaultTemplatesPath">setupDefaultTemplatesPath()</a></li>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_setupJwtAuth">setupJwtAuth()</a></li>
                                             <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_setupSessionAuth">setupSessionAuth()</a></li>
+                                            <li class=""><a href="classes/BaserCore-BaserCorePlugin.html#method_setupThemePlugin">setupThemePlugin()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_siteRouting">siteRouting()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_uninstall">uninstall()</a></li>
                                             <li class=""><a href="classes/BaserCore-BcPlugin.html#method_updateDateNow">updateDateNow()</a></li>
