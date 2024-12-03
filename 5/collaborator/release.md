@@ -71,6 +71,7 @@ VERSION.txt に記載するログは、次の形式でまとめます。
 
 ```shell
 git commit -a -m "basercms-5.x.x をリリース"
+git push origin 5.1.x
 ```
 
 ## アップデートテストを実行する
