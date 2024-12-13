@@ -41,19 +41,19 @@ return [
             'alias' => '/mypage',
             'loginRedirect' => [
                 'plugin' => 'PluginName', 
-                'prefix' => 'mypage', 
+                'prefix' => 'Mypage', 
                 'controller' => 'Dashboard', 
                 'action' => 'index'
             ],
             'loginAction' => [
                 'plugin' => 'PluginName', 
-                'prefix' => 'mypage', 
+                'prefix' => 'Mypage', 
                 'controller' => 'Users', 
                 'action' => 'login'
             ],
             'logoutAction' => [
                 'plugin' => 'PluginName', 
-                'prefix' => 'mypage', 
+                'prefix' => 'Mypage', 
                 'controller' => 'Users', 
                 'action' => 'logout'
             ],
@@ -73,8 +73,15 @@ return [
             'userModel' => 'BaserCore.Users',
             'permissionType' => 1,
             'isRestApi' => true
-        ],
-]
+        ]
+    ],
+    // アクセスルールにて、ログインページへのアクセスを許可する
+    'BcPermission' => [
+        'defaultAllows' => [
+            '/mypage/plugin-name/users/login'
+        ]
+    ]
+];
 ```
 
  
