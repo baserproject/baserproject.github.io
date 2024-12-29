@@ -122,7 +122,7 @@ https://localhost/mypage/plugin-name/users/login.json
 
  
 ## ユーザーの確認
-認証におけるユーザーの確認は `UsersTable::findAvailable()` にて実装されています。  
+管理画面の認証におけるユーザーの確認は `UsersTable::findAvailable()` にて実装されています。  
 認証条件は次のとおりです。
 
 - パスワードが一致している
