@@ -1701,6 +1701,11 @@ Search.appendIndex(
             "summary": "Before\u0020Filter",
             "url": "classes/BaserCore-Controller-AppController.html#method_beforeFilter"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\AppController\u003A\u003ArequirePermission\u0028\u0029",
+            "name": "requirePermission",
+            "summary": "\u30D1\u30FC\u30DF\u30C3\u30B7\u30E7\u30F3\u304C\u5FC5\u8981\u304B\u3069\u3046\u304B\u3092\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BaserCore-Controller-AppController.html#method_requirePermission"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\AppController\u003A\u003AcheckPermission\u0028\u0029",
             "name": "checkPermission",
             "summary": "\u30A2\u30AF\u30BB\u30B9\u30EB\u30FC\u30EB\u306E\u6A29\u9650\u3092\u78BA\u8A8D\u3059\u308B",
@@ -3080,6 +3085,31 @@ Search.appendIndex(
             "name": "_accessible",
             "summary": "accessible",
             "url": "classes/BaserCore-Model-Entity-UserGroup.html#property__accessible"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Entity\\UserInterface",
+            "name": "UserInterface",
+            "summary": "Interface\u0020UserInterface",
+            "url": "classes/BaserCore-Model-Entity-UserInterface.html"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Entity\\UserInterface\u003A\u003AisSuper\u0028\u0029",
+            "name": "isSuper",
+            "summary": "\u30B9\u30FC\u30D1\u30FC\u30E6\u30FC\u30B6\u30FC\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-Model-Entity-UserInterface.html#method_isSuper"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Entity\\UserInterface\u003A\u003AisAdmin\u0028\u0029",
+            "name": "isAdmin",
+            "summary": "\u7BA1\u7406\u8005\u30E6\u30FC\u30B6\u30FC\u304B\u3069\u3046\u304B",
+            "url": "classes/BaserCore-Model-Entity-UserInterface.html#method_isAdmin"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Entity\\UserInterface\u003A\u003AgetDisplayName\u0028\u0029",
+            "name": "getDisplayName",
+            "summary": "\u8868\u793A\u540D\u79F0\u3092\u53D6\u5F97",
+            "url": "classes/BaserCore-Model-Entity-UserInterface.html#method_getDisplayName"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Entity\\UserInterface\u003A\u003AgetAuthPrefixes\u0028\u0029",
+            "name": "getAuthPrefixes",
+            "summary": "\u8A8D\u8A3C\u9818\u57DF\u306E\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9\u3092\u914D\u5217\u3067\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Model-Entity-UserInterface.html#method_getAuthPrefixes"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\AppTable",
             "name": "AppTable",
@@ -7125,6 +7155,11 @@ Search.appendIndex(
             "name": "loadDefaultDataPattern",
             "summary": "\u521D\u671F\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080",
             "url": "classes/BaserCore-Service-ThemesService.html#method_loadDefaultDataPattern"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\ThemesService\u003A\u003AchangeHelper\u0028\u0029",
+            "name": "changeHelper",
+            "summary": "helper\u3068namespace\u3092\u5909\u66F4\u3059\u308B",
+            "url": "classes/BaserCore-Service-ThemesService.html#method_changeHelper"
         },                {
             "fqsen": "\\BaserCore\\Service\\ThemesService\u003A\u003Acopy\u0028\u0029",
             "name": "copy",
@@ -12006,6 +12041,16 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u72B6\u614B\u306E\u8A18\u4E8B\u3092NO\u3088\u308A\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogPostsTable.html#method_getPublishByNo"
         },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogPostsTable\u003A\u003AfindAll\u0028\u0029",
+            "name": "findAll",
+            "summary": "find\u0020all",
+            "url": "classes/BcBlog-Model-Table-BlogPostsTable.html#method_findAll"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogPostsTable\u003A\u003AexcludeDraftFields\u0028\u0029",
+            "name": "excludeDraftFields",
+            "summary": "\u8349\u7A3F\u30C7\u30FC\u30BF\u3092\u9664\u5916\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogPostsTable.html#method_excludeDraftFields"
+        },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogPostsTable\u003A\u003A\u0024searchIndexSaving",
             "name": "searchIndexSaving",
             "summary": "\u691C\u7D22\u30C6\u30FC\u30D6\u30EB\u3078\u306E\u4FDD\u5B58\u53EF\u5426",
@@ -12570,11 +12615,6 @@ Search.appendIndex(
             "name": "createIndexConditions",
             "summary": "\u30DA\u30FC\u30B8\u4E00\u89A7\u7528\u306E\u691C\u7D22\u6761\u4EF6\u3092\u751F\u6210\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogPostsService.html#method_createIndexConditions"
-        },                {
-            "fqsen": "\\BcBlog\\Service\\BlogPostsService\u003A\u003AselectContains\u0028\u0029",
-            "name": "selectContains",
-            "summary": "Contains\u0020\u3092\u0020select\u0020\u3092\u524D\u63D0\u3068\u3057\u3066\u9069\u7528\u3059\u308B\nselect\u0020\u3092\u5229\u7528\u3057\u305F\u5834\u5408\u3001\u95A2\u9023\u30C6\u30FC\u30D6\u30EB\u306E\u30AB\u30E9\u30E0\u3092\u6307\u5B9A\u3057\u306A\u3044\u3068\u3001\u53D6\u5F97\u3067\u304D\u306A\u3044\u305F\u3081",
-            "url": "classes/BcBlog-Service-BlogPostsService.html#method_selectContains"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogPostsService\u003A\u003AcreateCategoryCondition\u0028\u0029",
             "name": "createCategoryCondition",
