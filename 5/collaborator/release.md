@@ -174,6 +174,16 @@ bin/cake create release 5.1.1
 bin/cake create release 5.1.1 5.1.x
 ```
 
+### パッケージの作成に失敗した場合
+次のようなエラーメッセージが表示された場合、Packagist に正しいパッケージが反映されていない可能性があります。
+
+```
+- baserproject/baser-core 5.1.6 requires baserproject/bc-search-index 5.1.6 -> found baserproject/bc-search-index[dev-master, dev-dev-5, 5.0.0-beta2, ..., 5.1.x-dev] but it does not match the constraint.
+```
+
+その際は、Packagist にログインし、対象パッケージのアップデートを実行すると、パッケージ作成コマンドがうまくいく場合があります。
+
+
 ## パッケージのアップロード
 baserCMSのオフィシャルサイトの /files/basercms/ ディレクトリにアップロードします。
 
