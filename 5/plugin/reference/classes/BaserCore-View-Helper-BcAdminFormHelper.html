@@ -1287,32 +1287,21 @@ BcForm::create より呼出される事が前提</dd>
     
         <section class="phpdocumentor-description"><h3>Options:</h3>
 <ul>
-<li>
-<code class="prettyprint">type</code> Form method defaults to autodetecting based on the form context. If
+<li><code class="prettyprint">type</code> Form method defaults to autodetecting based on the form context. If
 the form context's isCreate() method returns false, a PUT request will be done.</li>
-<li>
-<code class="prettyprint">method</code> Set the form's method attribute explicitly.</li>
-<li>
-<code class="prettyprint">url</code> The URL the form submits to. Can be a string or a URL array.</li>
-<li>
-<code class="prettyprint">encoding</code> Set the accept-charset encoding for the form. Defaults to <code class="prettyprint">Configure::read('App.encoding')</code>
-</li>
-<li>
-<code class="prettyprint">enctype</code> Set the form encoding explicitly. By default <code class="prettyprint">type =&gt; file</code> will set <code class="prettyprint">enctype</code>
+<li><code class="prettyprint">method</code> Set the form's method attribute explicitly.</li>
+<li><code class="prettyprint">url</code> The URL the form submits to. Can be a string or a URL array.</li>
+<li><code class="prettyprint">encoding</code> Set the accept-charset encoding for the form. Defaults to <code class="prettyprint">Configure::read('App.encoding')</code></li>
+<li><code class="prettyprint">enctype</code> Set the form encoding explicitly. By default <code class="prettyprint">type =&gt; file</code> will set <code class="prettyprint">enctype</code>
 to <code class="prettyprint">multipart/form-data</code>.</li>
-<li>
-<code class="prettyprint">templates</code> The templates you want to use for this form. Any templates will be merged on top of
+<li><code class="prettyprint">templates</code> The templates you want to use for this form. Any templates will be merged on top of
 the already loaded templates. This option can either be a filename in /config that contains
 the templates you want to load, or an array of templates to use.</li>
-<li>
-<code class="prettyprint">context</code> Additional options for the context class. For example the EntityContext accepts a 'table'
+<li><code class="prettyprint">context</code> Additional options for the context class. For example the EntityContext accepts a 'table'
 option that allows you to set the specific Table class the form should be based on.</li>
-<li>
-<code class="prettyprint">idPrefix</code> Prefix for generated ID attributes.</li>
-<li>
-<code class="prettyprint">valueSources</code> The sources that values should be read from. See FormHelper::setValueSources()</li>
-<li>
-<code class="prettyprint">templateVars</code> Provide template variables for the formStart template.</li>
+<li><code class="prettyprint">idPrefix</code> Prefix for generated ID attributes.</li>
+<li><code class="prettyprint">valueSources</code> The sources that values should be read from. See FormHelper::setValueSources()</li>
+<li><code class="prettyprint">templateVars</code> Provide template variables for the formStart template.</li>
 </ul>
 </section>
 
@@ -2831,23 +2820,17 @@ image path for $caption.</p>
     
         <section class="phpdocumentor-description"><h3>Options</h3>
 <ul>
-<li>
-<code class="prettyprint">div</code> - Include a wrapping div?  Defaults to true. Accepts sub options similar to
+<li><code class="prettyprint">div</code> - Include a wrapping div?  Defaults to true. Accepts sub options similar to
 FormHelper::input().</li>
-<li>
-<code class="prettyprint">before</code> - Content to include before the input.</li>
-<li>
-<code class="prettyprint">after</code> - Content to include after the input.</li>
-<li>
-<code class="prettyprint">type</code> - Set to 'reset' for reset inputs. Defaults to 'submit'</li>
-<li>
-<code class="prettyprint">confirm</code> - JavaScript confirmation message.</li>
+<li><code class="prettyprint">before</code> - Content to include before the input.</li>
+<li><code class="prettyprint">after</code> - Content to include after the input.</li>
+<li><code class="prettyprint">type</code> - Set to 'reset' for reset inputs. Defaults to 'submit'</li>
+<li><code class="prettyprint">confirm</code> - JavaScript confirmation message.</li>
 <li>Other attributes will be assigned to the input element.</li>
 </ul>
 <h3>Options</h3>
 <ul>
-<li>
-<code class="prettyprint">div</code> - Include a wrapping div?  Defaults to true. Accepts sub options similar to
+<li><code class="prettyprint">div</code> - Include a wrapping div?  Defaults to true. Accepts sub options similar to
 FormHelper::input().</li>
 <li>Other attributes will be assigned to the input element.</li>
 </ul>

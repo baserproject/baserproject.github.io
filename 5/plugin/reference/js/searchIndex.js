@@ -4176,6 +4176,11 @@ Search.appendIndex(
             "summary": "Json\u3092\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\n\u534A\u89D2\u5C0F\u6587\u5B57\u82F1\u6570\u5B57\u3068\u30A2\u30F3\u30C0\u30FC\u30B9\u30B3\u30A2\u3092\u8A31\u5BB9",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_checkWithJson"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003ArootPath\u0028\u0029",
+            "name": "rootPath",
+            "summary": "url\u5F62\u5F0F\u0020\u0028\u30EB\u30FC\u30C8\u30D1\u30B9\u3068\u7A7A\u767D\u8A31\u5BB9\u0029\u3067\u3042\u308B\u3053\u3068\u3092\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_rootPath"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\PageValidation",
             "name": "PageValidation",
             "summary": "Class\u0020PageValidation",
