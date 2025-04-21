@@ -8,25 +8,6 @@
 ### メソッド間
 メソッドとメソッドの間では１行の空行を入れます。
 
-### メソッド名
-ロウワーキャメルケースとします。  
-
-### プロパティ名と変数名
-オブジェクトのプロパティ名のみ、アッパーキャメルケースとし、その他の変数は全てロウワーキャメルケースとします。  
-
-```php
-class UsersController extends AppController 
-{
-    public $Users;
-    private $user;
-    protected function getStatus()
-    {
-        $user = $this->Users->find()->first();
-        return $user->status;
-    } 
-}
-```
-
 ## コメントヘッダー
 ### ファイルヘッダー
 
