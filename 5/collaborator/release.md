@@ -284,7 +284,7 @@ git push origin 5.1.x
 
 #### 1. composer.json を戻す
 リリースコマンドを実行すると、composer.json の `replace` の箇所について、各パッケージごとのバージョン番号が、最新バージョン番号で更新されます。  
-こちらを手動で元のバージョンに戻します。
+こちらを、masterブランチにて、手動で元のバージョンに戻します。
 
 ```json
 // /composer.json
@@ -315,10 +315,20 @@ git push origin 5.1.x
 git tag -d 5.0.2
 ```
 
-#### 3. リモートのタグを削除する
+#### 3. リモート basercms レポジトリのタグを削除する
 リリースコマンドで作成されたリモートタグを削除します。
 
 ```shell
+git push origin :5.0.2
+```
+
+#### 3. リモート baser-core レポジトリのタグを削除する
+モノレポで自動作成された baser-core のリモートタグを削除します。  
+これを実施していないと、既にタグが存在するというエラーが発生します。
+
+```shell
+git clone https://github.com/baserproject/baser-core.git
+cd baesr-core
 git push origin :5.0.2
 ```
 
