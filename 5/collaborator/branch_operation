@@ -1,0 +1,51 @@
+# 開発ブランチの運用
+
+開発ブランチは、メジャーバージョン、または、マイナーバージョンごとに分けて運用します。
+
+- dev-1：バージョン1系
+- dev-2：バージョン2系
+- dev-3：バージョン3系
+- dev-4：バージョン4系
+- 5.0.x：バージョン5系
+- 5.1.x：バージョン5系のマイナーバージョン1
+- 5.2.x：バージョン5系のマイナーバージョン2
+
+5系以降、開発版として、5.0.x、5.1.x、5.2.xのようにマイナーバージョンごとにブランチを分けて運用します。
+
+## マイナーバージョン用のブランチを作成する際に必要な作業
+
+マイナーバージョン用のブランチを作成する際は、以下の手順で作業を行います。
+
+### 1. マイナーバージョンのブランチを作成する
+例：5.2.xブランチを作成する場合は、5.1.xブランチから分岐して作成します。
+
+### バージョン番号の設定
+次のファイルに、新しいマイナーバージョンのバージョン番号を設定する
+```
+# /plugins/baser-core/VERSION.txt
+5.2.0
+```
+
+### composer.jsonの更新
+次のファイルにおいて依存するコアプラグインの部分に、新しいマイナーバージョンの開発ブランチとしてのバージョン番号を設定する
+```json
+// /plugins/baser-core/composer.json
+{
+  "require": {
+        "baserproject/bc-admin-third": "5.2.x-dev",
+        "baserproject/bc-blog": "5.2.x-dev",
+        "baserproject/bc-content-link": "5.2.x-dev",
+        "baserproject/bc-custom-content": "5.2.x-dev",
+        "baserproject/bc-editor-template": "5.2.x-dev",
+        "baserproject/bc-favorite": "5.2.x-dev",
+        "baserproject/bc-front": "5.2.x-dev",
+        "baserproject/bc-installer": "5.2.x-dev",
+        "baserproject/bc-mail": "5.2.x-dev",
+        "baserproject/bc-search-index": "5.2.x-dev",
+        "baserproject/bc-theme-config": "5.2.x-dev",
+        "baserproject/bc-theme-file": "5.2.x-dev",
+        "baserproject/bc-uploader": "5.2.x-dev",
+        "baserproject/bc-widget-area": "5.2.x-dev",
+  }
+}
+```
