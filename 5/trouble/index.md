@@ -1,11 +1,15 @@
 # 困った時ガイド
 
-## Proxy配下でのインストール
+baserCMSを利用していて困ったことがある場合は、以下のガイドを参考にしてください。
 
-Windowsの例では、以下のようにするとうまくいくケースがあるようです。
+## 逆引きガイド
 
-```
-set HTTP_PROXY=http://<username>:<password>@<proxy>:<port>
-set HTTPS_PROXY=http://<username>:<password>@<proxy>:<port>
-```
+やりたいことがあるけど、どのように実現すればよいかわからない場合利用してください。
 
+- [逆引きガイド](./reverse_guide/index
+
+## トラブルシューティング
+
+トラブルが発生した場合は、以下のトラブルシューティングを参考にしてください。
+
+- [トラブルシューティング](./troubleshooting)

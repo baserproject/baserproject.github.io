@@ -19,5 +19,12 @@ docker exec -it bc-php /bin/bash
 bin/cake plugin assets symlink
 ```
 
+## Proxy配下でのインストールがうまくいかない場合
 
-{% include looking_for.html %}
+Windowsの例では、以下のようにするとうまくいくケースがあるようです。
+
+```
+set HTTP_PROXY=http://<username>:<password>@<proxy>:<port>
+set HTTPS_PROXY=http://<username>:<password>@<proxy>:<port>
+```
+
