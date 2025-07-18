@@ -4,3 +4,4 @@ node_modules
 .DS_Store
 LOCAL_TODO.md
 plantuml.jar*
+/.vscode/
