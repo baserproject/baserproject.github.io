@@ -59,3 +59,18 @@ BcBakeを利用した場合、`.github/workflows/test.yml` が用意されてい
 - `.github`
 - `tests`
 - `composer.json`
+
+なお、composer で必要なパッケージは次のとおりです。
+
+```json
+    "require": {
+        "php": "^8.1",
+        "baserproject/baser-core": "5.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "josegonzalez/dotenv": "^4.0",
+        "vierge-noire/cakephp-fixture-factories": "^3.0",
+        "vierge-noire/cakephp-test-suite-light": "^3.0"
+    },
+```
