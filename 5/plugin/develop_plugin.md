@@ -16,6 +16,12 @@ CakePHPのプラグインと同様の方法で作ることができます。
 bin/cake bake plugin {YourPlugin}
 ```
 
+また、baserCMSのプラグインに特化したプラグインを作成するには、[BcBake](https://github.com/baserproject/BcBake){:target="_blank"} を利用すると非常に便利です。
+
+```shell
+bin/cake bake bc_plugin {YourPlugin}
+```
+
 プラグインは、`/plugins` フォルダに配置します。
 
 ## プラグインを baserCMS に認識させる
@@ -377,6 +383,12 @@ class PagesController extends AppController
 サービスクラスの利用方法、及びサービスプロバイダー定義方法の詳細は次のページをご覧ください。
 
 - [CakePHP Cookbook: 依存性の注入(DI)](https://book.cakephp.org/4/ja/development/dependency-injection.html){:target="_blank"}
+
+## プラグインでのユニットテスト
+
+独自開発のプラグインのユニットテストを行うには次をご覧ください。
+
+- [プラグインでのユニットテスト](./unittest)
 
 ## APIドキュメント
 baserCMSで利用できるAPIについては次をご覧ください。
