@@ -39,6 +39,22 @@ docker exec -it bc-php /bin/bash
 vendor/bin/monorepo-builder merge
 ```
 
+## composer.lock の更新
+monorepo-builder の merge を実行した際、composer.json が更新された場合は、composer.lock も更新する必要があります。
+
+```shell
+cd docker
+docker exec -it bc-php /bin/bash
+rm composer.lock
+composer install
+```
+
+その後、git でコミットします。
+
+```shell
+git add composer.json composer.lock
+git commit -m "各プラグインの依存パッケージを更新"
+```
  
 ## VERSION.txt を更新
 `plugins/baser-core/VERSION.txt` の先頭行をリリースするバージョン番号に変更し、変更内容をまとめます。  
