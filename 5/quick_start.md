@@ -14,7 +14,7 @@
 ## 構造を知る
 
 基本的な構成はフォルダ構成やデータベース構造はCakePHP 4と同じです。
-baseCMSは「BaserCore」というCake PHPのプラグインとして開発しています。
+baserCMSは「BaserCore」というCake PHPのプラグインとして開発しています。
 
 CakePHPの構成は [CakePHPのCookbook](https://book.cakephp.org/4/ja/intro/cakephp-folder-structure.html){:target="_blank"} に記載があります。こちらを参照してください。
 

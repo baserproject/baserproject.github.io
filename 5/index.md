@@ -39,8 +39,8 @@ baserCMS５より、baserCMS本体をコンパクトにしてメンテナンス�
 | BcBlog            | 複数設置可能なシンプルブログです。 |
 | BcContentLink     | コンテンツ管理を利用してメニューを生成する場合にメニューにリンクを配置する事ができます。 |
 | BcCustomContent   | 複数設置可能で独自フィールドが定義できるコンテンツです。様々なデータ構造を定義し管理画面を自動生成します。 |
-| BcEditorTemaplate | CKEditorのテンプレート管理機能です。 |
-| BcFavoirte        | ユーザーごとに管理画面内のお気に入りを登録できる機能です。 |
+| BcEditorTemplate | CKEditorのテンプレート管理機能です。 |
+| BcFavorite        | ユーザーごとに管理画面内のお気に入りを登録できる機能です。 |
 | BcFront           | デフォルトのフロントテーマです。初期データが２つ入っています。|
 | BcInstaller       | baserCMSのインストーラーです。インストール時のみに利用します。 |
 | BcMail            | 複数設置可能の高機能メールフォームです。 | 
