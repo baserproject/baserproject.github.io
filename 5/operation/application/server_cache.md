@@ -21,26 +21,31 @@ baserCMSは[CakePHPフレームワーク](https://cakephp.org/jp){:target="_blan
 
 
 ## キャッシュの無効化
-/config/app.phpの以下の部分を変更します。
-```shell
-'_cake_core_' => [
-    'className' => FileEngine::class,
-    'prefix' => 'myapp_cake_core_',
-    'path' => CACHE . 'persistent' . DS,
-    'serialize' => true,
-    'duration' => '+1 years',
-    'url' => env('CACHE_CAKECORE_URL', null),
-]
-```
-↓ 変更する
-```shell
-'_cake_core_' => [
-    'className' => Null,
-    'prefix' => 'myapp_cake_core_',
-    'path' => CACHE . 'persistent' . DS,
-    'serialize' => true,
-    'duration' => '+1 years',
-    'url' => env('CACHE_CAKECORE_URL', null),
+/config/setting.phpの以下の部分を変更します。
+```php
+
+use Cake\Cache\Engine\NullEngine;
+return [
+    'Cache' => [
+        'default' => [
+            'className' => NullEngine::class,
+        ],
+        '_cake_core_' => [
+            'className' => NullEngine::class,
+        ],
+        '_cake_model_' => [
+            'className' => NullEngine::class,
+        ],
+        '_bc_env_' => [
+            'className' => NullEngine::class,
+        ],
+        '_bc_update_' => [
+            'className' => NullEngine::class,
+        ],
+        '_bc_gmaps_' => [
+            'className' => NullEngine::class,
+        ],
+    ],
 ]
 ```
 なお、デバッグモードで実行した時は、キャッシュがあっても無視されます。 　
