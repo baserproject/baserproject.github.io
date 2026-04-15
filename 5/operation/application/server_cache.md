@@ -17,8 +17,9 @@ baserCMSは[CakePHPフレームワーク](https://cakephp.org/jp){:target="_blan
 上記フォルダ内に設置されたプラグインは、管理画面のプラグイン管理で自動的に認識されます。
 
 ## サーバーキャッシュの削除
-サーバーキャッシュの具体的な削除方法については、[こちら](https://baserproject.github.io/5/web_api/baser_admin_api/baser-core/utilities/clear_cache){:target="_blank"}を参照してください。
-
+1. 管理画面にアクセスします
+2. ユーティリティ > ユーティリティトップ > サーバキャッシュを削除します　を実行してください
+3. 「サーバーキャッシュを削除しました。」というサクセスメッセージが出力した場合、成功です。
 
 ## キャッシュの無効化
 /config/setting.phpの以下の部分を変更します。
