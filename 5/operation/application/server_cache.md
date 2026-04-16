@@ -54,9 +54,3 @@ return [
 
 ## サイトの移設時の問題
 テスト環境でbaserCMSでサイトを構築し、本番環境に移す際、テスト環境で残されたこれらのキャッシュが問題になることがあります。その為、サイト移設時には前述の「tmp」フォルダの中にあるファイル・フォルダを全て削除してから本番環境へコピーすることになります。
-
-## 外部参考リンク
-[サーバーキャッシュを削除する](https://baserproject.github.io/5/web_api/baser_admin_api/baser-core/utilities/clear_cache){:target="_blank"} -baserCMSユーザーマニュアル
-
-
-
