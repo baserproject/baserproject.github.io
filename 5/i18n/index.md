@@ -110,14 +110,37 @@ bin/cake i18n extract  --paths /var/www/html/plugins/baser-core,\
 /var/www/html/plugins/bc-theme-file,\
 /var/www/html/plugins/bc-uploader,\
 /var/www/html/plugins/bc-widget-area,\
-/var/www/html/plugins/bc-seo
-
+/var/www/html/plugins/bc-seo \
+--output /var/www/html/plugins/baser-core/resources/locales/
 
 #Would you like to extract the messages from the CakePHP core? (y/n)
-→ n を入力
+[n] > n を入力
 
-#What is the path you would like to output?
-→ /var/www/html/plugins/baser-core/resources/locales/ を入力
+Extracting...
+-------------------------------------------------------------------------------
+Paths:
+   /var/www/html/plugins/baser-core
+   /var/www/html/plugins/bc-admin-third
+   /var/www/html/plugins/bc-blog
+   /var/www/html/plugins/bc-content-link
+   /var/www/html/plugins/bc-custom-content
+   /var/www/html/plugins/bc-editor-template
+   /var/www/html/plugins/bc-favorite
+   /var/www/html/plugins/bc-front
+   /var/www/html/plugins/bc-installer
+   /var/www/html/plugins/bc-mail
+   /var/www/html/plugins/bc-search-index
+   /var/www/html/plugins/bc-theme-config
+   /var/www/html/plugins/bc-theme-file
+   /var/www/html/plugins/bc-uploader
+   /var/www/html/plugins/bc-widget-area
+   /var/www/html/plugins/bc-seo
+Output Directory: /var/www/html/plugins/baser-core/resources/locales/
+-------------------------------------------------------------------------------
+==========================================================================> 100%
+
+Error: baser_core.pot already exists in this location. Overwrite? [Y]es, [N]o, [A]ll (y/n/a) 
+[y] > A を入力
 ```
 
 実行すると、次のファイルが生成されます。
