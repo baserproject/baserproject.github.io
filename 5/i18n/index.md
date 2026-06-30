@@ -109,7 +109,9 @@ bin/cake i18n extract  --paths /var/www/html/plugins/baser-core,\
 /var/www/html/plugins/bc-theme-config,\
 /var/www/html/plugins/bc-theme-file,\
 /var/www/html/plugins/bc-uploader,\
-/var/www/html/plugins/bc-widget-area
+/var/www/html/plugins/bc-widget-area,\
+/var/www/html/plugins/bc-seo
+
 
 #Would you like to extract the messages from the CakePHP core? (y/n)
 → n を入力
