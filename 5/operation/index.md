@@ -9,6 +9,7 @@ baserCMSを運用する上での基本機能のガイドラインです。
 - [コンテンツ管理](./application/contents)
 - [サイト管理](./application/site)
 - [検索インデックス管理](./application/search_index)
+- [SEO設定](./application/seo)
 - [ウィジェットエリア管理](./application/widget_area)（執筆者募集）
 - [エディタテンプレート管理](./application/editor_template)（執筆者募集）
 - [テーマ設定](./application/theme_config)（執筆者募集）
