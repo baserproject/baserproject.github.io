@@ -14,3 +14,5 @@ baserCMSを運用する上での基本機能のガイドラインです。
 - [テーマ設定](./application/theme_config)（執筆者募集）
 - [テーマファイル管理](./application/theme_file)（執筆者募集）
 - [サーバーキャッシュ](./application/server_cache)（執筆者募集）
+- [BurgerEditor](./application/burger_editor)
+- [AIエージェント連携](./application/ai_agent)
