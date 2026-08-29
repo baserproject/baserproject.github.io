@@ -34,7 +34,7 @@ baser API は認証は不要です。
 
 ### ブログコンテンツ
 - [ブログコンテンツの一覧の取得](bc-blog/blog_contents/index)
-- [ブログコンテンツ情報の取得](bc-blog/blog_contents/view)
+- [ブログコンテンツの単一取得](bc-blog/blog_contents/view)
 
 ### ブログ記事
 - [ブログ記事一覧の取得](bc-blog/blog_posts/index)
