@@ -1,7 +1,7 @@
 # PlantUMLの利用方法
 
 baserCMS の開発では、クラス図、ユースケース図、ドメインモデル図などのドキュメントの作成において [PlantUML](https://plantuml.com/ja/) を利用しています。
-また、その際のSVGファイルへ監視と自動変換に Gulp を利用しています。
+また、その際のSVGファイルへの変換には `plantuml.jar` を利用しています。
 
 変換の際は、`src/puml/` 配下に作成した `puml`ファイルを元に、ドキュメントルート配下の同階層に出力します 
 
@@ -24,18 +24,34 @@ https://java.com/ja/
 brew install graphviz
 sudo ln -s /opt/homebrew/bin/dot /usr/local/bin/dot
 ```
-### 3. gulp、gulp-puml をインストール
-プロジェクトディレクトリの直下で npm を使ってインストールします。
+
+### 3. plantuml.jar をダウンロード
+プロジェクトディレクトリの直下に `plantuml.jar` を配置します。
 ```shell
-npm install
+curl -JLO http://sourceforge.net/projects/plantuml/files/plantuml.jar/download
 ```
 
- 
-## gulp での監視方法
 
-ドキュメントルートに移動して gulp コマンドを実行します。
+## SVGへの変換方法
+
+プロジェクトディレクトリの直下で変換用のスクリプトを実行します。
 
 ```shell
-gulp
+# 全ファイルを変換する場合
+./bin/build-puml.sh
+
+# 特定のファイルのみ変換する場合
+./bin/build-puml.sh {PUMLFILE}
 ```
 
+
+## 変更の監視方法
+
+ファイルの変更を監視して自動で変換する場合は、`fswatch` をインストールした上で、監視用のスクリプトを実行します。
+
+```shell
+brew install fswatch
+./bin/watch-puml.sh
+```
+
+ブラウザの自動リロードについては、`docker compose up` で起動する Jekyll のライブリロード機能により行われます。

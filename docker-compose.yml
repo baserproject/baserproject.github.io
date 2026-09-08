@@ -3,10 +3,11 @@ services:
   app:
     platform: linux/amd64
     build: "./"
-    command: jekyll serve --force_polling
+    command: jekyll serve --force_polling --livereload
     volumes:
       - ./:/srv/jekyll
     ports:
       - 4000:4000
+      - 35729:35729
     environment:
       JEKYLL_ENV: docker
