@@ -106,6 +106,11 @@ Search.appendIndex(
             "summary": "Web\u0020API\u0020\u306EPOST\u9001\u4FE1\u306B\u304A\u3044\u3066\u0020CSRF\u0020\u3092\u30B9\u30AD\u30C3\u30D7\u3059\u308BURL\u306B\u3064\u3044\u3066\u3001\nRouter\u0020\u3067\u5909\u63DB\u3057\u305F\u4E0A\u3067\u53D6\u5F97",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_getSkipCsrfUrl"
         },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AisSkipCsrfUrl\u0028\u0029",
+            "name": "isSkipCsrfUrl",
+            "summary": "CSRF\u0020\u3092\u30B9\u30AD\u30C3\u30D7\u3059\u308BURL\u304B\u3069\u3046\u304B\u3092\u30EF\u30A4\u30EB\u30C9\u30AB\u30FC\u30C9\u30D1\u30BF\u30FC\u30F3\u3067\u5224\u5B9A",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_isSkipCsrfUrl"
+        },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AgetAuthenticationService\u0028\u0029",
             "name": "getAuthenticationService",
             "summary": "\u8A8D\u8A3C\u30B5\u30FC\u30D3\u30B9\u30D7\u30ED\u30D0\u30A4\u30C0\u751F\u6210",
@@ -133,7 +138,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AdisableRootRoutes\u0028\u0029",
             "name": "disableRootRoutes",
-            "summary": "\/config\/routes.php\u0020\u3092\u7121\u52B9\u5316\u3059\u308B",
+            "summary": "config\/routes.php\u0020\u306E\u0020fallbacks\u0028\u0029\u0020\u304C\u8FFD\u52A0\u3059\u308B\u6C4E\u7528\u30EB\u30FC\u30C8\u3092\u7121\u52B9\u5316\u3059\u308B",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_disableRootRoutes"
         },                {
             "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AupdateDefaultData\u0028\u0029",
@@ -150,6 +155,11 @@ Search.appendIndex(
             "name": "console",
             "summary": "\u30B3\u30DE\u30F3\u30C9\u5B9A\u7FA9",
             "url": "classes/BaserCore-BaserCorePlugin.html#method_console"
+        },                {
+            "fqsen": "\\BaserCore\\BaserCorePlugin\u003A\u003AgetPluginVendorPath\u0028\u0029",
+            "name": "getPluginVendorPath",
+            "summary": "baserCMS\u306E\u30D7\u30E9\u30B0\u30A4\u30F3\u3092\u4FDD\u6709\u3057\u3066\u3044\u308B\u30D9\u30F3\u30C0\u30FC\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-BaserCorePlugin.html#method_getPluginVendorPath"
         },                {
             "fqsen": "\\BaserCore\\BcPlugin",
             "name": "BcPlugin",
@@ -1601,6 +1611,11 @@ Search.appendIndex(
             "summary": "Before\u0020Filter",
             "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_beforeFilter"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003ArestrictNonPublicAccess\u0028\u0029",
+            "name": "restrictNonPublicAccess",
+            "summary": "\u672A\u8A8D\u8A3C\u30E6\u30FC\u30B6\u30FC\u306B\u3088\u308B\u975E\u516C\u958B\u30C7\u30FC\u30BF\u3078\u306E\u30A2\u30AF\u30BB\u30B9\u3092\u5236\u9650\u3059\u308B\uFF08API\u0020\u7248\uFF09",
+            "url": "classes/BaserCore-Controller-Api-BcApiController.html#method_restrictNonPublicAccess"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\Api\\BcApiController\u003A\u003AgetAccessToken\u0028\u0029",
             "name": "getAccessToken",
             "summary": "\u30C8\u30FC\u30AF\u30F3\u3092\u53D6\u5F97\u3059\u308B",
@@ -1701,6 +1716,11 @@ Search.appendIndex(
             "summary": "Before\u0020Filter",
             "url": "classes/BaserCore-Controller-AppController.html#method_beforeFilter"
         },                {
+            "fqsen": "\\BaserCore\\Controller\\AppController\u003A\u003ArestrictNonPublicAccess\u0028\u0029",
+            "name": "restrictNonPublicAccess",
+            "summary": "\u672A\u8A8D\u8A3C\u30E6\u30FC\u30B6\u30FC\u306B\u3088\u308B\u975E\u516C\u958B\u30C7\u30FC\u30BF\u3078\u306E\u30A2\u30AF\u30BB\u30B9\u3092\u5236\u9650\u3059\u308B",
+            "url": "classes/BaserCore-Controller-AppController.html#method_restrictNonPublicAccess"
+        },                {
             "fqsen": "\\BaserCore\\Controller\\AppController\u003A\u003ArequirePermission\u0028\u0029",
             "name": "requirePermission",
             "summary": "\u30D1\u30FC\u30DF\u30C3\u30B7\u30E7\u30F3\u304C\u5FC5\u8981\u304B\u3069\u3046\u304B\u3092\u78BA\u8A8D\u3059\u308B",
@@ -1795,6 +1815,11 @@ Search.appendIndex(
             "name": "beforeRender",
             "summary": "beforeRender\u0020callback.",
             "url": "classes/BaserCore-Controller-BcErrorController.html#method_beforeRender"
+        },                {
+            "fqsen": "\\BaserCore\\Controller\\BcErrorController\u003A\u003AnotFound\u0028\u0029",
+            "name": "notFound",
+            "summary": "NotFoundException\u0020\u306E\u30A8\u30E9\u30FC\u30DA\u30FC\u30B8\u3092\u63CF\u753B\u3059\u308B",
+            "url": "classes/BaserCore-Controller-BcErrorController.html#method_notFound"
         },                {
             "fqsen": "\\BaserCore\\Controller\\BcFormController",
             "name": "BcFormController",
@@ -3346,6 +3371,11 @@ Search.appendIndex(
             "summary": "Content\u0020data\u0020\u3092\u4F5C\u6210\u3057\u3066\u4FDD\u5B58\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-ContentsTable.html#method_createContent"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\ContentsTable\u003A\u003AcopyEyecatchFile\u0028\u0029",
+            "name": "copyEyecatchFile",
+            "summary": "\u30B3\u30D4\u30FC\u3055\u308C\u305F\u30B3\u30F3\u30C6\u30F3\u30C4\u306E\u30A2\u30A4\u30AD\u30E3\u30C3\u30C1\u753B\u50CF\u3092\u3001\u30B3\u30D4\u30FC\u5148\u306E\u30B3\u30F3\u30C6\u30F3\u30C4ID\u306B\u57FA\u3065\u304F\n\u30D5\u30A1\u30A4\u30EB\u540D\u3067\u30EA\u30CD\u30FC\u30E0\u30B3\u30D4\u30FC\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-ContentsTable.html#method_copyEyecatchFile"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\ContentsTable\u003A\u003AcreateUrl\u0028\u0029",
             "name": "createUrl",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C7\u30FC\u30BF\u3088\u308AURL\u3092\u751F\u6210\u3059\u308B",
@@ -3673,12 +3703,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\PermissionsTable\u003A\u003AMETHOD_LIST",
             "name": "METHOD_LIST",
-            "summary": "",
+            "summary": "\u8A31\u53EF\/\u62D2\u5426\u3059\u308B\u5BFE\u8C61\u30E1\u30BD\u30C3\u30C9",
             "url": "classes/BaserCore-Model-Table-PermissionsTable.html#constant_METHOD_LIST"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\PermissionsTable\u003A\u003AAUTH_LIST",
             "name": "AUTH_LIST",
-            "summary": "",
+            "summary": "\u8A31\u53EF\/\u62D2\u5426",
             "url": "classes/BaserCore-Model-Table-PermissionsTable.html#constant_AUTH_LIST"
         },                {
             "fqsen": "\\BaserCore\\Model\\Table\\PermissionsTable\u003A\u003A\u0024_targetPermissions",
@@ -4041,6 +4071,11 @@ Search.appendIndex(
             "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30E6\u30FC\u30B6\u30FC\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Model-Table-UsersTable.html#method_findAvailable"
         },                {
+            "fqsen": "\\BaserCore\\Model\\Table\\UsersTable\u003A\u003AtrimSpace\u0028\u0029",
+            "name": "trimSpace",
+            "summary": "\u6587\u5B57\u5217\u306E\u5148\u982D\u3068\u672B\u5C3E\u306E\u7A7A\u767D\u3092\u9664\u53BB\u3059\u308B",
+            "url": "classes/BaserCore-Model-Table-UsersTable.html#method_trimSpace"
+        },                {
             "fqsen": "\\BaserCore\\Model\\Table\\UsersUserGroupsTable",
             "name": "UsersUserGroupsTable",
             "summary": "Class\u0020UsersUserGroupsTable",
@@ -4135,6 +4170,36 @@ Search.appendIndex(
             "name": "containsScript",
             "summary": "\u30B9\u30AF\u30EA\u30D7\u30C8\u304C\u57CB\u3081\u8FBC\u307E\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF\u3059\u308B\n\u002D\u0020\u7BA1\u7406\u30B0\u30EB\u30FC\u30D7\u306E\u5834\u5408\u306F\u7121\u6761\u4EF6\u306B\u0020true\u0020\u3092\u8FD4\u5374\n\u002D\u0020\u7BA1\u7406\u30B0\u30EB\u30FC\u30D7\u4EE5\u5916\u306E\u5834\u5408\u306B\u8A31\u53EF\u3055\u308C\u3066\u3044\u308B\u5834\u5408\u306F\u7121\u6761\u4EF6\u306B\u0020true\u0020\u3092\u8FD4\u5374",
             "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_containsScript"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AgetContainsScriptPurifierConfig\u0028\u0029",
+            "name": "getContainsScriptPurifierConfig",
+            "summary": "containsScript\u0020\u7528\u306E\u0020HTMLPurifier\u0020\u8A2D\u5B9A\u3092\u69CB\u7BC9\u3059\u308B",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_getContainsScriptPurifierConfig"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AloadHtmlFragment\u0028\u0029",
+            "name": "loadHtmlFragment",
+            "summary": "HTML\u65AD\u7247\u3092\u0020DOMDocument\u0020\u306B\u8AAD\u307F\u8FBC\u3080",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_loadHtmlFragment"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AnormalizeAttrValueForSchemeCheck\u0028\u0029",
+            "name": "normalizeAttrValueForSchemeCheck",
+            "summary": "\u5C5E\u6027\u5024\u3092\u5B9F\u4F53\u53C2\u7167\u30FB\u6570\u5024\u6587\u5B57\u53C2\u7167\u30FB\u5236\u5FA1\u6587\u5B57\u307E\u3067\u8E0F\u307F\u8FBC\u3093\u3067\u30C7\u30B3\u30FC\u30C9\u30FB\u6B63\u898F\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_normalizeAttrValueForSchemeCheck"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AcontainsDangerousUriScheme\u0028\u0029",
+            "name": "containsDangerousUriScheme",
+            "summary": "URI\u7CFB\u5C5E\u6027\u5024\u306B\u5371\u967A\u306A\u30B9\u30AD\u30FC\u30E0\u304C\u542B\u307E\u308C\u308B\u304B\uFF08\u5B9F\u4F53\u53C2\u7167\u306B\u3088\u308B\u96E3\u8AAD\u5316\u3092\u542B\u3081\u3066\u691C\u67FB\u3059\u308B\uFF09",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_containsDangerousUriScheme"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AextractHtmlStructureSets\u0028\u0029",
+            "name": "extractHtmlStructureSets",
+            "summary": "HTML\u304B\u3089\u8981\u7D20\u540D\u30FB\u5C5E\u6027\u540D\u30FBURI\u30B9\u30AD\u30FC\u30E0\u306E\u96C6\u5408\u3092\u62BD\u51FA\u3059\u308B",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_extractHtmlStructureSets"
+        },                {
+            "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003ApurifyRemovesUnsafeStructure\u0028\u0029",
+            "name": "purifyRemovesUnsafeStructure",
+            "summary": "HTMLPurifier\u0020\u3067\u6D44\u5316\u3057\u305F\u7D50\u679C\u3001\u8A31\u53EF\u5916\u306E\u5371\u967A\u306A\u8981\u7D20\u30FB\u5C5E\u6027\u30FB\u30B9\u30AD\u30FC\u30E0\u304C\u9664\u53BB\u3055\u308C\u305F\u304B",
+            "url": "classes/BaserCore-Model-Validation-BcValidation.html#method_purifyRemovesUnsafeStructure"
         },                {
             "fqsen": "\\BaserCore\\Model\\Validation\\BcValidation\u003A\u003AcheckKatakana\u0028\u0029",
             "name": "checkKatakana",
@@ -4848,7 +4913,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Service\\BcCaptchaService\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "\u30AD\u30E3\u30D7\u30C1\u30E3\u753B\u8C61\u3092\u8868\u793A\u3059\u308B",
+            "summary": "\u30AD\u30E3\u30D7\u30C1\u30E3\u753B\u50CF\u3092\u751F\u6210\u3057\u3066\u753B\u50CF\u30C7\u30FC\u30BF\u3092\u8FD4\u3059",
             "url": "classes/BaserCore-Service-BcCaptchaService.html#method_render"
         },                {
             "fqsen": "\\BaserCore\\Service\\BcCaptchaService\u003A\u003Acheck\u0028\u0029",
@@ -4863,7 +4928,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Service\\BcCaptchaServiceInterface\u003A\u003Arender\u0028\u0029",
             "name": "render",
-            "summary": "\u30AD\u30E3\u30D7\u30C1\u30E3\u753B\u8C61\u3092\u8868\u793A\u3059\u308B",
+            "summary": "\u30AD\u30E3\u30D7\u30C1\u30E3\u753B\u50CF\u3092\u751F\u6210\u3057\u3066\u753B\u50CF\u30C7\u30FC\u30BF\u3092\u8FD4\u3059",
             "url": "classes/BaserCore-Service-BcCaptchaServiceInterface.html#method_render"
         },                {
             "fqsen": "\\BaserCore\\Service\\BcCaptchaServiceInterface\u003A\u003Acheck\u0028\u0029",
@@ -5036,6 +5101,11 @@ Search.appendIndex(
             "summary": "Formats\u0020Schema\u0020columns\u0020from\u0020Model\u0020Object\nBake\\Command\\FixtureCommand\u003A\u003A_values\u0028\u0029\u0020\u3092\u79FB\u690D",
             "url": "classes/BaserCore-Service-BcDatabaseService.html#method__values"
         },                {
+            "fqsen": "\\BaserCore\\Service\\BcDatabaseService\u003A\u003AisValidSchemaFile\u0028\u0029",
+            "name": "isValidSchemaFile",
+            "summary": "Check\u0020schema",
+            "url": "classes/BaserCore-Service-BcDatabaseService.html#method_isValidSchemaFile"
+        },                {
             "fqsen": "\\BaserCore\\Service\\BcDatabaseService\u003A\u003AloadSchema\u0028\u0029",
             "name": "loadSchema",
             "summary": "\u30B9\u30AD\u30FC\u30DE\u3092\u8AAD\u307F\u8FBC\u3080",
@@ -5185,6 +5255,16 @@ Search.appendIndex(
             "name": "getRss",
             "summary": "\u30CB\u30E5\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Service-BcOfficialApiServiceInterface.html#method_getRss"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\BcQueryParameterTrait",
+            "name": "BcQueryParameterTrait",
+            "summary": "Trait\u0020BcQueryParameterTrait",
+            "url": "classes/BaserCore-Service-BcQueryParameterTrait.html"
+        },                {
+            "fqsen": "\\BaserCore\\Service\\BcQueryParameterTrait\u003A\u003AremoveOrmStructure\u0028\u0029",
+            "name": "removeOrmStructure",
+            "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u7531\u6765\u306E\u30AF\u30A8\u30EA\u30D1\u30E9\u30E1\u30FC\u30BF\u304B\u3089\u0020ORM\u0020\u5185\u90E8\u69CB\u9020\u30AD\u30FC\u3092\u9664\u53BB\u3059\u308B",
+            "url": "classes/BaserCore-Service-BcQueryParameterTrait.html#method_removeOrmStructure"
         },                {
             "fqsen": "\\BaserCore\\Service\\ContentFoldersService",
             "name": "ContentFoldersService",
@@ -7386,6 +7466,11 @@ Search.appendIndex(
             "summary": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u306E\u4E00\u89A7\u7528\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97",
             "url": "classes/BaserCore-Service-UsersService.html#method_getIndex"
         },                {
+            "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003AcreateIndexConditions\u0028\u0029",
+            "name": "createIndexConditions",
+            "summary": "createIndexConditions",
+            "url": "classes/BaserCore-Service-UsersService.html#method_createIndexConditions"
+        },                {
             "fqsen": "\\BaserCore\\Service\\UsersService\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "\u30E6\u30FC\u30B6\u30FC\u767B\u9332",
@@ -7546,6 +7631,11 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30EA\u30FC\u306E\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
             "url": "classes/BaserCore-Service-UtilitiesService.html#method_verityContentsTree"
         },                {
+            "fqsen": "\\BaserCore\\Service\\UtilitiesService\u003A\u003AverityTree\u0028\u0029",
+            "name": "verityTree",
+            "summary": "\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
+            "url": "classes/BaserCore-Service-UtilitiesService.html#method_verityTree"
+        },                {
             "fqsen": "\\BaserCore\\Service\\UtilitiesService\u003A\u003AresetContentsTree\u0028\u0029",
             "name": "resetContentsTree",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30EA\u30FC\u3092\u30EA\u30BB\u30C3\u30C8\u3057\u5168\u3066\u540C\u968E\u5C64\u306B\u3059\u308B",
@@ -7626,6 +7716,11 @@ Search.appendIndex(
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30EA\u30FC\u306E\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
             "url": "classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityContentsTree"
         },                {
+            "fqsen": "\\BaserCore\\Service\\UtilitiesServiceInterface\u003A\u003AverityTree\u0028\u0029",
+            "name": "verityTree",
+            "summary": "\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
+            "url": "classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityTree"
+        },                {
             "fqsen": "\\BaserCore\\Service\\UtilitiesServiceInterface\u003A\u003AresetContentsTree\u0028\u0029",
             "name": "resetContentsTree",
             "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30EA\u30FC\u3092\u30EA\u30BB\u30C3\u30C8\u3057\u5168\u3066\u540C\u968E\u5C64\u306B\u3059\u308B",
@@ -7701,11 +7796,6 @@ Search.appendIndex(
             "summary": "Class\u0020BcTestCase",
             "url": "classes/BaserCore-TestSuite-BcTestCase.html"
         },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AsetFixtureTruncate\u0028\u0029",
-            "name": "setFixtureTruncate",
-            "summary": "FixtureStrategy\u0020\u306B\u3066\u3001TruncateStrategy\u0020\u3092\u5229\u7528\u3059\u308B\u304B\u3069\u3046\u304B\u3092\u8A2D\u5B9A",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_setFixtureTruncate"
-        },                {
             "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AtruncateTable\u0028\u0029",
             "name": "truncateTable",
             "summary": "\u30C6\u30FC\u30D6\u30EB\u3092\u7A7A\u306B\u3059\u308B",
@@ -7715,6 +7805,11 @@ Search.appendIndex(
             "name": "setUp",
             "summary": "Set\u0020Up",
             "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_setUp"
+        },                {
+            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AloadTestAppPlugins\u0028\u0029",
+            "name": "loadTestAppPlugins",
+            "summary": "\u30C6\u30B9\u30C8\u7528\u30A2\u30D7\u30EA\u306E\u30D7\u30E9\u30B0\u30A4\u30F3\u8AAD\u307F\u8FBC\u307F\u30FBbootstrap\u30FB\u30EB\u30FC\u30C8\u63A5\u7D9A\u3092\u884C\u3046",
+            "url": "classes/BaserCore-TestSuite-BcTestCase.html#method_loadTestAppPlugins"
         },                {
             "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003AclassMethod\u0028\u0029",
             "name": "classMethod",
@@ -7815,11 +7910,6 @@ Search.appendIndex(
             "name": "BaserCore",
             "summary": "",
             "url": "classes/BaserCore-TestSuite-BcTestCase.html#property_BaserCore"
-        },                {
-            "fqsen": "\\BaserCore\\TestSuite\\BcTestCase\u003A\u003A\u0024fixtureTruncate",
-            "name": "fixtureTruncate",
-            "summary": "FixtureStrategy\u0020\u306B\u3066\u3001TruncateStrategy\u0020\u3092\u5229\u7528\u3059\u308B\u304B\u3069\u3046\u304B",
-            "url": "classes/BaserCore-TestSuite-BcTestCase.html#property_fixtureTruncate"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcAbstractDetector",
             "name": "BcAbstractDetector",
@@ -8016,6 +8106,16 @@ Search.appendIndex(
             "summary": "replace\u0020\u3092\u524A\u9664\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcComposer.html#method_deleteReplace"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003ArelaxFrameworkConstraints\u0028\u0029",
+            "name": "relaxFrameworkConstraints",
+            "summary": "baser\u002Dcore\u0020\u304C\u81EA\u8EAB\u306E\u0020composer.json\u0020\u3067\u4F9D\u5B58\u7BA1\u7406\u3057\u3066\u3044\u308B\u30D5\u30EC\u30FC\u30E0\u30EF\u30FC\u30AF\u7CFB\u30D1\u30C3\u30B1\u30FC\u30B8\u306B\u3064\u3044\u3066\u3001\n\u30EB\u30FC\u30C8\u0020composer.json\u0020\u5074\u306E\u91CD\u8907\u3057\u305F\u660E\u793Apin\u3092\u524A\u9664\u3057\u3001baser\u002Dcore\u5074\u306E\u5236\u7D04\u3092\u512A\u5148\u3055\u305B\u308B",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_relaxFrameworkConstraints"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003AdisableBlockInsecure\u0028\u0029",
+            "name": "disableBlockInsecure",
+            "summary": "\u8106\u5F31\u30D1\u30C3\u30B1\u30FC\u30B8\u306E\u5C0E\u5165\u3092\u7981\u6B62\u3092\u89E3\u9664\u3059\u308B\n\u30E6\u30CB\u30C3\u30C8\u30C6\u30B9\u30C8\u3067\u904E\u53BB\u30D0\u30FC\u30B8\u30E7\u30F3\u306E\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u30C6\u30B9\u30C8\u304C\u3042\u308B\u305F\u3081\u3001\u4E00\u6642\u7684\u306B\u89E3\u9664\u3059\u308B\u306E\u306B\u5229\u7528\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcComposer.html#method_disableBlockInsecure"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcComposer\u003A\u003A\u0024cd",
             "name": "cd",
             "summary": "cd\u0020\u30B3\u30DE\u30F3\u30C9",
@@ -8080,6 +8180,46 @@ Search.appendIndex(
             "name": "hasService",
             "summary": "Has\u0020Service",
             "url": "classes/BaserCore-Utility-BcContainerTrait.html#method_hasService"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession",
+            "name": "BcEditSession",
+            "summary": "BcEditSession",
+            "url": "classes/BaserCore-Utility-BcEditSession.html"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003Amark\u0028\u0029",
+            "name": "mark",
+            "summary": "Mark\u0020a\u0020resource\u0020as\u0020being\u0020edited.",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#method_mark"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "Clear\u0020a\u0020resource\u0020edit\u0020session.",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#method_clear"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003AensureCacheConfig\u0028\u0029",
+            "name": "ensureCacheConfig",
+            "summary": "Ensure\u0020edit\u002Dsession\u0020cache\u0020config\u0020exists.",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#method_ensureCacheConfig"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003AcreateKey\u0028\u0029",
+            "name": "createKey",
+            "summary": "Create\u0020cache\u0020key.",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#method_createKey"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003ACACHE_CONFIG",
+            "name": "CACHE_CONFIG",
+            "summary": "Cache\u0020config\u0020name",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#constant_CACHE_CONFIG"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003ACACHE_KEY_PREFIX",
+            "name": "CACHE_KEY_PREFIX",
+            "summary": "Cache\u0020key\u0020prefix",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#constant_CACHE_KEY_PREFIX"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcEditSession\u003A\u003AEXPIRES",
+            "name": "EXPIRES",
+            "summary": "Edit\u0020sessions\u0020are\u0020lightweight\u0020warnings,\u0020not\u0020hard\u0020locks.",
+            "url": "classes/BaserCore-Utility-BcEditSession.html#constant_EXPIRES"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcEvent",
             "name": "BcEvent",
@@ -8270,6 +8410,11 @@ Search.appendIndex(
             "name": "getUniqueFileName",
             "summary": "\u4E00\u610F\u306E\u30D5\u30A1\u30A4\u30EB\u540D\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcFileUploader.html#method_getUniqueFileName"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcFileUploader\u003A\u003AgetCoreFrontThemeSaveDir\u0028\u0029",
+            "name": "getCoreFrontThemeSaveDir",
+            "summary": "\u30B3\u30A2\u30D5\u30ED\u30F3\u30C8\u30C6\u30FC\u30DE\u306E\u0020files\u0020\u4FDD\u5B58\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcFileUploader.html#method_getCoreFrontThemeSaveDir"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcFileUploader\u003A\u003AgetSaveDir\u0028\u0029",
             "name": "getSaveDir",
@@ -8663,7 +8808,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003Averpoint\u0028\u0029",
             "name": "verpoint",
-            "summary": "\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u7279\u5B9A\u3059\u308B\u4E00\u610F\u306E\u6570\u5024\u3092\u53D6\u5F97\u3059\u308B\n\uFF12\u3064\u76EE\u4EE5\u964D\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7\u306F\uFF13\u6841\u3068\u3057\u3066\u7D50\u5408\n1.5.9\u0020\u003D\u003E\u00201005009\n\u203B\u0020\uFF12\u3064\u76EE\u4EE5\u964D\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7\u306F999\u307E\u3067\u3068\u3059\u308B\n\u03B2\u7248\u306E\u5834\u5408\u306Ffalse\u3092\u8FD4\u3059",
+            "summary": "\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u7279\u5B9A\u3059\u308B\u4E00\u610F\u306E\u6570\u5024\u3092\u53D6\u5F97\u3059\u308B\n\uFF12\u3064\u76EE\u4EE5\u964D\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7\u306F\uFF13\u6841\u3068\u3057\u3066\u7D50\u5408\n1.5.9\u0020\u003D\u003E\u00201005009\n\u203B\u0020\uFF12\u3064\u76EE\u4EE5\u964D\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u756A\u53F7\u306F999\u307E\u3067\u3068\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_verpoint"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AgetAdminPrefix\u0028\u0029",
@@ -9001,6 +9146,16 @@ Search.appendIndex(
             "summary": "\u30EA\u30D5\u30A1\u30E9\u304C\u73FE\u5728\u306E\u30B5\u30A4\u30C8\u3068\u540C\u3058\u304B\u3069\u3046\u304B\u5224\u5B9A",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_isSameReferrerAsCurrent"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AisSameOriginAsCurrent\u0028\u0029",
+            "name": "isSameOriginAsCurrent",
+            "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u5143\u304C\u73FE\u5728\u306E\u30B5\u30A4\u30C8\u3068\u540C\u4E00\u30AA\u30EA\u30B8\u30F3\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_isSameOriginAsCurrent"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AnormalizeOrigin\u0028\u0029",
+            "name": "normalizeOrigin",
+            "summary": "URL\uFF0F\u30AA\u30EA\u30B8\u30F3\u6587\u5B57\u5217\u3092\u0020scheme\u003A\/\/host\u005B\u003Aport\u005D\u0020\u306E\u6B63\u898F\u5F62\u3078\u5909\u63DB\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_normalizeOrigin"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AgetAuthPrefixList\u0028\u0029",
             "name": "getAuthPrefixList",
             "summary": "\u8A8D\u8A3C\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97",
@@ -9051,6 +9206,21 @@ Search.appendIndex(
             "summary": "baserCMS\u0020\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u304C\u00205.1\u0020\u304B\u3069\u3046\u304B\u5224\u5B9A\n5.1\u7CFB\u3078\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u30A2\u30C3\u30D7\u6642\u306E\u307F\u5229\u7528",
             "url": "classes/BaserCore-Utility-BcUtil.html#method_is51"
         },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AisDevelopmentVersion\u0028\u0029",
+            "name": "isDevelopmentVersion",
+            "summary": "baserCMS\u30B3\u30A2\u304C\u958B\u767A\u7248\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_isDevelopmentVersion"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AgetLocaleLanguageCode\u0028\u0029",
+            "name": "getLocaleLanguageCode",
+            "summary": "locale\u0020\u304B\u3089\u8A00\u8A9E\u30B3\u30FC\u30C9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_getLocaleLanguageCode"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003AisJapaneseLocale\u0028\u0029",
+            "name": "isJapaneseLocale",
+            "summary": "\u73FE\u5728\u306E\u0020locale\u0020\u304C\u65E5\u672C\u8A9E\u304B\u3069\u3046\u304B\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcUtil.html#method_isJapaneseLocale"
+        },                {
             "fqsen": "\\BaserCore\\Utility\\BcUtil\u003A\u003A\u0024_detectors",
             "name": "_detectors",
             "summary": "detectors",
@@ -9090,6 +9260,31 @@ Search.appendIndex(
             "name": "_escapePath",
             "summary": "CUI\u0020\u5411\u3051\u306B\u30D1\u30B9\u3092\u30A8\u30B9\u30B1\u30FC\u30D7\u3059\u308B",
             "url": "classes/BaserCore-Utility-BcZip.html#method__escapePath"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_isZipEntrySafe\u0028\u0029",
+            "name": "_isZipEntrySafe",
+            "summary": "ZIP\u30A8\u30F3\u30C8\u30EA\u304C\u30BF\u30FC\u30B2\u30C3\u30C8\u914D\u4E0B\u304B\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcZip.html#method__isZipEntrySafe"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_validateZipEntries\u0028\u0029",
+            "name": "_validateZipEntries",
+            "summary": "ZIP\u30A8\u30F3\u30C8\u30EA\u4E00\u89A7\u3092\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcZip.html#method__validateZipEntries"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_normalizeTargetPath\u0028\u0029",
+            "name": "_normalizeTargetPath",
+            "summary": "\u5C55\u958B\u5148\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306E\u6B63\u898F\u5316",
+            "url": "classes/BaserCore-Utility-BcZip.html#method__normalizeTargetPath"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_normalizeRelativePath\u0028\u0029",
+            "name": "_normalizeRelativePath",
+            "summary": "\u76F8\u5BFE\u30D1\u30B9\u3092\u6B63\u898F\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcZip.html#method__normalizeRelativePath"
+        },                {
+            "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003A_normalizeAbsolutePath\u0028\u0029",
+            "name": "_normalizeAbsolutePath",
+            "summary": "\u7D76\u5BFE\u30D1\u30B9\u3092\u6B63\u898F\u5316\u3059\u308B",
+            "url": "classes/BaserCore-Utility-BcZip.html#method__normalizeAbsolutePath"
         },                {
             "fqsen": "\\BaserCore\\Utility\\BcZip\u003A\u003Acreate\u0028\u0029",
             "name": "create",
@@ -10066,6 +10261,16 @@ Search.appendIndex(
             "summary": "\u30D5\u30EBURL\u306B\u5909\u63DB\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getFullUrl"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AgetHtmlLang\u0028\u0029",
+            "name": "getHtmlLang",
+            "summary": "html\u0020\u306E\u0020lang\u0020\u5C5E\u6027\u306B\u4F7F\u3046\u8A00\u8A9E\u30B3\u30FC\u30C9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_getHtmlLang"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003AisJapaneseLocale\u0028\u0029",
+            "name": "isJapaneseLocale",
+            "summary": "\u73FE\u5728\u306E\u0020locale\u0020\u304C\u65E5\u672C\u8A9E\u304B\u3069\u3046\u304B\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcBaserHelper.html#method_isJapaneseLocale"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcBaserHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
             "summary": "\u30D8\u30EB\u30D1\u30FC",
@@ -10356,6 +10561,11 @@ Search.appendIndex(
             "summary": "\u30E2\u30C7\u30EB\u30C7\u30FC\u30BF\u3088\u308ACSV\u7528\u306E\u672C\u4F53\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BaserCore-View-Helper-BcCsvHelper.html#method__perseValue"
         },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcCsvHelper\u003A\u003A_isFormulaInjectionTarget\u0028\u0029",
+            "name": "_isFormulaInjectionTarget",
+            "summary": "\u6570\u5F0F\u30A4\u30F3\u30B8\u30A7\u30AF\u30B7\u30E7\u30F3\u5BFE\u7B56\u306E\u5BFE\u8C61\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BaserCore-View-Helper-BcCsvHelper.html#method__isFormulaInjectionTarget"
+        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcCsvHelper\u003A\u003Adownload\u0028\u0029",
             "name": "download",
             "summary": "CSV\u30D5\u30A1\u30A4\u30EB\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3059\u308B",
@@ -10385,6 +10595,11 @@ Search.appendIndex(
             "name": "exportBom",
             "summary": "BOM\u30D5\u30A1\u30A4\u30EB\u30D8\u30C3\u30C0\u306E\u51FA\u529B",
             "url": "classes/BaserCore-View-Helper-BcCsvHelper.html#property_exportBom"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcCsvHelper\u003A\u003A\u0024escapeFormula",
+            "name": "escapeFormula",
+            "summary": "\u6570\u5F0F\u30A4\u30F3\u30B8\u30A7\u30AF\u30B7\u30E7\u30F3\u5BFE\u7B56\u306E\u6709\u7121",
+            "url": "classes/BaserCore-View-Helper-BcCsvHelper.html#property_escapeFormula"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcCsvHelper\u003A\u003A\u0024_csvTmpDataFp",
             "name": "_csvTmpDataFp",
@@ -10651,21 +10866,6 @@ Search.appendIndex(
             "summary": "Included\u0020helpers.",
             "url": "classes/BaserCore-View-Helper-BcHtmlHelper.html#property_helpers"
         },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcLayoutHelper",
-            "name": "BcLayoutHelper",
-            "summary": "\u30EC\u30A4\u30A2\u30A6\u30C8\u30D8\u30EB\u30D1",
-            "url": "classes/BaserCore-View-Helper-BcLayoutHelper.html"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcLayoutHelper\u003A\u003AdispatchContentsHeader\u0028\u0029",
-            "name": "dispatchContentsHeader",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D8\u30C3\u30C0\u30FC\u767A\u706B",
-            "url": "classes/BaserCore-View-Helper-BcLayoutHelper.html#method_dispatchContentsHeader"
-        },                {
-            "fqsen": "\\BaserCore\\View\\Helper\\BcLayoutHelper\u003A\u003AdispatchContentsFooter\u0028\u0029",
-            "name": "dispatchContentsFooter",
-            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u30D5\u30C3\u30BF\u30FC\u767A\u706B",
-            "url": "classes/BaserCore-View-Helper-BcLayoutHelper.html#method_dispatchContentsFooter"
-        },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcListTableHelper",
             "name": "BcListTableHelper",
             "summary": "Class\u0020BcListTableHelper",
@@ -10900,6 +11100,16 @@ Search.appendIndex(
             "name": "booleanStatus",
             "summary": "boolean\u578B\u7528\u3092\u7121\u52B9\u30FB\u6709\u52B9\u3067\u51FA\u529B",
             "url": "classes/BaserCore-View-Helper-BcTextHelper.html#method_booleanStatus"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcTextHelper\u003A\u003AautoLinkUrls\u0028\u0029",
+            "name": "autoLinkUrls",
+            "summary": "\u30C6\u30AD\u30B9\u30C8\u5185\u306EURL\u3092\u81EA\u52D5\u3067\u30EA\u30F3\u30AF\u5316",
+            "url": "classes/BaserCore-View-Helper-BcTextHelper.html#method_autoLinkUrls"
+        },                {
+            "fqsen": "\\BaserCore\\View\\Helper\\BcTextHelper\u003A\u003AfixTrailingSlashOutsideAnchor\u0028\u0029",
+            "name": "fixTrailingSlashOutsideAnchor",
+            "summary": "\u30C9\u30E1\u30A4\u30F3\u306E\u307FURL\u3067\u672B\u5C3E\u30B9\u30E9\u30C3\u30B7\u30E5\u304C\u30EA\u30F3\u30AF\u5916\u306B\u51FA\u308B\u8868\u793A\u5D29\u308C\u3092\u88DC\u6B63",
+            "url": "classes/BaserCore-View-Helper-BcTextHelper.html#method_fixTrailingSlashOutsideAnchor"
         },                {
             "fqsen": "\\BaserCore\\View\\Helper\\BcTextHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -11256,6 +11466,16 @@ Search.appendIndex(
             "summary": "\u005BADMIN\u005D\u0020\u524A\u9664\u51E6\u7406",
             "url": "classes/BcBlog-Controller-Admin-BlogCategoriesController.html#method_delete"
         },                {
+            "fqsen": "\\BcBlog\\Controller\\Admin\\BlogCategoriesController\u003A\u003Averity_tree\u0028\u0029",
+            "name": "verity_tree",
+            "summary": "\u005BADMIN\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u306E\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
+            "url": "classes/BcBlog-Controller-Admin-BlogCategoriesController.html#method_verity_tree"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Admin\\BlogCategoriesController\u003A\u003Areset_tree\u0028\u0029",
+            "name": "reset_tree",
+            "summary": "\u005BADMIN\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B",
+            "url": "classes/BcBlog-Controller-Admin-BlogCategoriesController.html#method_reset_tree"
+        },                {
             "fqsen": "\\BcBlog\\Controller\\Admin\\BlogCommentsController",
             "name": "BlogCommentsController",
             "summary": "\u30D6\u30ED\u30B0\u30B3\u30E1\u30F3\u30C8\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
@@ -11420,6 +11640,11 @@ Search.appendIndex(
             "name": "delete",
             "summary": "\u005BAPI\u005D\u0020\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u524A\u9664",
             "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_delete"
+        },                {
+            "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCategoriesController\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "\u005BAPI\u005D\u0020\u30AB\u30C6\u30B4\u30EA\u306E\u914D\u7F6E\u3092\u79FB\u52D5\u3059\u308B\uFF08\u4E26\u3073\u66FF\u3048\u30FB\u518D\u89AA\u4ED8\u3051\uFF09",
+            "url": "classes/BcBlog-Controller-Api-Admin-BlogCategoriesController.html#method_move"
         },                {
             "fqsen": "\\BcBlog\\Controller\\Api\\Admin\\BlogCommentsController",
             "name": "BlogCommentsController",
@@ -11711,6 +11936,11 @@ Search.appendIndex(
             "summary": "BcBlogViewEventListener",
             "url": "classes/BcBlog-Event-BcBlogViewEventListener.html"
         },                {
+            "fqsen": "\\BcBlog\\Event\\BcBlogViewEventListener\u003A\u003AafterUtilitiesIndex\u0028\u0029",
+            "name": "afterUtilitiesIndex",
+            "summary": "afterUtilitiesIndex",
+            "url": "classes/BcBlog-Event-BcBlogViewEventListener.html#method_afterUtilitiesIndex"
+        },                {
             "fqsen": "\\BcBlog\\Event\\BcBlogViewEventListener\u003A\u003AleftOfToolbar\u0028\u0029",
             "name": "leftOfToolbar",
             "summary": "leftOfToolbar",
@@ -11851,6 +12081,11 @@ Search.appendIndex(
             "summary": "\u30AB\u30C6\u30B4\u30EA\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B\uFF08\u518D\u5E30\u51E6\u7406\uFF09",
             "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method__getCategoryList"
         },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AgetCategoryPostCounts\u0028\u0029",
+            "name": "getCategoryPostCounts",
+            "summary": "\u30AB\u30C6\u30B4\u30EA\u3054\u3068\u306E\u8A18\u4E8B\u6570\u3092\u96C6\u8A08",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_getCategoryPostCounts"
+        },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AhasNewCategoryAddablePermission\u0028\u0029",
             "name": "hasNewCategoryAddablePermission",
             "summary": "\u30A2\u30AF\u30BB\u30B9\u5236\u9650\u3068\u3057\u3066\u30AB\u30C6\u30B4\u30EA\u306E\u65B0\u898F\u8FFD\u52A0\u304C\u3067\u304D\u308B\u304B\u78BA\u8A8D\u3059\u308B",
@@ -11875,6 +12110,21 @@ Search.appendIndex(
             "name": "getParent",
             "summary": "\u89AA\u30AB\u30C6\u30B4\u30EA\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_getParent"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AgetOrderSameParent\u0028\u0029",
+            "name": "getOrderSameParent",
+            "summary": "\u540C\u4E00\u968E\u5C64\uFF08\u540C\u3058\u89AA\uFF09\u306B\u304A\u3051\u308B\u4E26\u3073\u9806\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_getOrderSameParent"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AmoveOffset\u0028\u0029",
+            "name": "moveOffset",
+            "summary": "\u30AA\u30D5\u30BB\u30C3\u30C8\u3092\u5143\u306B\u30AB\u30C6\u30B4\u30EA\u3092\u79FB\u52D5\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_moveOffset"
+        },                {
+            "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003AresetTree\u0028\u0029",
+            "name": "resetTree",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B",
+            "url": "classes/BcBlog-Model-Table-BlogCategoriesTable.html#method_resetTree"
         },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogCategoriesTable\u003A\u003A\u0024validationParams",
             "name": "validationParams",
@@ -12078,7 +12328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogTagsTable\u003A\u003AhasNewTagAddablePermission\u0028\u0029",
             "name": "hasNewTagAddablePermission",
-            "summary": "\u30A2\u30AF\u30BB\u30B9\u5236\u9650\u3068\u3057\u3066\u30D6\u30ED\u30B0\u30BF\u30B0\u306E\u65B0\u898F\u8FFD\u52A0\u304C\u3067\u304D\u308B\u304B\u78BA\u8A8D\u3059\u308B",
+            "summary": "\u30A2\u30AF\u30BB\u30B9\u5236\u9650\u3068\u3057\u3066\u30D6\u30ED\u30B0\u30BF\u30B0\u306E\u65B0\u898F\u8FFD\u52A0\u304C\u3067\u304D\u308B\u304B\u78BA\u8A8D\u3059\u308B\n\u7BA1\u7406\u753B\u9762\u306B\u304A\u3051\u308B\u6A29\u9650\u3092\u524D\u63D0\u3068\u3059\u308B",
             "url": "classes/BcBlog-Model-Table-BlogTagsTable.html#method_hasNewTagAddablePermission"
         },                {
             "fqsen": "\\BcBlog\\Model\\Table\\BlogTagsTable\u003A\u003AgetByName\u0028\u0029",
@@ -12271,6 +12521,11 @@ Search.appendIndex(
             "summary": "\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_getIndex"
         },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003AcreateIndexConditions\u0028\u0029",
+            "name": "createIndexConditions",
+            "summary": "createIndexConditions",
+            "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_createIndexConditions"
+        },                {
             "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003AgetTreeIndex\u0028\u0029",
             "name": "getTreeIndex",
             "summary": "getTreeIndex",
@@ -12315,6 +12570,21 @@ Search.appendIndex(
             "name": "getList",
             "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u30EA\u30B9\u30C8\u53D6\u5F97",
             "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_getList"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "\u30AB\u30C6\u30B4\u30EA\u306E\u914D\u7F6E\u3092\u79FB\u52D5\u3059\u308B\uFF08\u4E26\u3073\u66FF\u3048\u30FB\u518D\u89AA\u4ED8\u3051\uFF09",
+            "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_move"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003AverityTree\u0028\u0029",
+            "name": "verityTree",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_verityTree"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003AresetTree\u0028\u0029",
+            "name": "resetTree",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogCategoriesService.html#method_resetTree"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogCategoriesService\u003A\u003A\u0024BlogCategories",
             "name": "BlogCategories",
@@ -12380,6 +12650,21 @@ Search.appendIndex(
             "name": "getList",
             "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30FC\u30EA\u30B9\u30C8\u53D6\u5F97",
             "url": "classes/BcBlog-Service-BlogCategoriesServiceInterface.html#method_getList"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesServiceInterface\u003A\u003Amove\u0028\u0029",
+            "name": "move",
+            "summary": "\u30AB\u30C6\u30B4\u30EA\u306E\u914D\u7F6E\u3092\u79FB\u52D5\u3059\u308B\uFF08\u4E26\u3073\u66FF\u3048\u30FB\u518D\u89AA\u4ED8\u3051\uFF09",
+            "url": "classes/BcBlog-Service-BlogCategoriesServiceInterface.html#method_move"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesServiceInterface\u003A\u003AverityTree\u0028\u0029",
+            "name": "verityTree",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30C1\u30A7\u30C3\u30AF\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogCategoriesServiceInterface.html#method_verityTree"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogCategoriesServiceInterface\u003A\u003AresetTree\u0028\u0029",
+            "name": "resetTree",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u30C4\u30EA\u30FC\u69CB\u9020\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B",
+            "url": "classes/BcBlog-Service-BlogCategoriesServiceInterface.html#method_resetTree"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogCommentsService",
             "name": "BlogCommentsService",
@@ -12470,6 +12755,11 @@ Search.appendIndex(
             "name": "getIndex",
             "summary": "\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97",
             "url": "classes/BcBlog-Service-BlogContentsService.html#method_getIndex"
+        },                {
+            "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003AcreateIndexConditions\u0028\u0029",
+            "name": "createIndexConditions",
+            "summary": "createIndexConditions",
+            "url": "classes/BcBlog-Service-BlogContentsService.html#method_createIndexConditions"
         },                {
             "fqsen": "\\BcBlog\\Service\\BlogContentsService\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -13716,6 +14006,566 @@ Search.appendIndex(
             "summary": "Default\u0020spec\u0020version\u0020of\u0020generated\u0020RSS",
             "url": "classes/BcBlog-View-Helper-RssHelper.html#property_version"
         },                {
+            "fqsen": "\\BcBurgerEditor\\BcBurgerEditorPlugin",
+            "name": "BcBurgerEditorPlugin",
+            "summary": "Class\u0020BcBurgerEditorPlugin",
+            "url": "classes/BcBurgerEditor-BcBurgerEditorPlugin.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\BcBurgerEditorPlugin\u003A\u003Ainstall\u0028\u0029",
+            "name": "install",
+            "summary": "\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB",
+            "url": "classes/BcBurgerEditor-BcBurgerEditorPlugin.html#method_install"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\BcBurgerEditorPlugin\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "\u521D\u671F\u5316\u51E6\u7406",
+            "url": "classes/BcBurgerEditor-BcBurgerEditorPlugin.html#method_init"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController",
+            "name": "BurgerEditorController",
+            "summary": "BurgerEditorController",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method___construct"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "before\u0020filter",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Aimg_list\u0028\u0029",
+            "name": "img_list",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u753B\u50CF\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_img_list"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Aimg_upload\u0028\u0029",
+            "name": "img_upload",
+            "summary": "\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_img_upload"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Aimg_delete\u0028\u0029",
+            "name": "img_delete",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u524A\u9664",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_img_delete"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Afile_list\u0028\u0029",
+            "name": "file_list",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_file_list"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Afile_upload\u0028\u0029",
+            "name": "file_upload",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_file_upload"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Afile_delete\u0028\u0029",
+            "name": "file_delete",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u524A\u9664",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_file_delete"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003Aget_filename\u0028\u0029",
+            "name": "get_filename",
+            "summary": "base64encode\u3055\u308C\u305F\u30D5\u30A1\u30A4\u30EB\u540D\u3092decode\u3057\u3066\u5909\u63DB",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_get_filename"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003AgetFormatedImageList\u0028\u0029",
+            "name": "getFormatedImageList",
+            "summary": "JSON\u5909\u63DB\u7528\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_getFormatedImageList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003AgetFormatedOtherList\u0028\u0029",
+            "name": "getFormatedOtherList",
+            "summary": "JSON\u5909\u63DB\u7528\u30D5\u30A1\u30A4\u30EB\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#method_getFormatedOtherList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024isUse",
+            "name": "isUse",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_isUse"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imgExts",
+            "name": "imgExts",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imgExts"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imageDataMaxsize",
+            "name": "imageDataMaxsize",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imageDataMaxsize"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024fileDataMaxSize",
+            "name": "fileDataMaxSize",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_fileDataMaxSize"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imgSizeWidthMax",
+            "name": "imgSizeWidthMax",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imgSizeWidthMax"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imgSizeWidthDefault",
+            "name": "imgSizeWidthDefault",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imgSizeWidthDefault"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imgSizeWidthSmall",
+            "name": "imgSizeWidthSmall",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imgSizeWidthSmall"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024fileListPerPage",
+            "name": "fileListPerPage",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_fileListPerPage"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024imageListPerPage",
+            "name": "imageListPerPage",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_imageListPerPage"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin\\BurgerEditorController\u003A\u003A\u0024BurgerEditorService",
+            "name": "BurgerEditorService",
+            "summary": "BurgerEditorService",
+            "url": "classes/BcBurgerEditor-Controller-Admin-BurgerEditorController.html#property_BurgerEditorService"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController",
+            "name": "BurgerEditorController",
+            "summary": "BurgerEditorController",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html#method___construct"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html#method_initialize"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "before\u0020filter",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController\u003A\u003Adl\u0028\u0029",
+            "name": "dl",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html#method_dl"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\BurgerEditorController\u003A\u003A\u0024BurgerEditorService",
+            "name": "BurgerEditorService",
+            "summary": "BurgerEditorService",
+            "url": "classes/BcBurgerEditor-Controller-BurgerEditorController.html#property_BurgerEditorService"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorControllerEventListener",
+            "name": "BcBurgerEditorControllerEventListener",
+            "summary": "baserCMS\u0020\u003A\u0020\u0020Based\u0020Website\u0020Development\u0020Project\u0020\u003Chttps\u003A\/\/basercms.net\u003E\nCopyright\u0020\u0028c\u0029\u0020NPO\u0020baser\u0020foundation\u0020\u003Chttps\u003A\/\/baserfoundation.org\/\u003E",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorControllerEventListener.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorControllerEventListener\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize\n\u5229\u7528Helper\u306E\u8FFD\u52A0",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorControllerEventListener.html#method_initialize"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorControllerEventListener\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "\u767B\u9332\u30A4\u30D9\u30F3\u30C8",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorControllerEventListener.html#property_events"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorViewEventListener",
+            "name": "BcBurgerEditorViewEventListener",
+            "summary": "baserCMS\u0020\u003A\u0020\u0020Based\u0020Website\u0020Development\u0020Project\u0020\u003Chttps\u003A\/\/basercms.net\u003E\nCopyright\u0020\u0028c\u0029\u0020NPO\u0020baser\u0020foundation\u0020\u003Chttps\u003A\/\/baserfoundation.org\/\u003E",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorViewEventListener.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorViewEventListener\u003A\u003AbeforeLayout\u0028\u0029",
+            "name": "beforeLayout",
+            "summary": "beforeLayout",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorViewEventListener.html#method_beforeLayout"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorViewEventListener\u003A\u003AafterLayout\u0028\u0029",
+            "name": "afterLayout",
+            "summary": "afterLayout",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorViewEventListener.html#method_afterLayout"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event\\BcBurgerEditorViewEventListener\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "\u767B\u9332\u30A4\u30D9\u30F3\u30C8",
+            "url": "classes/BcBurgerEditor-Event-BcBurgerEditorViewEventListener.html#property_events"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil",
+            "name": "BurgerEditorUtil",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetGoogleMapApiKey\u0028\u0029",
+            "name": "getGoogleMapApiKey",
+            "summary": "GoogleMapAPI\u0020Key\u3092\u53D6\u5F97",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getGoogleMapApiKey"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetSuffix\u0028\u0029",
+            "name": "getSuffix",
+            "summary": "\u9759\u7684\u30D5\u30A1\u30A4\u30EB\u306B\u5BFE\u3059\u308B\u30B5\u30D5\u30A3\u30C3\u30AF\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getSuffix"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetAddonPath\u0028\u0029",
+            "name": "getAddonPath",
+            "summary": "Addon\u0020\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getAddonPath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetEditorFieldNames\u0028\u0029",
+            "name": "getEditorFieldNames",
+            "summary": "\u30A8\u30C7\u30A3\u30BF\u304C\u7D20\u306E\u0020HTML\u0020\u3067\u51FA\u529B\u3059\u308B\u5165\u529B\u8981\u7D20\u306E\u0020name\u0020\u5C5E\u6027\u3092\u53CE\u96C6\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getEditorFieldNames"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetDeniedExts\u0028\u0029",
+            "name": "getDeniedExts",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3092\u5E38\u306B\u62D2\u5426\u3059\u308B\u62E1\u5F35\u5B50\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getDeniedExts"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AensureUploadDirProtection\u0028\u0029",
+            "name": "ensureUploadDirProtection",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B\u0020.htaccess\u0020\u3092\u8A2D\u7F6E\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_ensureUploadDirProtection"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetTypePath\u0028\u0029",
+            "name": "getTypePath",
+            "summary": "\u30BF\u30A4\u30D7\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getTypePath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetBlockPath\u0028\u0029",
+            "name": "getBlockPath",
+            "summary": "\u30D6\u30ED\u30C3\u30AF\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getBlockPath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetExtension\u0028\u0029",
+            "name": "getExtension",
+            "summary": "\u62E1\u5F35\u5B50\u53D6\u5F97",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getExtension"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AgetFileNameNoExtension\u0028\u0029",
+            "name": "getFileNameNoExtension",
+            "summary": "getFileNameNoExtension",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getFileNameNoExtension"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003Amb_basename\u0028\u0029",
+            "name": "mb_basename",
+            "summary": "\u30DE\u30EB\u30C1\u30D0\u30A4\u30C8\u5BFE\u5FDC\u0020basename",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_mb_basename"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003Ab64e\u0028\u0029",
+            "name": "b64e",
+            "summary": "baserCMS\u6A19\u6E96\u306Ebase64UrlsafeEncode\u304C\u9023\u7D9A\u30C9\u30C3\u30C8\u306E\u30D5\u30A1\u30A4\u30EB\u540D\u3092\u7981\u6B62\u3057\u305F\u7279\u5B9A\u30B5\u30FC\u30D0\u3067\n\u52D5\u4F5C\u3057\u306A\u3044\u305F\u3081\u72EC\u81EA\u5B9A\u7FA9",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_b64e"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003Ab64d\u0028\u0029",
+            "name": "b64d",
+            "summary": "baserCMS\u6A19\u6E96\u306Ebase64UrlsafeEncode\u304C\u9023\u7D9A\u30C9\u30C3\u30C8\u306E\u30D5\u30A1\u30A4\u30EB\u540D\u3092\u7981\u6B62\u3057\u305F\u7279\u5B9A\u30B5\u30FC\u30D0\u3067\n\u52D5\u4F5C\u3057\u306A\u3044\u305F\u3081\u72EC\u81EA\u5B9A\u7FA9\u306Edecode\u7248",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_b64d"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AHTACCESS_DENY_ALL",
+            "name": "HTACCESS_DENY_ALL",
+            "summary": "\u5168\u9762\u62D2\u5426\u7528\u306E\u0020.htaccess\u0020\u306E\u5185\u5BB9",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#constant_HTACCESS_DENY_ALL"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib\\BurgerEditorUtil\u003A\u003AHTACCESS_DENY_EXECUTABLE",
+            "name": "HTACCESS_DENY_EXECUTABLE",
+            "summary": "\u5B9F\u884C\u3055\u308C\u5F97\u308B\u62E1\u5F35\u5B50\u306E\u307F\u62D2\u5426\u3059\u308B\u0020.htaccess\u0020\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8",
+            "url": "classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#constant_HTACCESS_DENY_EXECUTABLE"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService",
+            "name": "BurgerEditorService",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method___construct"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AsetupSavePath\u0028\u0029",
+            "name": "setupSavePath",
+            "summary": "\u4FDD\u5B58\u5148\u306E\u30D1\u30B9\u3068URL\u3092\u89E3\u6C7A\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_setupSavePath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetImageFileBaseDir\u0028\u0029",
+            "name": "getImageFileBaseDir",
+            "summary": "\u753B\u50CF\u306E\u4FDD\u5B58\u5148\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getImageFileBaseDir"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetImageFileBaseURL\u0028\u0029",
+            "name": "getImageFileBaseURL",
+            "summary": "\u753B\u50CF\u306E\u516C\u958BURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getImageFileBaseURL"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetOtherFileBaseDir\u0028\u0029",
+            "name": "getOtherFileBaseDir",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u4FDD\u5B58\u5148\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getOtherFileBaseDir"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetOtherFileBaseURL\u0028\u0029",
+            "name": "getOtherFileBaseURL",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u516C\u958BURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getOtherFileBaseURL"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetImageList\u0028\u0029",
+            "name": "getImageList",
+            "summary": "\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getImageList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetFileList\u0028\u0029",
+            "name": "getFileList",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getFileList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AnextImageFileId\u0028\u0029",
+            "name": "nextImageFileId",
+            "summary": "\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u306E\u6B21\u306EID\u3092\u63A1\u756A\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_nextImageFileId"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AnextOtherFileId\u0028\u0029",
+            "name": "nextOtherFileId",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u6B21\u306EID\u3092\u63A1\u756A\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_nextOtherFileId"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetFileId\u0028\u0029",
+            "name": "getFileId",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u540D\u304B\u3089ID\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getFileId"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetFileListWithPagination\u0028\u0029",
+            "name": "getFileListWithPagination",
+            "summary": "\u30EC\u30B9\u30DD\u30F3\u30B9\u7528\u306E\u30D5\u30A1\u30A4\u30EB\u30EA\u30B9\u30C8\u3068\u30DA\u30FC\u30B8\u30CD\u30FC\u30B7\u30E7\u30F3\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getFileListWithPagination"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetBasePath\u0028\u0029",
+            "name": "getBasePath",
+            "summary": "\u30D7\u30E9\u30B0\u30A4\u30F3\u306E\u57FA\u6E96\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getBasePath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetBlockPath\u0028\u0029",
+            "name": "getBlockPath",
+            "summary": "\u30D6\u30ED\u30C3\u30AF\u306E\u57FA\u6E96\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getBlockPath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetTypePath\u0028\u0029",
+            "name": "getTypePath",
+            "summary": "\u30BF\u30A4\u30D7\u306E\u57FA\u6E96\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getTypePath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003Aelement\u0028\u0029",
+            "name": "element",
+            "summary": "\u30BF\u30A4\u30D7\u306E\u8868\u793A\u7528\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_element"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AaddAddonList\u0028\u0029",
+            "name": "addAddonList",
+            "summary": "\u5229\u7528\u3057\u305F\u30BF\u30A4\u30D7\u3092\u8A18\u9332\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_addAddonList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003AgetAddonList\u0028\u0029",
+            "name": "getAddonList",
+            "summary": "\u5229\u7528\u3057\u305F\u30BF\u30A4\u30D7\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_getAddonList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003ArotateImage\u0028\u0029",
+            "name": "rotateImage",
+            "summary": "\u753B\u50CF\u3092Exif\u60C5\u5831\u3092\u5143\u306B\u6B63\u3057\u3044\u78BA\u5EA6\u306B\u56DE\u8EE2\u3059\u308B",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#method_rotateImage"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024bgEditorBase",
+            "name": "bgEditorBase",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_bgEditorBase"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024useAddonList",
+            "name": "useAddonList",
+            "summary": "\u5229\u7528\u3057\u305F\u30BF\u30A4\u30D7",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_useAddonList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024imageFileBaseDir",
+            "name": "imageFileBaseDir",
+            "summary": "\u753B\u50CF\u306E\u4FDD\u5B58\u5148\u30D1\u30B9",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_imageFileBaseDir"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024imageFileBaseURL",
+            "name": "imageFileBaseURL",
+            "summary": "\u753B\u50CF\u306E\u516C\u958BURL",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_imageFileBaseURL"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024otherFileBaseDir",
+            "name": "otherFileBaseDir",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u4FDD\u5B58\u5148\u30D1\u30B9",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_otherFileBaseDir"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024otherFileBaseURL",
+            "name": "otherFileBaseURL",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u516C\u958BURL",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_otherFileBaseURL"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024imageFileMaxId",
+            "name": "imageFileMaxId",
+            "summary": "\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u306E\u6700\u5927ID",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_imageFileMaxId"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service\\BurgerEditorService\u003A\u003A\u0024otherFileMaxId",
+            "name": "otherFileMaxId",
+            "summary": "\u753B\u50CF\u4EE5\u5916\u306E\u30D5\u30A1\u30A4\u30EB\u306E\u6700\u5927ID",
+            "url": "classes/BcBurgerEditor-Service-BurgerEditorService.html#property_otherFileMaxId"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Cell\\BurgerEditorCell",
+            "name": "BurgerEditorCell",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Cell-BurgerEditorCell.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Cell\\BurgerEditorCell\u003A\u003Adisplay\u0028\u0029",
+            "name": "display",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Cell-BurgerEditorCell.html#method_display"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper",
+            "name": "BurgerEditorHelper",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method___construct"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetConfigJSONPath\u0028\u0029",
+            "name": "getConfigJSONPath",
+            "summary": "bgeconfig.json\u0020\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getConfigJSONPath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetAddonDir\u0028\u0029",
+            "name": "getAddonDir",
+            "summary": "Addon\u0020\u30D5\u30A9\u30EB\u30C0\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getAddonDir"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetBgeConfig\u0028\u0029",
+            "name": "getBgeConfig",
+            "summary": "\u30A8\u30C7\u30A3\u30BF\u3078\u6E21\u3059\u8A2D\u5B9A\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getBgeConfig"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AsetSelfValue\u0028\u0029",
+            "name": "setSelfValue",
+            "summary": "\u30A8\u30C7\u30A3\u30BF\u3078\u6E21\u3059\u8A2D\u5B9A\u3092\u7D44\u307F\u7ACB\u3066\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_setSelfValue"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetCSSList\u0028\u0029",
+            "name": "getCSSList",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getCSSList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetThemeAssetPath\u0028\u0029",
+            "name": "getThemeAssetPath",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u6240\u5C5E\u3057\u3066\u3044\u308B\u30C6\u30FC\u30DE\u306E\u30A2\u30BB\u30C3\u30C8\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getThemeAssetPath"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetThemeAssetUrl\u0028\u0029",
+            "name": "getThemeAssetUrl",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u304C\u6240\u5C5E\u3057\u3066\u3044\u308B\u30C6\u30FC\u30DE\u306E\u30A2\u30BB\u30C3\u30C8\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getThemeAssetUrl"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetVersionOfSystem\u0028\u0029",
+            "name": "getVersionOfSystem",
+            "summary": "baserCMS\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getVersionOfSystem"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetMajorVersionOfSystem\u0028\u0029",
+            "name": "getMajorVersionOfSystem",
+            "summary": "baserCMS\u306E\u30E1\u30B8\u30E3\u30FC\u30D0\u30FC\u30B8\u30E7\u30F3\u3092\u6574\u6570\u3067\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getMajorVersionOfSystem"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003Atype\u0028\u0029",
+            "name": "type",
+            "summary": "\u30BF\u30A4\u30D7\u306E\u8AAD\u307F\u8FBC\u307F",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_type"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AtypeVersionList\u0028\u0029",
+            "name": "typeVersionList",
+            "summary": "\u30BF\u30A4\u30D7\u306E\u30EA\u30B9\u30C8",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_typeVersionList"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AdefaultBlock\u0028\u0029",
+            "name": "defaultBlock",
+            "summary": "\u30D6\u30ED\u30C3\u30AF\u306E\u8AAD\u307F\u8FBC\u307F",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_defaultBlock"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AinputArea\u0028\u0029",
+            "name": "inputArea",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_inputArea"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003ApanelArea\u0028\u0029",
+            "name": "panelArea",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_panelArea"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AinitArea\u0028\u0029",
+            "name": "initArea",
+            "summary": "\u521D\u671F\u51E6\u7406\u30D5\u30A1\u30A4\u30EB\u8AAD\u307F\u8FBC\u307F",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_initArea"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003Aeditor\u0028\u0029",
+            "name": "editor",
+            "summary": "BurgerEditor\u0020\u51FA\u529B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_editor"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003ApostImage\u0028\u0029",
+            "name": "postImage",
+            "summary": "\u8A18\u4E8B\u306B\u57CB\u3081\u8FBC\u307E\u308C\u305F\u753B\u50CF\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_postImage"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetPostImage\u0028\u0029",
+            "name": "getPostImage",
+            "summary": "\u8A18\u4E8B\u306B\u57CB\u3081\u8FBC\u307E\u308C\u305F\u753B\u50CF\u306E\u30D1\u30B9\u3092\u53D6\u5F97\u3059\u308B\u0028\u30D6\u30ED\u30B0\u306B\u306E\u307F\u5BFE\u5FDC\u0029",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getPostImage"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AgetThemeByContent\u0028\u0029",
+            "name": "getThemeByContent",
+            "summary": "\u8A18\u4E8B\u304C\u6240\u5C5E\u3059\u308BsiteId\u304B\u3089\u3001\u3069\u306E\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u304C\u30ED\u30FC\u30C9\u3055\u308C\u3066\u3044\u308B\u304B\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_getThemeByContent"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003ApreventLoadingStyle\u0028\u0029",
+            "name": "preventLoadingStyle",
+            "summary": "\u30B9\u30BF\u30A4\u30EB\u306E\u8AAD\u307F\u8FBC\u307F\u3092\u9632\u6B62\u3059\u308B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_preventLoadingStyle"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003AshouldLoadStyle\u0028\u0029",
+            "name": "shouldLoadStyle",
+            "summary": "\u30B9\u30BF\u30A4\u30EB\u3092\u8AAD\u307F\u8FBC\u3080\u304B\u3069\u3046\u304B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#method_shouldLoadStyle"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A\u0024bgeConfig",
+            "name": "bgeConfig",
+            "summary": "\u30D6\u30ED\u30C3\u30AF\u30AF\u30E9\u30B9\u8A2D\u5B9A\u30AA\u30D7\u30B7\u30E7\u30F3\u30FBAPI\u0020URL\u0020\u7B49\u3001\u30A8\u30C7\u30A3\u30BF\u3078\u6E21\u3059\u8A2D\u5B9A",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#property_bgeConfig"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A\u0024useType",
+            "name": "useType",
+            "summary": "\u63CF\u753B\u4E2D\u306B\u5229\u7528\u3055\u308C\u305F\u30BF\u30A4\u30D7",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#property_useType"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A\u0024useBlock",
+            "name": "useBlock",
+            "summary": "\u63CF\u753B\u4E2D\u306B\u5229\u7528\u3055\u308C\u305F\u30D6\u30ED\u30C3\u30AF",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#property_useBlock"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A\u0024initialized",
+            "name": "initialized",
+            "summary": "\u8A2D\u5B9A\u306E\u521D\u671F\u5316\u304C\u6E08\u3093\u3067\u3044\u308B\u304B",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#property_initialized"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper\\BurgerEditorHelper\u003A\u003A\u0024loadingStyle",
+            "name": "loadingStyle",
+            "summary": "",
+            "url": "classes/BcBurgerEditor-View-Helper-BurgerEditorHelper.html#property_loadingStyle"
+        },                {
             "fqsen": "\\BcContentLink\\BcContentLinkPlugin",
             "name": "BcContentLinkPlugin",
             "summary": "plugin\u0020for\u0020BcPlugin",
@@ -14301,6 +15151,16 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u8A73\u7D30\u30DA\u30FC\u30B8\u3092\u8868\u793A\u3059\u308B",
             "url": "classes/BcCustomContent-Controller-CustomContentController.html#method_view"
         },                {
+            "fqsen": "\\BcCustomContent\\Controller\\CustomContentController\u003A\u003Aarchives\u0028\u0029",
+            "name": "archives",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u30A2\u30FC\u30AB\u30A4\u30D6\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BcCustomContent-Controller-CustomContentController.html#method_archives"
+        },                {
+            "fqsen": "\\BcCustomContent\\Controller\\CustomContentController\u003A\u003Ayear\u0028\u0029",
+            "name": "year",
+            "summary": "\u5E74\u5225\u306E\u30A2\u30FC\u30AB\u30A4\u30D6\u3092\u8868\u793A\u3059\u308B",
+            "url": "classes/BcCustomContent-Controller-CustomContentController.html#method_year"
+        },                {
             "fqsen": "\\BcCustomContent\\Controller\\CustomContentFrontAppController",
             "name": "CustomContentFrontAppController",
             "summary": "CustomContentFrontAppController",
@@ -14381,9 +15241,14 @@ Search.appendIndex(
             "summary": "Initialize",
             "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_initialize"
         },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomContentsTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u3092\u8A2D\u5B9A\u3059\u308B",
+            "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_validationDefault"
+        },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomContentsTable\u003A\u003AvalidationWithTable\u0028\u0029",
             "name": "validationWithTable",
-            "summary": "\u30C7\u30D5\u30A9\u30EB\u30C8\u306E\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u3092\u8A2D\u5B9A\u3059\u308B",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u3068\u7D10\u3065\u304F\u5834\u5408\u306E\u30D0\u30EA\u30C7\u30FC\u30B7\u30E7\u30F3\u3092\u8A2D\u5B9A\u3059\u308B",
             "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_validationWithTable"
         },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomContentsTable\u003A\u003AbeforeSave\u0028\u0029",
@@ -14395,6 +15260,11 @@ Search.appendIndex(
             "name": "createSearchIndex",
             "summary": "\u691C\u7D22\u7528\u30C7\u30FC\u30BF\u3092\u751F\u6210\u3059\u308B",
             "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_createSearchIndex"
+        },                {
+            "fqsen": "\\BcCustomContent\\Model\\Table\\CustomContentsTable\u003A\u003AcreateRelatedSearchIndexes\u0028\u0029",
+            "name": "createRelatedSearchIndexes",
+            "summary": "\u95A2\u9023\u3059\u308B\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u691C\u7D22\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BcCustomContent-Model-Table-CustomContentsTable.html#method_createRelatedSearchIndexes"
         },                {
             "fqsen": "\\BcCustomContent\\Model\\Table\\CustomEntriesTable",
             "name": "CustomEntriesTable",
@@ -14966,6 +15836,21 @@ Search.appendIndex(
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u4E0B\u306B\u79FB\u52D5",
             "url": "classes/BcCustomContent-Service-CustomEntriesService.html#method_moveDown"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003AnormalizeDateString\u0028\u0029",
+            "name": "normalizeDateString",
+            "summary": "\u65E5\u4ED8\u6587\u5B57\u5217\u3092\u6B63\u898F\u5316\u3059\u308B\uFF08\u6708\u65E5\u306E0\u57CB\u3081\u3092\u884C\u3046\uFF09",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#method_normalizeDateString"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003AgetPrevEntry\u0028\u0029",
+            "name": "getPrevEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u524D\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#method_getPrevEntry"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003AgetNextEntry\u0028\u0029",
+            "name": "getNextEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u6B21\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-CustomEntriesService.html#method_getNextEntry"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomEntriesService\u003A\u003A\u0024CustomEntries",
             "name": "CustomEntries",
             "summary": "CustomEntries\u0020Table",
@@ -15015,6 +15900,11 @@ Search.appendIndex(
             "name": "getIndex",
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomFieldsService.html#method_getIndex"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomFieldsService\u003A\u003AcreateIndexConditions\u0028\u0029",
+            "name": "createIndexConditions",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B\u305F\u3081\u306E\u6761\u4EF6\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-CustomFieldsService.html#method_createIndexConditions"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomFieldsService\u003A\u003Acreate\u0028\u0029",
             "name": "create",
@@ -15086,6 +15976,11 @@ Search.appendIndex(
             "summary": "\u95A2\u9023\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u4E00\u89A7\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomLinksService.html#method_getIndex"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomLinksService\u003A\u003AcreateIndexConditions\u0028\u0029",
+            "name": "createIndexConditions",
+            "summary": "\u95A2\u9023\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u30A4\u30F3\u30C7\u30C3\u30AF\u30B9\u6761\u4EF6\u3092\u4F5C\u6210\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-CustomLinksService.html#method_createIndexConditions"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomLinksService\u003A\u003AgetList\u0028\u0029",
             "name": "getList",
             "summary": "",
@@ -15125,6 +16020,11 @@ Search.appendIndex(
             "name": "deleteFields",
             "summary": "\u524A\u9664\u3055\u308C\u305F\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u53CD\u6620\u3059\u308B",
             "url": "classes/BcCustomContent-Service-CustomLinksService.html#method_deleteFields"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\CustomLinksService\u003A\u003AfindByName\u0028\u0029",
+            "name": "findByName",
+            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u3092\u3082\u3068\u306B\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u306E\u5358\u4E00\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-CustomLinksService.html#method_findByName"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\CustomLinksService\u003A\u003A\u0024CustomLinks",
             "name": "CustomLinks",
@@ -15251,6 +16151,16 @@ Search.appendIndex(
             "summary": "\u4E00\u89A7\u7528\u306E\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getViewVarsForIndex"
         },                {
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AgetViewVarsForArchives\u0028\u0029",
+            "name": "getViewVarsForArchives",
+            "summary": "\u30A2\u30FC\u30AB\u30A4\u30D6\u30DA\u30FC\u30B8\u7528\u306E\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getViewVarsForArchives"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AgetViewVarsForYear\u0028\u0029",
+            "name": "getViewVarsForYear",
+            "summary": "\u5E74\u5225\u30A2\u30FC\u30AB\u30A4\u30D6\u30DA\u30FC\u30B8\u7528\u306E\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getViewVarsForYear"
+        },                {
             "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AgetViewVarsForView\u0028\u0029",
             "name": "getViewVarsForView",
             "summary": "\u8A73\u7D30\u30DA\u30FC\u30B8\u7528\u306E\u0020View\u0020\u5909\u6570\u3092\u53D6\u5F97\u3059\u308B",
@@ -15265,6 +16175,16 @@ Search.appendIndex(
             "name": "getViewTemplate",
             "summary": "\u8A73\u7D30\u30DA\u30FC\u30B8\u7528\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getViewTemplate"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AgetArchivesTemplate\u0028\u0029",
+            "name": "getArchivesTemplate",
+            "summary": "\u30A2\u30FC\u30AB\u30A4\u30D6\u30DA\u30FC\u30B8\u7528\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getArchivesTemplate"
+        },                {
+            "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AgetYearTemplate\u0028\u0029",
+            "name": "getYearTemplate",
+            "summary": "\u5E74\u5225\u30A2\u30FC\u30AB\u30A4\u30D6\u30DA\u30FC\u30B8\u7528\u306E\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-Service-Front-CustomContentFrontService.html#method_getYearTemplate"
         },                {
             "fqsen": "\\BcCustomContent\\Service\\Front\\CustomContentFrontService\u003A\u003AsetupPreviewForView\u0028\u0029",
             "name": "setupPreviewForView",
@@ -15610,6 +16530,61 @@ Search.appendIndex(
             "name": "isDisplayField",
             "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u3064\u3044\u3066\u8868\u793A\u5BFE\u8C61\u304B\u3069\u3046\u304B\u5224\u5B9A\u3059\u308B",
             "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_isDisplayField"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AgetFieldItemList\u0028\u0029",
+            "name": "getFieldItemList",
+            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u3092\u6307\u5B9A\u3057\u3066\u3001\u767B\u9332\u3055\u308C\u3066\u3044\u308B\u30A2\u30A4\u30C6\u30E0\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_getFieldItemList"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AgetYearList\u0028\u0029",
+            "name": "getYearList",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u304C\u5B58\u5728\u3059\u308B\u5E74\u306E\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_getYearList"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AgetEntries\u0028\u0029",
+            "name": "getEntries",
+            "summary": "\u30A8\u30F3\u30C8\u30EA\u30FC\u30EA\u30B9\u30C8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_getEntries"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AparseContentsName\u0028\u0029",
+            "name": "parseContentsName",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u540D\u3092\u89E3\u6790\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_parseContentsName"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003Aentries\u0028\u0029",
+            "name": "entries",
+            "summary": "\u30A8\u30F3\u30C8\u30EA\u30FC\u30EA\u30B9\u30C8\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_entries"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AgetPrevEntry\u0028\u0029",
+            "name": "getPrevEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u524D\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_getPrevEntry"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AgetNextEntry\u0028\u0029",
+            "name": "getNextEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u6B21\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_getNextEntry"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AhasPrevEntry\u0028\u0029",
+            "name": "hasPrevEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u524D\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u304C\u5B58\u5728\u3059\u308B\u304B\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_hasPrevEntry"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AhasNextEntry\u0028\u0029",
+            "name": "hasNextEntry",
+            "summary": "\u6307\u5B9A\u3057\u305FCustomEntry\u306E\u6B21\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u304C\u5B58\u5728\u3059\u308B\u304B\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_hasNextEntry"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AprevLink\u0028\u0029",
+            "name": "prevLink",
+            "summary": "\u524D\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3078\u306E\u30EA\u30F3\u30AF\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_prevLink"
+        },                {
+            "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003AnextLink\u0028\u0029",
+            "name": "nextLink",
+            "summary": "\u6B21\u306E\u30A8\u30F3\u30C8\u30EA\u30FC\u3078\u306E\u30EA\u30F3\u30AF\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcCustomContent-View-Helper-CustomContentHelper.html#method_nextLink"
         },                {
             "fqsen": "\\BcCustomContent\\View\\Helper\\CustomContentHelper\u003A\u003A\u0024helpers",
             "name": "helpers",
@@ -16816,6 +17791,11 @@ Search.appendIndex(
             "summary": "\u9001\u4FE1\u5143\u540D\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_getFrom"
         },                {
+            "fqsen": "\\BcMail\\Mailer\\MailMessageMailer\u003A\u003AparseAndNormalizeMailAddresses\u0028\u0029",
+            "name": "parseAndNormalizeMailAddresses",
+            "summary": "\u30E1\u30FC\u30EB\u30A2\u30C9\u30EC\u30B9\u6587\u5B57\u5217\u3092\u5206\u5272\u30FB\u6B63\u898F\u5316\u3059\u308B",
+            "url": "classes/BcMail-Mailer-MailMessageMailer.html#method_parseAndNormalizeMailAddresses"
+        },                {
             "fqsen": "\\BcMail\\Model\\Entity\\MailConfig",
             "name": "MailConfig",
             "summary": "Class\u0020MailConfig",
@@ -16968,7 +17948,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailFieldsTable\u003A\u003AhalfTextMailField\u0028\u0029",
             "name": "halfTextMailField",
-            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3068\u3057\u3066\u6B63\u3057\u3044\u6587\u5B57\u5217\u304B\u691C\u8A3C\u3059\u308B\n\u534A\u89D2\u5C0F\u6587\u5B57\u82F1\u6570\u002D_\n\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306F\u3001DB\u30C6\u30FC\u30D6\u30EB\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3068\u3057\u3066\u5229\u7528\u3055\u308C\u308B\u305F\u3081\u3001\n\u5927\u6587\u5B57\u3092\u5229\u7528\u3057\u305F\u5834\u5408\u306B\u30AF\u30A9\u30FC\u30C8\u3092\u5165\u308C\u306A\u3044\u3068\u30A8\u30E9\u30FC\u3068\u306A\u3063\u3066\u3057\u307E\u3046",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3068\u3057\u3066\u6B63\u3057\u3044\u6587\u5B57\u5217\u304B\u691C\u8A3C\u3059\u308B\n\u534A\u89D2\u5C0F\u6587\u5B57\u82F1\u6570\u5B57\u3068\u30A2\u30F3\u30C0\u30FC\u30B9\u30B3\u30A2\u3092\u8A31\u5BB9\n\u30E1\u30FC\u30EB\u30D5\u30A3\u30FC\u30EB\u30C9\u306F\u3001DB\u30C6\u30FC\u30D6\u30EB\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u3068\u3057\u3066\u5229\u7528\u3055\u308C\u308B\u305F\u3081\u3001\n\u5927\u6587\u5B57\u3092\u5229\u7528\u3057\u305F\u5834\u5408\u306B\u30AF\u30A9\u30FC\u30C8\u3092\u5165\u308C\u306A\u3044\u3068\u30A8\u30E9\u30FC\u3068\u306A\u3063\u3066\u3057\u307E\u3046",
             "url": "classes/BcMail-Model-Table-MailFieldsTable.html#method_halfTextMailField"
         },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailFieldsTable\u003A\u003AsourceMailField\u0028\u0029",
@@ -16985,6 +17965,11 @@ Search.appendIndex(
             "name": "formatSource",
             "summary": "\u9078\u629E\u30EA\u30B9\u30C8\u306E\u30BD\u30FC\u30B9\u3092\u6574\u5F62\u3059\u308B\n\u7A7A\u767D\u3068\u0020\\r\u0020\u3092\u9664\u5916\u3057\u3001\u6539\u884C\u3067\u7D50\u5408\u3059\u308B\n\u007C\u0020\u306E\u5BFE\u5FDC\u306F\u5F8C\u65B9\u4E92\u63DB\u3068\u3057\u3066\u6B8B\u3057\u3066\u304A\u304F",
             "url": "classes/BcMail-Model-Table-MailFieldsTable.html#method_formatSource"
+        },                {
+            "fqsen": "\\BcMail\\Model\\Table\\MailFieldsTable\u003A\u003AhalfTextMailGroupField\u0028\u0029",
+            "name": "halfTextMailGroupField",
+            "summary": "\u30B0\u30EB\u30FC\u30D7\u7CFB\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3068\u3057\u3066\u6B63\u3057\u3044\u6587\u5B57\u5217\u304B\u691C\u8A3C\u3059\u308B\n\u534A\u89D2\u82F1\u6570\u5B57\u3001\u30CF\u30A4\u30D5\u30F3\u3001\u30A2\u30F3\u30C0\u30FC\u30B9\u30B3\u30A2\u3092\u8A31\u5BB9",
+            "url": "classes/BcMail-Model-Table-MailFieldsTable.html#method_halfTextMailGroupField"
         },                {
             "fqsen": "\\BcMail\\Model\\Table\\MailMessagesTable",
             "name": "MailMessagesTable",
@@ -17085,6 +18070,11 @@ Search.appendIndex(
             "name": "mailContent",
             "summary": "\u30E1\u30FC\u30EB\u30B3\u30F3\u30C6\u30F3\u30C4\u60C5\u5831",
             "url": "classes/BcMail-Model-Table-MailMessagesTable.html#property_mailContent"
+        },                {
+            "fqsen": "\\BcMail\\Model\\Table\\MailMessagesTable\u003A\u003A\u0024tablePrefix",
+            "name": "tablePrefix",
+            "summary": "\u30C6\u30FC\u30D6\u30EB\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B9",
+            "url": "classes/BcMail-Model-Table-MailMessagesTable.html#property_tablePrefix"
         },                {
             "fqsen": "\\BcMail\\Model\\Validation\\MailMessageValidation",
             "name": "MailMessageValidation",
@@ -17921,6 +18911,11 @@ Search.appendIndex(
             "summary": "create\n\u30D5\u30A1\u30A4\u30EB\u6DFB\u4ED8\u306E\u5BFE\u5FDC\u306E\u305F\u3081\u306B\u30C7\u30D5\u30A9\u30EB\u30C8\u5024\u3092\u5909\u66F4",
             "url": "classes/BcMail-View-Helper-MailformHelper.html#method_create"
         },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailformHelper\u003A\u003Afile\u0028\u0029",
+            "name": "file",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30BF\u30B0\u3092\u51FA\u529B",
+            "url": "classes/BcMail-View-Helper-MailformHelper.html#method_file"
+        },                {
             "fqsen": "\\BcMail\\View\\Helper\\MailformHelper\u003A\u003AauthCaptcha\u0028\u0029",
             "name": "authCaptcha",
             "summary": "\u8A8D\u8A3C\u30AD\u30E3\u30D7\u30C1\u30E3\u3092\u8868\u793A\u3059\u308B",
@@ -17980,6 +18975,36 @@ Search.appendIndex(
             "name": "descriptionExists",
             "summary": "\u30E1\u30FC\u30EB\u306E\u8AAC\u660E\u6587\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
             "url": "classes/BcMail-View-Helper-MailHelper.html#method_descriptionExists"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AgetThanks\u0028\u0029",
+            "name": "getThanks",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u306E\u9001\u4FE1\u5B8C\u4E86\u6587\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_getThanks"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003Athanks\u0028\u0029",
+            "name": "thanks",
+            "summary": "\u30E1\u30FC\u30EB\u306E\u9001\u4FE1\u5B8C\u4E86\u6587\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_thanks"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AthanksExists\u0028\u0029",
+            "name": "thanksExists",
+            "summary": "\u30E1\u30FC\u30EB\u306E\u9001\u4FE1\u5B8C\u4E86\u6587\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_thanksExists"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AgetUnpublish\u0028\u0029",
+            "name": "getUnpublish",
+            "summary": "\u30E1\u30FC\u30EB\u30D5\u30A9\u30FC\u30E0\u306E\u53D7\u4ED8\u505C\u6B62\u6587\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_getUnpublish"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003Aunpublish\u0028\u0029",
+            "name": "unpublish",
+            "summary": "\u30E1\u30FC\u30EB\u306E\u53D7\u4ED8\u505C\u6B62\u6587\u3092\u51FA\u529B\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_unpublish"
+        },                {
+            "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003AunpublishExists\u0028\u0029",
+            "name": "unpublishExists",
+            "summary": "\u30E1\u30FC\u30EB\u306E\u53D7\u4ED8\u505C\u6B62\u6587\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcMail-View-Helper-MailHelper.html#method_unpublishExists"
         },                {
             "fqsen": "\\BcMail\\View\\Helper\\MailHelper\u003A\u003Alink\u0028\u0029",
             "name": "link",
@@ -18055,6 +19080,2091 @@ Search.appendIndex(
             "name": "initialize",
             "summary": "initialize",
             "url": "classes/BcMail-View-MailFrontEmailView.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\BcMcpPlugin",
+            "name": "BcMcpPlugin",
+            "summary": "Plugin\u0020for\u0020BcMcp",
+            "url": "classes/BcMcp-BcMcpPlugin.html"
+        },                {
+            "fqsen": "\\BcMcp\\BcMcpPlugin\u003A\u003Abootstrap\u0028\u0029",
+            "name": "bootstrap",
+            "summary": "Bootstrap",
+            "url": "classes/BcMcp-BcMcpPlugin.html#method_bootstrap"
+        },                {
+            "fqsen": "\\BcMcp\\BcMcpPlugin\u003A\u003Ainstall\u0028\u0029",
+            "name": "install",
+            "summary": "Install",
+            "url": "classes/BcMcp-BcMcpPlugin.html#method_install"
+        },                {
+            "fqsen": "\\BcMcp\\BcMcpPlugin\u003A\u003Aroutes\u0028\u0029",
+            "name": "routes",
+            "summary": "Add\u0020routes\u0020for\u0020the\u0020plugin.",
+            "url": "classes/BcMcp-BcMcpPlugin.html#method_routes"
+        },                {
+            "fqsen": "\\BcMcp\\Command\\Oauth2CleanupCommand",
+            "name": "Oauth2CleanupCommand",
+            "summary": "OAuth2\u0020Cleanup\u0020Command",
+            "url": "classes/BcMcp-Command-Oauth2CleanupCommand.html"
+        },                {
+            "fqsen": "\\BcMcp\\Command\\Oauth2CleanupCommand\u003A\u003AbuildOptionParser\u0028\u0029",
+            "name": "buildOptionParser",
+            "summary": "Hook\u0020method\u0020for\u0020defining\u0020this\u0020command\u0027s\u0020option\u0020parser.",
+            "url": "classes/BcMcp-Command-Oauth2CleanupCommand.html#method_buildOptionParser"
+        },                {
+            "fqsen": "\\BcMcp\\Command\\Oauth2CleanupCommand\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "Implement\u0020this\u0020method\u0020with\u0020your\u0020command\u0027s\u0020logic.",
+            "url": "classes/BcMcp-Command-Oauth2CleanupCommand.html#method_execute"
+        },                {
+            "fqsen": "\\BcMcp\\Command\\Oauth2CleanupCommand\u003A\u003AcleanUnusedClients\u0028\u0029",
+            "name": "cleanUnusedClients",
+            "summary": "\u4E00\u5EA6\u3082\u8A8D\u53EF\u306B\u4F7F\u308F\u308C\u3066\u3044\u306A\u3044\u53E4\u3044\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u3092\u524A\u9664\u3059\u308B",
+            "url": "classes/BcMcp-Command-Oauth2CleanupCommand.html#method_cleanUnusedClients"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\McpServerManagerController",
+            "name": "McpServerManagerController",
+            "summary": "MCP\u30B5\u30FC\u30D0\u30FC\u7BA1\u7406\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
+            "url": "classes/BcMcp-Controller-Admin-McpServerManagerController.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\McpServerManagerController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "\u521D\u671F\u5316",
+            "url": "classes/BcMcp-Controller-Admin-McpServerManagerController.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\McpServerManagerController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "MCP\u30B5\u30FC\u30D0\u30FC\u60C5\u5831",
+            "url": "classes/BcMcp-Controller-Admin-McpServerManagerController.html#method_index"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\McpServerManagerController\u003A\u003AgetRegisteredTools\u0028\u0029",
+            "name": "getRegisteredTools",
+            "summary": "\u767B\u9332\u6E08\u307F\u30C4\u30FC\u30EB\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Controller-Admin-McpServerManagerController.html#method_getRegisteredTools"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller",
+            "name": "Oauth2Controller",
+            "summary": "Admin\u0020OAuth2\u0020Controller",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "\u521D\u671F\u5316",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u51E6\u7406\u524D\u306B\u8A2D\u5B9A\u4E0D\u5099\u3092\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "OPTIONS\u30EA\u30AF\u30A8\u30B9\u30C8\u5BFE\u5FDC",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#method_options"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003Aauthorize\u0028\u0029",
+            "name": "authorize",
+            "summary": "\u8A8D\u53EF\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#method_authorize"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003AcompleteAuthorization\u0028\u0029",
+            "name": "completeAuthorization",
+            "summary": "\u8A8D\u53EF\u3092\u5B8C\u4E86\u3055\u305B\u308B",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#method_completeAuthorization"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003ASESSION_AUTH_REQUESTS",
+            "name": "SESSION_AUTH_REQUESTS",
+            "summary": "\u8A8D\u53EF\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u4FDD\u6301\u3059\u308B\u30BB\u30C3\u30B7\u30E7\u30F3\u30AD\u30FC",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#constant_SESSION_AUTH_REQUESTS"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003AMAX_PENDING_AUTH_REQUESTS",
+            "name": "MAX_PENDING_AUTH_REQUESTS",
+            "summary": "\u30BB\u30C3\u30B7\u30E7\u30F3\u306B\u4FDD\u6301\u3059\u308B\u8A8D\u53EF\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u6700\u5927\u4EF6\u6570",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#constant_MAX_PENDING_AUTH_REQUESTS"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003A\u0024oauth2Service",
+            "name": "oauth2Service",
+            "summary": "OAuth2\u30B5\u30FC\u30D3\u30B9",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#property_oauth2Service"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin\\Oauth2Controller\u003A\u003A\u0024oauth2ConfigError",
+            "name": "oauth2ConfigError",
+            "summary": "OAuth2\u0020\u306E\u8A2D\u5B9A\u4E0D\u5099",
+            "url": "classes/BcMcp-Controller-Admin-Oauth2Controller.html#property_oauth2ConfigError"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController",
+            "name": "McpProxyController",
+            "summary": "MCP\u30B5\u30FC\u30D0\u30FC\u306E\u30EA\u30AF\u30A8\u30B9\u30C8\u53D7\u3051\u53E3",
+            "url": "classes/BcMcp-Controller-McpProxyController.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "\u521D\u671F\u5316",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u51E6\u7406\u524D\u306E\u8A8D\u8A3C\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AvalidateOAuth2Token\u0028\u0029",
+            "name": "validateOAuth2Token",
+            "summary": "OAuth2\u30C8\u30FC\u30AF\u30F3\u306E\u691C\u8A3C",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_validateOAuth2Token"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AreturnUnauthorizedResponse\u0028\u0029",
+            "name": "returnUnauthorizedResponse",
+            "summary": "\u8A8D\u8A3C\u30A8\u30E9\u30FC\u306E\u30EC\u30B9\u30DD\u30F3\u30B9\u3092\u8FD4\u3059",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_returnUnauthorizedResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AisAllowedOrigin\u0028\u0029",
+            "name": "isAllowedOrigin",
+            "summary": "Origin\u0020\u304C\u8A31\u53EF\u3055\u308C\u3066\u3044\u308B\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_isAllowedOrigin"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AreturnForbiddenOriginResponse\u0028\u0029",
+            "name": "returnForbiddenOriginResponse",
+            "summary": "\u8A31\u53EF\u3055\u308C\u306A\u3044\u0020Origin\u0020\u306E\u30EC\u30B9\u30DD\u30F3\u30B9\u3092\u8FD4\u3059",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_returnForbiddenOriginResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AreturnMethodNotAllowedResponse\u0028\u0029",
+            "name": "returnMethodNotAllowedResponse",
+            "summary": "\u8A31\u53EF\u3055\u308C\u306A\u3044\u30E1\u30BD\u30C3\u30C9\u306E\u30EC\u30B9\u30DD\u30F3\u30B9\u3092\u8FD4\u3059",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_returnMethodNotAllowedResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "MCP\u0020\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u53D7\u3051\u53E3",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_index"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AtoMcpMessage\u0028\u0029",
+            "name": "toMcpMessage",
+            "summary": "CakePHP\u0020\u306E\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u0020SDK\u0020\u306E\u0020HttpMessage\u0020\u306B\u5909\u63DB\u3059\u308B",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_toMcpMessage"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003AcheckPermission\u0028\u0029",
+            "name": "checkPermission",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_checkPermission"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003A_handleOptionsRequest\u0028\u0029",
+            "name": "_handleOptionsRequest",
+            "summary": "OPTIONS\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u51E6\u7406\uFF08CORS\u0020\u30D7\u30EA\u30D5\u30E9\u30A4\u30C8\u5BFE\u5FDC\uFF09",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method__handleOptionsRequest"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "OPTIONS\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u51E6\u7406\uFF08CORS\u0020\u30D7\u30EA\u30D5\u30E9\u30A4\u30C8\u5BFE\u5FDC\uFF09\n\u5F8C\u65B9\u4E92\u63DB\u6027\u306E\u305F\u3081\u6B8B\u3057\u3066\u3044\u308B\u304C\u3001\u5B9F\u969B\u306F_handleOptionsRequest\u304C\u4F7F\u7528\u3055\u308C\u308B",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#method_options"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003A\u0024oauth2Service",
+            "name": "oauth2Service",
+            "summary": "OAuth2\u30B5\u30FC\u30D3\u30B9",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#property_oauth2Service"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\McpProxyController\u003A\u003A\u0024oauth2ConfigError",
+            "name": "oauth2ConfigError",
+            "summary": "OAuth2\u0020\u306E\u8A2D\u5B9A\u4E0D\u5099",
+            "url": "classes/BcMcp-Controller-McpProxyController.html#property_oauth2ConfigError"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller",
+            "name": "Oauth2Controller",
+            "summary": "OAuth2\u0020Controller",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "\u521D\u671F\u5316",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003AbeforeFilter\u0028\u0029",
+            "name": "beforeFilter",
+            "summary": "\u30EA\u30AF\u30A8\u30B9\u30C8\u51E6\u7406\u524D\u306B\u8A2D\u5B9A\u4E0D\u5099\u3092\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_beforeFilter"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Aoptions\u0028\u0029",
+            "name": "options",
+            "summary": "OPTIONS\u30EA\u30AF\u30A8\u30B9\u30C8\u5BFE\u5FDC\uFF08CORS\u5BFE\u5FDC\uFF09",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_options"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Ajwks\u0028\u0029",
+            "name": "jwks",
+            "summary": "JWKS\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_jwks"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Atoken\u0028\u0029",
+            "name": "token",
+            "summary": "\u30C8\u30FC\u30AF\u30F3\u767A\u884C\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_token"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Averify\u0028\u0029",
+            "name": "verify",
+            "summary": "\u30C8\u30FC\u30AF\u30F3\u691C\u8A3C\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_verify"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003AclientInfo\u0028\u0029",
+            "name": "clientInfo",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u60C5\u5831\u53D6\u5F97\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_clientInfo"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003AprotectedResourceMetadata\u0028\u0029",
+            "name": "protectedResourceMetadata",
+            "summary": "OAuth\u00202.0\u0020\u4FDD\u8B77\u30EA\u30BD\u30FC\u30B9\u30E1\u30BF\u30C7\u30FC\u30BF\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8\u0020\u0028RFC\u00209728\u0029",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_protectedResourceMetadata"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003AauthorizationServerMetadata\u0028\u0029",
+            "name": "authorizationServerMetadata",
+            "summary": "OAuth\u00202.0\u0020\u8A8D\u53EF\u30B5\u30FC\u30D0\u30FC\u30E1\u30BF\u30C7\u30FC\u30BF\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8\u0020\u0028RFC\u00208414\u0029",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_authorizationServerMetadata"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003Aregister\u0028\u0029",
+            "name": "register",
+            "summary": "\u52D5\u7684\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u767B\u9332\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8\u0020\u0028RFC\u00207591\u0029\nPOST\u0020\/bc\u002Dmcp\/oauth2\/register",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_register"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003AclientConfiguration\u0028\u0029",
+            "name": "clientConfiguration",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u8A2D\u5B9A\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8\u0020\u0028RFC\u00207591\u0029\nGET\u0020\/bc\u002Dmcp\/oauth2\/register\/\u007Bclient_id\u007D\nPUT\u0020\/bc\u002Dmcp\/oauth2\/register\/\u007Bclient_id\u007D\nDELETE\u0020\/bc\u002Dmcp\/oauth2\/register\/\u007Bclient_id\u007D",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#method_clientConfiguration"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003A\u0024oauth2Service",
+            "name": "oauth2Service",
+            "summary": "OAuth2\u30B5\u30FC\u30D3\u30B9",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#property_oauth2Service"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003A\u0024clientRegistrationService",
+            "name": "clientRegistrationService",
+            "summary": "OAuth2\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u767B\u9332\u30B5\u30FC\u30D3\u30B9",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#property_clientRegistrationService"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Oauth2Controller\u003A\u003A\u0024oauth2ConfigError",
+            "name": "oauth2ConfigError",
+            "summary": "OAuth2\u0020\u306E\u8A2D\u5B9A\u4E0D\u5099",
+            "url": "classes/BcMcp-Controller-Oauth2Controller.html#property_oauth2ConfigError"
+        },                {
+            "fqsen": "\\BcMcp\\Lib\\OAuth2Util",
+            "name": "OAuth2Util",
+            "summary": "",
+            "url": "classes/BcMcp-Lib-OAuth2Util.html"
+        },                {
+            "fqsen": "\\BcMcp\\Lib\\OAuth2Util\u003A\u003AgetIssuer\u0028\u0029",
+            "name": "getIssuer",
+            "summary": "\u8A8D\u53EF\u30B5\u30FC\u30D0\u30FC\u306E\u0020issuer\u0020\u8B58\u5225\u5B50\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Lib-OAuth2Util.html#method_getIssuer"
+        },                {
+            "fqsen": "\\BcMcp\\Lib\\OAuth2Util\u003A\u003AaddIssuerToUrl\u0028\u0029",
+            "name": "addIssuerToUrl",
+            "summary": "URL\u0020\u306B\u0020iss\u0020\u30AF\u30A8\u30EA\u3092\u4ED8\u4E0E\u3059\u308B",
+            "url": "classes/BcMcp-Lib-OAuth2Util.html#method_addIssuerToUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Lib\\OAuth2Util\u003A\u003AcreatePsr7Request\u0028\u0029",
+            "name": "createPsr7Request",
+            "summary": "CakePHP\u30EA\u30AF\u30A8\u30B9\u30C8\u3092PSR\u002D7\u30EA\u30AF\u30A8\u30B9\u30C8\u306B\u5909\u63DB",
+            "url": "classes/BcMcp-Lib-OAuth2Util.html#method_createPsr7Request"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool",
+            "name": "BaseMcpTool",
+            "summary": "MCP\u30C4\u30FC\u30EB\u30FB\u30EA\u30BD\u30FC\u30B9\u306E\u57FA\u5E95\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u81EA\u8EAB\u304C\u63D0\u4F9B\u3059\u308B\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AresolveLoginUserId\u0028\u0029",
+            "name": "resolveLoginUserId",
+            "summary": "\u64CD\u4F5C\u8005\u306E\u30E6\u30FC\u30B6\u30FCID\u3092\u89E3\u6C7A\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveLoginUserId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AcreateSuccessResponse\u0028\u0029",
+            "name": "createSuccessResponse",
+            "summary": "\u6210\u529F\u6642\u306E\u623B\u308A\u5024\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_createSuccessResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AsaveDblog\u0028\u0029",
+            "name": "saveDblog",
+            "summary": "\u64CD\u4F5C\u30ED\u30B0\u3092\u4FDD\u5B58\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_saveDblog"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AcreateErrorResponse\u0028\u0029",
+            "name": "createErrorResponse",
+            "summary": "\u30A8\u30E9\u30FC\u6642\u306E\u623B\u308A\u5024\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_createErrorResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AexecuteWithErrorHandling\u0028\u0029",
+            "name": "executeWithErrorHandling",
+            "summary": "try\u002Dcatch\u30D6\u30ED\u30C3\u30AF\u3092\u5171\u901A\u5316\u3057\u3066\u30A8\u30E9\u30FC\u30CF\u30F3\u30C9\u30EA\u30F3\u30B0\u3092\u5B9F\u884C",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_executeWithErrorHandling"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AisFileUploadable\u0028\u0029",
+            "name": "isFileUploadable",
+            "summary": "\u5024\u304C\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u53EF\u80FD\u306A\u5F62\u5F0F\u304B\u3069\u3046\u304B\u3092\u5224\u5B9A",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_isFileUploadable"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AprocessFileUpload\u0028\u0029",
+            "name": "processFileUpload",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u51E6\u7406",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_processFileUpload"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AprocessBase64File\u0028\u0029",
+            "name": "processBase64File",
+            "summary": "Base64\u30A8\u30F3\u30B3\u30FC\u30C9\u3055\u308C\u305F\u30D5\u30A1\u30A4\u30EB\u30C7\u30FC\u30BF\u3092\u51E6\u7406",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_processBase64File"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AprocessUrlFile\u0028\u0029",
+            "name": "processUrlFile",
+            "summary": "URL\u304B\u3089\u30D5\u30A1\u30A4\u30EB\u3092\u30C0\u30A6\u30F3\u30ED\u30FC\u30C9\u3057\u3066\u51E6\u7406",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_processUrlFile"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AdetectMimeTypeFromContent\u0028\u0029",
+            "name": "detectMimeTypeFromContent",
+            "summary": "\u30D5\u30A1\u30A4\u30EB\u5185\u5BB9\u304B\u3089MIME\u30BF\u30A4\u30D7\u3092\u691C\u51FA",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_detectMimeTypeFromContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AgetMimeTypeFromExtension\u0028\u0029",
+            "name": "getMimeTypeFromExtension",
+            "summary": "\u62E1\u5F35\u5B50\u304B\u3089MIME\u30BF\u30A4\u30D7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_getMimeTypeFromExtension"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AgetExtensionFromMimeType\u0028\u0029",
+            "name": "getExtensionFromMimeType",
+            "summary": "MIME\u30BF\u30A4\u30D7\u304B\u3089\u62E1\u5F35\u5B50\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_getExtensionFromMimeType"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AisAllowedExtension\u0028\u0029",
+            "name": "isAllowedExtension",
+            "summary": "\u8A31\u53EF\u3055\u308C\u305F\u62E1\u5F35\u5B50\u304B\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_isAllowedExtension"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AprocessImageUpload\u0028\u0029",
+            "name": "processImageUpload",
+            "summary": "\u753B\u50CF\u30D5\u30A1\u30A4\u30EB\u5C02\u7528\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u51E6\u7406",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_processImageUpload"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AcleanupTempFile\u0028\u0029",
+            "name": "cleanupTempFile",
+            "summary": "\u4E00\u6642\u30D5\u30A1\u30A4\u30EB\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_cleanupTempFile"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AcreateUploadedFileFromArray\u0028\u0029",
+            "name": "createUploadedFileFromArray",
+            "summary": "\u914D\u5217\u30C7\u30FC\u30BF\u304B\u3089CakePHP\u306EUploadedFile\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#method_createUploadedFileFromArray"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AOUTPUT_SCHEMA",
+            "name": "OUTPUT_SCHEMA",
+            "summary": "\u30C4\u30FC\u30EB\u306E\u623B\u308A\u5024\u306E\u30B9\u30AD\u30FC\u30DE",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#constant_OUTPUT_SCHEMA"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AANNOTATION_READ",
+            "name": "ANNOTATION_READ",
+            "summary": "\u8AAD\u307F\u53D6\u308A\u5C02\u7528\u30C4\u30FC\u30EB\u306E\u6CE8\u91C8",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#constant_ANNOTATION_READ"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AANNOTATION_CREATE",
+            "name": "ANNOTATION_CREATE",
+            "summary": "\u8FFD\u52A0\u7CFB\u30C4\u30FC\u30EB\u306E\u6CE8\u91C8",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#constant_ANNOTATION_CREATE"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AANNOTATION_UPDATE",
+            "name": "ANNOTATION_UPDATE",
+            "summary": "\u66F4\u65B0\u7CFB\u30C4\u30FC\u30EB\u306E\u6CE8\u91C8",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#constant_ANNOTATION_UPDATE"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaseMcpTool\u003A\u003AANNOTATION_DELETE",
+            "name": "ANNOTATION_DELETE",
+            "summary": "\u524A\u9664\u7CFB\u30C4\u30FC\u30EB\u306E\u6CE8\u91C8",
+            "url": "classes/BcMcp-Mcp-BaseMcpTool.html#constant_ANNOTATION_DELETE"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\BaserCoreServer",
+            "name": "BaserCoreServer",
+            "summary": "baserCore\u6A5F\u80FD\u7528MCP\u30B5\u30FC\u30D0\u30FC",
+            "url": "classes/BcMcp-Mcp-BaserCore-BaserCoreServer.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\BaserCoreServer\u003A\u003AgetToolClasses\u0028\u0029",
+            "name": "getToolClasses",
+            "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9\u540D\u306E\u914D\u5217\u3092\u8FD4\u5374",
+            "url": "classes/BcMcp-Mcp-BaserCore-BaserCoreServer.html#method_getToolClasses"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool",
+            "name": "PagesTool",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AgetPages\u0028\u0029",
+            "name": "getPages",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u306E\u4E00\u89A7\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_getPages"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "\u6307\u5B9A\u3055\u308C\u305FID\u306E\u56FA\u5B9A\u30DA\u30FC\u30B8\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_getPage"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AaddPage\u0028\u0029",
+            "name": "addPage",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u3092\u8FFD\u52A0\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_addPage"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AeditPage\u0028\u0029",
+            "name": "editPage",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u3092\u7DE8\u96C6\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_editPage"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AdeletePage\u0028\u0029",
+            "name": "deletePage",
+            "summary": "\u56FA\u5B9A\u30DA\u30FC\u30B8\u3092\u524A\u9664\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_deletePage"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AgetMainSiteId\u0028\u0029",
+            "name": "getMainSiteId",
+            "summary": "\u30E1\u30A4\u30F3\u30B5\u30A4\u30C8\u306EID\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_getMainSiteId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore\\PagesTool\u003A\u003AgetSiteRootContentId\u0028\u0029",
+            "name": "getSiteRootContentId",
+            "summary": "\u30B5\u30A4\u30C8\u30EB\u30FC\u30C8\u306E\u30B3\u30F3\u30C6\u30F3\u30C4ID\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BaserCore-PagesTool.html#method_getSiteRootContentId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BcBlogServer",
+            "name": "BcBlogServer",
+            "summary": "\u30D6\u30ED\u30B0\u6A5F\u80FD\u7528MCP\u30B5\u30FC\u30D0\u30FC",
+            "url": "classes/BcMcp-Mcp-BcBlog-BcBlogServer.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BcBlogServer\u003A\u003AgetToolClasses\u0028\u0029",
+            "name": "getToolClasses",
+            "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30D6\u30ED\u30B0\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9\u540D\u306E\u914D\u5217\u3092\u8FD4\u5374",
+            "url": "classes/BcMcp-Mcp-BcBlog-BcBlogServer.html#method_getToolClasses"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool",
+            "name": "BlogCategoriesTool",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AaddBlogCategory\u0028\u0029",
+            "name": "addBlogCategory",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_addBlogCategory"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AgetBlogCategories\u0028\u0029",
+            "name": "getBlogCategories",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u306E\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_getBlogCategories"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AgetBlogCategory\u0028\u0029",
+            "name": "getBlogCategory",
+            "summary": "\u6307\u5B9A\u3055\u308C\u305FID\u306E\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_getBlogCategory"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AeditBlogCategory\u0028\u0029",
+            "name": "editBlogCategory",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_editBlogCategory"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogCategoriesTool\u003A\u003AdeleteBlogCategory\u0028\u0029",
+            "name": "deleteBlogCategory",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EA\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogCategoriesTool.html#method_deleteBlogCategory"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool",
+            "name": "BlogContentsTool",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AaddBlogContent\u0028\u0029",
+            "name": "addBlogContent",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_addBlogContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AeditBlogContent\u0028\u0029",
+            "name": "editBlogContent",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_editBlogContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AgetBlogContents\u0028\u0029",
+            "name": "getBlogContents",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_getBlogContents"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AgetBlogContent\u0028\u0029",
+            "name": "getBlogContent",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_getBlogContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogContentsTool\u003A\u003AdeleteBlogContent\u0028\u0029",
+            "name": "deleteBlogContent",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogContentsTool.html#method_deleteBlogContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool",
+            "name": "BlogPostsTool",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AaddBlogPost\u0028\u0029",
+            "name": "addBlogPost",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_addBlogPost"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AeditBlogPost\u0028\u0029",
+            "name": "editBlogPost",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_editBlogPost"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetAuthorId\u0028\u0029",
+            "name": "getAuthorId",
+            "summary": "\u6295\u7A3F\u8005\u306E\u30E6\u30FC\u30B6\u30FCID\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getAuthorId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetBlogPosts\u0028\u0029",
+            "name": "getBlogPosts",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getBlogPosts"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetBlogPost\u0028\u0029",
+            "name": "getBlogPost",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getBlogPost"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AdeleteBlogPost\u0028\u0029",
+            "name": "deleteBlogPost",
+            "summary": "\u30D6\u30ED\u30B0\u8A18\u4E8B\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_deleteBlogPost"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetBlogContentId\u0028\u0029",
+            "name": "getBlogContentId",
+            "summary": "\u30D6\u30ED\u30B0\u30B3\u30F3\u30C6\u30F3\u30C4ID\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getBlogContentId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogPostsTool\u003A\u003AgetBlogCategoryId\u0028\u0029",
+            "name": "getBlogCategoryId",
+            "summary": "\u30D6\u30ED\u30B0\u30AB\u30C6\u30B4\u30EAID\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogPostsTool.html#method_getBlogCategoryId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool",
+            "name": "BlogTagsTool",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AaddBlogTag\u0028\u0029",
+            "name": "addBlogTag",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_addBlogTag"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AgetBlogTags\u0028\u0029",
+            "name": "getBlogTags",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_getBlogTags"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AgetBlogTag\u0028\u0029",
+            "name": "getBlogTag",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_getBlogTag"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AeditBlogTag\u0028\u0029",
+            "name": "editBlogTag",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_editBlogTag"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog\\BlogTagsTool\u003A\u003AdeleteBlogTag\u0028\u0029",
+            "name": "deleteBlogTag",
+            "summary": "\u30D6\u30ED\u30B0\u30BF\u30B0\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcBlog-BlogTagsTool.html#method_deleteBlogTag"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\BcCustomContentServer",
+            "name": "BcCustomContentServer",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u6A5F\u80FD\u7528MCP\u30B5\u30FC\u30D0\u30FC",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-BcCustomContentServer.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\BcCustomContentServer\u003A\u003AgetToolClasses\u0028\u0029",
+            "name": "getToolClasses",
+            "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9\u540D\u306E\u914D\u5217\u3092\u8FD4\u5374",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-BcCustomContentServer.html#method_getToolClasses"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool",
+            "name": "CustomContentsTool",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AaddCustomContent\u0028\u0029",
+            "name": "addCustomContent",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_addCustomContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AeditCustomContent\u0028\u0029",
+            "name": "editCustomContent",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_editCustomContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AgetCustomContents\u0028\u0029",
+            "name": "getCustomContents",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_getCustomContents"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AgetCustomContent\u0028\u0029",
+            "name": "getCustomContent",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_getCustomContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomContentsTool\u003A\u003AdeleteCustomContent\u0028\u0029",
+            "name": "deleteCustomContent",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30B3\u30F3\u30C6\u30F3\u30C4\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomContentsTool.html#method_deleteCustomContent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool",
+            "name": "CustomEntriesTool",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AaddCustomEntry\u0028\u0029",
+            "name": "addCustomEntry",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_addCustomEntry"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AeditCustomEntry\u0028\u0029",
+            "name": "editCustomEntry",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_editCustomEntry"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AprocessCustomFields\u0028\u0029",
+            "name": "processCustomFields",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u5024\u3092\u51E6\u7406\uFF08\u30D5\u30A1\u30A4\u30EB\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3092\u542B\u3080\uFF09",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_processCustomFields"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AbuildFieldTypeMap\u0028\u0029",
+            "name": "buildFieldTypeMap",
+            "summary": "\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u304B\u3089\u30D5\u30A3\u30FC\u30EB\u30C9\u30BF\u30A4\u30D7\u3092\u5F15\u304F\u30DE\u30C3\u30D7\u3092\u4F5C\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_buildFieldTypeMap"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AgetCustomEntries\u0028\u0029",
+            "name": "getCustomEntries",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_getCustomEntries"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AgetCustomEntry\u0028\u0029",
+            "name": "getCustomEntry",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_getCustomEntry"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomEntriesTool\u003A\u003AdeleteCustomEntry\u0028\u0029",
+            "name": "deleteCustomEntry",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30A8\u30F3\u30C8\u30EA\u30FC\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomEntriesTool.html#method_deleteCustomEntry"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool",
+            "name": "CustomFieldsTool",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AaddCustomField\u0028\u0029",
+            "name": "addCustomField",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_addCustomField"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AgetCustomFields\u0028\u0029",
+            "name": "getCustomFields",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_getCustomFields"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AgetCustomField\u0028\u0029",
+            "name": "getCustomField",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_getCustomField"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AeditCustomField\u0028\u0029",
+            "name": "editCustomField",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_editCustomField"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AdeleteCustomField\u0028\u0029",
+            "name": "deleteCustomField",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#method_deleteCustomField"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003ATYPES",
+            "name": "TYPES",
+            "summary": "\u30BF\u30A4\u30D7",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#constant_TYPES"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomFieldsTool\u003A\u003AVALIDATION_RULES",
+            "name": "VALIDATION_RULES",
+            "summary": "",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomFieldsTool.html#constant_VALIDATION_RULES"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool",
+            "name": "CustomLinksTool",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AaddCustomLink\u0028\u0029",
+            "name": "addCustomLink",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_addCustomLink"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AgetCustomLinks\u0028\u0029",
+            "name": "getCustomLinks",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_getCustomLinks"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AgetCustomLink\u0028\u0029",
+            "name": "getCustomLink",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_getCustomLink"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AeditCustomLink\u0028\u0029",
+            "name": "editCustomLink",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_editCustomLink"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomLinksTool\u003A\u003AdeleteCustomLink\u0028\u0029",
+            "name": "deleteCustomLink",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_deleteCustomLink"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool",
+            "name": "CustomTablesTool",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u30C4\u30FC\u30EB\u30AF\u30E9\u30B9",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AregisterTools\u0028\u0029",
+            "name": "registerTools",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u95A2\u9023\u306E\u30C4\u30FC\u30EB\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u767B\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_registerTools"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AaddCustomTable\u0028\u0029",
+            "name": "addCustomTable",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u3092\u8FFD\u52A0",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_addCustomTable"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AcreateCustomLinks\u0028\u0029",
+            "name": "createCustomLinks",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30D5\u30A3\u30FC\u30EB\u30C9\u540D\u306E\u914D\u5217\u304B\u3089\u30AB\u30B9\u30BF\u30E0\u30EA\u30F3\u30AF\u306E\u914D\u5217\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_createCustomLinks"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AgetCustomTables\u0028\u0029",
+            "name": "getCustomTables",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u4E00\u89A7\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_getCustomTables"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AgetCustomTable\u0028\u0029",
+            "name": "getCustomTable",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_getCustomTable"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AeditCustomTable\u0028\u0029",
+            "name": "editCustomTable",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u3092\u7DE8\u96C6",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_editCustomTable"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent\\CustomTablesTool\u003A\u003AdeleteCustomTable\u0028\u0029",
+            "name": "deleteCustomTable",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30C6\u30FC\u30D6\u30EB\u3092\u524A\u9664",
+            "url": "classes/BcMcp-Mcp-BcCustomContent-CustomTablesTool.html#method_deleteCustomTable"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpContext",
+            "name": "McpContext",
+            "summary": "MCP\u0020\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u30B3\u30F3\u30C6\u30AD\u30B9\u30C8",
+            "url": "classes/BcMcp-Mcp-McpContext.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpContext\u003A\u003AsetLoginUserId\u0028\u0029",
+            "name": "setLoginUserId",
+            "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FCID\u3092\u8A2D\u5B9A\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpContext.html#method_setLoginUserId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpContext\u003A\u003AgetLoginUserId\u0028\u0029",
+            "name": "getLoginUserId",
+            "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FCID\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpContext.html#method_getLoginUserId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpContext\u003A\u003Aclear\u0028\u0029",
+            "name": "clear",
+            "summary": "\u30B3\u30F3\u30C6\u30AD\u30B9\u30C8\u3092\u7834\u68C4\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpContext.html#method_clear"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpContext\u003A\u003A\u0024loginUserId",
+            "name": "loginUserId",
+            "summary": "\u30ED\u30B0\u30A4\u30F3\u30E6\u30FC\u30B6\u30FCID",
+            "url": "classes/BcMcp-Mcp-McpContext.html#property_loginUserId"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpLogger",
+            "name": "McpLogger",
+            "summary": "MCP\u30B5\u30FC\u30D0\u30FC\u7528\u30ED\u30AC\u30FC",
+            "url": "classes/BcMcp-Mcp-McpLogger.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpLogger\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-Mcp-McpLogger.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpLogger\u003A\u003Alog\u0028\u0029",
+            "name": "log",
+            "summary": "\u30ED\u30B0\u3092\u8A18\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpLogger.html#method_log"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpLogger\u003A\u003A\u0024logFile",
+            "name": "logFile",
+            "summary": "\u30ED\u30B0\u30D5\u30A1\u30A4\u30EB\u306E\u30D1\u30B9",
+            "url": "classes/BcMcp-Mcp-McpLogger.html#property_logFile"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpLogger\u003A\u003A\u0024levels",
+            "name": "levels",
+            "summary": "\u8A18\u9332\u5BFE\u8C61\u306E\u30ED\u30B0\u30EC\u30D9\u30EB",
+            "url": "classes/BcMcp-Mcp-McpLogger.html#property_levels"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpRequestHandler",
+            "name": "McpRequestHandler",
+            "summary": "MCP\u0020\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u30D7\u30ED\u30BB\u30B9\u5185\u3067\u51E6\u7406\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpRequestHandler.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpRequestHandler\u003A\u003Ahandle\u0028\u0029",
+            "name": "handle",
+            "summary": "MCP\u0020\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u51E6\u7406\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpRequestHandler.html#method_handle"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpRequestHandler\u003A\u003AgetHttpOptions\u0028\u0029",
+            "name": "getHttpOptions",
+            "summary": "HTTP\u0020\u30C8\u30E9\u30F3\u30B9\u30DD\u30FC\u30C8\u306E\u30AA\u30D7\u30B7\u30E7\u30F3\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpRequestHandler.html#method_getHttpOptions"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpRequestHandler\u003A\u003AgetSessionStorePath\u0028\u0029",
+            "name": "getSessionStorePath",
+            "summary": "Legacy\u0020\u30BB\u30C3\u30B7\u30E7\u30F3\u306E\u4FDD\u5B58\u5148\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpRequestHandler.html#method_getSessionStorePath"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer",
+            "name": "McpServer",
+            "summary": "baserCMS\u0020MCP\u0020Server",
+            "url": "classes/BcMcp-Mcp-McpServer.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-Mcp-McpServer.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer\u003A\u003AbuildServer\u0028\u0029",
+            "name": "buildServer",
+            "summary": "\u30B5\u30FC\u30D0\u30FC\u306E\u30D3\u30EB\u30C9",
+            "url": "classes/BcMcp-Mcp-McpServer.html#method_buildServer"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer\u003A\u003AgetServer\u0028\u0029",
+            "name": "getServer",
+            "summary": "MCP\u30B5\u30FC\u30D0\u30FC\u306E\u5B9F\u4F53\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpServer.html#method_getServer"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer\u003A\u003AserverInfo\u0028\u0029",
+            "name": "serverInfo",
+            "summary": "\u30B5\u30FC\u30D0\u30FC\u60C5\u5831\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-McpServer.html#method_serverInfo"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\McpServer\u003A\u003A\u0024server",
+            "name": "server",
+            "summary": "SDK\u0020\u306E\u30B5\u30FC\u30D0\u30FC",
+            "url": "classes/BcMcp-Mcp-McpServer.html#property_server"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\NegotiationLogger",
+            "name": "NegotiationLogger",
+            "summary": "MCP\u0020\u306E\u30CD\u30B4\u30B7\u30A8\u30FC\u30B7\u30E7\u30F3\u5185\u5BB9\u3092\u8A18\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-NegotiationLogger.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\NegotiationLogger\u003A\u003Adescribe\u0028\u0029",
+            "name": "describe",
+            "summary": "\u8A18\u9332\u3059\u308B\u5185\u5BB9\u3092\u7D44\u307F\u7ACB\u3066\u308B",
+            "url": "classes/BcMcp-Mcp-NegotiationLogger.html#method_describe"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\NegotiationLogger\u003A\u003Alog\u0028\u0029",
+            "name": "log",
+            "summary": "\u30CD\u30B4\u30B7\u30A8\u30FC\u30B7\u30E7\u30F3\u5185\u5BB9\u3092\u30ED\u30B0\u306B\u8A18\u9332\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-NegotiationLogger.html#method_log"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\NegotiationLogger\u003A\u003AreadRecent\u0028\u0029",
+            "name": "readRecent",
+            "summary": "\u76F4\u8FD1\u306E\u63A5\u7D9A\u72B6\u6CC1\u3092\u30ED\u30B0\u304B\u3089\u8AAD\u307F\u51FA\u3059",
+            "url": "classes/BcMcp-Mcp-NegotiationLogger.html#method_readRecent"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\PermissionManager",
+            "name": "PermissionManager",
+            "summary": "PermissionManager",
+            "url": "classes/BcMcp-Mcp-PermissionManager.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\PermissionManager\u003A\u003AcheckPermission\u0028\u0029",
+            "name": "checkPermission",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3046",
+            "url": "classes/BcMcp-Mcp-PermissionManager.html#method_checkPermission"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\PermissionManager\u003A\u003AgetPermissionUrl\u0028\u0029",
+            "name": "getPermissionUrl",
+            "summary": "\u6A29\u9650\u30C1\u30A7\u30C3\u30AF\u7528\u306EURL\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Mcp-PermissionManager.html#method_getPermissionUrl"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AccessToken",
+            "name": "Oauth2AccessToken",
+            "summary": "Oauth2AccessToken\u0020Entity",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AccessToken.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AccessToken\u003A\u003A\u0024_accessible",
+            "name": "_accessible",
+            "summary": "accessible\u0020properties",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AccessToken.html#property__accessible"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AuthCode",
+            "name": "Oauth2AuthCode",
+            "summary": "Oauth2AuthCode\u0020Entity",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AuthCode.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AuthCode\u003A\u003AgetScopesArray\u0028\u0029",
+            "name": "getScopesArray",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u3092\u914D\u5217\u3068\u3057\u3066\u53D6\u5F97",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AuthCode.html#method_getScopesArray"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AuthCode\u003A\u003AsetScopesFromArray\u0028\u0029",
+            "name": "setScopesFromArray",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u3092\u6587\u5B57\u5217\u3068\u3057\u3066\u8A2D\u5B9A",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AuthCode.html#method_setScopesFromArray"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2AuthCode\u003A\u003A\u0024_accessible",
+            "name": "_accessible",
+            "summary": "accessible\u0020properties",
+            "url": "classes/BcMcp-Model-Entity-Oauth2AuthCode.html#property__accessible"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client",
+            "name": "Oauth2Client",
+            "summary": "Oauth2Client\u0020Entity",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AtoRegistrationResponse\u0028\u0029",
+            "name": "toRegistrationResponse",
+            "summary": "Dynamic\u0020Client\u0020Registration\u0020response\u0020payload\uFF08RFC\u00207591\uFF09",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_toRegistrationResponse"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getName"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetRedirectUri\u0028\u0029",
+            "name": "getRedirectUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetGrants\u0028\u0029",
+            "name": "getGrants",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getGrants"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetScopes\u0028\u0029",
+            "name": "getScopes",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getScopes"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetRegistrationAccessToken\u0028\u0029",
+            "name": "getRegistrationAccessToken",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getRegistrationAccessToken"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetRegistrationClientUri\u0028\u0029",
+            "name": "getRegistrationClientUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getRegistrationClientUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetClientIdIssuedAt\u0028\u0029",
+            "name": "getClientIdIssuedAt",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getClientIdIssuedAt"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetClientSecretExpiresAt\u0028\u0029",
+            "name": "getClientSecretExpiresAt",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getClientSecretExpiresAt"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetTokenEndpointAuthMethod\u0028\u0029",
+            "name": "getTokenEndpointAuthMethod",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getTokenEndpointAuthMethod"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetContacts\u0028\u0029",
+            "name": "getContacts",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getContacts"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetClientUri\u0028\u0029",
+            "name": "getClientUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getClientUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetLogoUri\u0028\u0029",
+            "name": "getLogoUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getLogoUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetTosUri\u0028\u0029",
+            "name": "getTosUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getTosUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetPolicyUri\u0028\u0029",
+            "name": "getPolicyUri",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getPolicyUri"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetSoftwareId\u0028\u0029",
+            "name": "getSoftwareId",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getSoftwareId"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetSoftwareVersion\u0028\u0029",
+            "name": "getSoftwareVersion",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getSoftwareVersion"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetSecret\u0028\u0029",
+            "name": "getSecret",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getSecret"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#method_getIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003A\u0024_accessible",
+            "name": "_accessible",
+            "summary": "accessible\u0020properties",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#property__accessible"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003A\u0024_hidden",
+            "name": "_hidden",
+            "summary": "hidden\u0020properties",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#property__hidden"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2Client\u003A\u003A\u0024_jsonFields",
+            "name": "_jsonFields",
+            "summary": "json\u0020fields",
+            "url": "classes/BcMcp-Model-Entity-Oauth2Client.html#property__jsonFields"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2RefreshToken",
+            "name": "Oauth2RefreshToken",
+            "summary": "Oauth2RefreshToken\u0020Entity",
+            "url": "classes/BcMcp-Model-Entity-Oauth2RefreshToken.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity\\Oauth2RefreshToken\u003A\u003A\u0024_accessible",
+            "name": "_accessible",
+            "summary": "accessible\u0020properties",
+            "url": "classes/BcMcp-Model-Entity-Oauth2RefreshToken.html#property__accessible"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AccessTokensTable",
+            "name": "Oauth2AccessTokensTable",
+            "summary": "Oauth2AccessTokens\u0020Table",
+            "url": "classes/BcMcp-Model-Table-Oauth2AccessTokensTable.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AccessTokensTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020method",
+            "url": "classes/BcMcp-Model-Table-Oauth2AccessTokensTable.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AccessTokensTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Default\u0020validation\u0020rules.",
+            "url": "classes/BcMcp-Model-Table-Oauth2AccessTokensTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AccessTokensTable\u003A\u003AcleanExpiredTokens\u0028\u0029",
+            "name": "cleanExpiredTokens",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-Model-Table-Oauth2AccessTokensTable.html#method_cleanExpiredTokens"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AuthCodesTable",
+            "name": "Oauth2AuthCodesTable",
+            "summary": "Oauth2AuthCodes\u0020Table",
+            "url": "classes/BcMcp-Model-Table-Oauth2AuthCodesTable.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AuthCodesTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020method",
+            "url": "classes/BcMcp-Model-Table-Oauth2AuthCodesTable.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AuthCodesTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Default\u0020validation\u0020rules.",
+            "url": "classes/BcMcp-Model-Table-Oauth2AuthCodesTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2AuthCodesTable\u003A\u003AcleanExpiredCodes\u0028\u0029",
+            "name": "cleanExpiredCodes",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-Model-Table-Oauth2AuthCodesTable.html#method_cleanExpiredCodes"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2ClientsTable",
+            "name": "Oauth2ClientsTable",
+            "summary": "Oauth2Clients\u0020Model",
+            "url": "classes/BcMcp-Model-Table-Oauth2ClientsTable.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2ClientsTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020method",
+            "url": "classes/BcMcp-Model-Table-Oauth2ClientsTable.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2ClientsTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Default\u0020validation\u0020rules.",
+            "url": "classes/BcMcp-Model-Table-Oauth2ClientsTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2ClientsTable\u003A\u003AbuildRules\u0028\u0029",
+            "name": "buildRules",
+            "summary": "Returns\u0020a\u0020rules\u0020checker\u0020object\u0020that\u0020will\u0020be\u0020used\u0020for\u0020validating\napplication\u0020integrity.",
+            "url": "classes/BcMcp-Model-Table-Oauth2ClientsTable.html#method_buildRules"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2ClientsTable\u003A\u003AfindByClientId\u0028\u0029",
+            "name": "findByClientId",
+            "summary": "Find\u0020client\u0020by\u0020client_id",
+            "url": "classes/BcMcp-Model-Table-Oauth2ClientsTable.html#method_findByClientId"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2RefreshTokensTable",
+            "name": "Oauth2RefreshTokensTable",
+            "summary": "Oauth2RefreshTokens\u0020Table",
+            "url": "classes/BcMcp-Model-Table-Oauth2RefreshTokensTable.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2RefreshTokensTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "Initialize\u0020method",
+            "url": "classes/BcMcp-Model-Table-Oauth2RefreshTokensTable.html#method_initialize"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2RefreshTokensTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "Default\u0020validation\u0020rules.",
+            "url": "classes/BcMcp-Model-Table-Oauth2RefreshTokensTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table\\Oauth2RefreshTokensTable\u003A\u003AcleanExpiredTokens\u0028\u0029",
+            "name": "cleanExpiredTokens",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-Model-Table-Oauth2RefreshTokensTable.html#method_cleanExpiredTokens"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AccessToken",
+            "name": "AccessToken",
+            "summary": "OAuth2\u0020Access\u0020Token\u0020\u0028Protocol\u0020layer\u0029\nRFC\u00209068\u0020\u6E96\u62E0\u306E\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u751F\u6210",
+            "url": "classes/BcMcp-OAuth2-Entity-AccessToken.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AccessToken\u003A\u003AsetClient\u0028\u0029",
+            "name": "setClient",
+            "summary": "Set\u0020Client",
+            "url": "classes/BcMcp-OAuth2-Entity-AccessToken.html#method_setClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AccessToken\u003A\u003AaddScope\u0028\u0029",
+            "name": "addScope",
+            "summary": "Add\u0020Scope",
+            "url": "classes/BcMcp-OAuth2-Entity-AccessToken.html#method_addScope"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AccessToken\u003A\u003AsetUserIdentifier\u0028\u0029",
+            "name": "setUserIdentifier",
+            "summary": "Set\u0020User\u0020Identifier",
+            "url": "classes/BcMcp-OAuth2-Entity-AccessToken.html#method_setUserIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode",
+            "name": "AuthCode",
+            "summary": "OAuth2\u0020Authorization\u0020Code\u0020\u0028Protocol\u0020layer\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AgetRedirectUri\u0028\u0029",
+            "name": "getRedirectUri",
+            "summary": "Get\u0020Redirect\u0020URI",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_getRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AsetRedirectUri\u0028\u0029",
+            "name": "setRedirectUri",
+            "summary": "Set\u0020Redirect\u0020URI",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_setRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AgetCodeChallenge\u0028\u0029",
+            "name": "getCodeChallenge",
+            "summary": "Get\u0020Code\u0020Challenge",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_getCodeChallenge"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AsetCodeChallenge\u0028\u0029",
+            "name": "setCodeChallenge",
+            "summary": "Set\u0020Code\u0020Challenge",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_setCodeChallenge"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AgetCodeChallengeMethod\u0028\u0029",
+            "name": "getCodeChallengeMethod",
+            "summary": "Get\u0020Code\u0020Challenge\u0020Method",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_getCodeChallengeMethod"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003AsetCodeChallengeMethod\u0028\u0029",
+            "name": "setCodeChallengeMethod",
+            "summary": "Set\u0020Code\u0020Challenge\u0020Method",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#method_setCodeChallengeMethod"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003A\u0024redirectUri",
+            "name": "redirectUri",
+            "summary": "Redirect\u0020URI",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#property_redirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003A\u0024codeChallenge",
+            "name": "codeChallenge",
+            "summary": "Code\u0020Challenge",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#property_codeChallenge"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\AuthCode\u003A\u003A\u0024codeChallengeMethod",
+            "name": "codeChallengeMethod",
+            "summary": "Code\u0020Challenge\u0020Method",
+            "url": "classes/BcMcp-OAuth2-Entity-AuthCode.html#property_codeChallengeMethod"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client",
+            "name": "Client",
+            "summary": "OAuth2\u0020Client\u0020\u0028Protocol\u0020layer\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AsetName\u0028\u0029",
+            "name": "setName",
+            "summary": "Set\u0020Name",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_setName"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "Get\u0020Name",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_getName"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AsetRedirectUri\u0028\u0029",
+            "name": "setRedirectUri",
+            "summary": "Set\u0020Redirect\u0020URI",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_setRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AgetRedirectUri\u0028\u0029",
+            "name": "getRedirectUri",
+            "summary": "Get\u0020Redirect\u0020URI",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_getRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AsetIsConfidential\u0028\u0029",
+            "name": "setIsConfidential",
+            "summary": "Set\u0020Confidential\u0020Client",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_setIsConfidential"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003AisConfidential\u0028\u0029",
+            "name": "isConfidential",
+            "summary": "Is\u0020Confidential",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#method_isConfidential"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Client\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "Name",
+            "url": "classes/BcMcp-OAuth2-Entity-Client.html#property_name"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\RefreshToken",
+            "name": "RefreshToken",
+            "summary": "OAuth2\u0020Refresh\u0020Token\u0020\u0028Protocol\u0020layer\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-RefreshToken.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Scope",
+            "name": "Scope",
+            "summary": "OAuth2\u0020Scope\u0020\u0028Protocol\u0020layer\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-Scope.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Scope\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "Constructor",
+            "url": "classes/BcMcp-OAuth2-Entity-Scope.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Scope\u003A\u003AgetDescription\u0028\u0029",
+            "name": "getDescription",
+            "summary": "Get\u0020Description",
+            "url": "classes/BcMcp-OAuth2-Entity-Scope.html#method_getDescription"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Scope\u003A\u003AjsonSerialize\u0028\u0029",
+            "name": "jsonSerialize",
+            "summary": "JSON\u0020Serialize",
+            "url": "classes/BcMcp-OAuth2-Entity-Scope.html#method_jsonSerialize"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Scope\u003A\u003A\u0024description",
+            "name": "description",
+            "summary": "Description",
+            "url": "classes/BcMcp-OAuth2-Entity-Scope.html#property_description"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait",
+            "name": "Rfc9068AccessTokenTrait",
+            "summary": "RFC\u00209068\u0020\u5BFE\u5FDC\u306EAccessTokenTrait",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AsetPrivateKey\u0028\u0029",
+            "name": "setPrivateKey",
+            "summary": "Set\u0020the\u0020private\u0020key\u0020used\u0020to\u0020encrypt\u0020this\u0020access\u0020token.",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_setPrivateKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AinitJwtConfiguration\u0028\u0029",
+            "name": "initJwtConfiguration",
+            "summary": "Initialise\u0020the\u0020JWT\u0020Configuration.",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_initJwtConfiguration"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetIssuer\u0028\u0029",
+            "name": "getIssuer",
+            "summary": "RFC\u00209068\u6E96\u62E0\u306E\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u306E\u305F\u3081\u306Eissuer\u0020URL\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getIssuer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetResource\u0028\u0029",
+            "name": "getResource",
+            "summary": "RFC\u00209068\u6E96\u62E0\u306E\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u306E\u305F\u3081\u306EResource\u0020URL\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getResource"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AconvertToJWT\u0028\u0029",
+            "name": "convertToJWT",
+            "summary": "Generate\u0020a\u0020JWT\u0020from\u0020the\u0020access\u0020token\u0020\u0028RFC\u00209068\u0020compliant\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_convertToJWT"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgenerateKid\u0028\u0029",
+            "name": "generateKid",
+            "summary": "\u516C\u958B\u9375\u304B\u3089kid\u0020\u0028Key\u0020ID\u0029\u0020\u3092\u751F\u6210",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_generateKid"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetScopeString\u0028\u0029",
+            "name": "getScopeString",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u3092\u6587\u5B57\u5217\u5F62\u5F0F\u3067\u53D6\u5F97\uFF08RFC\u00209068\u6E96\u62E0\uFF09",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getScopeString"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003A__toString\u0028\u0029",
+            "name": "__toString",
+            "summary": "Generate\u0020a\u0020string\u0020representation\u0020from\u0020the\u0020access\u0020token",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method___toString"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetClient\u0028\u0029",
+            "name": "getClient",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetExpiryDateTime\u0028\u0029",
+            "name": "getExpiryDateTime",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getExpiryDateTime"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetUserIdentifier\u0028\u0029",
+            "name": "getUserIdentifier",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getUserIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetScopes\u0028\u0029",
+            "name": "getScopes",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getScopes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#method_getIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003A\u0024privateKey",
+            "name": "privateKey",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#property_privateKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait\\Rfc9068AccessTokenTrait\u003A\u003A\u0024jwtConfiguration",
+            "name": "jwtConfiguration",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Entity-Trait-Rfc9068AccessTokenTrait.html#property_jwtConfiguration"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\User",
+            "name": "User",
+            "summary": "OAuth2\u0020User\u0020\u0028Protocol\u0020layer\u0029",
+            "url": "classes/BcMcp-OAuth2-Entity-User.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\User\u003A\u003AgetIdentifier\u0028\u0029",
+            "name": "getIdentifier",
+            "summary": "Get\u0020Identifier",
+            "url": "classes/BcMcp-OAuth2-Entity-User.html#method_getIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\User\u003A\u003AsetIdentifier\u0028\u0029",
+            "name": "setIdentifier",
+            "summary": "Set\u0020Identifier",
+            "url": "classes/BcMcp-OAuth2-Entity-User.html#method_setIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\User\u003A\u003A\u0024identifier",
+            "name": "identifier",
+            "summary": "Identifier",
+            "url": "classes/BcMcp-OAuth2-Entity-User.html#property_identifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Exception\\OAuth2ConfigurationException",
+            "name": "OAuth2ConfigurationException",
+            "summary": "OAuth2\u0020\u306E\u8A2D\u5B9A\u4E0D\u5099\u3092\u8868\u3059\u4F8B\u5916",
+            "url": "classes/BcMcp-OAuth2-Exception-OAuth2ConfigurationException.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Grant\\AuthCodeGrant",
+            "name": "AuthCodeGrant",
+            "summary": "Auth\u0020Code\u0020Grant",
+            "url": "classes/BcMcp-OAuth2-Grant-AuthCodeGrant.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Grant\\AuthCodeGrant\u003A\u003AvalidateAuthorizationRequest\u0028\u0029",
+            "name": "validateAuthorizationRequest",
+            "summary": "\u8A8D\u53EF\u30EA\u30AF\u30A8\u30B9\u30C8\u3092\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Grant-AuthCodeGrant.html#method_validateAuthorizationRequest"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Grant\\AuthCodeGrant\u003A\u003AvalidateRedirectUri\u0028\u0029",
+            "name": "validateRedirectUri",
+            "summary": "Validate\u0020redirectUri\u0020from\u0020the\u0020request.",
+            "url": "classes/BcMcp-OAuth2-Grant-AuthCodeGrant.html#method_validateRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder",
+            "name": "Rfc9068JwtBuilder",
+            "summary": "RFC\u00209068\u0020\u6E96\u62E0\u306E\u0020JWT\u0020\u30D3\u30EB\u30C0\u30FC",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AissuedBy\u0028\u0029",
+            "name": "issuedBy",
+            "summary": "iss\u0020\u0028issuer\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u5FC5\u9808",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_issuedBy"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003ApermittedFor\u0028\u0029",
+            "name": "permittedFor",
+            "summary": "aud\u0020\u0028audience\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u5FC5\u9808\uFF08\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8ID\uFF09",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_permittedFor"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AidentifiedBy\u0028\u0029",
+            "name": "identifiedBy",
+            "summary": "jti\u0020\u0028JWT\u0020ID\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u5FC5\u9808\uFF08\u30E6\u30CB\u30FC\u30AF\u306A\u30C8\u30FC\u30AF\u30F3\u8B58\u5225\u5B50\uFF09",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_identifiedBy"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AissuedAt\u0028\u0029",
+            "name": "issuedAt",
+            "summary": "iat\u0020\u0028issued\u0020at\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u5FC5\u9808",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_issuedAt"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AcanOnlyBeUsedAfter\u0028\u0029",
+            "name": "canOnlyBeUsedAfter",
+            "summary": "nbf\u0020\u0028not\u0020before\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u63A8\u5968",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_canOnlyBeUsedAfter"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AexpiresAt\u0028\u0029",
+            "name": "expiresAt",
+            "summary": "exp\u0020\u0028expires\u0020at\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u5FC5\u9808",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_expiresAt"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003ArelatedTo\u0028\u0029",
+            "name": "relatedTo",
+            "summary": "sub\u0020\u0028subject\u0029\u0020\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u63A8\u5968\uFF08\u30E6\u30FC\u30B6\u30FC\u8B58\u5225\u5B50\uFF09",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_relatedTo"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AwithClaim\u0028\u0029",
+            "name": "withClaim",
+            "summary": "\u30AB\u30B9\u30BF\u30E0\u30AF\u30EC\u30FC\u30E0\u3092\u8A2D\u5B9A\nRFC\u00209068\u3067\u306F\u3001\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u56FA\u6709\u306E\u30AF\u30EC\u30FC\u30E0\u3092\u8FFD\u52A0\u53EF\u80FD",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_withClaim"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AwithHeader\u0028\u0029",
+            "name": "withHeader",
+            "summary": "JWT\u30D8\u30C3\u30C0\u30FC\u306Bkid\u0020\u0028Key\u0020ID\u0029\u0020\u3092\u8A2D\u5B9A",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_withHeader"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003AgetToken\u0028\u0029",
+            "name": "getToken",
+            "summary": "JWT\u30C8\u30FC\u30AF\u30F3\u3092\u751F\u6210\nRFC\u00209068\u306B\u6E96\u62E0\u3057\u305F\u30C8\u30FC\u30AF\u30F3\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#method_getToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003A\u0024builder",
+            "name": "builder",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#property_builder"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt\\Rfc9068JwtBuilder\u003A\u003A\u0024configuration",
+            "name": "configuration",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-Jwt-Rfc9068JwtBuilder.html#property_configuration"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator",
+            "name": "RedirectUriValidator",
+            "summary": "Redirect\u0020URI\u0020Validator",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "New\u0020validator\u0020instance\u0020for\u0020the\u0020given\u0020uri",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003AvalidateRedirectUri\u0028\u0029",
+            "name": "validateRedirectUri",
+            "summary": "Validates\u0020the\u0020redirect\u0020uri.",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method_validateRedirectUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003AisLoopbackUri\u0028\u0029",
+            "name": "isLoopbackUri",
+            "summary": "According\u0020to\u0020section\u00207.3\u0020of\u0020rfc8252,\u0020loopback\u0020uris\u0020are\u003A\n\u0020\u0020\u002D\u0020\u0022http\u003A\/\/127.0.0.1\u003A\u007Bport\u007D\/\u007Bpath\u007D\u0022\u0020for\u0020IPv4\n\u0020\u0020\u002D\u0020\u0022http\u003A\/\/\u005B\u003A\u003A1\u005D\u003A\u007Bport\u007D\/\u007Bpath\u007D\u0022\u0020for\u0020IPv6",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method_isLoopbackUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003AmatchExactUri\u0028\u0029",
+            "name": "matchExactUri",
+            "summary": "Find\u0020an\u0020exact\u0020match\u0020among\u0020allowed\u0020uris",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method_matchExactUri"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003AmatchUriExcludingPort\u0028\u0029",
+            "name": "matchUriExcludingPort",
+            "summary": "Find\u0020a\u0020match\u0020among\u0020allowed\u0020uris,\u0020allowing\u0020for\u0020different\u0020port\u0020numbers",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method_matchUriExcludingPort"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003AparseUrlAndRemovePort\u0028\u0029",
+            "name": "parseUrlAndRemovePort",
+            "summary": "Parse\u0020an\u0020url\u0020like\u0020\\parse_url,\u0020excluding\u0020the\u0020port",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#method_parseUrlAndRemovePort"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators\\RedirectUriValidator\u003A\u003A\u0024allowedRedirectUris",
+            "name": "allowedRedirectUris",
+            "summary": "",
+            "url": "classes/BcMcp-OAuth2-RedirectUriValidators-RedirectUriValidator.html#property_allowedRedirectUris"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository",
+            "name": "OAuth2AccessTokenRepository",
+            "summary": "OAuth2\u0020Access\u0020Token\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003AgetInstance\u0028\u0029",
+            "name": "getInstance",
+            "summary": "\u30B7\u30F3\u30B0\u30EB\u30C8\u30F3\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_getInstance"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003AgetNewToken\u0028\u0029",
+            "name": "getNewToken",
+            "summary": "\u65B0\u3057\u3044\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_getNewToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003ApersistNewAccessToken\u0028\u0029",
+            "name": "persistNewAccessToken",
+            "summary": "\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u6C38\u7D9A\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_persistNewAccessToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003ArevokeAccessToken\u0028\u0029",
+            "name": "revokeAccessToken",
+            "summary": "\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u53D6\u308A\u6D88\u3057",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_revokeAccessToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003AisAccessTokenRevoked\u0028\u0029",
+            "name": "isAccessTokenRevoked",
+            "summary": "\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u304C\u53D6\u308A\u6D88\u3055\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_isAccessTokenRevoked"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003AgetAccessTokenData\u0028\u0029",
+            "name": "getAccessTokenData",
+            "summary": "\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u306E\u30C7\u30FC\u30BF\u3092\u53D6\u5F97\uFF08\u691C\u8A3C\u7528\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_getAccessTokenData"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003AcleanExpiredTokens\u0028\u0029",
+            "name": "cleanExpiredTokens",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#method_cleanExpiredTokens"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003A\u0024instance",
+            "name": "instance",
+            "summary": "\u30B7\u30F3\u30B0\u30EB\u30C8\u30F3\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#property_instance"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AccessTokenRepository\u003A\u003A\u0024accessTokensTable",
+            "name": "accessTokensTable",
+            "summary": "OAuth2AccessTokens\u0020Table",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AccessTokenRepository.html#property_accessTokensTable"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository",
+            "name": "OAuth2AuthCodeRepository",
+            "summary": "OAuth2\u0020Authorization\u0020Code\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003AgetNewAuthCode\u0028\u0029",
+            "name": "getNewAuthCode",
+            "summary": "\u65B0\u3057\u3044\u8A8D\u53EF\u30B3\u30FC\u30C9\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_getNewAuthCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003ApersistNewAuthCode\u0028\u0029",
+            "name": "persistNewAuthCode",
+            "summary": "\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u6C38\u7D9A\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_persistNewAuthCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003ArevokeAuthCode\u0028\u0029",
+            "name": "revokeAuthCode",
+            "summary": "\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u7121\u52B9\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_revokeAuthCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003AisAuthCodeRevoked\u0028\u0029",
+            "name": "isAuthCodeRevoked",
+            "summary": "\u8A8D\u53EF\u30B3\u30FC\u30C9\u304C\u7121\u52B9\u5316\u3055\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_isAuthCodeRevoked"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003AstoreAuthorizationCode\u0028\u0029",
+            "name": "storeAuthorizationCode",
+            "summary": "\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u4FDD\u5B58\uFF08OAuth2Controller\u0020\u304B\u3089\u547C\u3073\u51FA\u3055\u308C\u308B\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_storeAuthorizationCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003AgetAuthorizationCode\u0028\u0029",
+            "name": "getAuthorizationCode",
+            "summary": "\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_getAuthorizationCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003AcleanExpiredCodes\u0028\u0029",
+            "name": "cleanExpiredCodes",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u8A8D\u53EF\u30B3\u30FC\u30C9\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#method_cleanExpiredCodes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2AuthCodeRepository\u003A\u003A\u0024authCodesTable",
+            "name": "authCodesTable",
+            "summary": "OAuth2AuthCodes\u0020Table",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2AuthCodeRepository.html#property_authCodesTable"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository",
+            "name": "OAuth2ClientRepository",
+            "summary": "OAuth2\u0020Client\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AgetClientEntity\u0028\u0029",
+            "name": "getClientEntity",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_getClientEntity"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AvalidateClient\u0028\u0029",
+            "name": "validateClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u8A8D\u8A3C",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_validateClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AregisterClient\u0028\u0029",
+            "name": "registerClient",
+            "summary": "\u65B0\u3057\u3044\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u3092\u767B\u9332\uFF08Dynamic\u0020Client\u0020Registration\u7528\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_registerClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AupdateClient\u0028\u0029",
+            "name": "updateClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u60C5\u5831\u3092\u66F4\u65B0\uFF08Dynamic\u0020Client\u0020Registration\u7528\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_updateClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AdeleteClient\u0028\u0029",
+            "name": "deleteClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u3092\u524A\u9664\uFF08Dynamic\u0020Client\u0020Registration\u7528\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_deleteClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AgetClientInfo\u0028\u0029",
+            "name": "getClientInfo",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u60C5\u5831\u3092\u53D6\u5F97\uFF08Dynamic\u0020Client\u0020Registration\u7528\uFF09",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_getClientInfo"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003AcreateClientEntity\u0028\u0029",
+            "name": "createClientEntity",
+            "summary": "OAuth2Client\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#method_createClientEntity"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ClientRepository\u003A\u003A\u0024clientsTable",
+            "name": "clientsTable",
+            "summary": "Oauth2ClientsTable\u0020\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ClientRepository.html#property_clientsTable"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository",
+            "name": "OAuth2RefreshTokenRepository",
+            "summary": "OAuth2\u0020Refresh\u0020Token\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003AgetNewRefreshToken\u0028\u0029",
+            "name": "getNewRefreshToken",
+            "summary": "\u65B0\u3057\u3044\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u4F5C\u6210",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method_getNewRefreshToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003ApersistNewRefreshToken\u0028\u0029",
+            "name": "persistNewRefreshToken",
+            "summary": "\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u3092\u6C38\u7D9A\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method_persistNewRefreshToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003ArevokeRefreshToken\u0028\u0029",
+            "name": "revokeRefreshToken",
+            "summary": "\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u3092\u7121\u52B9\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method_revokeRefreshToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003AisRefreshTokenRevoked\u0028\u0029",
+            "name": "isRefreshTokenRevoked",
+            "summary": "\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u304C\u7121\u52B9\u5316\u3055\u308C\u3066\u3044\u308B\u304B\u30C1\u30A7\u30C3\u30AF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method_isRefreshTokenRevoked"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003AcleanExpiredTokens\u0028\u0029",
+            "name": "cleanExpiredTokens",
+            "summary": "\u671F\u9650\u5207\u308C\u306E\u30EA\u30D5\u30EC\u30C3\u30B7\u30E5\u30C8\u30FC\u30AF\u30F3\u3092\u30AF\u30EA\u30FC\u30F3\u30A2\u30C3\u30D7",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#method_cleanExpiredTokens"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2RefreshTokenRepository\u003A\u003A\u0024refreshTokensTable",
+            "name": "refreshTokensTable",
+            "summary": "OAuth2RefreshTokens\u0020Table",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2RefreshTokenRepository.html#property_refreshTokensTable"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ScopeRepository",
+            "name": "OAuth2ScopeRepository",
+            "summary": "OAuth2\u0020Scope\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ScopeRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ScopeRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ScopeRepository.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ScopeRepository\u003A\u003AgetScopeEntityByIdentifier\u0028\u0029",
+            "name": "getScopeEntityByIdentifier",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ScopeRepository.html#method_getScopeEntityByIdentifier"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ScopeRepository\u003A\u003AfinalizeScopes\u0028\u0029",
+            "name": "finalizeScopes",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u3092\u6700\u7D42\u5316",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ScopeRepository.html#method_finalizeScopes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2ScopeRepository\u003A\u003A\u0024scopes",
+            "name": "scopes",
+            "summary": "\u5229\u7528\u53EF\u80FD\u306A\u30B9\u30B3\u30FC\u30D7",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2ScopeRepository.html#property_scopes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2UserRepository",
+            "name": "OAuth2UserRepository",
+            "summary": "OAuth2\u0020User\u0020Repository",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2UserRepository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository\\OAuth2UserRepository\u003A\u003AgetUserEntityByUserCredentials\u0028\u0029",
+            "name": "getUserEntityByUserCredentials",
+            "summary": "\u30E6\u30FC\u30B6\u30FC\u8A8D\u8A3C\u60C5\u5831\u3067\u30E6\u30FC\u30B6\u30FC\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Repository-OAuth2UserRepository.html#method_getUserEntityByUserCredentials"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService",
+            "name": "OAuth2ClientRegistrationService",
+            "summary": "OAuth2\u0020\u52D5\u7684\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u767B\u9332\u30B5\u30FC\u30D3\u30B9\nRFC7591\u0020OAuth\u00202.0\u0020Dynamic\u0020Client\u0020Registration\u0020Protocol\u0020\u306E\u5B9F\u88C5",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AregisterClient\u0028\u0029",
+            "name": "registerClient",
+            "summary": "\u52D5\u7684\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u767B\u9332",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_registerClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AgetClient\u0028\u0029",
+            "name": "getClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u60C5\u5831\u306E\u53D6\u5F97",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_getClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AupdateClient\u0028\u0029",
+            "name": "updateClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u60C5\u5831\u306E\u66F4\u65B0",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_updateClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AdeleteClient\u0028\u0029",
+            "name": "deleteClient",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u306E\u524A\u9664",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_deleteClient"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AvalidateRegistrationRequest\u0028\u0029",
+            "name": "validateRegistrationRequest",
+            "summary": "\u767B\u9332\u30EA\u30AF\u30A8\u30B9\u30C8\u306E\u691C\u8A3C",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_validateRegistrationRequest"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AparseScopes\u0028\u0029",
+            "name": "parseScopes",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u6587\u5B57\u5217\u3092\u914D\u5217\u306B\u5909\u63DB",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_parseScopes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AgenerateClientId\u0028\u0029",
+            "name": "generateClientId",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8ID\u3092\u751F\u6210",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_generateClientId"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003AgenerateRegistrationAccessToken\u0028\u0029",
+            "name": "generateRegistrationAccessToken",
+            "summary": "\u767B\u9332\u30A2\u30AF\u30BB\u30B9\u30C8\u30FC\u30AF\u30F3\u3092\u751F\u6210",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#method_generateRegistrationAccessToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024registrationTokenMap",
+            "name": "registrationTokenMap",
+            "summary": "In\u002Dmemory\u0020map\u0020of\u0020registration\u0020access\u0020tokens\u0020for\u0020the\u0020current\u0020PHP\u0020process\n\u005Bclient_id\u0020\u003D\u003E\u0020registration_access_token\u005D",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_registrationTokenMap"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024clientRepository",
+            "name": "clientRepository",
+            "summary": "OAuth2\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u30EA\u30DD\u30B8\u30C8\u30EA",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_clientRepository"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024supportedGrantTypes",
+            "name": "supportedGrantTypes",
+            "summary": "\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u308B\u30B0\u30E9\u30F3\u30C8\u30BF\u30A4\u30D7",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_supportedGrantTypes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024supportedResponseTypes",
+            "name": "supportedResponseTypes",
+            "summary": "\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u308B\u30EC\u30B9\u30DD\u30F3\u30B9\u30BF\u30A4\u30D7",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_supportedResponseTypes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024supportedAuthMethods",
+            "name": "supportedAuthMethods",
+            "summary": "\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u308B\u30C8\u30FC\u30AF\u30F3\u30A8\u30F3\u30C9\u30DD\u30A4\u30F3\u30C8\u8A8D\u8A3C\u65B9\u6CD5",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_supportedAuthMethods"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2ClientRegistrationService\u003A\u003A\u0024supportedScopes",
+            "name": "supportedScopes",
+            "summary": "\u30B5\u30DD\u30FC\u30C8\u3055\u308C\u308B\u30B9\u30B3\u30FC\u30D7",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2ClientRegistrationService.html#property_supportedScopes"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service",
+            "name": "OAuth2Service",
+            "summary": "OAuth2\u0020Service\u0020\u0028moved\u0020under\u0020OAuth2\\Service\u0029",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "\u30B3\u30F3\u30B9\u30C8\u30E9\u30AF\u30BF",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method___construct"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AassertEncryptionKey\u0028\u0029",
+            "name": "assertEncryptionKey",
+            "summary": "\u6697\u53F7\u5316\u30AD\u30FC\u304C\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u4E8B\u3092\u78BA\u8A8D\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_assertEncryptionKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgetAuthorizationServer\u0028\u0029",
+            "name": "getAuthorizationServer",
+            "summary": "Get\u0020Authorization\u0020Server",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_getAuthorizationServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgetResourceServer\u0028\u0029",
+            "name": "getResourceServer",
+            "summary": "Get\u0020Resource\u0020Server",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_getResourceServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AcreateAuthorizationServer\u0028\u0029",
+            "name": "createAuthorizationServer",
+            "summary": "Create\u0020Authorization\u0020Server",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_createAuthorizationServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AcreateResourceServer\u0028\u0029",
+            "name": "createResourceServer",
+            "summary": "Create\u0020Resource\u0020Server",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_createResourceServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgetPrivateKey\u0028\u0029",
+            "name": "getPrivateKey",
+            "summary": "Get\u0020Private\u0020Key",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_getPrivateKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgetPublicKey\u0028\u0029",
+            "name": "getPublicKey",
+            "summary": "Get\u0020Public\u0020Key",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_getPublicKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgetEncryptionKey\u0028\u0029",
+            "name": "getEncryptionKey",
+            "summary": "Get\u0020Encryption\u0020Key",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_getEncryptionKey"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AgenerateKeyPair\u0028\u0029",
+            "name": "generateKeyPair",
+            "summary": "Generate\u0020RSA\u0020Key\u0020Pair",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_generateKeyPair"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003ArestrictPrivateKeyPermissions\u0028\u0029",
+            "name": "restrictPrivateKeyPermissions",
+            "summary": "\u79D8\u5BC6\u9375\u30D5\u30A1\u30A4\u30EB\u306E\u6A29\u9650\u3092\u6240\u6709\u8005\u306E\u307F\u8AAD\u307F\u66F8\u304D\u53EF\uFF080600\uFF09\u306B\u5236\u9650\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_restrictPrivateKeyPermissions"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AvalidateAccessToken\u0028\u0029",
+            "name": "validateAccessToken",
+            "summary": "Validate\u0020Access\u0020Token",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_validateAccessToken"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003AstoreAuthorizationCode\u0028\u0029",
+            "name": "storeAuthorizationCode",
+            "summary": "Store\u0020Authorization\u0020Code",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#method_storeAuthorizationCode"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003A\u0024authorizationServer",
+            "name": "authorizationServer",
+            "summary": "Authorization\u0020Server\u0020\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#property_authorizationServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service\\OAuth2Service\u003A\u003A\u0024resourceServer",
+            "name": "resourceServer",
+            "summary": "Resource\u0020Server\u0020\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9",
+            "url": "classes/BcMcp-OAuth2-Service-OAuth2Service.html#property_resourceServer"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator\\RedirectUriRegistrationValidator",
+            "name": "RedirectUriRegistrationValidator",
+            "summary": "\u767B\u9332\u6642\u306E\u0020redirect_uri\u0020\u3092\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Validator-RedirectUriRegistrationValidator.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator\\RedirectUriRegistrationValidator\u003A\u003Avalidate\u0028\u0029",
+            "name": "validate",
+            "summary": "redirect_uri\u0020\u306E\u914D\u5217\u3092\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Validator-RedirectUriRegistrationValidator.html#method_validate"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator\\RedirectUriRegistrationValidator\u003A\u003AvalidateOne\u0028\u0029",
+            "name": "validateOne",
+            "summary": "\u5358\u4E00\u306E\u0020redirect_uri\u0020\u3092\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BcMcp-OAuth2-Validator-RedirectUriRegistrationValidator.html#method_validateOne"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator\\RedirectUriRegistrationValidator\u003A\u003AMAX_URIS",
+            "name": "MAX_URIS",
+            "summary": "\u767B\u9332\u3067\u304D\u308B\u0020redirect_uri\u0020\u306E\u4E0A\u9650\u4EF6\u6570",
+            "url": "classes/BcMcp-OAuth2-Validator-RedirectUriRegistrationValidator.html#constant_MAX_URIS"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator\\RedirectUriRegistrationValidator\u003A\u003ALOOPBACK_HOSTS",
+            "name": "LOOPBACK_HOSTS",
+            "summary": "http\u0020\u3092\u8A31\u5BB9\u3059\u308B\u30EB\u30FC\u30D7\u30D0\u30C3\u30AF\u30DB\u30B9\u30C8",
+            "url": "classes/BcMcp-OAuth2-Validator-RedirectUriRegistrationValidator.html#constant_LOOPBACK_HOSTS"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter",
+            "name": "RegistrationRateLimiter",
+            "summary": "\u30AF\u30E9\u30A4\u30A2\u30F3\u30C8\u767B\u9332\u306E\u30EC\u30FC\u30C8\u5236\u9650",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003AisExceeded\u0028\u0029",
+            "name": "isExceeded",
+            "summary": "\u4E0A\u9650\u306B\u9054\u3057\u3066\u3044\u308B\u304B\u3092\u5224\u5B9A\u3059\u308B",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#method_isExceeded"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003Ahit\u0028\u0029",
+            "name": "hit",
+            "summary": "\u767B\u9332\u56DE\u6570\u30921\u3064\u9032\u3081\u308B",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#method_hit"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003AreadCount\u0028\u0029",
+            "name": "readCount",
+            "summary": "\u73FE\u5728\u306E\u767B\u9332\u56DE\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#method_readCount"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003AbuildKey\u0028\u0029",
+            "name": "buildKey",
+            "summary": "\u30AD\u30E3\u30C3\u30B7\u30E5\u30AD\u30FC\u3092\u7D44\u307F\u7ACB\u3066\u308B",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#method_buildKey"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003AgetMaxPerHour\u0028\u0029",
+            "name": "getMaxPerHour",
+            "summary": "1\u6642\u9593\u3042\u305F\u308A\u306E\u4E0A\u9650\u4EF6\u6570\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#method_getMaxPerHour"
+        },                {
+            "fqsen": "\\BcMcp\\Service\\RegistrationRateLimiter\u003A\u003ACACHE_CONFIG",
+            "name": "CACHE_CONFIG",
+            "summary": "\u30AD\u30E3\u30C3\u30B7\u30E5\u8A2D\u5B9A\u540D",
+            "url": "classes/BcMcp-Service-RegistrationRateLimiter.html#constant_CACHE_CONFIG"
+        },                {
+            "fqsen": "\\BcMcp\\View\\Helper\\OAuth2Helper",
+            "name": "OAuth2Helper",
+            "summary": "OAuth2\u0020Helper",
+            "url": "classes/BcMcp-View-Helper-OAuth2Helper.html"
+        },                {
+            "fqsen": "\\BcMcp\\View\\Helper\\OAuth2Helper\u003A\u003AgetScopeDescription\u0028\u0029",
+            "name": "getScopeDescription",
+            "summary": "\u30B9\u30B3\u30FC\u30D7\u306E\u8AAC\u660E\u3092\u53D6\u5F97",
+            "url": "classes/BcMcp-View-Helper-OAuth2Helper.html#method_getScopeDescription"
         },                {
             "fqsen": "\\BcSearchIndex\\BcSearchIndexPlugin",
             "name": "BcSearchIndexPlugin",
@@ -18431,6 +21541,186 @@ Search.appendIndex(
             "summary": "\u516C\u958B\u72B6\u614B\u78BA\u8A8D",
             "url": "classes/BcSearchIndex-View-Helper-BcSearchIndexHelper.html#method_allowPublish"
         },                {
+            "fqsen": "\\BcSeo\\BcSeoPlugin",
+            "name": "BcSeoPlugin",
+            "summary": "Class\u0020BcSeoPlugin",
+            "url": "classes/BcSeo-BcSeoPlugin.html"
+        },                {
+            "fqsen": "\\BcSeo\\Controller\\Admin\\SeoConfigsController",
+            "name": "SeoConfigsController",
+            "summary": "SeoConfigsController",
+            "url": "classes/BcSeo-Controller-Admin-SeoConfigsController.html"
+        },                {
+            "fqsen": "\\BcSeo\\Controller\\Admin\\SeoConfigsController\u003A\u003Aupdate_db\u0028\u0029",
+            "name": "update_db",
+            "summary": "DB\u30C6\u30FC\u30D6\u30EB\u306B\u5B58\u5728\u3057\u306A\u3044\u9805\u76EE\u306E\u30AB\u30E9\u30E0\u3092\u8FFD\u52A0",
+            "url": "classes/BcSeo-Controller-Admin-SeoConfigsController.html#method_update_db"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoControllerEventListener",
+            "name": "BcSeoControllerEventListener",
+            "summary": "Class\u0020BcSeoControllerEventListener",
+            "url": "classes/BcSeo-Event-BcSeoControllerEventListener.html"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoControllerEventListener\u003A\u003AbeforeRender\u0028\u0029",
+            "name": "beforeRender",
+            "summary": "beforeRender",
+            "url": "classes/BcSeo-Event-BcSeoControllerEventListener.html#method_beforeRender"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoControllerEventListener\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "",
+            "url": "classes/BcSeo-Event-BcSeoControllerEventListener.html#property_events"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoHelperEventListener",
+            "name": "BcSeoHelperEventListener",
+            "summary": "Class\u0020BcSeoHelperEventListener",
+            "url": "classes/BcSeo-Event-BcSeoHelperEventListener.html"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoHelperEventListener\u003A\u003AformBeforeCreate\u0028\u0029",
+            "name": "formBeforeCreate",
+            "summary": "formBeforeCreate",
+            "url": "classes/BcSeo-Event-BcSeoHelperEventListener.html#method_formBeforeCreate"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoHelperEventListener\u003A\u003AbcFormTableAfter\u0028\u0029",
+            "name": "bcFormTableAfter",
+            "summary": "bcFormTableAfter",
+            "url": "classes/BcSeo-Event-BcSeoHelperEventListener.html#method_bcFormTableAfter"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoHelperEventListener\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "",
+            "url": "classes/BcSeo-Event-BcSeoHelperEventListener.html#property_events"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener",
+            "name": "BcSeoModelEventListener",
+            "summary": "Class\u0020BcSeoModelEventListener",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003AbeforeFind\u0028\u0029",
+            "name": "beforeFind",
+            "summary": "beforeFind",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#method_beforeFind"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003AafterMarshal\u0028\u0029",
+            "name": "afterMarshal",
+            "summary": "afterMarshal",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#method_afterMarshal"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003AbeforeMarshal\u0028\u0029",
+            "name": "beforeMarshal",
+            "summary": "beforeMarshal",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#method_beforeMarshal"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003A\u0024isEdit",
+            "name": "isEdit",
+            "summary": "",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#property_isEdit"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003AsetAssociation\u0028\u0029",
+            "name": "setAssociation",
+            "summary": "\u30C6\u30FC\u30D6\u30EB\u95A2\u9023\u4ED8\u3051",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#method_setAssociation"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003A\u0024events",
+            "name": "events",
+            "summary": "",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#property_events"
+        },                {
+            "fqsen": "\\BcSeo\\Event\\BcSeoModelEventListener\u003A\u003A\u0024associatedTables",
+            "name": "associatedTables",
+            "summary": "",
+            "url": "classes/BcSeo-Event-BcSeoModelEventListener.html#property_associatedTables"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Entity\\SeoMeta",
+            "name": "SeoMeta",
+            "summary": "Class\u0020SeoMeta",
+            "url": "classes/BcSeo-Model-Entity-SeoMeta.html"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Entity\\SeoMeta\u003A\u003A\u0024_accessible",
+            "name": "_accessible",
+            "summary": "",
+            "url": "classes/BcSeo-Model-Entity-SeoMeta.html#property__accessible"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Table\\SeoMetasTable",
+            "name": "SeoMetasTable",
+            "summary": "Class\u0020SeoMetasTable",
+            "url": "classes/BcSeo-Model-Table-SeoMetasTable.html"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Table\\SeoMetasTable\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize",
+            "url": "classes/BcSeo-Model-Table-SeoMetasTable.html#method_initialize"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Table\\SeoMetasTable\u003A\u003AvalidationDefault\u0028\u0029",
+            "name": "validationDefault",
+            "summary": "validationDefault",
+            "url": "classes/BcSeo-Model-Table-SeoMetasTable.html#method_validationDefault"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Table\\SeoMetasTable\u003A\u003AafterSave\u0028\u0029",
+            "name": "afterSave",
+            "summary": "afterSave",
+            "url": "classes/BcSeo-Model-Table-SeoMetasTable.html#method_afterSave"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\BcSeoBaserHelper",
+            "name": "BcSeoBaserHelper",
+            "summary": "Class\u0020BcSeoBaserHelper",
+            "url": "classes/BcSeo-View-Helper-BcSeoBaserHelper.html"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\BcSeoBaserHelper\u003A\u003Amethods\u0028\u0029",
+            "name": "methods",
+            "summary": "\u30E1\u30BD\u30C3\u30C9\u4E00\u89A7\u53D6\u5F97",
+            "url": "classes/BcSeo-View-Helper-BcSeoBaserHelper.html#method_methods"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\BcSeoBaserHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "",
+            "url": "classes/BcSeo-View-Helper-BcSeoBaserHelper.html#property_helpers"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper",
+            "name": "SeoHelper",
+            "summary": "Class\u0020SeoHelper",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003Ainitialize\u0028\u0029",
+            "name": "initialize",
+            "summary": "initialize",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#method_initialize"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003Ameta\u0028\u0029",
+            "name": "meta",
+            "summary": "\u8A2D\u5B9A\u3055\u308C\u3066\u3044\u308B\u30E1\u30BF\u30BF\u30B0\u3092\u51FA\u529B",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#method_meta"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003AgetMeta\u0028\u0029",
+            "name": "getMeta",
+            "summary": "\u30E1\u30BF\u60C5\u5831\u3092\u53D6\u5F97",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#method_getMeta"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003AgetContentValues\u0028\u0029",
+            "name": "getContentValues",
+            "summary": "\u30B3\u30F3\u30C6\u30F3\u30C4\u500B\u5225\u306E\u8A2D\u5B9A\u3092\u53D6\u5F97",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#method_getContentValues"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003AgetMetaValues\u0028\u0029",
+            "name": "getMetaValues",
+            "summary": "\u30E1\u30BF\u60C5\u5831\u3092\u53D6\u5F97",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#method_getMetaValues"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#property_fields"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003A\u0024seoMetasTable",
+            "name": "seoMetasTable",
+            "summary": "",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#property_seoMetasTable"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper\\SeoHelper\u003A\u003A\u0024helpers",
+            "name": "helpers",
+            "summary": "",
+            "url": "classes/BcSeo-View-Helper-SeoHelper.html#property_helpers"
+        },                {
             "fqsen": "\\BcThemeConfig\\BcThemeConfigPlugin",
             "name": "BcThemeConfigPlugin",
             "summary": "Class\u0020Plugin",
@@ -18751,6 +22041,11 @@ Search.appendIndex(
             "summary": "\u5F15\u304D\u6570\u3092\u89E3\u6790\u3059\u308B",
             "url": "classes/BcThemeFile-Controller-Admin-ThemeFilesController.html#method_parseArgs"
         },                {
+            "fqsen": "\\BcThemeFile\\Controller\\Admin\\ThemeFilesController\u003A\u003A\u0024_tempalteTypes",
+            "name": "_tempalteTypes",
+            "summary": "\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30BF\u30A4\u30D7",
+            "url": "classes/BcThemeFile-Controller-Admin-ThemeFilesController.html#property__tempalteTypes"
+        },                {
             "fqsen": "\\BcThemeFile\\Controller\\Api\\Admin\\ThemeFilesController",
             "name": "ThemeFilesController",
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC",
@@ -19021,6 +22316,11 @@ Search.appendIndex(
             "summary": "\u30C6\u30FC\u30DE\u30D5\u30A1\u30A4\u30EB\u30BF\u30A4\u30D7",
             "url": "classes/BcThemeFile-Service-Admin-ThemeFilesAdminService.html#property__tempalteTypes"
         },                {
+            "fqsen": "\\BcThemeFile\\Service\\Admin\\ThemeFilesAdminService\u003A\u003A\u0024ThemeFoldersService",
+            "name": "ThemeFoldersService",
+            "summary": "Theme\u0020Folders\u0020Service",
+            "url": "classes/BcThemeFile-Service-Admin-ThemeFilesAdminService.html#property_ThemeFoldersService"
+        },                {
             "fqsen": "\\BcThemeFile\\Service\\Admin\\ThemeFilesAdminServiceInterface",
             "name": "ThemeFilesAdminServiceInterface",
             "summary": "ThemeFilesAdminServiceInterface",
@@ -19080,6 +22380,16 @@ Search.appendIndex(
             "name": "getFullpath",
             "summary": "fullpath\u3092\u4F5C\u6210",
             "url": "classes/BcThemeFile-Service-BcThemeFileService.html#method_getFullpath"
+        },                {
+            "fqsen": "\\BcThemeFile\\Service\\BcThemeFileService\u003A\u003AnormalizePath\u0028\u0029",
+            "name": "normalizePath",
+            "summary": "\u30D1\u30B9\u3092\u6B63\u898F\u5316\u3059\u308B\uFF08..\/\u0020\u3092\u89E3\u6C7A\u3059\u308B\uFF09",
+            "url": "classes/BcThemeFile-Service-BcThemeFileService.html#method_normalizePath"
+        },                {
+            "fqsen": "\\BcThemeFile\\Service\\BcThemeFileService\u003A\u003AassertWithinThemeDir\u0028\u0029",
+            "name": "assertWithinThemeDir",
+            "summary": "\u6307\u5B9A\u3057\u305F\u30D1\u30B9\u304C\u30C6\u30FC\u30DE\uFF08\u30D7\u30E9\u30B0\u30A4\u30F3\uFF09\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u914D\u4E0B\u306B\u53CE\u307E\u3063\u3066\u3044\u308B\u304B\u691C\u8A3C\u3059\u308B",
+            "url": "classes/BcThemeFile-Service-BcThemeFileService.html#method_assertWithinThemeDir"
         },                {
             "fqsen": "\\BcThemeFile\\Service\\BcThemeFileServiceInterface",
             "name": "BcThemeFileServiceInterface",
@@ -19871,6 +23181,11 @@ Search.appendIndex(
             "summary": "\u521D\u671F\u30C7\u30FC\u30BF\u53D6\u5F97",
             "url": "classes/BcUploader-Service-UploaderFilesService.html#method_getNew"
         },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderFilesService\u003A\u003AgetByName\u0028\u0029",
+            "name": "getByName",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u540D\u304B\u3089\u65E2\u5B58\u306E\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcUploader-Service-UploaderFilesService.html#method_getByName"
+        },                {
             "fqsen": "\\BcUploader\\Service\\UploaderFilesService\u003A\u003AfilesExistsByName\u0028\u0029",
             "name": "filesExistsByName",
             "summary": "\u30D5\u30A1\u30A4\u30EB\u540D\u304B\u3089\u5B9F\u30D5\u30A1\u30A4\u30EB\u304C\u5B58\u5728\u3059\u308B\u304B\u3069\u3046\u304B\u3092\u53D6\u5F97\u3059\u308B",
@@ -19895,6 +23210,11 @@ Search.appendIndex(
             "name": "getControlSource",
             "summary": "\u30B3\u30F3\u30C8\u30ED\u30FC\u30EB\u30BD\u30FC\u30B9\u3092\u53D6\u5F97\u3059\u308B",
             "url": "classes/BcUploader-Service-UploaderFilesServiceInterface.html#method_getControlSource"
+        },                {
+            "fqsen": "\\BcUploader\\Service\\UploaderFilesServiceInterface\u003A\u003AgetByName\u0028\u0029",
+            "name": "getByName",
+            "summary": "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u30D5\u30A1\u30A4\u30EB\u540D\u304B\u3089\u65E2\u5B58\u306E\u30A8\u30F3\u30C6\u30A3\u30C6\u30A3\u3092\u53D6\u5F97\u3059\u308B",
+            "url": "classes/BcUploader-Service-UploaderFilesServiceInterface.html#method_getByName"
         },                {
             "fqsen": "\\BcUploader\\Service\\UploaderFilesServiceInterface\u003A\u003AfilesExistsByName\u0028\u0029",
             "name": "filesExistsByName",
@@ -20651,6 +23971,51 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcblog-view-helper.html"
         },                {
+            "fqsen": "\\BcBurgerEditor",
+            "name": "BcBurgerEditor",
+            "summary": "",
+            "url": "namespaces/bcburgereditor.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-controller-admin.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Controller",
+            "name": "Controller",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-controller.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Event",
+            "name": "Event",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-event.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Lib",
+            "name": "Lib",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-lib.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-service.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Cell",
+            "name": "Cell",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-view-cell.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View",
+            "name": "View",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-view.html"
+        },                {
+            "fqsen": "\\BcBurgerEditor\\View\\Helper",
+            "name": "Helper",
+            "summary": "",
+            "url": "namespaces/bcburgereditor-view-helper.html"
+        },                {
             "fqsen": "\\BcContentLink",
             "name": "BcContentLink",
             "summary": "",
@@ -21031,6 +24396,131 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bcmail-view.html"
         },                {
+            "fqsen": "\\BcMcp",
+            "name": "BcMcp",
+            "summary": "",
+            "url": "namespaces/bcmcp.html"
+        },                {
+            "fqsen": "\\BcMcp\\Command",
+            "name": "Command",
+            "summary": "",
+            "url": "namespaces/bcmcp-command.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcmcp-controller-admin.html"
+        },                {
+            "fqsen": "\\BcMcp\\Controller",
+            "name": "Controller",
+            "summary": "",
+            "url": "namespaces/bcmcp-controller.html"
+        },                {
+            "fqsen": "\\BcMcp\\Lib",
+            "name": "Lib",
+            "summary": "",
+            "url": "namespaces/bcmcp-lib.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp",
+            "name": "Mcp",
+            "summary": "",
+            "url": "namespaces/bcmcp-mcp.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BaserCore",
+            "name": "BaserCore",
+            "summary": "",
+            "url": "namespaces/bcmcp-mcp-basercore.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcBlog",
+            "name": "BcBlog",
+            "summary": "",
+            "url": "namespaces/bcmcp-mcp-bcblog.html"
+        },                {
+            "fqsen": "\\BcMcp\\Mcp\\BcCustomContent",
+            "name": "BcCustomContent",
+            "summary": "",
+            "url": "namespaces/bcmcp-mcp-bccustomcontent.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/bcmcp-model-entity.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model",
+            "name": "Model",
+            "summary": "",
+            "url": "namespaces/bcmcp-model.html"
+        },                {
+            "fqsen": "\\BcMcp\\Model\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "namespaces/bcmcp-model-table.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-entity.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2",
+            "name": "OAuth2",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Entity\\Trait",
+            "name": "Trait",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-entity-trait.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-exception.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Grant",
+            "name": "Grant",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-grant.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Jwt",
+            "name": "Jwt",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-jwt.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\RedirectUriValidators",
+            "name": "RedirectUriValidators",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-redirecturivalidators.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Repository",
+            "name": "Repository",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-repository.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-service.html"
+        },                {
+            "fqsen": "\\BcMcp\\OAuth2\\Validator",
+            "name": "Validator",
+            "summary": "",
+            "url": "namespaces/bcmcp-oauth2-validator.html"
+        },                {
+            "fqsen": "\\BcMcp\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/bcmcp-service.html"
+        },                {
+            "fqsen": "\\BcMcp\\View\\Helper",
+            "name": "Helper",
+            "summary": "",
+            "url": "namespaces/bcmcp-view-helper.html"
+        },                {
+            "fqsen": "\\BcMcp\\View",
+            "name": "View",
+            "summary": "",
+            "url": "namespaces/bcmcp-view.html"
+        },                {
             "fqsen": "\\BcSearchIndex",
             "name": "BcSearchIndex",
             "summary": "",
@@ -21110,6 +24600,51 @@ Search.appendIndex(
             "name": "View",
             "summary": "",
             "url": "namespaces/bcsearchindex-view.html"
+        },                {
+            "fqsen": "\\BcSeo",
+            "name": "BcSeo",
+            "summary": "",
+            "url": "namespaces/bcseo.html"
+        },                {
+            "fqsen": "\\BcSeo\\Controller\\Admin",
+            "name": "Admin",
+            "summary": "",
+            "url": "namespaces/bcseo-controller-admin.html"
+        },                {
+            "fqsen": "\\BcSeo\\Controller",
+            "name": "Controller",
+            "summary": "",
+            "url": "namespaces/bcseo-controller.html"
+        },                {
+            "fqsen": "\\BcSeo\\Event",
+            "name": "Event",
+            "summary": "",
+            "url": "namespaces/bcseo-event.html"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Entity",
+            "name": "Entity",
+            "summary": "",
+            "url": "namespaces/bcseo-model-entity.html"
+        },                {
+            "fqsen": "\\BcSeo\\Model",
+            "name": "Model",
+            "summary": "",
+            "url": "namespaces/bcseo-model.html"
+        },                {
+            "fqsen": "\\BcSeo\\Model\\Table",
+            "name": "Table",
+            "summary": "",
+            "url": "namespaces/bcseo-model-table.html"
+        },                {
+            "fqsen": "\\BcSeo\\View\\Helper",
+            "name": "Helper",
+            "summary": "",
+            "url": "namespaces/bcseo-view-helper.html"
+        },                {
+            "fqsen": "\\BcSeo\\View",
+            "name": "View",
+            "summary": "",
+            "url": "namespaces/bcseo-view.html"
         },                {
             "fqsen": "\\BcThemeConfig",
             "name": "BcThemeConfig",
