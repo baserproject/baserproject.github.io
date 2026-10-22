@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -1227,7 +1235,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Middleware/BcRequestFilterMiddleware.php"><a href="files/plugins-baser-core-src-middleware-bcrequestfiltermiddleware.html"><abbr title="plugins/baser-core/src/Middleware/BcRequestFilterMiddleware.php">BcRequestFilterMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">234</span>
+    <span class="phpdocumentor-element-found-in__line">238</span>
 
     </aside>
 
@@ -1240,7 +1248,11 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>requestview=false は CSRF トークン取得（GET /baser-core/bc_form/get_token）を高速化するためのもので、
+基本処理（認可チェック等）を省略する。任意の URL で省略できると認可チェックの迂回につながるため、
+トークン取得の GET リクエストに限定する。</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">

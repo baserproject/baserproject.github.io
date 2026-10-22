@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -739,6 +747,20 @@ AppTable::getConditionAllowPublish() で利用</dd>
 </dt>
 <dd>保存時にエイリアスが変更されたかどうか</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/BaserCore-Model-Table-SitesTable.html#property_findByUrlCache">$findByUrlCache</a>
+    <span>
+                        &nbsp;: array&lt;string, <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null&gt;            </span>
+</dt>
+<dd>findByUrl のリクエスト内キャッシュ</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/BaserCore-Model-Table-SitesTable.html#property_rootMainCache">$rootMainCache</a>
+    <span>
+                        &nbsp;: <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null|false            </span>
+</dt>
+<dd>getRootMain のリクエスト内キャッシュ</dd>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -795,6 +817,20 @@ AppTable::getConditionAllowPublish() で利用</dd>
                                 &nbsp;: <abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr>    </span>
 </dt>
 <dd>サイトを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SitesTable.html#method_clearFindByUrlCache">clearFindByUrlCache()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>findByUrl / getRootMain のリクエスト内キャッシュを破棄する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-SitesTable.html#method_delete">delete()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>削除時にリクエスト内キャッシュを破棄する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a>
@@ -1020,6 +1056,13 @@ BcModelEventDispatcherは対象外とする</dd>
                                 &nbsp;: <abbr title="\Cake\Validation\Validator">Validator</abbr>    </span>
 </dt>
 <dd>Validation Default</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Model-Table-SitesTable.html#method_findByUrlWithoutCache">findByUrlWithoutCache()</a>
+    <span>
+                                &nbsp;: <a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>    </span>
+</dt>
+<dd>URLよりサイトを取得する（キャッシュを使わない実体）</dd>
 
     </dl>
 
@@ -1304,6 +1347,87 @@ AppTable::getConditionAllowPublish() で利用</p>
         
 
 </article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_findByUrlCache">
+        $findByUrlCache
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#property_findByUrlCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">findByUrl のリクエスト内キャッシュ</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null&gt;</span>
+    <span class="phpdocumentor-signature__name">$findByUrlCache</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"><p>URL 生成などから 1 リクエストで何十回も同じ URL で呼ばれるため、
+結果をインスタンス内に保持する。サイトの保存・削除時に破棄する。</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_rootMainCache">
+        $rootMainCache
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#property_rootMainCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">getRootMain のリクエスト内キャッシュ</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>|null|false</span>
+    <span class="phpdocumentor-signature__name">$rootMainCache</span>
+     = <span class="phpdocumentor-signature__default-value">false</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>false は未取得</p>
+</section>
+
+    
+
+        
+        
+
+</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -1407,7 +1531,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">417</span>
 
     </aside>
 
@@ -1491,7 +1615,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">330</span>
+    <span class="phpdocumentor-element-found-in__line">390</span>
 
     </aside>
 
@@ -1575,7 +1699,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">768</span>
+    <span class="phpdocumentor-element-found-in__line">852</span>
 
     </aside>
 
@@ -1835,7 +1959,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -1899,6 +2023,147 @@ AppTable::getConditionAllowPublish() で利用</p>
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Datasource\ResultSetInterface">ResultSetInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_clearFindByUrlCache">
+        clearFindByUrlCache()
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_clearFindByUrlCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">319</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">findByUrl / getRootMain のリクエスト内キャッシュを破棄する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearFindByUrlCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_clearFindByUrlCache_tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_clearFindByUrlCache_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_delete">
+        delete()
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">335</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">削除時にリクエスト内キャッシュを破棄する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$entity</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$options</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_delete_tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_delete_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
             </section>
 
 </article>
@@ -2004,7 +2269,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">454</span>
+    <span class="phpdocumentor-element-found-in__line">514</span>
 
     </aside>
 
@@ -2146,7 +2411,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2234,7 +2499,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">602</span>
+    <span class="phpdocumentor-element-found-in__line">686</span>
 
     </aside>
 
@@ -2308,7 +2573,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">517</span>
+    <span class="phpdocumentor-element-found-in__line">601</span>
 
     </aside>
 
@@ -2465,7 +2730,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">410</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
     </aside>
 
@@ -2541,7 +2806,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">209</span>
+    <span class="phpdocumentor-element-found-in__line">226</span>
 
     </aside>
 
@@ -2605,7 +2870,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">434</span>
+    <span class="phpdocumentor-element-found-in__line">494</span>
 
     </aside>
 
@@ -2679,7 +2944,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">281</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -2757,7 +3022,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">632</span>
+    <span class="phpdocumentor-element-found-in__line">716</span>
 
     </aside>
 
@@ -2844,7 +3109,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">666</span>
+    <span class="phpdocumentor-element-found-in__line">750</span>
 
     </aside>
 
@@ -3003,7 +3268,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">537</span>
+    <span class="phpdocumentor-element-found-in__line">621</span>
 
     </aside>
 
@@ -3312,7 +3577,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">78</span>
+    <span class="phpdocumentor-element-found-in__line">95</span>
 
     </aside>
 
@@ -3384,7 +3649,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">295</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -3648,7 +3913,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -3784,7 +4049,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">698</span>
+    <span class="phpdocumentor-element-found-in__line">782</span>
 
     </aside>
 
@@ -3848,7 +4113,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">732</span>
+    <span class="phpdocumentor-element-found-in__line">816</span>
 
     </aside>
 
@@ -3912,7 +4177,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">789</span>
+    <span class="phpdocumentor-element-found-in__line">873</span>
 
     </aside>
 
@@ -4226,7 +4491,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -4289,6 +4554,80 @@ BcModelEventDispatcherは対象外とする</p>
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_findByUrlWithoutCache">
+        findByUrlWithoutCache()
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_findByUrlWithoutCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/SitesTable.php"><a href="files/plugins-baser-core-src-model-table-sitestable.html"><abbr title="plugins/baser-core/src/Model/Table/SitesTable.php">SitesTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">538</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">URLよりサイトを取得する（キャッシュを使わない実体）</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">findByUrlWithoutCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_findByUrlWithoutCache_tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-SitesTable.html#method_findByUrlWithoutCache_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>|<abbr title="\Cake\Datasource\EntityInterface">EntityInterface</abbr></span>
+            </section>
+
+</article>
             </section>
 
         
@@ -4318,6 +4657,8 @@ BcModelEventDispatcherは対象外とする</p>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#property_tmpEvents">$tmpEvents</a></li>
                                                     <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#property__View">$_View</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#property_changedAlias">$changedAlias</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#property_findByUrlCache">$findByUrlCache</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#property_rootMainCache">$rootMainCache</a></li>
                                             </ul>
                 </li>
             
@@ -4331,6 +4672,8 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_children">children()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_clearFindByUrlCache">clearFindByUrlCache()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_delete">delete()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_findByUrl">findByUrl()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a></li>
@@ -4363,6 +4706,7 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_sortdown">sortdown()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_sortup">sortup()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_validationDefault">validationDefault()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-SitesTable.html#method_findByUrlWithoutCache">findByUrlWithoutCache()</a></li>
                                     </ul>
             </li>
                     </ul>

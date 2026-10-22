@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -650,7 +658,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -745,7 +753,7 @@
 <dd>テーマフォルダのバッチ処理</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter">beforeFilter()</a>
+    <a class="" href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_beforeFilter">beforeFilter()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
 </dt>
@@ -858,6 +866,13 @@
 <dd>メンテナンス画面へのリダイレクトが必要な場合にリダイレクトする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-BcQueryParameterTrait.html#method_removeOrmStructure">removeOrmStructure()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>リクエスト由来のクエリパラメータから ORM 内部構造キーを除去する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Controller-AppController.html#method_requirePermission">requirePermission()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -898,6 +913,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>画面の情報をセッションから読み込む</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest">removeOrmStructureFromRequest()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>リクエストのクエリパラメータから ORM 内部構造キーを除去する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BaserCore-Controller-Api-BcApiController.html#method_restrictNonPublicAccess">restrictNonPublicAccess()</a>
@@ -1074,7 +1096,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1176,7 +1198,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">322</span>
+    <span class="phpdocumentor-element-found-in__line">327</span>
 
     </aside>
 
@@ -1272,7 +1294,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -1342,7 +1364,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">621</span>
 
     </aside>
 
@@ -1430,7 +1452,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">71</span>
 
     </aside>
 
@@ -1498,13 +1520,13 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 >
     <h4 class="phpdocumentor-element__name" id="method_beforeFilter">
         beforeFilter()
-        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_beforeFilter" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
@@ -1517,7 +1539,11 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>テーマ編集機能が制限されている（BcThemeFile.allowedThemeEdit=false）場合は、
+管理画面と同様に API からの書き込み系アクションも拒否する。
+管理画面だけを制限しても、API 経由でテーマの PHP ファイルを書き込めれば制限の意味がない。</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1532,18 +1558,11 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     
     <h5 class="phpdocumentor-tag-list__heading" id="method_beforeFilter_tags">
         Tags
-        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter_tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_beforeFilter_tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
                     <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">throws</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
-                                                                                    
-                                    </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
                 <span class="phpdocumentor-tag__name">checked</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
@@ -1660,7 +1679,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">229</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
     </aside>
 
@@ -1730,7 +1749,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">294</span>
 
     </aside>
 
@@ -1800,7 +1819,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1958,7 +1977,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -2250,7 +2269,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
     </aside>
 
@@ -2380,7 +2399,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -2444,7 +2463,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -2512,7 +2531,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">553</span>
+    <span class="phpdocumentor-element-found-in__line">590</span>
 
     </aside>
 
@@ -2579,7 +2598,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">405</span>
 
     </aside>
 
@@ -2635,6 +2654,92 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_removeOrmStructure">
+        removeOrmStructure()
+        <a href="classes/BaserCore-Service-BcQueryParameterTrait.html#method_removeOrmStructure" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcQueryParameterTrait.php"><a href="files/plugins-baser-core-src-service-bcqueryparametertrait.html"><abbr title="plugins/baser-core/src/Service/BcQueryParameterTrait.php">BcQueryParameterTrait.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">リクエスト由来のクエリパラメータから ORM 内部構造キーを除去する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">removeOrmStructure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryParams</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">contain</code> / <code class="prettyprint">conditions</code> / <code class="prettyprint">fields</code> などの ORM 内部構造は、本来サーバ側で
+のみ組み立てるものであり、フロントの未信頼入力から受け取ると SQL
+インジェクションの sink になる（GHSA-ch8f-q957-r9xm / GHSA-2ghw-gwvv-mv56）。
+公開フロントのコントローラは、リクエストのクエリパラメータをサービスへ
+渡す前に本メソッドを通し、これらのキーを取り除くこと。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$queryParams</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>リクエスト由来のクエリパラメータ</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_removeOrmStructure_tags">
+        Tags
+        <a href="classes/BaserCore-Service-BcQueryParameterTrait.html#method_removeOrmStructure_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>ORM 内部構造キーを除去したクエリパラメータ</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_requirePermission">
         requirePermission()
         <a href="classes/BaserCore-Controller-AppController.html#method_requirePermission" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2643,7 +2748,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">243</span>
 
     </aside>
 
@@ -2695,7 +2800,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">393</span>
 
     </aside>
 
@@ -2765,7 +2870,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">292</span>
+    <span class="phpdocumentor-element-found-in__line">297</span>
 
     </aside>
 
@@ -2825,7 +2930,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php"><a href="files/plugins-bc-theme-file-src-controller-api-admin-themefolderscontroller.html"><abbr title="plugins/bc-theme-file/src/Controller/Api/Admin/ThemeFoldersController.php">ThemeFoldersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">302</span>
+    <span class="phpdocumentor-element-found-in__line">331</span>
 
     </aside>
 
@@ -2959,7 +3064,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">497</span>
+    <span class="phpdocumentor-element-found-in__line">534</span>
 
     </aside>
 
@@ -3018,6 +3123,78 @@ ServerRequestに設定する。</p>
 
                                     </dd>
                                 <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_removeOrmStructureFromRequest">
+        removeOrmStructureFromRequest()
+        <a href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">362</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">リクエストのクエリパラメータから ORM 内部構造キーを除去する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">removeOrmStructureFromRequest</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>管理画面・Admin API の多くのアクションは、リクエストのクエリパラメータを
+そのまま Service の getIndex() / get() に渡し、Service 側で
+<code class="prettyprint">array_merge([既定の contain], $queryParams)</code> としてリクエスト値を優先させている。
+このため <code class="prettyprint">contain[Assoc][conditions][]</code> / <code class="prettyprint">contain[Assoc][fields][]</code> /
+<code class="prettyprint">finder</code> / <code class="prettyprint">order</code> 等を付与すると、EagerLoader を経由して任意の SQL が
+WHERE / SELECT / ORDER BY 句へ注入される（GHSA-ch8f-q957-r9xm、
+GHSA-2ghw-gwvv-mv56 と同じ経路の管理画面・Admin API 側）。</p>
+<p>各アクションに個別のガードを置くのではなく、全コントローラの共通基底である
+ここで一括して除去する。</p>
+<p>公開 API（プレフィックス Api）は GHSA-636g-rgj6-542v 以降、各コントローラが
+contain の指定を 403 で明示的に拒否する方針のため対象外とする。</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_removeOrmStructureFromRequest_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
                 <span class="phpdocumentor-tag__name">checked</span>
             </dt>
                             <dd class="phpdocumentor-tag-list__definition">
@@ -3118,7 +3295,7 @@ preview パラメータが指定された場合は拒否する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">567</span>
+    <span class="phpdocumentor-element-found-in__line">604</span>
 
     </aside>
 
@@ -3192,7 +3369,7 @@ preview パラメータが指定された場合は拒否する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">478</span>
 
     </aside>
 
@@ -3293,7 +3470,7 @@ preview パラメータが指定された場合は拒否する。</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">412</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
     </aside>
 
@@ -3414,7 +3591,7 @@ preview パラメータが指定された場合は拒否する。</p>
                                             <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_add">add()</a></li>
                                             <li class="-deprecated"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_batch">batch()</a></li>
-                                            <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter">beforeFilter()</a></li>
+                                            <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_beforeFilter">beforeFilter()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender">beforeRender()</a></li>
                                             <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_copy">copy()</a></li>
                                             <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_copy_to_theme">copy_to_theme()</a></li>
@@ -3430,12 +3607,14 @@ preview パラメータが指定された場合は拒否する。</p>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_isAvailableUser">isAvailableUser()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_notFound">notFound()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_redirectIfIsRequireMaintenance">redirectIfIsRequireMaintenance()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-BcQueryParameterTrait.html#method_removeOrmStructure">removeOrmStructure()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_requirePermission">requirePermission()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setTitle">setTitle()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setupFrontView">setupFrontView()</a></li>
                                             <li class=""><a href="classes/BcThemeFile-Controller-Api-Admin-ThemeFoldersController.html#method_view">view()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses">viewClasses()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest">removeOrmStructureFromRequest()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_restrictNonPublicAccess">restrictNonPublicAccess()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveDblog">saveDblog()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveViewConditions">saveViewConditions()</a></li>

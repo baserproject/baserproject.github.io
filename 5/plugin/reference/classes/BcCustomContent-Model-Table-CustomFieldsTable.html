@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -649,7 +657,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 
     </aside>
 
@@ -762,6 +770,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
                                 &nbsp;: bool    </span>
 </dt>
 <dd>並び順を変更する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_checkDeniedFileExt">checkDeniedFileExt()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>許可する拡張子に、常に拒否する拡張子が含まれていないか検証する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity">decodeEntity()</a>
@@ -1186,7 +1201,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
     </aside>
 
@@ -1277,7 +1292,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">190</span>
 
     </aside>
 
@@ -1529,6 +1544,82 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkDeniedFileExt">
+        checkDeniedFileExt()
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_checkDeniedFileExt" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">171</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">許可する拡張子に、常に拒否する拡張子が含まれていないか検証する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkDeniedFileExt</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>meta（JSON 文字列または配列）</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_checkDeniedFileExt_tags">
+        Tags
+        <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_checkDeniedFileExt_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_decodeEntity">
         decodeEntity()
         <a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1537,7 +1628,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">260</span>
 
     </aside>
 
@@ -1683,7 +1774,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">239</span>
+    <span class="phpdocumentor-element-found-in__line">277</span>
 
     </aside>
 
@@ -1757,7 +1848,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 
     </aside>
 
@@ -2125,7 +2216,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -2651,7 +2742,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php"><a href="files/plugins-bc-custom-content-src-model-table-customfieldstable.html"><abbr title="plugins/bc-custom-content/src/Model/Table/CustomFieldsTable.php">CustomFieldsTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -2749,6 +2840,7 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li class=""><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_beforeMarshal">beforeMarshal()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
+                                            <li class=""><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_checkDeniedFileExt">checkDeniedFileExt()</a></li>
                                             <li class=""><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_decodeEntity">decodeEntity()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
                                             <li class=""><a href="classes/BcCustomContent-Model-Table-CustomFieldsTable.html#method_encodeEntity">encodeEntity()</a></li>

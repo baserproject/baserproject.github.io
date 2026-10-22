@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -685,6 +693,20 @@
 </dt>
 <dd>テンプレートタイプの名称を取得する</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_isWithinDir">isWithinDir()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>パスが基準ディレクトリ配下に収まっているかを判定する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_normalizePath">normalizePath()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>パスを正規化する</dd>
+
     </dl>
 
 
@@ -773,6 +795,172 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isWithinDir">
+        isWithinDir()
+        <a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_isWithinDir" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Utility/BcThemeFileUtil.php"><a href="files/plugins-bc-theme-file-src-utility-bcthemefileutil.html"><abbr title="plugins/bc-theme-file/src/Utility/BcThemeFileUtil.php">BcThemeFileUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パスが基準ディレクトリ配下に収まっているかを判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isWithinDir</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$baseDir</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>パストラバーサル対策の共通判定。実在すれば realpath()、未作成なら normalizePath() で
+<code class="prettyprint">..</code> を解決したうえで、基準ディレクトリを前方一致で比較する。
+基準ディレクトリ自身（$path === $baseDir）は配下とみなす。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>検証対象のパス</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$baseDir</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>基準ディレクトリ</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_isWithinDir_tags">
+        Tags
+        <a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_isWithinDir_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_normalizePath">
+        normalizePath()
+        <a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_normalizePath" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-theme-file/src/Utility/BcThemeFileUtil.php"><a href="files/plugins-bc-theme-file-src-utility-bcthemefileutil.html"><abbr title="plugins/bc-theme-file/src/Utility/BcThemeFileUtil.php">BcThemeFileUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">63</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">パスを正規化する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">normalizePath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>実在しないパスでも <code class="prettyprint">..</code> / <code class="prettyprint">.</code> / 重複区切りを解決した絶対パスを返す。
+realpath() が false を返す（未作成のパス）場合の境界チェックに用いる。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_normalizePath_tags">
+        Tags
+        <a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_normalizePath_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -796,6 +984,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_getTemplateTypeName">getTemplateTypeName()</a></li>
+                                            <li class=""><a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_isWithinDir">isWithinDir()</a></li>
+                                            <li class=""><a href="classes/BcThemeFile-Utility-BcThemeFileUtil.html#method_normalizePath">normalizePath()</a></li>
                                     </ul>
             </li>
                     </ul>

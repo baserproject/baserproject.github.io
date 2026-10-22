@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -717,6 +725,13 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>バックアップファイルよりレストアを行う</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_restoreDbFromPath">restoreDbFromPath()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>バックアップZIPのパスを指定してデータベースをリストアする</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityContentsTree">verityContentsTree()</a>
@@ -1224,6 +1239,62 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_restoreDbFromPath">
+        restoreDbFromPath()
+        <a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_restoreDbFromPath" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/UtilitiesServiceInterface.php"><a href="files/plugins-baser-core-src-service-utilitiesserviceinterface.html"><abbr title="plugins/baser-core/src/Service/UtilitiesServiceInterface.php">UtilitiesServiceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">126</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">バックアップZIPのパスを指定してデータベースをリストアする</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">restoreDbFromPath</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$encoding</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">'UTF-8'</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$path</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$encoding</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">'UTF-8'</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_verityContentsTree">
         verityContentsTree()
         <a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityContentsTree" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1388,6 +1459,7 @@
                                                     <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_resetContentsTree">resetContentsTree()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_resetTmpSchemaFolder">resetTmpSchemaFolder()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_restoreDb">restoreDb()</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_restoreDbFromPath">restoreDbFromPath()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityContentsTree">verityContentsTree()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-UtilitiesServiceInterface.html#method_verityTree">verityTree()</a></li>
                                             </ul>

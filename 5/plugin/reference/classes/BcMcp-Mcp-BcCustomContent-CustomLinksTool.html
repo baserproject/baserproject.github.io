@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -790,6 +798,13 @@
 <dd>カスタムリンク関連のツールをサーバーに登録する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_clampLimit">clampLimit()</a>
+    <span>
+                                &nbsp;: int    </span>
+</dt>
+<dd>一覧取得の件数を上限内に収める</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_cleanupTempFile">cleanupTempFile()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -832,6 +847,13 @@
 <dd>try-catchブロックを共通化してエラーハンドリングを実行</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_fetchUrl">fetchUrl()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>URL からファイルを取得する（SSRF 対策付き）</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_getExtensionFromMimeType">getExtensionFromMimeType()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -846,6 +868,13 @@
 <dd>拡張子からMIMEタイプを取得</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAdminLoginUser">isAdminLoginUser()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>操作者がシステム管理者かどうかを判定する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAllowedExtension">isAllowedExtension()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -858,6 +887,13 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>値がファイルアップロード可能な形式かどうかを判定</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isPublicIp">isPublicIp()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>公開アドレスかどうかを判定する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processBase64File">processBase64File()</a>
@@ -888,11 +924,25 @@
 <dd>URLからファイルをダウンロードして処理</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveActorId">resolveActorId()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd>作成者・投稿者として保存するユーザーIDを解決する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveLoginUserId">resolveLoginUserId()</a>
     <span>
                                 &nbsp;: int|null    </span>
 </dt>
 <dd>操作者のユーザーIDを解決する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolvePublicIp">resolvePublicIp()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>ホスト名を解決し、公開アドレスの場合のみ IP アドレスを返す</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BcMcp-Mcp-BaseMcpTool.html#method_saveDblog">saveDblog()</a>
@@ -1299,7 +1349,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php"><a href="files/plugins-bc-mcp-src-mcp-bccustomcontent-customlinkstool.html"><abbr title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php">CustomLinksTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">375</span>
+    <span class="phpdocumentor-element-found-in__line">376</span>
 
     </aside>
 
@@ -1355,7 +1405,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php"><a href="files/plugins-bc-mcp-src-mcp-bccustomcontent-customlinkstool.html"><abbr title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php">CustomLinksTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">297</span>
+    <span class="phpdocumentor-element-found-in__line">298</span>
 
     </aside>
 
@@ -1551,7 +1601,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php"><a href="files/plugins-bc-mcp-src-mcp-bccustomcontent-customlinkstool.html"><abbr title="plugins/bc-mcp/src/Mcp/BcCustomContent/CustomLinksTool.php">CustomLinksTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
     </aside>
 
@@ -1924,6 +1974,75 @@ structuredContent として返しつつ JSON を TextContent にも載せる
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_clampLimit">
+        clampLimit()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_clampLimit" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">161</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">一覧取得の件数を上限内に収める</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">clampLimit</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">20</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$max</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">100</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>limit に上限が無いと全件を取得してメモリを消費させることができるため、上限でクランプする</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$limit</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$default</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">20</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>省略時の件数</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$max</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">100</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>上限</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_cleanupTempFile">
         cleanupTempFile()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_cleanupTempFile" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1932,7 +2051,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">676</span>
+    <span class="phpdocumentor-element-found-in__line">912</span>
 
     </aside>
 
@@ -1979,7 +2098,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -2043,7 +2162,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
     </aside>
 
@@ -2121,7 +2240,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">689</span>
+    <span class="phpdocumentor-element-found-in__line">925</span>
 
     </aside>
 
@@ -2172,7 +2291,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">416</span>
+    <span class="phpdocumentor-element-found-in__line">651</span>
 
     </aside>
 
@@ -2227,7 +2346,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
     </aside>
 
@@ -2274,6 +2393,84 @@ structuredContent として返しつつ JSON を TextContent にも載せる
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_fetchUrl">
+        fetchUrl()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_fetchUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">484</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">URL からファイルを取得する（SSRF 対策付き）</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">fetchUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>MCP クライアントが指定した URL をサーバーが取得するため、宛先を検証しないと
+ループバック・プライベートネットワーク・クラウドのメタデータサービス等の
+内部リソースへ到達させられ、取得内容が公開ディレクトリへ保存されてしまう。</p>
+<ul>
+<li>ホスト名を解決した IP アドレスが公開アドレスであることを確認する</li>
+<li>検証した IP へ直接接続し、Host ヘッダと SNI に元のホスト名を使う
+（検証後に DNS の応答が変わる DNS リバインディングを防ぐ）</li>
+<li>リダイレクトは自動追従せず、リダイレクト先も同じ検証を通す</li>
+<li>取得サイズに上限を設ける</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_fetchUrl_tags">
+        Tags
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_fetchUrl_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>[取得したデータ, レスポンスヘッダの配列]</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getExtensionFromMimeType">
         getExtensionFromMimeType()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_getExtensionFromMimeType" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2282,7 +2479,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">587</span>
+    <span class="phpdocumentor-element-found-in__line">822</span>
 
     </aside>
 
@@ -2337,7 +2534,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">540</span>
+    <span class="phpdocumentor-element-found-in__line">775</span>
 
     </aside>
 
@@ -2384,6 +2581,55 @@ structuredContent として返しつつ JSON を TextContent にも載せる
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isAdminLoginUser">
+        isAdminLoginUser()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAdminLoginUser" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">操作者がシステム管理者かどうかを判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">isAdminLoginUser</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loginUserId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loginUserId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_isAllowedExtension">
         isAllowedExtension()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAllowedExtension" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2392,7 +2638,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">633</span>
+    <span class="phpdocumentor-element-found-in__line">868</span>
 
     </aside>
 
@@ -2447,7 +2693,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">190</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
     </aside>
 
@@ -2497,6 +2743,58 @@ structuredContent として返しつつ JSON を TextContent にも載せる
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_isPublicIp">
+        isPublicIp()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isPublicIp" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">616</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">公開アドレスかどうかを判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">isPublicIp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ip</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>プライベート・ループバック・リンクローカル（クラウドのメタデータサービス 169.254.169.254 を含む）・
+予約済み・マルチキャスト・共有アドレス空間（100.64.0.0/10）を拒否する。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$ip</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_processBase64File">
         processBase64File()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processBase64File" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2505,7 +2803,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">247</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
     </aside>
 
@@ -2574,7 +2872,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 
     </aside>
 
@@ -2638,7 +2936,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">656</span>
+    <span class="phpdocumentor-element-found-in__line">892</span>
 
     </aside>
 
@@ -2693,7 +2991,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">380</span>
 
     </aside>
 
@@ -2754,6 +3052,83 @@ structuredContent として返しつつ JSON を TextContent にも載せる
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_resolveActorId">
+        resolveActorId()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveActorId" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">作成者・投稿者として保存するユーザーIDを解決する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">resolveActorId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$requestedUserId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loginUserId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>操作者以外を作成者に指定できるのはシステム管理者のみ。
+それ以外のユーザーが別のユーザーを指定した場合は例外とする。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$requestedUserId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>引数で指定されたユーザーID</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$loginUserId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>操作者のユーザーID</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_resolveActorId_tags">
+        Tags
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveActorId_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\Exception">Exception</abbr></span>
+                                                                                    
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_resolveLoginUserId">
         resolveLoginUserId()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveLoginUserId" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2762,7 +3137,7 @@ structuredContent として返しつつ JSON を TextContent にも載せる
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">107</span>
 
     </aside>
 
@@ -2776,8 +3151,10 @@ structuredContent として返しつつ JSON を TextContent にも載せる
         </div>
     
         <section class="phpdocumentor-description"><p>MCP のツールは JSON-RPC の引数しか受け取らないため、認証済みの操作者は
-McpContext から取得する。引数で明示された場合はそれを優先する
-（テストなど、コンテキストを持たない経路のため）。</p>
+McpContext から取得する。コンテキストが設定されている場合は常にそれを使い、
+引数の値は無視する（SDK は inputSchema に無いキーも名前一致でコールバック引数へ
+束縛するため、引数を優先するとクライアントが操作者を詐称できてしまう）。
+引数はコンテキストを持たない経路（テスト等）のためにのみ使う。</p>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2809,6 +3186,57 @@ McpContext から取得する。引数で明示された場合はそれを優先
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_resolvePublicIp">
+        resolvePublicIp()
+        <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolvePublicIp" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">579</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ホスト名を解決し、公開アドレスの場合のみ IP アドレスを返す</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">resolvePublicIp</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$host</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>解決結果に 1 つでも非公開アドレスが含まれる場合は null を返す。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$host</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_saveDblog">
         saveDblog()
         <a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_saveDblog" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2817,7 +3245,7 @@ McpContext から取得する。引数で明示された場合はそれを優先
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php"><a href="files/plugins-bc-mcp-src-mcp-basemcptool.html"><abbr title="plugins/bc-mcp/src/Mcp/BaseMcpTool.php">BaseMcpTool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
     </aside>
 
@@ -2897,21 +3325,27 @@ McpContext から取得する。引数で明示された場合はそれを優先
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BcCustomContent-CustomLinksTool.html#method_registerTools">registerTools()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_clampLimit">clampLimit()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_cleanupTempFile">cleanupTempFile()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_createErrorResponse">createErrorResponse()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_createSuccessResponse">createSuccessResponse()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_createUploadedFileFromArray">createUploadedFileFromArray()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_detectMimeTypeFromContent">detectMimeTypeFromContent()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_executeWithErrorHandling">executeWithErrorHandling()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_fetchUrl">fetchUrl()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_getExtensionFromMimeType">getExtensionFromMimeType()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_getMimeTypeFromExtension">getMimeTypeFromExtension()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAdminLoginUser">isAdminLoginUser()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isAllowedExtension">isAllowedExtension()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isFileUploadable">isFileUploadable()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_isPublicIp">isPublicIp()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processBase64File">processBase64File()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processFileUpload">processFileUpload()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processImageUpload">processImageUpload()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_processUrlFile">processUrlFile()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveActorId">resolveActorId()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolveLoginUserId">resolveLoginUserId()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_resolvePublicIp">resolvePublicIp()</a></li>
                                             <li class=""><a href="classes/BcMcp-Mcp-BaseMcpTool.html#method_saveDblog">saveDblog()</a></li>
                                     </ul>
             </li>

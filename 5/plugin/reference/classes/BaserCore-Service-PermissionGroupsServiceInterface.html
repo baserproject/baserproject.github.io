@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -754,6 +762,13 @@
 <dd>アクセスルールグループのリストを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_hasPermissionDefinition">hasPermissionDefinition()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>プラグインが権限定義（config/permission.php）を持っているかどうか</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_rebuildByUserGroup">rebuildByUserGroup()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -856,7 +871,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">153</span>
 
     </aside>
 
@@ -864,7 +879,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userGroupId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">build</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userGroupId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowAllWithoutDefinition</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -885,6 +900,15 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$allowAllWithoutDefinition</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>権限定義（config/permission.php）が無い場合にフルアクセスを作るかどうか</p>
+</section>
+
             </dd>
             </dl>
 
@@ -937,7 +961,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 
     </aside>
 
@@ -997,7 +1021,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">164</span>
+    <span class="phpdocumentor-element-found-in__line">177</span>
 
     </aside>
 
@@ -1088,7 +1112,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">89</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
@@ -1096,7 +1120,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">buildByPlugin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">buildByPlugin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowAllWithoutDefinition</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1110,6 +1134,15 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$allowAllWithoutDefinition</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>権限定義（config/permission.php）が無い場合にフルアクセスを作るかどうか</p>
+</section>
+
             </dd>
             </dl>
 
@@ -1158,7 +1191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -1228,7 +1261,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">131</span>
 
     </aside>
 
@@ -1298,7 +1331,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">121</span>
 
     </aside>
 
@@ -1449,7 +1482,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -1645,6 +1678,80 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_hasPermissionDefinition">
+        hasPermissionDefinition()
+        <a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_hasPermissionDefinition" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">164</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">プラグインが権限定義（config/permission.php）を持っているかどうか</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasPermissionDefinition</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$plugin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$plugin</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_hasPermissionDefinition_tags">
+        Tags
+        <a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_hasPermissionDefinition_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_rebuildByUserGroup">
         rebuildByUserGroup()
         <a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_rebuildByUserGroup" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1653,7 +1760,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php"><a href="files/plugins-baser-core-src-service-permissiongroupsserviceinterface.html"><abbr title="plugins/baser-core/src/Service/PermissionGroupsServiceInterface.php">PermissionGroupsServiceInterface.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -1827,6 +1934,7 @@
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_getControlSource">getControlSource()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_getIndex">getIndex()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_getList">getList()</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_hasPermissionDefinition">hasPermissionDefinition()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_rebuildByUserGroup">rebuildByUserGroup()</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionGroupsServiceInterface.html#method_update">update()</a></li>
                                             </ul>

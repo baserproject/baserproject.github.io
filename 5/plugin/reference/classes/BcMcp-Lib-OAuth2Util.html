@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -692,6 +700,13 @@
 <dd>CakePHPリクエストをPSR-7リクエストに変換</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcMcp-Lib-OAuth2Util.html#method_getBaseUrl">getBaseUrl()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>認可サーバーのベース URL を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcMcp-Lib-OAuth2Util.html#method_getIssuer">getIssuer()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -726,7 +741,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Lib/OAuth2Util.php"><a href="files/plugins-bc-mcp-src-lib-oauth2util.html"><abbr title="plugins/bc-mcp/src/Lib/OAuth2Util.php">OAuth2Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
     </aside>
 
@@ -789,7 +804,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Lib/OAuth2Util.php"><a href="files/plugins-bc-mcp-src-lib-oauth2util.html"><abbr title="plugins/bc-mcp/src/Lib/OAuth2Util.php">OAuth2Util.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
@@ -821,6 +836,66 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBaseUrl">
+        getBaseUrl()
+        <a href="classes/BcMcp-Lib-OAuth2Util.html#method_getBaseUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-mcp/src/Lib/OAuth2Util.php"><a href="files/plugins-bc-mcp-src-lib-oauth2util.html"><abbr title="plugins/bc-mcp/src/Lib/OAuth2Util.php">OAuth2Util.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">36</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">認可サーバーのベース URL を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getBaseUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Host ヘッダから組み立てると、Host を固定していないサーバーで細工した Host により
+メタデータのエンドポイントや issuer を差し替えられ、JWT の iss（SITE_URL 由来）とも
+一致しなくなる。SITE_URL が設定されている場合はそれを使い、無い場合のみ
+リクエストから導出する。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$request</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>リクエスト</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>末尾スラッシュ無しのベース URL</p>
+</section>
+
             </section>
 
 </article>
@@ -902,6 +977,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BcMcp-Lib-OAuth2Util.html#method_addIssuerToUrl">addIssuerToUrl()</a></li>
                                             <li class=""><a href="classes/BcMcp-Lib-OAuth2Util.html#method_createPsr7Request">createPsr7Request()</a></li>
+                                            <li class=""><a href="classes/BcMcp-Lib-OAuth2Util.html#method_getBaseUrl">getBaseUrl()</a></li>
                                             <li class=""><a href="classes/BcMcp-Lib-OAuth2Util.html#method_getIssuer">getIssuer()</a></li>
                                     </ul>
             </li>

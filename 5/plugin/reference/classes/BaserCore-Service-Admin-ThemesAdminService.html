@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -705,6 +713,13 @@
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>テーマを適用する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-ThemesService.html#method_assertThemeName">assertThemeName()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>テーマ名として妥当な文字列か検証する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-ThemesService.html#method_changeHelper">changeHelper()</a>
@@ -1004,6 +1019,87 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_assertThemeName">
+        assertThemeName()
+        <a href="classes/BaserCore-Service-ThemesService.html#method_assertThemeName" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">414</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">テーマ名として妥当な文字列か検証する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">assertThemeName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$theme</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>パストラバーサル対策: <code class="prettyprint">..</code> や <code class="prettyprint">/</code> を含む名前を BcUtil::getPluginPath() に渡すと、
+plugins/ の親ディレクトリ等が対象になり、削除・複製・ダウンロードで任意ディレクトリを
+操作できてしまう。英数字で始まり英数字・アンダースコア・ハイフンのみで構成された名前に限定する。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$theme</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_assertThemeName_tags">
+        Tags
+        <a href="classes/BaserCore-Service-ThemesService.html#method_assertThemeName_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/BaserCore-Error-BcException.html"><abbr title="\BaserCore\Error\BcException">BcException</abbr></a></span>
+                                                                                    
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_changeHelper">
         changeHelper()
         <a href="classes/BaserCore-Service-ThemesService.html#method_changeHelper" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1012,7 +1108,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">373</span>
+    <span class="phpdocumentor-element-found-in__line">377</span>
 
     </aside>
 
@@ -1093,7 +1189,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">616</span>
+    <span class="phpdocumentor-element-found-in__line">647</span>
 
     </aside>
 
@@ -1174,7 +1270,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">403</span>
+    <span class="phpdocumentor-element-found-in__line">428</span>
 
     </aside>
 
@@ -1248,7 +1344,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">506</span>
+    <span class="phpdocumentor-element-found-in__line">537</span>
 
     </aside>
 
@@ -1312,7 +1408,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">486</span>
+    <span class="phpdocumentor-element-found-in__line">514</span>
 
     </aside>
 
@@ -1386,7 +1482,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">453</span>
+    <span class="phpdocumentor-element-found-in__line">479</span>
 
     </aside>
 
@@ -1679,7 +1775,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">471</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 
     </aside>
 
@@ -2042,7 +2138,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">317</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -2123,7 +2219,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">549</span>
+    <span class="phpdocumentor-element-found-in__line">580</span>
 
     </aside>
 
@@ -2197,7 +2293,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/ThemesService.php"><a href="files/plugins-baser-core-src-service-themesservice.html"><abbr title="plugins/baser-core/src/Service/ThemesService.php">ThemesService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">575</span>
+    <span class="phpdocumentor-element-found-in__line">606</span>
 
     </aside>
 
@@ -2295,6 +2391,7 @@
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_add">add()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_apply">apply()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_assertThemeName">assertThemeName()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_changeHelper">changeHelper()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_checkDefaultDataPattern">checkDefaultDataPattern()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-ThemesService.html#method_copy">copy()</a></li>

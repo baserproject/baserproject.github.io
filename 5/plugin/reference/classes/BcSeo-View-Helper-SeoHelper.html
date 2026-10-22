@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -649,7 +657,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
@@ -707,6 +715,13 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcSeo-View-Helper-SeoHelper.html#method_beforeRender">beforeRender()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>beforeRender</dd>
+
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcSeo-View-Helper-SeoHelper.html#method_getMeta">getMeta()</a>
     <span>
@@ -772,7 +787,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
@@ -809,7 +824,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 
     </aside>
 
@@ -846,7 +861,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -880,6 +895,63 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_beforeRender">
+        beforeRender()
+        <a href="classes/BcSeo-View-Helper-SeoHelper.html#method_beforeRender" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">beforeRender</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">beforeRender</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$event</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$viewFile</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>カノニカル URL の設定値をコアへ引き渡す。</p>
+<p>設定があれば BcBaserHelper::setCanonicalUrl() がその値を、
+無ければ従来どおり自身の URL を出力する。
+同メソッドは View の afterRender で実行されるため、beforeRender で渡す。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$event</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Cake\Event\EventInterface">EventInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$viewFile</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getMeta">
         getMeta()
         <a href="classes/BcSeo-View-Helper-SeoHelper.html#method_getMeta" class="headerlink"><i class="fas fa-link"></i></a>
@@ -888,7 +960,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
@@ -937,7 +1009,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">38</span>
 
     </aside>
 
@@ -982,7 +1054,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
     </aside>
 
@@ -1027,7 +1099,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
     </aside>
 
@@ -1066,7 +1138,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/View/Helper/SeoHelper.php"><a href="files/plugins-bc-seo-src-view-helper-seohelper.html"><abbr title="plugins/bc-seo/src/View/Helper/SeoHelper.php">SeoHelper.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">182</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
     </aside>
 
@@ -1146,6 +1218,7 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BcSeo-View-Helper-SeoHelper.html#method_beforeRender">beforeRender()</a></li>
                                             <li class=""><a href="classes/BcSeo-View-Helper-SeoHelper.html#method_getMeta">getMeta()</a></li>
                                             <li class=""><a href="classes/BcSeo-View-Helper-SeoHelper.html#method_initialize">initialize()</a></li>
                                             <li class=""><a href="classes/BcSeo-View-Helper-SeoHelper.html#method_meta">meta()</a></li>

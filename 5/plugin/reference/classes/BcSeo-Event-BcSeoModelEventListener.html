@@ -396,6 +396,10 @@
                 
             </li>
                     <li>
+                <a href="namespaces/bcmcp-event.html" class="">Event</a>
+                
+            </li>
+                    <li>
                 <a href="namespaces/bcmcp-lib.html" class="">Lib</a>
                 
             </li>
@@ -425,6 +429,10 @@
     <a href="namespaces/bcsearchindex.html" class="">BcSearchIndex</a>
 </h4>
     <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/bcsearchindex-command.html" class="">Command</a>
+                
+            </li>
                     <li>
                 <a href="namespaces/bcsearchindex-controller.html" class="">Controller</a>
                 
@@ -785,6 +793,13 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>指定した文字列が現在のアクションとしてみなされるかどうか判定する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_sanitizeSeoMetaData">sanitizeSeoMetaData()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>リクエストの seo_meta の紐付け先をサーバ側の値で固定する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_isEdit">isEdit()</a>
@@ -1620,6 +1635,89 @@
                     <article
         class="phpdocumentor-element
             -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_sanitizeSeoMetaData">
+        sanitizeSeoMetaData()
+        <a href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_sanitizeSeoMetaData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php"><a href="files/plugins-bc-seo-src-event-bcseomodeleventlistener.html"><abbr title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php">BcSeoModelEventListener.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">194</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">リクエストの seo_meta の紐付け先をサーバ側の値で固定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">sanitizeSeoMetaData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Cake\ORM\Table">Table</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type"><abbr title="\ArrayObject">ArrayObject</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>フォームは table_alias / table_id / entity_id / id を hidden で送信するが、これらを
+リクエスト値のまま保存すると、いずれかのコンテンツの編集権限で他のテーブル・他の
+エンティティの SEO メタを改ざんできる（マスアサインメント）。
+紐付け先は編集中のテーブル・エンティティから決定し、id は当該エンティティに既に
+紐付いている SEO メタのものに限定する。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$table</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Cake\ORM\Table">Table</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$data</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_sanitizeSeoMetaData_tags">
+        Tags
+        <a href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_sanitizeSeoMetaData_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
             -private
                                                         "
 >
@@ -1631,7 +1729,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php"><a href="files/plugins-bc-seo-src-event-bcseomodeleventlistener.html"><abbr title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php">BcSeoModelEventListener.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -1670,7 +1768,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php"><a href="files/plugins-bc-seo-src-event-bcseomodeleventlistener.html"><abbr title="plugins/bc-seo/src/Event/BcSeoModelEventListener.php">BcSeoModelEventListener.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">256</span>
 
     </aside>
 
@@ -1743,6 +1841,7 @@
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method_implementedEvents">implementedEvents()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventListener.html#method_isAction">isAction()</a></li>
+                                            <li class=""><a href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_sanitizeSeoMetaData">sanitizeSeoMetaData()</a></li>
                                             <li class=""><a href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_isEdit">isEdit()</a></li>
                                             <li class=""><a href="classes/BcSeo-Event-BcSeoModelEventListener.html#method_setAssociation">setAssociation()</a></li>
                                     </ul>
