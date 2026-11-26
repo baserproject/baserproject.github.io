@@ -653,7 +653,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
     </aside>
 
@@ -721,6 +721,20 @@
 </dt>
 <dd>baserCMS標準のbase64UrlsafeEncodeが連続ドットのファイル名を禁止した特定サーバで
 動作しないため独自定義</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_canUseEmbedBlock">canUseEmbedBlock()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>埋め込みブロックを利用できるか</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_denyEmbedBlocks">denyEmbedBlocks()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|false    </span>
+</dt>
+<dd>埋め込みブロックを含む値を拒否する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_ensureUploadDirProtection">ensureUploadDirProtection()</a>
@@ -820,7 +834,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
     </aside>
 
@@ -866,7 +880,7 @@ php_flag は PHP-FPM 環境で「Invalid command」となり 500 を招くため
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -928,7 +942,7 @@ HTACCESS</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">369</span>
+    <span class="phpdocumentor-element-found-in__line">370</span>
 
     </aside>
 
@@ -978,7 +992,7 @@ HTACCESS</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">350</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
     </aside>
 
@@ -1020,6 +1034,156 @@ HTACCESS</span>
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_canUseEmbedBlock">
+        canUseEmbedBlock()
+        <a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_canUseEmbedBlock" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">431</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">埋め込みブロックを利用できるか</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">canUseEmbedBlock</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>管理者と、管理者以外にスクリプトの保存を許可する設定（BcApp.allowedPhpOtherThanAdmins）の場合に利用できる。
+BcValidation::containsScript がスクリプトの保存を許可する条件と同じ。</p>
+</section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_canUseEmbedBlock_tags">
+        Tags
+        <a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_canUseEmbedBlock_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_denyEmbedBlocks">
+        denyEmbedBlocks()
+        <a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_denyEmbedBlocks" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">391</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">埋め込みブロックを含む値を拒否する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">denyEmbedBlocks</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$html</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>埋め込みブロックの埋め込みタグは base64 で保存され、表示時に元に戻してそのまま出力されるため、
+保存時の入力チェック（BcValidation::containsScript）では中身を検査できない。
+そのため、スクリプトを保存できないユーザーには埋め込みブロック自体を保存させない。
+BcApp.containsScript.extractors に登録して使う（管理者などスクリプトを保存できる場合は呼ばれない）。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$html</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_denyEmbedBlocks_tags">
+        Tags
+        <a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_denyEmbedBlocks_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|false</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>埋め込みブロックがなければ空の配列、あれば false</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_ensureUploadDirProtection">
         ensureUploadDirProtection()
         <a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_ensureUploadDirProtection" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1028,7 +1192,7 @@ HTACCESS</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">240</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -1069,7 +1233,7 @@ files/bgeditor/ 直下はサンプルPDF等を直リンクしているため対�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">103</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 
     </aside>
 
@@ -1108,7 +1272,7 @@ files/bgeditor/ 直下はサンプルPDF等を直リンクしているため対�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">289</span>
+    <span class="phpdocumentor-element-found-in__line">290</span>
 
     </aside>
 
@@ -1157,7 +1321,7 @@ files/bgeditor/ 直下はサンプルPDF等を直リンクしているため対�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -1200,7 +1364,7 @@ files/bgeditor/ 直下はサンプルPDF等を直リンクしているため対�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
     </aside>
 
@@ -1253,7 +1417,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">307</span>
+    <span class="phpdocumentor-element-found-in__line">308</span>
 
     </aside>
 
@@ -1302,7 +1466,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">320</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -1351,7 +1515,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
     </aside>
 
@@ -1390,7 +1554,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">79</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
     </aside>
 
@@ -1439,7 +1603,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">272</span>
+    <span class="phpdocumentor-element-found-in__line">273</span>
 
     </aside>
 
@@ -1488,7 +1652,7 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php"><a href="files/plugins-bc-burger-editor-src-lib-burgereditorutil.html"><abbr title="plugins/bc-burger-editor/src/Lib/BurgerEditorUtil.php">BurgerEditorUtil.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">332</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 
     </aside>
 
@@ -1558,6 +1722,8 @@ getAddonPath() に含まれるため、外部で追加された name も自動�
                 <ul class="phpdocumentor-list -clean">
                                             <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_b64d">b64d()</a></li>
                                             <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_b64e">b64e()</a></li>
+                                            <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_canUseEmbedBlock">canUseEmbedBlock()</a></li>
+                                            <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_denyEmbedBlocks">denyEmbedBlocks()</a></li>
                                             <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_ensureUploadDirProtection">ensureUploadDirProtection()</a></li>
                                             <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getAddonPath">getAddonPath()</a></li>
                                             <li class=""><a href="classes/BcBurgerEditor-Lib-BurgerEditorUtil.html#method_getBlockPath">getBlockPath()</a></li>

@@ -697,6 +697,12 @@ bin/cake install https://localhost webmaster@example.org basercms basercms --hos
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BcInstaller-Command-InstallCommand.html#method_createEnvFile">createEnvFile()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BcInstaller-Command-InstallCommand.html#method_execute">execute()</a>
     <span>
                                 &nbsp;: int|void|null    </span>
@@ -752,6 +758,87 @@ bin/cake install https://localhost webmaster@example.org basercms basercms --hos
             <a href="classes/BcInstaller-Command-InstallCommand.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_createEnvFile">
+        createEnvFile()
+        <a href="classes/BcInstaller-Command-InstallCommand.html#method_createEnvFile" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-installer/src/Command/InstallCommand.php"><a href="files/plugins-bc-installer-src-command-installcommand.html"><abbr title="plugins/bc-installer/src/Command/InstallCommand.php">InstallCommand.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">159</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">createEnvFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configPath</span><span> = </span><span class="phpdocumentor-signature__argument__default-value"><abbr title="\BcInstaller\Command\CONFIG">CONFIG</abbr></span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>.env ファイルが無ければ .env.example から作成する</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$configPath</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value"><abbr title="\BcInstaller\Command\CONFIG">CONFIG</abbr></span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>config ディレクトリのパス</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_createEnvFile_tags">
+        Tags
+        <a href="classes/BcInstaller-Command-InstallCommand.html#method_createEnvFile_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>.env が存在する状態になれば true</p>
+</section>
+
+            </section>
+
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -989,7 +1076,7 @@ bin/cake install https://localhost webmaster@example.org basercms basercms --hos
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-installer/src/Command/InstallCommand.php"><a href="files/plugins-bc-installer-src-command-installcommand.html"><abbr title="plugins/bc-installer/src/Command/InstallCommand.php">InstallCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
     </aside>
 
@@ -1139,7 +1226,7 @@ bin/cake install https://localhost webmaster@example.org basercms basercms --hos
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-installer/src/Command/InstallCommand.php"><a href="files/plugins-bc-installer-src-command-installcommand.html"><abbr title="plugins/bc-installer/src/Command/InstallCommand.php">InstallCommand.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">204</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
     </aside>
 
@@ -1215,6 +1302,7 @@ bin/cake install https://localhost webmaster@example.org basercms basercms --hos
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BcInstaller-Command-InstallCommand.html#method_createEnvFile">createEnvFile()</a></li>
                                             <li class=""><a href="classes/BcInstaller-Command-InstallCommand.html#method_execute">execute()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_getService">getService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>

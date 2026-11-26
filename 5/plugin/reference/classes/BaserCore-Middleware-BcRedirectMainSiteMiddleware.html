@@ -656,7 +656,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php"><a href="files/plugins-baser-core-src-middleware-bcredirectmainsitemiddleware.html"><abbr title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php">BcRedirectMainSiteMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
     </aside>
 
@@ -667,6 +667,8 @@
 存在していれば、メインサイトへリダイレクトをする。</p>
 <p>（例）
 /s/service → /service</p>
+<p>コンテンツが存在しないことは、後続の処理で発生する 404 の例外で判定するため、
+RoutingMiddleware より前に配置する</p>
 </section>
 
 
@@ -702,6 +704,20 @@
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_getRedirectResponse">getRedirectResponse()</a>
+    <span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null    </span>
+</dt>
+<dd>メインサイトへのリダイレクトのレスポンスを取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_isRoutable">isRoutable()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>URL がコンテンツ、またはコントローラーに該当するか判定する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_process">process()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
@@ -728,6 +744,154 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getRedirectResponse">
+        getRedirectResponse()
+        <a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_getRedirectResponse" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php"><a href="files/plugins-baser-core-src-middleware-bcredirectmainsitemiddleware.html"><abbr title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php">BcRedirectMainSiteMiddleware.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">メインサイトへのリダイレクトのレスポンスを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRedirectResponse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$request</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Psr\Http\Message\ServerRequestInterface">ServerRequestInterface</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getRedirectResponse_tags">
+        Tags
+        <a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_getRedirectResponse_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isRoutable">
+        isRoutable()
+        <a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_isRoutable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php"><a href="files/plugins-baser-core-src-middleware-bcredirectmainsitemiddleware.html"><abbr title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php">BcRedirectMainSiteMiddleware.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">URL がコンテンツ、またはコントローラーに該当するか判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isRoutable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$request</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$request</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Cake\Http\ServerRequest">ServerRequest</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_isRoutable_tags">
+        Tags
+        <a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_isRoutable_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_process">
         process()
         <a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_process" class="headerlink"><i class="fas fa-link"></i></a>
@@ -736,7 +900,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php"><a href="files/plugins-baser-core-src-middleware-bcredirectmainsitemiddleware.html"><abbr title="plugins/baser-core/src/Middleware/BcRedirectMainSiteMiddleware.php">BcRedirectMainSiteMiddleware.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
     </aside>
 
@@ -825,6 +989,8 @@
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_getRedirectResponse">getRedirectResponse()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_isRoutable">isRoutable()</a></li>
                                             <li class=""><a href="classes/BaserCore-Middleware-BcRedirectMainSiteMiddleware.html#method_process">process()</a></li>
                                     </ul>
             </li>

@@ -797,6 +797,13 @@
 <dd>アプリケーションに関連するテーブルリストを取得する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-BcDatabaseService.html#method_getCreatedTableNames">getCreatedTableNames()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>マイグレーションファイルで作成するテーブル名を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource">getDataSource()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Database\Connection">Connection</abbr>    </span>
@@ -1302,7 +1309,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1519</span>
+    <span class="phpdocumentor-element-found-in__line">1550</span>
 
     </aside>
 
@@ -1392,7 +1399,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1052</span>
+    <span class="phpdocumentor-element-found-in__line">1083</span>
 
     </aside>
 
@@ -1543,7 +1550,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1373</span>
+    <span class="phpdocumentor-element-found-in__line">1404</span>
 
     </aside>
 
@@ -1624,7 +1631,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1652</span>
+    <span class="phpdocumentor-element-found-in__line">1683</span>
 
     </aside>
 
@@ -1793,7 +1800,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1444</span>
+    <span class="phpdocumentor-element-found-in__line">1475</span>
 
     </aside>
 
@@ -1948,7 +1955,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">987</span>
+    <span class="phpdocumentor-element-found-in__line">989</span>
 
     </aside>
 
@@ -2021,6 +2028,87 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getCreatedTableNames">
+        getCreatedTableNames()
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getCreatedTableNames" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1061</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">マイグレーションファイルで作成するテーブル名を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCreatedTableNames</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>ファイル名が <code class="prettyprint">Create&lt;テーブル名&gt;</code> の形のものに加え、<code class="prettyprint">Initial</code> などファイル名から
+テーブル名が分からないマイグレーションでも作成されるテーブルを拾うため、
+<code class="prettyprint">table('テーブル名')</code> の指定のうち、次の <code class="prettyprint">table()</code> までに <code class="prettyprint">-&gt;create()</code> があるものも対象とする
+（同じファイルで既存のテーブルを変更していても、そのテーブルは対象にしない）</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$file</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>マイグレーションファイルのパス</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getCreatedTableNames_tags">
+        Tags
+        <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getCreatedTableNames_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getDataSource">
         getDataSource()
         <a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2029,7 +2117,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1415</span>
+    <span class="phpdocumentor-element-found-in__line">1446</span>
 
     </aside>
 
@@ -2110,7 +2198,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1346</span>
+    <span class="phpdocumentor-element-found-in__line">1377</span>
 
     </aside>
 
@@ -2186,7 +2274,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">974</span>
+    <span class="phpdocumentor-element-found-in__line">976</span>
 
     </aside>
 
@@ -2627,7 +2715,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">909</span>
+    <span class="phpdocumentor-element-found-in__line">911</span>
 
     </aside>
 
@@ -2949,7 +3037,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1299</span>
+    <span class="phpdocumentor-element-found-in__line">1330</span>
 
     </aside>
 
@@ -3023,7 +3111,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1676</span>
+    <span class="phpdocumentor-element-found-in__line">1707</span>
 
     </aside>
 
@@ -3600,7 +3688,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1574</span>
+    <span class="phpdocumentor-element-found-in__line">1605</span>
 
     </aside>
 
@@ -3897,7 +3985,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1068</span>
+    <span class="phpdocumentor-element-found-in__line">1099</span>
 
     </aside>
 
@@ -4143,7 +4231,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">927</span>
+    <span class="phpdocumentor-element-found-in__line">929</span>
 
     </aside>
 
@@ -4217,7 +4305,7 @@ Bake\Command\FixtureCommand::_values() を移植</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1125</span>
+    <span class="phpdocumentor-element-found-in__line">1156</span>
 
     </aside>
 
@@ -4396,7 +4484,7 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">956</span>
+    <span class="phpdocumentor-element-found-in__line">958</span>
 
     </aside>
 
@@ -4470,7 +4558,7 @@ Bake\Command\FixtureCommand::_generateSchema() を移植</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1172</span>
+    <span class="phpdocumentor-element-found-in__line">1203</span>
 
     </aside>
 
@@ -4615,7 +4703,7 @@ Bake\Command\FixtureCommand::_values() を移植</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/BcDatabaseService.php"><a href="files/plugins-baser-core-src-service-bcdatabaseservice.html"><abbr title="plugins/baser-core/src/Service/BcDatabaseService.php">BcDatabaseService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1198</span>
+    <span class="phpdocumentor-element-found-in__line">1229</span>
 
     </aside>
 
@@ -4691,6 +4779,7 @@ Bake\Command\FixtureCommand::_values() を移植</p>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_deleteTables">deleteTables()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_dropTable">dropTable()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getAppTableList">getAppTableList()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getCreatedTableNames">getCreatedTableNames()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDataSource">getDataSource()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getDatasourceName">getDatasourceName()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-BcDatabaseService.html#method_getEncoding">getEncoding()</a></li>

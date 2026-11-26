@@ -657,7 +657,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Entity/Content.php"><a href="files/plugins-baser-core-src-model-entity-content.html"><abbr title="plugins/baser-core/src/Model/Entity/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">56</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
     </aside>
 
@@ -894,8 +894,29 @@
 </dt>
 <dd>accessible</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/BaserCore-Model-Entity-Content.html#property__guardedOnUpdate">$_guardedOnUpdate</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>既存のコンテンツで、送信値による書き換えを許可しない項目</dd>
+
     </dl>
 
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/BaserCore-Model-Entity-Content.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Entity-Content.html#method_isAccessible">isAccessible()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>項目が一括代入できるかどうか</dd>
+
+    </dl>
 
 
 
@@ -2146,7 +2167,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Entity/Content.php"><a href="files/plugins-baser-core-src-model-entity-content.html"><abbr title="plugins/baser-core/src/Model/Entity/Content.php">Content.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -2167,9 +2188,133 @@
         
 
 </article>
-            </section>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property__guardedOnUpdate">
+        $_guardedOnUpdate
+        <a href="classes/BaserCore-Model-Entity-Content.html#property__guardedOnUpdate" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Entity/Content.php"><a href="files/plugins-baser-core-src-model-entity-content.html"><abbr title="plugins/baser-core/src/Model/Entity/Content.php">Content.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">既存のコンテンツで、送信値による書き換えを許可しない項目</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$_guardedOnUpdate</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;id&#039;, &#039;plugin&#039;, &#039;type&#039;, &#039;entity_id&#039;]</span></code>
+
+        <section class="phpdocumentor-description"><p>ID・種類・紐付け先を編集フォームの送信値で変えられると、別のコンテンツを指したり、
+以後そのコンテンツの編集・削除ができなくなったりするため</p>
+</section>
+
+    
+    
 
         
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/BaserCore-Model-Entity-Content.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isAccessible">
+        isAccessible()
+        <a href="classes/BaserCore-Model-Entity-Content.html#method_isAccessible" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Entity/Content.php"><a href="files/plugins-baser-core-src-model-entity-content.html"><abbr title="plugins/baser-core/src/Model/Entity/Content.php">Content.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">項目が一括代入できるかどうか</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">isAccessible</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$field</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>新規作成時は従来どおり、既存のコンテンツでは $_guardedOnUpdate の項目を不可とする</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$field</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_isAccessible_tags">
+        Tags
+        <a href="classes/BaserCore-Model-Entity-Content.html#method_isAccessible_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+            </section>
+
         
     </article>
                                 </section>
@@ -2183,7 +2328,8 @@
             <li>
                 <ul class="phpdocumentor-list -clean">
                                                             <li><a href="classes/BaserCore-Model-Entity-Content.html#toc-properties">Properties</a></li>
-                                                        </ul>
+                                                            <li><a href="classes/BaserCore-Model-Entity-Content.html#toc-methods">Methods</a></li>
+                                    </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
@@ -2223,9 +2369,16 @@
                                                     <li class=""><a href="classes/BaserCore-Model-Entity-Content.html#property_type">$type</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Entity-Content.html#property_url">$url</a></li>
                                                     <li class=""><a href="classes/BaserCore-Model-Entity-Content.html#property__accessible">$_accessible</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Model-Entity-Content.html#property__guardedOnUpdate">$_guardedOnUpdate</a></li>
                                             </ul>
                 </li>
             
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/BaserCore-Model-Entity-Content.html#method_isAccessible">isAccessible()</a></li>
+                                    </ul>
+            </li>
                     </ul>
     </section>
 

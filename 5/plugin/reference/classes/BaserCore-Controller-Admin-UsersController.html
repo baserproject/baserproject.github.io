@@ -657,7 +657,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
     </aside>
 
@@ -736,13 +736,6 @@
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|null|void    </span>
 </dt>
 <dd>ログインユーザー新規追加</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="-deprecated" href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Ajax用のエラーを出力する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Controller-Admin-UsersController.html#method_back_agent">back_agent()</a>
@@ -904,6 +897,13 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
                                 &nbsp;: bool    </span>
 </dt>
 <dd>リファラチェックを行う</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="-deprecated" href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Ajax用のエラーを出力する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a>
@@ -1313,7 +1313,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">312</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
     </aside>
 
@@ -1379,94 +1379,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
         class="phpdocumentor-element
             -method
             -public
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxError">
-        ajaxError()
-        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">621</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Ajax用のエラーを出力する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">ajaxError</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">500</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-                <div class="phpdocumentor-admonition">
-        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-            <article>
-                <p>since 5.0.5 このメソッドは非推奨です。</p>
-
-            </article>
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$errorNo</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">500</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>エラーのステータスコード</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$message</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>エラーメッセージ</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_ajaxError_tags">
-        Tags
-        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">checked</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">noTodo</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">unitTest</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_back_agent">
@@ -1477,7 +1389,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 
     </aside>
 
@@ -1689,7 +1601,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">439</span>
 
     </aside>
 
@@ -1867,7 +1779,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1965,7 +1877,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">392</span>
+    <span class="phpdocumentor-element-found-in__line">391</span>
 
     </aside>
 
@@ -2157,7 +2069,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">277</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 
     </aside>
 
@@ -2229,7 +2141,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -2291,7 +2203,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -2361,7 +2273,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -2369,7 +2281,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">login_agent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/BaserCore-Service-UsersServiceInterface.html"><abbr title="\BaserCore\Service\UsersServiceInterface">UsersServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void</span></code>
+                    <span class="phpdocumentor-signature__name">login_agent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/BaserCore-Service-UsersServiceInterface.html"><abbr title="\BaserCore\Service\UsersServiceInterface">UsersServiceInterface</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Cake\Http\Response">Response</abbr>|void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -2388,7 +2300,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-argument-list__argument__name">$id</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -2453,7 +2365,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
     </aside>
 
@@ -2505,7 +2417,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Admin/UsersController.php"><a href="files/plugins-baser-core-src-controller-admin-userscontroller.html"><abbr title="plugins/baser-core/src/Controller/Admin/UsersController.php">UsersController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">252</span>
+    <span class="phpdocumentor-element-found-in__line">251</span>
 
     </aside>
 
@@ -3088,6 +3000,94 @@ setting.php にて、cmsUrlとして、cmsUrlを定義した場合にはそち�
         <span class="phpdocumentor-signature__response_type">bool</span>
             </section>
 
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_ajaxError">
+        ajaxError()
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">621</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ajax用のエラーを出力する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">ajaxError</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">500</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>since 5.0.5 このメソッドは非推奨です。</p>
+
+            </article>
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorNo</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">500</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>エラーのステータスコード</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>エラーメッセージ</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_ajaxError_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -3833,7 +3833,6 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method__blackHoleCallback">_blackHoleCallback()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-UsersController.html#method_add">add()</a></li>
-                                            <li class="-deprecated"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-UsersController.html#method_back_agent">back_agent()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_beforeFilter">beforeFilter()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method_beforeRender">beforeRender()</a></li>
@@ -3857,6 +3856,7 @@ BcSiteConfig::get('admin_theme') &gt; Configure::read('BcApp.adminTheme')</p>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setTitle">setTitle()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setupFrontView">setupFrontView()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Admin-BcAdminAppController.html#method__checkReferer">_checkReferer()</a></li>
+                                            <li class="-deprecated"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest">removeOrmStructureFromRequest()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_restrictNonPublicAccess">restrictNonPublicAccess()</a></li>

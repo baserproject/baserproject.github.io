@@ -712,6 +712,13 @@
 <dd>Permissions Table</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#property_cacheStore">$cacheStore</a>
+    <span>
+                        &nbsp;: <abbr title="\WeakMap">WeakMap</abbr>&lt;object, <abbr title="\ArrayObject">ArrayObject</abbr>&gt;|null            </span>
+</dt>
+<dd>判定の控え（PermissionsTable のインスタンスごと）</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
     <a class="" href="classes/BaserCore-Service-PermissionsService.html#property_defaultAllows">$defaultAllows</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -765,6 +772,13 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>URLとメソッドに対してのアクセス権限チェックを行う</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_clearCache">clearCache()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>判定の控えを捨てる</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_convertRegexUrl">convertRegexUrl()</a>
@@ -901,6 +915,13 @@
 <dd>レコード作成に必要なデータを代入する</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_buildRegexUrl">buildRegexUrl()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>URLを正規表現用の文字列に組み立てる</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_checkDefaultAllow">checkDefaultAllow()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -920,6 +941,27 @@
                                 &nbsp;: bool    </span>
 </dt>
 <dd>パーミッションリストを検証する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_checkPermissionGroups">checkPermissionGroups()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>ユーザーグループごとのアクセスルールで判定する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_getCache">getCache()</a>
+    <span>
+                                &nbsp;: <abbr title="\ArrayObject">ArrayObject</abbr>    </span>
+</dt>
+<dd>判定の控えを取り出す</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_isFrontUrlWithoutAuth">isFrontUrlWithoutAuth()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>公開側の認証が無効で、管理画面・管理 API の URL ではないか</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a class="" href="classes/BaserCore-Service-PermissionsService.html#method_setDefaultAllow">setDefaultAllow()</a>
@@ -1009,6 +1051,53 @@
     </code>
 
     
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+            -static                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cacheStore">
+        $cacheStore
+        <a href="classes/BaserCore-Service-PermissionsService.html#property_cacheStore" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">判定の控え（PermissionsTable のインスタンスごと）</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type"><abbr title="\WeakMap">WeakMap</abbr>&lt;object, <abbr title="\ArrayObject">ArrayObject</abbr>&gt;|null</span>
+    <span class="phpdocumentor-signature__name">$cacheStore</span>
+     = <span class="phpdocumentor-signature__default-value">null</span></code>
+
+        <section class="phpdocumentor-description"><p>PermissionsTable は対象のアクセスルールをインスタンスの中に控えている（getTargetPermissions()）。
+判定の控えも同じインスタンスに結びつけ、テーブルを作り直したら（リクエストやテストが変われば）一緒に捨てる。
+サービスはコンテナから取り出すたびに作られるので、控えはサービスの外に持つ。</p>
+<ul>
+<li>regexUrl: ルールの URL → 組み立てた正規表現</li>
+<li>checkResult: 判定の結果（URL・ユーザーグループ・メソッド・ログインユーザーごと）</li>
+<li>userGroup: 判定の中で読み込んだユーザーグループ（ID ごと）</li>
+</ul>
+</section>
+
     
     
 
@@ -1112,7 +1201,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">85</span>
 
     </aside>
 
@@ -1172,7 +1261,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">589</span>
+    <span class="phpdocumentor-element-found-in__line">730</span>
 
     </aside>
 
@@ -1249,7 +1338,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">663</span>
+    <span class="phpdocumentor-element-found-in__line">807</span>
 
     </aside>
 
@@ -1330,7 +1419,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">611</span>
+    <span class="phpdocumentor-element-found-in__line">753</span>
 
     </aside>
 
@@ -1418,7 +1507,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 
     </aside>
 
@@ -1502,6 +1591,43 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_clearCache">
+        clearCache()
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_clearCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">480</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">判定の控えを捨てる</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">clearCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>アクセスルールを書き換えたときに呼ぶ。書き換える前の判定の結果を、控えから返さないため。</p>
+</section>
+
+    
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_convertRegexUrl">
         convertRegexUrl()
         <a href="classes/BaserCore-Service-PermissionsService.html#method_convertRegexUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1510,7 +1636,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">548</span>
+    <span class="phpdocumentor-element-found-in__line">660</span>
 
     </aside>
 
@@ -1584,7 +1710,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">259</span>
 
     </aside>
 
@@ -1658,7 +1784,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -1739,7 +1865,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">265</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
     </aside>
 
@@ -1813,7 +1939,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -1887,7 +2013,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">296</span>
+    <span class="phpdocumentor-element-found-in__line">321</span>
 
     </aside>
 
@@ -1951,7 +2077,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">702</span>
+    <span class="phpdocumentor-element-found-in__line">848</span>
 
     </aside>
 
@@ -2032,7 +2158,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
     </aside>
 
@@ -2106,7 +2232,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -2171,7 +2297,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">279</span>
+    <span class="phpdocumentor-element-found-in__line">304</span>
 
     </aside>
 
@@ -2235,7 +2361,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">687</span>
+    <span class="phpdocumentor-element-found-in__line">833</span>
 
     </aside>
 
@@ -2309,7 +2435,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">88</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
     </aside>
 
@@ -2538,7 +2664,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">519</span>
+    <span class="phpdocumentor-element-found-in__line">631</span>
 
     </aside>
 
@@ -2638,7 +2764,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
     </aside>
 
@@ -2712,7 +2838,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">241</span>
 
     </aside>
 
@@ -2786,7 +2912,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
     </aside>
 
@@ -2874,7 +3000,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">338</span>
 
     </aside>
 
@@ -2944,6 +3070,55 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_buildRegexUrl">
+        buildRegexUrl()
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_buildRegexUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">689</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">URLを正規表現用の文字列に組み立てる</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">buildRegexUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_checkDefaultAllow">
         checkDefaultAllow()
         <a href="classes/BaserCore-Service-PermissionsService.html#method_checkDefaultAllow" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2952,7 +3127,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">401</span>
+    <span class="phpdocumentor-element-found-in__line">513</span>
 
     </aside>
 
@@ -3026,7 +3201,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">420</span>
+    <span class="phpdocumentor-element-found-in__line">532</span>
 
     </aside>
 
@@ -3100,7 +3275,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">442</span>
+    <span class="phpdocumentor-element-found-in__line">554</span>
 
     </aside>
 
@@ -3187,6 +3362,175 @@
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_checkPermissionGroups">
+        checkPermissionGroups()
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_checkPermissionGroups" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">400</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ユーザーグループごとのアクセスルールで判定する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">checkPermissionGroups</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userGroupId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$userGroupId</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$method</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCache">
+        getCache()
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_getCache" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">464</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">判定の控えを取り出す</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getCache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\ArrayObject">ArrayObject</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getCache_tags">
+        Tags
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_getCache_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">@return</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>\ArrayObject{regexUrl: array, checkResult: array, userGroup: array}</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\ArrayObject">ArrayObject</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isFrontUrlWithoutAuth">
+        isFrontUrlWithoutAuth()
+        <a href="classes/BaserCore-Service-PermissionsService.html#method_isFrontUrlWithoutAuth" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">438</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">公開側の認証が無効で、管理画面・管理 API の URL ではないか</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">isFrontUrlWithoutAuth</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>このとき checkGroup() は、プレフィックスが Front になり必ず許可を返す。
+ほかのドメインの URL は解析しないで許可になるので、ここでは false を返して従来どおりに扱う。</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$url</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setDefaultAllow">
         setDefaultAllow()
         <a href="classes/BaserCore-Service-PermissionsService.html#method_setDefaultAllow" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3195,7 +3539,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/PermissionsService.php"><a href="files/plugins-baser-core-src-service-permissionsservice.html"><abbr title="plugins/baser-core/src/Service/PermissionsService.php">PermissionsService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">383</span>
+    <span class="phpdocumentor-element-found-in__line">495</span>
 
     </aside>
 
@@ -3265,6 +3609,7 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#property_adminUrlPrefix">$adminUrlPrefix</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#property_Permissions">$Permissions</a></li>
+                                                    <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#property_cacheStore">$cacheStore</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#property_defaultAllows">$defaultAllows</a></li>
                                                     <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#property_defaultDenies">$defaultDenies</a></li>
                                             </ul>
@@ -3278,6 +3623,7 @@
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_batch">batch()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_changeSort">changeSort()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_check">check()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_clearCache">clearCache()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_convertRegexUrl">convertRegexUrl()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_copy">copy()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_create">create()</a></li>
@@ -3297,9 +3643,13 @@
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_unpublish">unpublish()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_update">update()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_autoFillRecord">autoFillRecord()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_buildRegexUrl">buildRegexUrl()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_checkDefaultAllow">checkDefaultAllow()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_checkDefaultDeny">checkDefaultDeny()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_checkGroup">checkGroup()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_checkPermissionGroups">checkPermissionGroups()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_getCache">getCache()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_isFrontUrlWithoutAuth">isFrontUrlWithoutAuth()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PermissionsService.html#method_setDefaultAllow">setDefaultAllow()</a></li>
                                     </ul>
             </li>

@@ -767,6 +767,13 @@ AppTable::getConditionAllowPublish() で利用</dd>
 <dd>イベントを発火</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/BaserCore-Model-Table-AppTable.html#method_filterExistingIds">filterExistingIds()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>ID の一覧から、数字で、かつ存在するものだけを返す</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Model-Table-AppTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
@@ -1277,7 +1284,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">306</span>
+    <span class="phpdocumentor-element-found-in__line">341</span>
 
     </aside>
 
@@ -1450,6 +1457,83 @@ AppTable::getConditionAllowPublish() で利用</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_filterExistingIds">
+        filterExistingIds()
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_filterExistingIds" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">ID の一覧から、数字で、かつ存在するものだけを返す</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">filterExistingIds</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ids</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>一括処理で、すでに削除済みの ID や数字以外の値が含まれていても
+例外にせず飛ばすために利用する</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$ids</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_filterExistingIds_tags">
+        Tags
+        <a href="classes/BaserCore-Model-Table-AppTable.html#method_filterExistingIds_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getConditionAllowPublish">
         getConditionAllowPublish()
         <a href="classes/BaserCore-Model-Table-AppTable.html#method_getConditionAllowPublish" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1458,7 +1542,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">396</span>
+    <span class="phpdocumentor-element-found-in__line">431</span>
 
     </aside>
 
@@ -1753,7 +1837,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">365</span>
+    <span class="phpdocumentor-element-found-in__line">400</span>
 
     </aside>
 
@@ -2039,7 +2123,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">412</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 
     </aside>
 
@@ -2103,7 +2187,7 @@ AppTable::getConditionAllowPublish() で利用</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">462</span>
 
     </aside>
 
@@ -2388,7 +2472,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">288</span>
+    <span class="phpdocumentor-element-found-in__line">323</span>
 
     </aside>
 
@@ -2469,7 +2553,7 @@ BcModelEventDispatcherは対象外とする</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Model/Table/AppTable.php"><a href="files/plugins-baser-core-src-model-table-apptable.html"><abbr title="plugins/baser-core/src/Model/Table/AppTable.php">AppTable.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">308</span>
 
     </aside>
 
@@ -2721,6 +2805,7 @@ BcModelEventDispatcherは対象外とする</p>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_belongsToMany">belongsToMany()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_changeSort">changeSort()</a></li>
                                             <li class=""><a href="classes/BaserCore-Event-BcEventDispatcherTrait.html#method_dispatchLayerEvent">dispatchLayerEvent()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_filterExistingIds">filterExistingIds()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_getConditionAllowPublish">getConditionAllowPublish()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-SiteConfigsTable.html#method_getControlSource">getControlSource()</a></li>
                                             <li class=""><a href="classes/BaserCore-Model-Table-AppTable.html#method_getMax">getMax()</a></li>

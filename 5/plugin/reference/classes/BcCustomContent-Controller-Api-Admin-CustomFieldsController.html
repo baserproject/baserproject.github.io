@@ -739,13 +739,6 @@
 <dd>新規追加API</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a class="-deprecated" href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>Ajax用のエラーを出力する</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter">beforeFilter()</a>
     <span>
                                 &nbsp;: <abbr title="\Cake\Http\Response">Response</abbr>|void|null    </span>
@@ -894,6 +887,34 @@
 <dd>View classes</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="-deprecated" href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Ajax用のエラーを出力する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_assertScalarData">assertScalarData()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>送信値の項目が文字列（スカラー値）かどうかを確かめる</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_getIntegerData">getIntegerData()</a>
+    <span>
+                                &nbsp;: int|null    </span>
+</dt>
+<dd>送信値から数字の項目を取得する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_handleThrowable">handleThrowable()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>処理中に受け止めた例外から、応答のステータスコードを設定し、メッセージを返す</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a class="" href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a>
     <span>
                                 &nbsp;: void    </span>
@@ -934,6 +955,13 @@
                                 &nbsp;: void    </span>
 </dt>
 <dd>画面の情報をセットする</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_validateBatchRequest">validateBatchRequest()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>一括処理の送信値を検証する</dd>
 
     </dl>
 
@@ -1340,94 +1368,6 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
         class="phpdocumentor-element
             -method
             -public
-            -deprecated                                            "
->
-    <h4 class="phpdocumentor-element__name" id="method_ajaxError">
-        ajaxError()
-        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">621</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Ajax用のエラーを出力する</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">ajaxError</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">500</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-                <div class="phpdocumentor-admonition">
-        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-            <article>
-                <p>since 5.0.5 このメソッドは非推奨です。</p>
-
-            </article>
-        </div>
-    
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$errorNo</span>
-                : <span class="phpdocumentor-argument-list__argument__type">int</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">500</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>エラーのステータスコード</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-argument-list__argument__name">$message</span>
-                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
-                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>エラーメッセージ</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="method_ajaxError_tags">
-        Tags
-        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError_tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                    <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">checked</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">noTodo</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                                <dt class="phpdocumentor-tag-list__entry">
-                <span class="phpdocumentor-tag__name">unitTest</span>
-            </dt>
-                            <dd class="phpdocumentor-tag-list__definition">
-                                                                                                        
-                                    </dd>
-                        </dl>
-
-        
-    
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_beforeFilter">
@@ -1438,7 +1378,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
@@ -1594,7 +1534,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php"><a href="files/plugins-bc-custom-content-src-controller-api-admin-customfieldscontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php">CustomFieldsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">156</span>
+    <span class="phpdocumentor-element-found-in__line">154</span>
 
     </aside>
 
@@ -1759,7 +1699,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php"><a href="files/plugins-bc-custom-content-src-controller-api-admin-customfieldscontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php">CustomFieldsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
     </aside>
 
@@ -2128,7 +2068,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
@@ -2188,7 +2128,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">111</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 
     </aside>
 
@@ -2252,7 +2192,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">136</span>
 
     </aside>
 
@@ -2320,7 +2260,7 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php"><a href="files/plugins-bc-custom-content-src-controller-api-admin-customfieldscontroller.html"><abbr title="plugins/bc-custom-content/src/Controller/Api/Admin/CustomFieldsController.php">CustomFieldsController.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">185</span>
 
     </aside>
 
@@ -2920,6 +2860,359 @@ Securityコンポーネントに&quot;ブラックホールされた&quot;場合
         class="phpdocumentor-element
             -method
             -protected
+            -deprecated                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="method_ajaxError">
+        ajaxError()
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/AppController.php"><a href="files/plugins-baser-core-src-controller-appcontroller.html"><abbr title="plugins/baser-core/src/Controller/AppController.php">AppController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">621</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Ajax用のエラーを出力する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">ajaxError</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">500</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">''</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+                <div class="phpdocumentor-admonition">
+        <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+            <article>
+                <p>since 5.0.5 このメソッドは非推奨です。</p>
+
+            </article>
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$errorNo</span>
+                : <span class="phpdocumentor-argument-list__argument__type">int</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">500</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>エラーのステータスコード</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$message</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">''</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>エラーメッセージ</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_ajaxError_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-AppController.html#method_ajaxError_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_assertScalarData">
+        assertScalarData()
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_assertScalarData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">310</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">送信値の項目が文字列（スカラー値）かどうかを確かめる</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">assertScalarData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>配列などが送られた場合は BcBadRequestException とする。
+文字列として加工する処理に配列を渡すと TypeError となるため</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>項目名（ドット区切りで階層を指定できる）</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_assertScalarData_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_assertScalarData_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getIntegerData">
+        getIntegerData()
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_getIntegerData" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">282</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">送信値から数字の項目を取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getIntegerData</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$required</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowNegative</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>数字以外の値や配列が送られた場合、必須で未指定の場合は BcBadRequestException とする。
+数字以外の値のまま検索条件やサービスの int 型の引数に渡すと、型変換の例外や TypeError となるため</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>項目名（ドット区切りで階層を指定できる）</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$required</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>必須かどうか</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$allowNegative</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>負の数を許可するかどうか（並び替えの移動量など）</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getIntegerData_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_getIntegerData_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handleThrowable">
+        handleThrowable()
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_handleThrowable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">230</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">処理中に受け止めた例外から、応答のステータスコードを設定し、メッセージを返す</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">handleThrowable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><abbr title="\Throwable">Throwable</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$e</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><ul>
+<li>存在しないデータ（RecordNotFoundException / InvalidPrimaryKeyException）は 404</li>
+<li>入力の誤り（BcBadRequestException / PersistenceFailedException）は 400</li>
+<li>HttpException は、その例外のステータスコード</li>
+<li>BcException は 500 とし、baserCMS が書いたメッセージをそのまま返す</li>
+<li>それ以外（PHP・CakePHP・DB が出す例外）は 500 とし、ログに記録する。
+例外メッセージにはサーバーのパスや SQL 等の内部情報が含まれるため、
+デバッグモードでない場合は応答に含めない</li>
+</ul>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$e</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><abbr title="\Throwable">Throwable</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$prefix</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string|null</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>500 の場合にメッセージの先頭に付ける文言</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_handleThrowable_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_handleThrowable_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_loadViewConditions">
@@ -3421,6 +3714,95 @@ preview パラメータが指定された場合は拒否する。</p>
     
     
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateBatchRequest">
+        validateBatchRequest()
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_validateBatchRequest" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php"><a href="files/plugins-baser-core-src-controller-api-admin-bcadminapicontroller.html"><abbr title="plugins/baser-core/src/Controller/Api/Admin/BcAdminApiController.php">BcAdminApiController.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">一括処理の送信値を検証する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">validateBatchRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$allowMethod</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integerTargets</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>処理名（batch）が許可されたものか、対象（batch_targets）が配列で、
+ID を対象とする場合は数字のみで構成されているかを確認する。
+不正な場合は 400 とメッセージを応答に設定して false を返す</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$allowMethod</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>許可する処理名をキーとした配列</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$integerTargets</span>
+                : <span class="phpdocumentor-argument-list__argument__type">bool</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>対象が ID（数字）の場合は true</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_validateBatchRequest_tags">
+        Tags
+        <a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_validateBatchRequest_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -3455,7 +3837,6 @@ preview パラメータが指定された場合は拒否する。</p>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method___construct">__construct()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method__blackHoleCallback">_blackHoleCallback()</a></li>
                                             <li class=""><a href="classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_add">add()</a></li>
-                                            <li class="-deprecated"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_beforeFilter">beforeFilter()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_beforeRender">beforeRender()</a></li>
                                             <li class=""><a href="classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_delete">delete()</a></li>
@@ -3477,12 +3858,17 @@ preview パラメータが指定された場合は拒否する。</p>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setupFrontView">setupFrontView()</a></li>
                                             <li class=""><a href="classes/BcCustomContent-Controller-Api-Admin-CustomFieldsController.html#method_view">view()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_viewClasses">viewClasses()</a></li>
+                                            <li class="-deprecated"><a href="classes/BaserCore-Controller-AppController.html#method_ajaxError">ajaxError()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_assertScalarData">assertScalarData()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_getIntegerData">getIntegerData()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_handleThrowable">handleThrowable()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_loadViewConditions">loadViewConditions()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_removeOrmStructureFromRequest">removeOrmStructureFromRequest()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-Api-BcApiController.html#method_restrictNonPublicAccess">restrictNonPublicAccess()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveDblog">saveDblog()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_saveViewConditions">saveViewConditions()</a></li>
                                             <li class=""><a href="classes/BaserCore-Controller-AppController.html#method_setViewConditions">setViewConditions()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Controller-Api-Admin-BcAdminApiController.html#method_validateBatchRequest">validateBatchRequest()</a></li>
                                     </ul>
             </li>
                     </ul>

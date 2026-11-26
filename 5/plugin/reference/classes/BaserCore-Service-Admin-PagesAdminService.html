@@ -663,7 +663,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/Admin/PagesAdminService.php"><a href="files/plugins-baser-core-src-service-admin-pagesadminservice.html"><abbr title="plugins/baser-core/src/Service/Admin/PagesAdminService.php">PagesAdminService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
@@ -862,6 +862,13 @@
                                 &nbsp;: <abbr title="\Cake\ORM\Query">Query</abbr>    </span>
 </dt>
 <dd>固定ページ一覧用の検索条件を生成する</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/BaserCore-Service-Admin-PagesAdminService.html#method_getAppliedTheme">getAppliedTheme()</a>
+    <span>
+                                &nbsp;: string|null    </span>
+</dt>
+<dd>サイトに適用されているテーマを取得する</dd>
 
     </dl>
 
@@ -2085,7 +2092,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/Admin/PagesAdminService.php"><a href="files/plugins-baser-core-src-service-admin-pagesadminservice.html"><abbr title="plugins/baser-core/src/Service/Admin/PagesAdminService.php">PagesAdminService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
     </aside>
 
@@ -2159,7 +2166,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/Admin/PagesAdminService.php"><a href="files/plugins-baser-core-src-service-admin-pagesadminservice.html"><abbr title="plugins/baser-core/src/Service/Admin/PagesAdminService.php">PagesAdminService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
     </aside>
 
@@ -2469,6 +2476,82 @@
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAppliedTheme">
+        getAppliedTheme()
+        <a href="classes/BaserCore-Service-Admin-PagesAdminService.html#method_getAppliedTheme" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="plugins/baser-core/src/Service/Admin/PagesAdminService.php"><a href="files/plugins-baser-core-src-service-admin-pagesadminservice.html"><abbr title="plugins/baser-core/src/Service/Admin/PagesAdminService.php">PagesAdminService.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">131</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">サイトに適用されているテーマを取得する</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getAppliedTheme</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$site</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>自身に設定されていない場合は親サイトをたどって取得する。見つからない場合は null</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$site</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/BaserCore-Model-Entity-Site.html"><abbr title="\BaserCore\Model\Entity\Site">Site</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_getAppliedTheme_tags">
+        Tags
+        <a href="classes/BaserCore-Service-Admin-PagesAdminService.html#method_getAppliedTheme_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">checked</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">noTodo</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">unitTest</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
+</article>
             </section>
 
         
@@ -2519,6 +2602,7 @@
                                             <li class=""><a href="classes/BaserCore-Utility-BcContainerTrait.html#method_hasService">hasService()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PagesService.html#method_update">update()</a></li>
                                             <li class=""><a href="classes/BaserCore-Service-PagesService.html#method_createIndexConditions">createIndexConditions()</a></li>
+                                            <li class=""><a href="classes/BaserCore-Service-Admin-PagesAdminService.html#method_getAppliedTheme">getAppliedTheme()</a></li>
                                     </ul>
             </li>
                     </ul>
